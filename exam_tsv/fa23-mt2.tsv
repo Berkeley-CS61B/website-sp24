@@ -1,0 +1,33 @@
+fa23-mt2			Question Type	Difficulty	Topics	
+place question numbers below (prefix with "q")	questionName					
+q1a	fa23-mt2-q1a	Potpourri, easy, Asymptotics, , , , , , , , 	Potpourri	easy	Asymptotics	
+q1b	fa23-mt2-q1b	Potpourri, easy, Asymptotics, , , , , , , , 	Potpourri	easy	Asymptotics	
+q1c	fa23-mt2-q1c	Potpourri, easy, Disjoint Sets, , , , , , , , 	Potpourri	easy	Disjoint Sets	
+q1d	fa23-mt2-q1d	Potpourri, easy, Asymptotics, Tree Traversals, , , , , , , 	Potpourri	easy	Asymptotics	Tree Traversals
+q1e	fa23-mt2-q1e	Potpourri, easy, B-Trees, , , , , , , , 	Potpourri	easy	B-Trees	
+q1f	fa23-mt2-q1f	Potpourri, easy, Asymptotics, Hashing, , , , , , , 	Potpourri	easy	Asymptotics	Hashing
+q1g	fa23-mt2-q1g	Potpourri, easy, Red-Black Trees, , , , , , , , 	Potpourri	easy	Red-Black Trees	
+q1h	fa23-mt2-q1h	Potpourri, easy, Hashing, , , , , , , , 	Potpourri	easy	Hashing	
+q1i	fa23-mt2-q1i	Potpourri, easy, Hashing, , , , , , , , 	Potpourri	easy	Hashing	
+q1j	fa23-mt2-q1j	Potpourri, easy, B-Trees, Asymptotics, , , , , , , 	Potpourri	easy	B-Trees	Asymptotics
+q1k	fa23-mt2-q1k	Potpourri, easy, Hashing, , , , , , , , 	Potpourri	easy	Hashing	
+q1l, q1m, q1n	fa23-mt2-q1l, q1m, q1n	Potpourri, moderate, ADTs, , , , , , , , 	Potpourri	moderate	ADTs	
+q2a	fa23-mt2-q2a	Conceptual, moderate, B-Trees, , , , , , , , 	Conceptual	moderate	B-Trees	
+q2b	fa23-mt2-q2b	Conceptual, easy, Red-Black Trees, , , , , , , , 	Conceptual	easy	Red-Black Trees	
+q2c	fa23-mt2-q2c	Conceptual, moderate, Red-Black Trees, , , , , , , , 	Conceptual	moderate	Red-Black Trees	
+q2d	fa23-mt2-q2d	Conceptual, easy, B-Trees, , , , , , , , 	Conceptual	easy	B-Trees	
+q3	fa23-mt2-q3	Coding, moderate, Disjoint Sets, Percolation, , , , , , , 	Coding	moderate	Disjoint Sets	Percolation
+q4.1			Conceptual	easy	Heaps / PQs	
+q4.2, q4.3	fa23-mt2-q4.2, q4.3	Conceptual, hard, Heaps / PQs, , , , , , , , 	Conceptual	hard	Heaps / PQs	
+q5	fa23-mt2-q5	Coding, moderate, Tree Traversals, , , , , , , , 	Coding	moderate	Tree Traversals	
+q6a	fa23-mt2-q6a	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+q6b	fa23-mt2-q6b	Conceptual, easy, Asymptotics, , , , , , , , 	Conceptual	easy	Asymptotics	
+q6c	fa23-mt2-q6c	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+q6d	fa23-mt2-q6d	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+q6e	fa23-mt2-q6e	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+q6f	fa23-mt2-q6f	Conceptual, hard, Asymptotics, , , , , , , , 	Conceptual	hard	Asymptotics	
+q7	fa23-mt2-q7	PNH, , , , , , , , , , 	PNH			
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				

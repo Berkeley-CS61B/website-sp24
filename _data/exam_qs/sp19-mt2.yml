@@ -1,0 +1,199 @@
+link: https://drive.google.com/file/d/1yn4HBkf4f70LLS7Lu7J80DbcxXjn7bkJ/view
+solutions: https://drive.google.com/file/d/1mj6UodqxVgsR7YtU8bSi50FG_R9aYqzl/view
+walkthrough: https://www.youtube.com/watch?v=UlLnJEJhJwY
+questions:
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1a
+  - topic: BSTs
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q1b
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2a
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2b
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2c
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2d
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2d
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2e
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2e
+  - topic: K-D Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3a
+  - topic: K-D Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3b
+  - topic: K-D Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3c
+  - topic: K-D Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3d
+  - topic: K-D Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3e
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4a
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4b
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4c
+  - topic: Java
+    difficulty: hard
+    type: PNH
+    question numbers:
+      - q5
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q6
+  - topic: SPTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q7a
+  - topic: SPTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7b
+  - topic: SPTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q7c
+  - topic: SPTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q7d
+  - topic: MSTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q7d
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q8a
+  - topic: Tree Traversals
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q8b
+  - topic: Tree Traversals
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q8c
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q8d
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q9a
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q9b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10a
+  - topic: Arrays
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q10bi
+  - topic: Arrays
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q10bii
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q10bii
+  - topic: Arrays
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q10biii
+  - topic: Arrays
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10biv
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10biv
+  - topic: Heaps / PQs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q11
+  - topic: BSTs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q11

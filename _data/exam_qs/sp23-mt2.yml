@@ -1,0 +1,74 @@
+link: https://drive.google.com/file/d/1zypNNO8rkaHFNd0zZm6X2WifXtY0yglk/view
+solutions: https://drive.google.com/file/d/1WrnceY7c5UnAPTDZbDdG8qaxR3iodiza/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrkobEjBTMhxLYBQ7i9qPp-
+questions:
+  - topic: ADTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1a
+  - topic: ADTs
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q1b
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q1c
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2a
+  - topic: BSTs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q2b
+  - topic: Iterators
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q2b
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3
+  - topic: B-Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4
+  - topic: BSTs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6.1
+  - topic: Hashing
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6.2
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q8

@@ -1,0 +1,93 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: CS 61B Spring 2024
+logo: "/assets/images/bee.png"
+description: Data Structures
+baseurl: '' # (temporary) the subpath of your site, e.g. /blog
+url: https://inst.eecs.berkeley.edu
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "vendor"]
+
+# Theme settings
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+aux_links:
+  Dark Mode:
+    - '#'
+  Ed:
+    - 'https://edstem.org/us/courses/42700/discussion/'
+  OH Queue:
+    - 'https://oh.datastructur.es/'
+  Beacon:
+    - 'https://beacon.datastructur.es/'
+footer_content:
+
+# Collections for website data
+collections:
+  staffers:
+  modules:
+  schedules:
+  announcements:
+# Default layouts for each collection type
+defaults:
+  - scope:
+      path: ''
+      type: staffers
+    values:
+      layout: staffer
+      subpath: '/assets/staff/'
+  - scope:
+      path: ''
+      type: modules
+    values:
+      layout: module
+  - scope:
+      path: ''
+      type: schedules
+    values:
+      layout: schedule
+  - scope:
+      path: ''
+      type: announcements
+    values:
+      layout: announcement
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-relative-links
+
+color_scheme: wider
+
+callouts:
+  warning:
+    title: Warning
+    color: yellow
+
+# CS 61B custom config variable (Stolen from CS 188)
+# Set this to true at the start of semesters to show a warning on the homepage
+under_construction: true
+# Set this to true to display outdated warning on the homepage
+outdated: false

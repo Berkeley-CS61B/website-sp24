@@ -1,0 +1,284 @@
+link: https://drive.google.com/file/d/19UmQMyvFu5pCAbBGq2Pgs2UIPFBc3DkD/view
+solutions: https://drive.google.com/file/d/1IhC1tuAE3ESGbgmcd9I_DD7IDNgHSyXF/view
+walkthrough: N/A
+questions:
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2a
+  - topic: Graph Representations
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2b
+  - topic: Graph Representations
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2c
+  - topic: Graph Representations
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2d
+  - topic: Graph Representations
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2e
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3a
+  - topic: Comparison Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3a
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3b
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3b
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3c
+  - topic: Topological Sort
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3c
+  - topic: Comparison Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3c
+  - topic: Comparison Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4a
+  - topic: Comparison Sorts
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q4b
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4c
+  - topic: Radix Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4d
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6b
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6b
+  - topic: Hashing
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6c
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6d
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6d
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6e
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6e
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6f
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6g
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6g
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6h
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6h
+  - topic: SPTs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7a
+  - topic: SPTs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7b
+  - topic: SPTs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7c
+  - topic: SPTs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7d
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7d
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7e
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7f
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7g
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7h
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7i
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7j
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: BSTs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q8b
+  - topic: B-Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9a
+  - topic: B-Trees
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q9b
+  - topic: B-Trees
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q9c
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q9c
+  - topic: B-Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9d
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9d
+  - topic: B-Trees
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q9e
+  - topic: Red-Black Trees
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q9e
+  - topic: Red-Black Trees
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q9f
+  - topic: Tries
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q10a
+  - topic: Tries
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10b
+  - topic: Tries
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q10c

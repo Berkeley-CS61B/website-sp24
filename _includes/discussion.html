@@ -1,0 +1,117 @@
+{%- comment -%}
+  - This code renders one discussion box on the syllabus.
+  - See discussions.yml for how to feed information into this template.
+{%- endcomment -%}
+
+{%- comment -%}
+  If you don't want discussion boxes to alternate colors per week,
+  then remove class="{{ include.is_even }}" below.
+{%- endcomment -%}
+<td class="{{ include.is_even }}" rowspan="{{ include.rowspan }}">
+
+{%- comment -%}
+  Render title with or without number, depending on the "nonumber" attribute.
+{%- endcomment -%}
+{%- if include.element.nonumber -%}
+  {{ include.element.title }}
+{%- elsif include.element.title -%}
+  {{ include.number }}. {{ include.element.title }}
+{%- endif -%}
+
+{%- comment -%}
+  - Build filenames automatically from the discussion number.
+  - First pad discussion number (2-->02), then create a base filepath,
+    then create filenames (see discussion.yml for more on filenames).
+{%- endcomment -%}
+{%- assign filenumber = include.number | prepend: '00' | slice: -2, 2 -%}
+{%- assign filename_base = "/assets/discussions/disc" | append: filenumber -%}
+{%- assign filename_regular = filename_base | append: "-regular.pdf" -%}
+{%- assign filename_regular_solutions = filename_base | append: "-regular-sols.pdf" -%}
+{%- assign filename_examprep = filename_base | append: "-examprep.pdf" -%}
+{%- assign filename_examprep_solutions = filename_base | append: "-examprep-sols.pdf" -%}
+
+{%- comment -%}
+  - Automatically check if files exist.
+{%- endcomment -%}
+{%- assign regular_exists = false -%}
+{%- assign regular_solutions_exists = false -%}
+{%- assign examprep_exists = false -%}
+{%- assign examprep_solutions_exists = false -%}
+{%- for page in site.static_files -%}
+  {%- if page.path == filename_regular -%}
+    {%- assign regular_exists = true -%}
+  {%- endif -%}
+  {%- if page.path == filename_regular_solutions -%}
+    {%- assign regular_solutions_exists = true -%}
+  {%- endif -%}
+  {%- if page.path == filename_examprep -%}
+    {%- assign examprep_exists = true -%}
+  {%- endif -%}
+  {%- if page.path == filename_examprep_solutions -%}
+    {%- assign examprep_solutions_exists = true -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+  - TODO: Currently using nonumber to figure out when not to auto-check for files.
+    Is there a cleaner way?
+{%- endcomment -%}
+{%- if include.element.nonumber -%}
+{%- elsif include.element.override -%}
+  <br>
+  {{ include.element.override | markdownify }}
+{%- elsif examprep_solutions_exists or regular_solutions_exists -%}
+  <br>
+  {%- if regular_solutions_exists -%}
+    <a href="{{ filename_regular | relative_url }}">Worksheet</a> / <a href="{{ filename_regular_solutions | relative_url }}">Solutions</a>
+    {%- if include.element.regular_video -%}
+      &nbsp;/ <a href="{{ include.element.regular_video | relative_url }}">Video</a>
+    {%- endif -%}
+  {%- endif -%}
+  {%- if examprep_solutions_exists -%}
+    <br>
+    <a href="{{ filename_examprep | relative_url }}">Exam Prep</a> / <a href="{{ filename_examprep_solutions | relative_url }}">Solutions</a>
+    {%- if include.element.examprep_video -%}
+      &nbsp;/ <a href="{{ include.element.examprep_video | relative_url }}">Video</a>
+    {%- endif -%}
+  {%- endif -%}
+{%- elsif final_exist -%}
+  <br>
+  <b>Worksheets:</b>
+  <br>
+  <a href="{{ filename_search | relative_url }}">Search</a> / <a href="{{ filename_csp | relative_url }}">CSP</a> / <a href="{{ filename_games | relative_url }}">Games</a> / <a href="{{ filename_rl | relative_url }}">RL</a>
+  <br>
+  <a href="{{ filename_bayes_nets | relative_url }}">Bayes' Nets</a> / <a href="{{ filename_hmms | relative_url }}">HMMs</a> / <a href="{{ filename_ml | relative_url }}">ML</a>
+  <br>
+  <b>Solutions:</b>
+  <br>
+  <a href="{{ filename_search_sols | relative_url }}">Search</a> / <a href="{{ filename_csp_sols | relative_url }}">CSP</a> / <a href="{{ filename_games_sols | relative_url }}">Games</a> / <a href="{{ filename_rl_sols | relative_url }}">RL</a>
+  <br>
+  <a href="{{ filename_bayes_nets_sols | relative_url }}">Bayes' Nets</a> / <a href="{{ filename_hmms_sols | relative_url }}">HMMs</a> / <a href="{{ filename_ml_sols | relative_url }}">ML</a>
+  <br>
+{%- elsif extra_exist -%}
+  <br>
+  <a href="{{ filename_rl | relative_url }}">RL</a> / <a href="{{ filename_games | relative_url }}">Games</a> / <a href="{{ filename_csp | relative_url }}">CSP</a>
+  <br>
+  <a href="{{ filename_search | relative_url }}">Search</a> / <a href="{{ filename_mdp | relative_url }}">MDP</a>
+  <br>
+  <a href="{{ filename_rl_sols | relative_url }}">Solutions (RL)</a> / <a href="{{ filename_games_sols | relative_url }}">Solutions (Games)</a> / <a href="{{ filename_csp_sols | relative_url }}">Solutions (CSP)</a>
+  <br>
+  <a href="{{ filename_search_sols | relative_url }}">Solutions (Search)</a> / <a href="{{ filename_mdp_sols | relative_url }}">Solutions (MDP)</a>
+{%- elsif examprep_exists or regular_exists -%}
+  {%- if regular_exists -%}
+    <br>
+    <a href="{{ filename_regular | relative_url }}">Worksheet</a>
+    {%- if include.element.regular_video -%}
+      &nbsp;/ <a href="{{ include.element.regular_video | relative_url }}">Video</a>
+    {%- endif -%}
+  {%- endif -%}
+  {%- if examprep_exists -%}
+    <br>
+    <a href="{{ filename_examprep | relative_url }}">Exam Prep</a>
+    {%- if include.element.examprep_video -%}
+      &nbsp;/ <a href="{{ include.element.examprep_video | relative_url }}">Video</a>
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+</td>

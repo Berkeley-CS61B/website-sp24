@@ -1,0 +1,33 @@
+fa22-mt2			Question Type	Difficulty	Topics		
+place question numbers below	questionName						
+q1	fa22-mt2-q1	Conceptual, moderate, Disjoint Sets, , , , , , , , 	Conceptual	moderate	Disjoint Sets		
+		, , , , , , , , , , 					
+q2	fa22-mt2-q2	Coding, moderate, Iterators, , , , , , , , 	Coding	moderate	Iterators		
+		, , , , , , , , , , 					
+q3a	fa22-mt2-q3a	Diagram, easy, Hashing, , , , , , , , 	Diagram	easy	Hashing		
+q3b	fa22-mt2-q3b	Diagram, moderate, Hashing, , , , , , , , 	Diagram	moderate	Hashing		
+		, , , , , , , , , , 					
+q4a	fa22-mt2-q4a	Conceptual, easy, Red-Black Trees, B-Trees, , , , , , , 	Conceptual	easy	Red-Black Trees	B-Trees	
+q4b	fa22-mt2-q4b	Conceptual, moderate, Red-Black Trees, , , , , , , , 	Conceptual	moderate	Red-Black Trees		
+q4c	fa22-mt2-q4c	Conceptual, moderate, Red-Black Trees, , , , , , , , 	Conceptual	moderate	Red-Black Trees		
+q4d	fa22-mt2-q4d	Conceptual, moderate, Red-Black Trees, , , , , , , , 	Conceptual	moderate	Red-Black Trees		
+q4e	fa22-mt2-q4e	Conceptual, easy, Red-Black Trees, , , , , , , , 	Conceptual	easy	Red-Black Trees		
+		, , , , , , , , , , 					
+q5a	fa22-mt2-q5a	Conceptual, easy, Heaps / PQs, BSTs, , , , , , , 	Conceptual	easy	Heaps / PQs	BSTs	
+q5b	fa22-mt2-q5b	Conceptual, easy, Heaps / PQs, BSTs, Tree Traversals, , , , , , 	Conceptual	easy	Heaps / PQs	BSTs	Tree Traversals
+q5c	fa22-mt2-q5c	Conceptual, easy, Heaps / PQs, BSTs, Tree Traversals, , , , , , 	Conceptual	easy	Heaps / PQs	BSTs	Tree Traversals
+q5d	fa22-mt2-q5d	Conceptual, easy, Heaps / PQs, BSTs, Tree Traversals, , , , , , 	Conceptual	easy	Heaps / PQs	BSTs	Tree Traversals
+q5e	fa22-mt2-q5e	Conceptual, easy, Heaps / PQs, BSTs, , , , , , , 	Conceptual	easy	Heaps / PQs	BSTs	
+		, , , , , , , , , , 					
+q6	fa22-mt2-q6	Conceptual, easy, Asymptotics, , , , , , , , 	Conceptual	easy	Asymptotics		
+		, , , , , , , , , , 					
+q7a	fa22-mt2-q7a	Conceptual, moderate, Asymptotics, DMS, Inheritance, , , , , , 	Conceptual	moderate	Asymptotics	DMS	Inheritance
+q7b	fa22-mt2-q7b	Conceptual, easy, Asymptotics, DMS, Inheritance, , , , , , 	Conceptual	easy	Asymptotics	DMS	Inheritance
+q7c	fa22-mt2-q7c	WWJD, easy, DMS, Inheritance, , , , , , , 	WWJD	easy	DMS	Inheritance	
+q7d	fa22-mt2-q7d	WWJD, moderate, DMS, Inheritance, , , , , , , 	WWJD	moderate	DMS	Inheritance	
+q7e	fa22-mt2-q7e	Conceptual, hard, Asymptotics, DMS, Inheritance, , , , , , 	Conceptual	hard	Asymptotics	DMS	Inheritance
+q7f	fa22-mt2-q7f	PNH, , , , , , , , , , 	PNH				
+							
+q8a	fa22-mt2-q8a	Algorithm Design, hard, Linked Lists, ADTs, , , , , , , 	Algorithm Design	hard	Linked Lists	ADTs	
+q8b	fa22-mt2-q8b	Algorithm Design, hard, Linked Lists, ADTs, , , , , , , 	Algorithm Design	hard	Linked Lists	ADTs	
+q8c	fa22-mt2-q8c	Algorithm Design, hard, Linked Lists, ADTs, , , , , , , 	Algorithm Design	hard	Linked Lists	ADTs	

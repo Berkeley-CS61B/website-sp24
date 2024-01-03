@@ -1,0 +1,49 @@
+link: https://drive.google.com/file/d/1Y7iOyo4pFS2x-2BLNtLShtZSgrk13aKl/view
+solutions: https://drive.google.com/file/d/1nxtpZZLtNfS3kYlUn2e8FukQipq140CU/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRqIlfun5U1Cwyy5AHaf7Hve
+questions:
+  - topic: Java
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q1a
+  - topic: Java
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q1b
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q2a
+  - topic: Linked Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q2a
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q3
+  - topic: Testing
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4
+  - topic: Arrays
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q5a
+  - topic: Arrays
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5b
+  - topic: Linked Lists
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q6

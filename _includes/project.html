@@ -1,0 +1,13 @@
+<td rowspan="{{ include.rowspan }}">
+{%- if include.element.nonumber -%}
+  {{ include.element.title }}
+{%- elsif include.element.link -%}
+  <a href="{{ include.element.link | relative_url }}">Project {{ include.number }}</a> {{ include.element.title }}
+  <br>
+  (due {{ include.element.due }})
+{%- elsif include.element.due -%}
+  Project {{ include.number }} {{ include.element.title }}
+  <br>
+  (due {{ include.element.due }})
+{%- endif -%}
+</td>

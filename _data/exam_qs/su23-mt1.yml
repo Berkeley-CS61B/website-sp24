@@ -1,0 +1,124 @@
+link: https://drive.google.com/file/d/1IezdzskPHGBmJ-G1t3mPwQPNPDwyvFBQ/view
+solutions: https://drive.google.com/file/d/1AqtLi_znOkU9fU6zh1MWBC960P5_0YYG/view
+walkthrough: N/A
+questions:
+  - topic: Java
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q1.a
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q1.a
+  - topic: Java
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q1.b
+  - topic: DMS
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q1.b
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2.a
+  - topic: Iterators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2.a
+  - topic: Java
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q2.b
+  - topic: Arrays
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q2.b
+  - topic: Iterators
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q2.b
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3.a
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3.b
+  - topic: Comparators
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4.a
+  - topic: Comparators
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q4.b
+  - topic: Comparators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4.c
+  - topic: Comparators
+    difficulty: moderate
+    type: Testing
+    question numbers:
+      - q4.d
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5.a
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q5.b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5.c
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5.d
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6.a
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6.a
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6.b
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6.b
+  - topic: BSTs
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6.b

@@ -1,0 +1,54 @@
+link: https://drive.google.com/file/d/14-IEeTJsYHvK6Ogyro4xcDT8KH_KbB9A/view
+solutions: https://drive.google.com/file/d/1IB3II-zbgUAlYMikmeSg0c-0uNi7rSnQ/view
+walkthrough: N/A
+questions:
+  - topic: Java
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q1
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2
+  - topic: ADTs
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2
+  - topic: Java
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q3
+  - topic: Arrays
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4
+  - topic: Arrays
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q6
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q7
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q8

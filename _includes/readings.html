@@ -1,0 +1,35 @@
+<td class="{{ include.is_even }}" rowspan="{{ include.rowspan }}">
+{%- if include.element.textbook -%}
+  {{ include.element.textbook }}
+{%- endif -%}
+
+{%- comment -%}
+  - Build note filenames automatically from the note number.
+  - First pad number (2-->02), then create a base filepath,
+    then create filename (see lectures.yml for more on filenames).
+{%- endcomment -%}
+{%- assign filenumber = include.number | prepend: '00' | slice: -2, 2 -%}
+{%- assign notes_path = "/assets/notes/cs188-sp23-note" | append: filenumber | append: ".pdf" -%}
+
+{%- comment -%}
+  - Automatically check if files exist.
+{%- endcomment -%}
+{%- assign notes_exists = false -%}
+{%- for page in site.static_files -%}
+  {%- if page.path == notes_path -%}
+    {%- assign notes_exists = true -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+  - Slightly hacky way to ensure notes links don't show when there's nonumber.
+{%- endcomment -%}
+{%- if include.element.nonumber -%}
+  {%- assign notes_exists = false -%}
+{%- endif -%}
+
+{%- if notes_exists -%}
+  <br>
+  <a href="{{ notes_path | relative_url }}">Note {{ include.number }}</a>
+{%- endif -%}
+</td>

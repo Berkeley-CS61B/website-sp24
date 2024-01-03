@@ -1,0 +1,35 @@
+fa22-final			Question Type	Difficulty	Topics	
+place question numbers below	questionName					
+q1.1	fa22-final-q1.1	Conceptual, moderate, Hashing, BSTs, , , , , , , 	Conceptual	moderate	Hashing	BSTs
+q1.2	fa22-final-q1.2	Conceptual, hard, Sorting, , , , , , , , 	Conceptual	hard	Sorting	
+q1.3	fa22-final-q1.3	Conceptual, moderate, Disjoint Sets, , , , , , , , 	Conceptual	moderate	Disjoint Sets	
+q1.4	fa22-final-q1.4	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting	
+		, , , , , , , , , , 				
+q2			WWJD	easy	Sorting	
+						
+q3.1			Conceptual	moderate	Asymptotics	
+q3.2			Conceptual	moderate	Asymptotics	
+q3.3	fa22-final-q3.3	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+q3.4	fa22-final-q3.4	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+q3.5	fa22-final-q3.5	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+		, , , , , , , , , , 				
+q4	fa22-final-q4	Conceptual, easy, BSTs, , , , , , , , 	Conceptual	easy	BSTs	
+		, , , , , , , , , , 				
+q5.1-q5.2	fa22-final-q5.1-q5.2	Conceptual, easy, SPTs, , , , , , , , 	Conceptual	easy	SPTs	
+q5.3	fa22-final-q5.3	Diagram, easy, SPTs, , , , , , , , 	Diagram	easy	SPTs	
+q5.4	fa22-final-q5.4	Diagram, easy, Graph Traversals, , , , , , , , 	Diagram	easy	Graph Traversals	
+q5.5	fa22-final-q5.5	Diagram, moderate, Graph Traversals, , , , , , , , 	Diagram	moderate	Graph Traversals	
+q5.6-q5.9	fa22-final-q5.6-q5.9	Conceptual, moderate, SPTs, , , , , , , , 	Conceptual	moderate	SPTs	
+q5.10	fa22-final-q5.10	PNH, hard, , , , , , , , , 	PNH	hard		
+		, , , , , , , , , , 				
+q6	fa22-final-q6	Conceptual, easy, Tries, , , , , , , , 	Conceptual	easy	Tries	
+		, , , , , , , , , , 				
+q7.1-q7.2	fa22-final-q7.1-q7.2	Conceptual, moderate, Asymptotics, Hashing, , , , , , , 	Conceptual	moderate	Asymptotics	Hashing
+q7.3-q7.4			Conceptual	moderate	Hashing	Linked Lists
+q7.5			Conceptual	moderate	Red-Black Trees	BSTs
+		, , , , , , , , , , 				
+q8	fa22-final-q8	Coding, moderate, Heaps / PQs, , , , , , , , 	Coding	moderate	Heaps / PQs	
+						
+q9	fa22-final-q9		Coding	moderate	Iterators	Comparators
+						
+q10			Conceptual	easy	MSTs	

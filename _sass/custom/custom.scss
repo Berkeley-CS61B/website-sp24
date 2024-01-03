@@ -1,0 +1,114 @@
+// Just the Class dependencies
+@import "card";
+
+// Just the Class styles
+@import "announcement";
+@import "module";
+@import "schedule";
+@import "staffer";
+
+// Begin CS 188
+@import "toc";
+
+td {
+  min-width: 0;
+}
+
+th {
+  min-width: 0;
+}
+
+table {
+  td.is-even {
+    background-color: darken($body-background-color, 5%);
+  }
+  td.border-hack {
+    border-left: 1px solid $border-color;
+  }
+}
+
+// Button copying
+.no-copy-button .btn-copy-code {
+  display: none;
+}
+.btn-copy-code {
+  font-size: 85%;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.btn-copy-code:hover {
+  cursor: pointer;
+}
+div.highlight:hover .btn-copy-code,
+div.highlight .btn-copy-code:focus {
+  opacity: 1;
+}
+div.highlight .btn-copy-code:hover {
+  opacity: 1;
+}
+div.highlight {
+  position: relative;
+}
+
+// End CS 188
+
+// Overrides
+
+code {
+  font-size: 14px;
+  padding: 0.2em 0.4em;
+  border: none;
+}
+
+details {
+  margin: 0 40px 1em;
+}
+
+iframe,
+summary {
+  max-width: 100%;
+}
+
+summary {
+  @extend .btn, .btn-outline;
+}
+
+.main-content-wrap {
+  max-width: $content-width;
+  margin: auto;
+}
+
+.main-content {
+  dl {
+    display: block;
+    grid-template-columns: none;
+  }
+
+  dt {
+    font-weight: 700;
+    text-align: start;
+
+    &::after {
+      content: normal;
+    }
+  }
+
+  dd {
+    font-weight: normal;
+
+    + dt {
+      margin-top: 1em;
+    }
+  }
+}
+
+.js-toc.nav-list .nav-list-item > .nav-list {
+  display: block;
+
+  .is-collapsed {
+    display: none;
+  }
+}

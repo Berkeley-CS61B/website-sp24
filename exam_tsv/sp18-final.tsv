@@ -1,0 +1,36 @@
+sp18-final			Question Type	Difficulty	Topics		
+place question numbers below (prefix with "q")	questionName						
+q1a	sp18-final-q1a	Diagram, easy, Graph Traversals, , , , , , , , 	Diagram	easy	Graph Traversals		
+q1b	sp18-final-q1b	Diagram, easy, Graph Traversals, , , , , , , , 	Diagram	easy	Graph Traversals		
+q1c	sp18-final-q1c	Diagram, easy, MSTs, , , , , , , , 	Diagram	easy	MSTs		
+q1d	sp18-final-q1d	Conceptual, easy, MSTs, , , , , , , , 	Conceptual	easy	MSTs		
+q1e	sp18-final-q1e	Diagram, moderate, MSTs, , , , , , , , 	Diagram	moderate	MSTs		
+q1f	sp18-final-q1f	Diagram, moderate, MSTs, , , , , , , , 	Diagram	moderate	MSTs		
+q2a	sp18-final-q2a	Conceptual, moderate, Sorting, , , , , , , , 	Conceptual	moderate	Sorting		
+q2b	sp18-final-q2b	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q2c	sp18-final-q2c	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q2d	sp18-final-q2d	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q2e	sp18-final-q2e	Conceptual, moderate, Sorting, , , , , , , , 	Conceptual	moderate	Sorting		
+q3a	sp18-final-q3a	Coding, easy, Linked Lists, , , , , , , , 	Coding	easy	Linked Lists		
+q3b	sp18-final-q3b	Coding, easy, Linked Lists, Iterators, , , , , , , 	Coding	easy	Linked Lists	Iterators	
+q3c	sp18-final-q3c	Coding, easy, Java, Iterators, , , , , , , 	Coding	easy	Java	Iterators	
+q3d	sp18-final-q3d	Conceptual, moderate, Java, , , , , , , , 	Conceptual	moderate	Java		
+q4	sp18-final-q4	PNH, hard, Java, , , , , , , , 	PNH	hard	Java		
+q5	sp18-final-q5	Conceptual, moderate, Hashing, , , , , , , , 	Conceptual	moderate	Hashing		
+q6a	sp18-final-q6a	Conceptual, moderate, Graph Traversals, SPTs, MSTs, , , , , , 	Conceptual	moderate	Graph Traversals	SPTs	MSTs
+q6b	sp18-final-q6b	Conceptual, moderate, SPTs, , , , , , , , 	Conceptual	moderate	SPTs		
+q7a	sp18-final-q7a	Conceptual, moderate, Sorting, , , , , , , , 	Conceptual	moderate	Sorting		
+q7b	sp18-final-q7b	Conceptual, moderate, MSTs, , , , , , , , 	Conceptual	moderate	MSTs		
+q7c	sp18-final-q7c	Conceptual, moderate, Heaps / PQs, , , , , , , , 	Conceptual	moderate	Heaps / PQs		
+q8a	sp18-final-q8a	Conceptual, moderate, Sorting, Asymptotics, , , , , , , 	Conceptual	moderate	Sorting	Asymptotics	
+q8b	sp18-final-q8b	Conceptual, moderate, Sorting, Asymptotics, , , , , , , 	Conceptual	moderate	Sorting	Asymptotics	
+q9	sp18-final-q9	Conceptual, moderate, SPTs, Asymptotics, , , , , , , 	Conceptual	moderate	SPTs	Asymptotics	
+q10	sp18-final-q10	Conceptual, moderate, Sorting, BSTs, Heaps / PQs, , , , , , 	Conceptual	moderate	Sorting	BSTs	Heaps / PQs
+q11a	sp18-final-q11a	Conceptual, easy, Java, , , , , , , , 	Conceptual	easy	Java		
+q11b	sp18-final-q11b	Coding, moderate, Arrays, Java, , , , , , , 	Coding	moderate	Arrays	Java	
+q11c	sp18-final-q11c	Algorithm Design, hard, Java, , , , , , , , 	Algorithm Design	hard	Java		
+q11d	sp18-final-q11d	Algorithm Design, hard, Java, Asymptotics, , , , , , , 	Algorithm Design	hard	Java	Asymptotics	
+q12a	sp18-final-q12a		Coding	easy	Tree Traversals		
+q12b	sp18-final-q12b		Coding	moderate	Tree Traversals		
+q12c			Coding	hard	Tree Traversals		
+q13			Algorithm Design	hard	Graph Traversals		

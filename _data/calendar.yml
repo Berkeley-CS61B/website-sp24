@@ -1,0 +1,46 @@
+# Follow the steps on https://fullcalendar.io/docs/v4/google-calendar until "Getting Set Up" to obtain the google_calendar_id.
+
+google_api_key: AIzaSyBM2NnPMx5rgCK8fZaG5X1qNcSiW-CRkRg
+google_calendar_id: c_479e1ddff236af2ffc68f4639ba02ce88afc20a680106fdd7f3f4d5baa2c18b1@group.calendar.google.com # replace this
+min_time: '09:00:00'
+max_time: '22:00:00'
+
+event_types:
+  - needle: '' # default
+    color: '#B4C6E0'
+    text_color: '#000000'
+  - needle: Discussion
+    color: '#dbe6db'
+    text_color: '#2A1B0F'
+  - needle: Exam Prep
+    color: '#dbe6db'
+    text_color: '#2A1B0F'
+  - needle: Extended
+    color: '#dbe6db'
+    text_color: '#2A1B0F'
+  - needle: Office Hours
+    color: '#cddeef'
+    text_color: '#0E2E1F'
+  - needle: Party
+    color: '#cddeef'
+    text_color: '#0E2E1F'
+  - needle: Lecture
+    color: '#f0e8da'
+    text_color: '#100E28'
+  - needle: Search
+    color: '#3B71CA'
+    text_color: '#FFFFFF'
+  - needle: Logic
+    color: '#E4A11B'
+    text_color: '#FFFFFF'
+  - needle: CSP
+    color: '#14A44D'
+    text_color: '#FFFFFF'
+  - needle: Games
+    color: '#DC4C64'
+    text_color: '#FFFFFF'
+  - needle: MDP
+    color: '#6F42C1'
+    text_color: '#FFFFFF'
+
+remove_prefix: "[CS 188]"

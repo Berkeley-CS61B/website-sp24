@@ -1,0 +1,32 @@
+sp22-final			Question Type	Difficulty	Topics		
+place question numbers below	questionName						
+q1a	sp22-final-q1a	Conceptual, easy, SPTs, , , , , , , , 	Conceptual	easy	SPTs		
+q1b	sp22-final-q1b	Conceptual, easy, MSTs, , , , , , , , 	Conceptual	easy	MSTs		
+q1c	sp22-final-q1c	Conceptual, easy, MSTs, , , , , , , , 	Conceptual	easy	MSTs		
+q2	sp22-final-q2	Coding, moderate, Regex, , , , , , , , 	Coding	moderate	Regex		
+q3	sp22-final-q3	Coding, moderate, Bits, , , , , , , , 	Coding	moderate	Bits		
+q4	sp22-final-q4	Algorithm Design, moderate, Graph Traversals, , , , , , , , 	Algorithm Design	moderate	Graph Traversals		
+q5a	sp22-final-q5a	Coding, moderate, Graph Traversals, , , , , , , , 	Coding	moderate	Graph Traversals		
+q5b	sp22-final-q5b	Conceptual, moderate, SPTs, MSTs, , , , , , , 	Conceptual	moderate	SPTs	MSTs	
+q5c	sp22-final-q5c	Conceptual, moderate, Game Trees, , , , , , , , 	Conceptual	moderate	Game Trees		
+q5d	sp22-final-q5d	Conceptual, moderate, Heaps / PQs, Asymptotics, , , , , , , 	Conceptual	moderate	Heaps / PQs	Asymptotics	
+q5e	sp22-final-q5e	Conceptual, moderate, Hashing, Asymptotics, , , , , , , 	Conceptual	moderate	Hashing	Asymptotics	
+q5f	sp22-final-q5f	Conceptual, moderate, BSTs, Tries, Asymptotics, , , , , , 	Conceptual	moderate	BSTs	Tries	Asymptotics
+q6a	sp22-final-q6a	Conceptual, easy, Asymptotics, , , , , , , , 	Conceptual	easy	Asymptotics		
+q6b	sp22-final-q6b	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics		
+q6c	sp22-final-q6c	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics		
+q6d	sp22-final-q6d	Conceptual, hard, Asymptotics, , , , , , , , 	Conceptual	hard	Asymptotics		
+q6e	sp22-final-q6e	Conceptual, hard, Asymptotics, , , , , , , , 	Conceptual	hard	Asymptotics		
+q6f	sp22-final-q6f	Conceptual, hard, Asymptotics, , , , , , , , 	Conceptual	hard	Asymptotics		
+q7	sp22-final-q7	PNH, , , , , , , , , , 	PNH				
+q8a	sp22-final-q8a	Conceptual, easy, B-Trees, , , , , , , , 	Conceptual	easy	B-Trees		
+q8b	sp22-final-q8b	Conceptual, easy, Red-Black Trees, , , , , , , , 	Conceptual	easy	Red-Black Trees		
+q8c	sp22-final-q8c	Coding, moderate, B-Trees, Red-Black Trees, , , , , , , 	Coding	moderate	B-Trees	Red-Black Trees	
+q9a	sp22-final-q9a	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q9b	sp22-final-q9b	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q9c	sp22-final-q9c	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q9d	sp22-final-q9d	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q9e	sp22-final-q9e	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q9f	sp22-final-q9f	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting		
+q10	sp22-final-q10	Coding, hard, Linked Lists, , , , , , , , 	Coding	hard	Linked Lists		
+		, , , , , , , , , , 					

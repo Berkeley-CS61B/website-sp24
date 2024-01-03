@@ -1,0 +1,35 @@
+sp19-mt2			Question Type	Difficulty	Topics	
+place question numbers below (prefix with "q")	questionName					
+q1a	sp19-mt2-q1a	Conceptual, easy, BSTs, , , , , , , , 	Conceptual	easy	BSTs	
+q1b	sp19-mt2-q1b	Coding, easy, BSTs, , , , , , , , 	Coding	easy	BSTs	
+q2a	sp19-mt2-q2a	Conceptual, easy, Hashing, , , , , , , , 	Conceptual	easy	Hashing	
+q2b	sp19-mt2-q2b	Conceptual, easy, Hashing, , , , , , , , 	Conceptual	easy	Hashing	
+q2c	sp19-mt2-q2c	Conceptual, easy, Hashing, , , , , , , , 	Conceptual	easy	Hashing	
+q2d	sp19-mt2-q2d	Conceptual, easy, Asymptotics, Hashing, , , , , , , 	Conceptual	easy	Asymptotics	Hashing
+q2e	sp19-mt2-q2e	Conceptual, easy, Hashing, Asymptotics, , , , , , , 	Conceptual	easy	Hashing	Asymptotics
+q3a	sp19-mt2-q3a	Conceptual, easy, K-D Trees, , , , , , , , 	Conceptual	easy	K-D Trees	
+q3b	sp19-mt2-q3b	Conceptual, easy, K-D Trees, , , , , , , , 	Conceptual	easy	K-D Trees	
+q3c	sp19-mt2-q3c	Conceptual, easy, K-D Trees, , , , , , , , 	Conceptual	easy	K-D Trees	
+q3d	sp19-mt2-q3d	Conceptual, easy, K-D Trees, , , , , , , , 	Conceptual	easy	K-D Trees	
+q3e	sp19-mt2-q3e	Conceptual, easy, K-D Trees, , , , , , , , 	Conceptual	easy	K-D Trees	
+q4a	sp19-mt2-q4a	Conceptual, easy, Red-Black Trees, , , , , , , , 	Conceptual	easy	Red-Black Trees	
+q4b	sp19-mt2-q4b	Conceptual, moderate, Red-Black Trees, , , , , , , , 	Conceptual	moderate	Red-Black Trees	
+q4c	sp19-mt2-q4c	Conceptual, easy, Red-Black Trees, , , , , , , , 	Conceptual	easy	Red-Black Trees	
+q5	sp19-mt2-q5	PNH, hard, Java, , , , , , , , 	PNH	hard	Java	
+q6	sp19-mt2-q6	Diagram, moderate, Disjoint Sets, , , , , , , , 	Diagram	moderate	Disjoint Sets	
+q7a	sp19-mt2-q7a	Diagram, easy, SPTs, , , , , , , , 	Diagram	easy	SPTs	
+q7b	sp19-mt2-q7b	Conceptual, easy, SPTs, , , , , , , , 	Conceptual	easy	SPTs	
+q7c	sp19-mt2-q7c	Diagram, easy, SPTs, , , , , , , , 	Diagram	easy	SPTs	
+q7d	sp19-mt2-q7d	Diagram, easy, SPTs, MSTs, , , , , , , 	Diagram	easy	SPTs	MSTs
+q8a	sp19-mt2-q8a	Diagram, easy, Tree Traversals, , , , , , , , 	Diagram	easy	Tree Traversals	
+q8b	sp19-mt2-q8b	Diagram, moderate, Tree Traversals, , , , , , , , 	Diagram	moderate	Tree Traversals	
+q8c	sp19-mt2-q8c	Diagram, moderate, Tree Traversals, , , , , , , , 	Diagram	moderate	Tree Traversals	
+q8d	sp19-mt2-q8d	Diagram, easy, Tree Traversals, , , , , , , , 	Diagram	easy	Tree Traversals	
+q9a	sp19-mt2-q9a	Coding, easy, Heaps / PQs, , , , , , , , 	Coding	easy	Heaps / PQs	
+q9b	sp19-mt2-q9b	Diagram, moderate, Heaps / PQs, , , , , , , , 	Diagram	moderate	Heaps / PQs	
+q10a	sp19-mt2-q10a	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics	
+q10bi	sp19-mt2-q10bi	Conceptual, easy, Arrays, , , , , , , , 	Conceptual	easy	Arrays	
+q10bii	sp19-mt2-q10bii	Conceptual, easy, Arrays, Asymptotics, , , , , , , 	Conceptual	easy	Arrays	Asymptotics
+q10biii	sp19-mt2-q10biii		Conceptual	easy	Arrays	
+q10biv	sp19-mt2-q10biv		Conceptual	moderate	Arrays	Asymptotics
+q11			Coding	hard	Heaps / PQs	BSTs

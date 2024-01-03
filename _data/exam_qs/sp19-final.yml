@@ -1,0 +1,264 @@
+link: https://drive.google.com/file/d/1ADV5iN2OSxP8fHfaGvqlyT39QqncEdij/view
+solutions: https://drive.google.com/file/d/1Wu9X7czbBIAywTLoCcqx07-JF92iCeTi/view
+walkthrough: https://www.youtube.com/watch?v=kavv3_Rk0Jc
+questions:
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1ai
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1aii
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1b
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1c
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1d
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1e
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1f
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1g
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2a
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2b
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2c
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2d
+  - topic: MSTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q3a
+  - topic: SPTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q3b
+  - topic: MSTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q3b
+  - topic: MSTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q3c
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3d
+  - topic: SPTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3e
+  - topic: BSTs
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4a
+  - topic: BSTs
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4b
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q5
+  - topic: SPTs
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q5
+  - topic: K-D Trees
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q5
+  - topic: Sorting
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q5
+  - topic: BSTs
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q5
+  - topic: Hashing
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q5
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q5
+  - topic: Java
+    difficulty: hard
+    type: PNH
+    question numbers:
+      - q6
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q7a
+  - topic: Disjoint Sets
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q7b
+  - topic: Iterators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q7b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q8b
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q8c
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8d
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9ai
+  - topic: Reductions
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9ai
+  - topic: Reductions
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9aii
+  - topic: Reductions
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q9aiii
+  - topic: Hashing
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q10a
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10b
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10c
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10d
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10d
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q11a
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q11b
+  - topic: Graph Traversals
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q11c
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q12a
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q12b
+  - topic: Tree Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q12c
+  - topic: Tree Traversals
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q12d
+  - topic: Tree Traversals
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q12e

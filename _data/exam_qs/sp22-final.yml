@@ -1,0 +1,174 @@
+link: N/A
+solutions: N/A
+walkthrough: N/A
+questions:
+  - topic: SPTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1a
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1b
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1c
+  - topic: Regex
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2
+  - topic: Bits
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q3
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Algorithm Design
+    question numbers:
+      - q4
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5a
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5b
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5b
+  - topic: Game Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5c
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5d
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5d
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5e
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5e
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5f
+  - topic: Tries
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5f
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5f
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6c
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6d
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6e
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6f
+  - topic: B-Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q8b
+  - topic: B-Trees
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q8c
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q8c
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9a
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9b
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9c
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9d
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9e
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q9f
+  - topic: Linked Lists
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q10

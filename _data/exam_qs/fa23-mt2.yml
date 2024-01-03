@@ -1,0 +1,154 @@
+link: https://drive.google.com/file/d/1rT67b4j7ek12SHC1d5LwLVV085QZpRCW/view
+solutions: https://drive.google.com/file/d/1VgzKzWCXydHqPp7oieUdwBDfxnr_F1EI/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrq7bTJZI5Tm49oA4NiRZq9
+questions:
+  - topic: Asymptotics
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1a
+  - topic: Asymptotics
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1b
+  - topic: Disjoint Sets
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1c
+  - topic: Asymptotics
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1d
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1d
+  - topic: B-Trees
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1e
+  - topic: Asymptotics
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1f
+  - topic: Hashing
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1f
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1g
+  - topic: Hashing
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1h
+  - topic: Hashing
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1i
+  - topic: B-Trees
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1j
+  - topic: Asymptotics
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1j
+  - topic: Hashing
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1k
+  - topic: ADTs
+    difficulty: moderate
+    type: Potpourri
+    question numbers:
+      - q1l, q1m, q1n
+  - topic: B-Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2a
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2b
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2c
+  - topic: B-Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2d
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q3
+  - topic: Percolation
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q3
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4.1
+  - topic: Heaps / PQs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q4.2, q4.3
+  - topic: Tree Traversals
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6c
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6d
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6e
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6f

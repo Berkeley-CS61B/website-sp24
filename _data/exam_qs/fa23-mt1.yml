@@ -1,0 +1,79 @@
+link: https://drive.google.com/file/d/1t65JX1RtaEoSyU05hi0b9i7aPMmqLrDV/view
+solutions: https://drive.google.com/file/d/1xDzKVFN1lna14u8rM9KhFsdWXScXD8Rh/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRo6vm6ttPycMiKz-GyAz4Q8
+questions:
+  - topic: Java
+    difficulty: easy
+    type: Potpourri
+    question numbers:
+      - q1
+  - topic: Inheritance
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q2
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q2
+  - topic: Iterators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q3a
+  - topic: Iterators
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3b
+  - topic: Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4a
+  - topic: Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4b
+  - topic: Java
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4c
+  - topic: Equals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4c
+  - topic: Lists
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4c
+  - topic: Comparators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4d
+  - topic: Arrays
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q5a
+  - topic: Java
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q5a
+  - topic: Arrays
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q5b
+  - topic: Java
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q5b

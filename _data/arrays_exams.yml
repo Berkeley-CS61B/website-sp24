@@ -1,0 +1,30 @@
+questions:
+  - topic: Arrays
+    difficulty: moderate
+    type: coding
+    exam: sp21-mt1
+    link: https://drive.google.com/file/d/1S_Fyvyz50DFikHwMcOBcRuFGIZoQMmGK/view
+    solution: https://drive.google.com/file/d/1Kal-nMvoEGD-ijt26bjtnDbwrUTfIl_K/view
+    walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrw4_M8SCLnr04yvqqJG0Ql
+    question numbers: 
+      - q1b, q1c
+  
+  - topic: Arrays
+    difficulty: moderate
+    type: coding
+    exam: fa20-mt1
+    link: https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view
+    solution: https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view
+    walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt
+    question numbers:
+      - q5
+
+  - topic: Arrays
+    difficulty: hard
+    type: coding
+    exam: fa23-mt1
+    link: https://drive.google.com/file/d/1t65JX1RtaEoSyU05hi0b9i7aPMmqLrDV/view
+    solution: https://drive.google.com/file/d/1xDzKVFN1lna14u8rM9KhFsdWXScXD8Rh/view
+    walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRo6vm6ttPycMiKz-GyAz4Q8
+    question numbers: 
+      - q5a, q5b

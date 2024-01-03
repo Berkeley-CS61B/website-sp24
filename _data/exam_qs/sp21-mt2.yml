@@ -1,0 +1,109 @@
+link: https://drive.google.com/file/d/1VlxEIjd19mW8ftxozoPLWYhjBO_yDfia/view
+solutions: https://drive.google.com/file/d/1jqFbU5OyV6_7ttEwTxHeKvIi7cjmC13-/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRq8_jPPPG18wgQcox4WbUa2
+questions:
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2
+  - topic: Git
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4
+  - topic: ADTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4a
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4a
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5a
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5a
+  - topic: B-Trees
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q5b
+  - topic: Red-Black Trees
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q5b
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6
+  - topic: Iterators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: Recursion
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: BSTs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q8b
+  - topic: Recursion
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q8b
+  - topic: BSTs
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q8c
+  - topic: Recursion
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q8c

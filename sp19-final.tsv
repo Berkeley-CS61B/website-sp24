@@ -1,0 +1,44 @@
+sp19-final			Question Type	Difficulty	Topics						
+place question numbers below	questionName										
+q1ai	sp19-final-q1ai	Conceptual, easy, Heaps / PQs, , , , , , , , 	Conceptual	easy	Heaps / PQs						
+q1aii	sp19-final-q1aii	Conceptual, easy, Heaps / PQs, , , , , , , , 	Conceptual	easy	Heaps / PQs						
+q1b	sp19-final-q1b	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q1c	sp19-final-q1c	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q1d	sp19-final-q1d	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q1e	sp19-final-q1e	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q1f	sp19-final-q1f	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q1g	sp19-final-q1g	Conceptual, moderate, Sorting, , , , , , , , 	Conceptual	moderate	Sorting						
+q2a	sp19-final-q2a	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q2b	sp19-final-q2b	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q2c	sp19-final-q2c	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q2d	sp19-final-q2d	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting						
+q3a	sp19-final-q3a	Diagram, easy, MSTs, , , , , , , , 	Diagram	easy	MSTs						
+q3b	sp19-final-q3b	Diagram, easy, SPTs, MSTs, , , , , , , 	Diagram	easy	SPTs	MSTs					
+q3c	sp19-final-q3c	Diagram, easy, MSTs, , , , , , , , 	Diagram	easy	MSTs						
+q3d	sp19-final-q3d	Conceptual, easy, MSTs, , , , , , , , 	Conceptual	easy	MSTs						
+q3e	sp19-final-q3e	Conceptual, easy, SPTs, , , , , , , , 	Conceptual	easy	SPTs						
+q4a	sp19-final-q4a	Coding, easy, BSTs, , , , , , , , 	Coding	easy	BSTs						
+q4b	sp19-final-q4b	Coding, easy, BSTs, , , , , , , , 	Coding	easy	BSTs						
+q5	sp19-final-q5	Potpourri, moderate, Heaps / PQs, SPTs, K-D Trees, Sorting, BSTs, Hashing, Linked Lists, , 	Potpourri	moderate	Heaps / PQs	SPTs	K-D Trees	Sorting	BSTs	Hashing	Linked Lists
+q6	sp19-final-q6	PNH, hard, Java, , , , , , , , 	PNH	hard	Java						
+q7a	sp19-final-q7a	Coding, moderate, Disjoint Sets, , , , , , , , 	Coding	moderate	Disjoint Sets						
+q7b	sp19-final-q7b	Coding, easy, Disjoint Sets, Iterators, , , , , , , 	Coding	easy	Disjoint Sets	Iterators					
+q8a	sp19-final-q8a	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics						
+q8b	sp19-final-q8b	Conceptual, easy, Asymptotics, , , , , , , , 	Conceptual	easy	Asymptotics						
+q8c	sp19-final-q8c	Conceptual, easy, Asymptotics, , , , , , , , 	Conceptual	easy	Asymptotics						
+q8d	sp19-final-q8d	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics						
+q9ai	sp19-final-q9ai	Conceptual, easy, Asymptotics, Reductions, , , , , , , 	Conceptual	easy	Asymptotics	Reductions					
+q9aii	sp19-final-q9aii	Conceptual, easy, Reductions, , , , , , , , 	Conceptual	easy	Reductions						
+q9aiii	sp19-final-q9aiii	Conceptual, moderate, Reductions, , , , , , , , 	Conceptual	moderate	Reductions						
+q10a	sp19-final-q10a	Conceptual, easy, Hashing, , , , , , , , 	Conceptual	easy	Hashing						
+q10b	sp19-final-q10b	Conceptual, moderate, Hashing, , , , , , , , 	Conceptual	moderate	Hashing						
+q10c		Conceptual, moderate, Hashing, , , , , , , , 	Conceptual	moderate	Hashing						
+q10d		Conceptual, moderate, Hashing, Asymptotics, , , , , , , 	Conceptual	moderate	Hashing	Asymptotics					
+q11a		Diagram, moderate, Graph Traversals, , , , , , , , 	Diagram	moderate	Graph Traversals						
+q11b		Diagram, moderate, Graph Traversals, , , , , , , , 	Diagram	moderate	Graph Traversals						
+q11c		Algorithm Design, hard, Graph Traversals, , , , , , , , 	Algorithm Design	hard	Graph Traversals						
+q12a		Diagram, easy, Tree Traversals, , , , , , , , 	Diagram	easy	Tree Traversals						
+q12b		Diagram, easy, Tree Traversals, , , , , , , , 	Diagram	easy	Tree Traversals						
+q12c		Conceptual, moderate, Tree Traversals, , , , , , , , 	Conceptual	moderate	Tree Traversals						
+q12d		Coding, hard, Tree Traversals, , , , , , , , 	Coding	hard	Tree Traversals						
+q12e		Coding, hard, Tree Traversals, , , , , , , , 	Coding	hard	Tree Traversals						

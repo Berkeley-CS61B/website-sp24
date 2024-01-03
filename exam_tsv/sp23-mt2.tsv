@@ -1,0 +1,32 @@
+sp23-mt2			Question Type	Difficulty	Topics	
+place question numbers below	questionName					
+q1	sp23-mt2-q1	, , , , , , , , , , 				
+q1a	sp23-mt2-q1a	Conceptual, easy, ADTs, , , , , , , , 	Conceptual	easy	ADTs	
+q1b	sp23-mt2-q1b	Coding, moderate, ADTs, , , , , , , , 	Coding	moderate	ADTs	
+q1c	sp23-mt2-q1c	WWJD, moderate, DMS, , , , , , , , 	WWJD	moderate	DMS	
+		, , , , , , , , , , 				
+q2	sp23-mt2-q2	, , , , , , , , , , 				
+q2a	sp23-mt2-q2a	Conceptual, easy, BSTs, , , , , , , , 	Conceptual	easy	BSTs	
+q2b	sp23-mt2-q2b	Coding, hard, BSTs, Iterators, , , , , , , 	Coding	hard	BSTs	Iterators
+		, , , , , , , , , , 				
+q3	sp23-mt2-q3	Conceptual, moderate, Disjoint Sets, , , , , , , , 	Conceptual	moderate	Disjoint Sets	
+		, , , , , , , , , , 				
+q4	sp23-mt2-q4	Conceptual, moderate, B-Trees, Red-Black Trees, , , , , , , 	Conceptual	moderate	B-Trees	Red-Black Trees
+		, , , , , , , , , , 				
+q5	sp23-mt2-q5	Coding, hard, BSTs, , , , , , , , 	Coding	hard	BSTs	
+		, , , , , , , , , , 				
+q6.1	sp23-mt2-q6.1	Conceptual, moderate, Hashing, , , , , , , , 	Conceptual	moderate	Hashing	
+q6.2	sp23-mt2-q6.2	Conceptual, hard, Hashing, , , , , , , , 	Conceptual	hard	Hashing	
+		, , , , , , , , , , 				
+q7	sp23-mt2-q7	Conceptual, moderate, Heaps / PQs, , , , , , , , 	Conceptual	moderate	Heaps / PQs	
+		, , , , , , , , , , 				
+q8	sp23-mt2-q8	Conceptual, hard, Asymptotics, , , , , , , , 	Conceptual	hard	Asymptotics	
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				
+		, , , , , , , , , , 				

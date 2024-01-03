@@ -1,0 +1,34 @@
+{%- comment -%}
+  - This code renders one homework box on the syllabus.
+  - See homeworks.yml for how to feed information into this template.
+{%- endcomment -%}
+
+{%- comment -%}
+  If you don't want homework boxes to alternate colors per week,
+  then remove class="{{ include.is_even }}" below.
+{%- endcomment -%}
+<td class="{{ include.is_even }}" rowspan="{{ include.rowspan }}">
+
+{%- comment -%}
+  - TODO: Currently using nonumber to figure out when not to display links. Is there a cleaner way?
+  - TODO: Currently using "due" to figure out whether to display HW.
+    Is there a cleaner way?
+{%- endcomment -%}
+{%- if include.element.nonumber -%}
+  {{ include.element.title | markdownify }}
+{%- elsif include.element.due -%}
+  HW{{ include.number }} {{ include.element.title }}
+  <br>
+  (due {{ include.element.due }})
+
+  {%- if include.element.electronic -%}
+  <br>
+  <a href="{{ include.element.electronic }}">Part 1</a>
+  {%- endif -%}
+
+  {%- if include.element.written -%}
+  <br>
+  <a href="{{ include.element.written }}">Part 2</a>
+  {%- endif -%}
+{%- endif -%}
+</td>

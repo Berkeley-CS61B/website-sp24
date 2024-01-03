@@ -1,0 +1,9 @@
+---
+# Empty front matter
+---
+
+{% include calendar/fullcalendar/core/main.min.css %}
+{% include calendar/fullcalendar/daygrid/main.min.css %}
+{% include calendar/fullcalendar/timegrid/main.min.css %}
+{% include calendar/tooltip/popper.min.css %}
+{% include calendar/calendar_custom.css %}

@@ -1,0 +1,144 @@
+link: https://drive.google.com/file/d/1LQ1Z6cki1dtPg5KGBYaKT53B9ZiPgvXt/view
+solutions: https://drive.google.com/file/d/18OqXS1qtv97nV1gUChcdb58HsMWphQYg/view
+walkthrough: N/A
+questions:
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.1
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.1
+  - topic: Sorting
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q1.2
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.3
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1.4
+  - topic: Sorting
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q2
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3.1
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3.2
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3.3
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3.4
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3.5
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4
+  - topic: SPTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5.1-q5.2
+  - topic: SPTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q5.3
+  - topic: Graph Traversals
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q5.4
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q5.5
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5.6-q5.9
+  - topic: Tries
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.1-q7.2
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.1-q7.2
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.3-q7.4
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.3-q7.4
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.5
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.5
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q8
+  - topic: Iterators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q9
+  - topic: Comparators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q9
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q10

@@ -1,0 +1,224 @@
+link: https://drive.google.com/file/d/1o0vUymXQd_gEMk1Yng8LqH1lJUOunX_0/view
+solutions: https://drive.google.com/file/d/1GqQA_Nb300AiXMrg06vF9NXEBjwP01eA/view
+walkthrough: N/A
+questions:
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1.a
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.b
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1.c
+  - topic: Graph Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1.d
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.e
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.f
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.g
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.g
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.h
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.h
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.i
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1.i
+  - topic: Hashing
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q2.a
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2.b
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2.c
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3.a
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3.b
+  - topic: Tree Traversals
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q3.c
+  - topic: Tree Traversals
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q3.4
+  - topic: Git
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4
+  - topic: B-Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5.a
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5.a
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5.b
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5.c
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6.a
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6.a
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6.b
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6.b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6.b
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6.b
+  - topic: SPTs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6.c
+  - topic: MSTs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q6.c
+  - topic: Sorting
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q7.a
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.b
+  - topic: Sorting
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7.c
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7.c
+  - topic: Heaps / PQs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q8.a
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8.b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8.b
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8.c
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8.c
+  - topic: SPTs
+    difficulty: moderate
+    type: Algorithm Design
+    question numbers:
+      - q9
+  - topic: MSTs
+    difficulty: moderate
+    type: Algorithm Design
+    question numbers:
+      - q9

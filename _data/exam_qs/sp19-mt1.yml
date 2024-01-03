@@ -1,0 +1,79 @@
+link: https://drive.google.com/file/d/1yn4HBkf4f70LLS7Lu7J80DbcxXjn7bkJ/view
+solutions: https://drive.google.com/file/d/1mj6UodqxVgsR7YtU8bSi50FG_R9aYqzl/view
+walkthrough: https://www.youtube.com/watch?v=UlLnJEJhJwY
+questions:
+  - topic: Java
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q1a
+  - topic: Java
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q1b
+  - topic: Java
+    difficulty: easy
+    type: Debugging
+    question numbers:
+      - q2
+  - topic: Java
+    difficulty: hard
+    type: PNH
+    question numbers:
+      - q3
+  - topic: Java
+    difficulty: easy
+    type: Debugging
+    question numbers:
+      - q4a
+  - topic: Lists
+    difficulty: easy
+    type: Debugging
+    question numbers:
+      - q4a
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4b
+  - topic: Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4b
+  - topic: Linked Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Linked Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q6a
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6b
+  - topic: Java
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q7
+  - topic: Comparators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q8
+  - topic: Iterators
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q9a
+  - topic: Iterators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q9b

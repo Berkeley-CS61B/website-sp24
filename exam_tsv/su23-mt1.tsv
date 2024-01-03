@@ -1,0 +1,32 @@
+su23-mt1			Question Type	Difficulty	Topics		
+place question numbers below (prefix with "q")	questionName						
+q1.a	su23-mt1-q1.a	WWJD, moderate, Java, DMS, , , , , , , 	WWJD	moderate	Java	DMS	
+q1.b	su23-mt1-q1.b	WWJD, easy, Java, DMS, , , , , , , 	WWJD	easy	Java	DMS	
+q2.a	su23-mt1-q2.a	Coding, moderate, Java, Iterators, , , , , , , 	Coding	moderate	Java	Iterators	
+q2.b	su23-mt1-q2.b	Coding, hard, Java, Arrays, Iterators, , , , , , 	Coding	hard	Java	Arrays	Iterators
+q3.a	su23-mt1-q3.a	Conceptual, easy, Tree Traversals, , , , , , , , 	Conceptual	easy	Tree Traversals		
+q3.b	su23-mt1-q3.b	Conceptual, moderate, BSTs, , , , , , , , 	Conceptual	moderate	BSTs		
+q4.a	su23-mt1-q4.a	Conceptual, moderate, Comparators, , , , , , , , 	Conceptual	moderate	Comparators		
+q4.b	su23-mt1-q4.b	Conceptual, hard, Comparators, , , , , , , , 	Conceptual	hard	Comparators		
+q4.c	su23-mt1-q4.c	Coding, moderate, Comparators, , , , , , , , 	Coding	moderate	Comparators		
+q4.d	su23-mt1-q4.d	Testing, moderate, Comparators, , , , , , , , 	Testing	moderate	Comparators		
+q5.a	su23-mt1-q5.a	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics		
+q5.b	su23-mt1-q5.b	Conceptual, hard, Asymptotics, , , , , , , , 	Conceptual	hard	Asymptotics		
+q5.c	su23-mt1-q5.c	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics		
+q5.d	su23-mt1-q5.d	Conceptual, moderate, Asymptotics, , , , , , , , 	Conceptual	moderate	Asymptotics		
+q6.a	su23-mt1-q6.a	Coding, moderate, Java, Linked Lists, , , , , , , 	Coding	moderate	Java	Linked Lists	
+q6.b	su23-mt1-q6.b	Coding, moderate, Java, Linked Lists, BSTs, , , , , , 	Coding	moderate	Java	Linked Lists	BSTs
+							
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					
+		, , , , , , , , , , 					

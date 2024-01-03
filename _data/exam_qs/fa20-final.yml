@@ -1,0 +1,154 @@
+link: https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view
+solutions: https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ
+questions:
+  - topic: Java
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q2
+  - topic: Sorting
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q2
+  - topic: Java
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3
+  - topic: Tree Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4a
+  - topic: Iterators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4a
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4b
+  - topic: Iterators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4b
+  - topic: ADTs
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q4b
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4c
+  - topic: Comparators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4c
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4c
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6
+  - topic: Hashing
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q7
+  - topic: Java
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q7
+  - topic: Equals
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q7
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8b
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8b
+  - topic: Red-Black Trees
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q8c
+  - topic: BSTs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q8c
+  - topic: Tree Traversals
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q8c
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q9
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q9
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10a
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10a
+  - topic: SPTs
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q10b

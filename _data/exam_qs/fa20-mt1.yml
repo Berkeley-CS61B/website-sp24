@@ -1,0 +1,204 @@
+link: https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view
+solutions: https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt
+questions:
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q2a
+  - topic: Comparators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q2b
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q2b
+  - topic: Comparators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2c
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2c
+  - topic: Comparators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q2d
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q3a
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q3b
+  - topic: DMS
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q3c
+  - topic: DMS
+    difficulty: hard
+    type: WWJD
+    question numbers:
+      - q4
+  - topic: Inheritance
+    difficulty: hard
+    type: WWJD
+    question numbers:
+      - q4
+  - topic: Java
+    difficulty: hard
+    type: WWJD
+    question numbers:
+      - q4
+  - topic: Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Arrays
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Deques
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Lists
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6a
+  - topic: Java
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6a
+  - topic: Inheritance
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6a
+  - topic: Abstraction
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6a
+  - topic: Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q6b
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q6b
+  - topic: Inheritance
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q6b
+  - topic: Abstraction
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q6b
+  - topic: Lists
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6c
+  - topic: Java
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6c
+  - topic: Inheritance
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6c
+  - topic: Abstraction
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q6c
+  - topic: Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6d
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6d
+  - topic: Inheritance
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6d
+  - topic: Abstraction
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q6d
+  - topic: Deques
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q7a
+  - topic: Deques
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q7b
+  - topic: Abstraction
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q7b
+  - topic: Deques
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q7c
+  - topic: Abstraction
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q7c
+  - topic: Deques
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q7d
+  - topic: Abstraction
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q7d
+  - topic: Deques
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q7e
+  - topic: Abstraction
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q7e

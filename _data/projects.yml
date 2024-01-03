@@ -1,0 +1,46 @@
+#####################################
+# Instructions for updating website #
+#####################################
+
+# To add a project to the website:
+# 1. Upload any necessary files to /assets/projects.
+# 2. Put the project spec in the projects folder (if not already there).
+# 3. In this file, uncomment the "link" attribute to display a link to the spec.
+
+
+#####################################
+# Additional documentation          #
+#####################################
+
+# Each element in the array corresponds to one box on the website.
+# This includes boxes that are blank or don't have a homework.
+
+# The website automatically numbers each element in the array.
+# To skip numbering (e.g. for a blank box), add
+# "nonumber: True" as an attribute.
+
+projects:
+  - due: "Tue, Jan 24"
+    title: "(optional)"
+    link: "projects/proj0/"
+    rowspan: 3
+  - due: "Tue, Jan 31"
+    link: "projects/proj1/"
+    rowspan: 2
+  - due: "Tue, Feb 14"
+    link: "projects/proj2/"
+    rowspan: 4
+  - due: "Tue, Feb 28"
+    link: "projects/proj3/"
+    rowspan: 4
+  - due: "Tue, Mar 14"
+    link: "projects/proj4/"
+    rowspan: 5
+  - due: "Thr, Apr 06"
+    link: "projects/proj5/"
+    rowspan: 7
+  - due: "Fri, Apr 28"
+    link: "projects/proj6/"
+    rowspan: 6
+  - rowspan: 1
+    nonumber: True

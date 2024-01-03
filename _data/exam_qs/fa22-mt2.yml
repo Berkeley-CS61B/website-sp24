@@ -1,0 +1,219 @@
+link: https://drive.google.com/file/d/1-pPuHGuw0anqwnLh3nc_8z2Alqqcnpi5/view
+solutions: https://drive.google.com/file/d/1EorWXul3vuZLpgpCkWUxFuOqn_Z5RaYP/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrt5CU5IAKUcpWpBS4nRpWU
+questions:
+  - topic: Disjoint Sets
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q1
+  - topic: Iterators
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q2
+  - topic: Hashing
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q3a
+  - topic: Hashing
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q3b
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4a
+  - topic: B-Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4a
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4b
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4c
+  - topic: Red-Black Trees
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4d
+  - topic: Red-Black Trees
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4e
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5a
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5a
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5b
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5b
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5b
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5c
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5c
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5c
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5d
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5d
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5d
+  - topic: Heaps / PQs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5e
+  - topic: BSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q5e
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7a
+  - topic: DMS
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7a
+  - topic: Inheritance
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7a
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7b
+  - topic: DMS
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7b
+  - topic: Inheritance
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7b
+  - topic: DMS
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q7c
+  - topic: Inheritance
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q7c
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q7d
+  - topic: Inheritance
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q7d
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7e
+  - topic: DMS
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7e
+  - topic: Inheritance
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7e
+  - topic: Linked Lists
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q8a
+  - topic: ADTs
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q8a
+  - topic: Linked Lists
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q8b
+  - topic: ADTs
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q8b
+  - topic: Linked Lists
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q8c
+  - topic: ADTs
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q8c

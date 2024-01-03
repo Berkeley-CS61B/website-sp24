@@ -1,0 +1,78 @@
+#######################################################
+# Config you will need to change once per semester    #
+#######################################################
+
+# The first and last day of class, respectively.
+# Due to time zone issues, these might not show up exactly on the calendar,
+# so some fiddling is necessary. If you're struggling with time zone issues,
+# try setting your system time to GMT when building the website.
+start_date: 2023-01-17
+end_date: 2023-04-28
+
+# Any other days you want to appear on the calendar (e.g. for one-time events
+# like exams or bonus lectures) can be listed here.
+# Due to time zone issues, these might not show up exactly on the calendar,
+# so some fiddling is necessary. If you're struggling with time zone issues,
+# try setting your system time to GMT when building the website.
+extra_days:
+  - date: 2023-03-06
+  - date: 2023-05-12
+
+# The days of the week we have class on. Ranges from Sunday = 0 and Saturday = 6.
+# For example, for a semester with Tu/Th lectures, put ['2', '4'].
+# For example, for a semester with MWF lectures, put ['1', '3', '5'].
+# For example, for a summer semester, put ['1', '2', '3', '4'].
+class_days: ['2', '4']
+
+# Used in syllabus.html to add a button linking to lecture pptx files, which
+# are a little too big to commit directly into the repo.
+lecturepptx: "https://drive.google.com/drive/folders/1DKQHI8CjBbKFUPlMX_zCKKOK6WHr7Akd"
+
+
+#######################################################
+# Config you might change when course policies change #
+#######################################################
+
+# Where should we start automatically numbering each column?
+# For example, if you set starting_homework_number to 0, then the first homework
+# assignment you create is numbered HW0. If you set it to 1, then that same
+# assignment is numbered HW1 instead.
+starting_lecture_number: '1'
+starting_readings_number: '1'
+starting_discussion_number: '1'
+starting_homework_number: '0'
+starting_project_number: '0'
+# Is the first week of class Week 0 or Week 1? We currently don't support
+# starting at any other week number, so pick '0' or '1' here.
+starting_week_number: '1'
+
+# How many rows should each assignment take up by default?
+# We have one lecture per row. Highly unlikely you'll need to change this.
+default_lecture_rowspan: '1'
+default_readings_rowspan: '1'
+# This probably corresponds to how many rows you have per week, assuming
+# you hold discussion once per week. For example, if you have Tu/Th classes
+# (two rows per week), then your discussion boxes are probably going to
+# take up two rows most of the time, so you'd set default_discussion_rowspan='2'.
+# If you have M/W/F classes, though, this might be '3' instead.
+default_discussion_rowspan: '2'
+# Similar reasoning to discussion, assuming your homeworks are weekly.
+default_homework_rowspan: '2'
+# Project rowspans are too variable, so we just set the default to 1 and
+# never use the default (always manually specifying the rowspan).
+default_project_rowspan: '1'
+
+
+#######################################################
+# Config you will probably never need to change,      #
+# unless you are rebuilding the website               #
+#######################################################
+
+# Edit the widths of columns here.
+week_width: "4%"
+date_width: "7%"
+lecture_width: "24%"
+readings_width: "13%"
+discussion_width: "23%"
+homework_width: "14%"
+project_width: "15%"

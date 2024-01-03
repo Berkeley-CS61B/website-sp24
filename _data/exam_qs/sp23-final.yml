@@ -1,0 +1,254 @@
+link: https://drive.google.com/file/d/1HqkcadiXO8XcxT3Y1E_u6F2dQ2hX6dxY/view
+solutions: https://drive.google.com/file/d/19CKu7FpZmXrKasytgfSkiPm3VBfZMcqC/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRpWcSvVJQNIDt6SH92_yGq2
+questions:
+  - topic: Java
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q1
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q1
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2a
+  - topic: SPTs
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q2b
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2c
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2d
+  - topic: Hashing
+    difficulty: easy
+    type: WWJD
+    question numbers:
+      - q3a
+  - topic: Hashing
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q3b
+  - topic: Hashing
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q3c
+  - topic: Hashing
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q3d
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3e
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3f
+  - topic: Hashing
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q3g
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4a
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4b
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q4c
+  - topic: Asymptotics
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q4d
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4e
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4f
+  - topic: Asymptotics
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q4g
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4h
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4i
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q4j
+  - topic: Tries
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5a
+  - topic: Tries
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5b
+  - topic: Tries
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5c
+  - topic: Tries
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q5d
+  - topic: Abstraction
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: Comparison Sorts
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q6b
+  - topic: Heaps / PQs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q6b
+  - topic: Abstraction
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6c
+  - topic: Comparison Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6c
+  - topic: Radix Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6c
+  - topic: Comparison Sorts
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q6d
+  - topic: Radix Sorts
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q6d
+  - topic: Comparison Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.1a
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.1b
+  - topic: Comparison Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.1c
+  - topic: Comparison Sorts
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7.2ai
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.2aii
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.2bi
+  - topic: Comparison Sorts
+    difficulty: hard
+    type: Conceptual
+    question numbers:
+      - q7.2bii
+  - topic: Radix Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.3a
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.3a
+  - topic: Radix Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.3b
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.3b
+  - topic: Radix Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.3c
+  - topic: Comparison Sorts
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q7.3c
+  - topic: MSTs
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q8a
+  - topic: MSTs
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q8a

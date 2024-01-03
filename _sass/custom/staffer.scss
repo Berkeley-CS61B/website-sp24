@@ -1,0 +1,41 @@
+
+.role {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.staffer {
+  flex-basis: 50%;
+}
+
+.staffer {
+  display: flex;
+  padding: 1rem;
+  padding-right: 4rem;
+
+  .staffer-image {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-right: $sp-4;
+  }
+
+  .staffer-name, p {
+    margin: $sp-1 !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  .staffer-pronouns {
+    @extend .label, .text-grey-dk-100, .bg-grey-lt-200;
+  }
+
+  .staffer-meta {
+    @extend .text-grey-dk-000;
+  }
+}

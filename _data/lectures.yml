@@ -1,0 +1,144 @@
+#####################################
+# Instructions for updating website #
+#####################################
+
+# To upload lecture slides to the website, just put the PDF
+# in assets/lectures using the filename convention above.
+#
+# The link to the slides will automatically appear once you
+# put the PDF with the right filename in the right folder.
+#
+# Lecture slide filepaths are all formatted based on the lecture number.
+# Pad lecture numbers, e.g. lecture 2 uses "02", not "2".
+#
+# For example, the first few lecture slides should be put at:
+#   - /assets/lectures/cs188-sp23-lec01.pdf
+#   - /assets/lectures/cs188-sp23-lec02.pdf
+#     ...
+#   - /assets/lectures/cs188-sp23-lec25.pdf
+
+# To link lecture recordings on the website, fill in the
+# recordings field in the corresponding lecture below.
+
+# Lecture notes are similarly formatted, and links also
+# automatically appear when you put the PDF in the right filename
+# in the right folder.
+#
+# For example, the first few lecture notes should be put at:
+#   - /assets/notes/cs188-sp23-note01.pdf
+#   - /assets/notes/cs188-sp23-note02.pdf
+#     ... 
+#   - /assets/notes/cs188-sp23-note25.pdf
+
+
+#####################################
+# Additional documentation          #
+#####################################
+
+# Each element in the array corresponds to one box on the website.
+# This includes boxes that are blank or don't have a lecture.
+# By default, each box spans 1 row (edit the default in syllabus.yml).
+# To override this, use the "rowspan" attribute to resize a box.
+
+# The website automatically numbers each element in the array.
+# To skip numbering (e.g. for a "no lecture" box), add
+# "nonumber: True" as an attribute.
+
+# To add a box on a date without a lecture, or to add an extra box
+# on a date with a lecture, add the date to the extra_days field
+# in syllabus.yml (more documentation there). Then, to fill in your
+# new box, add an element in the array where the box would appear.
+
+lectures:
+  - title: "Intro to AI, Rational Agents"
+    recording: https://www.youtube.com/watch?v=AMwN-U6K2Lc&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=1
+    textbook: Ch. 1, 2
+  - title: "State Spaces, Uninformed Search"
+    recording: https://www.youtube.com/watch?v=95IOss7tkuQ&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=2
+    textbook: Ch. 3.1–3.4
+  - title: "Informed Search: A* and Heuristics"
+    recording: https://www.youtube.com/watch?v=uPKKtX2TkXQ&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=3
+    textbook: Ch. 3.5–3.6
+  - title: "Local Search"
+    recording: https://www.youtube.com/watch?v=kO4jyfzf_gY&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=3
+    textbook: Ch. 4.1–4.2
+  - title: "Propositional Logic and Planning"
+    recording: https://www.youtube.com/watch?v=X6IjH0AINgQ&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz 
+    textbook: Ch. 7.1–7.4
+  - title: "Boolean Satisfiability, DPLL"
+    recording: https://www.youtube.com/watch?v=YEroykQxAIY&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 8.1–8.2
+    extra: "[Supplement Recording](https://www.youtube.com/watch?v=rNaVPmyTM9Y&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz)"
+  - title: "CSPs I"
+    recording: https://www.youtube.com/watch?v=7Yri1skidfc&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz 
+    textbook: Ch. 6.1
+  - title: "CSPs II"
+    recording: https://www.youtube.com/watch?v=ue8bNp_bpLs&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: 'Ch. 6.2–6.5<br><a href="https://inst.eecs.berkeley.edu/~cs188/fa21/assets/demos/csp/csp_demos.html">CSP Demo</a>'
+  - title: "Games: Trees, Minimax, Pruning"
+    recording: https://www.youtube.com/watch?v=ZOebD-bO0Wo&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 5.1–5.3
+  - title: "Games: Expectimax, Monte Carlo Tree Search"
+    recording: https://www.youtube.com/watch?v=6_E9z6zd2fY&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 5.4–5.5
+  - title: "Markov Decision Processes: Intro"
+    recording: https://www.youtube.com/watch?v=aMc9Hi857sI&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 17.1
+  - title: "MDPs: Dynamic Programming"
+    recording: https://www.youtube.com/watch?v=CMM6GIUWjDg&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 17.2
+  - title: "Reinforcement Learning I"
+    recording: https://www.youtube.com/watch?v=4lFAg6Ys4cA&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch 22.1–22.6
+  - title: "Reinforcement Learning II"
+    recording: https://www.youtube.com/watch?v=ZZuKvqkbAHo&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch 22.1–22.6
+  - title: '[Midterm (8–10pm PT)](https://inst.eecs.berkeley.edu/~cs188/sp23/exam)'
+    nonumber: True
+  - title: "Probability Review, Bayesian Networks"
+    recording: https://www.youtube.com/watch?v=UFk77zfmT5Q&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 13.1
+  - title: "Bayes Nets: Syntax and Semantics"
+    recording: https://www.youtube.com/watch?v=MWeFxC3wes4&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 13.2
+  - title: "Bayes Nets: Variable Elimination"
+    recording: https://www.youtube.com/watch?v=qTV4YhquOXU&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 13.3
+  - title: "Bayes Nets: Sampling"
+    recording: https://www.youtube.com/watch?v=tle2eZr_Trs&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 13.4
+  - title: "Markov Models"
+    recording: https://www.youtube.com/watch?v=aBz_rSkEYSg&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 14.1–14.5
+  - title: "HMMs, Filtering, Viterbi" #Dynamic Bayes Nets, Particle Filtering"
+    recording: https://www.youtube.com/watch?v=wCcfHbE96N8&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 16.1–16.3
+  - title: "No lecture (Spring Break)"
+    nonumber: True
+  - title: "No lecture (Spring Break)"
+    nonumber: True
+  - title: "Dynamic Bayes Nets and Particle Filters"
+    recording: https://www.youtube.com/watch?v=e_deArDpepA&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 16.1–16.3
+  - title: "Utility Theory, Rationality, Decisions"
+    recording: https://www.youtube.com/watch?v=mIARUlY5_8A&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 16.1–16.3
+  - title: "Decision Networks and VPI"
+    recording: https://www.youtube.com/watch?v=Q2kcLIe-sHI&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 16.5–16.7
+  - title: "Machine Learning: Naive Bayes"
+    recording: https://www.youtube.com/watch?v=CTSTHHsu8YI&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 19.1–19.3
+  - title: "Machine Learning: Perceptrons"
+    recording: https://www.youtube.com/watch?v=4cz5GAuNMgc&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch. 20.1–20.6
+  - title: "Machine Learning: Neural Networks"
+    recording: https://www.youtube.com/watch?v=m7SEUImnAd0&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: Ch 21.1–21.5
+  - title: "Neural Networks, AI Ethics"
+    recording: https://www.youtube.com/watch?v=6gI-nWFUYl0&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
+    textbook: 
+  - title: 'Special Topics<br><a href="https://docs.google.com/presentation/d/1UZ_EmbalaaFEPKlBKOZC4UcVB_aPttdOi6zWGOFPMd4">Slides</a> / <a href="https://www.youtube.com/watch?v=n0mpQy_Z4Ak&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz">Recording</a>'
+    textbook: 
+  - title: "Final Exam (11:30am–2:30pm PT)"
+    nonumber: True

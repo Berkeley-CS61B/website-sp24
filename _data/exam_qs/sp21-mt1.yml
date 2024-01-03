@@ -1,0 +1,124 @@
+link: https://drive.google.com/file/d/1S_Fyvyz50DFikHwMcOBcRuFGIZoQMmGK/view
+solutions: https://drive.google.com/file/d/1Kal-nMvoEGD-ijt26bjtnDbwrUTfIl_K/view
+walkthrough: https://www.youtube.com/playlist?list=PLnp31xXvnfRrw4_M8SCLnr04yvqqJG0Ql
+questions:
+  - topic: Arrays
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q1a
+  - topic: Arrays
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q1b
+  - topic: Abstraction
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q1b
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q1b
+  - topic: Arrays
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q1c
+  - topic: Abstraction
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q1c
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q1c
+  - topic: Lists
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1d
+  - topic: Arrays
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1d
+  - topic: Java
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q2
+  - topic: DMS
+    difficulty: moderate
+    type: WWJD
+    question numbers:
+      - q3
+  - topic: Linked Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q4
+  - topic: Linked Lists
+    difficulty: easy
+    type: Testing
+    question numbers:
+      - q4a
+  - topic: Abstraction
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Inheritance
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Lists
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Iteration
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Recursion
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q5
+  - topic: Java
+    difficulty: moderate
+    type: Debugging
+    question numbers:
+      - q6
+  - topic: Java
+    difficulty: moderate
+    type: Testing
+    question numbers:
+      - q6c
+  - topic: Lists
+    difficulty: moderate
+    type: Testing
+    question numbers:
+      - q6c
+  - topic: 2048
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q7
+  - topic: Linked Lists
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q7
+  - topic: Iteration
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q7

@@ -1,0 +1,32 @@
+su23-final			Question Type	Difficulty	Topics			
+place question numbers below (prefix with "q")	questionName							
+q1.a	su23-final-q1.a	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting			
+q1.b	su23-final-q1.b	Conceptual, moderate, Graph Traversals, , , , , , , , 	Conceptual	moderate	Graph Traversals			
+q1.c	su23-final-q1.c	Conceptual, easy, Sorting, , , , , , , , 	Conceptual	easy	Sorting			
+q1.d	su23-final-q1.d	Conceptual, easy, Graph Traversals, , , , , , , , 	Conceptual	easy	Graph Traversals			
+q1.e	su23-final-q1.e	Conceptual, moderate, Sorting, , , , , , , , 	Conceptual	moderate	Sorting			
+q1.f	su23-final-q1.f	Conceptual, moderate, Sorting, , , , , , , , 	Conceptual	moderate	Sorting			
+q1.g	su23-final-q1.g	Conceptual, moderate, Disjoint Sets, Asymptotics, , , , , , , 	Conceptual	moderate	Disjoint Sets	Asymptotics		
+q1.h	su23-final-q1.h	Conceptual, moderate, Disjoint Sets, Asymptotics, , , , , , , 	Conceptual	moderate	Disjoint Sets	Asymptotics		
+q1.i	su23-final-q1.i	Conceptual, moderate, Disjoint Sets, Asymptotics, , , , , , , 	Conceptual	moderate	Disjoint Sets	Asymptotics		
+q2.a	su23-final-q2.a	Diagram, moderate, Hashing, , , , , , , , 	Diagram	moderate	Hashing			
+q2.b	su23-final-q2.b	Conceptual, moderate, Hashing, , , , , , , , 	Conceptual	moderate	Hashing			
+q2.c	su23-final-q2.c	Conceptual, moderate, Hashing, , , , , , , , 	Conceptual	moderate	Hashing			
+q3.a	su23-final-q3.a	Conceptual, easy, Tree Traversals, , , , , , , , 	Conceptual	easy	Tree Traversals			
+q3.b	su23-final-q3.b	Conceptual, easy, Tree Traversals, , , , , , , , 	Conceptual	easy	Tree Traversals			
+q3.c	su23-final-q3.c	Coding, moderate, Tree Traversals, , , , , , , , 	Coding	moderate	Tree Traversals			
+q3.4	su23-final-q3.4	Coding, hard, Tree Traversals, , , , , , , , 	Coding	hard	Tree Traversals			
+q4	su23-final-q4	Conceptual, easy, Git, , , , , , , , 	Conceptual	easy	Git			
+q5.a	su23-final-q5.a	Conceptual, easy, B-Trees, Red-Black Trees, , , , , , , 	Conceptual	easy	B-Trees	Red-Black Trees		
+q5.b	su23-final-q5.b	Conceptual, moderate, Red-Black Trees, , , , , , , , 	Conceptual	moderate	Red-Black Trees			
+q5.c	su23-final-q5.c	Conceptual, moderate, Red-Black Trees, , , , , , , , 	Conceptual	moderate	Red-Black Trees			
+q6.a	su23-final-q6.a	Conceptual, moderate, SPTs, MSTs, , , , , , , 	Conceptual	moderate	SPTs	MSTs		
+q6.b	su23-final-q6.b	Conceptual, moderate, SPTs, Heaps / PQs, Asymptotics, MSTs, , , , , 	Conceptual	moderate	SPTs	Heaps / PQs	Asymptotics	MSTs
+q6.c	su23-final-q6.c	Conceptual, hard, SPTs, MSTs, , , , , , , 	Conceptual	hard	SPTs	MSTs		
+q7.a	su23-final-q7.a	Coding, moderate, Sorting, , , , , , , , 	Coding	moderate	Sorting			
+q7.b	su23-final-q7.b	Conceptual, moderate, Sorting, Asymptotics, , , , , , , 	Conceptual	moderate	Sorting	Asymptotics		
+q7.c	su23-final-q7.c	Conceptual, hard, Sorting, Asymptotics, , , , , , , 	Conceptual	hard	Sorting	Asymptotics		
+q8.a	su23-final-q8.a	Conceptual, hard, Heaps / PQs, , , , , , , , 	Conceptual	hard	Heaps / PQs			
+q8.b	su23-final-q8.b	Conceptual, moderate, Heaps / PQs, Asymptotics, , , , , , , 	Conceptual	moderate	Heaps / PQs	Asymptotics		
+q8.c	su23-final-q8.c	Conceptual, moderate, Heaps / PQs, Asymptotics, , , , , , , 	Conceptual	moderate	Heaps / PQs	Asymptotics		
+q9	su23-final-q9	Algorithm Design, moderate, SPTs, MSTs, , , , , , , 	Algorithm Design	moderate	SPTs	MSTs		

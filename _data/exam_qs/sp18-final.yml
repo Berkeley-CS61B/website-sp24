@@ -1,0 +1,229 @@
+link: https://drive.google.com/file/d/1ADV5iN2OSxP8fHfaGvqlyT39QqncEdij/view
+solutions: https://drive.google.com/file/d/1Wu9X7czbBIAywTLoCcqx07-JF92iCeTi/view
+walkthrough: https://www.youtube.com/watch?v=kavv3_Rk0Jc
+questions:
+  - topic: Graph Traversals
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q1a
+  - topic: Graph Traversals
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q1b
+  - topic: MSTs
+    difficulty: easy
+    type: Diagram
+    question numbers:
+      - q1c
+  - topic: MSTs
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q1d
+  - topic: MSTs
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q1e
+  - topic: MSTs
+    difficulty: moderate
+    type: Diagram
+    question numbers:
+      - q1f
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2a
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2b
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2c
+  - topic: Sorting
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q2d
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q2e
+  - topic: Linked Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q3a
+  - topic: Linked Lists
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q3b
+  - topic: Iterators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q3b
+  - topic: Java
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q3c
+  - topic: Iterators
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q3c
+  - topic: Java
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q3d
+  - topic: Java
+    difficulty: hard
+    type: PNH
+    question numbers:
+      - q4
+  - topic: Hashing
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q5
+  - topic: Graph Traversals
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6a
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q6b
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7a
+  - topic: MSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7b
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q7c
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8a
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8b
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q8b
+  - topic: SPTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q9
+  - topic: Asymptotics
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q9
+  - topic: Sorting
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10
+  - topic: BSTs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10
+  - topic: Heaps / PQs
+    difficulty: moderate
+    type: Conceptual
+    question numbers:
+      - q10
+  - topic: Java
+    difficulty: easy
+    type: Conceptual
+    question numbers:
+      - q11a
+  - topic: Arrays
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q11b
+  - topic: Java
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q11b
+  - topic: Java
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q11c
+  - topic: Java
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q11d
+  - topic: Asymptotics
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q11d
+  - topic: Tree Traversals
+    difficulty: easy
+    type: Coding
+    question numbers:
+      - q12a
+  - topic: Tree Traversals
+    difficulty: moderate
+    type: Coding
+    question numbers:
+      - q12b
+  - topic: Tree Traversals
+    difficulty: hard
+    type: Coding
+    question numbers:
+      - q12c
+  - topic: Graph Traversals
+    difficulty: hard
+    type: Algorithm Design
+    question numbers:
+      - q13

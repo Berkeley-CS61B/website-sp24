@@ -1,0 +1,60 @@
+{%- comment -%}
+  - This code renders one lecture box on the syllabus.
+  - See lectures.yml for how to feed information into this template.
+{%- endcomment -%}
+
+{%- comment -%}
+  If you don't want lecture boxes to alternate colors per week,
+  then remove class="{{ include.is_even }}" below.
+{%- endcomment -%}
+<td class="{{ include.is_even }}" rowspan="{{ include.rowspan }}">
+
+{%- comment -%}
+  - Build filenames automatically from the lecture number.
+  - First pad lecture number (2-->02), then create a base filepath,
+    then create filenames (see lectures.yml for more on filenames).
+{%- endcomment -%}
+{%- assign filenumber = include.number | prepend: '00' | slice: -2, 2 -%}
+{%- assign slides_path = "/assets/lectures/cs188-sp23-lec" | append: filenumber | append: ".pdf" -%}
+
+{%- comment -%}
+  - Automatically check if files exist.
+{%- endcomment -%}
+{%- assign slides_exists = false -%}
+{%- for page in site.static_files -%}
+  {%- if page.path == slides_path -%}
+    {%- assign slides_exists = true -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+  - Slightly hacky way to ensure slides links don't show when there's nonumber.
+{%- endcomment -%}
+{%- if include.element.nonumber -%}
+  {%- assign slides_exists = false -%}
+{%- endif -%}
+
+{%- if include.element.nonumber -%}
+  {{ include.element.title | markdownify }}
+{%- elsif include.element.title -%}
+  {{ include.number }}. {{ include.element.title }}
+{%- endif -%}
+{%- if include.element.recording and slides_exists -%}
+  <br>
+  <a href="{{ slides_path | relative_url }}">Slides</a> / <a href="{{ include.element.recording }}">Recording</a>
+{%- elsif slides_exists -%}
+  <br>
+  <a href="{{ slides_path | relative_url }}">Slides</a>
+{%- elsif include.element.recording -%}
+  <br>
+  <a href="{{ include.element.recording }}">Recording</a>
+{%- endif -%}
+
+{%- comment -%}
+  - In case we want to display anything extra (e.g. extra link) in the box.
+{%- endcomment -%}
+{%- if include.element.extra -%}
+<br>
+{{ include.element.extra | markdownify }}
+{%- endif -%}
+</td>
