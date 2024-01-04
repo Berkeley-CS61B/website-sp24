@@ -2,10 +2,30 @@
 layout: default
 ---
 
-{% if page.has_right_toc %}
-<nav class="content-nav {% if page.title contains 'FAQ' %}nav-faq{% endif %}">
-  {% include toc.html html=content sanitize=true class="nav-list js-toc"
-  item_class="nav-list-item" anchor_class="nav-list-link" h_min=1 h_max=3 %}
-</nav>
-<div class="content-container">{{content}}</div>
-{% else %} {{content}} {% endif %}
+{% if site.under_construction %}
+<p class="warning">
+This site is under construction. All dates and policies are tentative until this message goes away.
+</p>
+{% endif %}
+
+{% capture content %}
+<h1 class="title">{{ page.title }}</h1>
+{% if page.author %}
+  <div class="due-date">Author: {{ page.author }}</div>
+{% endif %}
+{{ content }}
+{% endcapture %}
+{% if page.released or jekyll.environment == "debug" -%}
+  {% if page.has_right_toc %}
+    <nav class="content-nav {% if page.title contains 'FAQ' %}nav-faq{% endif %}">
+      {% include toc.html html=content sanitize=true class="nav-list js-toc"
+      item_class="nav-list-item" anchor_class="nav-list-link" h_min=1 h_max=3 %}
+    </nav>
+    <div class="content-container">{{content}}</div>
+  {% else %} 
+    {{content}} 
+  {% endif %}
+{% else %}
+  <div>This page has not been released yet.</div>
+{% endif %}
+  

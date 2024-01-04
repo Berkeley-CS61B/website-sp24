@@ -85,6 +85,22 @@ callouts:
   warning:
     title: Warning
     color: yellow
+  
+  info:
+    title: Info
+    color: blue
+
+  tip:
+    title: Tip
+    color: green
+
+  task:
+    title: Task
+    color: blue
+
+  danger: 
+    title: Danger
+    color: red
 
 # CS 61B custom config variable (Stolen from CS 188)
 # Set this to true at the start of semesters to show a warning on the homepage

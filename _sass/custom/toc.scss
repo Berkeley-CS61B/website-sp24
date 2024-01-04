@@ -2,14 +2,14 @@ $toc-break: 1140px;
 $y-offset: 60px;
 
 .content-nav {
-  margin: 0;
+  margin: 0 0 2rem;
   padding: 0;
   position: sticky;
   float: right;
   top: 1em;
   flex: 0 0 25%;
   max-width: 25%;
-  max-height: calc(100vh - 2em - $y-offset);
+  max-height: calc(100vh - 2em);
   height: 100%;
   overflow-y: auto;
   font-size: 0.9em;
@@ -26,9 +26,18 @@ $y-offset: 60px;
     padding-bottom: 10px;
   }
 
-  a {
+  .nav-list-link {
     text-decoration: none;
     padding-right: 1em !important;
+    line-height: 1.4rem !important;
+  }
+
+  .nav-list .nav-list-item .nav-list-link {
+    min-height: 1.8rem;
+  }
+
+  ol {
+    margin-top: 0;
   }
 
   ul {

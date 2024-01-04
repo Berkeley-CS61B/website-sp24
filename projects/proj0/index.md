@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Project 0
+title: >-
+  Project 0: 2048
 nav_order: 0
 # nav_exclude: true
 parent: Projects
@@ -9,21 +10,18 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 0 spec.
+released: true
 ---
-
-# Project 0: 2048
-
-{: .no_toc}
 
 Due: <b>Tuesday, January 24, 11:59 PM PT</b>.
-
----
 
 ## FAQ
 
 Each assignment will have an FAQ linked at the top. The
 FAQ for Project 0 is located
 [here](faq.md).
+
+---
 
 ## Introduction
 

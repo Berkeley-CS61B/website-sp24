@@ -2,19 +2,21 @@
 layout: page
 title: FAQ
 nav_order: 0
-parent: Project 0
+parent: >-
+  Project 0: 2048
 grand_parent: Projects
 has_children: true
 has_toc: false
 has_right_toc: false
 description: >-
   Project 0 FAQ.
+released: true
 ---
-
-# Project 0: 2048 - FAQ
 
 Course staff will continuously add to this page as you all ask questions about the project! If you have a question that
 isn't answered here, ask in lab, OH, or on Ed!
+
+---
 
 ## Setup
 
@@ -22,6 +24,8 @@ isn't answered here, ask in lab, OH, or on Ed!
 
 Go into File > Project Structure > Project Settings > Project, and make sure that your Language level is set to 17.
 Additionally, head over to Modules and make sure that the `proj0` Language level is 17.
+
+---
 
 ## Getting Started
 
@@ -44,6 +48,8 @@ with this project though!
 
 <cite>Paraphrased from Shreyas Kallingal.</cite>
 
+---
+
 ## `TestAtLeastOneMoveExists`
 
 ### I pass everything in `TestAtLeastOneMoveExists` except for `testAnyDir`. If my code works for each direction, why would it break for any direction?
@@ -51,6 +57,8 @@ with this project though!
 In this test, the relevant moves are on the border (specifically, the upper-right corner). If you are looping over the
 coordinates in the board, make sure that you are considering _every possible comparison_. For example, your boundary
 condition in the for loop may be off by one.
+
+---
 
 ## `tilt`
 

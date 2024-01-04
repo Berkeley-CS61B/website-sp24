@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 title: Topical Exam Resources
+nav_exclude: true
+released: true
 ---
-
-<h1>Topical Exam Resources</h1>
 
 <style>
 .collapsible {
@@ -40,7 +40,6 @@ title: Topical Exam Resources
 }
 </style>
 
-</head>
 <body>
 <div class='filter-form'>
 <label for='topicFilter'>Topic:</label>
@@ -984,9 +983,6 @@ for (var i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
-</body>
-</html>
 <script>
 function filterQuestions() {
     var topicFilter = document.getElementById('topicFilter').value;
@@ -1024,8 +1020,6 @@ function filterQuestions() {
 
 document.getElementById('filterButton').onclick = filterQuestions;
 </script>
-</body>
-</html>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var checkboxes = document.querySelectorAll('.exam-checkbox');

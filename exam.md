@@ -2,7 +2,7 @@
 title: Exam Logistics
 layout: page
 nav_order: 0
-#nav_exclude: true
+nav_exclude: true
 ---
 
 # Exam Logistics
