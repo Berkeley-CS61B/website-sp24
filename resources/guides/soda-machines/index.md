@@ -39,8 +39,8 @@ When prompted to log in, use your 61B username and the associated password. This
 Thankfully, the software you generally need is already installed on the Soda computers. You will, however, need to set up your personal repository and the 61b specific libraries. Follow these steps from lab 1:
 
 <!-- TODO, relative links -->
-1. [Clone your personal repo](https://sp23.datastructur.es/materials/lab/lab01/#task-setting-up-your-git-repository)
+1. [Clone your personal repo](../../../labs/lab01/#task-setting-up-your-git-repository)
 
-2. [Set up the java libraries](https://sp23.datastructur.es/materials/lab/lab01/#task-setting-up-java-libraries)
+2. [Set up the java libraries](../../../labs/lab01/#task-setting-up-java-libraries)
 
 Now you can use this device in the same way that you use your repo on your personal computer!

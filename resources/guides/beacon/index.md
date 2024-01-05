@@ -13,7 +13,7 @@ released: false
 
 Rather than using bCourses, we will be using our own custom learning management
 system called Beacon at
-[beacon.datastructur.es](https://beacon.datastructur.es/). You can use Beacon
+[beacon.datastructur.es]({{ site.beacon_url }}). You can use Beacon
 to keep track of your grades and late assignments, and you will also use it to
 establish partnerships.
 
@@ -70,7 +70,7 @@ Project 3. You can learn more about the partnerships tab and partnerships in
 
 ## The Extensions Tab
 
-The [extensions tab on Beacon](https://beacon.datastructur.es/extensions/) is
+The [extensions tab on Beacon]({{ site.beacon_url }}/extensions/) is
 where you'll use slip days to extend the deadline for labs and projects. You
 will not be able to request an extension for homework or project checkpoints.
 You will be able to request extensions for project extra credit opportunities

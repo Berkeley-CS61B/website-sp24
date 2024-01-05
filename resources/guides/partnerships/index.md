@@ -79,7 +79,7 @@ some reasons we've dissolved partnerships in the past:
 2.  A variety of personal reasons where a student was uncomfortable.
 3.  One partner has dropped the class.
 
-Fill out [this form](https://beacon.datastructur.es/dissolution/) with the exact
+Fill out [this form]({{ site.beacon_url }}/dissolution/) with the exact
 circumstances of your partnership as well as any commit history/other logs that
 you need to demonstrate the issue. If we believe that a dissolution is
 required, we will dissolve the partnership and you and your old partner will
@@ -94,7 +94,7 @@ dissolution is required, we'll email you letting you know.
 
 If we've OK'd your dissolution, you and your old partner can use the code from
 the point that the partnership was dissolved, but from that point onwards you
-must work in your own private student repo (i.e. your `fa23-s***` repo). Any
+must work in your own private student repo (i.e. your `{{ site.semester }}-s***` repo). Any
 collaboration from after the partnership dissolution will be considered
 academic dishonesty. You and your old partner will have separate checkoff
 grades and hence be graded individually.

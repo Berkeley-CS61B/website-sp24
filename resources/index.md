@@ -12,13 +12,13 @@ has_children: true
 <!-- - [Gitbugs Guide](guides/gitbugs) -->
 
 - [Style Guide](guides/style/index.md)
-- [Discord Guide for Remote Labs](/guides/discord/index.md)
-- [Debugging Guide](/guides/intellij/debugging/index.md)
-- [Ed Policies](/guides/ed/index.md)
-- [Ed Guide for New Users](/guides/ed/ed-guide.md)
-- [Partnerships Guide](/guides/partnerships/index.md)
-- [Office Hours Policies](/guides/oh/index.md)
-- [Guide to Using Soda Machines](/guides/soda-machines/index.md)
+- [Discord Guide for Remote Labs](guides/discord/index.md)
+- [Debugging Guide](guides/intellij/debugging.md)
+- [Ed Policies](guides/ed/index.md)
+- [Ed Guide for New Users](guides/ed/ed-guide.md)
+- [Partnerships Guide](guides/partnerships/index.md)
+- [Office Hours Policies](guides/oh/index.md)
+- [Guide to Using Soda Machines](guides/soda-machines/index.md)
 
 ---
 
@@ -93,9 +93,9 @@ Videos marked with a \* are not created by Course Staff.
 ### IntelliJ
 
 - [Using IntelliJ](guides/intellij/index.md)
-- [IntelliJ WTFs](guides/intellij/wtfs/index.md)
+- [IntelliJ WTFs](guides/intellij/wtfs.md)
 - [JetBrains IntelliJ Docs](https://www.jetbrains.com/help/idea/getting-started.html)
-- [IntelliJ Plugins](guides/intellij/plugin/index.md)
+- [IntelliJ Plugins](guides/intellij/plugins.md)
 
 ---
 

@@ -193,7 +193,7 @@ lab sections to ask questions unrelated to lab.
 
 We will hold Office Hours over Zoom. To learn more about how CS 61B Office
 Hours work, please read our
-[Office Hours Guide](resources/guides/oh/index.md).
+[Office Hours Guide](../resources/guides/oh/index.md).
 We will use the online
 [Office Hours queue](https://oh.datastructur.es) to keep track of students in
 Office Hours. Staff will always skip tickets on the queue that do not adhere
@@ -221,8 +221,8 @@ question about something pertaining to your own code that shouldn’t be shared
 with the class, or if you have a question about a personal matter, you can make
 a private post on Ed, which will only be seen by Josh and the TAs.
 
-Please read our [Ed Guide](resources/guides/ed/ed-guide.md) and
-[Policies](resources/guides/ed/index.md). We will only respond to questions
+Please read our [Ed Guide](../resources/guides/ed/ed-guide.md) and
+[Policies](../resources/guides/ed/index.md). We will only respond to questions
 that adhere to our policies of using Ed.
 
 ### Staff Email
@@ -241,10 +241,10 @@ or sudden necessary travel that result in extended absences), please contact
 ### Beacon
 
 Rather than using bCourses, we will be using our own custom learning management
-system called Beacon located at [beacon.datastructur.es](https://beacon.datastructur.es).
+system called Beacon located at [beacon.datastructur.es]({{ site.beacon_url }}).
 You can use Beacon to keep track of your grades and late assignments.
 You can also read
-our full guide on Beacon [here](resources/guides/beacon/index.md).
+our full guide on Beacon [here](../resources/guides/beacon/index.md).
 
 ### Reading
 
@@ -408,7 +408,7 @@ release of the project (keep an eye on Ed for this) - we will let you know if
 your request is approved shortly before the release of Project 3.
 
 Full details on partnerships can be found
-[here](materials/guides/partnerships/index.md).
+[here](../resources/guides/partnerships/index.md).
 
 ### Exams
 

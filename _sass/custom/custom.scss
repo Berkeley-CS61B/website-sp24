@@ -52,6 +52,13 @@ div.highlight .btn-copy-code:hover {
 div.highlight {
   position: relative;
 }
+img.inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
 
 // End CS 188
 
@@ -62,7 +69,7 @@ code {
   padding: 0.2em 0.4em;
   border: none;
 }
-  
+
 details {
   margin: 0 40px 1em;
 }

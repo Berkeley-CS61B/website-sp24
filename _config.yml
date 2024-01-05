@@ -17,8 +17,15 @@ title: CS 61B Spring 2024
 logo: "/assets/images/bee.png"
 description: Data Structures
 baseurl: '' # (temporary) the subpath of your site, e.g. /blog
-url: https://inst.eecs.berkeley.edu
+url: https://sp24.datastructur.es
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "vendor"]
+
+# Semester variables
+semester: sp24
+semester_full: Spring 2024
+beacon_url: https://sp24.beacon.datastructur.es
+ed_url: 
+gradescope_url: 
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3

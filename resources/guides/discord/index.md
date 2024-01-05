@@ -6,6 +6,7 @@ author: Linda Deng, Zephyr Omaly
 parent: Guides
 grand_parent: Resources
 has_children: false
+nav_exclude: true
 released: false
 ---
 
@@ -21,11 +22,11 @@ To join one of our servers, you will have to complete the following steps.
 
 1. Download the [Discord app](https://discord.com/download) to your personal computer.
 2. Create a Discord account [here](https://discord.com/register), using your Berkeley email.
-   You must ensure that your Discord username includes your name in [Beacon](https://beacon.datastructur.es)
+   You must ensure that your Discord username includes your name in [Beacon]({{ site.beacon_url }})
    or else you may be removed from our servers.
 3. Use [this invitation link](https://discord.gg/HGf3a7P4Dx) to join the Zephyr's Lab.
 4. Upon joining the CS 61B lab server, set your nickname to your full name
-   as it is in [Beacon](https://beacon.datastructur.es). You can use the `/nick` command
+   as it is in [Beacon]({{ site.beacon_url }}). You can use the `/nick` command
    to do this. We may remove accounts that we can't match with a student in this course.
 
 ## Lab Discord Policies

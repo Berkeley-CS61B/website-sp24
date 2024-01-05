@@ -101,9 +101,9 @@ For standard only CS 47B students, there are 320 total points, including 5 labs,
 
 The 47B deadline and extensions policy will align with the self-paced nature of the course.
 
-The **deadlines** for each assignment will follow the due dates set by 61B. These deadlines can be found on the [main page](https://fa23.datastructur.es/) of this website. Changes to these deadlines will be communicated by email.
+The **deadlines** for each assignment will follow the due dates set by 61B. These deadlines can be found on the [main page]({{ site.url }}) of this website. Changes to these deadlines will be communicated by email.
 
-There is no partial credit for submitting late work. However, we have an **extensions policy** to allow for some leniency and flexibility. You may receive credit for work submitted after the deadline by applying for extension requests in Beacon's [Extensions tab](https://fa23.beacon.datastructur.es/extensions/).
+There is no partial credit for submitting late work. However, we have an **extensions policy** to allow for some leniency and flexibility. You may receive credit for work submitted after the deadline by applying for extension requests in Beacon's [Extensions tab]({{ site.beacon_url }}/extensions/).
 
 {: .info}
 Extensions up to 2 weeks will be granted automatically. If you want to request an extension over 2 weeks, you must meet synchronously with the 47B TA, Stella Kaval, to check in and schedule a modified set of deadlines before your request is approved. Emails scheduling this meeting will be sent out when your extension request is made.
@@ -119,7 +119,7 @@ There is one exception: To get credit for Project 3, you will have to do a check
 
 ### Collaboration
 
-All work for CS 47B will be solo except for projects, which you will do as a group of two. You're allowed to talk to others, but your work should be your own. See [Policies on Collaboration and Academic Misconduct](/policies/collaboration-and-academic-misconduct).
+All work for CS 47B will be solo except for projects, which you will do as a group of two. You're allowed to talk to others, but your work should be your own. See [Policies on Collaboration and Academic Misconduct](../index.md#collaboration-and-academic-misconduct).
 
 For Projects 2 and 3, you will be paired with another 47B student. Project pairing forms will be shared closer to each project's release date.
 
@@ -127,18 +127,18 @@ For Projects 2 and 3, you will be paired with another 47B student. Project pairi
 
 Most communication, including announcements and updates, for 47B will be through the 61B course email, [cs47b@berkeley.edu](mailto:cs47b@berkeley.edu).
 
-Additionally, the TA in charge of CS 47B is Stella Kaval. Her contact info can be found on the [course staff page](https://fa23.datastructur.es/staff.html). Please also include the 61B course email!
+Additionally, the TA in charge of CS 47B is Stella Kaval. Her contact info can be found on the [course staff page]({{ site.url }}/staff.html). Please also include the 61B course email!
 
 The course also has a "47B" topic on [61B's Ed forum](https://edstem.org/us/courses/42700/discussion/). If you have questions about the course, feel free to ask them there! Making public posts also allows other 47B students to view and answer them.
 
 ### Getting Help
 
-If you need help with labs, homeworks, or projects, please come to lab or office hours. The schedule is located at the bottom of the [website's main page](https://fa23.datastructur.es/index.html#disccal). All sections are open to 47B students!
+If you need help with labs, homeworks, or projects, please come to lab or office hours. The schedule is located at the bottom of the [website's main page]({{ site.url }}#disccal). All sections are open to 47B students!
 
 ### Getting Started
 
-1. Review the [47B course page](index.md) and the [61B course policies](../../about.md) ("General Background Information", "Resources", "Collaboration and Academic Misconduct" sections).
+1. Review the [47B course page](index.md) and the [61B course policies](../index.md) ("General Background Information", "Resources", "Collaboration and Academic Misconduct" sections).
 2. Check your email for a bCourses invitation to 61B. This will give you access to our course forum Ed and Gradescope. Reach out if you run into issues or have not received an invite.
-3. Start setting up your computer with the instructions in [Lab 1](../lab/lab01/index.md). By the end of this lab, you should have your Github repository, Beacon account, and development environment.
+3. Start setting up your computer with the instructions in [Lab 1](../../labs/lab01/index.md). By the end of this lab, you should have your Github repository, Beacon account, and development environment.
 4. Fill out the [CS 47B introductory survey](https://forms.gle/htrZawELw8f26DD8A).
 5. Get started on coursework. Everything is linked from the [course website](../../). All CS 47B students should start with Lab 1 "Setting Up Your Computer" and work your way down the labs column until you've completed Lab 3. HWs and projects will be released later in the semester.

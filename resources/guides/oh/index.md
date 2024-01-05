@@ -13,7 +13,7 @@ released: true
 In Fall 2023, office hours will be provided both in-person and online. We will be using Zoom to host online office hours. All office hours start on
 **Berkeley time**.
 
-The office hours schedule can be found on the [main page](https://fa23.datastructur.es/#ohcal).
+The office hours schedule can be found on the [main page]({{ site.url }}#ohcal).
 
 ## Joining the Online OH Zoom
 

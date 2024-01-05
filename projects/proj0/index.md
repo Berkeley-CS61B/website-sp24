@@ -35,7 +35,7 @@ the `proj0` folder, your task only resides in `Model.java` and is constrained to
 We will be grading _solely_ on whether you manage to get your program to work
 (according to our tests) and to hand in the assigned pieces. **There are no hidden tests**. In future assignments we
 will also be grading you on style, but that isn't the case with this project. We still recommend following our
-[style61b guide](../../guides/style/index.md) as you'll find that it helps create clean code, but you won't be graded on
+[style61b guide](../../resources/guides/style/index.md) as you'll find that it helps create clean code, but you won't be graded on
 it.
 
 The spec for this assignment is quite long, and there is a lot of starter code. We recommend that you read the entire
@@ -177,7 +177,7 @@ First, make sure that everything in your repository is properly updated and chec
 
     git status
 
-when done in your `fa23-s***` directory should report that the directory is clean and that there are no untracked files
+when done in your `{{ site.semester }}-s***` directory should report that the directory is clean and that there are no untracked files
 that should be added and committed. If there are, simply add and commit.
 
 _Never_ start a new project without doing this.
@@ -186,7 +186,7 @@ To obtain the skeleton files, you should use the command
 
     git pull skeleton main
 
-in your `fa23-s***` directory. You'll see a folder `proj0` containing all of the skeleton code is now in your student
+in your `{{ site.semester }}-s***` directory. You'll see a folder `proj0` containing all of the skeleton code is now in your student
 repo.
 
 In the unlikely event that we must update the skeleton, you can use the same command to update your project with the
@@ -195,7 +195,7 @@ same changes.
 ### Getting restarted: Skeleton
 
 Rather than trying to get your current code to work, you might find yourself wanting to just restart completely. That is
-possible with Git! Simply run this command in your `fa23-s***` directory:
+possible with Git! Simply run this command in your `{{ site.semester }}-s***` directory:
 
     git restore --source=skeleton/main proj0
 
@@ -212,7 +212,7 @@ this you could do the following:
 
 Then later, if you wanted to restore your work that you saved, you could use `git restore` with that commit as the source. If you have trouble with this, post to Ed or ask a TA.
 
-For more information, refer to [this section of the git guide](../../guides/git/#getting-previous-versions-of-files)
+For more information, refer to [this section of the git guide](../../resources/guides/git/#getting-previous-versions-of-files)
 
 ### IntelliJ Setup
 
@@ -237,13 +237,13 @@ The `src` folder contains all the Java source files for the game. The `tests` fo
 IntelliJ is usually smart enough to set up the rest of the things for you, but in case your IntelliJ application is
 having a hard time we'll walk through the setup procedures.
 
-We need to tell IntelliJ that we want to use those `.jar` files in the `library-fa23`
+We need to tell IntelliJ that we want to use those `.jar` files in the `library-{{ site.semester }}`
 folder. Still in the Project Structure, on the left-hand side click the section of the Project Settings called "Library"
-. If you see that `library-fa23` is already added, there is nothing to do. Else, we will click on the "+" button and
-then "Java" which will launch our operating system's file browser, and we'll click on the `library-fa23` folder. Then,
+. If you see that `library-{{ site.semester }}` is already added, there is nothing to do. Else, we will click on the "+" button and
+then "Java" which will launch our operating system's file browser, and we'll click on the `library-{{ site.semester }}` folder. Then,
 in the bottom right of the screen, hit "Apply" and then the blue "OK" button.
 
-In all, the setup would look like this (this is from fa22, fa23 might have different files so don't worry if the files exactly match, also sorry for the blurryness):
+In all, the setup would look like this (this is from fa22, {{ site.semester }} might have different files so don't worry if the files exactly match, also sorry for the blurryness):
 
 ![IntelliJ Setup](img/intellij-setup.gif){:style="display:block; margin-left:auto; margin-right:auto"}
 
@@ -694,7 +694,7 @@ test isn't passing, figure out which part isn't passing and why there is a discr
 properly, or perhaps things don't merge the way they should be. This helps speed things up and might even lead you to
 find your own bug.
 
-If you're posting on Ed, please read our [Ed policies](../../guides/ed/) to make sure you're not
+If you're posting on Ed, please read our [Ed policies](../../resources/guides/ed/) to make sure you're not
 accidentally posting part of your solution and hence violating our academic integrity policies. Otherwise, we welcome
 constructive discussion on our megathreads. Remember to search for your issue before posting a follow-up as many
 students have very similar bugs!
