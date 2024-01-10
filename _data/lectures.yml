@@ -51,220 +51,221 @@
 
 lectures:
   - title: "Intro"
-    slides: 
     recording: 
     readings: 
       - title: "1.1"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap1/chap11.html"
   - title: "Defining and Using Classes"
-    slides: 
     recording: 
     readings: 
       - title: "1.2"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap1/chap12.html"
   - title: "Lists I: References, Recursion, and Lists"
-    slides: 
     recording: 
     readings: 
       - title: "2.1"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap21.html"
   - title: "Lists II: SLLists"
-    slides: 
     recording: 
     readings: 
       - title: "2.2"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap22.html"
   - title: "Lists III: DLLists and Arrays"
-    slides: 
     recording: 
     readings: 
       - title: "2.3"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap23.html"
       - title: "2.4"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap24.html"
   - title: "Testing"
-    slides: 
     recording: 
     readings: 
       - title: "TDD is dead"
+        link: "https://dhh.dk/2014/tdd-is-dead-long-live-testing.html"
       - title: "Unit Tests Are Waste"
+        link: "http://www.rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf"
       - title: "Response"
+        link: "http://henrikwarne.com/2014/09/04/a-response-to-why-most-unit-testing-is-waste/"
   - title: "Lists IV: Arrays and Lists"
-    slides: 
     recording: 
     readings: 
       - title: "2.5"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap25.html"
   - title: "Inheritance I: Interface and Implementation Inheritance"
-    slides: 
     recording: 
     readings: 
       - title: "4.1"
+        link: "https://joshhug.gitbooks.io/hug61b/content/chap4/chap41.html"
   - title: "Inheritance II: Extends, Casting, Higher Order Functions"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 9"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-extends-casting-higher-order-functions"
   - title: "Inheritance III: Subtype Polymorphism, Comparators, Comparable"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 11"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/11.-subtype-polymorphism-comparators-comparable"
   - title: "Inheritance IV: Iterators, Object Methods"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 12"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/12.-exceptions-iterators-object-methods"
   - title: "Asymptotics I"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 13"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/13.-asymptotics-i"
   - title: "Ask Anything: Midterm 1"
-    slides: 
     recording: 
   - title: "Disjoint Sets"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 14"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/14.-disjoint-sets"
   - title: "No Lecture (Academic Holiday)"
     nonumber: true
   - title: "Asymptotics II"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 15"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/15.-asymptotics-ii"
   - title: "ADTs, Sets, Maps, BSTs"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 16"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/16.-adts-and-bsts"
   - title: "B-Trees (2-3, 2-3-4 Trees)"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 17"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/17.-b-trees"
   - title: "Red Black Trees"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 18"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/18.-red-black-trees"
   - title: "Hashing"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 19"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/19.-hashing"
   - title: "Hashing II"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 20"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/20.-hashing-ii"
   - title: "Heaps and Priority Queues"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 21"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/21.-heaps-and-priority-queues"
   - title: "Tree and Graph Traversals"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 22"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/22.-tree-traversals-and-graphs"
   - title: "Graph Traversals and Implementations"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 23"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/23.-graph-traversals-and-implementations"
   - title: "Shortest Paths"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 24"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/24.-shortest-paths"
   - title: "Minimum Spanning Trees"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 25"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/25.-minimum-spanning-trees"
   - title: "Prefix Operations and Tries"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 26"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/26.-prefix-operations-and-tries"
   - title: "Software Engineering I"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 27"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/27.-software-engineering-i"
     classes:
       - optional
   - title: "Directed Acyclic Graphs"
-    slides: 
     recording: 
     readings: 
     - title: "Ch 28"
+      link: "https://cs61b-2.gitbook.io/cs61b-textbook/28.-reductions-and-decomposition"
   - title: "No Lecture (Spring Break)"
     rowspan: 3
     nonumber: true
   - title: "Sorting I: Selection Sort, Heapsort, Mergesort"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 29"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/29.-basic-sorts"
   - title: "Sorting II: Insertion Sort and Quicksort"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 30"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/30.-quicksort"
   - title: "Software Engineering II"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 31"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/31.-software-engineering-ii"
     classes:
       - optional
   - title: "Sorting III: More Quicksort, Quick Select"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 32"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/32.-more-quick-sort-sorting-summary"
   - title: "Software Engineering III"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 33"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/33.-software-engineering-iii"
     classes:
       - optional
   - title: "Sorting IV: Sorting and Algorithmic Bounds"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 34"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
   - title: "Sorting V: Radix Sorts"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 35"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/35.-radix-sorts"
   - title: "Sorting VI: Radix vs. Comparison Sorting"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 36"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/36.-sorting-and-data-structures-conclusion"
   - title: "Software Engineering IV"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 37"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/37-software-engineering-iv"
     classes:
       - optional
   - title: "Compression"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 38"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/38.-compression-and-complexity"
     classes:
       - optional
   - title: "Complexity and P=NP?"
-    slides: 
     recording: 
     readings: 
       - title: "Ch 39"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/39.-compression-complexity-p-np"
     classes:
       - optional
   - title: "Summary, Fun"
-    slides: 
     recording: 
     classes:
     - optional

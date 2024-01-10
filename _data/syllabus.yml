@@ -40,6 +40,7 @@ starting_lecture_number: '1'
 starting_readings_number: '1'
 starting_discussion_number: '1'
 starting_lab_number: '1'
+starting_homework_number: '0'
 starting_project_number: '0'
 # Is the first week of class Week 0 or Week 1? We currently don't support
 # starting at any other week number, so pick '0' or '1' here.
@@ -57,8 +58,9 @@ default_readings_rowspan: '1'
 default_discussion_rowspan: '3'
 # Similar reasoning to discussion, assuming your homeworks are weekly.
 default_lab_rowspan: '3'
-# Project rowspans are too variable, so we just set the default to 1 and
+# Project and homework rowspans are too variable, so we just set the default to 1 and
 # never use the default (always manually specifying the rowspan).
+default_homework_rowspan: '1'
 default_project_rowspan: '1'
 
 
@@ -72,6 +74,7 @@ week_width: "3%"
 date_width: "8%"
 lecture_width: "24%"
 readings_width: "13%"
-discussion_width: "23%"
-homework_width: "14%"
-project_width: "15%"
+discussion_width: "20%"
+lab_width: "12%"
+homework_width: "10%"
+project_width: "10%"

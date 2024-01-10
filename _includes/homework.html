@@ -1,8 +1,8 @@
-<td rowspan="{{ include.rowspan }}" class="project {{ include.element.classes | join ' '}}">
+<td rowspan="{{ include.rowspan }}" class="homework {{ include.element.classes | join ' '}}">
 {%- if include.element.nonumber -%}
   {%- assign content = include.element.title -%}
 {%- else -%}
-  {%- capture content -%}Project {{ include.number }}: {{ include.element.title }}{%- endcapture -%} 
+  {%- capture content -%}Homework {{ include.number }}: {{ include.element.title }}{%- endcapture -%} 
 {%- endif -%}
 {%- if include.element.link -%}
   <a href="{{ include.element.link | relative_url }}">{{ content }}</a>

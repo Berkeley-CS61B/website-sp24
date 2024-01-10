@@ -20,13 +20,22 @@ th {
 
 table {
   td.is-even {
-    background-color: darken($body-background-color, 5%);
+    background-color: darken($body-background-color, 3%)
   }
   td.border-hack {
     border-left: 1px solid $border-color;
   }
   td.optional {
-    background-color: rgba($purple-000, 0.3)
+    background-color: rgba($purple-000, 0.2)
+  }
+  td.homework {
+    background-color: rgba($blue-000, 0.1)
+  }
+  td.project {
+    background-color: rgba($green-000, 0.1)
+  }
+  td.blank {
+    background-color: darken($body-background-color, 3%)
   }
 }
 

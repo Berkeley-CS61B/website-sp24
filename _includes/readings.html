@@ -1,6 +1,8 @@
 <td class="{{ include.is_even }}" rowspan="{{ include.rowspan }}">
-{%- if include.element.textbook -%}
-  {{ include.element.textbook }}
+{%- if include.element != nil -%}
+  {%- for reading in include.element -%}
+    <a href="{{ reading.link }}">{{ reading.title }}</a>{% unless forloop.last %}, {% endunless %}
+  {%- endfor -%}
 {%- endif -%}
 
 {%- comment -%}
@@ -32,5 +34,4 @@
   <br>
   <a href="{{ notes_path | relative_url }}">Note {{ include.number }}</a>
 {%- endif -%}
-{%- }
 </td>
