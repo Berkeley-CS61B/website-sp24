@@ -349,7 +349,7 @@ There are 5 required homework assignments in the course.
 We have three kinds of homework:
 
 - Programming homeworks (HW0, HW2), which will be similar to labs.
-- HW 1 (week 3) is a homework about being a good classmate in CS courses. It is intended to set the
+- HW1 is a homework about being a good classmate in CS courses. It is intended to set the
   norms for the course, and remind us as to how we can respect and include
   all members of the Berkeley community in CS 61B.
 - Conceptual assignments due shortly before midterm 2 (HW3) and the final (HW4) to help you study for the
@@ -722,52 +722,34 @@ can find them [here](academic-misconduct/index.md).
 
 The expected deadlines for each assignment are posted on the class website. Our assumption is that you will complete each assignment by its due date. Especially in the first few weeks, the course content builds on itself, and not completing an assignment will make it much more difficult to complete later assignments and do well on exams.
 
-There is no partial credit for work that is submitted late.
-
-And thus, by default, Gradescope will give you zero points if you submit after the deadline.
+There is no partial credit for work that is submitted late. And thus, Gradescope will give you zero points if you submit after the deadline.
 
 However, we understand that you may be busy, tired, or experiencing a crisis. We would like your grade to reflect what you demonstrate proficiency in and accomplish in the class, and have designed some flexibility to our lateness policy to achieve that as much as possible. Your health, safety, and well-being are the priority, and ideally your grades should reflect what you have learned, not when you learned it.
 
-Our extensions policy consists of two phases.
+### Extensions
 
-### Phase 1
+By default, all assignments will follow this extension policy:
 
-Phase 1 includes assignments between the start of the semester until around week 5. Assignments in Phase 1 are: Homeworks 0-1, Labs 1-5, and Projects 0-1.
+- Short extension: Extension requests of less than 24 hours will be instantly processed by an automatic system,
+- Long extension: Extension requests between 24-72 hours will be manually processed by GSIs and will receive a reply within 1 business day.
+  
+Extensions requests can be made in Beacon ([guide](extensions/index.md)) and will require you to provide detailed reasons for your extension. Extensions can be requested in Beacon. If you have [extenuating circumstances](#extenuating-circumstances), you may request a longer extension. Extensions are not guaranteed.
 
-During this phase, there are two types of extensions:
-
-- Short extension: Extensions submitted for less than 24 hours will be instantly processed by an automatic system,
-- Long extension: Extensions submitted for 24-72 hours will be manually processed by GSIs and will receive a reply within 1 business day.
-  Extensions beyond 72 cannot be granted using the Beacon extension system.
-
-All extensions will require you to provide detailed reasons for your extension. If you have [extenuating circumstances](#extenuating-circumstances), you may request a longer extension. Extensions are not guaranteed.
-
-### Phase 2
-
-Around the middle of week 6, the extensions policy enters Phase 2 where the course content builds on itself in a less time-critical manner. Assignments in Phase 2 are: Homeworks 2-4, Labs 6-15, and Projects 2-3.
-
-- Short extension: Extended to 72 hours
-- Long extension: Extended to between 72-120 hours. Extensions beyond 120 hours cannot be granted through Beacon.
-
-Like Phase 1, all extensions will require you to provide detailed reasons for your extension. If you have [extenuating circumstances](#extenuating-circumstances), you may request a longer extension. Extensions are not guaranteed.
+{: .warning}
+> **Exceptions:**
+> 1. For **Project 2 only**, a short extension will be up to 72 hours and a long extension will be 72-120 hours. Like before, short extensions are automatically granted while long extensions require manual approval.
+> 2. Surveys may **not** be extended.
+> 3. Conceptual homeworks (HW3 and HW4) may **not** be extended, as we will release solutions as exam prep.
+> 4. Project 3B/C may **not** be extended, as it is difficult to arrange late project presentations.
 
 {: .info}
 An important note on extensions: leading up to an assignment deadline, we usually provide increased support for that assignment (in the form of incrased staffing). As a result, continuing to work on an assignment after the original deadline may lead to slower respones times on Ed/longer wait times in OH, as staff will actively prioritize assignments whose deadlines have not passed.
-
-{: .warning}
-> **Some aspects of the course cannot be extended:**
-> 
-> - Surveys may not be extended.
-> - Conceptual homeworks may not be extended, as we will release solutions as
->   exam prep.
-> - Project 3 Phase 2 may not be extended, as it is difficult to arrange late
->   project presentations.
 
 ---
 
 ## Extenuating Circumstances
 
-If you have an extenuating circumstance that requires more than 120 additional hours, there is a separate Google form and a more involved process.
+If you have an extenuating circumstance that requires an extension past what can be requested in Beacon, there is a separate Google form and a more involved process.
 
 We define extenuating circumstances as circumstances outside of the student’s control that directly inhibits the student’s ability to complete assignments in a timely manner. Some examples include unforeseen physical/mental health crises, technical issues (broken laptop), family emergency, etc.
 

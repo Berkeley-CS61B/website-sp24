@@ -2,8 +2,8 @@
 layout: page
 title: Requesting Extensions
 author: Allen Gu
-parent: Guides
-grand_parent: Resources
+parent: Policies
+nav_exclude: true
 has_children: false
 released: true
 ---

@@ -2,11 +2,13 @@
 layout: page
 title: Topical Exam Resources
 nav_exclude: true
+parent: Resources
+grand_parent: Exams
 released: true
 ---
 
 <style>
-.collapsible {
+.ter-collapsible {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -21,15 +23,15 @@ released: true
   align-items: center;
 }
 
-.collapsible .toggle-icon {
+.ter-collapsible .toggle-icon {
   transition: transform 0.3s ease;
 }
 
-.active .toggle-icon {
+.ter-active .toggle-icon {
   transform: rotate(90deg);
 }
 
-.active, .collapsible:hover {
+.ter-active, .ter-collapsible:hover {
   background-color: #ccc;
 }
 
@@ -109,7 +111,7 @@ released: true
 <button id='filterButton' onclick='filterQuestions()'>Filter</button>
 </div>
 <p></p>
-<button id='java-button' class='collapsible'>Java <span class='toggle-icon'>&#9656;</span></button>
+<button id='java-button' class='ter-collapsible'>Java <span class='toggle-icon'>&#9656;</span></button>
 <div id='java-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='WWJD'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: WWJD &nbsp;Question: q2   <input type='checkbox' id='chk-fa20-final-q2' class='exam-checkbox' /><label for='chk-fa20-final-q2'></label></li>
@@ -168,7 +170,7 @@ released: true
 </ul>
 </div>
 
-<button id='git-button' class='collapsible'>Git <span class='toggle-icon'>&#9656;</span></button>
+<button id='git-button' class='ter-collapsible'>Git <span class='toggle-icon'>&#9656;</span></button>
 <div id='git-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Conceptual'>sp21-mt2 &nbsp;<a href='https://drive.google.com/file/d/1VlxEIjd19mW8ftxozoPLWYhjBO_yDfia/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1jqFbU5OyV6_7ttEwTxHeKvIi7cjmC13-/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRq8_jPPPG18wgQcox4WbUa2'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Conceptual &nbsp;Question: q3   <input type='checkbox' id='chk-sp21-mt2-q3' class='exam-checkbox' /><label for='chk-sp21-mt2-q3'></label></li>
@@ -176,14 +178,14 @@ released: true
 </ul>
 </div>
 
-<button id='testing-button' class='collapsible'>Testing <span class='toggle-icon'>&#9656;</span></button>
+<button id='testing-button' class='ter-collapsible'>Testing <span class='toggle-icon'>&#9656;</span></button>
 <div id='testing-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Coding'>fa22-mt1 &nbsp;<a href='https://drive.google.com/file/d/1Y7iOyo4pFS2x-2BLNtLShtZSgrk13aKl/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nxtpZZLtNfS3kYlUn2e8FukQipq140CU/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRqIlfun5U1Cwyy5AHaf7Hve'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Coding &nbsp;Question: q4   <input type='checkbox' id='chk-fa22-mt1-q4' class='exam-checkbox' /><label for='chk-fa22-mt1-q4'></label></li>
 </ul>
 </div>
 
-<button id='lists-button' class='collapsible'>Lists <span class='toggle-icon'>&#9656;</span></button>
+<button id='lists-button' class='ter-collapsible'>Lists <span class='toggle-icon'>&#9656;</span></button>
 <div id='lists-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>fa20-mt1 &nbsp;<a href='https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q5   <input type='checkbox' id='chk-fa20-mt1-q5' class='exam-checkbox' /><label for='chk-fa20-mt1-q5'></label></li>
@@ -202,7 +204,7 @@ released: true
 </ul>
 </div>
 
-<button id='linked-lists-button' class='collapsible'>Linked Lists <span class='toggle-icon'>&#9656;</span></button>
+<button id='linked-lists-button' class='ter-collapsible'>Linked Lists <span class='toggle-icon'>&#9656;</span></button>
 <div id='linked-lists-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa22-final &nbsp;<a href='https://drive.google.com/file/d/1LQ1Z6cki1dtPg5KGBYaKT53B9ZiPgvXt/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/18OqXS1qtv97nV1gUChcdb58HsMWphQYg/view'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q7.3-q7.4   <input type='checkbox' id='chk-fa22-final-q7.3-q7.4' class='exam-checkbox' /><label for='chk-fa22-final-q7.3-q7.4'></label></li>
@@ -229,7 +231,7 @@ released: true
 </ul>
 </div>
 
-<button id='arrays-button' class='collapsible'>Arrays <span class='toggle-icon'>&#9656;</span></button>
+<button id='arrays-button' class='ter-collapsible'>Arrays <span class='toggle-icon'>&#9656;</span></button>
 <div id='arrays-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>fa20-mt1 &nbsp;<a href='https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q5   <input type='checkbox' id='chk-fa20-mt1-q5' class='exam-checkbox' /><label for='chk-fa20-mt1-q5'></label></li>
@@ -252,7 +254,7 @@ released: true
 </ul>
 </div>
 
-<button id='deques-button' class='collapsible'>Deques <span class='toggle-icon'>&#9656;</span></button>
+<button id='deques-button' class='ter-collapsible'>Deques <span class='toggle-icon'>&#9656;</span></button>
 <div id='deques-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>fa20-mt1 &nbsp;<a href='https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q5   <input type='checkbox' id='chk-fa20-mt1-q5' class='exam-checkbox' /><label for='chk-fa20-mt1-q5'></label></li>
@@ -264,7 +266,7 @@ released: true
 </ul>
 </div>
 
-<button id='abstraction-button' class='collapsible'>Abstraction <span class='toggle-icon'>&#9656;</span></button>
+<button id='abstraction-button' class='ter-collapsible'>Abstraction <span class='toggle-icon'>&#9656;</span></button>
 <div id='abstraction-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Testing'>fa20-mt1 &nbsp;<a href='https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Testing &nbsp;Question: q6a   <input type='checkbox' id='chk-fa20-mt1-q6a' class='exam-checkbox' /><label for='chk-fa20-mt1-q6a'></label></li>
@@ -283,7 +285,7 @@ released: true
 </ul>
 </div>
 
-<button id='inheritance-button' class='collapsible'>Inheritance <span class='toggle-icon'>&#9656;</span></button>
+<button id='inheritance-button' class='ter-collapsible'>Inheritance <span class='toggle-icon'>&#9656;</span></button>
 <div id='inheritance-content' class='content'>
 <ul>
 <li data-difficulty='hard' data-type='WWJD'>fa20-mt1 &nbsp;<a href='https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt'>Walkthrough</a> &nbsp;Difficulty: hard &nbsp;Type: WWJD &nbsp;Question: q4   <input type='checkbox' id='chk-fa20-mt1-q4' class='exam-checkbox' /><label for='chk-fa20-mt1-q4'></label></li>
@@ -301,7 +303,7 @@ released: true
 </ul>
 </div>
 
-<button id='dms-button' class='collapsible'>DMS <span class='toggle-icon'>&#9656;</span></button>
+<button id='dms-button' class='ter-collapsible'>DMS <span class='toggle-icon'>&#9656;</span></button>
 <div id='dms-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='WWJD'>fa20-mt1 &nbsp;<a href='https://drive.google.com/file/d/1uZBrjtJMZd1M5dFbyztC1KsACZSrAGBg/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1sQFkLAorx7RRLnrVL9lYOcPSXh45QOyQ/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrNoNH3oqlZ5sKvqLLATVzt'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: WWJD &nbsp;Question: q3a   <input type='checkbox' id='chk-fa20-mt1-q3a' class='exam-checkbox' /><label for='chk-fa20-mt1-q3a'></label></li>
@@ -323,7 +325,7 @@ released: true
 </ul>
 </div>
 
-<button id='iterators-button' class='collapsible'>Iterators <span class='toggle-icon'>&#9656;</span></button>
+<button id='iterators-button' class='ter-collapsible'>Iterators <span class='toggle-icon'>&#9656;</span></button>
 <div id='iterators-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q4a   <input type='checkbox' id='chk-fa20-final-q4a' class='exam-checkbox' /><label for='chk-fa20-final-q4a'></label></li>
@@ -344,7 +346,7 @@ released: true
 </ul>
 </div>
 
-<button id='comparators-button' class='collapsible'>Comparators <span class='toggle-icon'>&#9656;</span></button>
+<button id='comparators-button' class='ter-collapsible'>Comparators <span class='toggle-icon'>&#9656;</span></button>
 <div id='comparators-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q4c   <input type='checkbox' id='chk-fa20-final-q4c' class='exam-checkbox' /><label for='chk-fa20-final-q4c'></label></li>
@@ -361,7 +363,7 @@ released: true
 </ul>
 </div>
 
-<button id='equals-button' class='collapsible'>Equals <span class='toggle-icon'>&#9656;</span></button>
+<button id='equals-button' class='ter-collapsible'>Equals <span class='toggle-icon'>&#9656;</span></button>
 <div id='equals-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='WWJD'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: WWJD &nbsp;Question: q7   <input type='checkbox' id='chk-fa20-final-q7' class='exam-checkbox' /><label for='chk-fa20-final-q7'></label></li>
@@ -369,7 +371,7 @@ released: true
 </ul>
 </div>
 
-<button id='asymptotics-button' class='collapsible'>Asymptotics <span class='toggle-icon'>&#9656;</span></button>
+<button id='asymptotics-button' class='ter-collapsible'>Asymptotics <span class='toggle-icon'>&#9656;</span></button>
 <div id='asymptotics-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q5   <input type='checkbox' id='chk-fa20-final-q5' class='exam-checkbox' /><label for='chk-fa20-final-q5'></label></li>
@@ -453,7 +455,7 @@ released: true
 </ul>
 </div>
 
-<button id='disjoint-sets-button' class='collapsible'>Disjoint Sets <span class='toggle-icon'>&#9656;</span></button>
+<button id='disjoint-sets-button' class='ter-collapsible'>Disjoint Sets <span class='toggle-icon'>&#9656;</span></button>
 <div id='disjoint-sets-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa22-final &nbsp;<a href='https://drive.google.com/file/d/1LQ1Z6cki1dtPg5KGBYaKT53B9ZiPgvXt/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/18OqXS1qtv97nV1gUChcdb58HsMWphQYg/view'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q1.3   <input type='checkbox' id='chk-fa22-final-q1.3' class='exam-checkbox' /><label for='chk-fa22-final-q1.3'></label></li>
@@ -471,7 +473,7 @@ released: true
 </ul>
 </div>
 
-<button id='adts-button' class='collapsible'>ADTs <span class='toggle-icon'>&#9656;</span></button>
+<button id='adts-button' class='ter-collapsible'>ADTs <span class='toggle-icon'>&#9656;</span></button>
 <div id='adts-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Coding'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Coding &nbsp;Question: q4b   <input type='checkbox' id='chk-fa20-final-q4b' class='exam-checkbox' /><label for='chk-fa20-final-q4b'></label></li>
@@ -486,7 +488,7 @@ released: true
 </ul>
 </div>
 
-<button id='bsts-button' class='collapsible'>BSTs <span class='toggle-icon'>&#9656;</span></button>
+<button id='bsts-button' class='ter-collapsible'>BSTs <span class='toggle-icon'>&#9656;</span></button>
 <div id='bsts-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q8a   <input type='checkbox' id='chk-fa20-final-q8a' class='exam-checkbox' /><label for='chk-fa20-final-q8a'></label></li>
@@ -523,7 +525,7 @@ released: true
 </ul>
 </div>
 
-<button id='b-trees-button' class='collapsible'>B-Trees <span class='toggle-icon'>&#9656;</span></button>
+<button id='b-trees-button' class='ter-collapsible'>B-Trees <span class='toggle-icon'>&#9656;</span></button>
 <div id='b-trees-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Conceptual'>fa22-mt2 &nbsp;<a href='https://drive.google.com/file/d/1-pPuHGuw0anqwnLh3nc_8z2Alqqcnpi5/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1EorWXul3vuZLpgpCkWUxFuOqn_Z5RaYP/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrt5CU5IAKUcpWpBS4nRpWU'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Conceptual &nbsp;Question: q4a   <input type='checkbox' id='chk-fa22-mt2-q4a' class='exam-checkbox' /><label for='chk-fa22-mt2-q4a'></label></li>
@@ -544,7 +546,7 @@ released: true
 </ul>
 </div>
 
-<button id='red-black-trees-button' class='collapsible'>Red-Black Trees <span class='toggle-icon'>&#9656;</span></button>
+<button id='red-black-trees-button' class='ter-collapsible'>Red-Black Trees <span class='toggle-icon'>&#9656;</span></button>
 <div id='red-black-trees-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q8a   <input type='checkbox' id='chk-fa20-final-q8a' class='exam-checkbox' /><label for='chk-fa20-final-q8a'></label></li>
@@ -577,7 +579,7 @@ released: true
 </ul>
 </div>
 
-<button id='hashing-button' class='collapsible'>Hashing <span class='toggle-icon'>&#9656;</span></button>
+<button id='hashing-button' class='ter-collapsible'>Hashing <span class='toggle-icon'>&#9656;</span></button>
 <div id='hashing-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='WWJD'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: WWJD &nbsp;Question: q7   <input type='checkbox' id='chk-fa20-final-q7' class='exam-checkbox' /><label for='chk-fa20-final-q7'></label></li>
@@ -627,7 +629,7 @@ released: true
 </ul>
 </div>
 
-<button id='heaps-/-pqs-button' class='collapsible'>Heaps / PQs <span class='toggle-icon'>&#9656;</span></button>
+<button id='heaps-/-pqs-button' class='ter-collapsible'>Heaps / PQs <span class='toggle-icon'>&#9656;</span></button>
 <div id='heaps-/-pqs-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q4c   <input type='checkbox' id='chk-fa20-final-q4c' class='exam-checkbox' /><label for='chk-fa20-final-q4c'></label></li>
@@ -661,7 +663,7 @@ released: true
 </ul>
 </div>
 
-<button id='tree-traversals-button' class='collapsible'>Tree Traversals <span class='toggle-icon'>&#9656;</span></button>
+<button id='tree-traversals-button' class='ter-collapsible'>Tree Traversals <span class='toggle-icon'>&#9656;</span></button>
 <div id='tree-traversals-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q3   <input type='checkbox' id='chk-fa20-final-q3' class='exam-checkbox' /><label for='chk-fa20-final-q3'></label></li>
@@ -693,7 +695,7 @@ released: true
 </ul>
 </div>
 
-<button id='graph-traversals-button' class='collapsible'>Graph Traversals <span class='toggle-icon'>&#9656;</span></button>
+<button id='graph-traversals-button' class='ter-collapsible'>Graph Traversals <span class='toggle-icon'>&#9656;</span></button>
 <div id='graph-traversals-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q9   <input type='checkbox' id='chk-fa20-final-q9' class='exam-checkbox' /><label for='chk-fa20-final-q9'></label></li>
@@ -716,7 +718,7 @@ released: true
 </ul>
 </div>
 
-<button id='spts-button' class='collapsible'>SPTs <span class='toggle-icon'>&#9656;</span></button>
+<button id='spts-button' class='ter-collapsible'>SPTs <span class='toggle-icon'>&#9656;</span></button>
 <div id='spts-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q9   <input type='checkbox' id='chk-fa20-final-q9' class='exam-checkbox' /><label for='chk-fa20-final-q9'></label></li>
@@ -750,7 +752,7 @@ released: true
 </ul>
 </div>
 
-<button id='msts-button' class='collapsible'>MSTs <span class='toggle-icon'>&#9656;</span></button>
+<button id='msts-button' class='ter-collapsible'>MSTs <span class='toggle-icon'>&#9656;</span></button>
 <div id='msts-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q6   <input type='checkbox' id='chk-fa20-final-q6' class='exam-checkbox' /><label for='chk-fa20-final-q6'></label></li>
@@ -785,7 +787,7 @@ released: true
 </ul>
 </div>
 
-<button id='tries-button' class='collapsible'>Tries <span class='toggle-icon'>&#9656;</span></button>
+<button id='tries-button' class='ter-collapsible'>Tries <span class='toggle-icon'>&#9656;</span></button>
 <div id='tries-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Conceptual'>fa22-final &nbsp;<a href='https://drive.google.com/file/d/1LQ1Z6cki1dtPg5KGBYaKT53B9ZiPgvXt/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/18OqXS1qtv97nV1gUChcdb58HsMWphQYg/view'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Conceptual &nbsp;Question: q6   <input type='checkbox' id='chk-fa22-final-q6' class='exam-checkbox' /><label for='chk-fa22-final-q6'></label></li>
@@ -800,7 +802,7 @@ released: true
 </ul>
 </div>
 
-<button id='sorting-button' class='collapsible'>Sorting <span class='toggle-icon'>&#9656;</span></button>
+<button id='sorting-button' class='ter-collapsible'>Sorting <span class='toggle-icon'>&#9656;</span></button>
 <div id='sorting-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='WWJD'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: WWJD &nbsp;Question: q2   <input type='checkbox' id='chk-fa20-final-q2' class='exam-checkbox' /><label for='chk-fa20-final-q2'></label></li>
@@ -844,21 +846,21 @@ released: true
 </ul>
 </div>
 
-<button id='2048-button' class='collapsible'>2048 <span class='toggle-icon'>&#9656;</span></button>
+<button id='2048-button' class='ter-collapsible'>2048 <span class='toggle-icon'>&#9656;</span></button>
 <div id='2048-content' class='content'>
 <ul>
 <li data-difficulty='hard' data-type='Coding'>sp21-mt1 &nbsp;<a href='https://drive.google.com/file/d/1S_Fyvyz50DFikHwMcOBcRuFGIZoQMmGK/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1Kal-nMvoEGD-ijt26bjtnDbwrUTfIl_K/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrw4_M8SCLnr04yvqqJG0Ql'>Walkthrough</a> &nbsp;Difficulty: hard &nbsp;Type: Coding &nbsp;Question: q7   <input type='checkbox' id='chk-sp21-mt1-q7' class='exam-checkbox' /><label for='chk-sp21-mt1-q7'></label></li>
 </ul>
 </div>
 
-<button id='percolation-button' class='collapsible'>Percolation <span class='toggle-icon'>&#9656;</span></button>
+<button id='percolation-button' class='ter-collapsible'>Percolation <span class='toggle-icon'>&#9656;</span></button>
 <div id='percolation-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>fa23-mt2 &nbsp;<a href='https://drive.google.com/file/d/1rT67b4j7ek12SHC1d5LwLVV085QZpRCW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1VgzKzWCXydHqPp7oieUdwBDfxnr_F1EI/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrq7bTJZI5Tm49oA4NiRZq9'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q3   <input type='checkbox' id='chk-fa23-mt2-q3' class='exam-checkbox' /><label for='chk-fa23-mt2-q3'></label></li>
 </ul>
 </div>
 
-<button id='k-d-trees-button' class='collapsible'>K-D Trees <span class='toggle-icon'>&#9656;</span></button>
+<button id='k-d-trees-button' class='ter-collapsible'>K-D Trees <span class='toggle-icon'>&#9656;</span></button>
 <div id='k-d-trees-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Potpourri'>sp19-final &nbsp;<a href='https://drive.google.com/file/d/1ADV5iN2OSxP8fHfaGvqlyT39QqncEdij/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1Wu9X7czbBIAywTLoCcqx07-JF92iCeTi/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/watch?v=kavv3_Rk0Jc'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Potpourri &nbsp;Question: q5   <input type='checkbox' id='chk-sp19-final-q5' class='exam-checkbox' /><label for='chk-sp19-final-q5'></label></li>
@@ -870,7 +872,7 @@ released: true
 </ul>
 </div>
 
-<button id='reductions-button' class='collapsible'>Reductions <span class='toggle-icon'>&#9656;</span></button>
+<button id='reductions-button' class='ter-collapsible'>Reductions <span class='toggle-icon'>&#9656;</span></button>
 <div id='reductions-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Conceptual'>sp19-final &nbsp;<a href='https://drive.google.com/file/d/1ADV5iN2OSxP8fHfaGvqlyT39QqncEdij/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1Wu9X7czbBIAywTLoCcqx07-JF92iCeTi/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/watch?v=kavv3_Rk0Jc'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Conceptual &nbsp;Question: q9ai   <input type='checkbox' id='chk-sp19-final-q9ai' class='exam-checkbox' /><label for='chk-sp19-final-q9ai'></label></li>
@@ -879,7 +881,7 @@ released: true
 </ul>
 </div>
 
-<button id='graph-representations-button' class='collapsible'>Graph Representations <span class='toggle-icon'>&#9656;</span></button>
+<button id='graph-representations-button' class='ter-collapsible'>Graph Representations <span class='toggle-icon'>&#9656;</span></button>
 <div id='graph-representations-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Conceptual'>su22-final &nbsp;<a href='https://drive.google.com/file/d/19UmQMyvFu5pCAbBGq2Pgs2UIPFBc3DkD/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1IhC1tuAE3ESGbgmcd9I_DD7IDNgHSyXF/view'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Conceptual &nbsp;Question: q2b   <input type='checkbox' id='chk-su22-final-q2b' class='exam-checkbox' /><label for='chk-su22-final-q2b'></label></li>
@@ -889,7 +891,7 @@ released: true
 </ul>
 </div>
 
-<button id='comparison-sorts-button' class='collapsible'>Comparison Sorts <span class='toggle-icon'>&#9656;</span></button>
+<button id='comparison-sorts-button' class='ter-collapsible'>Comparison Sorts <span class='toggle-icon'>&#9656;</span></button>
 <div id='comparison-sorts-content' class='content'>
 <ul>
 <li data-difficulty='hard' data-type='Coding'>sp23-final &nbsp;<a href='https://drive.google.com/file/d/1HqkcadiXO8XcxT3Y1E_u6F2dQ2hX6dxY/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/19CKu7FpZmXrKasytgfSkiPm3VBfZMcqC/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRpWcSvVJQNIDt6SH92_yGq2'>Walkthrough</a> &nbsp;Difficulty: hard &nbsp;Type: Coding &nbsp;Question: q6b   <input type='checkbox' id='chk-sp23-final-q6b' class='exam-checkbox' /><label for='chk-sp23-final-q6b'></label></li>
@@ -914,14 +916,14 @@ released: true
 </ul>
 </div>
 
-<button id='topological-sort-button' class='collapsible'>Topological Sort <span class='toggle-icon'>&#9656;</span></button>
+<button id='topological-sort-button' class='ter-collapsible'>Topological Sort <span class='toggle-icon'>&#9656;</span></button>
 <div id='topological-sort-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>su22-final &nbsp;<a href='https://drive.google.com/file/d/19UmQMyvFu5pCAbBGq2Pgs2UIPFBc3DkD/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1IhC1tuAE3ESGbgmcd9I_DD7IDNgHSyXF/view'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q3c   <input type='checkbox' id='chk-su22-final-q3c' class='exam-checkbox' /><label for='chk-su22-final-q3c'></label></li>
 </ul>
 </div>
 
-<button id='radix-sorts-button' class='collapsible'>Radix Sorts <span class='toggle-icon'>&#9656;</span></button>
+<button id='radix-sorts-button' class='ter-collapsible'>Radix Sorts <span class='toggle-icon'>&#9656;</span></button>
 <div id='radix-sorts-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>sp23-final &nbsp;<a href='https://drive.google.com/file/d/1HqkcadiXO8XcxT3Y1E_u6F2dQ2hX6dxY/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/19CKu7FpZmXrKasytgfSkiPm3VBfZMcqC/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRpWcSvVJQNIDt6SH92_yGq2'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q6c   <input type='checkbox' id='chk-sp23-final-q6c' class='exam-checkbox' /><label for='chk-sp23-final-q6c'></label></li>
@@ -933,28 +935,28 @@ released: true
 </ul>
 </div>
 
-<button id='regex-button' class='collapsible'>Regex <span class='toggle-icon'>&#9656;</span></button>
+<button id='regex-button' class='ter-collapsible'>Regex <span class='toggle-icon'>&#9656;</span></button>
 <div id='regex-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>sp22-final &nbsp;<a href='N/A'>Exam</a> &nbsp;<a href='N/A'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q2   <input type='checkbox' id='chk-sp22-final-q2' class='exam-checkbox' /><label for='chk-sp22-final-q2'></label></li>
 </ul>
 </div>
 
-<button id='bits-button' class='collapsible'>Bits <span class='toggle-icon'>&#9656;</span></button>
+<button id='bits-button' class='ter-collapsible'>Bits <span class='toggle-icon'>&#9656;</span></button>
 <div id='bits-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>sp22-final &nbsp;<a href='N/A'>Exam</a> &nbsp;<a href='N/A'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q3   <input type='checkbox' id='chk-sp22-final-q3' class='exam-checkbox' /><label for='chk-sp22-final-q3'></label></li>
 </ul>
 </div>
 
-<button id='game-trees-button' class='collapsible'>Game Trees <span class='toggle-icon'>&#9656;</span></button>
+<button id='game-trees-button' class='ter-collapsible'>Game Trees <span class='toggle-icon'>&#9656;</span></button>
 <div id='game-trees-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>sp22-final &nbsp;<a href='N/A'>Exam</a> &nbsp;<a href='N/A'>Solution</a> &nbsp;<a href='N/A'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q5c   <input type='checkbox' id='chk-sp22-final-q5c' class='exam-checkbox' /><label for='chk-sp22-final-q5c'></label></li>
 </ul>
 </div>
 
-<button id='iteration-button' class='collapsible'>Iteration <span class='toggle-icon'>&#9656;</span></button>
+<button id='iteration-button' class='ter-collapsible'>Iteration <span class='toggle-icon'>&#9656;</span></button>
 <div id='iteration-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>sp21-mt1 &nbsp;<a href='https://drive.google.com/file/d/1S_Fyvyz50DFikHwMcOBcRuFGIZoQMmGK/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1Kal-nMvoEGD-ijt26bjtnDbwrUTfIl_K/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrw4_M8SCLnr04yvqqJG0Ql'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q5   <input type='checkbox' id='chk-sp21-mt1-q5' class='exam-checkbox' /><label for='chk-sp21-mt1-q5'></label></li>
@@ -962,7 +964,7 @@ released: true
 </ul>
 </div>
 
-<button id='recursion-button' class='collapsible'>Recursion <span class='toggle-icon'>&#9656;</span></button>
+<button id='recursion-button' class='ter-collapsible'>Recursion <span class='toggle-icon'>&#9656;</span></button>
 <div id='recursion-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Coding'>sp21-mt1 &nbsp;<a href='https://drive.google.com/file/d/1S_Fyvyz50DFikHwMcOBcRuFGIZoQMmGK/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1Kal-nMvoEGD-ijt26bjtnDbwrUTfIl_K/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrw4_M8SCLnr04yvqqJG0Ql'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Coding &nbsp;Question: q5   <input type='checkbox' id='chk-sp21-mt1-q5' class='exam-checkbox' /><label for='chk-sp21-mt1-q5'></label></li>
@@ -974,10 +976,10 @@ released: true
 
 
 <script>
-var coll = document.getElementsByClassName('collapsible');
+var coll = document.getElementsByClassName('ter-collapsible');
 for (var i = 0; i < coll.length; i++) {
   coll[i].addEventListener('click', function() {
-    this.classList.toggle('active');
+    this.classList.toggle('ter-active');
     var content = this.nextElementSibling;
     content.style.display = content.style.display === 'block' ? 'none' : 'block';
   });
@@ -989,7 +991,7 @@ function filterQuestions() {
     var difficultyFilter = document.getElementById('difficultyFilter').value;
     var typeFilter = document.getElementById('typeFilter').value;
 
-    var coll = document.getElementsByClassName('collapsible');
+    var coll = document.getElementsByClassName('ter-collapsible');
     for (var i = 0; i < coll.length; i++) {
         var content = coll[i].nextElementSibling;
         var listItems = content.getElementsByTagName('li');
@@ -1014,7 +1016,7 @@ function filterQuestions() {
         });
 
         coll[i].style.display = anyVisible ? '' : 'none';
-        content.style.display = anyVisible && coll[i].classList.contains('active') ? 'block' : 'none';
+        content.style.display = anyVisible && coll[i].classList.contains('ter-active') ? 'block' : 'none';
     }
 }
 
