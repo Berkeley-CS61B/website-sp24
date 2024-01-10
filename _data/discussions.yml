@@ -42,67 +42,36 @@
 # TODO: Document how we add walkthrough video links.
 
 discussions:
-  - title: "No discussion"
+  - title: "No Discussion"
     nonumber: True
     rowspan: 2
-  - title: "Uninformed Search"
+  - title: "Introduction to Java"
     solutions: True
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg7xpOi3AdW-gYDu4cIoAynO"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg4IuIV4eTuO1q_L9V0pss5H"
-  - title: "Informed Search"
+  - title: "Scope, Static, Linked Lists, Arrays"
     solutions: True
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg76g4FEZcLo9xW0M3mrEBlx"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg6HPphaNRXthbUy_yqTIYTR"
-  - title: "Logic"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg4-3v_h0xLoCU7psYwVvGJV"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg7o3P6PuqwL4phz4es7BrXV"
-  - title: "CSPs"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg6q3SODGkolEajkUcUbf92U"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5NqLcArQ9exA0bc1jkJg77"
-  - title: "Games"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg509DKw4QHYaAyQRQ3mrsMA"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5SS5t-3WTcW0Klr5da20DN"
-  - title: "Midterm Review"
-    # you can put markdown here to link multiple worksheets
-    override: |
-      Search: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-search.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-search-sols.pdf)
-      Logic: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-logic.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-logic-sols.pdf)
-      CSPs: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-csp.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-csp-sols.pdf)
-      Games: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-games.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-games-sols.pdf)
-      MDPs: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-mdp.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/mt-mdp-sols.pdf)
-      [Videos](https://www.youtube.com/playlist?list=PLp8QV47qJEg5x9no__zyz1A3NqA3oOZey)
+  - title: "Inheritance"
+    solutions: True
+  - title: "Comparators, Iterators"
+    solutions: True
+  - title: "Asymptotics, Disjoint Sets"
+    solutions: True
+  - title: "ADTs, Asymptotics II, BSTs"
+    solutions: True
+  - title: "B-Trees, LLRBs, Hashing"
+    solutions: True
+  - title: "Graphs, Heaps"
+    solutions: True
+  - title: "Shortest Paths, MSTs"
+    solutions: True
   - title: "No Discussion"
     nonumber: True
-    rowspan: 3
-  - title: "MDPs"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg4b-Iz8l77RKATpQZuNeDNL"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5s2taXuKWy3GZAc5L6-OEw"
-  - title: "RL"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg7LXf6TrZM_ctm5ObmfFIfj"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg59BtwjmatlJqrvcleDl-k4"
+  - title: "Graphs II, Tries"
+    solutions: True
+  - title: "Sorting"
+    solutions: True
+  - title: "More Sorting"
+    solutions: True
+  - title: "Goodbye, Fun"
+    solutions: True
   - title: "No Discussion"
     nonumber: True
-  - title: "Bayes' Nets"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5mp57hMF7RAkULN7zSgIMB"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5hUb_noG2ykA7Ezhj6mDmv"
-  - title: "HMMs, Particle Filtering"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg7p-9d0ROw3EGZNLQp4lBNN"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5C6lzwK7mUvfcf_wdmzy89"
-  - title: "Decision Networks, VPI"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5FVCAGWdqdm-E9VoTi4uiW"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg7fuZi5tnFdhrerJJqdBa19"
-  - title: "Machine Learning"
-    regular_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5OcW__ZNN1IxFB-BIl6fF9"
-    examprep_video: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5-h_8Z3zFuNEFMFuE_T8Tt"
-  - title: "Final Review"
-    rowspan: 1
-    override: |
-      Search/Logic: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-search-logic.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-search-logic-sols.pdf)<br>
-      CSPs: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-csp.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-csp-sols.pdf)<br>
-      Games: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-games.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-games-sols.pdf)<br>
-      MDPs/RL: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-mdp-rl.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-mdp-rl-sols.pdf)<br>
-      Bayes' Nets: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-bayes.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-bayes-sols.pdf)<br>
-      HMMs: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-hmm.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-hmm-sols.pdf)<br>
-      VPI: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-vpi.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-vpi-sols.pdf)<br>
-      ML: [Worksheet](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-ml.pdf) / [Solutions](https://inst.eecs.berkeley.edu/~cs188/sp23/assets/discussions/final-ml-sols.pdf)<br>
-      [Videos](https://www.youtube.com/playlist?list=PLp8QV47qJEg4hPsWBilu3Q8qfzK-TuPqA)

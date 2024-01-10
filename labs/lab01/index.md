@@ -287,7 +287,7 @@ you will need to be checked off by filling out the form linked on Beacon.
 > If you need help with creating directories, creating files, changing
 directories, etc., refer back to [_How to Use the Terminal_](terminal.md). Another
 resource that might be helpful is [Section C of the Using Git Guide](../../resources/guides/git#staging--committing). 
-
+> 
 > **As a quick recap, you may find the following git commands useful**: `git init`, `git add`, 
 `git commit`, `git status`, `git log`, `git restore`.
 
@@ -510,7 +510,7 @@ You will need the magic word (obtained from checkoff) to complete this
 step.
 
 Open the file `lab01/magic_word.txt` in a text editor, and edit it to contain
-the **magic word** obtained during the [git exercise][].
+the **magic word** obtained during the [git exercise][{{ site.beacon_url }}].
 
 [git exercise]: #task-git-exercise
 
@@ -544,7 +544,7 @@ Our work is now on GitHub, and ready to submit!
 ## Task: Submitting to Gradescope
 
 Although we use GitHub to store our programming work, we use **Gradescope** to
-actually grade it. The last step is to submit your work with [Gradescope][],
+actually grade it. The last step is to submit your work with [Gradescope][{{ site.gradescope_url }}],
 which we use to autograde programming assignments.
 
 {: .info}
@@ -553,8 +553,6 @@ Make sure to login using the email address listed on CalCentral.
 > 
 > If you're having trouble accessing the course on Gradescope or would like to use
 a different email address, ask your TA!
-> 
-> [gradescope]: https://gradescope.com
 
 {: .warning}
 As above, **we strongly encourage you to make frequent commits!** Lack of

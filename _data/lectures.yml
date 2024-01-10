@@ -50,95 +50,226 @@
 # new box, add an element in the array where the box would appear.
 
 lectures:
-  - title: "Intro to AI, Rational Agents"
-    recording: https://www.youtube.com/watch?v=AMwN-U6K2Lc&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=1
-    textbook: Ch. 1, 2
-  - title: "State Spaces, Uninformed Search"
-    recording: https://www.youtube.com/watch?v=95IOss7tkuQ&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=2
-    textbook: Ch. 3.1–3.4
-  - title: "Informed Search: A* and Heuristics"
-    recording: https://www.youtube.com/watch?v=uPKKtX2TkXQ&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=3
-    textbook: Ch. 3.5–3.6
-  - title: "Local Search"
-    recording: https://www.youtube.com/watch?v=kO4jyfzf_gY&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz&index=3
-    textbook: Ch. 4.1–4.2
-  - title: "Propositional Logic and Planning"
-    recording: https://www.youtube.com/watch?v=X6IjH0AINgQ&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz 
-    textbook: Ch. 7.1–7.4
-  - title: "Boolean Satisfiability, DPLL"
-    recording: https://www.youtube.com/watch?v=YEroykQxAIY&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 8.1–8.2
-    extra: "[Supplement Recording](https://www.youtube.com/watch?v=rNaVPmyTM9Y&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz)"
-  - title: "CSPs I"
-    recording: https://www.youtube.com/watch?v=7Yri1skidfc&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz 
-    textbook: Ch. 6.1
-  - title: "CSPs II"
-    recording: https://www.youtube.com/watch?v=ue8bNp_bpLs&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: 'Ch. 6.2–6.5<br><a href="https://inst.eecs.berkeley.edu/~cs188/fa21/assets/demos/csp/csp_demos.html">CSP Demo</a>'
-  - title: "Games: Trees, Minimax, Pruning"
-    recording: https://www.youtube.com/watch?v=ZOebD-bO0Wo&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 5.1–5.3
-  - title: "Games: Expectimax, Monte Carlo Tree Search"
-    recording: https://www.youtube.com/watch?v=6_E9z6zd2fY&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 5.4–5.5
-  - title: "Markov Decision Processes: Intro"
-    recording: https://www.youtube.com/watch?v=aMc9Hi857sI&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 17.1
-  - title: "MDPs: Dynamic Programming"
-    recording: https://www.youtube.com/watch?v=CMM6GIUWjDg&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 17.2
-  - title: "Reinforcement Learning I"
-    recording: https://www.youtube.com/watch?v=4lFAg6Ys4cA&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch 22.1–22.6
-  - title: "Reinforcement Learning II"
-    recording: https://www.youtube.com/watch?v=ZZuKvqkbAHo&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch 22.1–22.6
-  - title: '[Midterm (8–10pm PT)](https://inst.eecs.berkeley.edu/~cs188/sp23/exam)'
-    nonumber: True
-  - title: "Probability Review, Bayesian Networks"
-    recording: https://www.youtube.com/watch?v=UFk77zfmT5Q&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 13.1
-  - title: "Bayes Nets: Syntax and Semantics"
-    recording: https://www.youtube.com/watch?v=MWeFxC3wes4&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 13.2
-  - title: "Bayes Nets: Variable Elimination"
-    recording: https://www.youtube.com/watch?v=qTV4YhquOXU&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 13.3
-  - title: "Bayes Nets: Sampling"
-    recording: https://www.youtube.com/watch?v=tle2eZr_Trs&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 13.4
-  - title: "Markov Models"
-    recording: https://www.youtube.com/watch?v=aBz_rSkEYSg&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 14.1–14.5
-  - title: "HMMs, Filtering, Viterbi" #Dynamic Bayes Nets, Particle Filtering"
-    recording: https://www.youtube.com/watch?v=wCcfHbE96N8&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 16.1–16.3
-  - title: "No lecture (Spring Break)"
-    nonumber: True
-  - title: "No lecture (Spring Break)"
-    nonumber: True
-  - title: "Dynamic Bayes Nets and Particle Filters"
-    recording: https://www.youtube.com/watch?v=e_deArDpepA&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 16.1–16.3
-  - title: "Utility Theory, Rationality, Decisions"
-    recording: https://www.youtube.com/watch?v=mIARUlY5_8A&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 16.1–16.3
-  - title: "Decision Networks and VPI"
-    recording: https://www.youtube.com/watch?v=Q2kcLIe-sHI&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 16.5–16.7
-  - title: "Machine Learning: Naive Bayes"
-    recording: https://www.youtube.com/watch?v=CTSTHHsu8YI&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 19.1–19.3
-  - title: "Machine Learning: Perceptrons"
-    recording: https://www.youtube.com/watch?v=4cz5GAuNMgc&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch. 20.1–20.6
-  - title: "Machine Learning: Neural Networks"
-    recording: https://www.youtube.com/watch?v=m7SEUImnAd0&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: Ch 21.1–21.5
-  - title: "Neural Networks, AI Ethics"
-    recording: https://www.youtube.com/watch?v=6gI-nWFUYl0&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz
-    textbook: 
-  - title: 'Special Topics<br><a href="https://docs.google.com/presentation/d/1UZ_EmbalaaFEPKlBKOZC4UcVB_aPttdOi6zWGOFPMd4">Slides</a> / <a href="https://www.youtube.com/watch?v=n0mpQy_Z4Ak&list=PLp8QV47qJEg7WWVg_5eOECzVPpy23UjJz">Recording</a>'
-    textbook: 
-  - title: "Final Exam (11:30am–2:30pm PT)"
-    nonumber: True
+  - title: "Intro"
+    slides: 
+    recording: 
+    readings: 
+      - title: "1.1"
+  - title: "Defining and Using Classes"
+    slides: 
+    recording: 
+    readings: 
+      - title: "1.2"
+  - title: "Lists I: References, Recursion, and Lists"
+    slides: 
+    recording: 
+    readings: 
+      - title: "2.1"
+  - title: "Lists II: SLLists"
+    slides: 
+    recording: 
+    readings: 
+      - title: "2.2"
+  - title: "Lists III: DLLists and Arrays"
+    slides: 
+    recording: 
+    readings: 
+      - title: "2.3"
+      - title: "2.4"
+  - title: "Testing"
+    slides: 
+    recording: 
+    readings: 
+      - title: "TDD is dead"
+      - title: "Unit Tests Are Waste"
+      - title: "Response"
+  - title: "Lists IV: Arrays and Lists"
+    slides: 
+    recording: 
+    readings: 
+      - title: "2.5"
+  - title: "Inheritance I: Interface and Implementation Inheritance"
+    slides: 
+    recording: 
+    readings: 
+      - title: "4.1"
+  - title: "Inheritance II: Extends, Casting, Higher Order Functions"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 9"
+  - title: "Inheritance III: Subtype Polymorphism, Comparators, Comparable"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 11"
+  - title: "Inheritance IV: Iterators, Object Methods"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 12"
+  - title: "Asymptotics I"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 13"
+  - title: "Ask Anything: Midterm 1"
+    slides: 
+    recording: 
+  - title: "Disjoint Sets"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 14"
+  - title: "No Lecture (Academic Holiday)"
+    nonumber: true
+  - title: "Asymptotics II"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 15"
+  - title: "ADTs, Sets, Maps, BSTs"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 16"
+  - title: "B-Trees (2-3, 2-3-4 Trees)"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 17"
+  - title: "Red Black Trees"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 18"
+  - title: "Hashing"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 19"
+  - title: "Hashing II"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 20"
+  - title: "Heaps and Priority Queues"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 21"
+  - title: "Tree and Graph Traversals"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 22"
+  - title: "Graph Traversals and Implementations"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 23"
+  - title: "Shortest Paths"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 24"
+  - title: "Minimum Spanning Trees"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 25"
+  - title: "Prefix Operations and Tries"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 26"
+  - title: "Software Engineering I"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 27"
+    classes:
+      - optional
+  - title: "Directed Acyclic Graphs"
+    slides: 
+    recording: 
+    readings: 
+    - title: "Ch 28"
+  - title: "No Lecture (Spring Break)"
+    rowspan: 3
+    nonumber: true
+  - title: "Sorting I: Selection Sort, Heapsort, Mergesort"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 29"
+  - title: "Sorting II: Insertion Sort and Quicksort"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 30"
+  - title: "Software Engineering II"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 31"
+    classes:
+      - optional
+  - title: "Sorting III: More Quicksort, Quick Select"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 32"
+  - title: "Software Engineering III"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 33"
+    classes:
+      - optional
+  - title: "Sorting IV: Sorting and Algorithmic Bounds"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 34"
+  - title: "Sorting V: Radix Sorts"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 35"
+  - title: "Sorting VI: Radix vs. Comparison Sorting"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 36"
+  - title: "Software Engineering IV"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 37"
+    classes:
+      - optional
+  - title: "Compression"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 38"
+    classes:
+      - optional
+  - title: "Complexity and P=NP?"
+    slides: 
+    recording: 
+    readings: 
+      - title: "Ch 39"
+    classes:
+      - optional
+  - title: "Summary, Fun"
+    slides: 
+    recording: 
+    classes:
+    - optional
+  - title: "No Lecture (RRR Week)"
+    rowspan: 3
+    nonumber: true
+  - title: "Final Exam (May 7th, 8-11AM)"
+    nonumber: true

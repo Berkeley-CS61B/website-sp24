@@ -1,0 +1,71 @@
+#####################################
+# Instructions for updating website #
+#####################################
+
+# Written HW filepaths are all formatted based on the HW number.
+# Pad HW numbers, e.g. HW2 uses "02", not "2".
+# For example, the files for written HW2 should be placed at:
+#   - assets/homeworks/hw02.pdf
+#   - assets/homeworks/hw02-sols.pdf
+
+# To upload homework to the website:
+# 1. In this file, add the link to the electronic Gradescope assignment.
+# 2. Put the files in assets/homeworks using the filenames above.
+
+
+#####################################
+# Additional documentation          #
+#####################################
+
+# Each element in the array corresponds to one box on the website.
+# This includes boxes that are blank or don't have a homework.
+
+# The website automatically numbers each element in the array.
+# To skip numbering (e.g. for a blank box), add
+# "nonumber: True" as an attribute.
+
+labs:
+  - title: "IntelliJ, Git"
+    due: "1/19"
+    link: labs/lab01
+    rowspan: 2
+  - title: "Debugging I"
+    due: "1/26"
+    link: labs/lab02
+  - title: "Debugging II"
+    due: "2/2"
+    link: labs/lab03
+  - title: "Project 1 Workday"
+    nonumber: True
+  - title: "Timing"
+    due: "2/16"
+    link: labs/lab04
+  - title: "Disjoint Sets"
+    due: "2/23"
+    link: labs/lab05
+  - title: "BSTMap"
+    due: "3/1"
+    link: labs/lab06
+  - title: "LLRBs"
+    due: "3/8"
+    link: labs/lab07
+  - title: "HashMaps"
+    due: "3/15"
+    link: labs/lab08
+  - title: "Project 2 Workday"
+    nonumber: True
+  - title: "No Lab"
+    nonumber: True
+  - title: "Getting Started on Project 3"
+    due: "4/5"
+    link: labs/lab09
+  - title: "Tetris"
+    due: "4/12"
+    link: labs/lab10
+  - title: "Project 3 Workday"
+    nonumber: True
+  - title: "Project 3 Checkoffs"
+    nonumber: True
+  - title: "No Lab"
+    nonumber: True
+  - nonumber: True

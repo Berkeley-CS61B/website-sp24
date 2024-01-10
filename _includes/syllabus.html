@@ -53,19 +53,19 @@
       <th style="width:{{ site.data.syllabus.lecture_width }}">Lecture<br><a href="{{ site.data.syllabus.lecturepptx }}">(pptx files)</a></th>
       <th style="width:{{ site.data.syllabus.readings_width }}">Readings<br><a href="http://aima.cs.berkeley.edu/">(AIMA, 4th ed.)</a></th>
       <th style="width:{{ site.data.syllabus.discussion_width }}">Discussion</th>
-      <th style="width:{{ site.data.syllabus.homework_width }}">Homework</th>
+      <th style="width:{{ site.data.syllabus.lab_width }}">Lab</th>
       <th style="width:{{ site.data.syllabus.project_width }}">Project</th>
     </thead>
 
     {%- comment -%}
       Table body.
       - Fill in assignment names/links in lecture.yml, readings.yml,
-        discussion.yml, homework.yml, and project.yml, not here.
+        discussion.yml, lab.yml, and project.yml, not here.
       - In this code, we have five categories: lecture, discussion, readings,
-        homework, and project. The code for rendering each column here
+        lab, and project. The code for rendering each column here
         is identical; the code for filling in the content of each column
         can be found in lecture.html, readings.html, discussion.html,
-        homework.html, and project.html.
+        lab.html, and project.html.
       - For each category/column, we keep track of three counters, which
         are described below.
     {%- endcomment -%}
@@ -79,7 +79,7 @@
     {%- assign lecture_index = 0 -%}
     {%- assign readings_index = 0 -%}
     {%- assign discussion_index = 0 -%}
-    {%- assign homework_index = 0 -%}
+    {%- assign lab_index = 0 -%}
     {%- assign project_index = 0 -%}
 
     {%- comment -%}
@@ -91,7 +91,7 @@
     {%- assign lecture_rowspan = 0 -%}
     {%- assign readings_rowspan = 0 -%}
     {%- assign discussion_rowspan = 0 -%}
-    {%- assign homework_rowspan = 0 -%}
+    {%- assign lab_rowspan = 0 -%}
     {%- assign project_rowspan = 0 -%}
 
     {%- comment -%}
@@ -108,7 +108,7 @@
     {%- assign lecture_number = site.data.syllabus.starting_lecture_number -%}
     {%- assign readings_number = site.data.syllabus.starting_readings_number -%}
     {%- assign discussion_number = site.data.syllabus.starting_discussion_number -%}
-    {%- assign homework_number = site.data.syllabus.starting_homework_number -%}
+    {%- assign lab_number = site.data.syllabus.starting_lab_number -%}
     {%- assign project_number = site.data.syllabus.starting_project_number -%}
 
     {%- comment -%}
@@ -119,7 +119,7 @@
     {%- assign default_lecture_rowspan = site.data.syllabus.default_lecture_rowspan -%}
     {%- assign default_readings_rowspan = site.data.syllabus.default_readings_rowspan -%}
     {%- assign default_discussion_rowspan = site.data.syllabus.default_discussion_rowspan -%}
-    {%- assign default_homework_rowspan = site.data.syllabus.default_homework_rowspan -%}
+    {%- assign default_lab_rowspan = site.data.syllabus.default_lab_rowspan -%}
     {%- assign default_project_rowspan = site.data.syllabus.default_project_rowspan -%}
 
     {%- for week in sorted_dates -%}
@@ -190,12 +190,12 @@
 
         {%- comment -%}
           - There are four chunks of code below this, for rendering the
-            lecture/readings/discussion/homework/project columns. For
+            lecture/readings/discussion/lab/project columns. For
             simplicity, the chunks of code are identical (only swapping
             out the column names); I highly recommend not changing one
             of them individually. If you want to customize a column, you
             should be doing that in lecture.html, discussion.html,
-            homework.html, or project.html.
+            lab.html, or project.html.
           - In each chunk, we check if the rowspan counter has hit 0.
             If so, then it's time to render a new box.
             - Using the index counter, we access the next element in the
@@ -231,7 +231,7 @@
           {%- else -%}
             {%- assign new_rowspan = default_lecture_rowspan -%}
           {%- endif -%}
-          {%- include lecture.html element=lecture_element number=lecture_number rowspan=new_rowspan is_even=is_even  -%}
+          {%- include lecture.html element=lecture_element number=lecture_number rowspan=new_rowspan is_even=is_even classes=lecture_element.classes  -%}
           {%- assign lecture_rowspan = new_rowspan | plus:-1 -%}
           {%- assign lecture_index = lecture_index | plus:1 -%}
           {%- unless lecture_element.nonumber -%}
@@ -288,25 +288,25 @@
         {%- endif -%}
 
         {%- comment -%}
-          - Render the homework column.
+          - Render the lab column.
           - For simplicity, the code for each column should be kept identical (only
             swapping out the column names.
         {%- endcomment -%}
-        {%- if homework_rowspan == 0 -%}
-          {%- assign homework_element = site.data.homeworks.homeworks[homework_index] -%}
-          {%- if homework_element.rowspan -%}
-            {%- assign new_rowspan = homework_element.rowspan -%}
+        {%- if lab_rowspan == 0 -%}
+          {%- assign lab_element = site.data.labs.labs[lab_index] -%}
+          {%- if lab_element.rowspan -%}
+            {%- assign new_rowspan = lab_element.rowspan -%}
           {%- else -%}
-            {%- assign new_rowspan = default_homework_rowspan -%}
+            {%- assign new_rowspan = default_lab_rowspan -%}
           {%- endif -%}
-          {%- include homework.html element=homework_element number=homework_number rowspan=new_rowspan is_even=is_even  -%}
-          {%- assign homework_rowspan = new_rowspan | plus:-1 -%}
-          {%- assign homework_index = homework_index | plus:1 -%}
-          {%- unless homework_element.nonumber -%}
-            {%- assign homework_number = homework_number | plus:1 -%}
+          {%- include lab.html element=lab_element number=lab_number rowspan=new_rowspan is_even=is_even  -%}
+          {%- assign lab_rowspan = new_rowspan | plus:-1 -%}
+          {%- assign lab_index = lab_index | plus:1 -%}
+          {%- unless lab_element.nonumber -%}
+            {%- assign lab_number = lab_number | plus:1 -%}
           {%- endunless -%}
         {%- else -%}
-          {%- assign homework_rowspan = homework_rowspan | plus:-1 -%}
+          {%- assign lab_rowspan = lab_rowspan | plus:-1 -%}
         {%- endif -%}
 
         {%- comment -%}

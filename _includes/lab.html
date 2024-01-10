@@ -1,0 +1,33 @@
+{%- comment -%}
+  - This code renders one lab box on the syllabus.
+  - See labs.yml for how to feed information into this template.
+{%- endcomment -%}
+
+{%- comment -%}
+  If you don't want lab boxes to alternate colors per week,
+  then remove class="{{ include.is_even }}" below.
+{%- endcomment -%}
+<td class="{{ include.is_even }}" rowspan="{{ include.rowspan }}">
+
+{%- comment -%}
+  - TODO: Currently using nonumber to figure out when not to display links. Is there a cleaner way?
+  - TODO: Currently using "due" to figure out whether to display HW.
+    Is there a cleaner way?
+{%- endcomment -%}
+{%- if include.element.nonumber -%}
+  {%- assign title = include.element.title | markdownify -%}
+{%- else -%}
+  {%- capture title -%}
+    Lab {{ include.number }}: {{ include.element.title }}
+  {%- endcapture -%}
+{%- endif -%}
+{%- if include.element.link -%}
+  <a href="{{ include.element.link }}">{{ title }}</a>
+{%- else -%}
+  {{ title }}
+{%- endif -%}
+{%- if include.element.due -%}
+  <br>
+  (due {{ include.element.due }})
+{%- endif -%}
+</td>

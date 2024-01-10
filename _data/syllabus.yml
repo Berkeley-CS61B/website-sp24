@@ -6,8 +6,8 @@
 # Due to time zone issues, these might not show up exactly on the calendar,
 # so some fiddling is necessary. If you're struggling with time zone issues,
 # try setting your system time to GMT when building the website.
-start_date: 2023-01-17
-end_date: 2023-04-28
+start_date: 2024-01-17
+end_date: 2024-05-04
 
 # Any other days you want to appear on the calendar (e.g. for one-time events
 # like exams or bonus lectures) can be listed here.
@@ -15,14 +15,13 @@ end_date: 2023-04-28
 # so some fiddling is necessary. If you're struggling with time zone issues,
 # try setting your system time to GMT when building the website.
 extra_days:
-  - date: 2023-03-06
-  - date: 2023-05-12
+  - date: 2024-05-07
 
 # The days of the week we have class on. Ranges from Sunday = 0 and Saturday = 6.
 # For example, for a semester with Tu/Th lectures, put ['2', '4'].
 # For example, for a semester with MWF lectures, put ['1', '3', '5'].
 # For example, for a summer semester, put ['1', '2', '3', '4'].
-class_days: ['2', '4']
+class_days: ['1', '3', '5']
 
 # Used in syllabus.html to add a button linking to lecture pptx files, which
 # are a little too big to commit directly into the repo.
@@ -40,7 +39,7 @@ lecturepptx: "https://drive.google.com/drive/folders/1DKQHI8CjBbKFUPlMX_zCKKOK6W
 starting_lecture_number: '1'
 starting_readings_number: '1'
 starting_discussion_number: '1'
-starting_homework_number: '0'
+starting_lab_number: '1'
 starting_project_number: '0'
 # Is the first week of class Week 0 or Week 1? We currently don't support
 # starting at any other week number, so pick '0' or '1' here.
@@ -55,9 +54,9 @@ default_readings_rowspan: '1'
 # (two rows per week), then your discussion boxes are probably going to
 # take up two rows most of the time, so you'd set default_discussion_rowspan='2'.
 # If you have M/W/F classes, though, this might be '3' instead.
-default_discussion_rowspan: '2'
+default_discussion_rowspan: '3'
 # Similar reasoning to discussion, assuming your homeworks are weekly.
-default_homework_rowspan: '2'
+default_lab_rowspan: '3'
 # Project rowspans are too variable, so we just set the default to 1 and
 # never use the default (always manually specifying the rowspan).
 default_project_rowspan: '1'
@@ -69,8 +68,8 @@ default_project_rowspan: '1'
 #######################################################
 
 # Edit the widths of columns here.
-week_width: "4%"
-date_width: "7%"
+week_width: "3%"
+date_width: "8%"
 lecture_width: "24%"
 readings_width: "13%"
 discussion_width: "23%"

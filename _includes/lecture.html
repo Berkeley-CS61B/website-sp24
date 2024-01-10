@@ -7,7 +7,7 @@
   If you don't want lecture boxes to alternate colors per week,
   then remove class="{{ include.is_even }}" below.
 {%- endcomment -%}
-<td class="{{ include.is_even }}" rowspan="{{ include.rowspan }}">
+<td class="{{ include.is_even }} {{ include.classes | join ' ' }}" rowspan="{{ include.rowspan }}">
 
 {%- comment -%}
   - Build filenames automatically from the lecture number.
@@ -15,7 +15,7 @@
     then create filenames (see lectures.yml for more on filenames).
 {%- endcomment -%}
 {%- assign filenumber = include.number | prepend: '00' | slice: -2, 2 -%}
-{%- assign slides_path = "/assets/lectures/cs188-sp23-lec" | append: filenumber | append: ".pdf" -%}
+{%- assign slides_path = "/assets/lectures/lec" | append: filenumber | append: ".pdf" -%}
 
 {%- comment -%}
   - Automatically check if files exist.

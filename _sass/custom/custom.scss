@@ -25,6 +25,9 @@ table {
   td.border-hack {
     border-left: 1px solid $border-color;
   }
+  td.optional {
+    background-color: rgba($purple-000, 0.3)
+  }
 }
 
 // Button copying
