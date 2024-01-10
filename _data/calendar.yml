@@ -4,6 +4,7 @@ calendars:
   - title: Section Calendar
     element_id: 'section-calendar-container'
     google_api_key: AIzaSyAHArc3d7lRRQ2Iu1Yw0ScaF5h1wsLjmHA
+    embed_link: https://calendar.google.com/calendar/embed?src=c_ea32fd25306c83ecdc8170565305b5de6a60b3ff4168a882b285c1f05ec34521%40group.calendar.google.com
     google_calendar_id: c_ea32fd25306c83ecdc8170565305b5de6a60b3ff4168a882b285c1f05ec34521@group.calendar.google.com # replace this
     min_time: '09:00:00'
     max_time: '22:00:00'
@@ -18,6 +19,7 @@ calendars:
   - title: OH Calendar
     element_id: 'oh-calendar-container'
     google_api_key: AIzaSyAHArc3d7lRRQ2Iu1Yw0ScaF5h1wsLjmHA
+    embed_link: https://calendar.google.com/calendar/embed?src=c_3d254be6a8a0bec1126a8696770052fdd39ba78fa917c4fa9b78d1dd6865add2%40group.calendar.google.com
     google_calendar_id: c_3d254be6a8a0bec1126a8696770052fdd39ba78fa917c4fa9b78d1dd6865add2@group.calendar.google.com # replace this
     min_time: '09:00:00'
     max_time: '22:00:00'

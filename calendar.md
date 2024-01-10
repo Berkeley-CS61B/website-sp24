@@ -17,7 +17,7 @@ All times listed are in your local time zone.
 {% for calendar in site.data.calendar.calendars %}
   <h2>{{ calendar.title }}</h2>
 
-  <a href='{{ calendar.embed_link }}'>Open in Google Calendar</a>
+  <a href='{{ calendar.embed_link }}' class="btn btn-outline fs-3">Open in Google Calendar</a>
   <div id='{{ calendar.element_id }}'></div>
 {% endfor %}
 
