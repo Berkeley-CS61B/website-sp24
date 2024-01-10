@@ -19,6 +19,10 @@ Most departments have advisors that can guide you through academic and career de
 
 [Computer Science Mentors (CSM)](https://csmentors.berkeley.edu/#/) run small-group tutoring sessions that follow the content schedule. Each section consists of 4-6 students and is led by a mentor who has taken the course before. CSM also holds review sessions and provides other resources throughout the semester. Sections open during the first couple weeks of school, keep an eye on Ed!
 
+### CAEE
+
+The [Center for Access to Engineering Excellence (CAEE)](https://engineering.berkeley.edu/students/academic-support/) provides free tutoring for CS 61B. The weekly schedule can be found on their website.
+
 ### HKN
 
 HKN provides drop-in tutoring throughout the semester in their Cory office. For their tutoring schedule, see [the website](https://hkn.eecs.berkeley.edu/tutor/). 
