@@ -10,10 +10,10 @@ released: true
 
 ## How will online office hours function in 61b?
 
-In Fall 2023, office hours will be provided both in-person and online. We will be using Zoom to host online office hours. All office hours start on
+Office hours will be provided both in-person and online. We will be using Zoom to host online office hours. All office hours start on
 **Berkeley time**.
 
-The office hours schedule can be found on the [main page]({{ site.url }}#ohcal).
+The office hours schedule can be found on the [calendar page]({{ site.url }}/calendar#oh-calendar-container).
 
 ## Joining the Online OH Zoom
 
@@ -54,9 +54,9 @@ To get help in Office Hours this semester:
 
 ## Simple Office Hours Queue
 
-As of Wednesday (2/1), we will be phasing in a [new office hours website](https://oh.datastructur.es/) built by one of the members of our course staff, Meshan Khosla. The main features for creating a ticket and receiving help are identical to the above, but we will describe how to sign in and additional features below.
+We use an [office hours website](https://oh.datastructur.es/) built by one of the members of our course staff, Meshan Khosla. The main features for creating a ticket and receiving help are identical to the above, but we will describe how to sign in and additional features below.
 
-This new office hours queue is still actively being developed. If you have issues or suggestions, please let a member of course staff know or create a post on Ed!
+This office hours queue is still actively being developed. If you have issues or suggestions, please let a member of course staff know or create a post on Ed!
 
 ### Signing In
 
