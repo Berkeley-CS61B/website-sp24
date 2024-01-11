@@ -505,7 +505,7 @@ import java.util.TreeMap;
 ```
     
 
-### `JavaExercises`
+### JavaExercises
     
 `ListExercises.java` has 4 different methods for you to complete:
     
@@ -516,7 +516,7 @@ import java.util.TreeMap;
 
 For this part, you can import `List` and `ArrayList`.
 
-### `ListExercises`
+### ListExercises
     
 `ListExercises.java` has 4 different methods for you to complete:
     
@@ -527,7 +527,7 @@ For this part, you can import `List` and `ArrayList`.
     
 For this part, you can import `ArrayList`.
     
-### `MapExercises`
+### MapExercises
     
 `MapExercises.java` has 3 different methods for you to complete:
     
@@ -537,7 +537,7 @@ For this part, you can import `ArrayList`.
     
 For this part, you can import `TreeMap`. 
 
-### `Dessert`
+### Dessert
     
     
 -   TODO FILL THIS 
