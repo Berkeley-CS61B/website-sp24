@@ -36,3 +36,5 @@ Videos marked with a \* are not created by Course Staff.
 - [COS226 (Princeton) Past Exams](http://www.cs.princeton.edu/courses/archive/fall13/cos226/exams.php)
 
 ---
+## Tips for Exam Prep
+Check out this amazing [Exam Prep Guide](./tips/exam-tips.md) for some very helpful exam preparation tips the course staff has utilized and shared with students in the past!
