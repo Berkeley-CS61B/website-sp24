@@ -751,10 +751,10 @@ An important note on extensions: leading up to an assignment deadline, we usuall
 
 We define extenuating circumstances as circumstances outside of the student’s control that directly inhibits the student’s ability to complete assignments in a timely manner. Some examples include unforeseen physical/mental health crises, technical issues (broken laptop), family emergency, etc.
 
-If you are experiencing such circumstances and require an extension past what can be requested in Beaco, please fill out [this form]({{ site.links.extenuating_circumstances }}). There is a separate Google form and a more involved process. We will be restrictive about granting these extensions.
+If you are experiencing such circumstances and require an extension past what can be requested in Beacon, please fill out [this form]({{ site.links.extenuating_circumstances }}). There is a separate Google form and a more involved process. We will be restrictive about granting these extensions.
 
 {: .danger}
-
+We will **not** be considering retroactive submissions to the extenuating circumstances form. This means that you should proactively submit to the form **before** the assignment's deadline to be considered. Exceptions will only be made in extreme cases.
 
 Additionally, if you'd like to speak to a student support TA, book an appointment with us [here]({{ site.links.student_support_meeting }}).
 
