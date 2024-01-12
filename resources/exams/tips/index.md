@@ -2,9 +2,11 @@
 layout: page
 title: Exam Prep Tips
 author: The Student Support Team
-parent: tips
-grand_parent: exams
+parent: Exams
+grand_parent: Resources
 has_children: false
+has_right_toc: true
+has_toc: false
 released: true
 ---
 

@@ -37,4 +37,4 @@ Videos marked with a \* are not created by Course Staff.
 
 ---
 ## Tips for Exam Prep
-Check out this amazing [Exam Prep Guide](./tips/exam-tips.md) for some very helpful exam preparation tips the course staff has utilized and shared with students in the past!
+Check out this amazing [Exam Prep Guide](./tips/index.md) for some very helpful exam preparation tips the course staff has utilized and shared with students in the past!
