@@ -187,8 +187,6 @@ lectures:
     readings: 
       - title: "Ch 26"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/26.-prefix-operations-and-tries"
-  - title: "**Midterm 2 (7-9PM)**"
-    nonumber: True
   - title: "Software Engineering I"
     recording: 
     readings: 
@@ -196,6 +194,8 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/27.-software-engineering-i"
     classes:
       - optional
+  - title: "**Midterm 2 (7-9PM)**"
+    nonumber: True
   - title: "Directed Acyclic Graphs"
     recording: 
     readings: 
