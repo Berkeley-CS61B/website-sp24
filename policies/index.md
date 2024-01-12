@@ -241,7 +241,7 @@ or sudden necessary travel that result in extended absences), please contact
 ### Beacon
 
 Rather than using bCourses, we will be using our own custom learning management
-system called Beacon located at [beacon.datastructur.es]({{ site.beacon_url }}).
+system called Beacon located at [beacon.datastructur.es]({{ site.links.beacon }}).
 You can use Beacon to keep track of your grades and late assignments.
 You can also read
 our full guide on Beacon [here](../resources/guides/beacon/index.md).
@@ -749,15 +749,14 @@ An important note on extensions: leading up to an assignment deadline, we usuall
 
 ## Extenuating Circumstances
 
-If you have an extenuating circumstance that requires an extension past what can be requested in Beacon, there is a separate Google form and a more involved process.
-
 We define extenuating circumstances as circumstances outside of the student’s control that directly inhibits the student’s ability to complete assignments in a timely manner. Some examples include unforeseen physical/mental health crises, technical issues (broken laptop), family emergency, etc.
 
-We will be restrictive about granting these extensions.
+If you are experiencing such circumstances and require an extension past what can be requested in Beaco, please fill out [this form]({{ site.links.extenuating_circumstances }}). There is a separate Google form and a more involved process. We will be restrictive about granting these extensions.
 
-If you are experiencing such circumstances and need more flexible deadlines than the lateness system provides, please fill out [this form](https://forms.gle/QWrwvY4n8e7C9LpR8).
+{: .danger}
 
-Additionally, if you'd like to speak to a student support TA, book an appointment with us [here](https://forms.gle/eMTPsvh33kcfoYRw5).
+
+Additionally, if you'd like to speak to a student support TA, book an appointment with us [here]({{ site.links.student_support_meeting }}).
 
 ---
 

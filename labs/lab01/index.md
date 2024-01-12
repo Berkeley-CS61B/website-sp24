@@ -6,7 +6,7 @@ has_children: true
 parent: Labs
 has_toc: false
 has_right_toc: true
-released: true
+released: false
 ---
 
 <!-- markdownlint-capture -->
@@ -190,7 +190,7 @@ repository ("repo"), which you will need to submit all coding assignments.
 
 1.  Create an account on [GitHub](https://github.com/). If you already have
     an account, you do not need to create a new one.
-2.  Go to [Beacon]({{ site.beacon_url }}) and follow the steps to complete your GitHub repository
+2.  Go to [Beacon]({{ site.links.beacon }}) and follow the steps to complete your GitHub repository
     registration. You must be logged in to your Berkeley account to complete
     the Google Form syllabus quiz.
 3.  After completing all of the steps, you should receive an email inviting you
@@ -322,7 +322,7 @@ resource that might be helpful is [Section C of the Using Git Guide](../../resou
 <!-- markdownlint-restore -->
 
 Be sure to save this repository and directory until you complete the
-asynchronous checkoff form on [Beacon]({{ site.beacon_url }}) and
+asynchronous checkoff form on [Beacon]({{ site.links.beacon }}) and
 obtain a **magic word**.
 
 {: .task}
@@ -510,7 +510,7 @@ You will need the magic word (obtained from checkoff) to complete this
 step.
 
 Open the file `lab01/magic_word.txt` in a text editor, and edit it to contain
-the **magic word** obtained during the [git exercise][{{ site.beacon_url }}].
+the **magic word** obtained during the [git exercise][{{ site.links.beacon }}].
 
 [git exercise]: #task-git-exercise
 

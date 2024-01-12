@@ -40,6 +40,7 @@ labs:
   - title: "Timing"
     due: "2/16"
     link: labs/lab04
+    rowspan: 4
   - title: "Disjoint Sets"
     due: "2/23"
     link: labs/lab05
@@ -54,6 +55,7 @@ labs:
     link: labs/lab08
   - title: "Project 2 Workday"
     nonumber: True
+    rowspan: 4
   - title: "No Lab"
     nonumber: True
   - title: "Getting Started on Project 3"

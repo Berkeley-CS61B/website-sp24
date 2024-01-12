@@ -20,6 +20,10 @@
 # "nonumber: True" as an attribute.
 
 projects:
+  - rowspan: 1
+    nonumber: True
+    classes:
+      - blank
   - title: "Project 0: 2048"
     due: "1/26"
     link: "projects/proj0/"
@@ -28,7 +32,7 @@ projects:
   - title: "Project 1A: LinkedListDeque"
     due: "2/5"
     link: "projects/proj1/proj1a"
-    rowspan: 4
+    rowspan: 3
     nonumber: True
   - title: "Project 1B: ArrayDeque"
     due: "2/12"
@@ -43,12 +47,12 @@ projects:
   - title: "Project 2A: NGrams"
     due: "3/6"
     link: "projects/proj2/proj2a"
-    rowspan: 6
+    rowspan: 7
     nonumber: True
   - title: "Project 2B: Wordnet"
     due: "4/1"
     link: "projects/proj2/proj2a"
-    rowspan: 11
+    rowspan: 12
     nonumber: True
   - title: "Project 3A: World Generation"
     due: "4/15"

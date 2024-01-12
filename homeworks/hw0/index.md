@@ -9,5 +9,5 @@ has_toc: true
 has_right_toc: false
 description: >-
   Homework 0 spec.
-released: true
+released: false
 ---

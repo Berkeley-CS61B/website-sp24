@@ -79,7 +79,7 @@ some reasons we've dissolved partnerships in the past:
 2.  A variety of personal reasons where a student was uncomfortable.
 3.  One partner has dropped the class.
 
-Fill out [this form]({{ site.beacon_url }}/dissolution/) with the exact
+Fill out [this form]({{ site.links.beacon }}/dissolution/) with the exact
 circumstances of your partnership as well as any commit history/other logs that
 you need to demonstrate the issue. If we believe that a dissolution is
 required, we will dissolve the partnership and you and your old partner will

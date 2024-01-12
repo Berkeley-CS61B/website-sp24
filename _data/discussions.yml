@@ -53,6 +53,7 @@ discussions:
     solutions: True
   - title: "Comparators, Iterators"
     solutions: True
+    rowspan: 4
   - title: "Asymptotics, Disjoint Sets"
     solutions: True
   - title: "ADTs, Asymptotics II, BSTs"
@@ -63,6 +64,7 @@ discussions:
     solutions: True
   - title: "Shortest Paths, MSTs"
     solutions: True
+    rowspan: 4
   - title: "No Discussion"
     nonumber: True
   - title: "Graphs II, Tries"

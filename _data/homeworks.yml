@@ -35,7 +35,7 @@ homeworks:
     link: "homeworks/hw1"
     rowspan: 2
     nonumber: True
-  - rowspan: 8
+  - rowspan: 9
     nonumber: True
     classes:
       - blank
@@ -44,23 +44,23 @@ homeworks:
     link: "homeworks/hw2"
     rowspan: 5
     nonumber: True
-  - rowspan: 2
+  - rowspan: 5
     nonumber: True
     classes:
       - blank
   - title: "Homework 3"
-    due: "3/11"
+    due: "3/18"
     link: "homeworks/hw3"
     rowspan: 4
     nonumber: True
-  - rowspan: 17
+  - rowspan: 16
     nonumber: True
     classes:
       - blank
   - title: "Homework 4"
     due: "5/3"
     link: "homeworks/hw4"
-    rowspan: 6
+    rowspan: 5
     nonumber: True
   - rowspan: 1
     nonumber: True

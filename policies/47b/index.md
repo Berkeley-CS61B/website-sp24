@@ -103,7 +103,7 @@ The 47B deadline and extensions policy will align with the self-paced nature of 
 
 The **deadlines** for each assignment will follow the due dates set by 61B. These deadlines can be found on the [main page]({{ site.url }}) of this website. Changes to these deadlines will be communicated by email.
 
-There is no partial credit for submitting late work. However, we have an **extensions policy** to allow for some leniency and flexibility. You may receive credit for work submitted after the deadline by applying for extension requests in Beacon's [Extensions tab]({{ site.beacon_url }}/extensions/).
+There is no partial credit for submitting late work. However, we have an **extensions policy** to allow for some leniency and flexibility. You may receive credit for work submitted after the deadline by applying for extension requests in Beacon's [Extensions tab]({{ site.links.beacon }}/extensions/).
 
 {: .info}
 Extensions up to 2 weeks will be granted automatically. If you want to request an extension over 2 weeks, you must meet synchronously with the 47B TA, Stella Kaval, to check in and schedule a modified set of deadlines before your request is approved. Emails scheduling this meeting will be sent out when your extension request is made.

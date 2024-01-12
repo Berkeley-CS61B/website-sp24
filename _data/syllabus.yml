@@ -15,6 +15,8 @@ end_date: 2024-05-04
 # so some fiddling is necessary. If you're struggling with time zone issues,
 # try setting your system time to GMT when building the website.
 extra_days:
+  - date: 2024-02-16
+  - date: 2024-03-21
   - date: 2024-05-07
 
 # The days of the week we have class on. Ranges from Sunday = 0 and Saturday = 6.

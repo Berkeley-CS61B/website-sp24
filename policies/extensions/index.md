@@ -14,7 +14,7 @@ This guide walks through how to submit an extension request through Beacon. Befo
 
 ## Requesting an Extension
 
-1. Navigate to the extensions page on [Beacon]({{ site.beacon_url }}/extensions).
+1. Navigate to the extensions page on [Beacon]({{ site.links.beacon }}/extensions).
 2. In the "Requesting an Extension" form, fill out each field and click "Submit".
 
    ![Extensions form](extensions-form.png)

@@ -23,9 +23,13 @@ exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "vendor"]
 # Semester variables
 semester: sp24
 semester_full: Spring 2024
-beacon_url: https://sp24.beacon.datastructur.es
-ed_url: 
-gradescope_url: 
+
+links:
+  beacon: https://sp24.beacon.datastructur.es
+  ed_url: 
+  gradescope_url: 
+  extenuating_circumstances:
+  student_support_meeting: 
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3

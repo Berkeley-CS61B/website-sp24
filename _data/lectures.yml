@@ -118,13 +118,15 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/13.-asymptotics-i"
   - title: "Ask Anything: Midterm 1"
     recording: 
+  - title: "**Midterm 1 (7-9PM)**"
+    nonumber: True
   - title: "Disjoint Sets"
     recording: 
     readings: 
       - title: "Ch 14"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/14.-disjoint-sets"
   - title: "No Lecture (Academic Holiday)"
-    nonumber: true
+    nonumber: True
   - title: "Asymptotics II"
     recording: 
     readings: 
@@ -185,6 +187,8 @@ lectures:
     readings: 
       - title: "Ch 26"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/26.-prefix-operations-and-tries"
+  - title: "**Midterm 2 (7-9PM)**"
+    nonumber: True
   - title: "Software Engineering I"
     recording: 
     readings: 
@@ -199,7 +203,7 @@ lectures:
       link: "https://cs61b-2.gitbook.io/cs61b-textbook/28.-reductions-and-decomposition"
   - title: "No Lecture (Spring Break)"
     rowspan: 3
-    nonumber: true
+    nonumber: True
   - title: "Sorting I: Selection Sort, Heapsort, Mergesort"
     recording: 
     readings: 
@@ -271,6 +275,6 @@ lectures:
     - optional
   - title: "No Lecture (RRR Week)"
     rowspan: 3
-    nonumber: true
+    nonumber: True
   - title: "Final Exam (May 7th, 8-11AM)"
-    nonumber: true
+    nonumber: True
