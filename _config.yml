@@ -30,6 +30,7 @@ links:
   gradescope_url: 
   extenuating_circumstances:
   student_support_meeting: 
+  late_add: https://forms.gle/LrMBYS2SA6YpcSgS7
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3

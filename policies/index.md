@@ -760,6 +760,14 @@ Additionally, if you'd like to speak to a student support TA, book an appointmen
 
 ---
 
+## Late Adding CS61B
+
+If you are attempting to officially enroll in CS 61B late in the semester, you must turn in all outstanding course assignments within 3 days of joining the course. This means that you should be following along with the course schedule according to the schedule on the main page and announcements on Ed. Please email [cs61b@berkeley.edu](mailto:cs61b@berkeley.edu) if you are not added to Ed or Gradescope.
+
+Please use the [Late Add Intent form]({{ site.links.late_add }}) if you are waiting to be enrolled and need access to course platforms. If you'd like to meet with course staff for advice on catching up with the course, please make an appointment [here]({{ site.links.student_support_meeting }}).
+
+---
+
 ## Auditing CS61B
 
 This is for students who are unofficially auditing this class. Maybe you are a
