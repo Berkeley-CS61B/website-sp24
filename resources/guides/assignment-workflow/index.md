@@ -5,6 +5,7 @@ author: Ethan Ordentlich
 parent: Guides
 grand_parent: Resources
 has_children: false
+nav_exclude: true
 released: true
 ---
 
