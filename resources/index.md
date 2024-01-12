@@ -24,7 +24,7 @@ On this page, we've compiled resources from past semesters that you may find hel
 <!-- - [Gitbugs Guide](guides/gitbugs) -->
 
 - [Style Guide](guides/style/index.md)
-- [Discord Guide for Remote Labs](guides/discord/index.md)
+<!-- - [Discord Guide for Remote Labs](guides/discord/index.md) -->
 - [Debugging Guide](guides/intellij/debugging.md)
 - [Ed Policies](guides/ed/index.md)
 - [Ed Guide for New Users](guides/ed/ed-guide.md)

@@ -13,7 +13,7 @@ released: true
 
 ## Introduction
 
-In Fall 2023 we will use Ed Discussions as our course forum. If you’re new to
+We use Ed Discussions as our course forum. If you’re new to
 Ed, please read the [Ed guide](ed-guide.md), which should get you familiar with
 this platform. This post includes a collection of guidelines for etiquette on
 Ed, that we ask you to read entirely so we can all have an enjoyable experience
