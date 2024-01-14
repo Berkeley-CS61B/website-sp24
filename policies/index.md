@@ -17,7 +17,7 @@ at UC Berkeley.*
 ## General Background Information
 
 These course policies are pretty long. With the exception of the collaboration
-policy we're not expecting you to read the entire thing in one sitting. However, you'll hopefully
+policies we're not expecting you to read the entire thing in one sitting. However, you'll hopefully
 find the answers to any logistics questions you may have somewhere in this document.
 
 ### Welcome to CS 61B
@@ -79,7 +79,9 @@ The National Suicide Prevention Lifeline is a 24-hour number any student or
 faculty/staff person can call to speak with someone about suicide:
 (800) 273-TALK (8255).
 
-If you're experiencing extenuating circumstances impacting your mental health and would like to meet with a member of course staff to work out accommodations within the course, or would like to be connected to more resources, you can set up a meeting with us [here](https://forms.gle/Pyajz6QoibMhbXAo8)
+More resources can be found under our [Resources tab](../resources/support/index.md).
+
+If you're experiencing extenuating circumstances impacting your mental health and would like to meet with a member of course staff to work out accommodations within the course, or would like to be connected to more resources, you can set up a meeting with us [here]({{ site.links.student_support_meetings }})
 
 ### Accommodation
 
@@ -104,8 +106,8 @@ develop an implementation plan.
 
 ### Lecture
 
-Lecture is scheduled on Monday, Wednesday, and Friday from 2-3 PM in
-Wheeler 150. Since the classroom is not large enough to allow all enrolled
+Lecture is scheduled on Monday, Wednesday, and Friday from 1-2 PM in
+Dwinelle 155. Since the classroom is not large enough to allow all enrolled
 students to physically attend, lecture will be simultaneously webcast over Zoom.
 
 We will post lecture recordings as well as Josh Hug's Spring 2023 web videos to the content schedule on the main page. Both will cover the same content.
@@ -141,7 +143,7 @@ intentionally organized for students who are not as familiar with the material
 that week. It’s a great way to get a little more comfortable with the topics and
 receive more individualized attention during the section. The material and
 difficulty covered during the bridge discussion section will be the same as the
-Practice discussion section, and we’ll have an extended mini-lecture to
+regular discussion section, and we’ll have an extended mini-lecture to
 reinforce conceptual understanding.
 
 **Regular (1hr)**
@@ -161,13 +163,12 @@ be less focus on review/mini-lecture and more time spent on the problems.
 
 Lab sections are 2 hours long and feature coding assignments that students
 submit for credit. In these sections, TAs will introduce the assignment, review
-relevant material, and answer students’ questions. Lab sections are also
-supported by academic interns.
+relevant material, and answer students’ questions.
 
 Labs will primarily be held in-person, though we may have limited remote
 options on Zoom.
 
-Lab attendance is not mandatory, with the _exception_ of one lab - Lab 15 (Project 3 Demos).
+Lab attendance is not mandatory, with the _exception_ of one lab - Project 3 Checkoffs.
 This lab includes an assignment for which you will need to get checked-off 
 by a TA to receive credit.
 
@@ -175,18 +176,15 @@ Information about the staff running each section can be found on the staff
 page.
 
 We will not have section signups this term. For the mandatory
-attendance lab(s), you will have the following options:
+attendance lab(s):
 
-- Lab 15: There will be official sign ups for this checkoff, in which you and
+- Project 3 Checkoffs: There will be official sign ups for this checkoff, in which you and
   your partner will present the work you completed for Project 3. The signups
   will be available shortly before the last week of classes.
-
-**Lab 6 is no longer Project 1 Peer Review. Check the course website for the updated lab, but 
-this lab is no longer mandatory for attendance.**
-
+  
 ### Office Hours
 
-In Office Hours, you can get help from our staff and academic interns with the
+In Office Hours, you can get help from our staff with the
 different assignments, exam preparation, logistical matters, and any advice yo
 may need. We will hold both in-person and online office hours. You may also use
 lab sections to ask questions unrelated to lab.
@@ -195,7 +193,7 @@ We will hold Office Hours over Zoom. To learn more about how CS 61B Office
 Hours work, please read our
 [Office Hours Guide](../resources/guides/oh/index.md).
 We will use the online
-[Office Hours queue](https://oh.datastructur.es) to keep track of students in
+[Office Hours Queue](https://oh.datastructur.es) to keep track of students in
 Office Hours. Staff will always skip tickets on the queue that do not adhere
 to our Office Hours policies.
 
@@ -205,7 +203,7 @@ to our Office Hours policies.
 
 ### Website
 
-The [course home page](/) will provide one-stop shopping for course information.
+The [course home page]({{ site.url }}) will provide one-stop shopping for course information.
 The course schedule as well as all handouts, homework, labs, FAQs, etc., will be
 posted there.
 
@@ -219,7 +217,7 @@ question and the answer. Don't forget to check Ed before asking your
 question, just in case someone else has already posted it. If you have a
 question about something pertaining to your own code that shouldn’t be shared
 with the class, or if you have a question about a personal matter, you can make
-a private post on Ed, which will only be seen by Josh and the TAs.
+a private post on Ed, which will only be seen by the instructors and staff.
 
 Please read our [Ed Guide](../resources/guides/ed/ed-guide.md) and
 [Policies](../resources/guides/ed/index.md). We will only respond to questions
@@ -228,15 +226,15 @@ that adhere to our policies of using Ed.
 ### Staff Email
 
 The e-mail address [cs61b@berkeley.edu](mailto:cs61b@berkeley.edu) will send a
-message to the course staff (Josh and the head TAs). You can use it for
+message to the course staff (instructors and the head TAs). You can use it for
 correspondence that you don't want to seen on our class forum. The head TAs and
-Josh all read it, so you will usually get a reply within a few days. If you
+instructors all read it, so you will usually get a reply within a few days. If you
 send a question that is of general interest, we may post the response on Ed
 (we will keep personal information out of it, of course). If you have any
 problems that require an exception to course policy (e.g. medical emergencies
 or sudden necessary travel that result in extended absences), please contact
 [cs61b@berkeley.edu](mailto:cs61b@berkeley.edu).
-**Please do not email Josh or course staff for exceptions. Email [cs61b@berkeley.edu](mailto:cs61b@berkeley.edu)**.
+**Please do not email the instructors or course staff for exceptions. Email [cs61b@berkeley.edu](mailto:cs61b@berkeley.edu)**.
 
 ### Beacon
 
@@ -357,7 +355,7 @@ We have three kinds of homework:
   multiple choice and fill-in-the-blanks questions. You can expect to have to
   work out these problems on paper before filling in your answer on Gradescope.
 
-Each homework will be worth 15 points (for a total of 75 points).
+Homeworks 0, 1, 3, and 4 are worth 15 points. Homework 2 is more challenging, time-consuming assignment and will be worth 30 points.
 
 No homeworks will be dropped, though we have a generous lateness policy.
 
@@ -414,8 +412,8 @@ Full details on partnerships can be found
 
 There will be two evening midterms:
 
-- Week 5, Thursday 9/21, 7-9 PM
-- Week 9, Thursday 10/19, 7-9 PM
+- Week 5, Thursday 2/15, 7-9 PM
+- Week 10, Thursday 3/21, 7-9 PM
 
 There is also a final exam on Thursday 12/14, 3-6 PM.
 
@@ -455,7 +453,7 @@ The final exam percentile clobbering policy will only be applied if it helps you
 For example, if you score the median on both midterms, but then have a bad day and
 do terribly on the final, we will not change your midterm scores.
 
-While this does mechanism introduce a bit of "curving" to the class, in practice
+While this mechanism does introduce a bit of "curving" to the class, in practice
 it does not turn the class into a competition. Our grading bins are still fixed,
 a vast majority of the points are not subject to this mechanism, and the impact
 tends to be relatively small for most students.
@@ -499,15 +497,16 @@ clobbering policy above. Your grade will depend on how well you do relative to t
 not on how well everyone else does. Though we do not usually do this, we reserve the right to
 lower the the grading bins for 61B if grades are too low. We will not raise them.
 
-| Category      | Percentage | Points |
-| ------------- | ---------- | ------ |
-| Homework/Labs | 12.5%      | 125    |
-| Surveys       | 2.5%       | 25     |
-| Projects      | 35%        | 350    |
-| Midterm 1     | 10%        | 100    |
-| Midterm 2     | 15%        | 150    |
-| Final Exam    | 25%        | 250    |
-| Total         | 100%       | 1000   |
+| Category      | Percentage | Points   |
+| ------------- | ---------- | -------- |
+| Homeworks     | 9%         | 90       |
+| Labs          | 5%         | 50       |
+| Surveys       | 1%         | 10       |
+| Projects      | 35%        | 350      |
+| Midterm 1     | 10%        | 100      |
+| Midterm 2     | 15%        | 150      |
+| Final Exam    | 25%        | 250      |
+| **Total**     | **100%**   | **1000** |
 
 {: #grade-breakdown}
 
@@ -756,7 +755,7 @@ If you are experiencing such circumstances and require an extension past what ca
 {: .danger}
 We will **not** be considering retroactive submissions to the extenuating circumstances form. This means that you should proactively submit to the form **before** the assignment's deadline to be considered. Exceptions will only be made in extreme cases.
 
-Additionally, if you'd like to speak to a student support TA, book an appointment with us [here]({{ site.links.student_support_meeting }}).
+Additionally, if you'd like to speak to a student support TA, book an appointment with us [here]({{ site.links.student_support_meetings }}).
 
 ---
 
@@ -764,7 +763,7 @@ Additionally, if you'd like to speak to a student support TA, book an appointmen
 
 If you are attempting to officially enroll in CS 61B late in the semester, you must turn in all outstanding course assignments within 3 days of joining the course. This means that you should be following along with the course schedule according to the schedule on the main page and announcements on Ed. Please email [cs61b@berkeley.edu](mailto:cs61b@berkeley.edu) if you are not added to Ed or Gradescope.
 
-Please use the [Late Add Intent form]({{ site.links.late_add }}) if you are waiting to be enrolled and need access to course platforms. If you'd like to meet with course staff for advice on catching up with the course, please make an appointment [here]({{ site.links.student_support_meeting }}).
+Please use the [Late Add Intent form]({{ site.links.late_add }}) if you are waiting to be enrolled and need access to course platforms. If you'd like to meet with course staff for advice on catching up with the course, please make an appointment [here]({{ site.links.student_support_meetings }}).
 
 ---
 
