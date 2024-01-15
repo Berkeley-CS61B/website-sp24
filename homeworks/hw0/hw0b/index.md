@@ -409,14 +409,15 @@ To run the code in the previous example, we may create a `main` method in the `P
 class Point:
 
     # other methods...
+    # end of Point class
 
-    if __name__ == '__main__':
-        p1 = Point(5, 9)
-        p2 = Point(-3, 3)
-        print(f"Point 1: ({p1.x}, {p1.y})")
-        print("Distance:", p1.distanceTo(p2))
-        p1.translate(2, 2)
-        print(f"Point 1: ({p1.x}, {p1.y})")
+if __name__ == '__main__':
+    p1 = Point(5, 9)
+    p2 = Point(-3, 3)
+    print(f"Point 1: ({p1.x}, {p1.y})")
+    print("Distance:", p1.distanceTo(p2))
+    p1.translate(2, 2)
+    print(f"Point 1: ({p1.x}, {p1.y})")
 
 ```
 
@@ -439,12 +440,16 @@ public class Point {
         System.out.println("Point 1: ( " + p1.x
             + ", " + p1.y + ")");
     }
+
+    // end of Point class
 }
 ```
 
 </td>
 </tr>
 </table>
+
+Notice that in Java, the `main` method is defined _within_ a class.
 
 If you are coding in IntelliJ, you can actually "play" the `main` method! IntelliJ will display a green play button to the left of the `main` method's signature. Click it to run the code inside.
 
