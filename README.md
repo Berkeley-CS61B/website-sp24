@@ -18,3 +18,7 @@ To update the website, just push to this repo, and the website will automaticall
 - `[proj1] fix typo in spec`
 
 To build the website locally, [install Jekyll](https://jekyllrb.com/docs/installation/) and run `bundle exec jekyll serve`.
+
+## Website migration
+
+The website migration guide can be found [here](https://docs.google.com/document/d/1YQtk5P89zsRBthSCBQwYsL_iyT22-TI_Id-Yay0YjjE/edit#heading=h.kfxvyfozc9it).
