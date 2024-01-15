@@ -129,7 +129,7 @@ Most communication, including announcements and updates, for 47B will be through
 
 Additionally, the TA in charge of CS 47B is Stella Kaval. Her contact info can be found on the [course staff page]({{ site.url }}/staff.html). Please also include the 61B course email!
 
-The course also has a "47B" topic on [61B's Ed forum](https://edstem.org/us/courses/42700/discussion/). If you have questions about the course, feel free to ask them there! Making public posts also allows other 47B students to view and answer them.
+The course also has a "47B" topic on 61B's Ed forum (linked in the nav bar). If you have questions about the course, feel free to ask them there! Making public posts also allows other 47B students to view and answer them.
 
 ### Getting Help
 
