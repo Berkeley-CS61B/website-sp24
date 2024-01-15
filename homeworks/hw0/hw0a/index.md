@@ -11,7 +11,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Homework 0A spec.
-released: false
+released: true
 ---
 
 ## Language Constructs
