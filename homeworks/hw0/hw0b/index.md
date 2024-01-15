@@ -11,11 +11,13 @@ has_toc: false
 has_right_toc: true
 description: >-
   Homework 0A spec.
-released: false
+released: true
 ---
 ## Language Constructs
 
 ### Types
+
+Java is a _statically typed_ language, which means that every variable has a type that is known at compile time, meaning you must specify it in your code. In contrast, Python is a _dynamically typed_ language, which means that the type of variables are generally only known at runtime, meaning you do not need to specify them in your code.
 
 In Java, there are two kinds of types: primitive types and reference types.
 Primitive types are lowercase, and we named the ones that we care about in
@@ -27,10 +29,10 @@ You will learn more about the distinction between primitive and reference types
 in Lecture 4, but for this homework, you will need to know that each primitive
 has a corresponding reference type (`Boolean`, `Integer`, `Character`,
 `Double`). If you are using "generics" to declare a data structure, you _must_
-use the reference type. You can seamlessly convert between a primitive type
+use the reference type. You can (usually) seamlessly convert between a primitive type
 and its reference type.
 
-#### `null`
+### `null`
 
 Java also has `null`, which is the approximate equivalent of `None` in Python.
 Any reference type can be assigned a value of `null`. If we try to access an
@@ -82,9 +84,9 @@ System.out.println(array.length);
   an array, you can call `Arrays.toString(array)`.
 - Arrays do not have a length _method_. It is an _instance variable_, so
   it does not have parentheses.
-- Java does not support _negative indexing_ or _slicing_.
+- Java does **not** support _negative indexing_ or _slicing_.
 
-### Foreach Loop
+### Foreach Loop / Enhanced For Loop
 
 <table>
     <thead>
@@ -224,10 +226,10 @@ for (int elem : set) {
 
 - Java has the `Set` interface. There are two main implementations:
   [`TreeSet`][], and [`HashSet`][]. `TreeSet` keeps its elements in "sorted"
-  order, and is "fast." In contrast, `HashSet` does not have a defined
-  "order", but is (usually) **really** "fast."
-- A `Set` canot contain duplicate items. If we try to add a duplicate item, it
-  simply does nothing.
+  order, and is fast. In contrast, `HashSet` does not have a defined
+  "order", but is (usually) really fast.
+    - We will formalize these notions of "fast" later on in the course when we learn about asymptotic analysis.
+- A `Set` canot contain duplicate items. If we try to add an item already in the set, nothing happens.
 
 [`TreeSet`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html
 [`HashSet`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html
@@ -280,11 +282,12 @@ for (String key : map.keySet()) {
 - Java has the `Map` interface. There are two main implementations:
   [`TreeMap`][], and [`HashMap`][]. Similarly to sets, `TreeMap` keeps its
   keys sorted and is fast; `HashMap` has no defined order and is (usually)
-  **really** fast.
-- In the angled brackets, we have the "key type" first, followed by the
+  really fast.
+- A `Map` cannot contain duplicate keys. If we try to add a key already in the map, the value is overwritten.
+- In the angle brackets, we have the "key type" first, followed by the
   "value type".
 - `Map`s cannot directly be used with the `:` for loop. Typically, we call
-  `keySet` to iterate over a set of the keys.
+  `keySet` to iterate over a set of the keys, and use those to retrieve the values. One may also iterate over the `entrySet` to get both the keys and values.
 
 [`TreeMap`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html
 [`HashMap`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashMap.html
@@ -465,9 +468,8 @@ def minIndex(numbers):
 
 </td>
 </tr>
-    
-    
-<thead> 
+
+<thead>
 <th>Java</th>
 </thead>
 <tr>
@@ -493,61 +495,115 @@ public static int minIndex(int[] numbers) {
 </table>
 
 
-## Programming Exercise
+## Programming Exercises
 
-In order to get you more familiar with Java syntax and testing, there are couple of exercises for you to solve! After you complete the functions, we have provided couple tests for you to test. Although we have provided tests, you are welcomed to write your own too! Writing tests is not only crucial for this class but it is one of the most important skills to have in general. It reinforces our understanding of what specific method is supposed to do and allows us to catch edge cases! You will have more exercises for testing but we want you to get exposed early on.
-    
+In order to get you more familiar with Java syntax and testing, there are a few exercises for you to solve! After you complete the functions, we have provided a handful of tests for you. Although we have provided tests, you are welcome to write your own too! Writing tests is not only crucial for this class but it is one of the most important skills to have in general. It reinforces our understanding of what specific methods are supposed to do and allows us to catch edge cases! You will have more exercises for testing later on in the course but we want you to be exposed early on.
+
 While completing the assignment, you may need to use different data structures like `ArrayList` and `TreeMap`. In order to import these classes, if you hover over wherever you are using the data structures, IntelliJ will give you option to import it or you can do it manually by adding:
-    
-```
+
+```java
 import java.util.ArrayList;
 import java.util.TreeMap;
 ```
-    
+
 
 ### JavaExercises
-    
+
 `ListExercises.java` has 4 different methods for you to complete:
-    
--   `makeDice`: This method takes returns a *new* `array` of integers `[1, 2, 3, 4, 5, 6]`.
--   `takeOrder`: This method takes a list `String` and returns a *new* array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should retunrn array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
--   `findMinMax`: This method takes array `int[] array` and returns the result of `max - min` of the integers in that array.
--   `hailstone`: This method takes a `int n` and returns the numbers in hailstone sequence. If the character does not occur in any of the words, it should return 0. The hailstonce sequence: Pick a positive integer n as the start.If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
+
+- `makeDice`: This method takes returns a _new_ `array` of integers `[1, 2, 3, 4, 5, 6]`.
+- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should retunrn array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
+- `findMinMax`: This method takes array `int[] array` and returns the result of `max - min` of the integers in that array.
+- `hailstone`: This method takes a `int n` and returns the numbers in hailstone sequence. If the character does not occur in any of the words, it should return 0. The hailstonce sequence: Pick a positive integer n as the start.If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
 
 For this part, you can import `List` and `ArrayList`.
 
 ### ListExercises
-    
-`ListExercises.java` has 4 different methods for you to complete:
-    
--   `sum`: This method takes a list `List<Integer> L` and returns the total sum of the elements in that list. If the list is empty, it method should return 0.
--   `evens`: This method takes a list `List<Integer> L` and returns a *new* list containing the even numbers of the given list. If there are no even elements, it should return an empty list.
--   `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a *new* list containing the common item of the two given lists. If there are no common items, it should return an empty list.
--   `countOccurrencesOfC`: This method takes a list and a character `List<String> words`, `char c` and returns the number of occurrences of the given character in a list of strings. If the character does not occur in any of the words, it should return 0.
-    
-For this part, you can import `ArrayList`.
-    
-### MapExercises
-    
-`MapExercises.java` has 3 different methods for you to complete:
-    
--   `letterToNum`: This method returns a map from every lower case letter to the number corresponding to that letter starting with 'a' is 1.
--   `squares`: This method takes a list `List<Integer> nums` and returns a map from the integers in the list to their squares. If the given list is empty, it should return an empty map.
--   `countWords`: This method takes a list `List<String> words` and returns a map of the counts of all words that appear in a list of words. If the given list is empty, it should return an empty map.
-    
-For this part, you can import `TreeMap`. 
 
-### Dessert
+`ListExercises.java` has 4 different methods for you to complete:
+
+- `sum`: This method takes a list `List<Integer> L` and returns the total sum of the elements in that list. If the list is empty, it method should return 0.
+- `evens`: This method takes a list `List<Integer> L` and returns a _new_ list containing the even numbers of the given list. If there are no even elements, it should return an empty list.
+- `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a _new_ list containing the common item of the two given lists. If there are no common items, it should return an empty list.
+- `countOccurrencesOfC`: This method takes a list and a character `List<String> words`, `char c` and returns the number of occurrences of the given character in a list of strings. If the character does not occur in any of the words, it should return 0.
+
+For this part, you can import `ArrayList`.
+
+### MapExercises
+
+`MapExercises.java` has 3 different methods for you to complete:
+
+- `letterToNum`: This method returns a map from every lower case letter to the number corresponding to that letter starting with 'a' is 1.
+- `squares`: This method takes a list `List<Integer> nums` and returns a map from the integers in the list to their squares. If the given list is empty, it should return an empty map.
+- `countWords`: This method takes a list `List<String> words` and returns a map of the counts of all words that appear in a list of words. If the given list is empty, it should return an empty map.
+
+For this part, you can import `TreeMap`.
+
+### Dessert.java
+
+{: .info}
+Compared to your previous classes, 61B may leave a lot of wiggle room for you on assignments. For example, there's no skeleton code for this exercise - don't be alarmed!
+
+Create a class called `Dessert` (you'll need to create a new file and **add it to Git**) inside of the `src/` folder. This class should have the following characteristics: 
+
+- Two instance variables: `int flavor` and `int price`.
+- A constructor that takes two parameters `int flavor` and `int price` and sets the instance variables accordingly.
+- One static variable `int numDesserts` that keeps track of the number of desserts created so far.
+- A method `public void printDessert()` that prints the flavor and price of the dessert, along with the total number of desserts created so far, separated by a space.
+  - For example, if we create a dessert with flavor 1 and price 2, and then call its `printDessert()` method, it should print `1 2 1`.
+  - If we then create a dessert with flavor 3 and price 4, and then call its `printDessert()` method, it should print `3 4 2`.
+- Lastly, a method `public static void main(String[] args)` that only prints the line `I love dessert!` when executed.
+
+Be sure to implement the above behavior exactly, otherwise you may not pass the tests!
+
+When you have completed `Dessert.java`, uncomment the appropriate lines in `tests/DessertTest` and run the test.
+
+<details markdown="block">
+<summary>
+How to create a new class in IntelliJ
+</summary>
+<br>
+
+1. Right-click on the `src/` folder on the left-hand side of the screen, then go to `New` > `Java Class`.
+   ![New Java Class](img/new-java-class.png){:style="display:block; margin-left:auto; margin-right:auto"}
+2. You should see a popup appear. In the `Name` field, type `Dessert`, then hit Enter.
+   ![New Java Class Popup](img/new-java-class-popup.png){:style="display:block; margin-left:auto; margin-right:auto"}
+3. If you get something like the following popup asking you to add the file to Git, select `Add`.
+   ![New Java Class Git](img/new-java-class-git.png){:style="display:block; margin-left:auto; margin-right:auto"}
+4. You should now see a new file called `Dessert.java` in the `src/` folder. It should look like this, after which you can modify it to meet the specifications above:
+   ![New Java Class File Contents](img/new-java-class-file-contents.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+</details>
+
+<details markdown="block">
+<summary>
+`Dessert` class implemented in Python
+</summary>
+<br>
+
+```python
+class Dessert:
+    numDesserts = 0
+
+    def __init__(self, flavor, price):
+        self.flavor = flavor
+        self.price = price
+        Dessert.numDesserts += 1
+
+    def printDessert(self):
+        print(self.flavor, self.price, Dessert.numDesserts)
     
-    
--   TODO FILL THIS 
-    
-    
+if __name__ == "__main__":
+    print("I love dessert!")
+```
+
+</details>
+
 ## Deliverables
-    
+
 - `ListExercises.java`
 - `MapExercises.java`
 - `JavaExercises.java`
 - `Dessert.java`
-    
-For this assignment, you need to complete the methods in `JavaExercises.java`, `ListExerises`, `MapExercises`. You also need to create a new class `Dessert.java` and complete it accordingly. Make sure you test before you submit it to Gradescope. Although we do not have a submission limit for this specific assignment, in the future it is encouraged to use existing tests and write your own tests to see if your methods work before submitting your code to the autograder.
+
+For this assignment, you need to complete the methods in `JavaExercises`, `ListExercises`, and `MapExercises`. You also need to create a new file `Dessert.java` and implement it according to the desired specifications. Make sure you test your code before submitting to Gradescope. Although we do not have a submission limit for this specific assignment, in the future it is encouraged to use existing tests and write your own tests to see if your methods work before submitting your code to the autograder, as there may be limited submissions.
