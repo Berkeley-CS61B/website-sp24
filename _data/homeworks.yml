@@ -22,17 +22,17 @@
 homeworks:
   - title: "Homework 0A"
     due: "1/19"
-    link: "homeworks/hw0/hw0a"
+    # link: "homeworks/hw0/hw0a"
     rowspan: 1
     nonumber: True
   - title: "Homework 0B"
     due: "1/22"
-    link: "homeworks/hw0/hw0b"
+    # link: "homeworks/hw0/hw0b"
     rowspan: 2
     nonumber: True
   - title: "Homework 1"
     due: "1/26"
-    link: "homeworks/hw1"
+    # link: "homeworks/hw1"
     rowspan: 2
     nonumber: True
   - rowspan: 9
@@ -41,7 +41,7 @@ homeworks:
       - blank
   - title: "Homework 2"
     due: "2/26"
-    link: "homeworks/hw2"
+    # link: "homeworks/hw2"
     rowspan: 5
     nonumber: True
   - rowspan: 5
@@ -50,7 +50,7 @@ homeworks:
       - blank
   - title: "Homework 3"
     due: "3/18"
-    link: "homeworks/hw3"
+    # link: "homeworks/hw3"
     rowspan: 4
     nonumber: True
   - rowspan: 16
@@ -59,7 +59,7 @@ homeworks:
       - blank
   - title: "Homework 4"
     due: "5/3"
-    link: "homeworks/hw4"
+    # link: "homeworks/hw4"
     rowspan: 5
     nonumber: True
   - rowspan: 1
