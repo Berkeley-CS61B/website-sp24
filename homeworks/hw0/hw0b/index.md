@@ -13,6 +13,7 @@ description: >-
   Homework 0A spec.
 released: true
 ---
+
 ## Language Constructs
 
 ### Types
@@ -228,7 +229,7 @@ for (int elem : set) {
   [`TreeSet`][], and [`HashSet`][]. `TreeSet` keeps its elements in "sorted"
   order, and is fast. In contrast, `HashSet` does not have a defined
   "order", but is (usually) really fast.
-    - We will formalize these notions of "fast" later on in the course when we learn about asymptotic analysis.
+  - We will formalize these notions of "fast" later on in the course when we learn about asymptotic analysis.
 - A `Set` canot contain duplicate items. If we try to add an item already in the set, nothing happens.
 
 [`TreeSet`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html
@@ -388,6 +389,70 @@ System.out.println("Point 1: ( " + p1.x
 </tr>
 </table>
 
+## Main
+
+Java programs may also have a special method called `main`. When you execute a program, the `main` method is called. The `main` method runs whatever code is inside, which may call other methods defined within the program.
+
+We define the `main` method with the signature `public static void main(String[] args)`. You will learn the meaning of each part of this signature later in the class. For now, you can treat `main` as a "play button" for the code you have written.
+
+To run the code in the previous example, we may create a `main` method in the `Point` class like this:
+
+<table>
+    <thead>
+        <th>Python</th>
+        <th>Java</th>
+    </thead>
+<tr>
+<td markdown="block">
+
+```python
+class Point:
+
+    # other methods...
+    # end of Point class
+
+if __name__ == '__main__':
+    p1 = Point(5, 9)
+    p2 = Point(-3, 3)
+    print(f"Point 1: ({p1.x}, {p1.y})")
+    print("Distance:", p1.distanceTo(p2))
+    p1.translate(2, 2)
+    print(f"Point 1: ({p1.x}, {p1.y})")
+
+```
+
+</td>
+<td markdown="block">
+
+```java
+public class Point {
+
+    // other methods...
+
+    public static void main(String[] args) {
+        Point p1 = new Point(5, 9);
+        Point p2 = new Point(-3, 3);
+        System.out.println("Point 1: ( " + p1.x
+            + ", " + p1.y + ")");
+        System.out.println("Distance: "
+            + p1.distanceTo(p2));
+        p1.translate(2, 2);
+        System.out.println("Point 1: ( " + p1.x
+            + ", " + p1.y + ")");
+    }
+
+    // end of Point class
+}
+```
+
+</td>
+</tr>
+</table>
+
+Notice that in Java, the `main` method is defined _within_ a class.
+
+If you are coding in IntelliJ, you can actually "play" the `main` method! IntelliJ will display a green play button to the left of the `main` method's signature. Click it to run the code inside.
+
 ## Programs
 
 Let's look at some Java programs that use data structures and classes. Here
@@ -494,7 +559,6 @@ public static int minIndex(int[] numbers) {
 </tr>
 </table>
 
-
 ## Programming Exercises
 
 In order to get you more familiar with Java syntax and testing, there are a few exercises for you to solve! After you complete the functions, we have provided a handful of tests for you. Although we have provided tests, you are welcome to write your own too! Writing tests is not only crucial for this class but it is one of the most important skills to have in general. It reinforces our understanding of what specific methods are supposed to do and allows us to catch edge cases! You will have more exercises for testing later on in the course but we want you to be exposed early on.
@@ -505,7 +569,6 @@ While completing the assignment, you may need to use different data structures l
 import java.util.ArrayList;
 import java.util.TreeMap;
 ```
-
 
 ### JavaExercises
 
@@ -544,7 +607,7 @@ For this part, you can import `TreeMap`.
 {: .info}
 Compared to your previous classes, 61B may leave a lot of wiggle room for you on assignments. For example, there's no skeleton code for this exercise - don't be alarmed!
 
-Create a class called `Dessert` (you'll need to create a new file and **add it to Git**) inside of the `src/` folder. This class should have the following characteristics: 
+Create a class called `Dessert` (you'll need to create a new file and **add it to Git**) inside of the `src/` folder. This class should have the following characteristics:
 
 - Two instance variables: `int flavor` and `int price`.
 - A constructor that takes two parameters `int flavor` and `int price` and sets the instance variables accordingly.
@@ -592,7 +655,7 @@ class Dessert:
 
     def printDessert(self):
         print(self.flavor, self.price, Dessert.numDesserts)
-    
+
 if __name__ == "__main__":
     print("I love dessert!")
 ```
