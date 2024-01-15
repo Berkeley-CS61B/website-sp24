@@ -28,6 +28,7 @@ class_days: ['1', '3', '5']
 # Used in syllabus.html to add a button linking to lecture pptx files, which
 # are a little too big to commit directly into the repo.
 lecturepptx: "https://drive.google.com/drive/folders/1DKQHI8CjBbKFUPlMX_zCKKOK6WHr7Akd"
+discussionpptx: "https://drive.google.com/drive/folders/1n4vEndznDA5caBq8eWBPhzLKwWxiY8gY"
 
 
 #######################################################

@@ -24,11 +24,11 @@
     then create filenames (see discussion.yml for more on filenames).
 {%- endcomment -%}
 {%- assign filenumber = include.number | prepend: '00' | slice: -2, 2 -%}
-{%- assign filename_base = "/assets/discussions/disc" | append: filenumber -%}
-{%- assign filename_regular = filename_base | append: "-regular.pdf" -%}
-{%- assign filename_regular_solutions = filename_base | append: "-regular-sols.pdf" -%}
-{%- assign filename_examprep = filename_base | append: "-examprep.pdf" -%}
-{%- assign filename_examprep_solutions = filename_base | append: "-examprep-sols.pdf" -%}
+{%- assign filename_base = "/assets/discussions/" -%}
+{%- assign filename_regular = filename_base | append: "regular" | append: filenumber | append: ".pdf" -%}
+{%- assign filename_regular_solutions = filename_base | append: "regular" | append: filenumber | append: "sol.pdf" -%}
+{%- assign filename_examprep = filename_base | append: "examlevel" | append: filenumber | append: ".pdf" -%}
+{%- assign filename_examprep_solutions = filename_base | append: "examlevel" | append: filenumber | append: "sol.pdf" -%}
 
 {%- comment -%}
   - Automatically check if files exist.
