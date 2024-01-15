@@ -385,6 +385,65 @@ System.out.println("Point 1: ( " + p1.x
 </tr>
 </table>
 
+## Main
+
+Java programs may also have a special method called `main`. When you execute a program, the `main` method is called. The `main` method runs whatever code is inside, which may call other methods defined within the program.
+
+We define the `main` method with the signature `public static void main(String[] args)`. You will learn the meaning of each part of this signature later in the class. For now, you can treat `main` as a "play button" for the code you have written.
+
+To run the code in the previous example, we may create a `main` method in the `Point` class like this:
+
+<table>
+    <thead>
+        <th>Python</th>
+        <th>Java</th>
+    </thead>
+<tr>
+<td markdown="block">
+
+```python
+class Point:
+
+    # other methods...
+
+    if __name__ == '__main__':
+        p1 = Point(5, 9)
+        p2 = Point(-3, 3)
+        print(f"Point 1: ({p1.x}, {p1.y})")
+        print("Distance:", p1.distanceTo(p2))
+        p1.translate(2, 2)
+        print(f"Point 1: ({p1.x}, {p1.y})")
+    
+```
+
+</td>
+<td markdown="block">
+
+```java
+public class Point {
+
+    // other methods...
+
+    public static void main(String[] args) {
+        Point p1 = new Point(5, 9);
+        Point p2 = new Point(-3, 3);
+        System.out.println("Point 1: ( " + p1.x
+            + ", " + p1.y + ")");
+        System.out.println("Distance: "
+            + p1.distanceTo(p2));
+        p1.translate(2, 2);
+        System.out.println("Point 1: ( " + p1.x
+            + ", " + p1.y + ")");
+    }   
+}
+```
+
+</td>
+</tr>
+</table>
+
+If you are coding in IntelliJ, you can actually "play" the `main` method! IntelliJ will display a green play button to the left of the `main` methodd's signature. Click it to run the code inside.
+
 ## Programs
 
 Let's look at some Java programs that use data structures and classes. Here
@@ -465,9 +524,8 @@ def minIndex(numbers):
 
 </td>
 </tr>
-    
-    
-<thead> 
+
+<thead>
 <th>Java</th>
 </thead>
 <tr>
@@ -492,62 +550,58 @@ public static int minIndex(int[] numbers) {
 </tr>
 </table>
 
-
 ## Programming Exercise
 
 In order to get you more familiar with Java syntax and testing, there are couple of exercises for you to solve! After you complete the functions, we have provided couple tests for you to test. Although we have provided tests, you are welcomed to write your own too! Writing tests is not only crucial for this class but it is one of the most important skills to have in general. It reinforces our understanding of what specific method is supposed to do and allows us to catch edge cases! You will have more exercises for testing but we want you to get exposed early on.
-    
+
 While completing the assignment, you may need to use different data structures like `ArrayList` and `TreeMap`. In order to import these classes, if you hover over wherever you are using the data structures, IntelliJ will give you option to import it or you can do it manually by adding:
-    
+
 ```
 import java.util.ArrayList;
 import java.util.TreeMap;
 ```
-    
 
 ### JavaExercises
-    
+
 `ListExercises.java` has 4 different methods for you to complete:
-    
--   `makeDice`: This method takes returns a *new* `array` of integers `[1, 2, 3, 4, 5, 6]`.
--   `takeOrder`: This method takes a list `String` and returns a *new* array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should retunrn array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
--   `findMinMax`: This method takes array `int[] array` and returns the result of `max - min` of the integers in that array.
--   `hailstone`: This method takes a `int n` and returns the numbers in hailstone sequence. If the character does not occur in any of the words, it should return 0. The hailstonce sequence: Pick a positive integer n as the start.If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
+
+- `makeDice`: This method takes returns a _new_ `array` of integers `[1, 2, 3, 4, 5, 6]`.
+- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should retunrn array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
+- `findMinMax`: This method takes array `int[] array` and returns the result of `max - min` of the integers in that array.
+- `hailstone`: This method takes a `int n` and returns the numbers in hailstone sequence. If the character does not occur in any of the words, it should return 0. The hailstonce sequence: Pick a positive integer n as the start.If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
 
 For this part, you can import `List` and `ArrayList`.
 
 ### ListExercises
-    
+
 `ListExercises.java` has 4 different methods for you to complete:
-    
--   `sum`: This method takes a list `List<Integer> L` and returns the total sum of the elements in that list. If the list is empty, it method should return 0.
--   `evens`: This method takes a list `List<Integer> L` and returns a *new* list containing the even numbers of the given list. If there are no even elements, it should return an empty list.
--   `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a *new* list containing the common item of the two given lists. If there are no common items, it should return an empty list.
--   `countOccurrencesOfC`: This method takes a list and a character `List<String> words`, `char c` and returns the number of occurrences of the given character in a list of strings. If the character does not occur in any of the words, it should return 0.
-    
+
+- `sum`: This method takes a list `List<Integer> L` and returns the total sum of the elements in that list. If the list is empty, it method should return 0.
+- `evens`: This method takes a list `List<Integer> L` and returns a _new_ list containing the even numbers of the given list. If there are no even elements, it should return an empty list.
+- `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a _new_ list containing the common item of the two given lists. If there are no common items, it should return an empty list.
+- `countOccurrencesOfC`: This method takes a list and a character `List<String> words`, `char c` and returns the number of occurrences of the given character in a list of strings. If the character does not occur in any of the words, it should return 0.
+
 For this part, you can import `ArrayList`.
-    
+
 ### MapExercises
-    
+
 `MapExercises.java` has 3 different methods for you to complete:
-    
--   `letterToNum`: This method returns a map from every lower case letter to the number corresponding to that letter starting with 'a' is 1.
--   `squares`: This method takes a list `List<Integer> nums` and returns a map from the integers in the list to their squares. If the given list is empty, it should return an empty map.
--   `countWords`: This method takes a list `List<String> words` and returns a map of the counts of all words that appear in a list of words. If the given list is empty, it should return an empty map.
-    
-For this part, you can import `TreeMap`. 
+
+- `letterToNum`: This method returns a map from every lower case letter to the number corresponding to that letter starting with 'a' is 1.
+- `squares`: This method takes a list `List<Integer> nums` and returns a map from the integers in the list to their squares. If the given list is empty, it should return an empty map.
+- `countWords`: This method takes a list `List<String> words` and returns a map of the counts of all words that appear in a list of words. If the given list is empty, it should return an empty map.
+
+For this part, you can import `TreeMap`.
 
 ### Dessert
-    
-    
--   TODO FILL THIS 
-    
-    
+
+- TODO FILL THIS
+
 ## Deliverables
-    
+
 - `ListExercises.java`
 - `MapExercises.java`
 - `JavaExercises.java`
 - `Dessert.java`
-    
+
 For this assignment, you need to complete the methods in `JavaExercises.java`, `ListExerises`, `MapExercises`. You also need to create a new class `Dessert.java` and complete it accordingly. Make sure you test before you submit it to Gradescope. Although we do not have a submission limit for this specific assignment, in the future it is encouraged to use existing tests and write your own tests to see if your methods work before submitting your code to the autograder.
