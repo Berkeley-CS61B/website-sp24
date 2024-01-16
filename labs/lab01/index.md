@@ -157,7 +157,12 @@ to read past that. This is to help you get a rough idea of what Git is.
 
 Before we use git, we have some short commands to configure it appropriately.
 
-First, open up your terminal and set the name and email that git will use with these two commands:
+First, open up your terminal. It will look something like this:
+
+{: style="max-height: 200;" }
+![empty_terminal](img/empty_terminal.png)
+
+Then, set the name and email that git will use with these two commands:
 
 ```shell
 git config --global user.name "<your name>"
@@ -216,11 +221,7 @@ This is for several reasons:
                                                                                                   
 Like in Python, we sometimes want to use libraries that others wrote. Java dependency management 
 is a bit of a mess, so we instead provide a git repo that contains all the dependencies that we 
-will use in this course. Once again, make sure your terminal is open - it might look  something like 
-this: 
-
-{: style="max-height: 200;" }
-![empty_terminal](img/empty_terminal.png)
+will use in this course. Once again, make sure your terminal is open.
 
 Navigate to the folder where you would like to store your libraries. For this lab, we'll 
 assume that you placed all your stuff in a folder named __cs61b__. You can pick a different name
@@ -255,7 +256,8 @@ Follow the instructions above to get the course libraries.
 
 ### Authenticate With Github
 
-First, run the following command. It will print out any SSH keys you have and generate a new one if none exists: 
+First, run the following command in your terminal. It will print out any SSH keys you have 
+and generate a new one if none exists: 
 
 ```shell
 curl -sS sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash
@@ -275,7 +277,7 @@ It should look similar to the format below:
 ssh-ed25519 AAAAC3NzaC1lZDI1N6jpH3Bnbebi7Xz7wMr20LxZCKi3U8UQTE5AAAAIBTc2HwlbOi8T [some-comment-here]
 ```
 
-The `[some-comment-here]` will be system dependent and may vary from individuals. In your browser, go 
+The `[some-comment-here]` will be system dependent and may vary for individuals. In your browser, go 
 to [Github, Setings, SSH, GPG Keys, New SSH Key](https://github.com/settings/ssh/new) (or click the link).
 **Name the key, so it's memorable what device the key is on or so you recognize what it's for and select 
 the Key type as Authentication Key**. Then, add the key to your account. 
@@ -300,7 +302,8 @@ you stored your Java libraries (for example, `cs61b`).
 
 {: .danger}
 Do not place your repository inside the `library-{{ site.semester }}` folder. This will cause headaches
-in the future.
+in the future. For example, it would be inside of the `cs61b` folder but not in the `library-{{ site.semester }}`
+folder (possibly on the same level as the library).
 
 **Make sure to replace the `***` with your
 class repository number (you can find this repo number on Beacon).** Then run the command below:
@@ -351,7 +354,7 @@ Follow the steps above to clone and configure your repository.
 
 The skeleton remote repository contains the skeleton code for all assignments.
 Whenever a new assignment is released, or if we need to update an assignment, you will
-pull from the skeleton. First ensure that you are in your {{ site.semester }}-s*** repository directory. 
+pull from the skeleton. First ensure that you are in your `{{ site.semester }}-s***` repository directory. 
 
 Next, run the following command to get the skeleton code for Lab 1: 
 
@@ -398,25 +401,23 @@ the git exercise:**
 
 ### Installing IntelliJ
 
-1.  Download the Community Edition of IntelliJ from the
-    [JetBrains](https://www.jetbrains.com/idea/download/) website.
-    As a student you can actually get a student license for the Ultimate
-    version, but there are not any additional features that we will use for this
-    class. **It is recommended and assumed that you proceed with the Community
-    Edition. The Ultimate Version will be the first one you see when you click on the link - 
-    make sure to scroll down for the Community Version.**
+1. Download the Community Edition of IntelliJ from the
+   [JetBrains](https://www.jetbrains.com/idea/download/) website. 
+   As a student you can actually get a student license for the Ultimate 
+   version, but there are not any additional features that we will use for this 
+   class. **It is recommended and assumed that you proceed with the Community  
+   Edition. The Ultimate Version will be the first one you see when you click on the link - 
+   make sure to scroll down for the Community Version.**
 
-    {: .info}
-    If you have an M1 or M2 Mac,
-    select ".dmg (Apple Silicon)". Otherwise, select ".dmg (Intel)."'
+   {: .info}
+   If you have an M1 or M2 Mac,
+   select ".dmg (Apple Silicon)". Otherwise, select ".dmg (Intel)."
 
-{:start="2"}
+2. After selecting the appropriate version for your OS, click download and wait
+   a few minutes for the file to finish downloading.
+3. Run the installer. If you have an older version of IntelliJ, you should
+   uninstall it at this time and replace it with this newer version.
 
-1.  After selecting the appropriate version for your OS, click download and wait
-    a few minutes for the file to finish downloading.
-
-2.  Run the installer. If you have an older version of IntelliJ, you should
-    uninstall it at this time and replace it with this newer version.
 
 {: .info}
 While IntelliJ downloads, you can read / skim our
@@ -488,7 +489,7 @@ Follow the instructions in
 to open `lab01` (if you haven't exited from the previous section, you can start on step 3).
 
 **Everytime you open up an assignment, you will need to ensure that your Project Structure is set up and that you've 
-added `library-{{ site.semester }}`**.
+added the `library-{{ site.semester }}` package**.
 
 ### Creating Projects
 
@@ -636,8 +637,7 @@ If you haven't already, make sure you've added, committed and pushed your change
 are repeated below for your convenience. 
 
 1. Add your assignment directory using `git add`. For example, for Lab 1, from your 
-   repo root (`{{ site.semester }}-s***`) you would use `git add lab01`. From the 
-   assignment directory, you could use `git add ..`
+   repo root (`{{ site.semester }}-s***`) you would use `git add lab01`. 
 
 2. Commit the files using `git commit -m "<commit message here>"`. The commit message 
    is required. For example, `git commit -m "Finished Lab 1"`.
@@ -669,6 +669,9 @@ workflow that's specified above). You should receive a full score on the lab if 
 passed all the tests in `ArithmeticTest.java`.
 
 **Congratulations on finishing your first CS 61B lab!**
+
+If you ever need a refresher on how to submit an assignment, you can refer back to the 
+[assignment workflow guide](../../resources/guides/assignment-workflow/index.md#opening-in-intellij). 
 
 ## Optional: Josh Hug's Color Schemes
 
