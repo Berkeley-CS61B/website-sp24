@@ -389,7 +389,7 @@ System.out.println("Point 1: ( " + p1.x
 </tr>
 </table>
 
-## Main
+### Main
 
 Java programs may also have a special method called `main`. When you execute a program, the `main` method is called. The `main` method runs whatever code is inside, which may call other methods defined within the program.
 
