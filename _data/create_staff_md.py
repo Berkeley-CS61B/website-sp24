@@ -24,7 +24,7 @@ to display on the course website. This takes 3 steps:
 3. Invoke this script which will ask for the .csv filename, which then downloads
    all the images to the assets directory and updates the .yml files
 
-4. Invoke the resize.py script in '/assets/img/staff/'
+4. Invoke the resize.py script in '/assets/staff/'
 
 NOTE: If we keep repeatedly trying, Google Drive will pick up and temporarily
 network ban you from accessing the photos, so be aware of that.

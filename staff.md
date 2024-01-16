@@ -5,9 +5,8 @@ nav_order: 3
 has_children: true
 has_toc: false
 description: A listing of all the course staff members.
+released: true
 ---
-
-# Staff
 
 ## Instructors
 
