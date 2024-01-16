@@ -26,42 +26,42 @@ projects:
       - blank
   - title: "Project 0: 2048"
     due: "1/26"
-    link: "projects/proj0/"
+    # link: "projects/proj0/"
     rowspan: 5
     nonumber: True
   - title: "Project 1A: LinkedListDeque"
     due: "2/5"
-    link: "projects/proj1/proj1a"
+    # link: "projects/proj1/proj1a"
     rowspan: 3
     nonumber: True
   - title: "Project 1B: ArrayDeque"
     due: "2/12"
-    link: "projects/proj1/proj1b"
+    # link: "projects/proj1/proj1b"
     rowspan: 3
     nonumber: True
   - title: "Project 1C: Deque Extensions"
     due: "2/20"
-    link: "projects/proj1/proj1c"
+    # link: "projects/proj1/proj1c"
     rowspan: 4
     nonumber: True
   - title: "Project 2A: NGrams"
     due: "3/6"
-    link: "projects/proj2/proj2a"
+    # link: "projects/proj2/proj2a"
     rowspan: 7
     nonumber: True
   - title: "Project 2B: Wordnet"
     due: "4/1"
-    link: "projects/proj2/proj2a"
+    # link: "projects/proj2/proj2a"
     rowspan: 12
     nonumber: True
   - title: "Project 3A: World Generation"
     due: "4/15"
-    link: "projects/proj3/proj3a"
+    # link: "projects/proj3/proj3a"
     rowspan: 6
     nonumber: True
   - title: "Project 3B/C: Interactivity + Ambition"
     due: "4/22"
-    link: "projects/proj3/proj3b"
+    # link: "projects/proj3/proj3b"
     rowspan: 3
     nonumber: True
   - rowspan: 6
