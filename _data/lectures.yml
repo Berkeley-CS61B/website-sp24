@@ -53,33 +53,35 @@ lectures:
   - title: "Intro"
     recording: 
     readings: 
-      - title: "1.1"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap1/chap11.html"
+      - title: "Ch 1"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/1.-introduction"
   - title: "Defining and Using Classes"
     recording: 
     readings: 
-      - title: "1.2"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap1/chap12.html"
+      - title: "Ch 2"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/2.-defining-and-using-classes"
   - title: "Lists I: References, Recursion, and Lists"
     recording: 
     readings: 
-      - title: "2.1"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap21.html"
+      - title: "Ch 3"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/3.-references-recursion-and-lists"
   - title: "Lists II: SLLists"
     recording: 
     readings: 
-      - title: "2.2"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap22.html"
+      - title: "Ch 4"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/4.-sllists"
   - title: "Lists III: DLLists and Arrays"
     recording: 
     readings: 
-      - title: "2.3"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap23.html"
-      - title: "2.4"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap24.html"
+      - title: "Ch 5"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/5.-dllists"
+      - title: "Ch 6"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/6.-arrays"
   - title: "Testing"
     recording: 
-    readings: 
+    readings:
+      - title: "Ch 7"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/7.-testing" 
       - title: "TDD is dead"
         link: "https://dhh.dk/2014/tdd-is-dead-long-live-testing.html"
       - title: "Unit Tests Are Waste"
@@ -89,18 +91,18 @@ lectures:
   - title: "Lists IV: Arrays and Lists"
     recording: 
     readings: 
-      - title: "2.5"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap2/chap25.html"
+      - title: "Ch 8"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/8.-arraylist"
   - title: "Inheritance I: Interface and Implementation Inheritance"
     recording: 
     readings: 
-      - title: "4.1"
-        link: "https://joshhug.gitbooks.io/hug61b/content/chap4/chap41.html"
+      - title: "Ch 9"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-inheritance-i-interface-and-implementation-inheritance"
   - title: "Inheritance II: Extends, Casting, Higher Order Functions"
     recording: 
     readings: 
-      - title: "Ch 9"
-        link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-extends-casting-higher-order-functions"
+      - title: "Ch 10"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/10.-inheritance-ii-extends-casting-higher-order-functions"
   - title: "Inheritance III: Subtype Polymorphism, Comparators, Comparable"
     recording: 
     readings: 
