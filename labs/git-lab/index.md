@@ -2,10 +2,10 @@
 layout: page
 title: >-
     Lab 100: Git
-has_children: true
+has_children: false
 parent: Labs
 has_toc: false
-has_right_toc: true
+has_right_toc: false
 released: false
 ---
 

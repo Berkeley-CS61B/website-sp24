@@ -11,7 +11,8 @@ released: true
 
 ### Student-Facing Setup FAQ Doc
 
-Please take a look at the [setup FAQ doc](https://docs.google.com/document/d/1xsSWgYAFNIiJQEFC3gxNpvZf5DhEphDocRiCuyHkoqY/edit?usp=sharing) for additional setup assistance!
+Please take a look at the [setup FAQ doc](https://docs.google.com/document/d/1xsSWgYAFNIiJQEFC3gxNpvZf5DhEphDocRiCuyHkoqY/edit?usp=sharing) 
+for additional setup assistance!
 
 ### Mac: Homebrew installs Java 18 instead of the recommended Java 17
 
@@ -46,7 +47,6 @@ Secondly, the expected file structure is
 ```text
 {{ site.semester }}-***
 └── lab01
-    ├── magic_word.txt
     ├── src
     │   └── Arithmetic.java
     └── tests

@@ -6,7 +6,7 @@ has_children: true
 parent: Labs
 has_toc: false
 has_right_toc: true
-released: false
+released: true
 ---
 
 <!-- markdownlint-capture -->
@@ -253,46 +253,57 @@ library-{{ site.semester }}
 {: .task}
 Follow the instructions above to get the course libraries.                                                                                                                                                                                
 
+### Authenticate With Github
+
+First, run the following command. It will print out any SSH keys you have and generate a new one if none exists: 
+
+```shell
+curl -sS https://sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash
+```
+
+With the location that is provided, go ahead and run the following 
+command, ensuring to replace `path_to_ssh.key` with the location of the SSH key
+and **appending with the `.pub` suffix**. 
+
+```shell
+cat path_to_ssh.key.pub
+```
+
+It should look similar to the format below: 
+
+```shell
+ssh-ed25519 AAAAC3NzaC1lZDI1N6jpH3Bnbebi7Xz7wMr20LxZCKi3U8UQTE5AAAAIBTc2HwlbOi8T [some-comment-here]
+```
+
+The `[some-comment-here]` will be system dependent and may vary from individuals. In your browser, go 
+to [Github, Setings, SSH, GPG Keys, New SSH Key](https://github.com/settings/ssh/new) (or click the link).
+**Name the key, so it's memorable what device the key is on or so you recognize what it's for and select 
+the Key type as Authentication Key**. Then, add the key to your account. 
+
+In your terminal, run the following command to connect with Github using SSH: 
+
+```shell
+ssh -T git@github.com
+```
+
+If all went well, you should see something like:
+
+```shell
+Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
 ### Configure Personal Repository
 
 Now, it's time to clone your personal repository. As you did with the libraries, navigate to the 
 folder where you would like to keep your repository. We recommend that it's the same folder as where
 you stored your Java libraries (for example, `cs61b`).
 
-Before we do clone your repo though, we need to login to Github. Verify that you have the Github package: 
-```sh
-gh --version
-```
-
-You should see a version number displayed. If you instead see a command not found error, please install Github cli 
-again by following the steps outlined for you [operating system](#task-installing-software).
-
-Next login with your account with the following command: 
-
-```sh
-gh auth login
-```
-
-You'll be asked a few questions with some options to select from. You don't have to worry
-about them, simply select the first options for all of them and proceed. You'll be provided
-with a one time code, and prompted to open the browser.
-
-Enter the code in the browser window and select authorize Github. You should now be logged in!
-
-{: .info}
-For Windows Users: if you run into an error that says 
-\"could not prompt: Incorrect Function\", run `winpty gh auth login` instead.
-
-The entire process should look like the below: 
-
-<script async id="asciicast-rzokme4d9MDHMkmzIRxdnFfyG" src="https://asciinema.org/a/rzokme4d9MDHMkmzIRxdnFfyG.js"></script>
-
-**Once you've logged in, run the following command to clone your personal repository.** Make sure to replace the `***` with your 
-class repository number (you can find this repo number on Beacon). 
-
 {: .danger}
 Do not place your repository inside the `library-{{ site.semester }}` folder. This will cause headaches
 in the future.
+
+**Make sure to replace the `***` with your
+class repository number (you can find this repo number on Beacon).** Then run the command below:
 
 ```shell
 git clone https://github.com/Berkeley-CS61B-Student/{{ site.semester }}-s***.git
@@ -335,24 +346,6 @@ properly moved into the `{{ site.semester }}-s***` directory using `cd`.
 
 {: .task}
 Follow the steps above to clone and configure your repository.
-
-<details markdown="block">
-<summary markdown="block">
-
-**At this point, your work space might look like this:** 
-
-</summary>
-
-![Workspace Image](img/workspace.png)
-
-- Note that this also assuming that you did your `lab01-checkoff` inside the same folder where you cloned 
-  your `{{ site.semester }}-s***` repository (the screenshot was from a previous semester, but make sure that it lines up
-  with the semester you're taking it) and `library-{{ site.semester }}`. 
-- Your personal repository and libraries should be "separate", such that you didn't clone your `library-{{ site.semester }}`
-  inside your personal repository or vise versa. 
-- Your workspace doesn't have to look like this exactly. This is mainly for an idea of what it can look like. 
-
-</details>
 
 ### Getting the Skeleton
 
@@ -419,10 +412,10 @@ the git exercise:**
 
 {:start="2"}
 
-2. After selecting the appropriate version for your OS, click download and wait
+1.  After selecting the appropriate version for your OS, click download and wait
     a few minutes for the file to finish downloading.
 
-3. Run the installer. If you have an older version of IntelliJ, you should
+2.  Run the installer. If you have an older version of IntelliJ, you should
     uninstall it at this time and replace it with this newer version.
 
 {: .info}
@@ -476,17 +469,30 @@ You don't have to read this right now.
 {: .warning}
 **This step is important!!**
 
-With IntelliJ and the plugins installed, we can install the JDK. First, follow the instructions in
-[Opening in IntelliJ section of the Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md#opening-in-intellij) to open `lab01`.
+With IntelliJ and the plugins installed, we can install the JDK. Follow the steps below: 
 
-Once `lab01` is opened in IntelliJ, follow the instructions in
-[Set up the project JDK](https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk). **Choose a version 
-that is 17 or greater!** Depending on which version you choose, make sure that it is compatible 
-with the language level (e.g. if you choose SDK 18, choose your language leve to be 18).
+1. Start up IntelliJ. If you have no projects open, click the “Open” button. If you have a project currently open,
+   navigate to “File –> Open”.
+2. Find and choose the directory of your current assignment. For example, for Lab 1, you would select the 
+   lab01 directory inside your `{{ site.semester }}-s***`. 
+3. Navigate to the “File -> Project Structure” menu, and make sure you are in the Project tab. Then, follow 
+   the instructions [Set up the project JDK](https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk)
+   to download your JDK version. **Choose a version that is 17 or greater!** Depending on which
+   version you choose, make sure that it is compatible with the language level (e.g. if you
+   choose SDK 18, choose your language leve to be 18). 
+
+### Setting Up Assignments
+
+Follow the instructions in
+[Opening in IntelliJ section of the Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md#opening-in-intellij)
+to open `lab01` (if you haven't exited from the previous section, you can start on step 3).
+
+**Everytime you open up an assignment, you will need to ensure that your Project Structure is set up and that you've 
+added `library-{{ site.semester }}`**.
 
 ### Creating Projects
 
-With `lab01` opened up, you should see the following files in the left pane: 
+With `lab01` opened up and set up, you should see the following files in the left pane: 
 
 - `src/Arithmetic`, a Java file which contains your first programming
   exercise.

@@ -12,8 +12,8 @@ released: true
 
 ## A. Setup
 
-1.  Install the Xcode Command Line Tools through your terminal (it should already be available on macOS - 
-    try using the search feature/Finder to find it): 
+1.  Install the Xcode Command Line Tools through your terminal by running this command
+    (it should already be available on macOS - try using the search feature/Finder to find it): 
 
     ```shell
     xcode-select --install
@@ -22,7 +22,7 @@ released: true
     {: .warning}
     This might take a while. If you are on an older system, you may have to update your software. If you run 
     into any error regarding not enough free space, please double check how much free storage you have left (a
-    rough estimate is at least 40GB of free space). You may need to also restart your laptop. 
+    rough estimate of what is needed is at least 40GB of free space). You may need to also restart your laptop. 
     
     {: .warning}
     There is also a StackOverflow post that you can reference
@@ -35,7 +35,7 @@ released: true
     git --version
     ```
 
-    You have successfully installed git and gh if this command returns a valid version
+    You have successfully installed git if this command returns a valid version
     number and does not fail.
 
     The command should succeed and show version 17 (or newer). If the installation is good,

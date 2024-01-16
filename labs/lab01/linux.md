@@ -15,7 +15,7 @@ released: true
 Setting up Linux for 61B is super easy, all you have to do is use your package
 manager (apt, yum, etc) to install the Java JDK, git and curl.
 
-To install and configure the Java JDK, Git and curl on Ubuntu:
+To install and configure the Java JDK, git and curl on Ubuntu:
 
 ```sh
 sudo apt install openjdk-17-jdk git curl

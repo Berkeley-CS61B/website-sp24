@@ -33,21 +33,7 @@ released: true
 
    ![Windows git install](img/windows/windows_git.gif)
 
-
-## B. Install GitHub Cli
-
-We need to be able to login with our GitHub account from our terminal, in order to do that we install Github-Cli
-
-1. First download the installer from <https://cli.github.com/>
-
-   ![Download Page](img/windows/gh_download.png)
-
-2. Run the installer (this one should be relatively straight forward) and you should be done!
-
-   ![Install_Page](img/windows/gh_install.png)
-
-
-## C. Install Windows Terminal
+## B. Install Windows Terminal
 
 All recent versions of Windows 10 and 11 come with the Terminal app pre-installed. If you can find the app by searching 
 for terminal in the start menu, you should be good to go for this section and can skip onto the next step: 
@@ -59,7 +45,7 @@ for terminal in the start menu, you should be good to go for this section and ca
 If not, we recommend that you install the terminal app from the [Microsoft Store](https://aka.ms/terminal), which does not 
 require a login or payment. Alternate installation instructions are [here](https://github.com/microsoft/terminal). 
 
-## D. Configure Windows Terminal
+## C. Configure Windows Terminal
 
 When you start up windows terminal, you'll see a powershell terminal prompt. We don't want to use "PowerShell", which is based on Windows.
 Instead, we want to use a "bash shell" (specifically, Git bash), which is based on Linux.
@@ -81,7 +67,7 @@ To set this up:
     At this point, you're all done!
     You can now move on with the rest of Lab 1.
 
-## E. Note on WSL2 (experimental)
+## D. Note on WSL2 (experimental)
 
 The Summer 2020 update of Windows contains a Linux kernel called WSL2.
 We will not be officially supporting WSL2 for this term.
