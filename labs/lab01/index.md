@@ -266,7 +266,7 @@ command, ensuring to replace `path_to_ssh.key` with the location of the SSH key
 and **appending with the `.pub` suffix**. 
 
 ```shell
-cat path_to_ssh.key.pub
+cat path_to_ssh_key.pub
 ```
 
 It should look similar to the format below: 
