@@ -570,9 +570,9 @@ import java.util.ArrayList;
 import java.util.TreeMap;
 ```
 
-### JavaExercises
+### Task 1: JavaExercises
 
-`ListExercises.java` has 4 different methods for you to complete:
+`JavaExercises.java` has 4 different methods for you to complete:
 
 - `makeDice`: This method takes returns a _new_ `array` of integers `[1, 2, 3, 4, 5, 6]`.
 - `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should retunrn array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
@@ -581,7 +581,7 @@ import java.util.TreeMap;
 
 For this part, you can import `List` and `ArrayList`.
 
-### ListExercises
+### Task 2: ListExercises
 
 `ListExercises.java` has 4 different methods for you to complete:
 
@@ -592,7 +592,7 @@ For this part, you can import `List` and `ArrayList`.
 
 For this part, you can import `ArrayList`.
 
-### MapExercises
+### Task 3: MapExercises
 
 `MapExercises.java` has 3 different methods for you to complete:
 
@@ -602,7 +602,7 @@ For this part, you can import `ArrayList`.
 
 For this part, you can import `TreeMap`.
 
-### Dessert.java
+### Task 4: Dessert.java
 
 {: .info}
 Compared to your previous classes, 61B may leave a lot of wiggle room for you on assignments. For example, there's no skeleton code for this exercise - don't be alarmed!
@@ -664,9 +664,9 @@ if __name__ == "__main__":
 
 ## Deliverables
 
+- `JavaExercises.java`
 - `ListExercises.java`
 - `MapExercises.java`
-- `JavaExercises.java`
 - `Dessert.java`
 
 For this assignment, you need to complete the methods in `JavaExercises`, `ListExercises`, and `MapExercises`. You also need to create a new file `Dessert.java` and implement it according to the desired specifications. Make sure you test your code before submitting to Gradescope. Although we do not have a submission limit for this specific assignment, in the future it is encouraged to use existing tests and write your own tests to see if your methods work before submitting your code to the autograder, as there may be limited submissions.
