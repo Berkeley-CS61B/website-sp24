@@ -479,7 +479,7 @@ With IntelliJ and the plugins installed, we can install the JDK. Follow the step
    the instructions [Set up the project JDK](https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk)
    to download your JDK version. **Choose a version that is 17 or greater!** Depending on which
    version you choose, make sure that it is compatible with the language level (e.g. if you
-   choose SDK 18, choose your language leve to be 18). 
+   choose SDK 18, choose your language level to be 18). 
 
 ### Setting Up Assignments
 
