@@ -6,7 +6,7 @@ has_children: true
 parent: Labs
 has_toc: false
 has_right_toc: true
-released: false
+released: true
 ---
 
 <!-- markdownlint-capture -->
@@ -31,8 +31,8 @@ attend office hours.
 
 {: .danger}
 > If something isn't working, **do not** keep trying random things! Instead, ask for help. 
-> Your lab TA will tell you how to join the queue. They may choose to use a whiteboard queue 
-or the [online OH queue](https://oh.datastructur.es).
+> Your lab TA will tell you how to join the queue. They may choose to use a whiteboard queue
+> or the [online OH queue](https://oh.datastructur.es).
 > 
 > In general, while you are waiting, you should **move on to the next step of the
 assignment**, whenever possible.
@@ -54,22 +54,13 @@ This includes an introduction to the terminal, git, Java, and IntelliJ. We'll al
 small Java program to get situated with the Java language!
 
 {: .info}
-> This lab will be long! To help guide you through this lab, here's a brief overview of what your workflow 
-should look like: 
-> - Installing Software (Java, Git, Gh)
-> - Terminal Tasks  
-> - Setting Up Github and Beacon Accounts 
-> - Git Basics and Exercises
-> - Setting Up Your Git Repository and Libraries (IMPORTANT!)
-> - Submitting to Gradescope
-> - IntelliJ Setup and Java Deliverable 
-> - Final Deliverables (`magic_word.txt` and `Arithmetic.java`)
-> 
-> **Do not skip steps!** 
+> This lab will be long! **Do not skip steps!** 
 
 ## Personal Computer Setup
 
-### Task: Installing Software
+### Task: Installing Git
+
+<!-- Install Git Instructions Here and come back later to do -->
 
 Installation will vary, depending on your operating system.
 
@@ -89,92 +80,15 @@ Follow the guide for your operating system to install the software.
 
 In CS61B, we will be using the terminal extensively to work with git. The terminal also has some other commands 
 that allow you to work with folders or files. We've compiled them in this brief guide, so please make sure to read
-through it here: [How to Use the Terminal](terminal.md). 
+through it here: **[How to Use the Terminal](terminal.md)**. 
+
+In the terminal, you can move through different directories, create new files, list files in a current directory, 
+etc. with the specified commands in the guide. You will be using the terminal throughout this lab and most likely 
+in future assignments, especially for assignment submissions.
 
 {: .task}
-Read through the terminal guide!                
-
-### Task: Terminal Test Run
-
-Let's ensure that everything is working.
-
-1.  First open up your terminal.
-    Check that git is a recognized command by typing the following command:
-
-    ```shell
-    git --version
-    ```
-
-    The version number for git should be printed. If you see "git: command not
-    found", or similar, try opening a new terminal window, restarting your
-    computer, or installing git again.
-
-2.  Second, let's check that `javac` and `java` are working.
-    `javac` and `java` allow _Command Line Compilation_, or in other words,
-    the ability to run Java programs directly from the command line.
-    In practice, most developers run Java programs through an IDE like IntelliJ,
-    so we won't be using command line compilation this semester other than
-    testing your setup.
-
-    Start by running the following commands at your terminal.
-
-    ```shell
-    mkdir ~/temp
-    cd ~/temp
-    ```
-
-    1.  Then, open your operating system's file explorer in this directory.
-        You can do this from the command line:
-
-        - Mac: `open .`
-        - Windows: `explorer .`
-        - Ubuntu: `gnome-open .`
-
-    2.  In this newly opened directory, create a file `HelloWorld.java` with
-        these contents:
-
-        ```java
-        public class HelloWorld {
-            public static void main(String[] args) {
-                System.out.println("Hello world!");
-            }
-        }
-        ```
-
-        Note that in addition to the file finder or explorer, you are able to
-        create a file using the `touch` in the terminal; try creating the file
-        using `touch HelloWorld.java` from the terminal! Then, open the file
-        using your favorite text editor and copy-paste the code.
-
-    3.  In your terminal, enter `ls` (list the files/folders in this directory).
-        You should see `HelloWorld.java` listed.
-
-    4.  Run `javac HelloWorld.java`. If this produces any output, then something
-        may be wrong with your setup. Try opening a new terminal window or
-        restarting your computer. If that still doesn't work, see the
-        Troubleshooting section under the directions for your operating system.
-
-    5.  Type `ls`, you should see both `HelloWorld.java`
-        and a freshly created `HelloWorld.class` (the `javac` command created
-        this file).
-
-    6.  Run `java HelloWorld`. It should print out "Hello world!" for you.
-        If it didn't, something is wrong with your setup!
-
-    7.  You're done! You can also delete the "temp" folder and its contents as
-        you please.
-
-The screenshot below shows what we're hoping for when we do the above steps.
-If you see something similar to this, your terminal setup is complete.
-
-<script
-    id="asciicast-i4kqX0gnASof89lIdE6JzMCyC"
-    src="https://asciinema.org/a/i4kqX0gnASof89lIdE6JzMCyC.js"
-    async
-></script>
-
-{: .task}
-Familiarize yourself with the terminal and complete the steps mentioned above. 
+Please read through the terminal guide and familiarize yourself with the commands! Feel free to also bookmark 
+the page for future reference.
 
 ## GitHub and Beacon Accounts
 
@@ -225,7 +139,6 @@ As a reminder, you may not post code from this course publicly, even after
 completing the course. Doing so is a violation of our course policies and you
 might be subject to disciplinary action.
 
-
 ## Git
 
 ### Git Basics
@@ -238,13 +151,13 @@ significant frustration as you learn to use it.
 {: .task}
 Before you proceed, **read up to the Remote Repositories
 section of the [Using Git Guide](../../resources/guides/git/index.md)**. You do not need
-to read past that.
+to read past that. This is to help you get a rough idea of what Git is. 
 
 ### Task: Setting Up Git
 
 Before we use git, we have some short commands to configure it appropriately.
 
-First, set the name and email that git will use with these two commands:
+First, open up your terminal and set the name and email that git will use with these two commands:
 
 ```shell
 git config --global user.name "<your name>"
@@ -277,58 +190,6 @@ instructions for your operating system).
 Configure git by following the above instructions, and set your preferred
 editor.
 
-### Task: Git Exercise
-
-Now you're ready to start using git! Your next task is to work through a small
-git workflow by setting up a repository and making a couple commits. At the end,
-you will need to be checked off by filling out the form linked on Beacon.
-
-{: .info}
-> If you need help with creating directories, creating files, changing
-directories, etc., refer back to [_How to Use the Terminal_](terminal.md). Another
-resource that might be helpful is [Section C of the Using Git Guide](../../resources/guides/git#staging--committing). 
-> 
-> **As a quick recap, you may find the following git commands useful**: `git init`, `git add`, 
-`git commit`, `git status`, `git log`, `git restore`.
-
-1.  Create a directory called `lab01-checkoff`. You can put this directory
-    anywhere on your computer (unless you have already cloned your `{{ site.semester }}-s***`
-    repository, in which case, you **should not put this directory inside
-    your `{{ site.semester }}-s***` repo)**.
-2.  Move into the `lab01-checkoff` directory, and initialize a git repository.
-3.  Create a file called `61b.txt` in any way you'd like. In this text file,
-    add the text "Created 61b.txt".
-4.  Create another file called `61boba.txt` in any way you'd like. In this text file, 
-    add the text "Created 61boba.txt".
-5.  Begin tracking **only** `61b.txt`, and create a new commit containing just
-    this file, with the following commit message: `Add 61b.txt`.
-6.  Make a modification in `61b.txt` by changing the text in the file to: "61b.txt
-    changed to version 2".
-7.  Make another commit, this time containing both `61b.txt` and `61boba.txt`.
-    The commit message should be: `Updated 61b.txt and added 61boba.txt`.
-8.  Make one more modification to `61b.txt` by changing the text in
-    the file to: "61b.txt changed to final version". **Don’t commit this version.**
-
-    At this point, if you were to type in `git status` and `git log`, you'd see
-    something similar to the following: 
-
-    ![Git Checkoff](img/git_checkoff.png){: style="max-height: 200;" }   
-
-9.  **Using git only**, restore `61b.txt` to the version in the most recent
-    commit.
-    <!-- markdownlint-disable MD030 -->
-10. **Using git only**, restore `61b.txt` to the version in the first commit.
-
-<!-- markdownlint-restore -->
-
-Be sure to save this repository and directory until you complete the
-asynchronous checkoff form on [Beacon]({{ site.links.beacon }}) and
-obtain a **magic word**.
-
-{: .task}
-Do the steps above, then get checked off by filling out the Beacon
-form.
-
 ### Git and Remote Repos
 
 First, read the **Remote Repositories** section of the
@@ -355,17 +216,19 @@ This is for several reasons:
                                                                                                   
 Like in Python, we sometimes want to use libraries that others wrote. Java dependency management 
 is a bit of a mess, so we instead provide a git repo that contains all the dependencies that we 
-will use in this course.
+will use in this course. Once again, make sure your terminal is open - it might look  something like 
+this: 
+
+{: style="max-height: 200;" }
+![empty_terminal](img/empty_terminal.png)
 
 Navigate to the folder where you would like to store your libraries. For this lab, we'll 
 assume that you placed all your stuff in a folder named __cs61b__. You can pick a different name
-if you would like to.
+if you would like to. This is what it might look like after navigating to where you want to, 
+creating the `cs61b` directory, and going into it (`cd cs61b` in this example): 
 
-To go into that folder, `cd` into it: 
-
-```shell
-cd cs61b
-```
+{: style="max-height: 200;" }
+![terminal-directory](img/terminal_directory.png)
 
 Once inside the folder, run:                                                                                        
                                                                                                   
@@ -483,7 +346,8 @@ Follow the steps above to clone and configure your repository.
 ![Workspace Image](img/workspace.png)
 
 - Note that this also assuming that you did your `lab01-checkoff` inside the same folder where you cloned 
-  your `{{ site.semester }}-s***` repository and `library-{{ site.semester }}`. 
+  your `{{ site.semester }}-s***` repository (the screenshot was from a previous semester, but make sure that it lines up
+  with the semester you're taking it) and `library-{{ site.semester }}`. 
 - Your personal repository and libraries should be "separate", such that you didn't clone your `library-{{ site.semester }}`
   inside your personal repository or vise versa. 
 - Your workspace doesn't have to look like this exactly. This is mainly for an idea of what it can look like. 
@@ -492,101 +356,21 @@ Follow the steps above to clone and configure your repository.
 
 ### Getting the Skeleton
 
-{: .task}
-Follow the instructions in the
-[Getting the Skeleton section of the Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md#getting-the-skeleton)
-to get the skeleton code for Lab 1.
+The skeleton remote repository contains the skeleton code for all assignments.
+Whenever a new assignment is released, or if we need to update an assignment, you will
+pull from the skeleton. First ensure that you are in your {{ site.semester }}-s*** repository directory. 
+
+Next, run the following command to get the skeleton code for Lab 1: 
+
+```shell
+git pull skeleton main
+```
 
 {: .warning}
 At this point, you should have a `lab01` folder, with the contents
 `src/Arithmetic.java` and `tests/ArithmeticTests.java`. If you **do not have
 these contents**, don't make it manually! Instead, pull from the skeleton or
 ask a staff member.
-
-### Pushing to GitHub
-
-{: .warning}
-You will need the magic word (obtained from checkoff) to complete this
-step.
-
-Open the file `lab01/magic_word.txt` in a text editor, and edit it to contain
-the **magic word** obtained during the [git exercise][{{ site.links.beacon }}].
-
-[git exercise]: #task-git-exercise
-
-Now stage and commit `magic_word.txt` **(make sure you're in your `{{ site.semester }}-s***` repo!)**.
-
-```shell
-git add lab01/magic_word.txt
-git commit -m "Added Magic Word"
-```
-
-Right now, the modified `magic_word.txt` is only on your computer. We want to
-push these changes to the GitHub repository so that your changes can be seen by
-us and Gradescope. Push these changes to the `main` branch on the `origin`
-remote repo.
-
-```shell
-git push origin main
-```
-
-You can verify that this was successful by checking your repository online on
-GitHub's website. It should contain the updated `magic_word.txt` file. If it
-doesn't, make sure that your `add` and `commit` were successful. In particular,
-make sure that you are in your repo, `{{ site.semester }}-***`.
-
-{: .task}
-Follow the instructions above to push your magic word to GitHub, and
-check that it appears.
-
-Our work is now on GitHub, and ready to submit!
-
-## Task: Submitting to Gradescope
-
-Although we use GitHub to store our programming work, we use **Gradescope** to
-actually grade it. The last step is to submit your work with [Gradescope][{{ site.gradescope_url }}],
-which we use to autograde programming assignments.
-
-{: .info}
-> We added everyone's CalCentral email to Gradescope on the first day of labs.
-Make sure to login using the email address listed on CalCentral.
-> 
-> If you're having trouble accessing the course on Gradescope or would like to use
-a different email address, ask your TA!
-
-{: .warning}
-As above, **we strongly encourage you to make frequent commits!** Lack of
-proper version control will not be considered an excuse for lost work,
-particularly after the first week.
-
-{: .task}
-Follow the instructions in the
-[Submitting to Gradescope section of the Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md#submitting-to-gradescope)
-to submit to Gradescope.
-
-<details markdown="block">
-<summary markdown="block">
-
-**Once you submit, open this dropdown. No, you're not done with the lab yet.**
-
-</summary>
-
-At this point, Gradescope should show you something similar to the following:
-
-{: style="max-height: 400;" }
-![gradescope failure](img/gradescope_test_failure.png)
-
-In CS 61B, we use automated tests to check that your code is written correctly.
-In your first submission, you:
-
-- Should be **passing** "Magic Word", if you received the magic word
-- Should be **passing** "Test product correctness"
-- Should **not be passing** "Test sum correctness"
-
-We'll now show you how you can work on and check your code locally, which is
-much easier than checking on Gradescope every time.
-
-</details>
 
 ## Task: IntelliJ Setup
 
@@ -615,7 +399,6 @@ to some common problems.
 **Before continuing, make sure that you have completed all above tasks besides
 the git exercise:**
 
-1.  You have installed Java 17 or higher.
 1.  You have successfully created your local repo for the class on your own
     machine. This is the `{{ site.semester }}-s***` repository you earlier.
 1.  You have pulled from the skeleton, and you have a `lab01` directory.
@@ -636,10 +419,10 @@ the git exercise:**
 
 {:start="2"}
 
-1.  After selecting the appropriate version for your OS, click download and wait
+2. After selecting the appropriate version for your OS, click download and wait
     a few minutes for the file to finish downloading.
 
-1.  Run the installer. If you have an older version of IntelliJ, you should
+3. Run the installer. If you have an older version of IntelliJ, you should
     uninstall it at this time and replace it with this newer version.
 
 {: .info}
@@ -688,17 +471,23 @@ For more information on using the plugins, read
 [the plugin guide](../../resources/guides/intellij/plugins.md).
 You don't have to read this right now.
 
+### Installing Java
+
+{: .warning}
+**This step is important!!**
+
+With IntelliJ and the plugins installed, we can install the JDK. First, follow the instructions in
+[Opening in IntelliJ section of the Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md#opening-in-intellij) to open `lab01`.
+
+Once `lab01` is opened in IntelliJ, follow the instructions in
+[Set up the project JDK](https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk). **Choose a version 
+that is 17 or greater!** Depending on which version you choose, make sure that it is compatible 
+with the language level (e.g. if you choose SDK 18, choose your language leve to be 18).
+
 ### Creating Projects
 
-{: .task}
-Follow the instructions in the
-[Opening in IntelliJ section of the Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md#opening-in-intellij)
-to open `lab01`.
+With `lab01` opened up, you should see the following files in the left pane: 
 
-Once you've done this, you should see at least these three files in the left
-pane:
-
-- `magic_word.txt`, which should contain the magic word you added.
 - `src/Arithmetic`, a Java file which contains your first programming
   exercise.
 - `tests/ArithmeticTest`, another Java file which will check that
@@ -732,8 +521,6 @@ in red).
 
 </details>
 
-
-
 You should see a console pop up, prompting you to enter a number:
 
 ![arithmetic prompt](img/arithmetic_prompt.png){: style="max-height: 250;" }
@@ -759,10 +546,6 @@ tests that you have passed, while the yellow X
 (![failed](img/testFailed.png){: .inline }) indicates tests that you have
 failed. Don't worry about the doubled output; this is a strange quirk of
 IntelliJ.
-
-{: .info}
-This should look familiar. The test that failed on Gradescope is the same test
-that we see here! We can run these tests locally, very easily!
 
 {: .task}
 Fix the bug in `Arithmetic.java` so that the tests pass.
@@ -826,31 +609,60 @@ recently.
 
 Basically, right when you sit down to work in your repository, first `git pull`
 to make sure you are starting with the most recent code. While you are working,
-frequently commit. When you are finished, `git push` so all your changes are
+frequently commit. When you are finished, `git push origin main` so all your changes are
 uploaded and ready for you to pull again next time.
 
+## Submitting to Gradescope
+
+Although we use GitHub to store our programming work, we use **Gradescope** to
+actually grade it. The last step is to submit your work with [Gradescope](`{{ site.gradescope_url }}`),
+which we use to autograde programming assignments.
+
+{: .info}
+> We added everyone's CalCentral email to Gradescope on the first day of labs.
+> Make sure to login using the email address listed on CalCentral.
+>
+> If you're having trouble accessing the course on Gradescope or would like to use
+> a different email address, ask your TA!
+
 {: .task}
-Follow the instructions (again!) in the
-[Submitting to Gradescope section of the Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md#submitting-to-gradescope)
-to submit to Gradescope. This time, you should receive a full score on the lab.
+If you haven't already, make sure you've added, committed and pushed your changes. The steps 
+are repeated below for your convenience. 
+
+1. Add your assignment directory using `git add`. For example, for Lab 1, from your 
+   repo root (`{{ site.semester }}-s***`) you would use `git add lab01`. From the 
+   assignment directory, you could use `git add ..`
+
+2. Commit the files using `git commit -m "<commit message here>"`. The commit message 
+   is required. For example, `git commit -m "Finished Lab 1"`.
+
+3. Push your code to your remote repository with `git push origin main`. You can verify the changes 
+   have been pushed by navigating to your personal repository on Github and checking if your changes 
+   have been reflected. 
+
+4. Open the assignment on Gradescope. Select Github, then your `{{ site.semester }}-s***` 
+   repository and the main branch, then submit your assignment. You will receive a 
+   confirmation email, and the autograder will run automatically. Gradescope will use 
+   the latest version of your code from Github. **If you think that Gradescope isn’t grading 
+   the right code, check that you have added, committed, and pushed with** `git status`.
 
 ## Deliverables
 
 As a reminder, this assignment has an [FAQ page](faq.md).
-There are two required files, all inside the `lab01` directory:
-
-`magic_word.txt`
-: You should have received the correct magic word from completing the git
-checkoff.
+There is one required file, all inside the `lab01` directory:
 
 `Arithmetic.java`
-: You should have fixed the bug so that the tests pass. We check this file
+: You should have fixed the bug so that the tests pass. We check this file 
 with an autograder! For this lab, the autograder tests are the same as the
 ones you have on your computer.
 
-Be sure to submit **again** according to the
-[submission section](#task-submitting-to-gradescope), so that you submit your
-completed lab. Congratulations on finishing your first CS 61B lab!
+{: .task}
+If you haven't already,
+make sure that you've added, committed and pushed your changes to Github (based on the
+workflow that's specified above). You should receive a full score on the lab if you've
+passed all the tests in `ArithmeticTest.java`.
+
+**Congratulations on finishing your first CS 61B lab!**
 
 ## Optional: Josh Hug's Color Schemes
 
