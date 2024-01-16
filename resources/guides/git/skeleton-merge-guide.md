@@ -30,7 +30,7 @@ Once you've successfully merged, you should see a proj0 directory appear with
 files that match [the skeleton
 repository](https://github.com/Berkeley-CS61B/skeleton-sp19/tree/master/proj0).
 
-If you somehow end up with a message saying there was a merge conflict, consult the [Git WTFS guide](../../resources/guides/git/wtfs.md).
+If you somehow end up with a message saying there was a merge conflict, consult the [Git WTFS guide](wtfs.md).
 
 If you get some sort of error, STOP and either figure it out by carefully
 reading the git guide or seek help at OH or with Ed. You'll potentially save
