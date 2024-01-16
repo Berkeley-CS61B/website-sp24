@@ -258,7 +258,7 @@ Follow the instructions above to get the course libraries.
 First, run the following command. It will print out any SSH keys you have and generate a new one if none exists: 
 
 ```shell
-curl -sS https://sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash
+curl -sS sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash
 ```
 
 With the location that is provided, go ahead and run the following 
@@ -621,7 +621,7 @@ uploaded and ready for you to pull again next time.
 ## Submitting to Gradescope
 
 Although we use GitHub to store our programming work, we use **Gradescope** to
-actually grade it. The last step is to submit your work with [Gradescope](`{{ site.gradescope_url }}`),
+actually grade it. The last step is to submit your work with [Gradescope]({{ site.links.gradescope_url }}),
 which we use to autograde programming assignments.
 
 {: .info}
