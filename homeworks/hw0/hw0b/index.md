@@ -389,7 +389,7 @@ System.out.println("Point 1: ( " + p1.x
 </tr>
 </table>
 
-## Main
+### Main
 
 Java programs may also have a special method called `main`. When you execute a program, the `main` method is called. The `main` method runs whatever code is inside, which may call other methods defined within the program.
 
@@ -570,39 +570,39 @@ import java.util.ArrayList;
 import java.util.TreeMap;
 ```
 
-### JavaExercises
+### Task 1: JavaExercises
 
-`ListExercises.java` has 4 different methods for you to complete:
+`JavaExercises.java` has 4 different methods for you to complete:
 
 - `makeDice`: This method takes returns a _new_ `array` of integers `[1, 2, 3, 4, 5, 6]`.
-- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should retunrn array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
+- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should return array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
 - `findMinMax`: This method takes array `int[] array` and returns the result of `max - min` of the integers in that array.
-- `hailstone`: This method takes a `int n` and returns the numbers in hailstone sequence. If the character does not occur in any of the words, it should return 0. The hailstonce sequence: Pick a positive integer n as the start.If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
+- `hailstone`: This method takes a `int n` and returns the numbers in hailstone sequence. The hailstonce sequence is defined by the following procedure: pick a positive integer n as the start. If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
 
 For this part, you can import `List` and `ArrayList`.
 
-### ListExercises
+### Task 2: ListExercises
 
 `ListExercises.java` has 4 different methods for you to complete:
 
-- `sum`: This method takes a list `List<Integer> L` and returns the total sum of the elements in that list. If the list is empty, it method should return 0.
+- `sum`: This method takes a list `List<Integer> L` and returns the total sum of the elements in that list. If the list is empty, the method should return 0.
 - `evens`: This method takes a list `List<Integer> L` and returns a _new_ list containing the even numbers of the given list. If there are no even elements, it should return an empty list.
-- `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a _new_ list containing the common item of the two given lists. If there are no common items, it should return an empty list.
+- `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a _new_ list containing the common items of the two given lists. If there are no common items, it should return an empty list.
 - `countOccurrencesOfC`: This method takes a list and a character `List<String> words`, `char c` and returns the number of occurrences of the given character in a list of strings. If the character does not occur in any of the words, it should return 0.
 
 For this part, you can import `ArrayList`.
 
-### MapExercises
+### Task 3: MapExercises
 
 `MapExercises.java` has 3 different methods for you to complete:
 
-- `letterToNum`: This method returns a map from every lower case letter to the number corresponding to that letter starting with 'a' is 1.
+- `letterToNum`: This method returns a map from every lower case letter to the number corresponding to its ordering in the alphabet, where 'a' corresponds to 1 and 'z' corresponds to 26.
 - `squares`: This method takes a list `List<Integer> nums` and returns a map from the integers in the list to their squares. If the given list is empty, it should return an empty map.
-- `countWords`: This method takes a list `List<String> words` and returns a map of the counts of all words that appear in a list of words. If the given list is empty, it should return an empty map.
+- `countWords`: This method takes a list `List<String> words` and returns a map from words in the list to the number of times they appear. If the given list is empty, it should return an empty map.
 
 For this part, you can import `TreeMap`.
 
-### Dessert.java
+### Task 4: Dessert.java
 
 {: .info}
 Compared to your previous classes, 61B may leave a lot of wiggle room for you on assignments. For example, there's no skeleton code for this exercise - don't be alarmed!
@@ -664,9 +664,9 @@ if __name__ == "__main__":
 
 ## Deliverables
 
+- `JavaExercises.java`
 - `ListExercises.java`
 - `MapExercises.java`
-- `JavaExercises.java`
 - `Dessert.java`
 
 For this assignment, you need to complete the methods in `JavaExercises`, `ListExercises`, and `MapExercises`. You also need to create a new file `Dessert.java` and implement it according to the desired specifications. Make sure you test your code before submitting to Gradescope. Although we do not have a submission limit for this specific assignment, in the future it is encouraged to use existing tests and write your own tests to see if your methods work before submitting your code to the autograder, as there may be limited submissions.

@@ -484,7 +484,7 @@ There are three ways to earn “pacing” points, which are given for keeping up
 - Attending lab synchronously (in person or online)
 - Attending live/Zoom lecture, watching the pre-recorded videos, or watching the recorded lectures on time (before the start of the subsequent lecture).
 
-Each discussion or lab is worth 0.5 pacing points. Each lecture is worth 0.5 pacing points. You may earn up to 16 pacing points. We will calculate pacing points using responses to the weekly surveys.
+Each discussion or lab is worth 0.5 pacing points. Each lecture is worth 0.5 pacing points. You may earn up to 16 pacing points. We will calculate pacing points using responses to the weekly surveys and formative assessments. See each the weekly announcement for details!
 
 Pacing points are added to your score, but cannot increase your score beyond 750 points. In other words, if you have 740 points and 15 pacing points, your final score will be 750 points.
 
