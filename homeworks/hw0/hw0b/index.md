@@ -575,9 +575,9 @@ import java.util.TreeMap;
 `JavaExercises.java` has 4 different methods for you to complete:
 
 - `makeDice`: This method takes returns a _new_ `array` of integers `[1, 2, 3, 4, 5, 6]`.
-- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should return array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty array of size 3.
-- `findMinMax`: This method takes array `int[] array` and returns the result of `max - min` of the integers in that array.
-- `hailstone`: This method takes a `int n` and returns the numbers in hailstone sequence. The hailstonce sequence is defined by the following procedure: pick a positive integer n as the start. If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
+- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return an array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should return an array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty String array of size 3.
+- `findMinMax`: This method takes an `int[] array` and returns the the positive difference between the maximum element and minimum element of the given array. You may assume the input array is nonempty.
+- `hailstone`: This method takes an `int n` as input and returns its hailstone sequence as a list of integers. The hailstone sequence is defined by the following procedure: pick a positive integer n as the start. If n is even, divide n by 2. If n is odd, multiply n by 3 and add 1. Continue this process until n is 1.
 
 For this part, you can import `List` and `ArrayList`.
 
@@ -587,7 +587,7 @@ For this part, you can import `List` and `ArrayList`.
 
 - `sum`: This method takes a list `List<Integer> L` and returns the total sum of the elements in that list. If the list is empty, the method should return 0.
 - `evens`: This method takes a list `List<Integer> L` and returns a _new_ list containing the even numbers of the given list. If there are no even elements, it should return an empty list.
-- `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a _new_ list containing the common items of the two given lists. If there are no common items, it should return an empty list.
+- `common`: This method takes two lists `List<Integer> L1`, `List<Integer> L2` and returns a _new_ list containing the items present in both of the two given lists. If there are no common items, it should return an empty list.
 - `countOccurrencesOfC`: This method takes a list and a character `List<String> words`, `char c` and returns the number of occurrences of the given character in a list of strings. If the character does not occur in any of the words, it should return 0.
 
 For this part, you can import `ArrayList`.
