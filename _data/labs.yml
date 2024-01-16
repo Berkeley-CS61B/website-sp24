@@ -25,7 +25,7 @@
 # "nonumber: True" as an attribute.
 
 labs:
-  - title: "IntelliJ, Git"
+  - title: "Setup"
     due: "1/19"
     # link: labs/lab01
     rowspan: 2

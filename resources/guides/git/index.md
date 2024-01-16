@@ -16,7 +16,7 @@ of [lab01](../../lab/lab01/index.md#the-terminal).
 This guide will primarily serve as an intro to and surface-level reference for 
 Git. If you're looking for something more like "oh no, something happened 
 to my repository!" and want to see potential fixes, consult the 
-[61B git-WTFS](wtfs/index.md) (git weird technical failure scenarios) instead.
+[61B git-WTFS](wtfs.md) (git weird technical failure scenarios) instead.
 
 ## A. Intro to Version Control Systems
 

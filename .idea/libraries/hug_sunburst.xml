@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hug_sunburst">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/labs/lab01/hug_sunburst.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
