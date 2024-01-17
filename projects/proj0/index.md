@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 0 spec.
-released: false
+released: true
 ---
 
 Due: <b>Tuesday, January 24, 11:59 PM PT</b>.
@@ -78,7 +78,8 @@ Here are the full rules for when merges occur that are shown in the image above.
 
 1. Two tiles of the same value _merge_ into one tile containing double the initial number.
 
-2. A tile that is the result of a merge will not merge again on that tilt. For example, if we have [X, 2, 2, 4], where X
+2. A tile that is the result of a merge will not merge 
+   again on that tilt. For example, if we have [X, 2, 2, 4], where X
    represents an empty space, and we move the tiles to the left, we should end up with [4, 4, X, X], not [8, X, X, X].
    This is because the leftmost 4 was already part of a merge so should not merge again.
 
@@ -112,6 +113,7 @@ over, so that is why it remains 0 throughout the animated GIF example.
 
 ## Assignment Philosophy and Program Design
 
+
 A video overview of this section of the spec can be found
 at [https://youtu.be/3YbIOga6ZdQ](https://youtu.be/3YbIOga6ZdQ).
 
@@ -122,6 +124,11 @@ While it may seem daunting to have a ton of code dumped on you that you can't po
 reason we're doing this is that in the real world, you'll often work with codebases that you don't fully understand (or
 maybe don't understand at all, like in this project!) and will have to do some tinkering and experimentation to get the
 results you want. Don't worry, when we get to project 1 next week, you'll have a chance to start from scratch.
+
+### Coordinate Diagram of Board
+
+The following is a coordinate diagram of the board:
+![Coordinate Diagram](img/2048-coords.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 We'll now go over the different classes that you will interact with.
 
