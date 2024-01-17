@@ -4,6 +4,7 @@ title: "Using Git"
 author: Sarah Kim, with revisions by Josh Hug (mostly the narrative starter example) and Noah Adhikari
 parent: Guides
 grand_parent: Resources
+has_right_toc: true
 has_children: false
 released: true
 ---
@@ -11,7 +12,7 @@ released: true
 
 Preface: This guide assumes a basic understanding of the command line on your
 computer. If you've never used the command line, consider reading the section "the Terminal"
-of [lab01](../../lab/lab01/index.md#the-terminal).
+of [Lab 1](../../../labs/lab01/index.md#the-terminal).
 
 This guide will primarily serve as an intro to and surface-level reference for 
 Git. If you're looking for something more like "oh no, something happened 
@@ -49,8 +50,8 @@ project a "repository". The fact that the repository is stored locally leads to
 our ability to use Git locally on our own computers, even without an internet
 connection.
 
-The lab computers already have Git installed on the command line, and the [lab01
-setup](../../lab/lab01/index.md) guide explains how to install git on your own
+The lab computers already have Git installed on the command line, and the [Lab 1
+setup](../../../labs/lab01/index.md) guide explains how to install git on your own
 computer. In addition to the text based interface that we'll learning to use in
 this guide, there is also a [Git GUI (Graphical User
 Interface)](http://git-scm.com/downloads/guis). We will not officially support
@@ -97,8 +98,8 @@ $ git init
 
 What `git init` does is tells the git version control system that we want to
 track the history of the current directory, in this case
-`/users/sandra/recipes`. However, at this point, *NOTHING IS STORED IN THE
-REPOSITORY*. It's like we've purchased a safe, but we haven't put anything in it
+`/users/sandra/recipes`. However, at this point, **NOTHING IS STORED IN THE
+REPOSITORY**. It's like we've purchased a safe, but we haven't put anything in it
 yet.
 
 To store everything in the repository, we need to first `add` files. For
@@ -487,7 +488,7 @@ command into your terminal _while in the directory whose history you want to
 store in a local repository_. If you're using Windows, you should be using a Git
 Bash terminal window while you type these commands. Reminder: If you're unsure
 of how to use a terminal window, consider checking out the "Learning to Use the
-Terminal" section of [lab 1 setup](../../lab/lab01/index.md).
+Terminal" section of [Lab 1 setup](../../../labs/lab01/index.md).
 
 ```sh
 $ git init
