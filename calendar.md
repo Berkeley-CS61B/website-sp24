@@ -9,7 +9,7 @@ released: true
 <script src='{{ "/assets/fullcalendar/calendar.js" | relative_url }}'></script>
 
 <p class="warning">
-This schedule is tentative; additional times may be added later. The existing times shouldn’t change though (pending a couple of room bookings).
+This schedule is tentative; additional times may be added later or sections may be cancelled. Keep an eye out on Ed for updates each week.
 </p>
 
 All times listed are in your local time zone.
@@ -34,11 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
       events: {
         googleCalendarId: '{{ calendar.google_calendar_id }}',
       },
-      eventClick: function (e) { e.preventDefault(); },
+      eventClick: function (info) { 
+        info.jsEvent.preventDefault();
+        if (info.event.title.includes("Online")) {
+          let link = info.event.extendedProps.description;
+          if (link && link.startsWith("<a href=")) {
+            // Extract plain text link
+            link = link.split('"')[1];
+          }
+          location.href = link;
+        } 
+      },
       eventRender: function (info) {
         // Stop from clicking Google Calendar
-        info.el.removeAttribute('href');
-
         var titleEl = info.el.querySelector('.fc-title');
         var eventLocation = info.event.extendedProps.location;
         if (typeof eventLocation !== 'undefined') {
@@ -59,6 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
           info.el.style.color = '{{ event_type.text_color }}';
         }
         {% endfor %}
+
+        // Disable clicking unless the event is online.
+        if (!info.event.title.includes("Online")) {
+          info.el.removeAttribute('href');
+        }
 
         var detailedTitleText = titleText;
         var eventDescription = info.event.extendedProps.description;

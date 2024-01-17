@@ -8,6 +8,7 @@ grand_parent: Resources
 has_children: false
 nav_exclude: true
 released: true
+has_right_toc: true
 ---
 
 

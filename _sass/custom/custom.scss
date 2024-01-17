@@ -39,6 +39,12 @@ table {
   }
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: $grey-dk-000
+}
+
 // Button copying
 .no-copy-button .btn-copy-code {
   display: none;

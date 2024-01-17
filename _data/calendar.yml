@@ -13,6 +13,24 @@ calendars:
       - needle: '' # default
         color: '#B4C6E0'
         text_color: '#000000'
+      - needle: 'Lab'
+        color: '#B4C6E0'
+        text_color: '#000000'
+      - needle: '[Online] Lab'
+        color: '#B9A1E6'
+        text_color: '#000000'
+      - needle: 'Discussion'
+        color: '#A1CBE6'
+        text_color: '#000000'
+      - needle: '[Bridge] Discussion'
+        color: '#A1E6B6'
+        text_color: '#000000'
+      - needle: '[Exam Level] Discussion'
+        color: '#E6C2A1'
+        text_color: '#000000'
+      - needle: '[Online] Discussion'
+        color: '#B9A1E6'
+        text_color: '#000000'
 
     remove_prefix: ""
 
@@ -27,6 +45,9 @@ calendars:
     event_types:
       - needle: '' # default
         color: '#B4C6E0'
+        text_color: '#000000'
+      - needle: 'Online'
+        color: '#B9A1E6'
         text_color: '#000000'
 
     remove_prefix: ""
