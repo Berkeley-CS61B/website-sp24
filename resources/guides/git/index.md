@@ -513,7 +513,7 @@ section on [recording
 changes](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository).
 An image from that section is placed here for your convenience:
 
-![File Status Lifecyle](../img/file-status.png)
+![File Status Lifecyle](img/file-status.png)
 
 As this figure shows, files fall into two main categories:
 
@@ -733,7 +733,7 @@ Everything below this line is optional for 61B.
 The graphics below have not been updated accordingly - for now, just think of
 `master` as `main`'s outdated equivalent.
 
-![Simple Git](../img/graph1.svg)
+![Simple Git](img/graph1.svg)
 
 Every command that we've covered so far was working with the default branch.
 This branch is conventionally called the `main` branch. However, there are
@@ -744,7 +744,7 @@ simultaneously. One way to think of branches are as alternate dimensions.
 Perhaps one branch is the result of choosing to use a linked list while another
 branch is the result of choosing to use an array.
 
-![Git with feature branch](../img/graph2.svg)
+![Git with feature branch](img/graph2.svg)
 
 #### Reasons for Branching
 
@@ -847,7 +847,7 @@ Your AI is now super-boss, and you'd like your `main` branch to see the
 commits you've made on `fixing-ai-heuristics` and delete the
 `fixing-ai-heuristics` branch.
 
-![Git with fixing-ai-heuristics branch](../img/graph3.svg)
+![Git with fixing-ai-heuristics branch](img/graph3.svg)
 
 In this case, you should switch to the `main` branch and merge
 `fixing-ai-heuristics` into `main`.
@@ -863,7 +863,7 @@ most commits have only one parent commit, this new merge commit has two parent
 commits. The commit on the `main` branch is called its _first parent_ and the
 commit on the `fixing-ai-heuristics` branch is called its _second parent_.
 
-![Git with fixing-ai-heuristics branch merged into master](../img/graph4.svg)
+![Git with fixing-ai-heuristics branch merged into master](img/graph4.svg)
 
 #### Merge Conflicts
 
@@ -1185,46 +1185,46 @@ Partner 2 as a collaborator. This repo can be called `learning-git`.
 2. Partner 2 will create a `README` file, commit the file, and push this commit
 to the `learning-git` remote.
 
-    ![Exercise 2.2](../img/Exercise2.2.png)
+    ![Exercise 2.2](img/Exercise2.2.png)
 
 3. Partner 2 will also add the remote that Partner 1 created and push this new
 commit.
 
-    ![GitHub Remote URL](../img/github-remote-url.png)
+    ![GitHub Remote URL](img/github-remote-url.png)
 
     With either GitHub or Bitbucket, you can find the remote URL on the repo's
     main page.
 
-    ![Exercise 2.3](../img/Exercise2.3.png)
+    ![Exercise 2.3](img/Exercise2.3.png)
 
 4. Partner 1 will now clone the remote repo to their own machine then add a line
 to the bottom of README. (Note: At this point, the pictures may get a bit
 confusing because I'm pretending to be both partners.)
 
-    ![Exercise 2.4](../img/Exercise2.4.png)
+    ![Exercise 2.4](img/Exercise2.4.png)
 
 5. Partner 1 will commit this change and push it back to the remote.
 
-    ![Exercise 2.5](../img/Exercise2.5.png)
+    ![Exercise 2.5](img/Exercise2.5.png)
 
 6. Partner 2 will similarly add a line to the bottom of their README and commit
 this change.
 
-    ![Exercise 2.6](../img/Exercise2.6.png)
+    ![Exercise 2.6](img/Exercise2.6.png)
 
 7. Partner 2 will now pull and find that there are merge conflicts.
 
-    ![Exercise 2.7](../img/Exercise2.7.png)
+    ![Exercise 2.7](img/Exercise2.7.png)
 
 8. Partner 2 should resolve the merge conflicts by rearranging the lines. Then
 Partner 2 should add `README` and commit and push to finish.
 
-    ![Exercise 2.8](../img/Exercise2.8.png)
+    ![Exercise 2.8](img/Exercise2.8.png)
 
 9. Partner 1 can now pull and get two new commits - the added line & the merge
 commit. Now both partners are up to date.
 
-    ![Exercise 2.9](../img/Exercise2.9.png)
+    ![Exercise 2.9](img/Exercise2.9.png)
 
 
 ## I. Conclusion
