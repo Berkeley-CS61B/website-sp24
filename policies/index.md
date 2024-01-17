@@ -573,7 +573,7 @@ Given our friendly lateness policy (see below), there will be no exceptions to
 this rule.
 
 During the Spring 2017 semester, we compiled a series of
-[incident reports written by students who were caught plagiarizing](academic-misconduct/incident-reports-2017.html).
+[incident reports written by students who were caught plagiarizing](academic-misconduct/incident-reports-2017.md).
 If you find yourself tempted to cheat, you might turn to the words of others
 who have made the wrong choice for guidance.
 
