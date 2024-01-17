@@ -9,7 +9,7 @@ released: true
 <script src='{{ "/assets/fullcalendar/calendar.js" | relative_url }}'></script>
 
 <p class="warning">
-This schedule is tentative; additional times may be added later. The existing times shouldn’t change though (pending a couple of room bookings).
+This schedule is tentative; additional times may be added later or sections may be cancelled. Keep an eye out on Ed for updates each week.
 </p>
 
 All times listed are in your local time zone.
