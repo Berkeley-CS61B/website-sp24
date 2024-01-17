@@ -277,10 +277,10 @@ The result of running the above command should produce something similar to the 
 ```shell
 ssh-ed25519 AAAAC3NzaC1lZDI1N6jpH3Bnbebi7Xz7wMr20LxZCKi3U8UQTE5AAAAIBTc2HwlbOi8T [some-comment-here]
 ```
-Then, copy and paste the output from your terminal. The `[some-comment-here]` will be system 
+Then, copy the output from your terminal. The `[some-comment-here]` will be system 
 dependent and may vary for individuals. Taking the output, go to 
 [Github, Settings, SSH, GPG Keys, New SSH Key](https://github.com/settings/ssh/new) (or click the link)
-and paste the output into the Key section.**Name the key, so it's memorable what device 
+and paste the output into the Key section. **Name the key, so it's memorable what device 
 the key is on or so you recognize what it's for and select 
 the Key type as Authentication Key**. Then, add the key to your account. 
 
@@ -295,6 +295,8 @@ If all went well, you should see something like this:
 ```shell
 Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+You should now be successfully authenticated with Github and good to go!
 
 ### Configure Personal Repository
 
