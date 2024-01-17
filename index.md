@@ -1,6 +1,8 @@
 ---
-layout: home
+title: Home
+layout: page
 nav_order: 0
+released: true
 ---
 
 {%- if site.outdated -%}
