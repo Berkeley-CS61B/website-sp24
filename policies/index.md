@@ -415,7 +415,7 @@ There will be two evening midterms:
 - Week 5, Thursday 2/15, 7-9 PM
 - Week 10, Thursday 3/21, 7-9 PM
 
-There is also a final exam on Thursday 12/14, 3-6 PM.
+There is also a final exam on Thursday 5/11, 3-6 PM.
 
 CS 61B exams will by default be in-person, though you may request a proctored
 remote exam. Proctoring details will be released closer to the exam.
