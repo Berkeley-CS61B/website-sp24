@@ -27,7 +27,7 @@ This site is under construction. All dates and policies are tentative until this
 
 <!-- [Past announcements](announcements.md){: .btn .btn-outline .fs-3 } -->
 
-## Calendar
+## Weekly Schedule
 
 [Skip to current week](#week-{{ 'now' | date: '%U' }}){: .btn .btn-outline .fs-3 }
 
