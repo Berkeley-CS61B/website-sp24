@@ -27,9 +27,9 @@ This site is under construction. All dates and policies are tentative until this
 
 <!-- [Past announcements](announcements.md){: .btn .btn-outline .fs-3 } -->
 
-**Instructors:** Justin Yokota, Peyrin Kao / **Lecture:** 1-2PM MWF, Dwinelle 155, [Zoom]({{ site.links.lecture }})
+## Weekly Schedule
 
-## Calendar
+**Instructors:** Justin Yokota, Peyrin Kao / **Lecture:** 1-2PM MWF, Dwinelle 155, [Zoom]({{ site.links.lecture }})
 
 [Skip to current week](#week-{{ 'now' | date: '%U' }}){: .btn .btn-outline .fs-3 }
 
