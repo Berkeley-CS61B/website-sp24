@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         googleCalendarId: '{{ calendar.google_calendar_id }}',
       },
       eventClick: function (info) { 
+        info.jsEvent.preventDefault();
         if (info.event.title.includes("Online")) {
-          console.log(info.event);
           let link = info.event.extendedProps.description;
           if (link && link.startsWith("<a href=")) {
             // Extract plain text link
@@ -68,7 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         {% endfor %}
 
-        info.el.removeAttribute('href');
+        // Disable clicking unless the event is online.
+        if (!info.event.title.includes("Online")) {
+          info.el.removeAttribute('href');
+        }
 
         var detailedTitleText = titleText;
         var eventDescription = info.event.extendedProps.description;
