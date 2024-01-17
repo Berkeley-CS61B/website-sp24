@@ -22,12 +22,12 @@
 homeworks:
   - title: "Homework 0A"
     due: "1/19"
-    # link: "homeworks/hw0/hw0a"
+    link: "homeworks/hw0/hw0a"
     rowspan: 1
     nonumber: True
   - title: "Homework 0B"
     due: "1/22"
-    # link: "homeworks/hw0/hw0b"
+    link: "homeworks/hw0/hw0b"
     rowspan: 2
     nonumber: True
   - title: "Homework 1"

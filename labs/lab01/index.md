@@ -14,7 +14,8 @@ released: true
 ## FAQ
 
 Each assignment will have an FAQ linked at the top. The FAQ for Lab 1 is located
-[here](faq.md).
+[here](faq.md). **The FAQ (frequently asked questions) is a list of compiled questions 
+and errors that students often run into, so refer to this page first before finding staff.**
 
 ## Welcome to CS 61B!
 
@@ -260,26 +261,27 @@ First, run the following command in your terminal. It will print out any SSH key
 and generate a new one if none exists: 
 
 ```shell
-curl -sS sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash
+curl -sS https://sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash 
 ```
 
 With the location that is provided, go ahead and run the following 
-command, ensuring to replace `path_to_ssh.key` with the location of the SSH key
+command, ensuring to replace `path_to_ssh_key` with the location of the SSH key
 and **appending with the `.pub` suffix**. 
 
 ```shell
-cat path_to_ssh_key.pub
+cat <path_to_ssh_key>.pub
 ```
 
-It should look similar to the format below: 
+The result of running the above command should produce something similar to the format below: 
 
 ```shell
 ssh-ed25519 AAAAC3NzaC1lZDI1N6jpH3Bnbebi7Xz7wMr20LxZCKi3U8UQTE5AAAAIBTc2HwlbOi8T [some-comment-here]
 ```
-
-The `[some-comment-here]` will be system dependent and may vary for individuals. In your browser, go 
-to [Github, Setings, SSH, GPG Keys, New SSH Key](https://github.com/settings/ssh/new) (or click the link).
-**Name the key, so it's memorable what device the key is on or so you recognize what it's for and select 
+Then, copy the output from your terminal. The `[some-comment-here]` will be system 
+dependent and may vary for individuals. Taking the output, go to 
+[Github, Settings, SSH, GPG Keys, New SSH Key](https://github.com/settings/ssh/new) (or click the link)
+and paste the output into the Key section. **Name the key, so it's memorable what device 
+the key is on or so you recognize what it's for and select 
 the Key type as Authentication Key**. Then, add the key to your account. 
 
 In your terminal, run the following command to connect with Github using SSH: 
@@ -288,11 +290,13 @@ In your terminal, run the following command to connect with Github using SSH:
 ssh -T git@github.com
 ```
 
-If all went well, you should see something like:
+If all went well, you should see something like this:
 
 ```shell
 Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+You should now be successfully authenticated with Github and good to go!
 
 ### Configure Personal Repository
 

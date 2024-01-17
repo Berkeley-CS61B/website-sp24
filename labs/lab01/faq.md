@@ -14,10 +14,6 @@ released: true
 Please take a look at the [setup FAQ doc](https://docs.google.com/document/d/1xsSWgYAFNIiJQEFC3gxNpvZf5DhEphDocRiCuyHkoqY/edit?usp=sharing) 
 for additional setup assistance!
 
-### Mac: Homebrew installs Java 18 instead of the recommended Java 17
-
-Java 18 will work perfectly fine for our purposes! Don't worry about this for now.
-
 ### I can't find the plugins for IntelliJ!
 
 You likely installed the ultimate edition instead of the community edition. Make sure you have the community edition installed!
@@ -56,7 +52,10 @@ Secondly, the expected file structure is
 Note that the files are inside the `lab01` directory. If the files aren't
 inside `lab01`, then the autograder won't be able to find them.
 
-If you’re sure you’ve done the above correctly, you may have two copies of your `{{ site.semester }}-s*` folder (with differing locations on your computer). Be sure that the one in your terminal and the one in IntelliJ match, otherwise your changes won’t be recorded! You can see the current working directory of your terminal by running `pwd`.
+If you’re sure you’ve done the above correctly, you may have two copies of your `{{ site.semester }}-s*` 
+folder (with differing locations on your computer). Be sure that the one in your terminal 
+and the one in IntelliJ match, otherwise your changes won’t be recorded! You can see the 
+current working directory of your terminal by running `pwd`.
 
 ### I'm using Mac, and I get "Unable to load Java Runtime Environment"
 
@@ -72,8 +71,9 @@ In some cases, you might get something like this:
 
 ![Library Import Issue](img/import_algs4.png){: style="max-height: 200;" }
 
-IntelliJ can be very weird - if you've already ensured that your `library-{{ site.semester }}` is there (navigate to File --> Project Structure --> Libraries) 
-to check everything seems okay), then try deleting the library, reimporting it and clicking "Apply". Make sure to hit "OK" before 
+IntelliJ can be very weird - if you've already ensured that your `library-{{ site.semester }}` is 
+there (navigate to File --> Project Structure --> Libraries) to check everything seems okay),
+then try deleting the library, reimporting it and clicking "Apply". Make sure to hit "OK" before 
 exiting the window.
 
 
