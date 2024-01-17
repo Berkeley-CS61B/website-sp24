@@ -58,8 +58,9 @@ lectures:
       - title: "Ch 1"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/1.-introduction"
   - title: "Defining and Using Classes"
+    slides: ""
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqziLs3JZ6LIH73ZsVtvsGy"
-    recording: 
+    recording: ""
     readings: 
       - title: "Ch 2"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/2.-defining-and-using-classes"
@@ -107,8 +108,9 @@ lectures:
       - title: "Ch 8"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/8.-arraylist"
   - title: "Inheritance I: Interface and Implementation Inheritance"
+    slides: ""
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqJVbwFNWwRrGyBwedwLnuW"
-    recording: 
+    recording: ""
     readings: 
       - title: "Ch 9"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-inheritance-i-interface-and-implementation-inheritance"
@@ -120,8 +122,9 @@ lectures:
       - title: "Ch 10"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/10.-inheritance-ii-extends-casting-higher-order-functions"
   - title: "Inheritance III: Subtype Polymorphism, Comparators, Comparable"
+    slides: ""
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqAB5rg3v2NvfF_cb9OJ9cB"
-    recording: 
+    recording: ""
     readings: 
       - title: "Ch 11"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/11.-subtype-polymorphism-comparators-comparable"
