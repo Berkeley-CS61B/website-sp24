@@ -237,7 +237,9 @@ Once inside the folder, run:
                                                                                                   
 ```shell                                                                                          
 git clone https://github.com/Berkeley-CS61B/library-{{ site.semester }}
-```                                                                                               
+```         
+
+If that doesn't work
                                                                                                   
 Below is the directory structure of `library-{{ site.semester }}`. Look inside the folder using 
 `ls library-{{ site.semester }}` and make sure you see the `.jar` files listed below. There are many more, 
@@ -314,7 +316,7 @@ folder (possibly on the same level as the library).
 class repository number (you can find this repo number on Beacon).** Then run the command below:
 
 ```shell
-git clone https://github.com/Berkeley-CS61B-Student/{{ site.semester }}-s***.git
+git clone git@github.com:Berkeley-CS61B-Student/{{site.semester}}-s***.git
 ```
 
 {: .info}
