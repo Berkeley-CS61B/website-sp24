@@ -583,3 +583,5 @@ or need to generate a random number, you can skip that problem.)
 
 We also recommend <https://codingbat.com/java/AP-1>, which has more advanced
 Java problems.
+
+This assignment is worth 5 points and due 1/19, 11:59 PM.

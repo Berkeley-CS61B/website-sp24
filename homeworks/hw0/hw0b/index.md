@@ -673,3 +673,5 @@ if __name__ == "__main__":
 - `Dessert.java`
 
 For this assignment, you need to complete the methods in `JavaExercises`, `ListExercises`, and `MapExercises`. You also need to create a new file `Dessert.java` and implement it according to the desired specifications. Make sure you test your code before submitting to Gradescope. Although we do not have a submission limit for this specific assignment, in the future it is encouraged to use existing tests and write your own tests to see if your methods work before submitting your code to the autograder, as there may be limited submissions.
+
+This assignment is 10 points and due 1/22, 11:59 PM.
