@@ -9,6 +9,7 @@ has_children: true
 toc:
   h_max: 4
 released: true
+has_right_toc: true
 ---
 
 ## Introduction
