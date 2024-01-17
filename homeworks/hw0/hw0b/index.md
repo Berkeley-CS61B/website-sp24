@@ -33,7 +33,7 @@ has a corresponding reference type (`Boolean`, `Integer`, `Character`,
 use the reference type. You can (usually) seamlessly convert between a primitive type
 and its reference type.
 
-### `null`
+### null
 
 Java also has `null`, which is the approximate equivalent of `None` in Python.
 Any reference type can be assigned a value of `null`. If we try to access an
