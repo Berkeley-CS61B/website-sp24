@@ -25,7 +25,7 @@ projects:
     classes:
       - blank
   - title: "Project 0: 2048"
-    due: "1/26"
+    due: "1/29"
     # link: "projects/proj0/"
     rowspan: 5
     nonumber: True

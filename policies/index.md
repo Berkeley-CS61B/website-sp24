@@ -410,6 +410,9 @@ Full details on partnerships can be found
 
 ### Exams
 
+{: .warning}
+The exam policies are still being finalized! The exam dates are correct, but everything else in this section may change over the next week.
+
 There will be two evening midterms:
 
 - Week 5, Thursday 2/15, 7-9 PM

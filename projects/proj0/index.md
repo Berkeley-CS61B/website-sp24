@@ -548,6 +548,17 @@ We'll now take a look at each of these tests and show you how to read the error 
 
 ### TestEmptySpace
 
+`TestEmptySpace` is comprised of the following tests:
+
+1. `testCompletelyEmpty`: calls `emptySpaceExists` on a board with no tiles
+2. `testEmptyTopRow`: calls `emptySpaceExists` on a board with no tiles in the top row
+3. `testEmptyBottomRow`: calls `emptySpaceExists` on a board with no tiles in the bottom row
+4. `testEmptyLeftCol`: calls `emptySpaceExists` on a board with no tiles in the left column
+5. `testEmptyRightCol`: calls `emptySpaceExists` on a board with no tiles in the right column
+6. `testAlmostFullBoard`: calls `emptySpaceExists` on a board with a single empty space
+7. `testFullBoard`: calls `emptySpaceExists` on a board with no empty tiles, but where a legal move exists. Checks that `emptySpaceExists` still returns false.
+8. `testFullBoardNoMerge`: calls `emptySpaceExists` on a board with no empty tiles and where no legal move exists. Checks that `emptySpaceExists` still returns false.
+
 These tests will check the correctness of your `emptySpaceExists` method. Here is what the error message would look like
 if you failed one of the tests:
 
@@ -567,12 +578,36 @@ top of the code for the test also has some useful information in case you're fai
 
 ### TestMaxTileExists
 
+`TestMaxTileExists` is comprised of the following tests:
+
+1. `testEmptyBoard`: calls `maxTileExists` on a board with no tiles
+2. `testFullBoardNoMax`: calls `maxTileExists` on a full board with no max tiles
+3. `testFullBoardMax`: calls `maxTileExists` on a full board with a single max tile
+4. `testMultipleMax`: calls `maxTileExists` on a board with several max tiles
+5. `testTopRightCorner`: calls `maxTileExists` on a board with a max tile in the top right corner
+6. `testTopLeftCorner`: calls `maxTileExists` on a board with a max tile in the top left corner
+7. `testBottomLeftCorner`: calls `maxTileExists` on a board with a max tile in the botton left corner
+8. `testBottomRightCorner`: calls `maxTileExists` on a board with a max tile in the bottom right corner
+
 These tests will check the correctness of your `maxTileExists` method. The error messages will be similar to those
 for `TestEmptySpace`, and you can still click on each individual test to look at them in isolation. Remember that your
 `maxTileExists` method should **only** look for the max tile and not anything else (i.e. shouldn't look for empty space)
 . If yours does, you will not pass all of these tests.
 
 ### TestAtLeastOneMoveExists
+
+`TestAtLeastOneMoveExists` is comprised of the following tests:
+
+1. `testEmptySpace`: calls `atLeastOneMoveExists` on a board with empty space
+2. `testAnyDir`: calls `atLeastOneMoveExists` on a full board where a tilt in any direction is a valid move
+3. `testLeftOrRight`: calls `atLeastOneMoveExists` on a full board where left and right tilts are the only valid moves
+4. `testUpOrDown`: calls `atLeastOneMoveExists` on a full board where up and down tilts are the only valid moves
+5. `testMoveExistsMaxPiece`: calls `atLeastOneMoveExists` on a board where some move exists and a max tile is on the board. While having the max tile on the board does mean the game is over, it should not be handled by this method.
+6. `testNoMoveExists1`: calls `atLeastOneMoveExists` on a board where no move exists
+7. `testNoMoveExists2`: calls `atLeastOneMoveExists` on a board where no move exists
+8. `testNoMoveExists3`: calls `atLeastOneMoveExists` on a board where no move exists
+9. `testNoMoveExists4`: calls `atLeastOneMoveExists` on a board where no move exists
+10. `testNoMoveExists5`: calls `atLeastOneMoveExists` on a board where no move exists
 
 These tests will check the correctness of your `atLeastOneMoveExists` method. The error messages are similar to the
 above two. Since the
@@ -581,9 +616,24 @@ you are passing all of the tests in `TestEmptySpace`.
 
 ### TestModel
 
+`TestModel` is comprised of the following tests:
+
+1. `testGameOverNoChange1`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+2. `testGameOverMaxPiece`: calls `gameOver` on a board containing a max piece and no other tiles
+3. `testGameOverNoChange2`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+4. `testGameNotOver1`: calls `gameOver` on a full board where a tilt in any direction is a valid move
+5. `testGameNotOver2`: calls `gameOver` on a board with a single empty space
+
 These tests create a `Model` at a specific state, then check correctness of the `gameOver` method. Since `gameOver` is a combination of `maxTileExists` and `atLeastOneMoveExists`, you should expect to pass these tests if both of those methods are implemented correctly.
 
 ### TestUpOnly
+
+`TestUpOnly` is comprised of the following tests:
+
+1. `testUpNoMerge`: calls `tilt` in the up direction on a board with two tiles in different columns. These tiles should move into empty space (no merging)
+2. `testUpBasicMerge`: calls `tilt` in the up direction on a board with two tiles of the same value in the same column. These tiles should merge
+3. `testUpTripleMerge`: calls `tilt` in the up direction on a board with three tiles of the same value in the same column. The top two tiles should merge, but the bottom tile should not.
+4. `testUpTrickyMerge`: calls `tilt` in the up direction on a board with three tiles in the same column. The top two tiles have the same value and should merge. The bottom tile has the same value as the resulting merged tile, but should still not merge.
 
 These tests will check the correctness of your `tilt` method, but only in the up (`Side.NORTH`) direction. The error
 messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the
