@@ -41,6 +41,20 @@ If cloning with `https` doesn't work, please try using the `ssh` to clone instea
 git clone git@github.com:Berkeley-CS61B-Student/{{site.semester}}-s***.git
 ```
 
+### curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - The revocation function was unable to check revocation for the certificate. 
+
+Add the `--ssl-no-revoke` flag to the curl command (e.g. if the command was previously `curl https://www.google.com`, 
+change it to `curl --ssl-no-revoke https://www.google.com`).
+
+### WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED
+At the bottom of the error, it should say `Host key for [something] has changed...`. If `something` is `github.com` 
+or any of the instructional machines, then continue with this guide. Otherwise, please make a private question on Ed.
+
+To fix this error, run `ssh-keygen -R [something]`, and replace `[something]` with what the error message contained. 
+This generally means that the remote machine has changed its host keys. Please verify that the new host keys are 
+correct if you do not trust the machine (GitHub host keys are available
+(here)[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints]).
+
 ### On Gradescope, I'm missing required files
 
 First, make sure that you've pushed your code! You can check this by viewing
