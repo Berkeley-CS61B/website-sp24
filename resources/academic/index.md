@@ -3,7 +3,7 @@ layout: page
 title: Academic Resources
 parent: Resources
 released: true
-has_children: true
+
 ---
 
 ## Advising

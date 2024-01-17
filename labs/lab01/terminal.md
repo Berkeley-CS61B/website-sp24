@@ -144,8 +144,8 @@ This command will change your directory to `hw`.
   or a list of possible names.
 - You can copy-paste into the terminal. This is straightforward on Mac, but on Windows, right-click 
   to copy and paste highlighted text.
-- If you want to run the same command used recently, press the `up` arrow key on your keyboard              
-  until you see the correct instruction. If you go too far, use the `down` key to go back.                  
+- If you want to run the same command used recently, press the `up` arrow key on your keyboard until
+  you see the correct instruction. If you go too far, use the `down` key to go back. 
   This saves typing time if you are doing repetitive instructions.
 - You can have multiple terminals open at a time - this might help speed up your workflow if you're 
   running separate tasks that require the terminal.

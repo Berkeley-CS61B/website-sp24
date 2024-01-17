@@ -7,6 +7,7 @@ grand_parent: Resources
 has_children: false
 nav_exclude: true
 released: true
+has_right_toc: true
 ---
 
 ## Assignment Workflow
@@ -19,7 +20,7 @@ A video demo of this guide is available at [this link](https://www.youtube.com/w
 
 The `skeleton` remote repository contains the skeleton code for all assignments.
 Whenever a new assignment is released, or if we need to update an assignment,
-you will pull from the skeleton. First ensure that you are in your `fa23-s***`
+you will pull from the skeleton. First ensure that you are in your `{{ site.semester }}-s***`
 repository directory, then:
 
 ```shell
@@ -27,7 +28,7 @@ git pull skeleton main
 ```
 
 This fetches all remote files from the repo named `skeleton` (which
-is located at `https://github.com/Berkeley-CS61B/skeleton-fa23.git`) and copies
+is located at `https://github.com/Berkeley-CS61B/skeleton-{{ site.semester }}.git`) and copies
 them into your current folder.
 
 {: .warning}
@@ -51,7 +52,7 @@ through the following steps again.**
     **"File --> Open"**.
 
 1.  Find and choose the directory of your current assignment. For example, for
-    Lab 1, you would select the `lab01` directory inside your `fa23-***` repo.
+    Lab 1, you would select the `lab01` directory inside your `{{ site.semester }}-s***` repo.
 
 1.  Navigate to the **"File -> Project Structure"** menu, and make sure you are
     in the **Project** tab. Set your project SDK to your installed Java version.
@@ -73,7 +74,7 @@ through the following steps again.**
         directory, followed by `out`
 
 1.  Still in Project Structure, go to the **Libraries** tab. Click the
-    "**+ -> Java**" button, then navigate to `library-fa23`, select the
+    "**+ -> Java**" button, then navigate to `library-{{ site.semester }}`, select the
     folder, and click "Ok".
 
 1.  Click "Ok" to apply your settings and leave Project Structure.
@@ -87,12 +88,12 @@ At this point, if things have been configured correctly:
 ## Submitting to Gradescope
 
 1.  Add your assignment directory using `git add`. For example, for Lab 1,
-    from your repo root (`fa23-***`) you would use `git add lab01`. From the
+    from your repo root (`{{ site.semester }}-***`) you would use `git add lab01`. From the
     assignment directory, you could use `git add .`.
 1.  Commit the files using `git commit -m "<commit message here>"`. The commit
     message is required. For example, `git commit -m "Finished Lab 1"`.
 1.  Push your code to your remote repository with `git push origin main`.
-1.  Open the assignment on Gradescope. Select Github, then your `fa23-s***`
+1.  Open the assignment on Gradescope. Select Github, then your `{{ site.semester }}-s***`
     repository and the `main` branch, then submit your assignment. You will
     receive a confirmation email, and the autograder will run automatically.
 
@@ -101,5 +102,5 @@ that Gradescope isn't grading the right code, check that you have added,
 committed, and pushed  with `git status`.**
 
 If you've gotten yourself into a situation where you're unable to push for some reason,
-see [Git WTFS](guides/git/wtfs.md).
+see [Git WTFS](../git/wtfs.md).
 

@@ -116,7 +116,7 @@ If you need additional guidance on understanding a concept or approach, feel fre
 
 ### Problem Bank
 
-If you want to practice more problems based on specific topics, the  [problem bank](https://not.datastructur.es/resources/exams/topical_exam_resources/) is a great resource. (Shoutout to our amazing TAs who put this together!)
+If you want to practice more problems based on specific topics, the  [problem bank](../topical_exam_resources) is a great resource. (Shoutout to our amazing TAs who put this together!)
 
 You can filter and choose specific past exam problems based on topic, difficulty, and type. The solution and walkthrough video are also linked in the problem bank, so it is an amazing asynchronous exam prep resource. 
 

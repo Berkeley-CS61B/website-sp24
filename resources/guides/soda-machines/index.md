@@ -7,6 +7,7 @@ parent: Guides
 grand_parent: Resources
 has_children: false
 released: true
+has_right_toc: true
 ---
 
 ## 1. Getting your Username and Password

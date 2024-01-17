@@ -6,6 +6,7 @@ parent: Guides
 grand_parent: Resources
 has_children: false
 released: true
+has_right_toc: true
 ---
 
 Gitbugs are your way to get debugging help on your assignments (labs, homeworks,

@@ -39,16 +39,47 @@
 {%- elsif include.element.title -%}
   {{ include.number }}. {{ include.element.title }}
 {%- endif -%}
-{%- if include.element.recording and slides_exists -%}
-  <br>
-  <a href="{{ slides_path | relative_url }}">Slides</a> / <a href="{{ include.element.recording }}">Recording</a>
-{%- elsif slides_exists -%}
-  <br>
-  <a href="{{ slides_path | relative_url }}">Slides</a>
-{%- elsif include.element.recording -%}
-  <br>
-  <a href="{{ include.element.recording }}">Recording</a>
+
+{%- assign links_array = "" | split: "/" -%}
+
+{%- capture video -%}
+  {%- if include.element.video != "" -%}
+    <a href="{{ include.element.video }}">Video</a>
+  {%- else -%}
+    <a href="{{ include.element.video }}" class="disabled">Video</a>
+  {%- endif -%}
+{%- endcapture -%}
+{%- if include.element.video != nil -%}
+  {% assign links_array = links_array | push: video %}
 {%- endif -%}
+
+{%- capture recording -%}
+  {%- if include.element.recording != "" -%}
+    <a href="{{ include.element.recording }}">Recording</a>
+  {%- else -%}
+    <a href="{{ include.element.video }}" class="disabled">Recording</a>
+  {%- endif -%}
+  {%- endcapture -%}
+{%- if include.element.recording != nil -%}
+  {% assign links_array = links_array | push: recording %}
+{%- endif -%}
+
+{%- capture slides -%}
+  {%- if include.element.slides != "" -%}
+    <a href="{{ include.element.slides }}">Slides</a>
+  {%- else -%}
+    <a href="{{ include.element.video }}" class="disabled">Slides</a>
+  {%- endif -%}
+{%- endcapture -%}
+{%- if include.element.slides != nil -%}
+  {% assign links_array = links_array | push: slides %}
+{%- endif -%}
+
+<br>
+{%- for link in links_array -%}
+  {{ link }}
+  {%- unless forloop.last %}{{}} / {{}}{% endunless -%}
+{%- endfor -%}
 
 {%- comment -%}
   - In case we want to display anything extra (e.g. extra link) in the box.

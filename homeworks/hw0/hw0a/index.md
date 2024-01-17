@@ -288,6 +288,7 @@ The boolean operators are as follows:
 | `==`   | `==` |
 
 - Note the difference between `elif` and `else if`.
+- NOTE: In Java, `==` is used for identity, and `.equals()` is used for equality. For primitive types, this means the same thing, but for reference types, it may be different. For this assignment, you do not need to know the difference; we'll learn more about this later.
 
 ### Exponentiation
 
