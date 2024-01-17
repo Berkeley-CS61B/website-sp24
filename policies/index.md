@@ -411,7 +411,7 @@ Full details on partnerships can be found
 ### Exams
 
 {: .warning}
-The exam policies are still being finalized! The exam dates are correct, but everything else in this section may change over the next week.
+The exam policies are still being finalized! The exam dates are correct, but the rest have not been updated for the current semester. We will send more information when these are finalized.
 
 There will be two evening midterms:
 
