@@ -36,9 +36,7 @@ released: true
     ```
 
     You have successfully installed git if this command returns a valid version
-    number and does not fail.
-
-    The command should succeed and show version 17 (or newer). If the installation is good,
+    number and does not fail. If the installation is good,
     skip the rest of the guide and return to the lab.
 
 ## B. Git Install Issues
