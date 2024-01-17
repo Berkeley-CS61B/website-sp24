@@ -33,6 +33,14 @@ GitHub will fail.
 
 To fix this, connect to eduroam or a secure WiFi network.
 
+### Some students ran into an issue with "Support with password authentication was removed..." when cloning their personal repository. 
+
+If cloning with `https` doesn't work, please try using the `ssh` to clone instead: 
+
+```shell
+git clone git@github.com:Berkeley-CS61B-Student/{{site.semester}}-s***.git
+```
+
 ### On Gradescope, I'm missing required files
 
 First, make sure that you've pushed your code! You can check this by viewing
