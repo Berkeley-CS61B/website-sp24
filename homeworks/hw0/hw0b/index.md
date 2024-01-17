@@ -563,6 +563,8 @@ public static int minIndex(int[] numbers) {
 
 In order to get you more familiar with Java syntax and testing, there are a few exercises for you to solve! After you complete the functions, we have provided a handful of tests for you. Although we have provided tests, you are welcome to write your own too! Writing tests is not only crucial for this class but it is one of the most important skills to have in general. It reinforces our understanding of what specific methods are supposed to do and allows us to catch edge cases! You will have more exercises for testing later on in the course but we want you to be exposed early on.
 
+Please complete **Lab 01** prior and refer [here](../../../resources/guides/assignment-workflow/) how to start with the assignment.
+
 While completing the assignment, you may need to use different data structures like `ArrayList` and `TreeMap`. In order to import these classes, if you hover over wherever you are using the data structures, IntelliJ will give you option to import it or you can do it manually by adding:
 
 ```java
