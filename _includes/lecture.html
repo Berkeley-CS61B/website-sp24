@@ -39,16 +39,33 @@
 {%- elsif include.element.title -%}
   {{ include.number }}. {{ include.element.title }}
 {%- endif -%}
-{%- if include.element.recording and slides_exists -%}
-  <br>
-  <a href="{{ slides_path | relative_url }}">Slides</a> / <a href="{{ include.element.recording }}">Recording</a>
-{%- elsif slides_exists -%}
-  <br>
-  <a href="{{ slides_path | relative_url }}">Slides</a>
-{%- elsif include.element.recording -%}
-  <br>
-  <a href="{{ include.element.recording }}">Recording</a>
+{%- capture video -%}
+{%- if include.element.video -%}
+  <a href="{{ include.element.video }}">Video</a>
+{%- else -%}
+  <a href="{{ include.element.video }}" class="disabled">Video</a>
 {%- endif -%}
+{%- endcapture -%}
+
+{%- capture recording -%}
+{%- if include.element.recording -%}
+  <a href="{{ include.element.recording }}">Recording</a>
+{%- else -%}
+  <a href="{{ include.element.video }}" class="disabled">Recording</a>
+{%- endif -%}
+{%- endcapture -%}
+
+{%- capture slides -%}
+{%- if slides_exists -%}
+  <a href="{{ slides_path | relative_url }}">Slides</a>
+{%- else -%}
+  <a href="{{ include.element.video }}" class="disabled">Slides</a>
+{%- endif -%}
+{%- endcapture -%}
+
+<br>
+<!-- Links formatting goes here -->
+{{ video }} / {{ recording }} / {{ slides }}
 
 {%- comment -%}
   - In case we want to display anything extra (e.g. extra link) in the box.

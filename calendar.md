@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         {% endfor %}
 
+        if (event.title.includes("Online")) {
+          let link = event.description;
+          element.attr("href", link);
+        }
+
         var detailedTitleText = titleText;
         var eventDescription = info.event.extendedProps.description;
         if (typeof eventDescription !== 'undefined') {
