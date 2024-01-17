@@ -27,7 +27,7 @@ class_days: ['1', '3', '5']
 
 # Used in syllabus.html to add a button linking to lecture slides folder, which
 # are a little too big to commit directly into the repo.
-lecture_slides: "https://drive.google.com/drive/folders/1DKQHI8CjBbKFUPlMX_zCKKOK6WHr7Akd"
+lecture_slides: "https://drive.google.com/drive/folders/1afTmjjXxgpJpwhfM4Wb5ElTGwDoZWfBR?usp=sharing"
 
 #######################################################
 # Config you might change when course policies change #
