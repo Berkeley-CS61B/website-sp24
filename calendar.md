@@ -34,11 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
       events: {
         googleCalendarId: '{{ calendar.google_calendar_id }}',
       },
-      eventClick: function (e) { e.preventDefault(); },
+      eventClick: function (info) { 
+        if (info.event.title.includes("Online")) {
+          console.log(info.event);
+          let link = info.event.extendedProps.description;
+          if (link && link.startsWith("<a href=")) {
+            // Extract plain text link
+            link = link.split('"')[1];
+          }
+          location.href = link;
+        } 
+      },
       eventRender: function (info) {
         // Stop from clicking Google Calendar
-        info.el.removeAttribute('href');
-
         var titleEl = info.el.querySelector('.fc-title');
         var eventLocation = info.event.extendedProps.location;
         if (typeof eventLocation !== 'undefined') {
@@ -60,10 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         {% endfor %}
 
-        if (event.title.includes("Online")) {
-          let link = event.description;
-          element.attr("href", link);
-        }
+        info.el.removeAttribute('href');
 
         var detailedTitleText = titleText;
         var eventDescription = info.event.extendedProps.description;
