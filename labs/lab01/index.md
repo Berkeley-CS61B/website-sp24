@@ -15,7 +15,8 @@ released: true
 
 Each assignment will have an FAQ linked at the top. The FAQ for Lab 1 is located
 [here](faq.md). **The FAQ (frequently asked questions) is a list of compiled questions 
-and errors that students often run into, so refer to this page first before finding staff.**
+and errors that students often run into, so refer to this page first before reaching 
+out to staff.**
 
 ## Welcome to CS 61B!
 
