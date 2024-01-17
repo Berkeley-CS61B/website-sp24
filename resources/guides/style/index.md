@@ -7,6 +7,7 @@ parent: Guides
 grand_parent: Materials
 has_children: false
 searchable: false
+has_right_toc: true
 ---
 
 Some notes on this style guide: we have attempted to bring it as close to the
