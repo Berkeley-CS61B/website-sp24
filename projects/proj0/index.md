@@ -15,7 +15,9 @@ released: false
 
 **Deadline: Monday, January 26, 11:59 PM PT.**
 
-TODO: FAQ could be reintegrated into this spec.
+## FAQ
+
+Each assignment will have an FAQ linked at the top. You can also access it by adding `/faq` to the end of the URL. The FAQ for Project 0 is located [here](./faq.md).
 
 ## Overview
 
@@ -48,10 +50,49 @@ One tile (with value 2 or 4) is randomly generated when the game begins. After e
 
 The game ends when the current player has no available moves (no tilt can change the board), or a move forms a square containing 2048. You'll implement this in Tasks 1-3.
 
-{: .warning}
+## Setup
+
+### Getting the Skeleton Files
+
+Follow the instructions in the [Assignment Workflow Guide](../../resources/guides/assignment-workflow/index.md) to get the skeleton code and open it in IntelliJ. For this project, we will be working in the `proj0/` directory.
+
+{: .danger}
+> If you get some sort of error, STOP and either figure it out by carefully reading the [git WTFs](../../resources/guides/git/wtfs.md) or seek help at OH or Ed. You’ll save yourself a lot of trouble vs. guess-and-check with git commands. If you find yourself trying to use commands recommended by Google like force push, [don’t](https://twitter.com/heathercmiller/status/526770571728531456). **Don’t use `git push -f`, even if a post you found on Stack Overflow says to do it!**
+>
+> If you can't get Git to work, watch [this video](https://www.youtube.com/watch?v=Squ8TmG5mX0) as a last resort to submit your work.
+
+### File Structure
+
+The `proj0` folder is separated into two _packages_, `game2048logic` and `game2048rendering`. Though we won't talk about them too much in 61B, packages are a way to organize code into different folders. For example, all the code for the graphics is in the `game2048rendering` package, and all the code for the game logic is in the `game2048logic` package. You can see this in the file structure below:
+
+```text
+proj0
+├── game2048logic
+|   ├── Model.java
+├── game2048rendering
+    ├── Board.java
+    ... (some other files) ...
+    ├── Main.java
+    ├── Side.java
+    ├── Tile.java
+```
+
+{: .info}
 > For the entirety of this project, you will only need to modify the `game2048logic/Model.java` file. Changes to other files will not be recognized by Gradescope.
 >
 > You will, however, need to look through and use (but not modify!) some of the methods in the other files. We will provide descriptions of these methods in the spec.
+
+### Running the Game
+
+You can run your game by running the `Main.java` file in the `game2048rendering` package. You can do this by right-clicking the file and selecting "Run 'Main.main()'":
+
+![run-main](img/run-main.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+If everything is set up properly, you should get something like the following image:
+
+![2048-blank](img/2048-blank.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+Right now, your game does nothing, but by the end of this project, you'll have a fully functioning 2048 implementation!
 
 ## Task 1: Empty Space Exists
 
@@ -70,7 +111,7 @@ Our implementation uses xy-coordinates with (0, 0) at the _bottom-left_ corner:
 
 The Board class represents a board of tiles.
 
-The `private` keyword means that you won't be able to directly access the instance variables of the `Board` class. You will only be able to access `public` methods and variables from `Model`. (More on this keyword, and why it's useful, later in the class.)
+The `private` keyword means that you won't be able to directly access the instance variables of the `Board` class. You will only be able to access `public` methods and variables from `Model`. (More on these keywords, and why it's useful, later in the class.)
 
 To interact with a `Board` object in Task 1, you will need to use the `size()` and `tile(int x, int y)` methods. These methods are documented in `Board.java`.
 
