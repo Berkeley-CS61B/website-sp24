@@ -10,11 +10,14 @@ searchable: false
 has_right_toc: true
 ---
 
+{: .danger}
+We will **not reinstate submission tokens** for failing to check style. Plan and use correct style accordingly! You have been warned.
+
 Some notes on this style guide: we have attempted to bring it as close to the
 default IntelliJ style checker as possible. The style checker also includes
 some "code quality" checks that IntelliJ does not lint.
 
-A note on this style guide: It is probably easier to get to know these rules by
+It is probably easier to get to know these rules by
 running the automated style checker. You can run the style checker in IntelliJ by
 right-clicking on a file in the left sidebar, and selecting "Check Style".
 This will generate a list of style errors in the selected file.

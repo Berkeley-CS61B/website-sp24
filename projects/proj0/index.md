@@ -1,13 +1,30 @@
-Deadline: Monday, 1/26/23, 11:59 PM Pacific
+---
+layout: page
+title: >-
+  Project 0: 2048
+nav_order: 0
+# nav_exclude: true
+parent: Projects
+has_children: true
+has_toc: false
+has_right_toc: true
+description: >-
+  Project 0 spec.
+released: false
+---
+
+**Deadline: Monday, January 26, 11:59 PM PT.**
 
 TODO: FAQ could be reintegrated into this spec.
 
 ## Overview
 
 Prerequisites:
+
 - Lab 1 (required for setup)
 - HW0 (recommended, for Java syntax)
 - Lectures 1-2
+- [61B Style Guide](../../resources/guides/style/index.md)
 
 [See here for a video overview of the project.](https://www.youtube.com/playlist?list=PL8FaHk7qbOD7WwTongMI3rfNbnkCE9NPb) This video is from an earlier version of the project, so there are some slight differences.
 
@@ -18,7 +35,6 @@ In this project, you'll get some practice with Java by creating a playable game 
 If you're not familiar with 2048, [you can try out a demo at this link](http://gabrielecirulli.github.io/2048).
 
 This project can seem daunting at first! There's a lot of starter code that uses Java syntax that you might not have seen before, but it'll be OK! In the real world, you'll often work with codebases that you don't fully understand, and will have to do some tinkering and experimentation to get the results you want. Don't worry, when we get to Project 1, you'll have a chance to start from scratch.
-
 
 ### 2048 Rules: Basic Rules
 
@@ -32,6 +48,10 @@ One tile (with value 2 or 4) is randomly generated when the game begins. After e
 
 The game ends when the current player has no available moves (no tilt can change the board), or a move forms a square containing 2048. You'll implement this in Tasks 1-3.
 
+{: .warning}
+> For the entirety of this project, you will only need to modify the `game2048logic/Model.java` file. Changes to other files will not be recognized by Gradescope.
+>
+> You will, however, need to look through and use (but not modify!) some of the methods in the other files. We will provide descriptions of these methods in the spec.
 
 ## Task 1: Empty Space Exists
 
@@ -41,6 +61,10 @@ In `Model.java`, fill in the `emptySpaceExists(Board b)` method. (Don't modify a
 
 This method should return true if any of the tiles in the given board are null.
 
+### Starter code: Board coordinates
+
+The code uses xy-coordinates with (0, 0) at the _bottom-left_ corner:
+![Board coordinates](img/board-coordinates.jpg)
 
 ### Starter code: Board class
 
@@ -48,8 +72,7 @@ The Board class represents a board of tiles.
 
 The `private` keyword means that you won't be able to directly access the instance variables of the Board class. (More on this keyword, and why it's useful, later in the class.)
 
-To interact with a Board object in Task 1, you will need to use the `size()` and `tile(int col, int row)` methods. These methods are documented in `Board.java`.
-
+To interact with a Board object in Task 1, you will need to use the `size()` and `tile(int x, int y)` methods. These methods are documented in `Board.java`.
 
 ### Starter code: Tile class
 
@@ -61,10 +84,23 @@ To interact with a Tile object, you will need to use the `value()` method, which
 
 Example of syntax: If `t` is a variable of type `Tile`, representing a tile with value 8, then `t.value()` will return 8.
 
-
 ### Testing and Debugging
 
-To test your method, open `TestEmptySpace.java` and run the tests. If your implementation is correct, all 8 tests should pass.
+To test your method, run the tests in `TestEmptySpace.java` by right-clicking the file and selecting "Run 'TestEmptySpace'":
+
+![run-test-empty-space](img/run-test-empty-space.png)
+
+(You can also run all the tests in the entire folder by right-clicking `game2048logic` > "Run 'Tests in 'game2048logic''".)
+
+Alternatively, you may open the `TestEmptySpace.java` file and click the green arrow next to `public class TestEmptySpace` to run the tests (yours may look a little different):
+
+![run-test-empty-space-2](img/run-test-empty-space-2.gif)
+
+You may also run individual tests in the same manner.
+
+You will run all tests in the same way for the rest of the project (and course!).
+
+If your implementation is correct, all 8 tests should pass.
 
 Here is what the error message would look like if you failed one of the tests:
 
@@ -78,26 +114,23 @@ the `testCompletelyEmpty` test.
 ![testCompletelyEmpty](img/test-completely-empty.png)
 
 The right-hand side is now the isolated error message for this test. The top line has a useful
-message: `"Board is full of empty space"` followed by a String representation of the board. You'll see that it's clearly
+message: `"Board is full of empty space"` followed by a `String` representation of the board. You'll see that it's clearly
 empty, yet our `emptySpaceExists` method is returning `false` and causing this test to fail. The javadoc comment at the
 top of the code for the test also has some useful information in case you're failing a test.
-
 
 ## Task 2: Max Tile Exists
 
 In `Model.java`, fill in the `maxTileExists(Board b)` method. (Don't modify any other files.)
 
-This method should return true if any of the tiles in the given board have the winning value 2048.
+This method should return true if any of the tiles in the given board have the winning value (default 2048).
 
 Note: Instead of hard-coding the constant 2048 in your code, you should use the variable `MAX_PIECE` (already defined for you). For example, you should write `if (x == MAX_PIECE)` instead of `if (x == 2048)`.
 
 Leaving in hard coded numbers like `2048` is a bad programming practice, sometimes referred to as a "magic number". The danger of such magic numbers is that if you change them in one part of your code but not another, you might get unexpected results. By using a variable like `MAX_PIECE`, you can ensure they all get changed together.
 
-
 ### Testing and Debugging
 
-To test your method, open `TestMaxTileExists.java` and run the tests. If your implementation is correct, all tests should pass.
-
+To test your method, run the tests in `TestMaxTileExists.java`. If your implementation is correct, all tests should pass.
 
 ## Task 3: At Least One Move Exists
 
@@ -105,13 +138,14 @@ In `Model.java`, fill in the `atLeastOneMoveExists(Board b)` method. (Don't modi
 
 This method should return true if there are any valid moves. A valid move exists if there is a button (up, down, left, right) that the player can press that would cause at least one tile to move.
 
-There are two ways that there can be a valid move:
+There are two ways a valid move can exist:
+
 1. There is at least one empty space on the board.
 2. There are two adjacent tiles with the same value.
 
 For example, for the board below, we should return true because there is at least one empty space.
 
-```
+```text
 |   2|    |   2|    |
 |   4|   4|   2|   2|
 |    |   4|    |    |
@@ -121,7 +155,7 @@ For example, for the board below, we should return true because there is at leas
 For the board below, we should return false. No matter what button you press in 2048, nothing will happen, i.e. there
 are no two adjacent tiles with equal values.
 
-```
+```text
 |   2|   4|   2|   4|
 |  16|   2|   4|   2|
 |   2|   4|   2|   4|
@@ -131,17 +165,16 @@ are no two adjacent tiles with equal values.
 For the board below, we would return true since a move to the right or left would merge the two 64 tiles, and also a
 move up or down would merge the 32 tiles. Or in other words, there exist at least two adjacent tiles with equal values.
 
-```
+```text
 |   2|   4|  64|  64|
 |  16|   2|   4|   8|
 |   2|   4|   2|  32|
 |   4|   2|   4|  32|
 ```
 
-
 ### Testing and Debugging
 
-To test your method, open `TestAtLeastOneMoveExists.java` and run the tests. If your implementation is correct, all tests should pass.
+To test your method, run the tests in `TestAtLeastOneMoveExists.java`. If your implementation is correct, all tests should pass.
 
 Since the `atLeastOneMoveExists` method depends on the `emptySpaceExists` method, you shouldn't expect to pass these tests until you are passing all of the tests in `TestEmptySpace`.
 
@@ -149,13 +182,11 @@ Once you have `maxTileExists` and `atLeastOneMoveExists` working, you should als
 
 TODO: something about tracebacks and indexoutofboundsexceptions
 
-
 ## Task 4: Understanding Tilts
 
 Now, it's time to implement the logic for tilting the board. We recommend finishing Tasks 1-3 before reading any further in the spec!
 
 [See here for a video introduction to this task.](https://www.youtube.com/watch?v=abFbbK1QY2k)
-
 
 ### Rules: Tilting
 
@@ -175,13 +206,11 @@ form two merged tiles. For example, if we have [4, 4, 4, 4], then if we move to 
 You'll find applications of each of the 3 rules listed above in the animated GIF above, so watch through it a few times to get a
 good understanding of these rules.
 
-
 ### Tilting Rules Quiz
 
 Your task: complete this [Google Form quiz](https://forms.gle/xW74vQnK7dZAjS6eA) to check your understanding of the tilting rules.
 
 This quiz is not part of your 61B course grade. <!--TODO: but you need to complete it in order to request help from staff on Ed or in office hours. (maybe?) -->
-
 
 ### Implementing Tilts
 
@@ -191,37 +220,35 @@ Computer science is essentially about one thing: Managing complexity. In order t
 
 In future assignments, it'll be your job to figure out how to break problems into smaller pieces. For this project, here's an outline of how we've decided to tackle the tilt problem:
 
-Score updating: This will be easier once we have the logic for moving all the tiles, so let's save this for later (Task 10).
+- **Score updating:** This will be easier once we have the logic for moving all the tiles, so let's save this for later (Task 10).
 
-Four different directions: Instead of worrying about tilting in all four directions at once, let's start with just the up direction. Later, in Task 9, we'll show you a clever trick to generalize your code and deal with the other three directions with just two extra lines of code.
+- **Four directions:** Instead of worrying about tilting in all four directions at once, let's start with just the up direction. Later, in Task 9, we'll show you a clever trick to generalize your code and deal with the other three directions with just two extra lines of code.
 
-Key observation: When you tilt the board up, each of the four columns can be processed independently. The tiles in one column have no effect on the tiles in a different column. Inspired by this observation, we'll write a *helper method* for tilting one column. Then, to tilt the entire board up (Task 8), we'll call that helper method to tilt each of the columns, one by one.
+- **Key observation:** When you tilt the board up, each of the four columns can be processed independently. The tiles in one column have no effect on the tiles in a different column. Inspired by this observation, we'll write a _helper method_ for tilting one column. Then, to tilt the entire board up (Task 8), we'll call that helper method to tilt each of the columns, one by one.
 
-Another key observation: When you tilt a column up, we need to compute the final landing squares for each tile in that column. We could do this all in a single method, but that's going to get complicated quickly. Instead, let's write another *helper method* for moving a single tile. Then, to tilt the entire column (Task 7), we'll call that helper method to move each tile, one by one.
+- **Another key observation:** When you tilt a column up, we need to compute the final landing squares for each tile in that column. We could do this all in a single method, but that's going to get complicated quickly. Instead, let's write another _helper method_ for moving a single tile. Then, to tilt the entire column (Task 7), we'll call that helper method to move each tile, one by one.
 
-Merging rules: Before we even deal with merging, let's try to implement tiles tilting up. Then, once the tiles are properly tilting up, we can add logic to implement merging (Task 6).
-
+- **Merging rules:** Before we even deal with merging, let's try to implement tiles tilting up. Then, once the tiles are properly tilting up, we can add logic to implement merging (Task 6).
 
 ## Task 5: Move Tile Up (No Merging)
 
-In `Model.java`, fill in the `moveTileUpAsFarAsPossible(Board b, int row, int col)` method. (Don't modify any other files.)
+In `Model.java`, fill in the `moveTileUpAsFarAsPossible(Board b, int x, int y)` method. (Don't modify any other files.)
 
-This method should move the tile at position `(row, col)` as far up in its column as possible.
+This method should move the tile at position `(x, y)` as far up in its column as possible.
 
 Remember that a tile can move up through empty squares, until the tile either reaches the top row, or the tile reaches an empty square with another tile directly above it.
 
 For this task, don't worry about merges yet. We'll add logic for merging in the next task.
 
-
 ### Starter code: move method in Board
 
-In the `Board` class, there is a method `move(int col, int row, Tile tile)`. This method moves the given `tile` to the given `(col, row)` position on the board.
+In the `Board` class, there is a method `move(int x, int y, Tile tile)`. This method moves the given `tile` to the given `(x, y)` position on the board.
 
 In order to make the graphics run smoothly, you should only call `move` on a given tile once per call to `tilt`. In other words, your solution to `moveTileUpAsFarAsPossible` should only call the `move` method exactly once.
 
 As an example, suppose you have the board below and press up.
 
-```
+```text
 |    |    |    |    |
 |    |    |    |    |
 |    |    |    |    |
@@ -230,7 +257,7 @@ As an example, suppose you have the board below and press up.
 
 One way we could accomplish this would be as follows:
 
-```
+```java
 Tile t = board.tile(3, 0)
 board.move(3, 1, t);
 board.move(3, 2, t);
@@ -240,16 +267,14 @@ board.move(3, 3, t);
 However, the graphics code will get confused because the same tile is not supposed to move multiple times. Instead, you'll need to
 complete the entire move with one call to `move`, e.g.
 
-```
+```java
 Tile t = board.tile(3, 0)
 board.move(3, 3, t);
 ```
 
-
 ### Moving Rules Quiz
 
 To test your understanding, you should complete this [Google Form quiz](https://forms.gle/pubhRx4fxYnPTGNX8). This quiz (and the following quizzes) are completely optional (i.e. not graded) but **highly suggested** as it'll find any conceptual misunderstandings you might have about the game mechanics. You may attempt this quiz as many times as you'd like.
-
 
 ### Testing and Debugging
 
@@ -272,13 +297,11 @@ Debugging these can be a bit tricky because it's hard to tell what you're doing 
 
 We recommend using the given tests to debug your code, though you're also welcome to debug by running `Main.java`. You can also start the game from a specific state by changing the `CUSTOM_START` and `USE_CUSTOM_START` variables in `Main.java`, which may be helpful for debugging specific tests.
 
-
 ## Task 6: Merging Tiles
 
 Modify the `moveTileUpAsFarAsPossible` method so that it accounts for tiles merging.
 
 Remember that a tile can move up through empty squares. When the tile sees a non-empty square, if that square contains another tile of the same value, and that tile has not already been merged from this tilt, then the two tiles should merge.
-
 
 ### Starter code: wasMerged method in Tile
 
@@ -290,27 +313,23 @@ What if, halfway through this tilt operation, we have [4, X, X, 4], and we want 
 
 To keep track of whether a tile has been merged on this tilt, you can use the `wasMerged` method of the Tile class.
 
-
 ### Testing and Debugging
 
 TODO where are the merge-up-only tests, are they split off somewhere
 
-
 ## Task 7: Tilt Column
 
-Now that we have a *helper method* that moves a single tile into its rightful place (including merges), our method for tilting an entire column will be a lot simpler!
+Now that we have a _helper method_ that moves a single tile into its rightful place (including merges), our method for tilting an entire column will be a lot simpler!
 
-In `Model.java`, fill in the `tiltColumn(Board b, int col)` method. (Don't modify any other files.)
+In `Model.java`, fill in the `tiltColumn(Board b, int x)` method. (Don't modify any other files.)
 
-This method should tilt the given column `col` up, moving all of the tiles in that column into their rightful place, and merging any tiles in that column that need to be merged.
+This method should tilt the given column at coordinate `x` up, moving all of the tiles in that column into their rightful place, and merging any tiles in that column that need to be merged.
 
 Remember to use your `moveTileUpAsFarAsPossible` helper method to keep things simple! Consider: What tiles should you call this helper method on, and in what order?
-
 
 ### Testing and Debugging
 
 TODO
-
 
 ## Task 8: Tilt Up
 
@@ -322,10 +341,7 @@ This method should tilt the entire board up, moving all tiles in all columns int
 
 For this task, you can ignore the `side` argument. We'll use that in the next task to deal with the other three tilt directions.
 
-
 ### Testing and Debugging
-
-
 
 ## Task 9: Tilt in Four Directions
 
@@ -338,7 +354,6 @@ One possible approach is to copy-paste our code four times, and slightly change 
 For this problem, we've given away a clean solution. This will allow you to handle the other three directions with only
 two additional lines of code!
 
-
 ### Starter code: Side
 
 The `Side` class is a special type of class called an `Enum`.
@@ -350,14 +365,13 @@ If you're curious to learn more about Java enums,
 see [https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
 .
 
-
 ### Starter code: setViewingPerspective method in Board
 
-Specifically, the `Board` class has a `setViewingPerspective(Side s)` function that will change the behavior of the `tile` and `move` classes so that they *behave as if the given side was NORTH*.
+Specifically, the `Board` class has a `setViewingPerspective(Side s)` function that will change the behavior of the `tile` and `move` classes so that they _behave as if the given side was NORTH_.
 
 For example, consider the board below:
 
-```
+```text
 |    |    |    |    |
 |  16|    |  16|    |
 |    |    |    |    |
@@ -368,7 +382,7 @@ If we call `board.tile(0, 2)`, we'll get `16`, since 16 is in column 0, row 2. I
 `board.setViewingPerspective(s)` where `s` is `WEST`, then the board will behave as if WEST was NORTH, i.e. you had your
 head turned 90 degrees to the left, as shown below:
 
-```
+```text
 |    |    |  16|    |
 |    |    |    |    |
 |    |    |  16|    |
@@ -378,7 +392,7 @@ head turned 90 degrees to the left, as shown below:
 In other words, the `16` we had before would be at `board.tile(2, 3)`. If we were to call
 `board.tilt(Side.NORTH)` with a properly implemented `tilt`, the board would become:
 
-```
+```text
 |   2|    |  32|    |
 |    |    |    |    |
 |    |    |    |    |
@@ -389,7 +403,7 @@ To get the board to go back to the original viewing perspective, we simply call
 `board.setViewingPerspective(Side.NORTH)`, which will make the board behave as if
 `NORTH` was `NORTH`. If we do this, the board will now behave as if it were:
 
-```
+```text
 |    |    |    |    |
 |  32|    |    |    |
 |    |    |    |    |
@@ -405,24 +419,21 @@ To test your understanding, try this third and final [Google Form quiz](https://
 . <!--(QA notes: Let me know if this quiz is too weird / if it is actually helpful).-->You may attempt this quiz as many
 times as you'd like.
 
-
 ### Testing and Debugging
 
 `TestMultipleMoves` tests all the things you write in coordination with each other. Such a test is called an _integration test_ and are incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` until you're passing the rest of the tests!
-
 
 ## Task 10: Updating Score
 
 At this point, your game should be able to tilt the board in all four directions, accounting for merges. The last thing we have to implement is the score updating.
 
-
 ### Rules: Score
 
-When two tiles of value `x` merge to form a single value of tile `2x`, the player's score increases by `2x`.
+When two tiles of value `v` merge to form a single value of tile `2v`, the player's score increases by `2v`.
 
 For example, if we have the board given by:
 
-```
+```text
 |   2|    |   2|    |
 |   4|   4|   2|   2|
 |    |   4|    |    |
@@ -431,7 +442,7 @@ For example, if we have the board given by:
 
 And press up, the state of the game is now:
 
-```
+```text
 |   2|   8|   4|   2|
 |   4|   4|   4|   8|
 |   2|    |    |    |
@@ -440,15 +451,17 @@ And press up, the state of the game is now:
 
 We merged two 4s into an 8, and two 2s into a 4, so the score should be incremented by 8 + 4 = 12.
 
+## Style
 
+Starting with this project, **we will be enforcing style**. You must follow the [style guide](../../resources/guides/style/index.md), or you will be penalized on the autograder.
+
+You can and should check your style locally with the CS 61B plugin. **We will not remove the velocity limit for failing to check style.**
 
 ## Submission and Grading
 
 Your code will be graded based on whether it passes the tests we provided. There are no hidden tests; the score you see on Gradescope is your score for this project.
 
 Gradescope will only grade your `Model.java` file. If you edit any other files, your edits will not be recognized, so don't edit any other files.
-
-TODO: style?
 
 Tests are "all or nothing" in their own fields. If you fail one of the subtests in the test category, you will not receive credit for that category although you might have passed different test cases. For example, you'll see in Gradescope `TestModel` category 5 subtests.
 
@@ -471,13 +484,15 @@ It will also tell you how much you have not yet sent to your GitHub repository.
 
 The typical commands would look something like this:
 
-    git status                          # To see what needs to be added or committed.
-    git add <filepath>                  # To add, or stage, any modified files.
-    git commit -m "Commit message"      # To commit changes.
-    git push
+```bash
+git status                          # To see what needs to be added or committed.
+git add <file or folder path>       # To add, or stage, any modified files.
+git commit -m "Commit message"      # To commit changes. Use a descriptive message.
+git push                            # Reflect your local changes on GitHub so Gradescope can see them.
+```
 
 Then you can carry on working on the project until you're ready to commit and push again, in which case you'll repeat the above. It is in your best interest to get into the habit of comitting frequently with informative commit messages so that in the case that you need to revert back to an old version of code, it is not only possible but easy. We suggest you commit every time you add a significant portion of code or reach some milestone (passing a new test, for example).
 
 Once you've pushed your code to GitHub (i.e. ran `git push`), then you may go to Gradescope, find the `proj0` assignment, and submit the code there. Keep in mind that the version of code that Gradescope uses is the most recent commit you've pushed, so if you do not run `git push` before you submit on Gradescope, old code will be tested instead of the most recent code you have on your computer.
 
-For this project we will be limiting the number of times you can submit your code within an hour to three times. you will get 4 submission "tokens" that each regenerate after 24 hours. (TODO this is contradictory?)
+For this project we will be limiting the number of times you can submit your code. You will get 4 submission "tokens" that each regenerate after 24 hours.
