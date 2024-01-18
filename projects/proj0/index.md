@@ -63,8 +63,8 @@ This method should return true if any of the tiles in the given board are null.
 
 ### Starter code: Board coordinates
 
-The code uses xy-coordinates with (0, 0) at the _bottom-left_ corner:
-![Board coordinates](img/board-coordinates.jpg)
+Our implementation uses xy-coordinates with (0, 0) at the _bottom-left_ corner:
+![Board coordinates](img/board-coordinates.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### Starter code: Board class
 
@@ -88,13 +88,13 @@ Example of syntax: If `t` is a variable of type `Tile`, representing a tile with
 
 To test your method, run the tests in `TestEmptySpace.java` by right-clicking the file and selecting "Run 'TestEmptySpace'":
 
-![run-test-empty-space](img/run-test-empty-space.png)
+![run-test-empty-space](img/run-test-empty-space.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 (You can also run all the tests in the entire folder by right-clicking `game2048logic` > "Run 'Tests in 'game2048logic''".)
 
 Alternatively, you may open the `TestEmptySpace.java` file and click the green arrow next to `public class TestEmptySpace` to run the tests (yours may look a little different):
 
-![run-test-empty-space-2](img/run-test-empty-space-2.gif)
+![run-test-empty-space-2](img/run-test-empty-space-2.gif){:style="display:block; margin-left:auto; margin-right:auto"}
 
 You may also run individual tests in the same manner.
 
@@ -104,14 +104,14 @@ If your implementation is correct, all 8 tests should pass.
 
 Here is what the error message would look like if you failed one of the tests:
 
-![TestEmptySpace all fail](img/test-empty-space-all-fail.png)
+![TestEmptySpace all fail](img/test-empty-space-all-fail.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 On the left-hand side, you'll see the list of all tests that were run. The yellow X means we failed a test while the
 green check means we passed it. On the right, you'll see some useful error messages. To look at a single test and its
 error message in isolation, click the test on the left-hand side. For example, let's say we want to look at
 the `testCompletelyEmpty` test.
 
-![testCompletelyEmpty](img/test-completely-empty.png)
+![testCompletelyEmpty](img/test-completely-empty.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The right-hand side is now the isolated error message for this test. The top line has a useful
 message: `"Board is full of empty space"` followed by a `String` representation of the board. You'll see that it's clearly
@@ -190,7 +190,7 @@ Now, it's time to implement the logic for tilting the board. We recommend finish
 
 ### Rules: Tilting
 
-![2048 Examples](img/example-2048.gif)
+![2048 Examples](img/example-2048.gif){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The animation above shows a few tilt operations. Here are the full rules for when merges occur that are shown in the image above.
 
@@ -278,11 +278,11 @@ To test your understanding, you should complete this [Google Form quiz](https://
 
 ### Testing and Debugging
 
-TODO where are the no-merge tests, are they split off somewhere
+TODO: where are the no-merge tests, are they split off somewhere
 
 The error messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the `testUpTrickyMerge` test. After clicking that test, we'll see this:
 
-![testUpTrickyMerge Error Message](img/test-up-error-msg.png)
+![testUpTrickyMerge Error Message](img/test-up-error-msg.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The first line tells us the direction that was tilted (for these tests it'll always be North), then what your board looked like before the tilt, then what we expected the board to look like, and finally what your board actually looked like.
 
@@ -291,7 +291,7 @@ You'll see that we're merging a tile twice on a single call to tilt which result
 For other tests it might be difficult to notice the difference between the expected and actual boards right away; for
 those, you can click the blue "Click to see difference" text at the very bottom of the error message to get a side-by-side comparison of the expected (on the left) and actual (on the right) boards in a separate window. Here is what it looks like for this test:
 
-![testUpTrickyMerge Comparison](img/comparison.png)
+![testUpTrickyMerge Comparison](img/comparison.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Debugging these can be a bit tricky because it's hard to tell what you're doing wrong. First, you should identify which of the 3 rules listed above you're violating. In this case, we can see that it's rule 2 since a tile is merging more than once. The javadoc comments on these methods are good resources for this as they specifically lay out what rule/configuration they're testing. You might also be able to figure out what rule you're violating by just looking at the before and after boards. Then, comes the tricky party: refactoring your existing code to properly account for that rule. We suggest writing out on pen and paper the steps your code takes so you can first understand why your board looks the way it does, then coming up with a fix. These tests only call `tilt` once, so you don't need to worry about debugging multiple calls to tilt.
 
@@ -342,6 +342,8 @@ This method should tilt the entire board up, moving all tiles in all columns int
 For this task, you can ignore the `side` argument. We'll use that in the next task to deal with the other three tilt directions.
 
 ### Testing and Debugging
+
+TODO
 
 ## Task 9: Tilt in Four Directions
 
@@ -495,4 +497,6 @@ Then you can carry on working on the project until you're ready to commit and pu
 
 Once you've pushed your code to GitHub (i.e. ran `git push`), then you may go to Gradescope, find the `proj0` assignment, and submit the code there. Keep in mind that the version of code that Gradescope uses is the most recent commit you've pushed, so if you do not run `git push` before you submit on Gradescope, old code will be tested instead of the most recent code you have on your computer.
 
-For this project we will be limiting the number of times you can submit your code. You will get 4 submission "tokens" that each regenerate after 24 hours.
+For this project we will be limiting the number of times you can submit your code to the autograder. You will get 4 submission "tokens" that each regenerate after 24 hours.
+
+There are no hidden tests. The score you see on Gradescope is your score for this project.

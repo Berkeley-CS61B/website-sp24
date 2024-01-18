@@ -1,13 +1,16 @@
 ---
 layout: page
-title: Style Guide
-author: Ethan Ordentlich
-released: true
+title: >-
+  Style Guide
+# nav_order: 0
+# nav_exclude: true
 parent: Guides
-grand_parent: Materials
+grand_parent: Resources
 has_children: false
-searchable: false
 has_right_toc: true
+description: >-
+  61B style guide.
+released: true
 ---
 
 {: .danger}
@@ -17,11 +20,12 @@ Some notes on this style guide: we have attempted to bring it as close to the
 default IntelliJ style checker as possible. The style checker also includes
 some "code quality" checks that IntelliJ does not lint.
 
-It is probably easier to get to know these rules by
+{: .info}
+> It is probably easier to get to know these rules by
 running the automated style checker. You can run the style checker in IntelliJ by
-right-clicking on a file in the left sidebar, and selecting "Check Style".
-This will generate a list of style errors in the selected file.
-Be sure to save or recompile your file before running the style checker again.
+> right-clicking on a file in the left sidebar, and selecting "Check Style".
+> This will generate a list of style errors in the selected file.
+> Be sure to save or recompile your file before running the style checker again.
 
 ![screenshot of intellij with right-click menu open](intellij_style_checker.png)
 
