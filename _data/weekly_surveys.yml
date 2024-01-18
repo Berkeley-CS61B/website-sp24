@@ -1,0 +1,35 @@
+weekly_surveys:
+  - week: 1
+    link: https://forms.gle/gCSGZ2wcL6fvhStV9
+  - week: 2
+    link: 
+  - week: 3
+    link: 
+  - week: 4
+    link: 
+  - week: 5
+    link: 
+  - week: 6
+    link: 
+  - week: 7
+    link: 
+  - week: 8
+    link: 
+  - week: 9
+    link: 
+  - week: 10
+    link: 
+  - week: 11
+    no_survey: true
+  - week: 12
+    link: 
+  - week: 13
+    link: 
+  - week: 14
+    link: 
+  - week: 15
+    no_survey: true
+  - week: 16
+    no_survey: true
+  - week: 17
+    no_survey: true

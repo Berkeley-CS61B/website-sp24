@@ -22,6 +22,9 @@ table {
   td.is-even {
     background-color: darken($body-background-color, 3%)
   }
+  td.week {
+    text-align: center;
+  }
   td.border-hack {
     border-left: 1px solid $border-color;
   }
