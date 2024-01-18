@@ -2,6 +2,7 @@
 title: Home
 layout: page
 nav_order: 0
+hide_title: true
 released: true
 ---
 
