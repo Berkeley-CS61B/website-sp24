@@ -98,9 +98,9 @@ Right now, your game does nothing, but by the end of this project, you'll have a
 
 [See here for a video introduction to this task.](https://www.youtube.com/watch?v=13rdFndFNXc)
 
-In `Model.java`, fill in the `emptySpaceExists(Board b)` method. (Don't modify any other files.)
+In `Model.java`, fill in the `emptySpaceExists()` method. (Don't modify any other files.)
 
-This method should return true if any of the tiles in the given board are null.
+This method should return true if any of the tiles on the board are null.
 
 ### Starter code: Board coordinates
 
@@ -161,9 +161,9 @@ top of the code for the test also has some useful information in case you're fai
 
 ## Task 2: Max Tile Exists
 
-In `Model.java`, fill in the `maxTileExists(Board b)` method. (Don't modify any other files.)
+In `Model.java`, fill in the `maxTileExists()` method. (Don't modify any other files.)
 
-This method should return true if any of the tiles in the given board have the winning value (default 2048).
+This method should return true if any of the tiles on the board have the winning value (default 2048).
 
 Note: Instead of hard-coding the constant 2048 in your code, you should use the variable `MAX_PIECE` (already defined for you). For example, you should write `if (x == MAX_PIECE)` instead of `if (x == 2048)`.
 
@@ -175,7 +175,7 @@ To test your method, run the tests in `TestMaxTileExists.java`. If your implemen
 
 ## Task 3: At Least One Move Exists
 
-In `Model.java`, fill in the `atLeastOneMoveExists(Board b)` method. (Don't modify any other files.)
+In `Model.java`, fill in the `atLeastOneMoveExists()` method. (Don't modify any other files.)
 
 This method should return true if there are any valid moves. A valid move exists if there is a button (up, down, left, right) that the player can press that would cause at least one tile to move.
 
@@ -273,7 +273,7 @@ In future assignments, it'll be your job to figure out how to break problems int
 
 ## Task 5: Move Tile Up (No Merging)
 
-In `Model.java`, fill in the `moveTileUpAsFarAsPossible(Board b, int x, int y)` method. (Don't modify any other files.)
+In `Model.java`, fill in the `moveTileUpAsFarAsPossible(int x, int y)` method. (Don't modify any other files.)
 
 This method should move the tile at position `(x, y)` as far up in its column as possible.
 
@@ -362,7 +362,7 @@ TODO
 
 Now that we have a _helper method_ that moves a single tile into its rightful place (including merges), our method for tilting an entire column will be a lot simpler!
 
-In `Model.java`, fill in the `tiltColumn(Board b, int x)` method. (Don't modify any other files.)
+In `Model.java`, fill in the `tiltColumn(int x)` method. (Don't modify any other files.)
 
 This method should tilt the given column at coordinate `x` up, moving all of the tiles in that column into their rightful place, and merging any tiles in that column that need to be merged.
 
