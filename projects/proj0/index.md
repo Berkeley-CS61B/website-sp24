@@ -278,7 +278,7 @@ To test your understanding, you should complete this [Google Form quiz](https://
 
 ### Testing and Debugging
 
-TODO: where are the no-merge tests, are they split off somewhere
+To test no-merge tilting, run the tests in `TestTiltNoMerge.java`.
 
 The error messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the `testUpTrickyMerge` test. After clicking that test, we'll see this:
 
@@ -315,7 +315,7 @@ To keep track of whether a tile has been merged on this tilt, you can use the `w
 
 ### Testing and Debugging
 
-TODO where are the merge-up-only tests, are they split off somewhere
+TODO
 
 ## Task 7: Tilt Column
 
@@ -343,7 +343,7 @@ For this task, you can ignore the `side` argument. We'll use that in the next ta
 
 ### Testing and Debugging
 
-TODO
+To test up-only tilting, run the tests in `TestUpOnly.java`. If your implementation is correct, all tests should pass.
 
 ## Task 9: Tilt in Four Directions
 
