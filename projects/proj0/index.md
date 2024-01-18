@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 0 spec.
-released: false
+released: true
 ---
 
 Due: <b>Tuesday, January 24, 11:59 PM PT</b>.
@@ -78,7 +78,8 @@ Here are the full rules for when merges occur that are shown in the image above.
 
 1. Two tiles of the same value _merge_ into one tile containing double the initial number.
 
-2. A tile that is the result of a merge will not merge again on that tilt. For example, if we have [X, 2, 2, 4], where X
+2. A tile that is the result of a merge will not merge 
+   again on that tilt. For example, if we have [X, 2, 2, 4], where X
    represents an empty space, and we move the tiles to the left, we should end up with [4, 4, X, X], not [8, X, X, X].
    This is because the leftmost 4 was already part of a merge so should not merge again.
 
@@ -112,6 +113,7 @@ over, so that is why it remains 0 throughout the animated GIF example.
 
 ## Assignment Philosophy and Program Design
 
+
 A video overview of this section of the spec can be found
 at [https://youtu.be/3YbIOga6ZdQ](https://youtu.be/3YbIOga6ZdQ).
 
@@ -123,9 +125,14 @@ reason we're doing this is that in the real world, you'll often work with codeba
 maybe don't understand at all, like in this project!) and will have to do some tinkering and experimentation to get the
 results you want. Don't worry, when we get to project 1 next week, you'll have a chance to start from scratch.
 
+### Coordinate Diagram of Board
+
+The following is a coordinate diagram of the board:
+![Coordinate Diagram](img/2048-coords.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+
 We'll now go over the different classes that you will interact with.
 
-### Tile
+### game2048rendering/Tile
 
 This class represents the numbered tiles on the board. If a variable of type `Tile`
 is `null`, it's treated as an empty tile on the board. You will not need to instantiate any `Tile` objects, though you
@@ -133,7 +140,7 @@ will need have an understanding of them since you will be using them in the `Mod
 you'll need to use is `.value()` which returns the value of the given tile. For example if `Tile t` corresponds to a
 tile with the value 8, then `t.value()` will return `8`.
 
-### Side
+### game2048rendering/Side
 
 The `Side` class is a special type of class called an `Enum`.
 Enums may take on only one of a finite set of values. In this case, we have a value for each of the 4
@@ -150,26 +157,28 @@ If you're curous to learn more about Java enums,
 see [https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
 .
 
-### Model
+### game2048rendering/Board
+
+This class represents the board of tiles itself. It has three methods that you'll use: `setViewingPerspective`, `tile`
+, `move`.
+
+### game2048logic/Model
 
 This class represents the entire state of the game. A `Model` object represents a game of 2048. It has instance
 variables for the state of the board (i.e. where all the `Tile` objects are, what the score is, etc) as well as a
 variety of methods. One of the challenges when you get to the fourth final task of this project (writing the `tilt`
 method) will be to figure out which of these methods and instance variables are useful.
 
-### Board
-
-This class represents the board of tiles itself. It has three methods that you'll use: `setViewingPerspective`, `tile`
-, `move`.
-
-**You will only edit the `Model.java` file in this assignment.** Gradescope will only take your `Model.java` file and
-use the skeleton versions of the other files, so if you make an edit to `Tile.java` for example, it will not be
-recognized by Gradescope.
+{: .info}
+> **You will only edit the `Model.java` file in this assignment.** Gradescope will only take your `Model.java` file and
+> use the skeleton versions of the other files, so if you make an edit to `Tile.java` for example, it will not be
+> recognized by Gradescope.
 
 ## Getting Started
 
-**Firstly, ensure you've completed [lab 1](../../lab/lab01/index.md)**. You will not be able to work on the project if
-haven't completed all the necessary set up that you're required to do in lab 1.
+{: .warning}
+> **Firstly, ensure you've completed [lab 1](../../lab/lab01/index.md)**. You will not be able to work on the project if
+> haven't completed all the necessary set up that you're required to do in lab 1.
 
 ### Getting the skeleton files
 
@@ -247,7 +256,7 @@ In all, the setup would look like this (this is from fa22, {{ site.semester }} m
 
 ![IntelliJ Setup](img/intellij-setup.gif){:style="display:block; margin-left:auto; margin-right:auto"}
 
-To make sure the setup is all fine, open the `game2048` folder and right click on the `Main` Java file: you'll see a few
+To make sure the setup is all fine, open the `src/game2048rendering` folder and right click on the `Main` Java file: you'll see a few
 options, but the one we care about is the green "Run Main.main()" button. It should look like the following image:
 
 ![Run Main](img/run-main.png){:style="display:block; margin-left:auto; margin-right:auto"}
@@ -548,6 +557,17 @@ We'll now take a look at each of these tests and show you how to read the error 
 
 ### TestEmptySpace
 
+`TestEmptySpace` is comprised of the following tests:
+
+1. `testCompletelyEmpty`: calls `emptySpaceExists` on a board with no tiles
+2. `testEmptyTopRow`: calls `emptySpaceExists` on a board with no tiles in the top row
+3. `testEmptyBottomRow`: calls `emptySpaceExists` on a board with no tiles in the bottom row
+4. `testEmptyLeftCol`: calls `emptySpaceExists` on a board with no tiles in the left column
+5. `testEmptyRightCol`: calls `emptySpaceExists` on a board with no tiles in the right column
+6. `testAlmostFullBoard`: calls `emptySpaceExists` on a board with a single empty space
+7. `testFullBoard`: calls `emptySpaceExists` on a board with no empty tiles, but where a legal move exists. Checks that `emptySpaceExists` still returns false.
+8. `testFullBoardNoMerge`: calls `emptySpaceExists` on a board with no empty tiles and where no legal move exists. Checks that `emptySpaceExists` still returns false.
+
 These tests will check the correctness of your `emptySpaceExists` method. Here is what the error message would look like
 if you failed one of the tests:
 
@@ -567,12 +587,36 @@ top of the code for the test also has some useful information in case you're fai
 
 ### TestMaxTileExists
 
+`TestMaxTileExists` is comprised of the following tests:
+
+1. `testEmptyBoard`: calls `maxTileExists` on a board with no tiles
+2. `testFullBoardNoMax`: calls `maxTileExists` on a full board with no max tiles
+3. `testFullBoardMax`: calls `maxTileExists` on a full board with a single max tile
+4. `testMultipleMax`: calls `maxTileExists` on a board with several max tiles
+5. `testTopRightCorner`: calls `maxTileExists` on a board with a max tile in the top right corner
+6. `testTopLeftCorner`: calls `maxTileExists` on a board with a max tile in the top left corner
+7. `testBottomLeftCorner`: calls `maxTileExists` on a board with a max tile in the botton left corner
+8. `testBottomRightCorner`: calls `maxTileExists` on a board with a max tile in the bottom right corner
+
 These tests will check the correctness of your `maxTileExists` method. The error messages will be similar to those
 for `TestEmptySpace`, and you can still click on each individual test to look at them in isolation. Remember that your
 `maxTileExists` method should **only** look for the max tile and not anything else (i.e. shouldn't look for empty space)
 . If yours does, you will not pass all of these tests.
 
 ### TestAtLeastOneMoveExists
+
+`TestAtLeastOneMoveExists` is comprised of the following tests:
+
+1. `testEmptySpace`: calls `atLeastOneMoveExists` on a board with empty space
+2. `testAnyDir`: calls `atLeastOneMoveExists` on a full board where a tilt in any direction is a valid move
+3. `testLeftOrRight`: calls `atLeastOneMoveExists` on a full board where left and right tilts are the only valid moves
+4. `testUpOrDown`: calls `atLeastOneMoveExists` on a full board where up and down tilts are the only valid moves
+5. `testMoveExistsMaxPiece`: calls `atLeastOneMoveExists` on a board where some move exists and a max tile is on the board. While having the max tile on the board does mean the game is over, it should not be handled by this method.
+6. `testNoMoveExists1`: calls `atLeastOneMoveExists` on a board where no move exists
+7. `testNoMoveExists2`: calls `atLeastOneMoveExists` on a board where no move exists
+8. `testNoMoveExists3`: calls `atLeastOneMoveExists` on a board where no move exists
+9. `testNoMoveExists4`: calls `atLeastOneMoveExists` on a board where no move exists
+10. `testNoMoveExists5`: calls `atLeastOneMoveExists` on a board where no move exists
 
 These tests will check the correctness of your `atLeastOneMoveExists` method. The error messages are similar to the
 above two. Since the
@@ -581,9 +625,24 @@ you are passing all of the tests in `TestEmptySpace`.
 
 ### TestModel
 
+`TestModel` is comprised of the following tests:
+
+1. `testGameOverNoChange1`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+2. `testGameOverMaxPiece`: calls `gameOver` on a board containing a max piece and no other tiles
+3. `testGameOverNoChange2`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+4. `testGameNotOver1`: calls `gameOver` on a full board where a tilt in any direction is a valid move
+5. `testGameNotOver2`: calls `gameOver` on a board with a single empty space
+
 These tests create a `Model` at a specific state, then check correctness of the `gameOver` method. Since `gameOver` is a combination of `maxTileExists` and `atLeastOneMoveExists`, you should expect to pass these tests if both of those methods are implemented correctly.
 
 ### TestUpOnly
+
+`TestUpOnly` is comprised of the following tests:
+
+1. `testUpNoMerge`: calls `tilt` in the up direction on a board with two tiles in different columns. These tiles should move into empty space (no merging)
+2. `testUpBasicMerge`: calls `tilt` in the up direction on a board with two tiles of the same value in the same column. These tiles should merge
+3. `testUpTripleMerge`: calls `tilt` in the up direction on a board with three tiles of the same value in the same column. The top two tiles should merge, but the bottom tile should not.
+4. `testUpTrickyMerge`: calls `tilt` in the up direction on a board with three tiles in the same column. The top two tiles have the same value and should merge. The bottom tile has the same value as the resulting merged tile, but should still not merge.
 
 These tests will check the correctness of your `tilt` method, but only in the up (`Side.NORTH`) direction. The error
 messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the

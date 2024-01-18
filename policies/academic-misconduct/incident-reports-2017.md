@@ -1,13 +1,10 @@
 ---
 layout: page
-title: Incident Reports
+title: Incident Reports from Spring 2017
 released: true
 parent: Academic Misconduct Policy
 has_children: false
 ---
-
-Incident Reports from Spring 2017
-====
 
 During the Spring 2017 semester, students caught for plagiarism were able to submit incident reports in exchange for reduced consequences. Below are collected some (but not all) of those reports. Almost all of the text given is original, though some reports have been edited slightly for clarity and anonymity.
 

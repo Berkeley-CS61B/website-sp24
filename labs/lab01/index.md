@@ -15,7 +15,8 @@ released: true
 
 Each assignment will have an FAQ linked at the top. The FAQ for Lab 1 is located
 [here](faq.md). **The FAQ (frequently asked questions) is a list of compiled questions 
-and errors that students often run into, so refer to this page first before finding staff.**
+and errors that students often run into, so refer to this page first before reaching 
+out to staff.**
 
 ## Welcome to CS 61B!
 
@@ -236,7 +237,7 @@ Once inside the folder, run:
                                                                                                   
 ```shell                                                                                          
 git clone https://github.com/Berkeley-CS61B/library-{{ site.semester }}
-```                                                                                               
+```
                                                                                                   
 Below is the directory structure of `library-{{ site.semester }}`. Look inside the folder using 
 `ls library-{{ site.semester }}` and make sure you see the `.jar` files listed below. There are many more, 
@@ -263,6 +264,9 @@ and generate a new one if none exists:
 ```shell
 curl -sS https://sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash 
 ```
+
+{: .info}
+If you get an error message such as `bash: line 1: syntax error near unexpected token 'newline'`, try refreshing this page and run the updated command.
 
 With the location that is provided, go ahead and run the following 
 command, ensuring to replace `path_to_ssh_key` with the location of the SSH key
@@ -313,7 +317,7 @@ folder (possibly on the same level as the library).
 class repository number (you can find this repo number on Beacon).** Then run the command below:
 
 ```shell
-git clone https://github.com/Berkeley-CS61B-Student/{{ site.semester }}-s***.git
+git clone git@github.com:Berkeley-CS61B-Student/{{site.semester}}-s***.git
 ```
 
 {: .info}

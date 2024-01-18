@@ -51,9 +51,9 @@
 
 lectures:
   - title: "Intro"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/19NEzpJJ-a0lI-tdz9yC1kP-8Apt2oZm-918IsDiqgYQ"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRq5wRDN8wZFy7GrrJXUtr1q"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=tby2de4c1u8"
     readings: 
       - title: "Ch 1"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/1.-introduction"

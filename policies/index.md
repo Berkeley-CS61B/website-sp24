@@ -410,12 +410,15 @@ Full details on partnerships can be found
 
 ### Exams
 
+{: .warning}
+The exam policies are still being finalized! The exam dates are correct, but the rest have not been updated for the current semester. We will send more information when these are finalized.
+
 There will be two evening midterms:
 
 - Week 5, Thursday 2/15, 7-9 PM
 - Week 10, Thursday 3/21, 7-9 PM
 
-There is also a final exam on Thursday 5/11, 3-6 PM.
+There is also a final exam on Tuesday 5/11, 8-11 AM.
 
 CS 61B exams will by default be in-person, though you may request a proctored
 remote exam. Proctoring details will be released closer to the exam.
@@ -570,7 +573,7 @@ Given our friendly lateness policy (see below), there will be no exceptions to
 this rule.
 
 During the Spring 2017 semester, we compiled a series of
-[incident reports written by students who were caught plagiarizing](academic-misconduct/incident-reports-2017.html).
+[incident reports written by students who were caught plagiarizing](academic-misconduct/incident-reports-2017.md).
 If you find yourself tempted to cheat, you might turn to the words of others
 who have made the wrong choice for guidance.
 

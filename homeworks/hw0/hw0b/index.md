@@ -33,7 +33,7 @@ has a corresponding reference type (`Boolean`, `Integer`, `Character`,
 use the reference type. You can (usually) seamlessly convert between a primitive type
 and its reference type.
 
-### `null`
+### null
 
 Java also has `null`, which is the approximate equivalent of `None` in Python.
 Any reference type can be assigned a value of `null`. If we try to access an
@@ -563,6 +563,8 @@ public static int minIndex(int[] numbers) {
 
 In order to get you more familiar with Java syntax and testing, there are a few exercises for you to solve! After you complete the functions, we have provided a handful of tests for you. Although we have provided tests, you are welcome to write your own too! Writing tests is not only crucial for this class but it is one of the most important skills to have in general. It reinforces our understanding of what specific methods are supposed to do and allows us to catch edge cases! You will have more exercises for testing later on in the course but we want you to be exposed early on.
 
+Please complete **Lab 01** prior and refer [here](../../../resources/guides/assignment-workflow/) how to start with the assignment.
+
 While completing the assignment, you may need to use different data structures like `ArrayList` and `TreeMap`. In order to import these classes, if you hover over wherever you are using the data structures, IntelliJ will give you option to import it or you can do it manually by adding:
 
 ```java
@@ -673,3 +675,5 @@ if __name__ == "__main__":
 - `Dessert.java`
 
 For this assignment, you need to complete the methods in `JavaExercises`, `ListExercises`, and `MapExercises`. You also need to create a new file `Dessert.java` and implement it according to the desired specifications. Make sure you test your code before submitting to Gradescope. Although we do not have a submission limit for this specific assignment, in the future it is encouraged to use existing tests and write your own tests to see if your methods work before submitting your code to the autograder, as there may be limited submissions.
+
+This assignment is **10 points** and due **1/22, 11:59 PM**.

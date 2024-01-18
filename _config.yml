@@ -31,7 +31,7 @@ links:
   extenuating_circumstances: 
   student_support_meetings: https://forms.gle/kD4Dg8FPaBBjb1CD7
   late_add: https://forms.gle/LrMBYS2SA6YpcSgS7
-  lecture: https://berkeley.zoom.us/j/98901988319?pwd=YzNPMC9BSDhFMGZHUTgxdE9vei9WZz09
+  lecture: https://berkeley.zoom.us/j/96979950207
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
@@ -117,6 +117,6 @@ callouts:
 
 # CS 61B custom config variable (Stolen from CS 188)
 # Set this to true at the start of semesters to show a warning on the homepage
-under_construction: true
+under_construction: false
 # Set this to true to display outdated warning on the homepage
 outdated: false

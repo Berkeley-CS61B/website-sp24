@@ -561,6 +561,8 @@ def quadrant(x, y):
 [Exercise 4.17: `stutter`]: https://practiceit.cs.washington.edu/problem/view/bjp5/chapter4/e17%2Dstutter
 [Exercise 4.19: `quadrant`]: https://practiceit.cs.washington.edu/problem/view/bjp5/chapter4/e19%2Dquadrant
 
+## Deliverables
+
 Once you've completed the 6 exercises, go to your list of
 [solved problems](https://practiceit.cs.washington.edu/user/problems-solved),
 take a screenshot of the table, and submit the screenshot to HW 0A on
@@ -581,3 +583,5 @@ or need to generate a random number, you can skip that problem.)
 
 We also recommend <https://codingbat.com/java/AP-1>, which has more advanced
 Java problems.
+
+This assignment is worth **5 points** and due **1/19, 11:59 PM**.
