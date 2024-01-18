@@ -66,15 +66,15 @@ This method should return true if any of the tiles in the given board are null.
 Our implementation uses xy-coordinates with (0, 0) at the _bottom-left_ corner:
 ![Board coordinates](img/board-coordinates.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
-### Starter code: Board class
+### Starter code: `Board` class
 
 The Board class represents a board of tiles.
 
-The `private` keyword means that you won't be able to directly access the instance variables of the Board class. (More on this keyword, and why it's useful, later in the class.)
+The `private` keyword means that you won't be able to directly access the instance variables of the `Board` class. You will only be able to access `public` methods and variables from `Model`. (More on this keyword, and why it's useful, later in the class.)
 
-To interact with a Board object in Task 1, you will need to use the `size()` and `tile(int x, int y)` methods. These methods are documented in `Board.java`.
+To interact with a `Board` object in Task 1, you will need to use the `size()` and `tile(int x, int y)` methods. These methods are documented in `Board.java`.
 
-### Starter code: Tile class
+### Starter code: `Tile` class
 
 The Tile class represents a numbered tile on the board.
 
@@ -240,7 +240,7 @@ Remember that a tile can move up through empty squares, until the tile either re
 
 For this task, don't worry about merges yet. We'll add logic for merging in the next task.
 
-### Starter code: move method in Board
+### Starter code: `move` method in Board
 
 In the `Board` class, there is a method `move(int x, int y, Tile tile)`. This method moves the given `tile` to the given `(x, y)` position on the board.
 
@@ -303,7 +303,7 @@ Modify the `moveTileUpAsFarAsPossible` method so that it accounts for tiles merg
 
 Remember that a tile can move up through empty squares. When the tile sees a non-empty square, if that square contains another tile of the same value, and that tile has not already been merged from this tilt, then the two tiles should merge.
 
-### Starter code: wasMerged method in Tile
+### Starter code: `wasMerged` method in Tile
 
 One tricky problem with merging is Rule 2:
 
@@ -356,7 +356,7 @@ One possible approach is to copy-paste our code four times, and slightly change 
 For this problem, we've given away a clean solution. This will allow you to handle the other three directions with only
 two additional lines of code!
 
-### Starter code: Side
+### Starter code: `Side`
 
 The `Side` class is a special type of class called an `Enum`.
 Enums may take on only one of a finite set of values. In this case, we have a value for each of the 4 sides: `NORTH`, `SOUTH`, `EAST`, and `WEST`. You will not need to use any of the methods of this class nor manipulate the instance variables.
@@ -367,7 +367,7 @@ If you're curious to learn more about Java enums,
 see [https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
 .
 
-### Starter code: setViewingPerspective method in Board
+### Starter code: `setViewingPerspective` method in Board
 
 Specifically, the `Board` class has a `setViewingPerspective(Side s)` function that will change the behavior of the `tile` and `move` classes so that they _behave as if the given side was NORTH_.
 
@@ -452,6 +452,14 @@ And press up, the state of the game is now:
 ```
 
 We merged two 4s into an 8, and two 2s into a 4, so the score should be incremented by 8 + 4 = 12.
+
+### Starter code: `score` instance variable in Model
+
+The `Model` class has an instance variable `score` that keeps track of the player's score. Modify this when updating the score of the game.
+
+### Testing and Debugging
+
+TODO
 
 ## Style
 
