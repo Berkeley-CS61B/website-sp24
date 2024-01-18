@@ -237,9 +237,7 @@ Once inside the folder, run:
                                                                                                   
 ```shell                                                                                          
 git clone https://github.com/Berkeley-CS61B/library-{{ site.semester }}
-```         
-
-If that doesn't work
+```
                                                                                                   
 Below is the directory structure of `library-{{ site.semester }}`. Look inside the folder using 
 `ls library-{{ site.semester }}` and make sure you see the `.jar` files listed below. There are many more, 
@@ -266,6 +264,9 @@ and generate a new one if none exists:
 ```shell
 curl -sS https://sp24.datastructur.es/labs/lab01/get-ssh-key.sh | bash 
 ```
+
+{: .info}
+If you get an error message such as `bash: line 1: syntax error near unexpected token 'newline'`, try refreshing this page and run the updated command.
 
 With the location that is provided, go ahead and run the following 
 command, ensuring to replace `path_to_ssh_key` with the location of the SSH key

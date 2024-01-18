@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 0 spec.
-released: false
+released: true
 ---
 
 Due: <b>Tuesday, January 24, 11:59 PM PT</b>.
@@ -78,7 +78,8 @@ Here are the full rules for when merges occur that are shown in the image above.
 
 1. Two tiles of the same value _merge_ into one tile containing double the initial number.
 
-2. A tile that is the result of a merge will not merge again on that tilt. For example, if we have [X, 2, 2, 4], where X
+2. A tile that is the result of a merge will not merge 
+   again on that tilt. For example, if we have [X, 2, 2, 4], where X
    represents an empty space, and we move the tiles to the left, we should end up with [4, 4, X, X], not [8, X, X, X].
    This is because the leftmost 4 was already part of a merge so should not merge again.
 
@@ -112,6 +113,7 @@ over, so that is why it remains 0 throughout the animated GIF example.
 
 ## Assignment Philosophy and Program Design
 
+
 A video overview of this section of the spec can be found
 at [https://youtu.be/3YbIOga6ZdQ](https://youtu.be/3YbIOga6ZdQ).
 
@@ -123,9 +125,14 @@ reason we're doing this is that in the real world, you'll often work with codeba
 maybe don't understand at all, like in this project!) and will have to do some tinkering and experimentation to get the
 results you want. Don't worry, when we get to project 1 next week, you'll have a chance to start from scratch.
 
+### Coordinate Diagram of Board
+
+The following is a coordinate diagram of the board:
+![Coordinate Diagram](img/2048-coords.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+
 We'll now go over the different classes that you will interact with.
 
-### Tile
+### game2048rendering/Tile
 
 This class represents the numbered tiles on the board. If a variable of type `Tile`
 is `null`, it's treated as an empty tile on the board. You will not need to instantiate any `Tile` objects, though you
@@ -133,7 +140,7 @@ will need have an understanding of them since you will be using them in the `Mod
 you'll need to use is `.value()` which returns the value of the given tile. For example if `Tile t` corresponds to a
 tile with the value 8, then `t.value()` will return `8`.
 
-### Side
+### game2048rendering/Side
 
 The `Side` class is a special type of class called an `Enum`.
 Enums may take on only one of a finite set of values. In this case, we have a value for each of the 4
@@ -150,26 +157,28 @@ If you're curous to learn more about Java enums,
 see [https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
 .
 
-### Model
+### game2048rendering/Board
+
+This class represents the board of tiles itself. It has three methods that you'll use: `setViewingPerspective`, `tile`
+, `move`.
+
+### game2048logic/Model
 
 This class represents the entire state of the game. A `Model` object represents a game of 2048. It has instance
 variables for the state of the board (i.e. where all the `Tile` objects are, what the score is, etc) as well as a
 variety of methods. One of the challenges when you get to the fourth final task of this project (writing the `tilt`
 method) will be to figure out which of these methods and instance variables are useful.
 
-### Board
-
-This class represents the board of tiles itself. It has three methods that you'll use: `setViewingPerspective`, `tile`
-, `move`.
-
-**You will only edit the `Model.java` file in this assignment.** Gradescope will only take your `Model.java` file and
-use the skeleton versions of the other files, so if you make an edit to `Tile.java` for example, it will not be
-recognized by Gradescope.
+{: .info}
+> **You will only edit the `Model.java` file in this assignment.** Gradescope will only take your `Model.java` file and
+> use the skeleton versions of the other files, so if you make an edit to `Tile.java` for example, it will not be
+> recognized by Gradescope.
 
 ## Getting Started
 
-**Firstly, ensure you've completed [lab 1](../../lab/lab01/index.md)**. You will not be able to work on the project if
-haven't completed all the necessary set up that you're required to do in lab 1.
+{: .warning}
+> **Firstly, ensure you've completed [lab 1](../../lab/lab01/index.md)**. You will not be able to work on the project if
+> haven't completed all the necessary set up that you're required to do in lab 1.
 
 ### Getting the skeleton files
 
@@ -247,7 +256,7 @@ In all, the setup would look like this (this is from fa22, {{ site.semester }} m
 
 ![IntelliJ Setup](img/intellij-setup.gif){:style="display:block; margin-left:auto; margin-right:auto"}
 
-To make sure the setup is all fine, open the `game2048` folder and right click on the `Main` Java file: you'll see a few
+To make sure the setup is all fine, open the `src/game2048rendering` folder and right click on the `Main` Java file: you'll see a few
 options, but the one we care about is the green "Run Main.main()" button. It should look like the following image:
 
 ![Run Main](img/run-main.png){:style="display:block; margin-left:auto; margin-right:auto"}
