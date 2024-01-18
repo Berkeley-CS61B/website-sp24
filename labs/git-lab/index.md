@@ -6,6 +6,7 @@ has_children: false
 parent: Labs
 has_toc: false
 has_right_toc: false
+nav_exclude: true
 released: false
 ---
 
