@@ -30,4 +30,8 @@
   <br>
   (due {{ include.element.due }})
 {%- endif -%}
+{%- if include.element.slides -%}
+  <br>
+  <a href="{{ include.element.slides }}">Slides</a>
+{%- endif -%}
 </td>

@@ -56,6 +56,7 @@ Android apps, user interfaces, graphics, or any of that fun stuff.
 Some of you may have already taken a data structures course, and simply want
 to learn Java or C++. For you, self-study may be a better option.
 
+{: .info}
 Finally, the 1-unit self-paced course CS 47B is for students with “sufficient
 partial credit in 61B,” allowing them (with instructor’s permission) to
 complete the CS 61B course requirement without taking the full course. The 47B
@@ -134,7 +135,7 @@ Discussion attendance is not mandatory, though you are given [pacing points](#pa
 
 We have three (3) different types of discussions this semester:
 
-**Bridge (2hr)**
+#### Bridge (2hr)
 
 Do you want more of an emphasis on the concepts before diving into the
 discussion worksheet? If so, our bridge discussion may be the right place for
@@ -146,13 +147,13 @@ difficulty covered during the bridge discussion section will be the same as the
 regular discussion section, and we’ll have an extended mini-lecture to
 reinforce conceptual understanding.
 
-**Regular (1hr)**
+#### Regular (1hr)
 
 This section is best for students who are caught up with lectures and are ready
 to tackle some medium-difficulty questions. We recommend attending this section
 if you are unsure which to attend.
 
-**Exam-Level (1hr)**
+#### Exam-Level (1hr)
 
 Exam-level sections are faster-paced sections that cover a different worksheet
 with more difficult problems. The goal of these sections is to get comfortable
@@ -410,61 +411,64 @@ Full details on partnerships can be found
 
 ### Exams
 
-{: .warning}
-The exam policies are still being finalized! The exam dates are correct, but the rest have not been updated for the current semester. We will send more information when these are finalized.
-
-There will be two evening midterms:
-
-- Week 5, Thursday 2/15, 7-9 PM
-- Week 10, Thursday 3/21, 7-9 PM
-
-There is also a final exam on Tuesday 5/11, 8-11 AM.
-
-CS 61B exams will by default be in-person, though you may request a proctored
-remote exam. Proctoring details will be released closer to the exam.
-
-You will have the option to request an alternate, but we make no guarantees
-about being able to accommodate the rest of your schedule. Alternate details
-will be determined closer to the exam.
+{: .info}
+> There will be two midterms and a final exam:
+> - Midterm 1: Thursday, February 15, 7–9pm PT
+> - Midterm 2: Thursday, March 21, 7–9pm PT
+> - Final exam: Tuesday, May 7, 8–11am PT
 
 Midterm 1 grades will be unavailable before the drop deadline. If you’re a
 prospective CS major and you are worried about dropping the course in the time
 before the drop deadline, please reach out to course staff for advice.
 
+#### Remote Exams
+We are **not** offering any remote exams this semester. You will need to be in-person on the listed dates to take the exams.
+
+If there are any extenuating circumstances that prevent you from taking an exam or its alternate such as conflicting exams or sickness, please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSfekfhrFzTiuW5evJ2iQCmxmQX3G_pTTNkW0OO7osBqeJvHww/viewform?usp=sf_link).
+
+If you are unable to take the final exam, we may be able to let you take the exam the following semester - but no guarantees.
+
+#### Alternate Exams
+If you are unable to take the exam at the scheduled time, we will be offering only one alternate exam time per exam, in-person only.
+
+- Alternate Midterm 1: Thursday, February 15, 8–10pm PT
+- Alternate Midterm 2: Thursday, March 21, 5–7pm PT
+- Alternate final exam: Tuesday, May 7, 11am–2pm PT
+
+There are no other alternate exam times.
+
+We are only offering the alternate exam time if you are unable to take the exam at the normal time. For example, if you have another exam at the same time, you can take the alternate-time exam. However, wanting a break between non-conflicting exams would not be a valid reason to take the alternate-time exam, because in this case you are able to take the exam at the normal time.
+
+We’ll release a form closer to the exams for you to sign up for an alternate-time exam.
+
 #### Exam Grading
 
-For each exam, if the average score is less than 65%, then the maximum score is reduced until the average is 65% (More precisely, everyone's score becomes `min(1, your_score * 0.65 / mean_score)*(max_score)`). If the average is greater than 65%, then no change is made.
+Our exams are intended to have an average score of 65%. If the exam is too difficult, and the class average score is below 65%, we will curve everyone's scores so that the average score is 65%.
 
-#### Final Exam Percentile Clobbering
+If the average score is at or above 65%, then we will not change scores (i.e. your score will not decrease).
 
-For those of you who miss an exam, have a bad night, or make major improvements
-over the semester, the exam clobbering policy gives you a chance to replace
-potentially both of your midterm exam scores.
+The maximum score on an exam is 100%. If your score exceeds 100% after curving, it will be capped at 100% when calculating grades.
 
-Specifically, if it helps your score, we will replace your midterm scores by
-their "final percentile equivalent" (FPE). For example, suppose you score
-in the bottom quartile of midterm 1 (i.e. earn a score in the bottom 25%)
-and don't even take midterm 2. Later, you
-improve significantly and earn the median score (i.e. you are at the 50th percentile) on the final.
-In this case, we will replace your midterm 1 and midterm 2 score by the medians for each exam, respectively.
+You don't need to worry about the specific calculations for grade curving, but we've described the calculations below for transparency:
 
-Percentiles will be based on the grades before this policy is applied. In other words,
-we will not recalculate the statistics for midterm 1 and midterm 2 for the
-purposes of implementing this policy.
+{: .info}
+> To compute curved scores, we will multiply everyone's scores by (0.65 / average score). Another mathematically equivalent way of stating this calculation is: we will decrease the maximum score on the exam until the average score is 65%.
+>
+> Example: The class average is 60%, and your score is 70%. After curving, your score will be 70 * (0.65 / 0.60) = 75.83%. 
 
-The final exam percentile clobbering policy will only be applied if it helps your score.
-For example, if you score the median on both midterms, but then have a bad day and
-do terribly on the final, we will not change your midterm scores.
 
-While this mechanism does introduce a bit of "curving" to the class, in practice
-it does not turn the class into a competition. Our grading bins are still fixed,
-a vast majority of the points are not subject to this mechanism, and the impact
-tends to be relatively small for most students.
+#### Final Exam Clobbering
 
-In theory, it would be nice to have a mechanism that avoids use any statistics, e.g.
-simply replacing your midterm 1 and midterm 2 score by the final grade if it's higher.
-In practice it is very difficult to get all 3 exam medians (and variances) to line up.
-Therefore, we use a percentile clobbering policy as described above.
+For those of you who miss an exam, have a bad night, or make major improvements over the semester, the exam clobbering policy gives you a chance to use your final exam score to make up some of the points on your midterm scores.
+
+The clobber policy will only be applied if it helps your score. For example, if you score the median on both midterms, but then have a bad day and do terribly on the final, we will not change your midterm scores.
+
+The clobber policy can only be used to make up points on the midterms. For example, if you score well on the midterms, that cannot be used to make up points on the final exam.
+
+You don't need to worry about the specific calculations for clobbering, but we've described the calculations below for transparency:
+
+{: .info}
+> If it helps your grade, we will replace your midterm exam percentile scores with the average of your midterm and final percentile scores. For example, if your score for Midterm 1 is in the 50th percentile, Midterm 2 is in the 30th percentile, and Final is in the 80th percentile, your clobbered Midterm 1 score will be in the 65th percentile, your clobbered Midterm 2 score will be in the 55th percentile, and your final exam score will remain at the 80th percentile.
 
 ### Extra Credit
 
