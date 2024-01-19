@@ -28,31 +28,39 @@ labs:
   - title: "Setup"
     due: "1/19"
     link: labs/lab01
+    slides: https://docs.google.com/presentation/d/1x3erIEFRtABMIpqEFc79gv7-4ne-pfiPuA4g8S6DehM/edit#slide=id.g265c577d76c_0_179
     rowspan: 2
   - title: "Debugging I"
     due: "1/26"
     # link: labs/lab02
+    slides:
   - title: "Debugging II"
     due: "2/2"
     # link: labs/lab03
+    slides:
   - title: "Project 1 Workday"
     nonumber: True
   - title: "Timing"
     due: "2/16"
     # link: labs/lab04
+    slides:
     rowspan: 4
   - title: "Disjoint Sets"
     due: "2/23"
     # link: labs/lab05
+    slides:
   - title: "BSTMap"
     due: "3/1"
     # link: labs/lab06
+    slides:
   - title: "LLRBs"
     due: "3/8"
     # link: labs/lab07
+    slides:
   - title: "HashMaps"
     due: "3/15"
     # link: labs/lab08
+    slides:
   - title: "Project 2 Workday"
     nonumber: True
     rowspan: 4
@@ -61,9 +69,11 @@ labs:
   - title: "Getting Started on Project 3"
     due: "4/5"
     # link: labs/lab09
+    slides:
   - title: "Tetris"
     due: "4/12"
     # link: labs/lab10
+    slides:
   - title: "Project 3 Workday"
     nonumber: True
   - title: "Project 3 Checkoffs"
