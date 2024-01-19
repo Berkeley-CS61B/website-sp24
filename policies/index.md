@@ -423,7 +423,7 @@ before the drop deadline, please reach out to course staff for advice.
 #### Remote Exams
 We are not offering any remote exams this semester. You will need to be in-person on the listed dates to take the exams.
 
-if there is any extenuating circumstances that prevent you from taking an exam or its alternate such as conflicting exams or sickness, please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSfekfhrFzTiuW5evJ2iQCmxmQX3G_pTTNkW0OO7osBqeJvHww/viewform?usp=sf_link).
+If there are any extenuating circumstances that prevent you from taking an exam or its alternate such as conflicting exams or sickness, please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSfekfhrFzTiuW5evJ2iQCmxmQX3G_pTTNkW0OO7osBqeJvHww/viewform?usp=sf_link).
 
 If you are unable to take the final exam, we may be able to let you take the exam the following semester - but no guarantees.
 
