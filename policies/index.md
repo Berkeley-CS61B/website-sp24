@@ -56,6 +56,7 @@ Android apps, user interfaces, graphics, or any of that fun stuff.
 Some of you may have already taken a data structures course, and simply want
 to learn Java or C++. For you, self-study may be a better option.
 
+{: .info}
 Finally, the 1-unit self-paced course CS 47B is for students with “sufficient
 partial credit in 61B,” allowing them (with instructor’s permission) to
 complete the CS 61B course requirement without taking the full course. The 47B
@@ -134,7 +135,7 @@ Discussion attendance is not mandatory, though you are given [pacing points](#pa
 
 We have three (3) different types of discussions this semester:
 
-**Bridge (2hr)**
+#### Bridge (2hr)
 
 Do you want more of an emphasis on the concepts before diving into the
 discussion worksheet? If so, our bridge discussion may be the right place for
@@ -146,13 +147,13 @@ difficulty covered during the bridge discussion section will be the same as the
 regular discussion section, and we’ll have an extended mini-lecture to
 reinforce conceptual understanding.
 
-**Regular (1hr)**
+#### Regular (1hr)
 
 This section is best for students who are caught up with lectures and are ready
 to tackle some medium-difficulty questions. We recommend attending this section
 if you are unsure which to attend.
 
-**Exam-Level (1hr)**
+#### Exam-Level (1hr)
 
 Exam-level sections are faster-paced sections that cover a different worksheet
 with more difficult problems. The goal of these sections is to get comfortable
@@ -410,18 +411,18 @@ Full details on partnerships can be found
 
 ### Exams
 
-Midterm 1: Thursday, February 15, 7–9pm PT
-
-Midterm 2: Thursday, March 21, 7–9pm PT
-
-Final exam: Tuesday, May 7, 8–11am PT
+{: .info}
+> There will be two midterms and a final exam:
+> - Midterm 1: Thursday, February 15, 7–9pm PT
+> - Midterm 2: Thursday, March 21, 7–9pm PT
+> - Final exam: Tuesday, May 7, 8–11am PT
 
 Midterm 1 grades will be unavailable before the drop deadline. If you’re a
 prospective CS major and you are worried about dropping the course in the time
 before the drop deadline, please reach out to course staff for advice.
 
 #### Remote Exams
-We are not offering any remote exams this semester. You will need to be in-person on the listed dates to take the exams.
+We are **not** offering any remote exams this semester. You will need to be in-person on the listed dates to take the exams.
 
 If there are any extenuating circumstances that prevent you from taking an exam or its alternate such as conflicting exams or sickness, please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSfekfhrFzTiuW5evJ2iQCmxmQX3G_pTTNkW0OO7osBqeJvHww/viewform?usp=sf_link).
 
@@ -430,11 +431,9 @@ If you are unable to take the final exam, we may be able to let you take the exa
 #### Alternate Exams
 If you are unable to take the exam at the scheduled time, we will be offering only one alternate exam time per exam, in-person only.
 
-Alternate Midterm 1: Thursday, February 15, 8–10pm PT
-
-Alternate Midterm 2: Thursday, March 21, 5–7pm PT
-
-Alternate final exam: Tuesday, May 7, 11am–2pm PT
+- Alternate Midterm 1: Thursday, February 15, 8–10pm PT
+- Alternate Midterm 2: Thursday, March 21, 5–7pm PT
+- Alternate final exam: Tuesday, May 7, 11am–2pm PT
 
 There are no other alternate exam times.
 
@@ -452,9 +451,10 @@ The maximum score on an exam is 100%. If your score exceeds 100% after curving, 
 
 You don't need to worry about the specific calculations for grade curving, but we've described the calculations below for transparency:
 
-To compute curved scores, we will multiply everyone's scores by (0.65 / average score). Another mathematically equivalent way of stating this calculation is: we will decrease the maximum score on the exam until the average score is 65%.
-
-Example: The class average is 60%, and your score is 70%. After curving, your score will be 70 * (0.65 / 0.60) = 75.83%. 
+{: .info}
+> To compute curved scores, we will multiply everyone's scores by (0.65 / average score). Another mathematically equivalent way of stating this calculation is: we will decrease the maximum score on the exam until the average score is 65%.
+>
+> Example: The class average is 60%, and your score is 70%. After curving, your score will be 70 * (0.65 / 0.60) = 75.83%. 
 
 
 #### Final Exam Clobbering
@@ -467,7 +467,8 @@ The clobber policy can only be used to make up points on the midterms. For examp
 
 You don't need to worry about the specific calculations for clobbering, but we've described the calculations below for transparency:
 
-If it helps your grade, we will replace your midterm exam percentile scores with the average of your midterm and final percentile scores. For example, if your score for Midterm 1 is in the 50th percentile, Midterm 2 is in the 30th percentile, and Final is in the 80th percentile, your clobbered Midterm 1 score will be in the 65th percentile, your clobbered Midterm 2 score will be in the 55th percentile, and your final exam score will remain at the 80th percentile.
+{: .info}
+> If it helps your grade, we will replace your midterm exam percentile scores with the average of your midterm and final percentile scores. For example, if your score for Midterm 1 is in the 50th percentile, Midterm 2 is in the 30th percentile, and Final is in the 80th percentile, your clobbered Midterm 1 score will be in the 65th percentile, your clobbered Midterm 2 score will be in the 55th percentile, and your final exam score will remain at the 80th percentile.
 
 ### Extra Credit
 

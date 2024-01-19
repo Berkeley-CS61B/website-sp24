@@ -7,7 +7,7 @@
 @import "schedule";
 @import "staffer";
 
-// Begin CS 188
+// Begin CS 61B
 @import "toc";
 
 td {
@@ -48,6 +48,14 @@ a.disabled {
   color: $grey-dk-000
 }
 
+.main-content h4 {
+  font-size: 16px !important; 
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0em;
+  color: $purple-000;
+}
+
 // Button copying
 .no-copy-button .btn-copy-code {
   display: none;
@@ -81,7 +89,7 @@ img.inline {
   text-align: center;
 }
 
-// End CS 188
+// End CS 61B
 
 // Overrides
 
