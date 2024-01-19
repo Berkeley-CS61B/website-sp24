@@ -248,11 +248,7 @@ To test your method, run the tests in `TestAtLeastOneMoveExists.java`.
 3. `testLeftOrRight`: calls `atLeastOneMoveExists` on a full board where left and right tilts are the only valid moves
 4. `testUpOrDown`: calls `atLeastOneMoveExists` on a full board where up and down tilts are the only valid moves
 5. `testMoveExistsMaxPiece`: calls `atLeastOneMoveExists` on a board where some move exists and a max tile is on the board. While having the max tile on the board does mean the game is over, it should not be handled by this method.
-6. `testNoMoveExists1`: calls `atLeastOneMoveExists` on a board where no move exists
-7. `testNoMoveExists2`: calls `atLeastOneMoveExists` on a board where no move exists
-8. `testNoMoveExists3`: calls `atLeastOneMoveExists` on a board where no move exists
-9. `testNoMoveExists4`: calls `atLeastOneMoveExists` on a board where no move exists
-10. `testNoMoveExists5`: calls `atLeastOneMoveExists` on a board where no move exists
+6. `testNoMoveExists1` through `testNoMoveExists5`: calls `atLeastOneMoveExists` on boards where no move exists
 
 If your implementation is correct, all tests should pass.
 
@@ -262,26 +258,24 @@ Once you have `maxTileExists` and `atLeastOneMoveExists` working, you should als
 
 `TestModel` is comprised of the following tests:
 
-1. `testGameOverNoChange1`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+1. `testGameOverNoChange1`, `testGameOverNoChange2`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
 2. `testGameOverMaxPiece`: calls `gameOver` on a board containing a max piece and no other tiles
-3. `testGameOverNoChange2`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
-4. `testGameNotOver1`: calls `gameOver` on a full board where a tilt in any direction is a valid move
-5. `testGameNotOver2`: calls `gameOver` on a board with a single empty space
+3. `testGameNotOver1`: calls `gameOver` on a full board where a tilt in any direction is a valid move
+4. `testGameNotOver2`: calls `gameOver` on a board with a single empty space
 
 One common error that you might encounter is an `ArrayIndexOutOfBoundsException`. Here is what an `ArrayIndexOutOfBoundsException` error message might look like:
 
 ![ArrayIndexOutOfBoundsException](img/index-oob-error.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-`ArrayIndexOutOfBoundsExceptions` occur when we attempt to access a value at an illegal index. For example, the array `arr = [4, 2, 2, 4]` has legal indexes 0, 1, 2, and 3. Attempting to access `arr[5]` or `arr[-1]` would throw an `ArrayIndexOutOfBoundsException`. 
+`ArrayIndexOutOfBoundsException`s occur when we attempt to access a value at an illegal index. For example, the array `arr = [4, 2, 2, 4]` has legal indexes 0, 1, 2, and 3. Attempting to access `arr[4]` or `arr[-1]` would throw an `ArrayIndexOutOfBoundsException`. 
 
 We can evaluate where an `ArrayIndexOutOfBoundsException` is happening in our code by examining the stack trace provided in the test output. Taking a closer look at the previous example:
 
 ![StackTrace](img/stack-trace.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-The stack trace shows us which lines of code were executed leading up to the error, with the top line being the most recent. The line `at game2048rendering.Board.vtile(Board.java:53)` tells us a few things about our error. First, we can see that our `ArrayIndexOutOfBoundsException` was triggered in the `game2048rendering.Board` class, within the `vtile` method. `Board.java:53` specifies that line 53 triggered the error.
+The stack trace shows us which lines of code were executed leading up to the error, with the top line being the most recent. The line `at game2048rendering.Board.vtile(Board.java:53)` tells us a few things about our error. First, we can see that our `ArrayIndexOutOfBoundsException` was triggered in the `game2048rendering.Board` class, within the `vtile` method. `Board.java:53` specifies that line 53 triggered the error. This was called by line 59 in the `tile` method, and so on.
 
 The stack trace is a useful starting place for debugging. You can click on the blue underlined section of the stack trace to jump directly to that line of code.
-
 
 ## Task 4: Understanding Tilts
 
@@ -448,8 +442,8 @@ To test up-only tilting, run the tests in `TestUpOnly.java`.
 
 `TestUpOnly` is comprised of the following tests:
 
-1. `testUpNoMerge`: calls `tilt` in the up direction on a board with two tiles in different columns. These tiles should move into empty space (no merging)
-2. `testUpBasicMerge`: calls `tilt` in the up direction on a board with two tiles of the same value in the same column. These tiles should merge
+1. `testUpNoMerge`: calls `tilt` in the up direction on a board with two tiles in different columns. These tiles should move into empty space (no merging).
+2. `testUpBasicMerge`: calls `tilt` in the up direction on a board with two tiles of the same value in the same column. These tiles should merge.
 3. `testUpTripleMerge`: calls `tilt` in the up direction on a board with three tiles of the same value in the same column. The top two tiles should merge, but the bottom tile should not.
 4. `testUpTrickyMerge`: calls `tilt` in the up direction on a board with three tiles in the same column. The top two tiles have the same value and should merge. The bottom tile has the same value as the resulting merged tile, but should still not merge.
 
@@ -600,6 +594,9 @@ Starting with this project, **we will be enforcing style**. You must follow the 
 You can and should check your style locally with the CS 61B plugin. **We will not remove the velocity limit for failing to check style.**
 
 ## Submission and Grading
+
+{: .danger}
+We will **not remove the velocity limit** for failing to submit the correct files because you didn't add, commit, or push. You have been warned.
 
 Your code will be graded based on whether it passes the tests we provided. There are no hidden tests; the score you see on Gradescope is your score for this project.
 
