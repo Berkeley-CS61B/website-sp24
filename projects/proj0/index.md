@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 0 spec.
-released: false
+released: true
 ---
 
 {: .warn}
