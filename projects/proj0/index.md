@@ -260,9 +260,20 @@ Since the `atLeastOneMoveExists` method depends on the `emptySpaceExists` method
 
 Once you have `maxTileExists` and `atLeastOneMoveExists` working, you should also be passing all the tests in `TestModel.java`.
 
-TODO: something about tracebacks and indexoutofboundsexceptions
+One common error that you might encounter is an `ArrayIndexOutOfBoundsException`. Here is what an `ArrayIndexOutOfBoundsException` error message would look like:
 
-One common error that you might encounter is an `IndexOutOfBoundsException`. This is what
+![ArrayIndexOutOfBoundsException](img/index-oob-error.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+`ArrayIndexOutOfBoundsExceptions` occur when we attempt to access a value at an illegal index. For example, the array `arr = [4, 2, 2, 4]` has legal indexes 0, 1, 2, and 3. Attempting to access `arr[5]` or `arr[-1]` would throw an `ArrayIndexOutOfBoundsException`. 
+
+We can evaluate where an `ArrayIndexOutOfBoundsException` is happening in our code by examining the stack trace provided in the test outupt. Taking a closer look at the previous example:
+
+![StackTrace](img/stack-trace.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+The stack trace shows us which lines of code were executed leading up to the error, with the top line being the most recent. The line `at game2048rendering.Board.vtile(Board.java:53)` tells us a few things about our error. First, we can see that our `ArrayIndexOutOfBoundsException` was triggered in the `game2048rendering.Board` class, within the `vtile` method. `Board.java:53` specifies that line 53 triggered the error.
+
+The stack trace is a useful starting place for debugging. You can click on the blue underlined section of the stack trace to jump directly to that line of code.
+
 
 ## Task 4: Understanding Tilts
 
