@@ -26,10 +26,10 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 
 Prerequisites:
 
-- Lab 1 (required for setup)
-- HW0 (recommended, for Java syntax)
+- [Lab 1](../../labs/lab01/index.md) (required for setup)
+- [HW0](../../homeworks/hw0/hw0b/index.md) (recommended, for Java syntax)
 - Lectures 1-2
-- [61B Style Guide](../../resources/guides/style/index.md)
+- [61B Style Guide](../../resources/guides/style/index.md) (not a strict prerequisite, but we recommend coding with good style from the start!)
 
 [See here for a video overview of the project.](https://www.youtube.com/playlist?list=PL8FaHk7qbOD7WwTongMI3rfNbnkCE9NPb) This video is from an earlier version of the project, so there are some slight differences.
 
