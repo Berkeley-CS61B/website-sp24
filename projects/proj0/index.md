@@ -141,6 +141,17 @@ You may also run individual tests in the same manner.
 
 You will run all tests in the same way for the rest of the project (and course!).
 
+`TestEmptySpace` is comprised of the following tests:
+
+1. `testCompletelyEmpty`: calls `emptySpaceExists` on a board with no tiles
+2. `testEmptyTopRow`: calls `emptySpaceExists` on a board with no tiles in the top row
+3. `testEmptyBottomRow`: calls `emptySpaceExists` on a board with no tiles in the bottom row
+4. `testEmptyLeftCol`: calls `emptySpaceExists` on a board with no tiles in the left column
+5. `testEmptyRightCol`: calls `emptySpaceExists` on a board with no tiles in the right column
+6. `testAlmostFullBoard`: calls `emptySpaceExists` on a board with a single empty space
+7. `testFullBoard`: calls `emptySpaceExists` on a board with no empty tiles, but where a legal move exists. Checks that `emptySpaceExists` still returns false.
+8. `testFullBoardNoMerge`: calls `emptySpaceExists` on a board with no empty tiles and where no legal move exists. Checks that `emptySpaceExists` still returns false.
+
 If your implementation is correct, all 8 tests should pass.
 
 Here is what the error message would look like if you failed one of the tests:
@@ -171,7 +182,20 @@ Leaving in hard coded numbers like `2048` is a bad programming practice, sometim
 
 ### Testing and Debugging
 
-To test your method, run the tests in `TestMaxTileExists.java`. If your implementation is correct, all tests should pass.
+To test your method, run the tests in `TestMaxTileExists.java`. 
+
+`TestMaxTileExists` is comprised of the following tests:
+
+1. `testEmptyBoard`: calls `maxTileExists` on a board with no tiles
+2. `testFullBoardNoMax`: calls `maxTileExists` on a full board with no max tiles
+3. `testFullBoardMax`: calls `maxTileExists` on a full board with a single max tile
+4. `testMultipleMax`: calls `maxTileExists` on a board with several max tiles
+5. `testTopRightCorner`: calls `maxTileExists` on a board with a max tile in the top right corner
+6. `testTopLeftCorner`: calls `maxTileExists` on a board with a max tile in the top left corner
+7. `testBottomLeftCorner`: calls `maxTileExists` on a board with a max tile in the botton left corner
+8. `testBottomRightCorner`: calls `maxTileExists` on a board with a max tile in the bottom right corner
+
+If your implementation is correct, all tests should pass.
 
 ## Task 3: At Least One Move Exists
 
@@ -215,13 +239,30 @@ move up or down would merge the 32 tiles. Or in other words, there exist at leas
 
 ### Testing and Debugging
 
-To test your method, run the tests in `TestAtLeastOneMoveExists.java`. If your implementation is correct, all tests should pass.
+To test your method, run the tests in `TestAtLeastOneMoveExists.java`. 
+
+`TestAtLeastOneMoveExists` is comprised of the following tests:
+
+1. `testEmptySpace`: calls `atLeastOneMoveExists` on a board with empty space
+2. `testAnyDir`: calls `atLeastOneMoveExists` on a full board where a tilt in any direction is a valid move
+3. `testLeftOrRight`: calls `atLeastOneMoveExists` on a full board where left and right tilts are the only valid moves
+4. `testUpOrDown`: calls `atLeastOneMoveExists` on a full board where up and down tilts are the only valid moves
+5. `testMoveExistsMaxPiece`: calls `atLeastOneMoveExists` on a board where some move exists and a max tile is on the board. While having the max tile on the board does mean the game is over, it should not be handled by this method.
+6. `testNoMoveExists1`: calls `atLeastOneMoveExists` on a board where no move exists
+7. `testNoMoveExists2`: calls `atLeastOneMoveExists` on a board where no move exists
+8. `testNoMoveExists3`: calls `atLeastOneMoveExists` on a board where no move exists
+9. `testNoMoveExists4`: calls `atLeastOneMoveExists` on a board where no move exists
+10. `testNoMoveExists5`: calls `atLeastOneMoveExists` on a board where no move exists
+
+If your implementation is correct, all tests should pass.
 
 Since the `atLeastOneMoveExists` method depends on the `emptySpaceExists` method, you shouldn't expect to pass these tests until you are passing all of the tests in `TestEmptySpace`.
 
 Once you have `maxTileExists` and `atLeastOneMoveExists` working, you should also be passing all the tests in `TestModel.java`.
 
 TODO: something about tracebacks and indexoutofboundsexceptions
+
+One common error that you might encounter is an `IndexOutOfBoundsException`. This is what
 
 ## Task 4: Understanding Tilts
 
