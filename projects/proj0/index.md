@@ -16,7 +16,7 @@ released: true
 {: .warning}
 This assignment has not been officially released yet. The information on this page is subject to change.
 
-**Deadline: Monday, January 26, 11:59 PM PT.**
+**Deadline: Monday, January 29, 11:59 PM PT.**
 
 ## FAQ
 
