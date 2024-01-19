@@ -7,6 +7,9 @@ has_children: false
 released: true
 ---
 
+{: .warning}
+This page has not been updated yet for Spring 2024! We'll be reaching out soon with more details if you're enrolled in CS 47B. If you'd like to get started, feel free to follow the Lab 01 instructions to set up your computer for the semester!
+
 ## Broad Outline
 
 CS 47B is a self-paced course where you will complete a subset of the CS 61B
@@ -133,7 +136,7 @@ The course also has a "47B" topic on 61B's Ed forum (linked in the nav bar). If 
 
 ### Getting Help
 
-If you need help with labs, homeworks, or projects, please come to lab or office hours. The schedule is located at the bottom of the [website's main page]({{ site.url }}#disccal). All sections are open to 47B students!
+If you need help with labs, homeworks, or projects, please come to lab or office hours. The schedule is located at the bottom of the [website's main page]({{ site.url }}/calendar). All sections are open to 47B students!
 
 ### Getting Started
 
