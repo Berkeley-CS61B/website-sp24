@@ -9,7 +9,9 @@ This site is under construction. All dates and policies are tentative until this
 {% endif %}
 
 {% capture content %}
-<h1 class="title">{{ page.title }}</h1>
+{% unless page.hide_title %}
+  <h1 class="title">{{ page.title }}</h1>
+{% endunless %}
 {% if page.author %}
   <div class="due-date">Author: {{ page.author }}</div>
 {% endif %}

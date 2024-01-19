@@ -77,6 +77,7 @@
       - This indicates the next element in the yml array to be rendered.
       - You should not need to change or care about these.
     {%- endcomment -%}
+    {%- assign survey_index = 0 -%}
     {%- assign lecture_index = 0 -%}
     {%- assign readings_index = 0 -%}
     {%- assign discussion_index = 0 -%}
@@ -178,7 +179,19 @@
             functionality.
         {%- endcomment -%}
         {%- if forloop.first -%}
-          <td class="{{ is_even }}" rowspan="{{ week.size }}" id="week-{{ week.name }}">{{ week_number }}</td>
+          {%- assign survey_element = site.data.weekly_surveys.weekly_surveys[survey_index] -%}
+          <td class="{{ is_even }} week" rowspan="{{ week.size }}" id="week-{{ week.name }}">
+            {{ week_number }}
+            {%- unless survey_element.no_survey -%}
+              <br>
+              {%- if survey_element.link != nil -%}
+                <a href="{{ survey_element.link }}">Survey</a>
+              {%- else -%}
+                <a class="disabled">Survey</a>
+              {%- endif -%}
+            {%- endunless -%}
+          </td>
+          {%- assign survey_index = survey_index | plus:1 -%}
         {%- endif -%}
 
         {%- comment -%}

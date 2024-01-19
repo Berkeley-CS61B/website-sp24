@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 0 spec.
-released: true
+released: false
 ---
 
 Due: <b>Tuesday, January 24, 11:59 PM PT</b>.
