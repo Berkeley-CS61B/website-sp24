@@ -155,16 +155,17 @@ out to provide your input on the case:
    (either directly or inadvertently) and sign the faculty disposition form. You
    are given no grade penalty in the course and will not have to resubmit the
    assignment, but you are referred to the Center
-   for Student Conduct for an NRW, with a special note from Josh that this was a
-   very minor violation. Optionally, you may meet with Josh and/or one of the
-   TAs, though this will not prevent a CSC warning. This penalty applies even
+   for Student Conduct for an NRW, with a special note from the instructors that this was a
+   very minor violation. Optionally, you may meet with one of the
+   instructors and/or TAs, though this will not prevent a CSC warning. This penalty applies even
    if you simply posted your code somewhere publicly, e.g. a public Github
    repository.
 2. You accept that you submitted work for a grade that was not your own, and
    sign the faculty disposition form. You will resubmit the assignment with
    your own work, and we will verify that your resubmission is your own work
    more carefully. You are also referred to the Center for Student Conduct for
-   an NRW. Optionally, you may meet with Josh and/or one of the TAs, though this
+   an NRW. Optionally, you may meet with one of the
+   instructors and/or TAs, though this
    will not prevent a CSC warning.
 3. You are unsure if your case consitutes academic misconduct, and express a
    desire to enter the adjudication phase (see next section). You must schedule
