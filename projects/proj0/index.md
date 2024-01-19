@@ -268,13 +268,13 @@ Once you have `maxTileExists` and `atLeastOneMoveExists` working, you should als
 4. `testGameNotOver1`: calls `gameOver` on a full board where a tilt in any direction is a valid move
 5. `testGameNotOver2`: calls `gameOver` on a board with a single empty space
 
-One common error that you might encounter is an `ArrayIndexOutOfBoundsException`. Here is what an `ArrayIndexOutOfBoundsException` error message would look like:
+One common error that you might encounter is an `ArrayIndexOutOfBoundsException`. Here is what an `ArrayIndexOutOfBoundsException` error message might look like:
 
 ![ArrayIndexOutOfBoundsException](img/index-oob-error.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 `ArrayIndexOutOfBoundsExceptions` occur when we attempt to access a value at an illegal index. For example, the array `arr = [4, 2, 2, 4]` has legal indexes 0, 1, 2, and 3. Attempting to access `arr[5]` or `arr[-1]` would throw an `ArrayIndexOutOfBoundsException`. 
 
-We can evaluate where an `ArrayIndexOutOfBoundsException` is happening in our code by examining the stack trace provided in the test outupt. Taking a closer look at the previous example:
+We can evaluate where an `ArrayIndexOutOfBoundsException` is happening in our code by examining the stack trace provided in the test output. Taking a closer look at the previous example:
 
 ![StackTrace](img/stack-trace.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
@@ -385,7 +385,7 @@ To test no-merge tile moves, run the tests in `TestMoveTileUp.java`.
 
 1. `testOneTile`: calls `moveTileUpAsFarAsPossible` on a tile with no tiles above it
 2. `testTwoTiles`: calls `moveTileUpAsFarAsPossible` on a tile with a differently-valued tile above it
-3. `testTwoTilesMergeNoScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Score calculations are do not need to be implemented for this test to pass.
+3. `testTwoTilesMergeNoScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Score calculations do not need to be implemented for this test to pass.
 4. `testTwoTilesMergeScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly.
 
 If your implementation is correct up to this point, you should expect to pass `testOneTile` and `testTwoTiles`.
@@ -422,12 +422,12 @@ Remember to use your `moveTileUpAsFarAsPossible` helper method to keep things si
 
 ### Testing and Debugging
 
-To test no-merge tile moves, run the tests in `TestTiltColumn.java`.
+To test the implementation of `tiltColumn(int x)`, run the tests in `TestTiltColumn.java`.
 
 `TestTiltColumn.java` is comprised of the following tests:
 
 1. `testNoMergeColumn`: calls `tiltColumn` on a column with two tiles that have different values.
-2. `testMergingColumn`: calls `tiltColumn` on a column with two tiles of the same value. Score calculations are do not need to be implemented for this test to pass.
+2. `testMergingColumn`: calls `tiltColumn` on a column with two tiles of the same value. Score calculations do not need to be implemented for this test to pass.
 3. `testMergingColumnWithScore`: calls `tiltColumn` on a column with two tiles of the same value. Expects that the score will update accordingly.
 
 If your implementation is correct up to this point, you should expect to pass `testNoMergeColumn` and `testMergingColumn`.
@@ -456,8 +456,6 @@ To test up-only tilting, run the tests in `TestUpOnly.java`.
 If your implementation is correct, only `testUpNoMerge` should pass. Don't worry about the rest of the tests just yet: they should pass once score changes are implemented.
 
 ## Task 9: Tilt in Four Directions
-
-Modify the `tilt` method so that it accounts for tiles merging.
 
 Now that we've gotten tilt working for the up direction, we have to do the same thing for the other three directions.
 
@@ -535,7 +533,7 @@ times as you'd like.
 
 <!--(Note: moved to make the testing make a little more sense, but it still doesn't fit perfectly).-->
 <!--(Start of section).-->
-To test no-merge tilting, run the tests in `TestTiltNoMerge.java`.
+To test no-merge tilting in all directions, run the tests in `TestTiltNoMerge.java`.
 
 The error messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the `testUpTrickyMerge` test. After clicking that test, we'll see this:
 
@@ -593,7 +591,7 @@ The `Model` class has an instance variable `score` that keeps track of the playe
 
 At this point, your 2048 implementation should be complete! You should now be passing all of the tests in every testing file.
 
-Testing files such as `TestMultipleMoves` test all the things you write in coordination with each other. Such a test is called an _integration test_ and are incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` until you're passing the rest of the tests!
+Testing files such as `TestMultipleMoves` test all the things you write in coordination with each other. Such a test is called an _integration test_ and is incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` until you're passing the rest of the tests!
 
 ## Style
 
@@ -620,6 +618,8 @@ Here is a breakdown of what percent you'd earn on this project with varying leve
 7. `TestTiltNoMerge`: 10%
 8. `TestMultipleMoves`: 15%
 9. `TestNbyN`: 15%
+
+Note that `TestMoveTileUp` and `TestTiltColumn` are not worth any points. These tests are meant to be sanity checks for your helper methods.
 
 It is important that you commit work to your repository _at frequent intervals_. Version control is a powerful tool for saving yourself when you mess something up or your dog eats your project, but you must use it regularly if it is to be of any use. Feel free to commit every 15 minutes; Git only saves what has changed, even though it acts as if it takes a snapshot of your entire project.
 
