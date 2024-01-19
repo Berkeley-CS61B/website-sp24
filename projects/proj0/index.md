@@ -10,8 +10,11 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 0 spec.
-released: false
+released: true
 ---
+
+{: .warn}
+This assignment has not been officially released yet. The information on this page is subject to change.
 
 **Deadline: Monday, January 26, 11:59 PM PT.**
 
