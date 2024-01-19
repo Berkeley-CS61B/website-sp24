@@ -1,7 +1,7 @@
 ---
 name: Vika Stukalova
 pronouns: she/her
-role: tutor
+role: ta
 email: victoria.stukalova@berkeley.edu
 website: 
 photo: vika-stukalova-1.jpg
