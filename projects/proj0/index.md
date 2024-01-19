@@ -260,6 +260,14 @@ Since the `atLeastOneMoveExists` method depends on the `emptySpaceExists` method
 
 Once you have `maxTileExists` and `atLeastOneMoveExists` working, you should also be passing all the tests in `TestModel.java`.
 
+`TestModel` is comprised of the following tests:
+
+1. `testGameOverNoChange1`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+2. `testGameOverMaxPiece`: calls `gameOver` on a board containing a max piece and no other tiles
+3. `testGameOverNoChange2`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+4. `testGameNotOver1`: calls `gameOver` on a full board where a tilt in any direction is a valid move
+5. `testGameNotOver2`: calls `gameOver` on a board with a single empty space
+
 One common error that you might encounter is an `ArrayIndexOutOfBoundsException`. Here is what an `ArrayIndexOutOfBoundsException` error message would look like:
 
 ![ArrayIndexOutOfBoundsException](img/index-oob-error.png){:style="display:block; margin-left:auto; margin-right:auto"}
@@ -371,24 +379,16 @@ To test your understanding, you should complete this [Google Form quiz](https://
 
 ### Testing and Debugging
 
-To test no-merge tilting, run the tests in `TestTiltNoMerge.java`.
+To test no-merge tile moves, run the tests in `TestMoveTileUp.java`.
 
-The error messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the `testUpTrickyMerge` test. After clicking that test, we'll see this:
+`TestMoveTileUp.java` is comprised of the following tests:
 
-![testUpTrickyMerge Error Message](img/test-up-error-msg.png){:style="display:block; margin-left:auto; margin-right:auto"}
+1. `testOneTile`: calls `moveTileUpAsFarAsPossible` on a tile with no tiles above it
+2. `testTwoTiles`: calls `moveTileUpAsFarAsPossible` on a tile with a differently-valued tile above it
+3. `testTwoTilesMergeNoScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Score calculations are do not need to be implemented for this test to pass.
+4. `testTwoTilesMergeScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly.
 
-The first line tells us the direction that was tilted (for these tests it'll always be North), then what your board looked like before the tilt, then what we expected the board to look like, and finally what your board actually looked like.
-
-You'll see that we're merging a tile twice on a single call to tilt which results in a single tile with value 8 instead of two tiles both with value 4. As a result, our `score` is also incorrect as you can see in the bottom of the representation of the board.
-
-For other tests it might be difficult to notice the difference between the expected and actual boards right away; for
-those, you can click the blue "Click to see difference" text at the very bottom of the error message to get a side-by-side comparison of the expected (on the left) and actual (on the right) boards in a separate window. Here is what it looks like for this test:
-
-![testUpTrickyMerge Comparison](img/comparison.png){:style="display:block; margin-left:auto; margin-right:auto"}
-
-Debugging these can be a bit tricky because it's hard to tell what you're doing wrong. First, you should identify which of the 3 rules listed above you're violating. In this case, we can see that it's rule 2 since a tile is merging more than once. The javadoc comments on these methods are good resources for this as they specifically lay out what rule/configuration they're testing. You might also be able to figure out what rule you're violating by just looking at the before and after boards. Then, comes the tricky party: refactoring your existing code to properly account for that rule. We suggest writing out on pen and paper the steps your code takes so you can first understand why your board looks the way it does, then coming up with a fix. These tests only call `tilt` once, so you don't need to worry about debugging multiple calls to tilt.
-
-We recommend using the given tests to debug your code, though you're also welcome to debug by running `Main.java`. You can also start the game from a specific state by changing the `CUSTOM_START` and `USE_CUSTOM_START` variables in `Main.java`, which may be helpful for debugging specific tests.
+If your implementation is correct up to this point, you should expect to pass `testOneTile` and `testTwoTiles`.
 
 ## Task 6: Merging Tiles
 
@@ -408,7 +408,7 @@ To keep track of whether a tile has been merged on this tilt, you can use the `w
 
 ### Testing and Debugging
 
-TODO
+If your implementation is correct up to this point, you should now expect to pass `testTwoTilesMergeNoScore` in `TestMoveTileUp.java`.
 
 ## Task 7: Tilt Column
 
@@ -422,7 +422,15 @@ Remember to use your `moveTileUpAsFarAsPossible` helper method to keep things si
 
 ### Testing and Debugging
 
-TODO
+To test no-merge tile moves, run the tests in `TestTiltColumn.java`.
+
+`TestTiltColumn.java` is comprised of the following tests:
+
+1. `testNoMergeColumn`: calls `tiltColumn` on a column with two tiles that have different values.
+2. `testMergingColumn`: calls `tiltColumn` on a column with two tiles of the same value. Score calculations are do not need to be implemented for this test to pass.
+3. `testMergingColumnWithScore`: calls `tiltColumn` on a column with two tiles of the same value. Expects that the score will update accordingly.
+
+If your implementation is correct up to this point, you should expect to pass `testNoMergeColumn` and `testMergingColumn`.
 
 ## Task 8: Tilt Up
 
@@ -436,7 +444,16 @@ For this task, you can ignore the `side` argument. We'll use that in the next ta
 
 ### Testing and Debugging
 
-To test up-only tilting, run the tests in `TestUpOnly.java`. If your implementation is correct, all tests should pass.
+To test up-only tilting, run the tests in `TestUpOnly.java`. 
+
+`TestUpOnly` is comprised of the following tests:
+
+1. `testUpNoMerge`: calls `tilt` in the up direction on a board with two tiles in different columns. These tiles should move into empty space (no merging)
+2. `testUpBasicMerge`: calls `tilt` in the up direction on a board with two tiles of the same value in the same column. These tiles should merge
+3. `testUpTripleMerge`: calls `tilt` in the up direction on a board with three tiles of the same value in the same column. The top two tiles should merge, but the bottom tile should not.
+4. `testUpTrickyMerge`: calls `tilt` in the up direction on a board with three tiles in the same column. The top two tiles have the same value and should merge. The bottom tile has the same value as the resulting merged tile, but should still not merge.
+
+If your implementation is correct, only `testUpNoMerge` should pass. Don't worry about the rest of the tests just yet: they should pass once score changes are implemented.
 
 ## Task 9: Tilt in Four Directions
 
@@ -516,7 +533,29 @@ times as you'd like.
 
 ### Testing and Debugging
 
-`TestMultipleMoves` tests all the things you write in coordination with each other. Such a test is called an _integration test_ and are incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` until you're passing the rest of the tests!
+<!--(Note: moved to make the testing make a little more sense, but it still doesn't fit perfectly).-->
+<!--(Start of section).-->
+To test no-merge tilting, run the tests in `TestTiltNoMerge.java`.
+
+The error messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the `testUpTrickyMerge` test. After clicking that test, we'll see this:
+
+![testUpTrickyMerge Error Message](img/test-up-error-msg.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+The first line tells us the direction that was tilted (for these tests it'll always be North), then what your board looked like before the tilt, then what we expected the board to look like, and finally what your board actually looked like.
+
+You'll see that we're merging a tile twice on a single call to tilt which results in a single tile with value 8 instead of two tiles both with value 4. As a result, our `score` is also incorrect as you can see in the bottom of the representation of the board.
+
+For other tests it might be difficult to notice the difference between the expected and actual boards right away; for
+those, you can click the blue "Click to see difference" text at the very bottom of the error message to get a side-by-side comparison of the expected (on the left) and actual (on the right) boards in a separate window. Here is what it looks like for this test:
+
+![testUpTrickyMerge Comparison](img/comparison.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+Debugging these can be a bit tricky because it's hard to tell what you're doing wrong. First, you should identify which of the 3 rules listed above you're violating. In this case, we can see that it's rule 2 since a tile is merging more than once. The javadoc comments on these methods are good resources for this as they specifically lay out what rule/configuration they're testing. You might also be able to figure out what rule you're violating by just looking at the before and after boards. Then, comes the tricky party: refactoring your existing code to properly account for that rule. We suggest writing out on pen and paper the steps your code takes so you can first understand why your board looks the way it does, then coming up with a fix. These tests only call `tilt` once, so you don't need to worry about debugging multiple calls to tilt.
+
+We recommend using the given tests to debug your code, though you're also welcome to debug by running `Main.java`. You can also start the game from a specific state by changing the `CUSTOM_START` and `USE_CUSTOM_START` variables in `Main.java`, which may be helpful for debugging specific tests.
+
+<!--(End of section: moved to make the testing make sense).-->
+<!--(Moved TestMultipleMoves debugging section since these tests will not pass until score updates are implemented).-->
 
 ## Task 10: Updating Score
 
@@ -552,7 +591,9 @@ The `Model` class has an instance variable `score` that keeps track of the playe
 
 ### Testing and Debugging
 
-TODO
+At this point, your 2048 implementation should be complete! You should now be passing all of the tests in every testing file.
+
+Testing files such as `TestMultipleMoves` test all the things you write in coordination with each other. Such a test is called an _integration test_ and are incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` until you're passing the rest of the tests!
 
 ## Style
 
