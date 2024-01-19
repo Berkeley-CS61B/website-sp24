@@ -13,7 +13,7 @@ description: >-
 released: true
 ---
 
-{: .warn}
+{: .warning}
 This assignment has not been officially released yet. The information on this page is subject to change.
 
 **Deadline: Monday, January 26, 11:59 PM PT.**
