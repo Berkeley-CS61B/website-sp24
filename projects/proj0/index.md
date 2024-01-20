@@ -22,6 +22,8 @@ This assignment has not been officially released yet. The information on this pa
 
 Each assignment will have an FAQ linked at the top. You can also access it by adding `/faq` to the end of the URL. The FAQ for Project 0 is located [here](./faq.md).
 
+{: warning}
+Note that this project has limited submission tokens. Please see [Submission and Grading](#submission-and-grading) for more details.
 ## Overview
 
 Prerequisites:
@@ -601,6 +603,12 @@ You can and should check your style locally with the CS 61B plugin. **We will no
 {: .danger}
 We will **not remove the velocity limit** for failing to submit the correct files because you didn't add, commit, or push. You have been warned.
 
+### Velocity Limiting
+
+For this project we will be limiting the number of times you can submit your code to the autograder. You will get 4 submission "tokens" that each regenerate after 24 hours.
+
+### Grading Overview
+
 Your code will be graded based on whether it passes the tests we provided. There are no hidden tests; the score you see on Gradescope is your score for this project.
 
 Gradescope will only grade your `Model.java` file. If you edit any other files, your edits will not be recognized, so don't edit any other files.
@@ -638,7 +646,5 @@ git push                            # Reflect your local changes on GitHub so Gr
 Then you can carry on working on the project until you're ready to commit and push again, in which case you'll repeat the above. It is in your best interest to get into the habit of comitting frequently with informative commit messages so that in the case that you need to revert back to an old version of code, it is not only possible but easy. We suggest you commit every time you add a significant portion of code or reach some milestone (passing a new test, for example).
 
 Once you've pushed your code to GitHub (i.e. ran `git push`), then you may go to Gradescope, find the `proj0` assignment, and submit the code there. Keep in mind that the version of code that Gradescope uses is the most recent commit you've pushed, so if you do not run `git push` before you submit on Gradescope, old code will be tested instead of the most recent code you have on your computer.
-
-For this project we will be limiting the number of times you can submit your code to the autograder. You will get 4 submission "tokens" that each regenerate after 24 hours.
 
 There are no hidden tests. The score you see on Gradescope is your score for this project.
