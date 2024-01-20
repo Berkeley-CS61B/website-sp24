@@ -111,7 +111,7 @@ Lecture is scheduled on Monday, Wednesday, and Friday from 1-2 PM in
 Dwinelle 155. Since the classroom is not large enough to allow all enrolled
 students to physically attend, lecture will be simultaneously webcast over Zoom.
 
-We will post lecture recordings as well as Josh Hug's Spring 2023 web videos to the content schedule on the main page. Both will cover the same content.
+We will post lecture recordings as well as Josh Hug's Spring 2023 web videos to the content schedule on the main page. Both will mostly cover the same content.
 
 ### Discussion
 

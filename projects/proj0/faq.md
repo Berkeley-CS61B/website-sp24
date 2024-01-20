@@ -42,9 +42,7 @@ and it will show you which tests pass or fail, including expected values vs. you
 useful for debugging. A general workflow would be to take a look at the tests you're failing, understand the expected
 values, compare them with your actual output, and use the debugger to walk through the test case if you're stuck. You
 can even write your own tests, following the format of the provided ones! This is good practice as we'll expect you to
-do this in later assignments (and you'll have to write your own tests in the real world). Lab 4, on Monday, will dive
-deeper into this, so don't worry if not all this makes sense just yet. You'll get plenty of practice with it starting
-with this project though!
+do this in later assignments (and you'll have to write your own tests in the real world). 
 
 <cite>Paraphrased from Shreyas Kallingal.</cite>
 
@@ -64,25 +62,7 @@ condition in the for loop may be off by one.
 
 ### I don't know how to get started on `tilt`.
 
-First, watch [Josh's intro video to this method](https://youtu.be/abFbbK1QY2k)!
+Please watch [Josh's intro video to this method](https://youtu.be/abFbbK1QY2k)! However, the methods in the intro video might be different that current skeleton code since a lot changed.
 
-`tilt` is, at its core, doing the same couple of small things several times over. This is a _really good place_ to try
-to use helper methods! Check out the
-[Tips](index.md#tips) section of the spec for suggestions on what these helper methods could do.
 
-### For `tilt`, my code works in the up direction, but doesn't in any of the other directions.
 
-There are two possibilities here:
-
-1. Make sure that you're setting the viewing perspective, and _resetting_ it back to north after you're done.
-1. **Make sure that you don't use `Tile::row` or `Tile::col`.** The `Tile`
-   class doesn't know anything about the `Board`'s `viewPerspective`!
-
-### Am I allowed to modify `Tile`? I want to store whether a tile has been merged or not, to prevent multiple merges.
-
-Unfortunately, any modifications you make to other files will not make it to the autograder. This includes modifications
-to `Tile.java`.
-
-Rather than storing this information as an instance variable of the tile, consider the following question. Let's assume
-that we're handling `tilt` column by column. If we process a tile that merges and ends on row R, then what is the
-highest row that any lower tile could end on?

@@ -58,9 +58,9 @@ lectures:
       - title: "Ch 1"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/1.-introduction"
   - title: "Defining and Using Classes"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1zt0yh_gzmfjCdB1y7DzTdwNSfTtepnQAtORH7PqebQM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqziLs3JZ6LIH73ZsVtvsGy"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=PK9ueGEHcjE"
     readings: 
       - title: "Ch 2"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/2.-defining-and-using-classes"
