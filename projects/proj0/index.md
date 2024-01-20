@@ -13,8 +13,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-This assignment has not been officially released yet. The information on this page is subject to change.
 
 **Deadline: Monday, January 29, 11:59 PM PT.**
 
@@ -31,7 +29,8 @@ Prerequisites:
 - [Lab 1](../../labs/lab01/index.md) (required for setup)
 - [HW0](../../homeworks/hw0/hw0b/index.md) (recommended, for Java syntax)
 - Lectures 1-2
-- [61B Style Guide](../../resources/guides/style/index.md) (not a strict prerequisite, but we recommend coding with good style from the start!)
+- [61B Style Guide](../../resources/guides/style/index.md) (we are checking your style in autograder!)
+- Lab 2 (optional but recommended prerequisite - helpful for debugging)
 
 [See here for a video overview of the project.](https://www.youtube.com/playlist?list=PL8FaHk7qbOD7WwTongMI3rfNbnkCE9NPb) This video is from an earlier version of the project, so there are some slight differences.
 
@@ -211,7 +210,9 @@ This method should return true if there are any valid moves. A valid move exists
 There are two ways a valid move can exist:
 
 1. There is at least one empty space on the board.
-2. There are two adjacent tiles with the same value.
+2. There are two adjacent (there can be empty space between them) tiles with the same value.
+
+Move method automatically handles merging two tiles if you pass in a square that's a valid merge.
 
 For example, for the board below, we should return true because there is at least one empty space.
 
@@ -403,7 +404,7 @@ A tile that is the result of a merge will not merge again on that tilt. For exam
 
 What if, halfway through this tilt operation, we have [4, X, X, 4], and we want to call `moveTileUpAsFarAsPossible` to move the rightmost 4 tile toward the left? We have to know whether or not the leftmost 4 tile was previously merged on this tilt (as is the case here), or if the leftmost 4 tile is still eligible for a merge (in which case the 4s would merge into an 8).
 
-To keep track of whether a tile has been merged on this tilt, you can use the `wasMerged` method of the Tile class.
+To keep track of whether a tile has been merged on this tilt, you can use the `wasMerged` method of the Tile class. Don't worry, if the merge was successful, `move` method automatically updates the value.
 
 ### Testing and Debugging
 
@@ -521,7 +522,7 @@ To get the board to go back to the original viewing perspective, we simply call
 
 Observe that this is the same thing as if you'd slid the tiles of the original board to the `WEST`.
 
-Important: Make sure to use `board.setViewingPerpsective` to set the perspective back to `Side.NORTH`
+Important: Make sure to use `board.setViewingPerspective` to set the perspective back to `Side.NORTH`
 before you finish your call to `tilt`, otherwise weird stuff will happen.
 
 To test your understanding, try this third and final [Google Form quiz](https://forms.gle/AGrhEFbwfMJ7qwaB6)
