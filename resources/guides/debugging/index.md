@@ -3,8 +3,12 @@ layout: page
 title: Debugging Guide
 categories: guides
 author: Anjali Kantharuban
-parent: IntelliJ
+parent: Guides
 has_children: false
+has_toc: false
+has_right_toc: true
+description: >-
+  Debugging Guide
 released: true
 ---
 
