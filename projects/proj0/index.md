@@ -42,6 +42,22 @@ If you're not familiar with 2048, [you can try out a demo at this link](http://g
 
 This project can seem daunting at first! There's a lot of starter code that uses Java syntax that you might not have seen before, but it'll be OK! In the real world, you'll often work with codebases that you don't fully understand, and will have to do some tinkering and experimentation to get the results you want. Don't worry, when we get to Project 1, you'll have a chance to start from scratch.
 
+It is important that you commit work to your repository _at frequent intervals_. Version control is a powerful tool for saving yourself when you mess something up or your dog eats your project, but you must use it regularly if it is to be of any use. Feel free to commit every 15 minutes; Git only saves what has changed, even though it acts as if it takes a snapshot of your entire project.
+
+The command `git status` will tell you what files you have modified, removed, or possibly added since the last commit.
+It will also tell you how much you have not yet sent to your GitHub repository.
+
+The typical commands would look something like this:
+
+```bash
+git status                          # To see what needs to be added or committed.
+git add <file or folder path>       # To add, or stage, any modified files.
+git commit -m "Commit message"      # To commit changes. Use a descriptive message.
+git push origin main                # Reflect your local changes on GitHub so Gradescope can see them.
+```
+
+Then you can carry on working on the project until you're ready to commit and push again, in which case you'll repeat the above. It is in your best interest to get into the habit of comitting frequently with informative commit messages so that in the case that you need to revert back to an old version of code, it is not only possible, but easy. We suggest you commit every time you add a significant portion of code or reach some milestone (passing a new test, for example).
+
 ### 2048 Rules: Basic Rules
 
 2048 is played on a grid of squares. Each square can either be empty, or contain a numbered tile.
@@ -121,7 +137,7 @@ To interact with a `Board` object in Task 1, you will need to use the `size()` a
 
 The Tile class represents a numbered tile on the board.
 
-If a variable of type `Tile` is `null`, this represents an empty tile on the board.
+If a variable of type `Tile` is `null`, this represents an empty tile on the board. To check if a `Tile t` is null, you may use the expression `if (t == null) {...}`
 
 To interact with a Tile object, you will need to use the `value()` method, which returns the numerical value of the given tile.
 
@@ -170,7 +186,7 @@ the `testCompletelyEmpty` test.
 The right-hand side is now the isolated error message for this test. The top line has a useful
 message: `"Board is full of empty space"` followed by a `String` representation of the board. You'll see that it's clearly
 empty, yet our `emptySpaceExists` method is returning `false` and causing this test to fail. The javadoc comment at the
-top of the code for the test also has some useful information in case you're failing a test.
+top of the code for the test also has some useful information in case you're failing a test. You can click on the text underlined in blue to see the contents of the test.
 
 ## Task 2: Max Tile Exists
 
@@ -307,7 +323,7 @@ good understanding of these rules.
 
 ### Tilting Rules Quiz
 
-Your task: complete this [Google Form quiz](https://forms.gle/xW74vQnK7dZAjS6eA) to check your understanding of the tilting rules.
+Your task: complete this optional [Google Form quiz](https://forms.gle/xW74vQnK7dZAjS6eA) to check your understanding of the tilting rules.
 
 This quiz is not part of your 61B course grade. <!--TODO: but you need to complete it in order to request help from staff on Ed or in office hours. (maybe?) -->
 
@@ -627,22 +643,6 @@ Here is a breakdown of what percent you'd earn on this project with varying leve
 9. `TestNbyN`: 15%
 
 Note that `TestMoveTileUp` and `TestTiltColumn` are not worth any points. These tests are meant to be sanity checks for your helper methods.
-
-It is important that you commit work to your repository _at frequent intervals_. Version control is a powerful tool for saving yourself when you mess something up or your dog eats your project, but you must use it regularly if it is to be of any use. Feel free to commit every 15 minutes; Git only saves what has changed, even though it acts as if it takes a snapshot of your entire project.
-
-The command `git status` will tell you what files you have modified, removed, or possibly added since the last commit.
-It will also tell you how much you have not yet sent to your GitHub repository.
-
-The typical commands would look something like this:
-
-```bash
-git status                          # To see what needs to be added or committed.
-git add <file or folder path>       # To add, or stage, any modified files.
-git commit -m "Commit message"      # To commit changes. Use a descriptive message.
-git push                            # Reflect your local changes on GitHub so Gradescope can see them.
-```
-
-Then you can carry on working on the project until you're ready to commit and push again, in which case you'll repeat the above. It is in your best interest to get into the habit of comitting frequently with informative commit messages so that in the case that you need to revert back to an old version of code, it is not only possible but easy. We suggest you commit every time you add a significant portion of code or reach some milestone (passing a new test, for example).
 
 Once you've pushed your code to GitHub (i.e. ran `git push`), then you may go to Gradescope, find the `proj0` assignment, and submit the code there. Keep in mind that the version of code that Gradescope uses is the most recent commit you've pushed, so if you do not run `git push` before you submit on Gradescope, old code will be tested instead of the most recent code you have on your computer.
 
