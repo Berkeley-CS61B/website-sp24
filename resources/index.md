@@ -46,7 +46,7 @@ On this page, we've compiled resources from past semesters that you may find hel
 ### IntelliJ
 
 - [Using IntelliJ](guides/intellij/index.md)
-- [IntelliJ WTFs](guides/intellij/wtfs.md)
+- [IntelliJ WTFs](guides/intellij/wtfs/index.md)
 - [JetBrains IntelliJ Docs](https://www.jetbrains.com/help/idea/getting-started.html)
 - [IntelliJ Plugins](guides/intellij/plugins.md)
 

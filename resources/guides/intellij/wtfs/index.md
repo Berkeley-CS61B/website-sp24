@@ -4,7 +4,12 @@ title: IntelliJ WTFS
 categories: guides
 author: Brandon Lee, Omar Khan
 parent: IntelliJ
+grand_parent: Guides
 has_children: false
+has_toc: false
+has_right_toc: true
+description: >-
+  IntelliJ Weird Technical Failure Scenarios
 released: true
 ---
 
@@ -27,7 +32,7 @@ You may need to do this with the `src` folder for most assignments, and mark the
 `tests` folder as a **Test Sources Root**. Your `src` folder should be blue and
 your `tests` folder should be green.
 
-See [Lab 01 Setup](../../../lab/lab01/index.md#intellij-setup) for additional
+See [Assignment Workflow](../assignment-workflow/index.md) for additional
 instructions on importing a new project.
 
 ## JUnit things show up as red in IntelliJ
