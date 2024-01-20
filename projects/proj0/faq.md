@@ -7,7 +7,7 @@ parent: >-
 grand_parent: Projects
 has_children: true
 has_toc: false
-has_right_toc: false
+has_right_toc: true
 description: >-
   Project 0 FAQ.
 released: true
