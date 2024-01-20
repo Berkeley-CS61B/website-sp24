@@ -100,8 +100,6 @@ Right now, your game does nothing, but by the end of this project, you'll have a
 
 ## Task 1: Empty Space Exists
 
-[See here for a video introduction to this task.](https://www.youtube.com/watch?v=13rdFndFNXc)
-
 In `Model.java`, fill in the `emptySpaceExists()` method. (Don't modify any other files.)
 
 This method should return true if any of the tiles on the board are null.
