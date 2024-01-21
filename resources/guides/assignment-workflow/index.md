@@ -102,5 +102,5 @@ that Gradescope isn't grading the right code, check that you have added,
 committed, and pushed  with `git status`.**
 
 If you've gotten yourself into a situation where you're unable to push for some reason,
-see [Git WTFS](../git/wtfs/index.md).
+see [Git WTFS](../git/wtfs.md).
 
