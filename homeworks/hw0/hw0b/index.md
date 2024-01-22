@@ -14,6 +14,10 @@ description: >-
 released: true
 ---
 
+## Assignment Setup
+
+Please follow the [Assignment Workflow Guide](../../../resources/guides/assignment-workflow/index.md) to get started with this assignment. This assignment is `hw0b`.
+
 ## Language Constructs
 
 ### Types
