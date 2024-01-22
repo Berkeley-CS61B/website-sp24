@@ -47,6 +47,8 @@ discussions:
     rowspan: 2
   - title: "Introduction to Java"
     solutions: True
+    regular_slides: https://docs.google.com/presentation/d/1cP2rUPxvYcN1NrHw9teDrK19QeoK4JAwz5dMsvj7KdI/edit?usp=sharing
+    examprep_slides: https://docs.google.com/presentation/d/1CG2u9Sgp-UJ0VWmt9Ixa15n8DG2f_ac2YFgQrAoZdh8/edit?usp=sharing
   - title: "Scope, Static, Linked Lists, Arrays"
     solutions: True
   - title: "Inheritance"

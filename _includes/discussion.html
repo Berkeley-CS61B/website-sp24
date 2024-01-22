@@ -24,11 +24,11 @@
     then create filenames (see discussion.yml for more on filenames).
 {%- endcomment -%}
 {%- assign filenumber = include.number | prepend: '00' | slice: -2, 2 -%}
-{%- assign filename_base = "/assets/discussions/disc" | append: filenumber -%}
-{%- assign filename_regular = filename_base | append: "-regular.pdf" -%}
-{%- assign filename_regular_solutions = filename_base | append: "-regular-sols.pdf" -%}
-{%- assign filename_examprep = filename_base | append: "-examprep.pdf" -%}
-{%- assign filename_examprep_solutions = filename_base | append: "-examprep-sols.pdf" -%}
+{%- assign filename_base = "/assets/discussions/" -%}
+{%- assign filename_regular = filename_base | append: "regular" | append: filenumber | append: ".pdf" -%}
+{%- assign filename_regular_solutions = filename_base | append: "regular" | append: filenumber | append: "sol.pdf" -%}
+{%- assign filename_examprep = filename_base | append: "examlevel" | append: filenumber | append: ".pdf" -%}
+{%- assign filename_examprep_solutions = filename_base | append: "examlevel" | append: filenumber | append: "sol.pdf" -%}
 
 {%- comment -%}
   - Automatically check if files exist.
@@ -67,12 +67,18 @@
     {%- if include.element.regular_video -%}
       &nbsp;/ <a href="{{ include.element.regular_video | relative_url }}">Video</a>
     {%- endif -%}
+    {%- if include.element.regular_slides -%}
+      &nbsp;/ <a href="{{ include.element.regular_slides }}">Slides</a>
+    {%- endif -%}
   {%- endif -%}
   {%- if examprep_solutions_exists -%}
     <br>
     <a href="{{ filename_examprep | relative_url }}">Exam Prep</a> / <a href="{{ filename_examprep_solutions | relative_url }}">Solutions</a>
     {%- if include.element.examprep_video -%}
       &nbsp;/ <a href="{{ include.element.examprep_video | relative_url }}">Video</a>
+    {%- endif -%}
+    {%- if include.element.examprep_slides -%}
+      &nbsp;/<a href="{{ include.element.examprep_slides }}">Slides</a>
     {%- endif -%}
   {%- endif -%}
 {%- elsif final_exist -%}
@@ -101,16 +107,16 @@
 {%- elsif examprep_exists or regular_exists -%}
   {%- if regular_exists -%}
     <br>
-    <a href="{{ filename_regular | relative_url }}">Worksheet</a>
-    {%- if include.element.regular_video -%}
-      &nbsp;/ <a href="{{ include.element.regular_video | relative_url }}">Video</a>
+    <a href="{{ filename_regular | relative_url }}">Regular</a>
+    {%- if include.element.regular_slides -%}
+      &nbsp;/ <a href="{{ include.element.regular_slides }}">Slides</a>
     {%- endif -%}
   {%- endif -%}
   {%- if examprep_exists -%}
     <br>
     <a href="{{ filename_examprep | relative_url }}">Exam Prep</a>
-    {%- if include.element.examprep_video -%}
-      &nbsp;/ <a href="{{ include.element.examprep_video | relative_url }}">Video</a>
+    {%- if include.element.examprep_slides -%}
+      &nbsp;/<a href="{{ include.element.examprep_slides }}">Slides</a>
     {%- endif -%}
   {%- endif -%}
 {%- endif -%}
