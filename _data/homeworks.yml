@@ -32,7 +32,7 @@ homeworks:
     nonumber: True
   - title: "Homework 1"
     due: "1/26"
-    # link: "homeworks/hw1"
+    link: "https://www.gradescope.com/courses/708063/assignments/3983765"
     rowspan: 2
     nonumber: True
   - rowspan: 9

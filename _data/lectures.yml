@@ -67,7 +67,7 @@ lectures:
   - title: "Lists I: References, Recursion, and Lists"
     slides: "https://docs.google.com/presentation/d/1G5k4HcjJ7C2fT_9xQdvpfWjKC4xQa--5FnwXPGf0nwg"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpb4EQp0tOFJNZUXHnxTfXm"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=33B7eyjSO58"
     readings: 
       - title: "Ch 3"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/3.-references-recursion-and-lists"
