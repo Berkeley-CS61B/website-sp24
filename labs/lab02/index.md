@@ -62,14 +62,14 @@ print statements or otherwise modify it. The point of this exercise is to get co
 using tools that will help you a lot down the road. Please take it seriously! **If you modify those
 files, you will not pass the tests on the autograder!**
 
-For this lab, we've provided tests in `BombTest.java` in the testing folder. 
-As mentioned, you'll be running your code from there and can use those tests to help 
-you debug, as on other assignments, you will end up writing your own tests to help you 
-fix bugs! The **only** file you need to modify is `BombMain.java`
+As mentioned, you'll be running your code from `BombTest.java` in the testing folder 
+and you can use those tests to help you debug, as on other assignments, you will
+end up writing your own tests to help you fix bugs! The **only** file you
+need to modify is `BombMain.java`
 
 **`BombTest.java` is where you will be running the program. `Bomb.java` and `BombMain.java`
 will not have the green run button since it does not contain a `static void main(String[] args)` 
-so please make sure to run the program through `BombTest.java `!**
+so please make sure to run the program through `BombTest.java`!**
 
 ### Interactive Debugging
 
@@ -150,9 +150,8 @@ In the debugger, you have a few options:
 ### `Bomb` Introduction (Phase 0)
 
 {: .info}
-For this lab, we will be providing some hints . Please **only use them if
-you're stuck!** You'll get much more out of the exercises if you try to solve
-them on your own first.
+For this lab, we will be providing method breakdowns if you want an 
+overview of the method/phase that you're debugging.
 
 {: .task}
 Set a breakpoint at `phase0` and use the debugger to find the password
@@ -285,8 +284,8 @@ The `phase2` method takes in your `password` from `BombMain`.
 The method adds 100,000 random integers to a `Set` called `numbers`. It
 then loops through them using a for-each loop, incrementing a variable `i` as it
 goes along. On the 1338th iteration (because Java is zero-indexed, `i == 1337`
-on iteration 1338), we check whether the integer at the 1337th index of the
-`passwordPieces` array is equal to the current `number`.
+on iteration 1338), we check whether your password is equal to the current
+`number`.
 
 </details>
 
@@ -296,6 +295,7 @@ At this point, you should be able to run the tests in `tests/bomb/BombTest.java`
 and have all of them pass with a green checkmark.
 
 ## Deliverables and Scoring
+
 {: .warning} 
 **Make sure you did not edit `Bomb.java` or `BombTest.java`.** There are tests 
 on the autograder that check if you edited those files and you will not pass 
