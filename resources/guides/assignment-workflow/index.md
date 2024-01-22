@@ -77,6 +77,8 @@ through the following steps again.**
     "**+ -> Java**" button, then navigate to `library-{{ site.semester }}`, select the
     folder, and click "Ok".
 
+    ![select-libraries](img/select_libraries.png){: style="max-height: 300;"}
+
 1.  Click "Ok" to apply your settings and leave Project Structure.
 
 At this point, if things have been configured correctly:
