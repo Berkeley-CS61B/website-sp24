@@ -234,7 +234,7 @@ for (int elem : set) {
   order, and is fast. In contrast, `HashSet` does not have a defined
   "order", but is (usually) really fast.
   - We will formalize these notions of "fast" later on in the course when we learn about asymptotic analysis.
-- A `Set` canot contain duplicate items. If we try to add an item already in the set, nothing happens.
+- A `Set` cannot contain duplicate items. If we try to add an item already in the set, nothing happens.
 
 [`TreeSet`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html
 [`HashSet`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html
