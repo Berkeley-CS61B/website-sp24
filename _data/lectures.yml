@@ -67,19 +67,19 @@ lectures:
   - title: "Lists I: References, Recursion, and Lists"
     slides: ""
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpb4EQp0tOFJNZUXHnxTfXm"
-    recording: ""
+    recording: "https://docs.google.com/presentation/d/1G5k4HcjJ7C2fT_9xQdvpfWjKC4xQa--5FnwXPGf0nwg"
     readings: 
       - title: "Ch 3"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/3.-references-recursion-and-lists"
   - title: "Lists II: SLLists"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1Uty7XFuhRuCg3SoaSaViXzJhPTZDoYUV878L2I_pe_k"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqyuN_xxm4o1Woa44dXW_N8"
     recording: ""
     readings: 
       - title: "Ch 4"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/4.-sllists"
   - title: "Lists III: DLLists and Arrays"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1jjivjdvD4mx6qb4bd4rUKB6FDZbYtveJ5NKeyVeA1lk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpPjLuN6-QJUFeK_mBZPve4"
     recording: ""
     readings: 
@@ -101,42 +101,42 @@ lectures:
       - title: "Response"
         link: "http://henrikwarne.com/2014/09/04/a-response-to-why-most-unit-testing-is-waste/"
   - title: "Lists IV: Arrays and Lists"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1RJuwap1NZDYFUS7eiPy_SZu7oWHJladwuhKQpQcTjt8"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrv834ePjKGB7i1az039-Gw"
     recording: ""
     readings: 
       - title: "Ch 8"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/8.-arraylist"
   - title: "Inheritance I: Interface and Implementation Inheritance"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1LxnOVy_k13llkePdQIdBrZ5jEpgRmbrvMilD-ppRjlc"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqJVbwFNWwRrGyBwedwLnuW"
     recording: ""
     readings: 
       - title: "Ch 9"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-inheritance-i-interface-and-implementation-inheritance"
   - title: "Inheritance II: Extends, Casting, Higher Order Functions"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1jVqC44HVViVtajnF18KsZ6MdIfseTfOSerfvxH4pzP0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrLnGlBmWCRXEuKF5Am09yB"
     recording: ""
     readings: 
       - title: "Ch 10"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/10.-inheritance-ii-extends-casting-higher-order-functions"
   - title: "Inheritance III: Subtype Polymorphism, Comparators, Comparable"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1WpISEkGajVCwARZy6w-XDF5sofm1cITUhfAlPUnnnos"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqAB5rg3v2NvfF_cb9OJ9cB"
     recording: ""
     readings: 
       - title: "Ch 11"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/11.-subtype-polymorphism-comparators-comparable"
   - title: "Inheritance IV: Iterators, Object Methods"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1bahvjVtbMcc2kuyzYQfQtD8EJyIiIkWnSALVSMuyQhI"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrvh9PM0gK9fm7VAD0HdijJ"
     recording: ""
     readings: 
       - title: "Ch 12"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/12.-exceptions-iterators-object-methods"
   - title: "Asymptotics I"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1CH4rsIIvu5pbmoWUNl9QdkPQYYkJc-ptX85CBhytlzM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrajvLNrqCND6CQUbqaR0mU"
     recording: ""
     readings: 
@@ -148,7 +148,7 @@ lectures:
   - title: "**Midterm 1 (7-9PM)**"
     nonumber: True
   - title: "Disjoint Sets"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/18pzklQAvV94ODFpjeB60Rzj79wFHdkIB-ePWR_MeClk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpMlYLU0hWYDMHNtcGi-Qmm"
     recording: ""
     readings: 
@@ -157,84 +157,84 @@ lectures:
   - title: "No Lecture (Academic Holiday)"
     nonumber: True
   - title: "Asymptotics II"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1zlmNjzu42WAEmyJFG2tYRZJIguExSFq5B__equ3-GaM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqwuAZ5q3P5xUxe2xNZL3an"
     recording: ""
     readings: 
       - title: "Ch 15"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/15.-asymptotics-ii"
   - title: "ADTs, Sets, Maps, BSTs"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1tAXgjwVKsnH7AR-iCvkDM-rQFwrg4OnKVZzqPixZWI8"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrks2Xi7wU8s82FcwPaINYs"
     recording: ""
     readings: 
       - title: "Ch 16"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/16.-adts-and-bsts"
   - title: "B-Trees (2-3, 2-3-4 Trees)"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1uQYk0Hxhf0jhnp-aXxoIGNGM2w_yILMyukRctRPc9Uo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoMUlGWsTyt-WHK-SuyXK_E"
     recording: ""
     readings: 
       - title: "Ch 17"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/17.-b-trees"
   - title: "Red Black Trees"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1WJze5Odoy4ZR1vqPM8X6duaZ5GGm_D7SaYrtOa5RnsA"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrYOYhFXExoXfP8uhHHCIri"
     recording: ""
     readings: 
       - title: "Ch 18"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/18.-red-black-trees"
   - title: "Hashing"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/12Su6RdBjVCGd5MrKE6Y5s-J4OyBgv--v-4LHjEwtJbU"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr_rFqN57yjZtcw_P4UiJ7a"
     recording: ""
     readings: 
       - title: "Ch 19"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/19.-hashing"
   - title: "Hashing II"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1EGP_BWIbha4xQ4A5PJLAVIQaK6G0RbWZfrVDd0GmS08"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrSxUje7m5-Y41ELVPm50N_"
     recording: ""
     readings: 
       - title: "Ch 20"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/20.-hashing-ii"
   - title: "Heaps and Priority Queues"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1XVJfoSYH2ItiD1rz9yvyEf_HelejbfkYxQgukbgclSY"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrFJrMMOkrShULQ3KeoqZB9"
     recording: ""
     readings: 
       - title: "Ch 21"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/21.-heaps-and-priority-queues"
   - title: "Tree and Graph Traversals"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1Gyke5ZMrgcMuBTa7qHAoklWZB3yf_yqQAymK2nV-Nqs"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoXCSo4Hx8TEZBsIpag6lMs"
     recording: ""
     readings: 
       - title: "Ch 22"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/22.-tree-traversals-and-graphs"
   - title: "Graph Traversals and Implementations"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1NKWnXSJ8pUn1E2Cw6zidxMRuXf_aINKCpW7XpEkyz6c"
     video: "https://www.youtube.com/watch?v=YgPtwbWpLaM&list=PLnp31xXvnfRqyRDKtQeHvjxhonhNuaOAK"
     recording: ""
     readings: 
       - title: "Ch 23"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/23.-graph-traversals-and-implementations"
   - title: "Shortest Paths"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1mT-F0fxm-sVZj9EQS_E_QMv5SVfeCGptI9vsKpyp57Y"
     video: "https://www.youtube.com/watch?v=iMoFtG1md3w&list=PLnp31xXvnfRrbIn8mZ3pmpgygnfwp2zjW"
     recording: ""
     readings: 
       - title: "Ch 24"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/24.-shortest-paths"
   - title: "Minimum Spanning Trees"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/13pPWHDLRUX2TAUUUK5ucEQ6dF3vUjzkj_C_iXDGaTPU"
     video: "https://www.youtube.com/watch?v=vnKK38JS9Ik&list=PLnp31xXvnfRr6RTCpKB1Xj3n9bZffJQ7L"
     recording: ""
     readings: 
       - title: "Ch 25"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/25.-minimum-spanning-trees"
   - title: "Prefix Operations and Tries"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1tcKJNY-ultPxwaHtYn-kd-DV7aXcuBQm6resYvpoCkw"
     video: "https://www.youtube.com/watch?v=F8Q-SHW2hAM&list=PLnp31xXvnfRoMxe8IbO1qF3lXwudLHVDk"
     recording: ""
     readings: 
@@ -251,7 +251,7 @@ lectures:
   - title: "**Midterm 2 (7-9PM)**"
     nonumber: True
   - title: "Directed Acyclic Graphs"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1UHVEYtQhV7EQ74ETn5MvCsnRzsCzmp3MvXL84hXbw-g"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRprqOwH0sojH3VLONWXtYM0"
     recording: ""
     readings: 
@@ -261,14 +261,14 @@ lectures:
     rowspan: 3
     nonumber: True
   - title: "Sorting I: Selection Sort, Heapsort, Mergesort"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1aleYBt-L8bwyaxw9tXPN3bMI5XxWxmpgfvvSEo9KxD0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrK9o_QZyGOCbQVFTsqOPtN"
     recording: ""
     readings: 
       - title: "Ch 29"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/29.-basic-sorts"
   - title: "Sorting II: Insertion Sort and Quicksort"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1MqmOxfh1c6gS4hk9hvuRR_hWXWTnCIXMqLGXwRX4Pvk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqsfDWZNS86oYmHFY6UKA2t"
     recording: ""
     readings: 
@@ -283,7 +283,7 @@ lectures:
     classes:
       - optional
   - title: "Sorting III: More Quicksort, Quick Select"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/11vRyW0ZPrsxUhRHCBgkygy01PlL1amB66n9FZQN03wo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrHHQP93qqc_QBNBF_WEQLy"
     recording: ""
     readings: 
@@ -298,21 +298,21 @@ lectures:
     classes:
       - optional
   - title: "Sorting IV: Sorting and Algorithmic Bounds"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/14bF0c-KRCU_pLsPjpqOMMCBzaoDKY8iiRSiI45XWEQc"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqEadgCMXeo1gnlIxnETooG"
     recording: ""
     readings: 
       - title: "Ch 34"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
   - title: "Sorting V: Radix Sorts"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/14jNEZC-YKUuxIr3Cxsvz1Kb6eX0jCjvjevb1zD8NRj4"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr4cg5TeJZplLTlOVmMNE0d"
     recording: ""
     readings: 
       - title: "Ch 35"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/35.-radix-sorts"
   - title: "Sorting VI: Radix vs. Comparison Sorting"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1wSTXwNB-D75VbHCtKqnr7QlOQtV-3wg6vTLNpNw7Qwk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoDV1sFRy3Hdx0N6BMZjI1n"
     recording: ""
     readings: 
@@ -327,7 +327,7 @@ lectures:
     classes:
       - optional
   - title: "Compression"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1k4tgpf7xaW-uhlHYlp3izZRYtBGMYPVRlHCmmpN6QXQ"
     video: "https://www.youtube.com/playlist?list=PL8FaHk7qbOD6kGO6F1uWKggr-Ie9TCMUZ&disable_polymer=true"
     recording: ""
     readings: 
@@ -336,7 +336,7 @@ lectures:
     classes:
       - optional
   - title: "Complexity and P=NP?"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1QFwbmMVE0Wlvg-gnWnemTxRX_t7h6IlhCQU69dcAkaA"
     video: "https://www.youtube.com/playlist?list=PL8FaHk7qbOD5nfUOOXco_8Sx5Nkt-Wgq8"
     recording: ""
     readings: 
@@ -345,7 +345,7 @@ lectures:
     classes:
       - optional
   - title: "Summary, Fun"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1MmnYUoi-4Wyt6_3BcBdt_WkrL1XECZ9ypCyUmhW7e2U"
     recording: ""
     classes:
     - optional
