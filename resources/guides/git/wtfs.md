@@ -221,7 +221,7 @@ git push origin main
 If you see a message like this:
 
 ```
-Merge branch 'master' of https://github.com/Berkeley-CS61B/skeleton-{{ site.semester }}
+Merge branch 'main' of https://github.com/Berkeley-CS61B/skeleton-{{ site.semester }}
 # Please enter a commit message to explain why this merge is necessary,
 # especially if it merges an updated upstream into a topic branch.
 #
