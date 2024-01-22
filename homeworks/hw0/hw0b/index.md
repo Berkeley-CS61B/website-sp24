@@ -671,6 +671,22 @@ if __name__ == "__main__":
 
 </details>
 
+## Testing and Debugging
+
+If you're having trouble running your code, please read through the common errors in this section before asking course staff!
+
+### Syntax Errors
+
+IntelliJ will not run your code (the green play button will not appear) if your code contains syntax errors.
+
+If your code has syntax errors, you will see a red exclamation point in the top-right corner, and there will be red squiggles in your code. To see where the syntax errors are, you can click on the red exclamation point.
+
+![Syntax Errors](img/syntax-errors.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+If you are seeing syntax errors in parts of the code that you haven't modified yet, you may have a syntax error earlier in the code (e.g. mismatched brackets), which is causing later parts of the code to not compile.
+
+For example, in the image above, the `takeOrder` method is missing its closing bracket on Line 19. This causes a syntax error on Line 23.
+
 ## Deliverables
 
 - `JavaExercises.java`
