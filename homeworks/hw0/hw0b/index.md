@@ -14,6 +14,10 @@ description: >-
 released: true
 ---
 
+## Assignment Setup
+
+Please follow the [Assignment Workflow Guide](../../../resources/guides/assignment-workflow/index.md) to get started with this assignment. This assignment is `hw0b`.
+
 ## Language Constructs
 
 ### Types
@@ -577,7 +581,7 @@ import java.util.TreeMap;
 `JavaExercises.java` has 4 different methods for you to complete:
 
 - `makeDice`: This method takes returns a _new_ `array` of integers `[1, 2, 3, 4, 5, 6]`.
-- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return an array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should return an array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty String array of size 3.
+- `takeOrder`: This method takes in a `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return an array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should return an array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty String array of size 3.
   {: .info}
   > **NOTE:** `==` behaves strangely with `String`s for reasons we'll see later in the course. You should check strings `s1` and `s2` for equality using `s1.equals(s2)` in Java.
 - `findMinMax`: This method takes an `int[] array` and returns the the positive difference between the maximum element and minimum element of the given array. You may assume the input array is nonempty.

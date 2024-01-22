@@ -41,7 +41,7 @@ On this page, we've compiled resources from past semesters that you may find hel
 - [Git Documentation](http://git-scm.com/doc)
 - [A Hacker’s Guide to Git](https://wildlyinaccurate.com/a-hackers-guide-to-git/)
 - [Using Git](guides/git/index.md)
-- [Git WTFs](guides/git/wtfs/index.md), or Weird Technical Failures
+- [Git WTFs](guides/git/wtfs.md), or Weird Technical Failures
 
 ### IntelliJ
 

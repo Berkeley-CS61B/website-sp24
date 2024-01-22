@@ -226,8 +226,6 @@ There are two ways a valid move can exist:
 1. There is at least one empty space on the board.
 2. There are two adjacent (there can be empty space between them) tiles with the same value.
 
-Move method automatically handles merging two tiles if you pass in a square that's a valid merge.
-
 For example, for the board below, we should return true because there is at least one empty space.
 
 ```text
@@ -387,6 +385,27 @@ Tile t = board.tile(3, 0)
 board.move(3, 3, t);
 ```
 
+If the `(x, y)` position already contains another tile with the same value, then the `move` method will merge the two tiles and update the value accordingly.
+
+As an example, suppose you have the board below and press up.
+
+```text
+|    |    |    |   2|
+|    |    |    |    |
+|    |    |    |    |
+|    |    |    |   2|
+```
+
+You can generate the correct resulting board with the following code, which will merge the tiles and create a new tile with value 4:
+
+```java
+Tile t = board.tile(3, 0)
+board.move(3, 3, t);
+```
+
+If the `(x, y)` position already contains another tile with a different value, then the program will crash. You can't move a tile into a square containing another tile with a different value.
+
+
 ### Moving Rules Quiz
 
 To test your understanding, you should complete this [Google Form quiz](https://forms.gle/pubhRx4fxYnPTGNX8). This quiz (and the following quizzes) are completely optional (i.e. not graded) but **highly suggested** as it'll find any conceptual misunderstandings you might have about the game mechanics. You may attempt this quiz as many times as you'd like.
@@ -400,7 +419,7 @@ To test no-merge tile moves, run the tests in `TestMoveTileUp.java`.
 1. `testOneTile`: calls `moveTileUpAsFarAsPossible` on a tile with no tiles above it
 2. `testTwoTiles`: calls `moveTileUpAsFarAsPossible` on a tile with a differently-valued tile above it
 3. `testTwoTilesMergeNoScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Score calculations do not need to be implemented for this test to pass.
-4. `testTwoTilesMergeScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly.
+4. `testTwoTilesMergeScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly. If you are working on the tasks in order from 1 to 10, then this test will not pass until you complete Task 10.
 
 If your implementation is correct up to this point, you should expect to pass `testOneTile` and `testTwoTiles`.
 

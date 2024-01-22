@@ -3,7 +3,12 @@ layout: page
 title: Installing and Using the IntelliJ Plugins
 author: Eli Lipsitz
 parent: IntelliJ
+grand_parent: Guides
 has_children: false
+has_toc: false
+has_right_toc: true
+description: >-
+  IntelliJ Plugins
 released: true
 ---
 
@@ -22,12 +27,12 @@ will check your code and inform you of any style errors and their locations.
 
 To run the style checker, simply right click any file or directories you want to
 check, and select **Check Style** in the menu that appears:
-![Check Style Menu](plugin-checkstyle-button.png)
+![Check Style Menu](img/plugin-checkstyle-button.png)
 
 Click it, and the style checker will run. A tool window will appear with the
 results of the style check, and a list of any errors. Click the links to jump
 directly to the problematic line of code:
-![Check Style Results Tool Window](plugin-checkstyle-results.png)
+![Check Style Results Tool Window](img/plugin-checkstyle-results.png)
 
 ### Java Visualizer ###
 
@@ -38,11 +43,11 @@ debugger.
 
 To use the built-in visualizer, debug your code, setting breakpoints as
 necessary. When your code stops, you can click the Java Visualizer tab:
-![Java Visualizer Button](plugin-visualizer-tab.png)
+![Java Visualizer Button](img/plugin-visualizer-tab.png)
 
 The Java Visualizer will appear, displaying the stack of the currently paused
 program:
-![Java Visualizer In Action](plugin-visualizer-view.png)
+![Java Visualizer In Action](img/plugin-visualizer-view.png)
 
 As you continue to step through and pause your code, the visualizer display will
 update accordingly to show you what's going on in your program.
