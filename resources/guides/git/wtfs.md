@@ -215,3 +215,66 @@ git add Planet.java
 git commit -m "resolved merge conflict"
 git push origin main
 ```
+
+## Please enter a commit message to explain why this merge is necessary
+
+If you see a message like this:
+
+```
+Merge branch 'master' of https://github.com/Berkeley-CS61B/skeleton-{{ site.semester }}
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+```
+
+Git has opened a terminal text editor for you to enter a commit message. You can leave the default commit message and exit the text editor.
+
+If you see something similar to this at the bottom of your terminal:
+
+```
+^G Get Help      ^O WriteOut      ^R Read File      ^Y Prev Pg      ^C Cur Pos
+```
+
+This indicates you're using the Nano text editor. To quit, type Ctrl+X (both keys at the same time).
+
+If you see a bunch of tildes (`~` symbols) along the left side of your terminal, and you see something similar to this at the bottom of your terminal:
+
+```
+".git/COMMIT_EDITMSG" 9L, 273C      13,1      All
+```
+
+This indicates you're using the Vim text editor. To save and quit, type `:wq` - the colon key, then the letter `w`, then the letter `q`, one after the other (not all at the same time).
+
+## fatal: 'skeleton' does not appear to be a git repository
+
+If you see a message like this:
+
+```
+fatal: 'skeleton' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+```
+
+Git might be having trouble finding where the skeleton repo is.
+
+Try running `git remote -v`. If your repo is set up correctly, you should see:
+
+```
+origin  git@github.com:Berkeley-CS61B/{{ site.semester }}-s*** (fetch)
+origin  git@github.com:Berkeley-CS61B/{{ site.semester }}-s*** (push)
+skeleton  https://github.com/Berkeley-CS61B/skeleton-{{ site.semester }}.git (fetch)
+skeleton  https://github.com/Berkeley-CS61B/skeleton-{{ site.semester }}.git (push)
+```
+
+If you only see the two lines corresponding to `origin`, and not the two lines corresponding to `skeleton`, then Git doesn't know where to find the skeleton repo.
+
+To fix this, run:
+
+```
+git remote add skeleton https://github.com/Berkeley-CS61B/skeleton-{{ site.semester }}.git
+```
+
+Then, run `git remote -v` again and ensure that you see two lines corresponding to `origin` and two lines corresponding to `skeleton`.
