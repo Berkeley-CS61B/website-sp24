@@ -423,6 +423,21 @@ To test no-merge tile moves, run the tests in `TestMoveTileUp.java`.
 
 If your implementation is correct up to this point, you should expect to pass `testOneTile` and `testTwoTiles`.
 
+If your code crashes with a message like this:
+
+```
+java.lang.NullPointerException: Cannot invoke "game2048rendering.Tile.value()" because the return value of "game2048logic.Model.tile(int, int)" is null
+```
+
+This probably means that you're trying to call `move` on a null tile. You can't move a non-existent tile, so the program crashes. Here's an example of moving a non-existent tile (you shouldn't do this):
+
+```java
+Tile t = null;
+board.move(2, 3, t);
+```
+You can use the stack trace to figure out which line of code caused the program to crash.
+
+
 ## Task 6: Merging Tiles
 
 Modify the `moveTileUpAsFarAsPossible` method so that it accounts for tiles merging.
