@@ -118,12 +118,12 @@ class or test you want to debug (in test files there may be two green triangles)
 Instead of clicking the green triangle to run, click the
 ![debug](img/debug.png){: .inline } debug option:
 
-[//]: # (![run debugger]&#40;img/run_debugger.png&#41;{: style="max-height: 325px;" })
+![run debugger](img/run_debugger.png){: style="max-height: 325px;" }
 
 The selected program should run until it hits its first breakpoint. A debugger
 window should also appear on the bottom of the interface, where the console was.
 
-[//]: # (![debugger session]&#40;img/debugger_session.png&#41;{: style="max-height: 325px;" })
+![debugger session](img/debugger_session.png){: style="max-height: 325px;" }
 
 On the left, you will be able to see all current method calls and on the right,
 you will be able to see the values of instantiated variables at this point in
