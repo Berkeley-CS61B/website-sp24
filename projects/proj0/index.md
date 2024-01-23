@@ -648,14 +648,14 @@ If you're failing the following tests (click each test to see the input and bugg
 "Non-merged tilts for N = 1, 2, 3" in <code>TestNbyN</code>
 </summary>
 Input:
-```
+```text
 |   4|    |   4|
 |   2|  16|   2|
 |    |    |   8|
 ```
 
 Buggy output:
-```
+```text
 |    |    |   8|
 |   4|    |   4|
 |   2|  16|   8|
@@ -667,7 +667,7 @@ Buggy output:
 "Multiple moves" in TestMultipleMoves
 </summary>
 Input:
-```
+```text
 |    |    |    |   4|
 |    |    |    |   2|
 |    |    |    |   2|
@@ -675,7 +675,7 @@ Input:
 ```
 
 Buggy output:
-```
+```text
 |    |    |   4|   4|
 |    |    |    |   4|
 |    |    |    |   4|
@@ -688,7 +688,7 @@ Buggy output:
 "Multiple Moves 2" in TestMultipleMoves
 </summary>
 Input:
-```
+```text
 |    |   4|   4|   4|
 |    |    |    |   8|
 |    |    |    |  16|
@@ -696,7 +696,7 @@ Input:
 ```
 
 Buggy output:
-```
+```text
 |   4|   4|   4|   4|
 |    |    |    |  16|
 |    |    |    |  32|
