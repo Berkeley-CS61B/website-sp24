@@ -9,11 +9,11 @@ has_right_toc: true
 released: true
 ---
 
-## [FAQ](faq.md)
+## FAQ
 
 Each assignment will have an FAQ linked at the top. You can also access it by
 adding "/faq" to the end of the URL. The FAQ for Lab 02 is located
-[here](faq.md).
+[here](faq).
 
 ## Introduction
 
@@ -21,7 +21,7 @@ To debug a program, you must first know what's wrong. In this lab, you'll get
 some experience with using the debugger to see the program state. When you run into
 a bug, the error is accompanied with a "stack trace" that details the method
 calls that caused the error in the first place. We won't cover going through the stack trace 
-in this lab, but we'll talk more about it in next week's lab.
+in this lab, but we'll talk more about it in a later lab. 
 
 ### Setup
 
@@ -49,19 +49,27 @@ error means or the exception that is thrown - google it!
 ## `Bomb`
 
 The `BombMain` class calls the various `phase` methods of the `Bomb` class.
-At this point, if you were to run `BombMain`, you'll notice that there are some errors - 
-this is because the current inputs to the phase methods aren't the correct passwords! 
-Your job is to figure out what the passwords to each of these phases is by _using the IntelliJ 
-debugger_.
+For this lab, we'll be running the lab through the tests in `BombTest.java`. 
+If you were to run `BombTest` (in the testing folder), you'll notice that there are some errors - 
+this is because the current inputs to the phase methods in `BombMain` aren't the 
+correct passwords! Your job is to figure out what the passwords to each of these phases 
+is by _using the IntelliJ debugger_.
 
 {: .danger}
 **WARNING**: The code is written so that you can't find the password just by reading it. For
-this lab, you are **forbidden** from editing the `Bomb` code, whether to add
+this lab, you are **forbidden** from editing the `Bomb` and `BombTest` code, whether to add
 print statements or otherwise modify it. The point of this exercise is to get comfortable 
-using tools that will help you a lot down the road. Please take it seriously!
+using tools that will help you a lot down the road. Please take it seriously! **If you modify those
+files, you will not pass the tests on the autograder!**
 
-**`BombMain.java` is where you will be running the program. `Bomb.java` will not have the green run button 
-since it does not contain a `static void main(String[] args)` so please make sure to run the program `BombMain.java`!**
+As mentioned, you'll be running your code from `BombTest.java` in the testing folder 
+and you can use those tests to help you debug, as on other assignments, you will
+end up writing your own tests to help you fix bugs! The **only** file you
+need to modify is `BombMain.java`
+
+**`BombTest.java` is where you will be running the program. `Bomb.java` and `BombMain.java`
+will not have the green run button since it does not contain a `static void main(String[] args)` 
+so please make sure to run the program through `BombTest.java`!**
 
 ### Interactive Debugging
 
@@ -142,14 +150,14 @@ In the debugger, you have a few options:
 ### `Bomb` Introduction (Phase 0)
 
 {: .info}
-For this lab, we will be providing hints. Please **only use them if
-you're stuck!** You'll get much more out of the exercises if you try to solve
-them on your own first.
+For this lab, we will be providing method breakdowns if you want an 
+overview of the method/phase that you're debugging.
 
 {: .task}
 Set a breakpoint at `phase0` and use the debugger to find the password
 for `phase0` and replace the `phase0` argument accordingly in
-`bomb/BombMain.java`.
+`bomb/BombMain.java`. You can start the program from `testBombPhase0` in 
+`tests/bomb/BombTest.java`.
 
 Once you've found the correct password, running the code (not in debug mode)
 should output `You passed phase 0 with the password \<password\>!` instead of
@@ -214,7 +222,8 @@ the "Java Visualizer" tab. The tab is outlined in red below.
 {: .task}
 Set a breakpoint at `phase1` and use the Java Visualizer
 to find the password for `phase1` and replace the `phase1` argument accordingly
-in `bomb/BombMain.java`.
+in `bomb/BombMain.java`. You can start the program from `testBombPhase1` in
+`tests/bomb/BombTest.java`.
 
 <details markdown="block">
 <summary markdown="block">
@@ -256,54 +265,12 @@ that your program is throwing.
 {: .task} 
 Set a breakpoint at `phase2` and use the debugger to find the password
 for `phase2` and replace the `phase2` argument accordingly in
-`bomb/BombMain.java`. Remember, don't edit `Bomb.java`!
+`bomb/BombMain.java`. Remember, don't edit `Bomb.java`! You can start the program 
+from `testBombPhase2` in `tests/bomb/BombTest.java`.
 
 {: .info}
 **NOTE**: The password isn't given explicitly like in the previous phases.
-Rather, your task is to construct an input so that the `boolean correct`
-variable is set to `true` after `phase2` is run.
-
-
-<details markdown="block">
-<summary markdown="block">
-
-**Hint 1**
-
-</summary>
-
-You may want to look up Java's `split` method for `String`s if you're unsure
-of what it does. Take a look at how the `String` "Figure this out. I wonder where the 
-phases are defined..." is returned in the debugging session after being passed into the `split`
-method. 
-
-</details>
-
-<details markdown="block">
-<summary markdown="block">
-
-**Hint 2**
-
-</summary>
-
-You don't necessarily need to construct the password in one line of code.
-Repetition is important here. 
-
-</details>
-
-<details markdown="block">
-<summary markdown="block">
-
-**Hint 3**
-
-</summary>
-
-Take a look at the code in `phase2` - what conditions do you need to meet for you to 
-pass this phase? Small hint: `Integer.parseInt` takes in a `String` argument and returns it as a (signed) 
-decimal integer [(source)](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html). 
-You'll want to build `password` in pieces so that the `split` method will cause the correct 
-number be in the right spot.
-
-</details>
+Rather, your task is to "try to find it" using a conditional breakpoint.
 
 <details markdown="block">
 <summary markdown="block">
@@ -312,15 +279,13 @@ number be in the right spot.
 
 </summary>
 
-The `phase2` method takes in your `password` from `BombMain` and splits it by
-spaces into the `passwordPieces` array. For example, if your password is `"1 2
-3"`, then `passwordPieces` will be equivalent to `{"1", "2", "3"}`.
+The `phase2` method takes in your `password` from `BombMain`. 
 
-The method then adds 100,000 random integers to a `Set` called `numbers`. It
+The method adds 100,000 random integers to a `Set` called `numbers`. It
 then loops through them using a for-each loop, incrementing a variable `i` as it
 goes along. On the 1338th iteration (because Java is zero-indexed, `i == 1337`
-on iteration 1338), we check whether the integer at the 1337th index of the
-`passwordPieces` array is equal to the current `number`.
+on iteration 1338), we check whether your password is equal to the current
+`number`.
 
 </details>
 
@@ -331,8 +296,14 @@ and have all of them pass with a green checkmark.
 
 ## Deliverables and Scoring
 
-The lab is out of 5 points. There are no hidden tests on Gradescope. If you
-pass all the local tests, you will receive full credit on the lab.
+{: .warning} 
+**Make sure you did not edit `Bomb.java` or `BombTest.java`.** There are tests 
+on the autograder that check if you edited those files and you will not pass 
+if there are changes in the file (this includes adding comments). **The 
+local tests prevent you from editing `Bomb.java`, but not `BombTest.java`
+(this is only on the autgrader), so do not touch those files!** 
+
+The lab is out of 5 points. 
 
 - Find all the passwords in `BombMain.java` and ensure that you pass all tests locally 
   before submitting to Gradescope. 

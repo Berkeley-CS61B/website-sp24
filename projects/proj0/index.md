@@ -13,8 +13,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-This assignment has not been officially released yet. The information on this page is subject to change.
 
 **Deadline: Monday, January 29, 11:59 PM PT.**
 
@@ -22,6 +20,8 @@ This assignment has not been officially released yet. The information on this pa
 
 Each assignment will have an FAQ linked at the top. You can also access it by adding `/faq` to the end of the URL. The FAQ for Project 0 is located [here](./faq.md).
 
+{: warning}
+Note that this project has limited submission tokens. Please see [Submission and Grading](#submission-and-grading) for more details.
 ## Overview
 
 Prerequisites:
@@ -29,7 +29,8 @@ Prerequisites:
 - [Lab 1](../../labs/lab01/index.md) (required for setup)
 - [HW0](../../homeworks/hw0/hw0b/index.md) (recommended, for Java syntax)
 - Lectures 1-2
-- [61B Style Guide](../../resources/guides/style/index.md) (not a strict prerequisite, but we recommend coding with good style from the start!)
+- [61B Style Guide](../../resources/guides/style/index.md) (we are checking your style in autograder!)
+- Lab 2 (optional but recommended prerequisite - helpful for debugging)
 
 [See here for a video overview of the project.](https://www.youtube.com/playlist?list=PL8FaHk7qbOD7WwTongMI3rfNbnkCE9NPb) This video is from an earlier version of the project, so there are some slight differences.
 
@@ -40,6 +41,22 @@ In this project, you'll get some practice with Java by creating a playable game 
 If you're not familiar with 2048, [you can try out a demo at this link](http://gabrielecirulli.github.io/2048).
 
 This project can seem daunting at first! There's a lot of starter code that uses Java syntax that you might not have seen before, but it'll be OK! In the real world, you'll often work with codebases that you don't fully understand, and will have to do some tinkering and experimentation to get the results you want. Don't worry, when we get to Project 1, you'll have a chance to start from scratch.
+
+It is important that you commit work to your repository _at frequent intervals_. Version control is a powerful tool for saving yourself when you mess something up or your dog eats your project, but you must use it regularly if it is to be of any use. Feel free to commit every 15 minutes; Git only saves what has changed, even though it acts as if it takes a snapshot of your entire project.
+
+The command `git status` will tell you what files you have modified, removed, or possibly added since the last commit.
+It will also tell you how much you have not yet sent to your GitHub repository.
+
+The typical commands would look something like this:
+
+```bash
+git status                          # To see what needs to be added or committed.
+git add <file or folder path>       # To add, or stage, any modified files.
+git commit -m "Commit message"      # To commit changes. Use a descriptive message.
+git push origin main                # Reflect your local changes on GitHub so Gradescope can see them.
+```
+
+Then you can carry on working on the project until you're ready to commit and push again, in which case you'll repeat the above. It is in your best interest to get into the habit of comitting frequently with informative commit messages so that in the case that you need to revert back to an old version of code, it is not only possible, but easy. We suggest you commit every time you add a significant portion of code or reach some milestone (passing a new test, for example).
 
 ### 2048 Rules: Basic Rules
 
@@ -99,8 +116,6 @@ Right now, your game does nothing, but by the end of this project, you'll have a
 
 ## Task 1: Empty Space Exists
 
-[See here for a video introduction to this task.](https://www.youtube.com/watch?v=13rdFndFNXc)
-
 In `Model.java`, fill in the `emptySpaceExists()` method. (Don't modify any other files.)
 
 This method should return true if any of the tiles on the board are null.
@@ -122,7 +137,7 @@ To interact with a `Board` object in Task 1, you will need to use the `size()` a
 
 The Tile class represents a numbered tile on the board.
 
-If a variable of type `Tile` is `null`, this represents an empty tile on the board.
+If a variable of type `Tile` is `null`, this represents an empty tile on the board. To check if a `Tile t` is null, you may use the expression `if (t == null) {...}`
 
 To interact with a Tile object, you will need to use the `value()` method, which returns the numerical value of the given tile.
 
@@ -171,7 +186,7 @@ the `testCompletelyEmpty` test.
 The right-hand side is now the isolated error message for this test. The top line has a useful
 message: `"Board is full of empty space"` followed by a `String` representation of the board. You'll see that it's clearly
 empty, yet our `emptySpaceExists` method is returning `false` and causing this test to fail. The javadoc comment at the
-top of the code for the test also has some useful information in case you're failing a test.
+top of the code for the test also has some useful information in case you're failing a test. You can click on the text underlined in blue to see the contents of the test.
 
 ## Task 2: Max Tile Exists
 
@@ -209,7 +224,7 @@ This method should return true if there are any valid moves. A valid move exists
 There are two ways a valid move can exist:
 
 1. There is at least one empty space on the board.
-2. There are two adjacent tiles with the same value.
+2. There are two adjacent (there can be empty space between them) tiles with the same value.
 
 For example, for the board below, we should return true because there is at least one empty space.
 
@@ -306,7 +321,7 @@ good understanding of these rules.
 
 ### Tilting Rules Quiz
 
-Your task: complete this [Google Form quiz](https://forms.gle/xW74vQnK7dZAjS6eA) to check your understanding of the tilting rules.
+Your task: complete this optional [Google Form quiz](https://forms.gle/xW74vQnK7dZAjS6eA) to check your understanding of the tilting rules.
 
 This quiz is not part of your 61B course grade. <!--TODO: but you need to complete it in order to request help from staff on Ed or in office hours. (maybe?) -->
 
@@ -370,6 +385,27 @@ Tile t = board.tile(3, 0)
 board.move(3, 3, t);
 ```
 
+If the `(x, y)` position already contains another tile with the same value, then the `move` method will merge the two tiles and update the value accordingly.
+
+As an example, suppose you have the board below and press up.
+
+```text
+|    |    |    |   2|
+|    |    |    |    |
+|    |    |    |    |
+|    |    |    |   2|
+```
+
+You can generate the correct resulting board with the following code, which will merge the tiles and create a new tile with value 4:
+
+```java
+Tile t = board.tile(3, 0)
+board.move(3, 3, t);
+```
+
+If the `(x, y)` position already contains another tile with a different value, then the program will crash. You can't move a tile into a square containing another tile with a different value.
+
+
 ### Moving Rules Quiz
 
 To test your understanding, you should complete this [Google Form quiz](https://forms.gle/pubhRx4fxYnPTGNX8). This quiz (and the following quizzes) are completely optional (i.e. not graded) but **highly suggested** as it'll find any conceptual misunderstandings you might have about the game mechanics. You may attempt this quiz as many times as you'd like.
@@ -383,7 +419,7 @@ To test no-merge tile moves, run the tests in `TestMoveTileUp.java`.
 1. `testOneTile`: calls `moveTileUpAsFarAsPossible` on a tile with no tiles above it
 2. `testTwoTiles`: calls `moveTileUpAsFarAsPossible` on a tile with a differently-valued tile above it
 3. `testTwoTilesMergeNoScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Score calculations do not need to be implemented for this test to pass.
-4. `testTwoTilesMergeScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly.
+4. `testTwoTilesMergeScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly. If you are working on the tasks in order from 1 to 10, then this test will not pass until you complete Task 10.
 
 If your implementation is correct up to this point, you should expect to pass `testOneTile` and `testTwoTiles`.
 
@@ -401,7 +437,7 @@ A tile that is the result of a merge will not merge again on that tilt. For exam
 
 What if, halfway through this tilt operation, we have [4, X, X, 4], and we want to call `moveTileUpAsFarAsPossible` to move the rightmost 4 tile toward the left? We have to know whether or not the leftmost 4 tile was previously merged on this tilt (as is the case here), or if the leftmost 4 tile is still eligible for a merge (in which case the 4s would merge into an 8).
 
-To keep track of whether a tile has been merged on this tilt, you can use the `wasMerged` method of the Tile class.
+To keep track of whether a tile has been merged on this tilt, you can use the `wasMerged` method of the Tile class. Don't worry, if the merge was successful, `move` method automatically updates the value.
 
 ### Testing and Debugging
 
@@ -519,7 +555,7 @@ To get the board to go back to the original viewing perspective, we simply call
 
 Observe that this is the same thing as if you'd slid the tiles of the original board to the `WEST`.
 
-Important: Make sure to use `board.setViewingPerpsective` to set the perspective back to `Side.NORTH`
+Important: Make sure to use `board.setViewingPerspective` to set the perspective back to `Side.NORTH`
 before you finish your call to `tilt`, otherwise weird stuff will happen.
 
 To test your understanding, try this third and final [Google Form quiz](https://forms.gle/AGrhEFbwfMJ7qwaB6)
@@ -601,6 +637,12 @@ You can and should check your style locally with the CS 61B plugin. **We will no
 {: .danger}
 We will **not remove the velocity limit** for failing to submit the correct files because you didn't add, commit, or push. You have been warned.
 
+### Velocity Limiting
+
+For this project we will be limiting the number of times you can submit your code to the autograder. You will get 4 submission "tokens" that each regenerate after 24 hours.
+
+### Grading Overview
+
 Your code will be graded based on whether it passes the tests we provided. There are no hidden tests; the score you see on Gradescope is your score for this project.
 
 Gradescope will only grade your `Model.java` file. If you edit any other files, your edits will not be recognized, so don't edit any other files.
@@ -621,24 +663,6 @@ Here is a breakdown of what percent you'd earn on this project with varying leve
 
 Note that `TestMoveTileUp` and `TestTiltColumn` are not worth any points. These tests are meant to be sanity checks for your helper methods.
 
-It is important that you commit work to your repository _at frequent intervals_. Version control is a powerful tool for saving yourself when you mess something up or your dog eats your project, but you must use it regularly if it is to be of any use. Feel free to commit every 15 minutes; Git only saves what has changed, even though it acts as if it takes a snapshot of your entire project.
-
-The command `git status` will tell you what files you have modified, removed, or possibly added since the last commit.
-It will also tell you how much you have not yet sent to your GitHub repository.
-
-The typical commands would look something like this:
-
-```bash
-git status                          # To see what needs to be added or committed.
-git add <file or folder path>       # To add, or stage, any modified files.
-git commit -m "Commit message"      # To commit changes. Use a descriptive message.
-git push                            # Reflect your local changes on GitHub so Gradescope can see them.
-```
-
-Then you can carry on working on the project until you're ready to commit and push again, in which case you'll repeat the above. It is in your best interest to get into the habit of comitting frequently with informative commit messages so that in the case that you need to revert back to an old version of code, it is not only possible but easy. We suggest you commit every time you add a significant portion of code or reach some milestone (passing a new test, for example).
-
 Once you've pushed your code to GitHub (i.e. ran `git push`), then you may go to Gradescope, find the `proj0` assignment, and submit the code there. Keep in mind that the version of code that Gradescope uses is the most recent commit you've pushed, so if you do not run `git push` before you submit on Gradescope, old code will be tested instead of the most recent code you have on your computer.
-
-For this project we will be limiting the number of times you can submit your code to the autograder. You will get 4 submission "tokens" that each regenerate after 24 hours.
 
 There are no hidden tests. The score you see on Gradescope is your score for this project.

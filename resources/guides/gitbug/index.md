@@ -5,7 +5,7 @@ author: Omar Khan
 parent: Guides
 grand_parent: Resources
 has_children: false
-released: true
+released: false
 has_right_toc: true
 ---
 

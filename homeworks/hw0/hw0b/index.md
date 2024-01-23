@@ -14,6 +14,10 @@ description: >-
 released: true
 ---
 
+## Assignment Setup
+
+Please follow the [Assignment Workflow Guide](../../../resources/guides/assignment-workflow/index.md) to get started with this assignment. This assignment is `hw0b`.
+
 ## Language Constructs
 
 ### Types
@@ -230,7 +234,7 @@ for (int elem : set) {
   order, and is fast. In contrast, `HashSet` does not have a defined
   "order", but is (usually) really fast.
   - We will formalize these notions of "fast" later on in the course when we learn about asymptotic analysis.
-- A `Set` canot contain duplicate items. If we try to add an item already in the set, nothing happens.
+- A `Set` cannot contain duplicate items. If we try to add an item already in the set, nothing happens.
 
 [`TreeSet`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html
 [`HashSet`]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html
@@ -577,7 +581,7 @@ import java.util.TreeMap;
 `JavaExercises.java` has 4 different methods for you to complete:
 
 - `makeDice`: This method takes returns a _new_ `array` of integers `[1, 2, 3, 4, 5, 6]`.
-- `takeOrder`: This method takes a list `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return an array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should return an array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty String array of size 3.
+- `takeOrder`: This method takes in a `String` and returns a _new_ array containing the orders of the customer. If the customer is `Ergun`, you should return an array of Strings `["beyti", "pizza", "hamburger", "tea"]` in that order. If the customer is `Erik`, you should return an array of Strings `["sushi", "pasta", "avocado", "coffee"]`. In any other case, return an empty String array of size 3.
   {: .info}
   > **NOTE:** `==` behaves strangely with `String`s for reasons we'll see later in the course. You should check strings `s1` and `s2` for equality using `s1.equals(s2)` in Java.
 - `findMinMax`: This method takes an `int[] array` and returns the the positive difference between the maximum element and minimum element of the given array. You may assume the input array is nonempty.
@@ -666,6 +670,22 @@ if __name__ == "__main__":
 ```
 
 </details>
+
+## Testing and Debugging
+
+If you're having trouble running your code, please read through the common errors in this section before asking course staff!
+
+### Syntax Errors
+
+IntelliJ will not run your code (the green play button will not appear) if your code contains syntax errors.
+
+If your code has syntax errors, you will see a red exclamation point in the top-right corner, and there will be red squiggles in your code. To see where the syntax errors are, you can click on the red exclamation point.
+
+![Syntax Errors](img/syntax-errors.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+If you are seeing syntax errors in parts of the code that you haven't modified yet, you may have a syntax error earlier in the code (e.g. mismatched brackets), which is causing later parts of the code to not compile.
+
+For example, in the image above, the `takeOrder` method is missing its closing bracket on Line 19. This causes a syntax error on Line 23.
 
 ## Deliverables
 

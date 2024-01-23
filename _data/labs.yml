@@ -32,7 +32,7 @@ labs:
     rowspan: 2
   - title: "Debugging I"
     due: "1/26"
-    # link: labs/lab02
+    link: labs/lab02
     slides:
   - title: "Debugging II"
     due: "2/2"

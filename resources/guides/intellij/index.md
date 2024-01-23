@@ -5,12 +5,14 @@ author: Matt Owen
 parent: Guides
 grand_parent: Resources
 has_children: true
+has_right_toc: true
 released: true
 ---
 
 ## Using IntelliJ ##
 
 ### IntelliJ Documentation ###
+
 As we have mentioned, IntelliJ is an IDE that is widely used in industry which has its advantages and disadvantages for you. This means you will learn how to use a real tool, one that you might keep using for years after you graduate. IntelliJ is also incredibly powerful and can allow you to code in ways perhaps unlike anything you have seen before in previous classes. As it is widely used, they have dedicated resources to maintaining documentation. A [complete guide can be found here][intellij-guide] and they also have [many helpful video tutorials here][intellij-videos]. 
 
 [intellij-guide]: https://www.jetbrains.com/help/idea/guided-tour-around-the-user-interface.html
