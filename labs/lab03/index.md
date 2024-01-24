@@ -196,7 +196,7 @@ combination with stepping to isolate the problem.
 
 {: .warning}
 **There are two bugs in this part that you'll need to fix. Fix the most obvious one 
-first and then try to isolate and solve the second one. The hints for this part of the 
+first and then try to isolate and solve the second one. The hint for this part of the 
 lab applies to the second bug that needs to be resolved.** 
 <br/><br/> Expected lines modified: 3
 
@@ -210,18 +210,8 @@ lab applies to the second bug that needs to be resolved.**
 If you haven't already, read through the note above. Look at the method where `digitsToIntList`
 is called on. If you set a breakpoint in the method and run through the debugger, do we ever exit 
 out the `while` loop? What is the condition we need to meet to break out of the `while` loop? Is it 
-being met? 
-
-</details>
-
-<details markdown="block">
-<summary markdown="block">
-
-**Hint 2 (Only applies to second bug)**
-
-</summary>
-
-In conjunction with the first hint, try using the Java visualizer! 
+being met? Try using the Java Visualizer in conjunction so you can inspect the bug more closely 
+with the visualizer. 
 
 </details>
 
