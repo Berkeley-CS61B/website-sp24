@@ -1,14 +1,11 @@
 ---
 layout: page
 title: CS 47B
-author: Josh Hug, Allen Gu, Stella Kaval
+author: Josh Hug
 parent: Course Info
 has_children: false
 released: true
 ---
-
-{: .warning}
-This page has not been updated yet for Spring 2024! We'll be reaching out soon with more details if you're enrolled in CS 47B. If you'd like to get started, feel free to follow the Lab 01 instructions to set up your computer for the semester!
 
 ## Broad Outline
 
@@ -29,7 +26,7 @@ engineering.
 - Project 2 (Ngordnet)
 - Project 3 (Designing a large system from scratch - Build Your Own World)
 
-If any of this work seems tedious or redundant with what you learned at your previous institution, please reach out and let Josh know. I don't want to waste your time.
+If any of this work seems tedious or redundant with what you learned at your previous institution, please reach out and let us know. We don't want to waste your time.
 
 ### Standard CS 47B
 
@@ -46,7 +43,7 @@ Standard students are assumed to have a decent understanding of most of the mate
 - Project 2 (Ngordnet)
 - Project 3 (Designing a large system from scratch - Build Your Own World)
 
-If any of this work seems tedious or redundant with what you learned at your previous institution, please reach out and let Josh know. I don't want to waste your time.
+If any of this work seems tedious or redundant with what you learned at your previous institution, please reach out and let us know. We don't want to waste your time.
 
 ### Grades
 
@@ -112,7 +109,7 @@ There is no partial credit for submitting late work. However, we have an **exten
 Extensions up to 2 weeks will be granted automatically. If you want to request an extension over 2 weeks, you must meet synchronously with the 47B TA, Stella Kaval, to check in and schedule a modified set of deadlines before your request is approved. Emails scheduling this meeting will be sent out when your extension request is made.
 
 {: .warning}
-All assignments must be submitted by the end of the semester (December 16). Additionally, Project 3 has a hard deadline of November 30 due to scheduling project presentations. Checkoffs for Project 3 can either be completed during 61B sections or alternate times during RRR week/finals week.
+All assignments must be submitted by the end of the semester (May 10th). Additionally, Project 3 has a hard deadline of April 22nd due to scheduling project presentations. Checkoffs for Project 3 can either be completed during 61B sections or alternate times during RRR week/finals week.
 
 ### Resources
 
@@ -128,9 +125,9 @@ For Projects 2 and 3, you will be paired with another 47B student. Project pairi
 
 ### Communication
 
-Most communication, including announcements and updates, for 47B will be through the 61B course email, [cs47b@berkeley.edu](mailto:cs47b@berkeley.edu).
+Most communication, including announcements and updates, for 47B will be through the 47B course email, [cs47b@berkeley.edu](mailto:cs47b@berkeley.edu).
 
-Additionally, the TA in charge of CS 47B is Stella Kaval. Her contact info can be found on the [course staff page]({{ site.url }}/staff.html). Please also include the 61B course email!
+Additionally, the TA in charge of CS 47B is Dhruti Pandya. Her contact info can be found on the [course staff page](../../staff.md). Please also include the 47B course email!
 
 The course also has a "47B" topic on 61B's Ed forum (linked in the nav bar). If you have questions about the course, feel free to ask them there! Making public posts also allows other 47B students to view and answer them.
 
@@ -143,5 +140,5 @@ If you need help with labs, homeworks, or projects, please come to lab or office
 1. Review the [47B course page](index.md) and the [61B course policies](../index.md) ("General Background Information", "Resources", "Collaboration and Academic Misconduct" sections).
 2. Check your email for a bCourses invitation to 61B. This will give you access to our course forum Ed and Gradescope. Reach out if you run into issues or have not received an invite.
 3. Start setting up your computer with the instructions in [Lab 1](../../labs/lab01/index.md). By the end of this lab, you should have your Github repository, Beacon account, and development environment.
-4. Fill out the [CS 47B introductory survey](https://forms.gle/htrZawELw8f26DD8A).
-5. Get started on coursework. Everything is linked from the [course website](../../). All CS 47B students should start with Lab 1 "Setting Up Your Computer" and work your way down the labs column until you've completed Lab 3. HWs and projects will be released later in the semester.
+4. Fill out the [CS 47B introductory survey](https://forms.gle/PXcarMgiKtk14svz7).
+5. Get started on coursework. Everything is linked from the [course website](../../index.md). All CS 47B students should start with Lab 1 "Setting Up Your Computer" and work your way down the labs column until you've completed Lab 3. HWs and projects will be released later in the semester.
