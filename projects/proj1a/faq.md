@@ -6,10 +6,10 @@
 # searchable: false
 
 layout: page
-title: "FAQ - Project 1A: Linked List Deque"
+title: "FAQ - Project 1A: Linked List Deque 61B"
 nav_order: 0
 parent: >-
-  Project 1A: LinkedListDeque
+  Project 1A: LinkedListDeque61B
 grand_parent: Projects
 has_children: false
 has_toc: false
@@ -19,15 +19,15 @@ description: >-
 released: false
 ---
 
-### I'm getting a "Required Type is Deque but provided is ..."
+### I'm getting a "Required Type is Deque61B but provided is ..."
 
 There are two possible issues. Make sure you haven't accidentally imported java.util.\* (or java.util.LinkedList or
 java.util.ArrayList). The other possible issue comes with an issue in your class signature.
 
-### Intellij is telling me "The method ... of type LinkedListDeque has the same erasure as ... of type Deque but does not override it."
+### Intellij is telling me "The method ... of type LinkedListDeque61B has the same erasure as ... of type Deque61B but does not override it."
 
 You probably forgot the generic `T` in the implements line of your class signature (i.e. you wrote
-`implements Deque` instead of `implements Deque<T>`). If you used something other than `T` for your generic type
+`implements Deque61B` instead of `implements Deque61B<T>`). If you used something other than `T` for your generic type
 parameter, use that instead.
 
 ### Q: How do I make my arrows point to particular fields of a data structure?
@@ -50,4 +50,4 @@ This may be caused by returning null in your `toList` method. Make sure that toL
 
 Try using `class ClassName` instead of `public class ClassName`
 
-### Make sure to use your `Deque` interface rather than `java.util.Deque`
+### Make sure to use your `Deque61B` interface rather than `java.util.Deque`

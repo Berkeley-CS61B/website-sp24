@@ -7,7 +7,7 @@
 #   h_max: 4
 
 layout: page
-title: "Project 1B: ArrayDeque"
+title: "Project 1B: ArrayDeque61B"
 nav_order: 2
 parent: Projects
 has_children: true
@@ -30,8 +30,8 @@ FAQ for Project 1B is located
 
 ## Introduction
 
-In Project 1A, we built `LinkedListDeque`. Now we'll see a different
-implementation of the `Deque` interface that uses a _backing array_, rather
+In Project 1A, we built `LinkedListDeque61B`. Now we'll see a different
+implementation of the `Deque61B` interface that uses a _backing array_, rather
 than linked nodes.
 
 By the end of Project 1B, you will...
@@ -88,9 +88,9 @@ You see a `proj1b` directory appear in your repo with the following structure:
 ```sh
  proj1b
 ├── src
-│   └── Deque.java
+│   └── Deque61B.java
 └── tests
-    └── ArrayDequeTest.java
+    └── ArrayDeque61BTest.java
 ```
 
 If you get some sort of error, STOP and either figure it out by carefully
@@ -107,30 +107,30 @@ if you encounter some git issues.
 
 ## Deque: ADT and API
 
-If you need a refresher on `Deque`s, refer to the
+If you need a refresher on `Deque61B`s, refer to the
 [Project 1A spec](../proj1a/index.md#deque-adt-and-api)
-and the `Deque.java` file.
+and the `Deque61B.java` file.
 
 ## Creating the File
 
-Start by creating a file called `ArrayDeque`. This file should be created
+Start by creating a file called `ArrayDeque61B`. This file should be created
 in the `proj1b/src` directory. To do this, right-click on the `src` directory,
-navigate to "New -> Java Class", and give it the name `ArrayDeque`.
+navigate to "New -> Java Class", and give it the name `ArrayDeque61B`.
 
-Just like you did in Project 1A We want our `ArrayDeque` to be able to hold several different types. To enable this, you should edit the declaration of your class so that it reads:
+Just like you did in Project 1A We want our `ArrayDeque61B` to be able to hold several different types. To enable this, you should edit the declaration of your class so that it reads:
 
 ```java
-public class ArrayDeque<T>
+public class ArrayDeque61B<T>
 ```
 
 Recall from lecture that it doesn't actually matter if we use `T` or some other
-string like `ArrayDeque<Glerp>`. However, we recommend using `<T>` for
+string like `ArrayDeque61B<Glerp>`. However, we recommend using `<T>` for
 consistency with other Java code.
 
-We also want to tell Java that every `ArrayDeque` is a `Deque`, so that users can write code like `Deque<String> lld1 = new ArrayDeque<>();`. To enable this, change the declaration of your class so that it reads:
+We also want to tell Java that every `ArrayDeque61B` is a `Deque61B`, so that users can write code like `Deque61B<String> lld1 = new ArrayDeque61B<>();`. To enable this, change the declaration of your class so that it reads:
 
 ```java
-public class ArrayDeque<T> implements Deque<T>
+public class ArrayDeque61B<T> implements Deque61B<T>
 ```
 
 Once you've done this step, you'll likely see a squiggly red line under the
@@ -150,7 +150,7 @@ Lastly, you should create an empty constructor. To do this, add the following
 code to your file, leaving the constructor blank for now.
 
 ```java
-public ArrayDeque() {
+public ArrayDeque61B() {
 }
 ```
 
@@ -159,12 +159,12 @@ then "Constructor", though I prefer the typing the code yourself approach.
 
 Now you're ready to get started!
 
-## `ArrayDeque`
+## `ArrayDeque61B`
 
-As your second deque implementation, you'll build the `ArrayDeque` class. This
+As your second deque implementation, you'll build the `ArrayDeque61B` class. This
 deque **must** use a Java array as the backing data structure.
 
-You may add any private helper classes or methods in `ArrayDeque.java` if you
+You may add any private helper classes or methods in `ArrayDeque61B.java` if you
 deem it necessary.
 
 ### Constructor
@@ -227,10 +227,10 @@ Make sure to resize by a geometric factor.
 
 ### `get`
 
-Unlike in `LinkedListDeque`, this method must take **constant time**.
+Unlike in `LinkedListDeque61B`, this method must take **constant time**.
 
 As before, `get` should return `null` when the index is invalid (too large or
-negative). You should disregard the skeleton code comments for `Deque.java`
+negative). You should disregard the skeleton code comments for `Deque61B.java`
 for this case.
 
 {: .task}
@@ -250,7 +250,7 @@ the deque.
 
 ### `toList`
 
-`toList` will continue to be useful to test your `Deque`.
+`toList` will continue to be useful to test your `Deque61B`.
 
 Write the `toList` method. The first line of the method should be something
 like `List<T> returnList = new ArrayList<>()`. **This is one location where you
@@ -258,7 +258,7 @@ are allowed to use a Java data structure.**
 
 {: .warning}
 >Some later methods might seem easy if you use `toList`.
->**You may not call `toList` inside `ArrayDeque`**; there is a test that
+>**You may not call `toList` inside `ArrayDeque61B`**; there is a test that
 >checks for this.
 
 {: .warning}
@@ -346,7 +346,7 @@ copy them over!
 
 - Try to get everything working for a fixed-size array first. This would be good point to start to familiarize yourself.
 - Once you are confident working solution for a fixed-size array, try resizing - consider having a helper method for it!
-- **DO NOT** modify `Deque` interface
+- **DO NOT** modify `Deque61B` interface
 
 
 ### Submit to the Autograder

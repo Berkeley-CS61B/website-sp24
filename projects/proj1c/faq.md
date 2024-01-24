@@ -6,10 +6,10 @@
 # searchable: false
 
 layout: page
-title: "FAQ - Project 1C: Deque Enhancements"
+title: "FAQ - Project 1C: Deque61B Enhancements"
 nav_order: 0
 parent: >-
-  Project 1C: Deques
+  Project 1C: Deque61B Enhancements
 grand_parent: Projects
 has_children: false
 has_toc: false
@@ -24,4 +24,4 @@ Frequently asked questions...
 
 #### Be sure to check that your keep `package deque` when you are copying files.
 
-#### Unchecked cast: 'java.lang.Object[]' to 'T[]'  is fine in the constructor for the ArrayDeque
+#### Unchecked cast: 'java.lang.Object[]' to 'T[]'  is fine in the constructor for the ArrayDeque61B

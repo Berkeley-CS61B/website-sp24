@@ -6,10 +6,10 @@
 # searchable: false
 
 layout: page
-title: "Coverage Tests - Project 1A: Linked List Deque"
+title: "Coverage Tests - Project 1A: Linked List Deque 61B"
 nav_order: 0
 parent: >-
-  Project 1A: LinkedListDeque
+  Project 1A: LinkedListDeque61B
 grand_parent: Projects
 has_children: false
 has_toc: false
@@ -62,5 +62,5 @@ released: false
 
 ### Flags for toList tests
 
-- "to_list_empty": Check that toList works with empty LinkedListDeque.
-- "to_list_nonempty": Check that toList works with non-empty LinkedListDeque.
+- "to_list_empty": Check that toList works with empty LinkedListDeque61B.
+- "to_list_nonempty": Check that toList works with non-empty LinkedListDeque61B.

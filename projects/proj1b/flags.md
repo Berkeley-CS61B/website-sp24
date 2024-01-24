@@ -6,10 +6,10 @@
 # searchable: false
 
 layout: page
-title: "Coverage Tests - Project 1B: Array Deque"
+title: "Coverage Tests - Project 1B: Array Deque 61B"
 nav_order: 0
 parent: >-
-  Project 1B: Deques
+  Project 1B: ArrayDeque61B
 grand_parent: Projects
 has_children: false
 has_toc: false
