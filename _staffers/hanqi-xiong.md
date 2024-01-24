@@ -1,7 +1,7 @@
 ---
 name: Hanqi Xiong
 pronouns: he/him/his
-role: Tutor
+role: tutor
 email: hxiong@berkeley.edu
 website: https://www.youtube.com/watch?v=u1JB_opf2u8
 photo: hanqi-xiong-1.jpg

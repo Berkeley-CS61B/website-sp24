@@ -397,7 +397,7 @@ IntelliJ is a real world, industrial software development application. There are
 many features that we will not use, and you will sometimes encounter situations
 that do not make sense. **Ask for help if you are stuck or something seems
 broken!** It can be very hard to guess the right thing to do in IntelliJ. Check
-out the [IntelliJ WTFS Guide](../../resources/guides/intellij/wtfs.md) for solutions
+out the [IntelliJ WTFS Guide](../../resources/guides/intellij/wtfs/index.md) for solutions
 to some common problems.
 
 **Before continuing, make sure that you have completed all above tasks besides
