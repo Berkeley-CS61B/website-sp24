@@ -216,6 +216,20 @@ git commit -m "resolved merge conflict"
 git push origin main
 ```
 
+## error: You have not concluded your merge (MERGE_HEAD exists).
+
+If you see a message like this:
+
+```
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
+```
+
+Add and commit your current changes, and then pull again.
+
+If, after pulling again, your terminal shows a message like "Please enter a commit message to explain why this merge is necessary," see the section directly after this one.
+
 ## Please enter a commit message to explain why this merge is necessary
 
 If you see a message like this:

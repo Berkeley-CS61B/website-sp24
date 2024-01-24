@@ -10,11 +10,12 @@ On this page, we've compiled resources from past semesters that you may find hel
 
 - [**Academic Resources**](academic/index.md): Student organizations and campus resources for tutoring and other academic advice.
 - [**Conceptual Resources**](conceptual/index.md): Topical guides, visualizations, and other conceptual resources.
+- [**Exam Resources**](exams/index.md): Exam-related resources, including past exams, a problem bank, and a guide on how to study.
 - [**Support Resources**](support/index.md): Course and campus support resources, mostly non-academic.
 
 ## Staff Resources
 
-- [Current TA Resources Thread](TODO)
+- [Current TA Resources Thread](https://edstem.org/us/courses/53369/discussion/4167249)
 
 ---
 
