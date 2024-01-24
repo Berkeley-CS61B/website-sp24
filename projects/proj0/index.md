@@ -423,6 +423,21 @@ To test no-merge tile moves, run the tests in `TestMoveTileUp.java`.
 
 If your implementation is correct up to this point, you should expect to pass `testOneTile` and `testTwoTiles`.
 
+If your code crashes with a message like this:
+
+```
+java.lang.NullPointerException: Cannot invoke "game2048rendering.Tile.value()" because the return value of "game2048logic.Model.tile(int, int)" is null
+```
+
+This probably means that you're trying to call `move` on a null tile. You can't move a non-existent tile, so the program crashes. Here's an example of moving a non-existent tile (you shouldn't do this):
+
+```java
+Tile t = null;
+board.move(2, 3, t);
+```
+You can use the stack trace to figure out which line of code caused the program to crash.
+
+
 ## Task 6: Merging Tiles
 
 Modify the `moveTileUpAsFarAsPossible` method so that it accounts for tiles merging.
@@ -625,6 +640,80 @@ The `Model` class has an instance variable `score` that keeps track of the playe
 At this point, your 2048 implementation should be complete! You should now be passing all of the tests in every testing file.
 
 Testing files such as `TestMultipleMoves` test all the things you write in coordination with each other. Such a test is called an _integration test_ and is incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` until you're passing the rest of the tests!
+
+If you're failing the following tests (click each test to see the input and buggy output):
+
+<details markdown="block">
+<summary>
+"Non-merged tilts for N = 1, 2, 3" in <code>TestNbyN</code>
+</summary>
+Input:
+```text
+|   4|    |   4|
+|   2|  16|   2|
+|    |    |   8|
+```
+
+Buggy output:
+```text
+|    |    |   8|
+|   4|    |   4|
+|   2|  16|   8|
+```
+</details>
+
+<details markdown="block">
+<summary>
+"Multiple moves" in TestMultipleMoves
+</summary>
+Input:
+```text
+|    |    |    |   4|
+|    |    |    |   2|
+|    |    |    |   2|
+|    |    |   4|    |
+```
+
+Buggy output:
+```text
+|    |    |   4|   4|
+|    |    |    |   4|
+|    |    |    |   4|
+|    |    |    |    |
+```
+</details>
+
+<details markdown="block">
+<summary>
+"Multiple Moves 2" in TestMultipleMoves
+</summary>
+Input:
+```text
+|    |   4|   4|   4|
+|    |    |    |   8|
+|    |    |    |  16|
+|   4|    |    |    |
+```
+
+Buggy output:
+```text
+|   4|   4|   4|   4|
+|    |    |    |  16|
+|    |    |    |  32|
+|    |    |    |    |
+```
+</details>
+
+This probably means that you're calling `move` on a tile that does not need to be moved. In other words, you're trying move a tile into its current location. Here's an example of moving a tile into its current location (you shouldn't do this):
+
+```
+Tile t = board.tile(2, 3);
+board.move(2, 3, t);
+```
+
+This causes the `move` method to think that we need to merge the tile with itself to create a tile with double the value. (This is why the buggy output has some tiles in the correct place, but with double the value.)
+
+To fix this bug, make sure that your code never calls `move` when the tile isn't actually moving. For example, you could add an if statement before each call to `move`, checking that you aren't moving the tile into its current location.
 
 ## Style
 
