@@ -53,7 +53,7 @@ much less scaffolding.
 
 {: .task}
 >For this project, you must work alone! Please carefully read the
->[Policy on Collaboration and Cheating](../../../about.md#project-collaboration-policy)
+>[Policy on Collaboration and Cheating](../../policies/index.md#collaboration-and-academic-misconduct)
 >to see what this means exactly. In particular, do not look for solutions online.
 
 {: .info}
@@ -65,7 +65,7 @@ much less scaffolding.
 ### Style
 
 On this project, **we will be enforcing style**. You must follow the
-[style guide](../../guides/style/index.md), or you will be penalized on the
+[style guide](../../resources/guides/style/index.md), or you will be penalized on the
 autograder.
 
 You can and should check your style locally with the CS 61B plugin. **We will
@@ -74,7 +74,7 @@ not remove the velocity limit for failing to check style.**
 ### Getting the Skeleton Files
 
 Follow the instructions in the
-[Assignment Workflow guide](../../guides/assignment-workflow/index.md/#assignment-workflow)
+[Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md/#assignment-workflow)
 to get the skeleton code and open it in IntelliJ. For this project, we will be
 working in the **`proj1a`** directory.
 
@@ -90,7 +90,7 @@ proj1a
 ```
 
 If you get some sort of error, STOP and either figure it out by carefully
-reading the [git WTFs](../../guides/git/wtfs/index.md) or seek help at OH
+reading the [git WTFs](../../resources/guides/git/wtfs.md) or seek help at OH
 or Ed. You'll potentially save yourself a lot of trouble vs. guess-and-check
 with git commands. If you find yourself trying to use commands recommended by
 Google like `force push`,
