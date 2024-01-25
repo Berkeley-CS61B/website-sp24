@@ -15,11 +15,11 @@ has_children: true
 has_toc: false
 has_right_toc: true
 description: >-
-  Project 1 Spec.
+  Project 1A Spec.
 released: false
 ---
 
-Due: September 11th
+Due: Monday, February 5 at 11:59 PM PT
 
 {: .no_toc}
 
