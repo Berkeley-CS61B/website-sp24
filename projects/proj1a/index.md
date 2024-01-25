@@ -14,6 +14,7 @@ parent: >-
 has_children: true
 has_toc: false
 has_right_toc: true
+nav_exclude: true
 description: >-
   Project 1A Spec.
 released: true
@@ -42,9 +43,9 @@ abstract data type called a Double Ended Queue (deque, pronounced "deck").
 By the end of Project 1A, you will...
 
 - Gain an understanding of the usage of a backing linked list in
-  datastructures.
+  data structures.
 - Have experience with using testing and test-driven development to evaluate
-  the correctness of your own datastructures.
+  the correctness of your own data structures.
 
 For Project 1A, we will provide a significant amount of scaffolding by giving
 explicit instructions. In Project 1B, you'll be doing a similar task, but with
@@ -54,13 +55,13 @@ much less scaffolding.
 >This section assumes you have watched and fully digested the lectures up till
 >the DLList lecture, Lecture 5.
 
-{: .task}
+{: .warning}
 >For this project, you must work alone! Please carefully read the
 >[Policy on Collaboration and Cheating](../../policies/index.md#collaboration-and-academic-misconduct)
 >to see what this means exactly. In particular, do not look for solutions online.
-
-{: .info}
->It should go without saying that you may not use any of the built-in
+>
+>
+>It should also go without saying that you may not use any of the built-in
 >`java.util` data structures in your implementation! The whole point is to build
 >your own versions! There are a few places where you may use specific data
 >structures outside of tests, and we will clearly say where.
@@ -127,8 +128,8 @@ we've discussed in class. Here is a definition from the
 We don't need all the methods defined in Java's `Deque`, and have defined
 our own interface, which can be found in `src/Deque61B.java`.
 
-{: .info}
->**Task**: Begin by opening the `Deque61B.java` file and **reading** the
+{: .task}
+>Begin by opening the `Deque61B.java` file and **reading** the
 >documentation in it. We **will not** repeat information that is in the
 >interface file in the specification -- so, it is _on you_ to make sure that you
 >are reading it as you complete the project.
