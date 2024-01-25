@@ -16,8 +16,11 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1A Spec.
-released: false
+released: true
 ---
+
+{: .warning}
+This project has not been officially released yet. The information on this page is subject to change.
 
 Due: Monday, February 5 at 11:59 PM PT
 
@@ -61,6 +64,14 @@ much less scaffolding.
 >`java.util` data structures in your implementation! The whole point is to build
 >your own versions! There are a few places where you may use specific data
 >structures outside of tests, and we will clearly say where.
+
+### Velocity Limiting
+
+On this project, you will have a max of 4 submission tokens to the autograder, each with a refresh rate of 24 hours. Unlike previous assignments, **not all tests will be provided locally**, so it is up to you to write tests to verify the correctness of your own code. See the [Writing Tests](#writing-tests) section for more details.
+
+{: .danger}
+
+**We will not grant extensions for failing to understand the token limiting policy.** If you have questions, please ask!
 
 ### Style
 
