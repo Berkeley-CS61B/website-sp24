@@ -143,6 +143,9 @@ To interact with a Tile object, you will need to use the `value()` method, which
 
 Example of syntax: If `t` is a variable of type `Tile`, representing a tile with value 8, then `t.value()` will return 8.
 
+{: .warning}
+> If you try to call `value()` on a `Tile` object that is `null`, you will get a `NullPointerException`. You can avoid this by checking if the tile is `null` before calling `value()`on it.
+
 ### Testing and Debugging
 
 To test your method, run the tests in `TestEmptySpace.java` by right-clicking the file and selecting "Run 'TestEmptySpace'":
