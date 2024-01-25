@@ -16,7 +16,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1 Spec.
-released: false
+released: true
 ---
 
 Due: September 11th
