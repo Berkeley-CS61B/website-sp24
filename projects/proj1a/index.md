@@ -7,7 +7,7 @@
 #   h_max: 4
 
 layout: page
-title: "Project 1A: LinkedListDeque"
+title: "Project 1A: LinkedListDeque61B"
 nav_order: 1
 parent: >-
   Projects
@@ -84,9 +84,9 @@ You see a `proj1a` directory appear in your repo with the following structure:
 ```text
 proj1a
 ├── src
-│   └── Deque.java
+│   └── Dequ61B.java
 └── tests
-    ├── LinkedListDequeTest.java
+    ├── LinkedListDeque61BTest.java
     └── NodeChecker.java
 ```
 
@@ -102,7 +102,7 @@ You can also watch Professor Hug's [demo](https://www.youtube.com/watch?v=tABtNc
 about how to get started and this [video](https://www.youtube.com/watch?v=Squ8TmG5mX0)
 if you encounter some git issues.
 
-## Deque: ADT and API
+## Deque61B: ADT and API
 
 The double ended queue is very similar to the SLList and AList classes that
 we've discussed in class. Here is a definition from the
@@ -115,15 +115,15 @@ we've discussed in class. Here is a definition from the
 > deques as well as those with no fixed size limit.
 
 We don't need all the methods defined in Java's `Deque`, and have defined
-our own interface, which can be found in `src/Deque.java`.
+our own interface, which can be found in `src/Deque61B.java`.
 
 {: .info}
->**Task**: Begin by opening the `Deque.java` file and **reading** the
+>**Task**: Begin by opening the `Deque61B.java` file and **reading** the
 >documentation in it. We **will not** repeat information that is in the
 >interface file in the specification -- so, it is _on you_ to make sure that you
 >are reading it as you complete the project.
 
-**You should not edit `Deque.java`.**
+**You should not edit `Deque61B.java`.**
 
 {: .danger}
 >Seriously. Do not skip this. You will spend **hours** confused if you skip this
@@ -132,7 +132,7 @@ our own interface, which can be found in `src/Deque.java`.
 {: .danger}
 Please.
 
-## `LinkedListDeque`
+## `LinkedListDeque61B`
 
 ### Assignment Philosophy
 
@@ -156,33 +156,33 @@ this spec.
 
 ### Creating the File
 
-Start by creating a file called `LinkedListDeque`. This file should be created
+Start by creating a file called `LinkedListDeque61B`. This file should be created
 in the `proj1a/src` directory. To do this, right-click on the `src` directory,
-navigate to "New -> Java Class", and give it the name `LinkedListDeque`.
+navigate to "New -> Java Class", and give it the name `LinkedListDeque61B`.
 
-We want our `LinkedListDeque` to be able to hold several different types. For
-example, a `LinkedListDeque<String>` holds `String`s and a
-`LinkedListDeque<Integer>` holds `Integer`s. To enable this, you should
+We want our `LinkedListDeque61B` to be able to hold several different types. For
+example, a `LinkedListDeque61B<String>` holds `String`s and a
+`LinkedListDeque61B<Integer>` holds `Integer`s. To enable this, you should
 edit the declaration of your class so that it reads:
 
 ```java
-public class LinkedListDeque<T>
+public class LinkedListDeque61B<T>
 ```
 
 Recall from lecture that it doesn't actually matter if we use `T` or some other
-string like `LinkedListDeque<Glerp>`. However, we recommend using `<T>` for
+string like `LinkedListDeque61B<Glerp>`. However, we recommend using `<T>` for
 consistency with other Java code.
 
-We also want to tell Java that every `LinkedListDeque` is a `Deque`, so that
-users can write code like `Deque<String> lld1 = new LinkedListDeque<>();`. 
+We also want to tell Java that every `LinkedListDeque61B` is a `Deque61B`, so that
+users can write code like `Deque61B<String> lld1 = new LinkedListDeque61B<>();`. 
 To enable this, change the declaration of your class so that it reads:
 
 ```java
-public class LinkedListDeque<T> implements Deque<T>
+public class LinkedListDeque61B<T> implements Deque61B<T>
 ```
 
-However, this creates an error. In order for a `LinkedListDeque` to be a 
-`Deque`, it needs to implement all the `Deque` methods. However your mouse over
+However, this creates an error. In order for a `LinkedListDeque61B` to be a 
+`Deque61B`, it needs to implement all the `Deque61B` methods. However your mouse over
 the red squiggle, and click the "implement methods" button when the error
 message box pops up. This will autogenerate the method headers for you.
 
@@ -194,7 +194,7 @@ Lastly, you should create an empty constructor. To do this, add the following
 code to your file, leaving the constructor blank for now.
 
 ```java
-public LinkedListDeque() {
+public LinkedListDeque61B() {
 }
 ```
 
@@ -205,7 +205,7 @@ Now you're ready to get started!
 
 ### JUnit Tests
 
-Now open the `LinkedListDequeTest.java` file. You'll see that every line has a
+Now open the `LinkedListDeque61BTest.java` file. You'll see that every line has a
 `//` preceding it. Let's remove all of the `//` comments except last line. To do
 this, highlight all the lines of the file that start with `//`. Then click
 "Code" in the top menu bar, then "Comment with Line Comment". All the lines
@@ -240,16 +240,16 @@ empty list. The possible choices discussed in lecture are:
 As mentioned in lecture, though this last approach seems the most complicated
 at first, it will ultimately lead to the simplest implementation.
 
-Implement the constructor for `LinkedListDeque` to match your chosen topology.
+Implement the constructor for `LinkedListDeque61B` to match your chosen topology.
 Along the way you'll need to create a `Node` class and introduce one or more
 instance variables. This may take you some time to understand fully. Your
-`LinkedListDeque` constructor **must** take 0 arguments.
+`LinkedListDeque61B` constructor **must** take 0 arguments.
 
 You're welcome to pick whichever choice you'd like, but it **must** "look like"
 a `DLList`. That is, the nodes should be doubly linked, and have exactly the
 necessary fields for a doubly linked node. Additionally, you should only have
 one node class, and this node class **must** be an inner, or nested class
-inside `LinkedListDeque`.
+inside `LinkedListDeque61B`.
 
 When you're done, set a breakpoint on the first line of `addFirstTestBasic`.
 Run the test in debug mode, and use
@@ -266,7 +266,7 @@ chose.
 >some way:
 >
 >- It might be defined in a separate file.
->- It might be using an incorrect type to store data. Remember that `Deque` is
+>- It might be using an incorrect type to store data. Remember that `Deque61B` is
   _generic_.
 >- It might have a constructor that takes additional arguments.
 >- It might have too few or too many fields for a doubly-linked node.
@@ -314,7 +314,7 @@ methods we've implemented. That is, there's currently no way to iterate over
 our list and get back its values and see that they are correct.
 
 That's where the `toList` method comes in. When called, this method returns a
-`List` representation of the `Deque`. For example, if the `Deque` has had
+`List` representation of the `Deque61B`. For example, if the `Deque61B` has had
 `addLast(5)`, `addLast(9)`, `addLast(10)`, then `addFirst(3)` called on it,
 then the result of `toList()` should be a `List` with 3 at the front, then 5,
 then 9, then 10. If printed in Java, it'd show up as `[3, 5, 9, 10]`.
@@ -328,7 +328,7 @@ import java.util.ArrayList; // import the ArrayList class
 ```
 
 To verify that your `toList` method is working correctly, you can run the tests
-in `LinkedListDequeTest`. If you pass all the tests, you've established a firm
+in `LinkedListDeque61BTest`. If you pass all the tests, you've established a firm
 foundation upon which to continue working on the project. Woo! If not, use the
 debugger and carefully investigate to see what's wrong with your `toList`
 method. If you get really stuck, go back and verify that your `addFirst` and
@@ -336,12 +336,12 @@ method. If you get really stuck, go back and verify that your `addFirst` and
 
 {: .info}
 >Some later methods might seem easy if you use `toList`.
->**You may not call `toList` inside `LinkedListDeque`**; there is a test that
+>**You may not call `toList` inside `LinkedListDeque61B`**; there is a test that
 >checks for this.
 
 {: .task}
 >**Task**: Implement `toList`, and verify that it is correct with the tests
->in `LinkedListDequeTest`.
+>in `LinkedListDeque61BTest`.
 
 ### The Testing Component
 
@@ -349,8 +349,8 @@ In Project 0, we gave you a full suite of unit tests that you could use to test
 your code locally. In this project, you'll be required to write _your own_ unit
 test suite that provides similar coverage. To give a bit of insight about how
 this works, we will essentially be taking your test file
-(`LinkedListDequeTest.java`) and using it to "test" our staff solution of
-`LinkedListDeque`. Using some autograder magic, we're able to determine which
+(`LinkedListDeque61BTest.java`) and using it to "test" our staff solution of
+`LinkedListDeque61B`. Using some autograder magic, we're able to determine which
 edge cases your tests are able to hit, thus telling us the "coverage" of your
 test suite. So, in order to get a full score on this component, you should try to
 think of any and all corner cases for each of the methods!
@@ -378,7 +378,7 @@ We often write tests using the Arrange-Act-Assert pattern:
 We will often have multiple "act" and "assert" steps in a single test method
 to reduce the amount of boilerplate (repeated) code.
 
-You should write your tests in `LinkedListDequeTest.java`.
+You should write your tests in `LinkedListDeque61BTest.java`.
 
 {: .info}
 >**Note**: The tests that you write in this project will be checked for the
@@ -440,7 +440,7 @@ Let's break down the provided `addLastTestBasic`:
 /** In this test, we use only one assertThat statement. IMO this test is just as good as addFirstTestBasic.
     *  In other words, the tedious work of adding the extra assertThat statements isn't worth it. */
 public void addLastTestBasic() {
-    Deque<String> lld1 = new LinkedListDeque<>();
+    Deque61B<String> lld1 = new LinkedListDeque61B<>();
 
     lld1.addLast("front"); // after this call we expect: ["front"]
     lld1.addLast("middle"); // after this call we expect: ["front", "middle"]
@@ -451,9 +451,9 @@ public void addLastTestBasic() {
 
 - `@Test` tells Java that this is method is a _test_, and should be run when
   we run tests.
-- **Arrange**: We construct a new `Deque`, and add 3 elements to it using
+- **Arrange**: We construct a new `Deque61B`, and add 3 elements to it using
   `addLast`.
-- **Act**: We call `toList` on `Deque`. This implicitly depends on the
+- **Act**: We call `toList` on `Deque61B`. This implicitly depends on the
   earlier `addLast` calls.
 - **Assert**: We use a Truth assertion to check that the `toList` contains
   specific elements in a specific order.
@@ -492,7 +492,7 @@ to explore and find what granularity you prefer.
 #### `get`
 
 Write a test for the `get` method. Make sure to test the cases where `get`
-receives an invalid argument, e.g. `get(28723)` when the `Deque` only has 1
+receives an invalid argument, e.g. `get(28723)` when the `Deque61B` only has 1
 item, or a negative index. In these cases `get` should return `null`.
 
 `get` must use iteration.
@@ -528,7 +528,7 @@ remove 9,999 items, the resulting memory usage should amount to a deque with 1
 item, and not 10,000. Remember that the Java garbage collector will "delete"
 things for us if and only if there are no pointers to that object.
 
-If `Deque` is empty, removing should return `null`.
+If `Deque61B` is empty, removing should return `null`.
 
 {: .task}
 >**Task**: **After you've written tests and verified that they fail**, implement
