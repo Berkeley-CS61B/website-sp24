@@ -74,7 +74,7 @@ lectures:
   - title: "Lists II: SLLists"
     slides: "https://docs.google.com/presentation/d/1Uty7XFuhRuCg3SoaSaViXzJhPTZDoYUV878L2I_pe_k"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqyuN_xxm4o1Woa44dXW_N8"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=Rli_V5yGkrI"
     readings: 
       - title: "Ch 4"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/4.-sllists"

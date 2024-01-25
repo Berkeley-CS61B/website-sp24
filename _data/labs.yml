@@ -33,7 +33,7 @@ labs:
   - title: "Debugging I"
     due: "1/26"
     link: labs/lab02
-    slides:
+    slides: https://docs.google.com/presentation/d/1OZUABfnTdAxB8kyHQ26Gb7WIT0yWeUbadV2KX-bIiQU/edit?usp=sharing
   - title: "Debugging II"
     due: "2/2"
     # link: labs/lab03
