@@ -301,7 +301,7 @@ and have all of them pass with a green checkmark.
 on the autograder that check if you edited those files and you will not pass 
 if there are changes in the file (this includes adding comments). **The 
 local tests prevent you from editing `Bomb.java`, but not `BombTest.java`
-(this is only on the autgrader), so do not touch those files!** 
+(this is only on the autograder), so do not touch those files!** 
 
 The lab is out of 5 points. 
 
