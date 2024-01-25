@@ -251,6 +251,10 @@ necessary fields for a doubly linked node. Additionally, you should only have
 one node class, and this node class **must** be an inner, or nested class
 inside `LinkedListDeque61B`.
 
+{: .danger}
+>The design of your `Node` class is a **strict requirement**. If your `Node` class
+>does not have the fields of a doubly linked node, you will not pass the autograder.
+
 When you're done, set a breakpoint on the first line of `addFirstTestBasic`.
 Run the test in debug mode, and use
 the Step Over (![step-over](img/step-over.png){: .inline}) feature. Use the
