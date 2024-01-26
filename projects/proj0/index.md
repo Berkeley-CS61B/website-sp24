@@ -22,6 +22,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 
 {: warning}
 Note that this project has limited submission tokens. Please see [Submission and Grading](#submission-and-grading) for more details.
+
 ## Overview
 
 Prerequisites:
@@ -41,6 +42,8 @@ In this project, you'll get some practice with Java by creating a playable game 
 If you're not familiar with 2048, [you can try out a demo at this link](http://gabrielecirulli.github.io/2048).
 
 This project can seem daunting at first! There's a lot of starter code that uses Java syntax that you might not have seen before, but it'll be OK! In the real world, you'll often work with codebases that you don't fully understand, and will have to do some tinkering and experimentation to get the results you want. Don't worry, when we get to Project 1, you'll have a chance to start from scratch.
+
+### Using Git
 
 It is important that you commit work to your repository _at frequent intervals_. Version control is a powerful tool for saving yourself when you mess something up or your dog eats your project, but you must use it regularly if it is to be of any use. Feel free to commit every 15 minutes; Git only saves what has changed, even though it acts as if it takes a snapshot of your entire project.
 
@@ -64,7 +67,7 @@ Then you can carry on working on the project until you're ready to commit and pu
 
 The player chooses a direction (using the arrow keys) to _tilt_ the board: north, south, east, or west. All tiles slide in that direction until there is no empty space left in the direction of motion.
 
-As a tile slides, it can possibly _merge_ with another tile with the same number. Each time two tiles merge to form a larger tile, the player earns the number of points on the new tile. You'll implement this in Task 4.
+As a tile slides, it can possibly _merge_ with another tile with the same number. Each time two tiles merge to form a larger tile, the player earns the number of points on the new tile. You'll implement this in Tasks 4-10.
 
 One tile (with value 2 or 4) is randomly generated when the game begins. After each tilt, if the tilt did not change the board state, then no new tiles will be randomly generated. Otherwise, a single randomly generated tile will be added to the board on an empty square. Your code will not be adding any new tiles! We've already done this part for you.
 
