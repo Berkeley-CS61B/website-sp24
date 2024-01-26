@@ -81,7 +81,7 @@ lectures:
   - title: "Lists III: DLLists and Arrays"
     slides: "https://docs.google.com/presentation/d/1jjivjdvD4mx6qb4bd4rUKB6FDZbYtveJ5NKeyVeA1lk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpPjLuN6-QJUFeK_mBZPve4"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=rf8beYo231Q"
     readings: 
       - title: "Ch 5"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/5.-dllists"
