@@ -377,7 +377,7 @@ As an example, suppose you have the board below and press up.
 One way we could accomplish this would be as follows:
 
 ```java
-Tile t = board.tile(3, 0)
+Tile t = board.tile(3, 0);
 board.move(3, 1, t);
 board.move(3, 2, t);
 board.move(3, 3, t);
@@ -387,7 +387,7 @@ However, the graphics code will get confused because the same tile is not suppos
 complete the entire move with one call to `move`, e.g.
 
 ```java
-Tile t = board.tile(3, 0)
+Tile t = board.tile(3, 0);
 board.move(3, 3, t);
 ```
 
@@ -405,7 +405,7 @@ As an example, suppose you have the board below and press up.
 You can generate the correct resulting board with the following code, which will merge the tiles and create a new tile with value 4:
 
 ```java
-Tile t = board.tile(3, 0)
+Tile t = board.tile(3, 0);
 board.move(3, 3, t);
 ```
 
