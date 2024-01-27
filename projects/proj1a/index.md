@@ -268,9 +268,11 @@ As mentioned in lecture, though this last approach seems the most complicated
 at first, it will ultimately lead to the simplest implementation.
 
 Implement the constructor for `LinkedListDeque61B` to match the doubly-linked topology.
-Along the way you'll need to create a `Node` class and introduce one or more
-instance variables. This may take you some time to understand fully. Your
-`LinkedListDeque61B` constructor **must** take 0 arguments.
+
+{: .info}
+>Along the way you'll need to create a `Node` class and introduce one or more
+>instance variables. This may take you some time to understand fully. Your
+>`LinkedListDeque61B` constructor **must** take 0 arguments.
 
 Your nodes should be doubly-linked, and have exactly the
 necessary fields for a doubly-linked node. Additionally, you should only have
