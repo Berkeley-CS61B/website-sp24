@@ -21,9 +21,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-This project has not been officially released yet. The information on this page is subject to change.
-
 Due: Monday, February 5 at 11:59 PM PT
 
 {: .no_toc}
