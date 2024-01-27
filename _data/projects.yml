@@ -31,7 +31,7 @@ projects:
     nonumber: True
   - title: "Project 1A: LinkedListDeque"
     due: "2/5"
-    # link: "projects/proj1/proj1a"
+    link: "projects/proj1/proj1a"
     rowspan: 3
     nonumber: True
   - title: "Project 1B: ArrayDeque"
