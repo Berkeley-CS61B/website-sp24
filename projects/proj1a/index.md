@@ -84,6 +84,8 @@ autograder.
 You can and should check your style locally with the CS 61B plugin. **We will
 not remove the velocity limit for failing to check style.**
 
+**We will not be enforcing style for tests so you can use magic numbers!**
+
 ### Getting the Skeleton Files
 
 Follow the instructions in the
@@ -135,6 +137,7 @@ our own interface, which can be found in `src/Deque61B.java`.
 >interface file in the specification -- so, it is _on you_ to make sure that you
 >are reading it as you complete the project.
 
+{: .danger}
 **You should not edit `Deque61B.java`.**
 
 {: .danger}
@@ -323,7 +326,7 @@ as you change your code. Imagine that you made some minor but uncertain change
 to `addLast`. To verify that you didn't break anything you'd have to go back
 and do that whole process again. Yuck.
 
-(Also, we have just under 1300 students! No way we're doing that to grade
+(Also, we have just under 1500 students! No way we're doing that to grade
 everyone's work.)
 
 What we really want are some automated tests. But unfortunately there's no easy
@@ -376,6 +379,10 @@ think of any and all corner cases for each of the methods!
 Our staff solution uses a circular sentinel topology. Our staff solution also
 only has a constructor that takes 0 arguments, which means that your tests
 should only use a constructor that takes 0 arguments.
+
+{: .danger}
+>Sharing tests are considered **academic misconduct** and **cheating**. 
+>Please don't. This is for you to develop testing skills.
 
 ### Writing Tests
 
