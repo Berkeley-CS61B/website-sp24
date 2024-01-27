@@ -129,6 +129,22 @@ we've discussed in class. Here is a definition from the
 We don't need all the methods defined in Java's `Deque`, and have defined
 our own interface, which can be found in `src/Deque61B.java`.
 
+For example, the `get` method is described as follows, in something called a *Javadoc comment*:
+
+```java
+/** ...
+ * @param index index to get
+ * @return element at {@code index} in the deque
+ */
+T get(int index);
+```
+
+Here, `@param` indicates a parameter to the method, and `@return` indicates the return value of the method. The `@code` tag is used to format as code.
+
+If you hover over the method name in IntelliJ, you'll see a popup that looks like this, which is useful if you want to know what a method does:
+
+![get-javadoc](get-javadoc.png)
+
 {: .task}
 >Begin by opening the `Deque61B.java` file and **reading** the
 >documentation in it. We **will not** repeat information that is in the
@@ -137,12 +153,11 @@ our own interface, which can be found in `src/Deque61B.java`.
 
 **You should not edit `Deque61B.java`.**
 
+**It is on you to read the descriptions of the other methods.**
+
 {: .danger}
 >Seriously. Do not skip this. You will spend **hours** confused if you skip this
 >step. Please save yourself the time and stress!
-
-{: .danger}
-Please.
 
 ## `LinkedListDeque61B`
 
@@ -164,7 +179,6 @@ this spec.
 {: .info}
 >For the intended experience, follow these steps in order. If you do something
 >else and ask us for help, we will refer you back to these steps.
-
 
 ### Creating the File
 
@@ -211,7 +225,7 @@ public LinkedListDeque61B() {
 ```
 
 Note: You can also generate the constructor by clicking "Code", then "Generate"
-then "Constructor", though I prefer the typing the code yourself approach.
+then "Constructor", though we prefer the typing-the-code-manually approach.
 
 Now you're ready to get started!
 
