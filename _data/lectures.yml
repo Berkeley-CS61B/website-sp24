@@ -90,7 +90,7 @@ lectures:
   - title: "Testing"
     slides: "https://docs.google.com/presentation/d/1AxuxcFWc_9U-gmdBRPGcEqE-7Q0-48hEw5Iupbama74"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqRR4OQx_I3YPkA87bO0whh"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=rJ1gCk41lbo"
     readings:
       - title: "Ch 7"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/7.-testing" 
