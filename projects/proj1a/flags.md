@@ -16,7 +16,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1 Flags.
-released: false
+released: true
 ---
 
 ### Flags for add tests

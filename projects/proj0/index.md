@@ -22,6 +22,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 
 {: warning}
 Note that this project has limited submission tokens. Please see [Submission and Grading](#submission-and-grading) for more details.
+
 ## Overview
 
 Prerequisites:
@@ -41,6 +42,8 @@ In this project, you'll get some practice with Java by creating a playable game 
 If you're not familiar with 2048, [you can try out a demo at this link](http://gabrielecirulli.github.io/2048).
 
 This project can seem daunting at first! There's a lot of starter code that uses Java syntax that you might not have seen before, but it'll be OK! In the real world, you'll often work with codebases that you don't fully understand, and will have to do some tinkering and experimentation to get the results you want. Don't worry, when we get to Project 1, you'll have a chance to start from scratch.
+
+### Using Git
 
 It is important that you commit work to your repository _at frequent intervals_. Version control is a powerful tool for saving yourself when you mess something up or your dog eats your project, but you must use it regularly if it is to be of any use. Feel free to commit every 15 minutes; Git only saves what has changed, even though it acts as if it takes a snapshot of your entire project.
 
@@ -64,7 +67,7 @@ Then you can carry on working on the project until you're ready to commit and pu
 
 The player chooses a direction (using the arrow keys) to _tilt_ the board: north, south, east, or west. All tiles slide in that direction until there is no empty space left in the direction of motion.
 
-As a tile slides, it can possibly _merge_ with another tile with the same number. Each time two tiles merge to form a larger tile, the player earns the number of points on the new tile. You'll implement this in Task 4.
+As a tile slides, it can possibly _merge_ with another tile with the same number. Each time two tiles merge to form a larger tile, the player earns the number of points on the new tile. You'll implement this in Tasks 4-10.
 
 One tile (with value 2 or 4) is randomly generated when the game begins. After each tilt, if the tilt did not change the board state, then no new tiles will be randomly generated. Otherwise, a single randomly generated tile will be added to the board on an empty square. Your code will not be adding any new tiles! We've already done this part for you.
 
@@ -143,6 +146,9 @@ To interact with a Tile object, you will need to use the `value()` method, which
 
 Example of syntax: If `t` is a variable of type `Tile`, representing a tile with value 8, then `t.value()` will return 8.
 
+{: .warning}
+> If you try to call `value()` on a `Tile` object that is `null`, you will get a `NullPointerException`. You can avoid this by checking if the tile is `null` before calling `value()`on it.
+
 ### Testing and Debugging
 
 To test your method, run the tests in `TestEmptySpace.java` by right-clicking the file and selecting "Run 'TestEmptySpace'":
@@ -161,14 +167,14 @@ You will run all tests in the same way for the rest of the project (and course!)
 
 `TestEmptySpace` is comprised of the following tests:
 
-1. `testCompletelyEmpty`: calls `emptySpaceExists` on a board with no tiles
-2. `testEmptyTopRow`: calls `emptySpaceExists` on a board with no tiles in the top row
-3. `testEmptyBottomRow`: calls `emptySpaceExists` on a board with no tiles in the bottom row
-4. `testEmptyLeftCol`: calls `emptySpaceExists` on a board with no tiles in the left column
-5. `testEmptyRightCol`: calls `emptySpaceExists` on a board with no tiles in the right column
-6. `testAlmostFullBoard`: calls `emptySpaceExists` on a board with a single empty space
-7. `testFullBoard`: calls `emptySpaceExists` on a board with no empty tiles, but where a legal move exists. Checks that `emptySpaceExists` still returns false.
-8. `testFullBoardNoMerge`: calls `emptySpaceExists` on a board with no empty tiles and where no legal move exists. Checks that `emptySpaceExists` still returns false.
+1. Fully empty board (`testCompletelyEmpty`): calls `emptySpaceExists` on a board with no tiles
+2. Empty top row (`testEmptyTopRow`): calls `emptySpaceExists` on a board with no tiles in the top row
+3. Empty bottom row (`testEmptyBottomRow`): calls `emptySpaceExists` on a board with no tiles in the bottom row
+4. Empty left column (`testEmptyLeftCol`): calls `emptySpaceExists` on a board with no tiles in the left column
+5. Empty right column (`testEmptyRightCol`): calls `emptySpaceExists` on a board with no tiles in the right column
+6. One empty space (`testAlmostFullBoard`): calls `emptySpaceExists` on a board with a single empty space
+7. Full board with valid merge (`testFullBoard`): calls `emptySpaceExists` on a board with no empty tiles, but where a legal move exists. Checks that `emptySpaceExists` still returns false.
+8. Full board (`testFullBoardNoMerge`): calls `emptySpaceExists` on a board with no empty tiles and where no legal move exists. Checks that `emptySpaceExists` still returns false.
 
 If your implementation is correct, all 8 tests should pass.
 
@@ -204,14 +210,14 @@ To test your method, run the tests in `TestMaxTileExists.java`.
 
 `TestMaxTileExists` is comprised of the following tests:
 
-1. `testEmptyBoard`: calls `maxTileExists` on a board with no tiles
-2. `testFullBoardNoMax`: calls `maxTileExists` on a full board with no max tiles
-3. `testFullBoardMax`: calls `maxTileExists` on a full board with a single max tile
-4. `testMultipleMax`: calls `maxTileExists` on a board with several max tiles
-5. `testTopRightCorner`: calls `maxTileExists` on a board with a max tile in the top right corner
-6. `testTopLeftCorner`: calls `maxTileExists` on a board with a max tile in the top left corner
-7. `testBottomLeftCorner`: calls `maxTileExists` on a board with a max tile in the botton left corner
-8. `testBottomRightCorner`: calls `maxTileExists` on a board with a max tile in the bottom right corner
+1. Test empty board (`testEmptyBoard`): calls `maxTileExists` on a board with no tiles
+2. Test no max piece (`testFullBoardNoMax`): calls `maxTileExists` on a full board with no max tiles
+3. Test board with max piece (`testFullBoardMax`): calls `maxTileExists` on a full board with a single max tile
+4. Test board with multiple max pieces (`testMultipleMax`): calls `maxTileExists` on a board with several max tiles
+5. Test board with max piece in top right corner (`testTopRightCorner`): calls `maxTileExists` on a board with a max tile in the top right corner
+6. Test board with max piece in top left corner (`testTopLeftCorner`): calls `maxTileExists` on a board with a max tile in the top left corner
+7. Test board with max piece in the bottom left corner (`testBottomLeftCorner`): calls `maxTileExists` on a board with a max tile in the botton left corner
+8. Test board with max piece in the bottom right corner (`testBottomRightCorner`): calls `maxTileExists` on a board with a max tile in the bottom right corner
 
 If your implementation is correct, all tests should pass.
 
@@ -261,12 +267,12 @@ To test your method, run the tests in `TestAtLeastOneMoveExists.java`.
 
 `TestAtLeastOneMoveExists` is comprised of the following tests:
 
-1. `testEmptySpace`: calls `atLeastOneMoveExists` on a board with empty space
-2. `testAnyDir`: calls `atLeastOneMoveExists` on a full board where a tilt in any direction is a valid move
-3. `testLeftOrRight`: calls `atLeastOneMoveExists` on a full board where left and right tilts are the only valid moves
-4. `testUpOrDown`: calls `atLeastOneMoveExists` on a full board where up and down tilts are the only valid moves
-5. `testMoveExistsMaxPiece`: calls `atLeastOneMoveExists` on a board where some move exists and a max tile is on the board. While having the max tile on the board does mean the game is over, it should not be handled by this method.
-6. `testNoMoveExists1` through `testNoMoveExists5`: calls `atLeastOneMoveExists` on boards where no move exists
+1. Empty Space Exists (`testEmptySpace`): calls `atLeastOneMoveExists` on a board with empty space
+2. Valid Tilt Exists (`testAnyDir`): calls `atLeastOneMoveExists` on a full board where a tilt in any direction is a valid move
+3. Valid Left/Right Tilt (`testLeftOrRight`): calls `atLeastOneMoveExists` on a full board where left and right tilts are the only valid moves
+4. Valid Up/Down Tilt (`testUpOrDown`): calls `atLeastOneMoveExists` on a full board where up and down tilts are the only valid moves
+5. Valid Tilt with Max Tile (`testMoveExistsMaxPiece`): calls `atLeastOneMoveExists` on a board where some move exists and a max tile is on the board. While having the max tile on the board does mean the game is over, it should not be handled by this method.
+6. No Valid Move (`testNoMoveExists1` through `testNoMoveExists5`): calls `atLeastOneMoveExists` on boards where no move exists
 
 If your implementation is correct, all tests should pass.
 
@@ -276,10 +282,10 @@ Once you have `maxTileExists` and `atLeastOneMoveExists` working, you should als
 
 `TestModel` is comprised of the following tests:
 
-1. `testGameOverNoChange1`, `testGameOverNoChange2`: calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
-2. `testGameOverMaxPiece`: calls `gameOver` on a board containing a max piece and no other tiles
-3. `testGameNotOver1`: calls `gameOver` on a full board where a tilt in any direction is a valid move
-4. `testGameNotOver2`: calls `gameOver` on a board with a single empty space
+1. No valid moves (`testGameOverNoChange1`, `testGameOverNoChange2`): calls `gameOver` on a board with no empty space and where tilts in any direction are impossible
+2. Max tile present (`testGameOverMaxPiece`): calls `gameOver` on a board containing a max piece and no other tiles
+3. Valid moves present (`testGameNotOver1`): calls `gameOver` on a full board where a tilt in any direction is a valid move
+4. Valid Right and Down moves (`testGameNotOver2`): calls `gameOver` on a board with a single empty space
 
 One common error that you might encounter is an `ArrayIndexOutOfBoundsException`. Here is what an `ArrayIndexOutOfBoundsException` error message might look like:
 
@@ -371,7 +377,7 @@ As an example, suppose you have the board below and press up.
 One way we could accomplish this would be as follows:
 
 ```java
-Tile t = board.tile(3, 0)
+Tile t = board.tile(3, 0);
 board.move(3, 1, t);
 board.move(3, 2, t);
 board.move(3, 3, t);
@@ -381,7 +387,7 @@ However, the graphics code will get confused because the same tile is not suppos
 complete the entire move with one call to `move`, e.g.
 
 ```java
-Tile t = board.tile(3, 0)
+Tile t = board.tile(3, 0);
 board.move(3, 3, t);
 ```
 
@@ -399,7 +405,7 @@ As an example, suppose you have the board below and press up.
 You can generate the correct resulting board with the following code, which will merge the tiles and create a new tile with value 4:
 
 ```java
-Tile t = board.tile(3, 0)
+Tile t = board.tile(3, 0);
 board.move(3, 3, t);
 ```
 
@@ -416,10 +422,10 @@ To test no-merge tile moves, run the tests in `TestMoveTileUp.java`.
 
 `TestMoveTileUp.java` is comprised of the following tests:
 
-1. `testOneTile`: calls `moveTileUpAsFarAsPossible` on a tile with no tiles above it
-2. `testTwoTiles`: calls `moveTileUpAsFarAsPossible` on a tile with a differently-valued tile above it
-3. `testTwoTilesMergeNoScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Score calculations do not need to be implemented for this test to pass.
-4. `testTwoTilesMergeScore`: calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly. If you are working on the tasks in order from 1 to 10, then this test will not pass until you complete Task 10.
+1. Single tile in empty column (`testOneTile`): calls `moveTileUpAsFarAsPossible` on a tile with no tiles above it
+2. two tiles, different values (`testTwoTiles`): calls `moveTileUpAsFarAsPossible` on a tile with a differently-valued tile above it
+3. two tiles merge no score (`testTwoTilesMergeNoScore`): calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Score calculations do not need to be implemented for this test to pass.
+4. two tiles merge with score update (`testTwoTilesMergeScore`): calls `moveTileUpAsFarAsPossible` on a tile with a tile of the same value above it. Expects that the score will update accordingly. If you are working on the tasks in order from 1 to 10, then this test will not pass until you complete Task 10.
 
 If your implementation is correct up to this point, you should expect to pass `testOneTile` and `testTwoTiles`.
 
@@ -456,7 +462,7 @@ To keep track of whether a tile has been merged on this tilt, you can use the `w
 
 ### Testing and Debugging
 
-If your implementation is correct up to this point, you should now expect to pass `testTwoTilesMergeNoScore` in `TestMoveTileUp.java`.
+If your implementation is correct up to this point, you should now expect to pass "two tiles merge no score" (`testTwoTilesMergeNoScore`) in `TestMoveTileUp.java`.
 
 ## Task 7: Tilt Column
 
@@ -474,9 +480,9 @@ To test the implementation of `tiltColumn(int x)`, run the tests in `TestTiltCol
 
 `TestTiltColumn.java` is comprised of the following tests:
 
-1. `testNoMergeColumn`: calls `tiltColumn` on a column with two tiles that have different values.
-2. `testMergingColumn`: calls `tiltColumn` on a column with two tiles of the same value. Score calculations do not need to be implemented for this test to pass.
-3. `testMergingColumnWithScore`: calls `tiltColumn` on a column with two tiles of the same value. Expects that the score will update accordingly.
+1. No merge (`testNoMergeColumn`): calls `tiltColumn` on a column with two tiles that have different values.
+2. Merge, no score (`testMergingColumn`): calls `tiltColumn` on a column with two tiles of the same value. Score calculations do not need to be implemented for this test to pass.
+3. Merge and score (`testMergingColumnWithScore`): calls `tiltColumn` on a column with two tiles of the same value. Expects that the score will update accordingly.
 
 If your implementation is correct up to this point, you should expect to pass `testNoMergeColumn` and `testMergingColumn`.
 
@@ -496,10 +502,10 @@ To test up-only tilting, run the tests in `TestUpOnly.java`.
 
 `TestUpOnly` is comprised of the following tests:
 
-1. `testUpNoMerge`: calls `tilt` in the up direction on a board with two tiles in different columns. These tiles should move into empty space (no merging).
-2. `testUpBasicMerge`: calls `tilt` in the up direction on a board with two tiles of the same value in the same column. These tiles should merge.
-3. `testUpTripleMerge`: calls `tilt` in the up direction on a board with three tiles of the same value in the same column. The top two tiles should merge, but the bottom tile should not.
-4. `testUpTrickyMerge`: calls `tilt` in the up direction on a board with three tiles in the same column. The top two tiles have the same value and should merge. The bottom tile has the same value as the resulting merged tile, but should still not merge.
+1. Up Tilt (`testUpNoMerge`): calls `tilt` in the up direction on a board with two tiles in different columns. These tiles should move into empty space (no merging).
+2. Up merge (`testUpBasicMerge`): calls `tilt` in the up direction on a board with two tiles of the same value in the same column. These tiles should merge.
+3. Triple merge (`testUpTripleMerge`): calls `tilt` in the up direction on a board with three tiles of the same value in the same column. The top two tiles should merge, but the bottom tile should not.
+4. Limit Merging (`testUpTrickyMerge`): calls `tilt` in the up direction on a board with three tiles in the same column. The top two tiles have the same value and should merge. The bottom tile has the same value as the resulting merged tile, but should still not merge.
 
 If your implementation is correct, only `testUpNoMerge` should pass. Don't worry about the rest of the tests just yet: they should pass once score changes are implemented.
 
@@ -583,7 +589,7 @@ times as you'd like.
 <!--(Start of section).-->
 To test no-merge tilting in all directions, run the tests in `TestTiltNoMerge.java`.
 
-The error messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the `testUpTrickyMerge` test. After clicking that test, we'll see this:
+The error messages for these are different, so let's look at one. Say we run all the tests, notice we're failing the "Limit Merging" (`testUpTrickyMerge`) test. After clicking that test, we'll see this:
 
 ![testUpTrickyMerge Error Message](img/test-up-error-msg.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
