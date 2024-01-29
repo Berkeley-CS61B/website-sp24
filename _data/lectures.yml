@@ -88,7 +88,7 @@ lectures:
       - title: "Ch 6"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/6.-arrays"
   - title: "Testing"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1AxuxcFWc_9U-gmdBRPGcEqE-7Q0-48hEw5Iupbama74"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqRR4OQx_I3YPkA87bO0whh"
     recording: ""
     readings:
