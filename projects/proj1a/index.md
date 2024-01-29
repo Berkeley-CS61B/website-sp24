@@ -14,13 +14,11 @@ parent: >-
 has_children: true
 has_toc: false
 has_right_toc: true
+toc_exclude: true
 description: >-
   Project 1A Spec.
 released: true
 ---
-
-{: .warning}
-This project has not been officially released yet. The information on this page is subject to change.
 
 Due: Monday, February 5 at 11:59 PM PT
 
@@ -42,9 +40,9 @@ abstract data type called a Double Ended Queue (deque, pronounced "deck").
 By the end of Project 1A, you will...
 
 - Gain an understanding of the usage of a backing linked list in
-  datastructures.
+  data structures.
 - Have experience with using testing and test-driven development to evaluate
-  the correctness of your own datastructures.
+  the correctness of your own data structures.
 
 For Project 1A, we will provide a significant amount of scaffolding by giving
 explicit instructions. In Project 1B, you'll be doing a similar task, but with
@@ -54,13 +52,13 @@ much less scaffolding.
 >This section assumes you have watched and fully digested the lectures up till
 >the DLList lecture, Lecture 5.
 
-{: .task}
+{: .warning}
 >For this project, you must work alone! Please carefully read the
 >[Policy on Collaboration and Cheating](../../policies/index.md#collaboration-and-academic-misconduct)
 >to see what this means exactly. In particular, do not look for solutions online.
-
-{: .info}
->It should go without saying that you may not use any of the built-in
+>
+>
+>It should also go without saying that you may not use any of the built-in
 >`java.util` data structures in your implementation! The whole point is to build
 >your own versions! There are a few places where you may use specific data
 >structures outside of tests, and we will clearly say where.
@@ -81,6 +79,8 @@ autograder.
 
 You can and should check your style locally with the CS 61B plugin. **We will
 not remove the velocity limit for failing to check style.**
+
+**We will not be enforcing style for tests so you can use magic numbers!**
 
 ### Getting the Skeleton Files
 
@@ -127,20 +127,36 @@ we've discussed in class. Here is a definition from the
 We don't need all the methods defined in Java's `Deque`, and have defined
 our own interface, which can be found in `src/Deque61B.java`.
 
-{: .info}
->**Task**: Begin by opening the `Deque61B.java` file and **reading** the
+For example, the `get` method is described as follows, in something called a *Javadoc comment*:
+
+```java
+/** ...
+ * @param index index to get
+ * @return element at {@code index} in the deque
+ */
+T get(int index);
+```
+
+Here, `@param` indicates a parameter to the method, and `@return` indicates the return value of the method. The `@code` tag is used to format as code.
+
+If you hover over the method name in IntelliJ, you'll see a popup that looks like this, which is useful if you want to know what a method does:
+
+![get-javadoc](get-javadoc.png)
+
+{: .task}
+>Begin by opening the `Deque61B.java` file and **reading** the
 >documentation in it. We **will not** repeat information that is in the
 >interface file in the specification -- so, it is _on you_ to make sure that you
 >are reading it as you complete the project.
 
+{: .danger}
 **You should not edit `Deque61B.java`.**
+
+**It is on you to read the descriptions of the other methods.**
 
 {: .danger}
 >Seriously. Do not skip this. You will spend **hours** confused if you skip this
 >step. Please save yourself the time and stress!
-
-{: .danger}
-Please.
 
 ## `LinkedListDeque61B`
 
@@ -162,7 +178,6 @@ this spec.
 {: .info}
 >For the intended experience, follow these steps in order. If you do something
 >else and ask us for help, we will refer you back to these steps.
-
 
 ### Creating the File
 
@@ -209,7 +224,7 @@ public LinkedListDeque61B() {
 ```
 
 Note: You can also generate the constructor by clicking "Code", then "Generate"
-then "Constructor", though I prefer the typing the code yourself approach.
+then "Constructor", though we prefer the typing-the-code-manually approach.
 
 Now you're ready to get started!
 
@@ -252,9 +267,11 @@ As mentioned in lecture, though this last approach seems the most complicated
 at first, it will ultimately lead to the simplest implementation.
 
 Implement the constructor for `LinkedListDeque61B` to match the doubly-linked topology.
-Along the way you'll need to create a `Node` class and introduce one or more
-instance variables. This may take you some time to understand fully. Your
-`LinkedListDeque61B` constructor **must** take 0 arguments.
+
+{: .info}
+>Along the way you'll need to create a `Node` class and introduce one or more
+>instance variables. This may take you some time to understand fully. Your
+>`LinkedListDeque61B` constructor **must** take 0 arguments.
 
 Your nodes should be doubly-linked, and have exactly the
 necessary fields for a doubly-linked node. Additionally, you should only have
@@ -321,7 +338,7 @@ as you change your code. Imagine that you made some minor but uncertain change
 to `addLast`. To verify that you didn't break anything you'd have to go back
 and do that whole process again. Yuck.
 
-(Also, we have just under 1300 students! No way we're doing that to grade
+(Also, we have just under 1500 students! No way we're doing that to grade
 everyone's work.)
 
 What we really want are some automated tests. But unfortunately there's no easy
@@ -374,6 +391,10 @@ think of any and all corner cases for each of the methods!
 Our staff solution uses a circular sentinel topology. Our staff solution also
 only has a constructor that takes 0 arguments, which means that your tests
 should only use a constructor that takes 0 arguments.
+
+{: .danger}
+>Sharing tests are considered **academic misconduct** and **cheating**. 
+>Please don't. This is for you to develop testing skills.
 
 ### Writing Tests
 
