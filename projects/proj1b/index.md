@@ -287,6 +287,9 @@ Lastly, write some tests that test the behavior of `removeFirst` and
 
 Do not maintain references to items that are no longer in the deque.
 
+`removeFirst` and `removeLast` **may not** use looping or recursion. Like `addFirst` and `addLast`,
+these operations must take \"constant time.\" Refer to the section on writing `addFirst` and `addLast` 
+for more information on what this means.
 
 
 #### Resizing Down
