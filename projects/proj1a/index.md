@@ -593,6 +593,10 @@ things for us if and only if there are no pointers to that object.
 
 If `Deque61B` is empty, removing should return `null`.
 
+`removeFirst` and `removeLast` **may not** use looping or recursion. Like `addFirst` and `addLast`,
+these operations must take \"constant time.\" Refer to the section on writing `addFirst` and `addLast` 
+for more information on what this means.
+
 {: .task}
 >**Task**: **After you've written tests and verified that they fail**, implement
 >`removeFirst` and `removeLast`.
