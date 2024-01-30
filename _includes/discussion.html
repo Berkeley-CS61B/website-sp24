@@ -63,7 +63,7 @@
 {%- elsif examprep_solutions_exists or regular_solutions_exists -%}
   <br>
   {%- if regular_solutions_exists -%}
-    <a href="{{ filename_regular | relative_url }}">Worksheet</a> / <a href="{{ filename_regular_solutions | relative_url }}">Solutions</a>
+    <a href="{{ filename_regular | relative_url }}">Regular</a> / <a href="{{ filename_regular_solutions | relative_url }}">Solutions</a>
     {%- if include.element.regular_video -%}
       &nbsp;/ <a href="{{ include.element.regular_video | relative_url }}">Video</a>
     {%- endif -%}

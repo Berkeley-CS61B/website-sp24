@@ -14,12 +14,13 @@ parent: >-
 has_children: true
 has_toc: false
 has_right_toc: true
+toc_exclude: true
 description: >-
-  Project 1 Spec.
-released: false
+  Project 1A Spec.
+released: true
 ---
 
-Due: September 11th
+Due: Monday, February 5 at 11:59 PM PT
 
 {: .no_toc}
 
@@ -31,18 +32,17 @@ adding "/faq" to the end of the URL. The FAQ for Project 1A is located
 
 ## Introduction
 
-In Project 0, you were a _client_ of a variety of abstract data types in
-`java.util`. In Project 1A and 1B (and some upcoming labs), you will implement
-your own versions of these data structures! In Project 1, you'll begin by
+In Project 0, you implemented game logic for 2048. In Project 1A and 1B (and some upcoming labs), you will implement
+your own versions of data structures! In Project 1, you'll begin by
 building your own versions of the list-like structure: implementations of a new
 abstract data type called a Double Ended Queue (deque, pronounced "deck").
 
 By the end of Project 1A, you will...
 
 - Gain an understanding of the usage of a backing linked list in
-  datastructures.
+  data structures.
 - Have experience with using testing and test-driven development to evaluate
-  the correctness of your own datastructures.
+  the correctness of your own data structures.
 
 For Project 1A, we will provide a significant amount of scaffolding by giving
 explicit instructions. In Project 1B, you'll be doing a similar task, but with
@@ -52,30 +52,40 @@ much less scaffolding.
 >This section assumes you have watched and fully digested the lectures up till
 >the DLList lecture, Lecture 5.
 
-{: .task}
+{: .warning}
 >For this project, you must work alone! Please carefully read the
->[Policy on Collaboration and Cheating](../../../about.md#project-collaboration-policy)
+>[Policy on Collaboration and Cheating](../../policies/index.md#collaboration-and-academic-misconduct)
 >to see what this means exactly. In particular, do not look for solutions online.
-
-{: .info}
->It should go without saying that you may not use any of the built-in
+>
+>
+>It should also go without saying that you may not use any of the built-in
 >`java.util` data structures in your implementation! The whole point is to build
 >your own versions! There are a few places where you may use specific data
 >structures outside of tests, and we will clearly say where.
 
+### Velocity Limiting
+
+On this project, you will have a max of 4 submission tokens to the autograder, each with a refresh rate of 24 hours. Unlike previous assignments, **not all tests will be provided locally**, so it is up to you to write tests to verify the correctness of your own code. See the [Writing Tests](#writing-tests) section for more details.
+
+{: .danger}
+
+**We will not grant extensions for failing to understand the token limiting policy.** If you have questions, please ask!
+
 ### Style
 
-Starting with this project, **we will be enforcing style**. You must follow the
-[style guide](../../guides/style/index.md), or you will be penalized on the
+On this project, **we will be enforcing style**. You must follow the
+[style guide](../../resources/guides/style/index.md), or you will be penalized on the
 autograder.
 
 You can and should check your style locally with the CS 61B plugin. **We will
 not remove the velocity limit for failing to check style.**
 
+**We will not be enforcing style for tests so you can use magic numbers!**
+
 ### Getting the Skeleton Files
 
 Follow the instructions in the
-[Assignment Workflow guide](../../guides/assignment-workflow/index.md/#assignment-workflow)
+[Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md/#assignment-workflow)
 to get the skeleton code and open it in IntelliJ. For this project, we will be
 working in the **`proj1a`** directory.
 
@@ -84,14 +94,14 @@ You see a `proj1a` directory appear in your repo with the following structure:
 ```text
 proj1a
 ├── src
-│   └── Dequ61B.java
+│   └── Deque61B.java
 └── tests
     ├── LinkedListDeque61BTest.java
-    └── NodeChecker.java
+    └── PreconditionTest.java
 ```
 
 If you get some sort of error, STOP and either figure it out by carefully
-reading the [git WTFs](../../guides/git/wtfs/index.md) or seek help at OH
+reading the [git WTFs](../../resources/guides/git/wtfs.md) or seek help at OH
 or Ed. You'll potentially save yourself a lot of trouble vs. guess-and-check
 with git commands. If you find yourself trying to use commands recommended by
 Google like `force push`,
@@ -117,20 +127,36 @@ we've discussed in class. Here is a definition from the
 We don't need all the methods defined in Java's `Deque`, and have defined
 our own interface, which can be found in `src/Deque61B.java`.
 
-{: .info}
->**Task**: Begin by opening the `Deque61B.java` file and **reading** the
+For example, the `get` method is described as follows, in something called a *Javadoc comment*:
+
+```java
+/** ...
+ * @param index index to get
+ * @return element at {@code index} in the deque
+ */
+T get(int index);
+```
+
+Here, `@param` indicates a parameter to the method, and `@return` indicates the return value of the method. The `@code` tag is used to format as code.
+
+If you hover over the method name in IntelliJ, you'll see a popup that looks like this, which is useful if you want to know what a method does:
+
+![get-javadoc](get-javadoc.png)
+
+{: .task}
+>Begin by opening the `Deque61B.java` file and **reading** the
 >documentation in it. We **will not** repeat information that is in the
 >interface file in the specification -- so, it is _on you_ to make sure that you
 >are reading it as you complete the project.
 
+{: .danger}
 **You should not edit `Deque61B.java`.**
+
+**It is on you to read the descriptions of the other methods.**
 
 {: .danger}
 >Seriously. Do not skip this. You will spend **hours** confused if you skip this
 >step. Please save yourself the time and stress!
-
-{: .danger}
-Please.
 
 ## `LinkedListDeque61B`
 
@@ -153,7 +179,6 @@ this spec.
 >For the intended experience, follow these steps in order. If you do something
 >else and ask us for help, we will refer you back to these steps.
 
-
 ### Creating the File
 
 Start by creating a file called `LinkedListDeque61B`. This file should be created
@@ -174,14 +199,14 @@ string like `LinkedListDeque61B<Glerp>`. However, we recommend using `<T>` for
 consistency with other Java code.
 
 We also want to tell Java that every `LinkedListDeque61B` is a `Deque61B`, so that
-users can write code like `Deque61B<String> lld1 = new LinkedListDeque61B<>();`. 
+users can write code like `Deque61B<String> lld1 = new LinkedListDeque61B<>();`.
 To enable this, change the declaration of your class so that it reads:
 
 ```java
 public class LinkedListDeque61B<T> implements Deque61B<T>
 ```
 
-However, this creates an error. In order for a `LinkedListDeque61B` to be a 
+However, this creates an error. In order for a `LinkedListDeque61B` to be a
 `Deque61B`, it needs to implement all the `Deque61B` methods. However your mouse over
 the red squiggle, and click the "implement methods" button when the error
 message box pops up. This will autogenerate the method headers for you.
@@ -199,11 +224,13 @@ public LinkedListDeque61B() {
 ```
 
 Note: You can also generate the constructor by clicking "Code", then "Generate"
-then "Constructor", though I prefer the typing the code yourself approach.
+then "Constructor", though we prefer the typing-the-code-manually approach.
 
 Now you're ready to get started!
 
 ### JUnit Tests
+
+#### LinkedListDeque61BTest
 
 Now open the `LinkedListDeque61BTest.java` file. You'll see that every line has a
 `//` preceding it. Let's remove all of the `//` comments except last line. To do
@@ -218,21 +245,20 @@ you haven't implemented any methods yet.
 Before you can pass these tests, there's a lot of work you'll need to do, so
 we're going to set aside the tests for now and come back to them much later.
 
+#### PreconditionTest
+
+In this test file, we've provided a few tests that check that your `LinkedListDeque61B` file to check your code structure for correctness. You do not need to understand these tests, but you should be able to run them.
+
 ### Writing and Verifying the Constructor
 
 {: .task}
 >This section assumes you have watched and fully digested the lectures up to
 >**and including** the `DLList` lecture, Lecture 5.
 
-Start by selecting a "topology," or structure that you'd like to represent the
-empty list. The possible choices discussed in lecture are:
+A "topology" is a structure that you'd like to represent the
+linked list. Though there are numerous choices as discussed in lecture, for this project, you are **required** to implement a circular doubly-linked topology with a sentinel:
 
-- The empty list is represented by a null value. [See this slide](https://docs.google.com/presentation/d/10JSf8_Cut4kodFP3MxoPovUVjTGWZ6YFyIuT95NyqTk/edit#slide=id.g829fe3f43_0_146).
-- The empty list is represented by two sentinel nodes that point at each
-  other. The first sentinel node is pointed to by a variable called `first`,
-  and the last sentinel node is pointed to by a variable called `last`.
-  [See this slide.](https://docs.google.com/presentation/d/10JSf8_Cut4kodFP3MxoPovUVjTGWZ6YFyIuT95NyqTk/edit#slide=id.g829fe3f43_0_291)
-- **STRONGLY RECOMMENDED**: The empty list is represented by a single sentinel
+  The empty list is represented by a single sentinel
   node that points at itself. There is a single instance variable called
   `sentinel` that points at this sentinel.
   [See this slide.](https://docs.google.com/presentation/d/10JSf8_Cut4kodFP3MxoPovUVjTGWZ6YFyIuT95NyqTk/edit#slide=id.g829fe3f43_0_376)
@@ -240,14 +266,15 @@ empty list. The possible choices discussed in lecture are:
 As mentioned in lecture, though this last approach seems the most complicated
 at first, it will ultimately lead to the simplest implementation.
 
-Implement the constructor for `LinkedListDeque61B` to match your chosen topology.
-Along the way you'll need to create a `Node` class and introduce one or more
-instance variables. This may take you some time to understand fully. Your
-`LinkedListDeque61B` constructor **must** take 0 arguments.
+Implement the constructor for `LinkedListDeque61B` to match the appropriate topology.
 
-You're welcome to pick whichever choice you'd like, but it **must** "look like"
-a `DLList`. That is, the nodes should be doubly linked, and have exactly the
-necessary fields for a doubly linked node. Additionally, you should only have
+{: .info}
+>Along the way you'll need to create a `Node` class and introduce one or more
+>instance variables. This may take you some time to understand fully. Your
+>`LinkedListDeque61B` constructor **must** take 0 arguments.
+
+Your nodes should be doubly-linked, and have exactly the
+necessary fields (instance variables) for a doubly-linked node. Additionally, you should only have
 one node class, and this node class **must** be an inner, or nested class
 inside `LinkedListDeque61B`.
 
@@ -259,26 +286,27 @@ inside `LinkedListDeque61B`.
 When you're done, set a breakpoint on the first line of `addFirstTestBasic`.
 Run the test in debug mode, and use
 the Step Over (![step-over](img/step-over.png){: .inline}) feature. Use the
-Java Visualizer to verify that your created object matches the topology you
-chose.
+Java Visualizer to verify that your created object matches the expected topology.
 
 {: .task}
->**Task**: Pick a doubly-linked list topology, and implement the constructor. Implement a Node Class. (You would also probably need some instance variables.)
+>**Task**: Implement the constructor. Implement a node class. (You would also probably need some instance variables.)
 >
 >---
 >
->If the test `noNonTrivialFields` fails, your `Node` class is **insufficient** in
->some way:
+>If `PreconditionTest` fails, your implementation is **insufficient** in
+>some way. The test should give you a hint as to what is wrong. Some common mistakes:
 >
->- It might be defined in a separate file.
->- It might be using an incorrect type to store data. Remember that `Deque61B` is
+>- You may be using an incorrect topology. (If you run into a `NullPointerException`, this is likely the case.)
+>- Node might be defined in a separate file.
+>- Node might be using an incorrect type to store data. Remember that `Deque61B` is
   _generic_.
->- It might have a constructor that takes additional arguments.
->- It might have too few or too many fields for a doubly-linked node.
+>- `LinkedListDeque61B` might have a constructor that takes additional arguments.
+>- It might have too few or too many fields (instance variables) for a doubly-linked node.
+>- It might have non-primitive or non-node fields.
 >
 >---
 >
->The tests will not work until you complete `toList`.
+>The other tests may not work until you complete `toList`.
 
 
 ### Writing and Verifying `addFirst` and `addLast`
@@ -310,7 +338,7 @@ as you change your code. Imagine that you made some minor but uncertain change
 to `addLast`. To verify that you didn't break anything you'd have to go back
 and do that whole process again. Yuck.
 
-(Also, we have just under 1300 students! No way we're doing that to grade
+(Also, we have just under 1500 students! No way we're doing that to grade
 everyone's work.)
 
 What we really want are some automated tests. But unfortunately there's no easy
@@ -360,9 +388,13 @@ edge cases your tests are able to hit, thus telling us the "coverage" of your
 test suite. So, in order to get a full score on this component, you should try to
 think of any and all corner cases for each of the methods!
 
-Our staff solution uses a circular sentinel topology. Our staff solution also
+Our staff solution also
 only has a constructor that takes 0 arguments, which means that your tests
 should only use a constructor that takes 0 arguments.
+
+{: .danger}
+>Sharing tests are considered **academic misconduct** and **cheating**.
+>Please don't. This is for you to develop testing skills.
 
 ### Writing Tests
 
@@ -390,8 +422,11 @@ You should write your tests in `LinkedListDeque61BTest.java`.
 >different \"scenarios\" they cover. You will need to cover sufficiently many
 >scenarios, including a few edge cases.
 
+{: .warning}
+> **Passing the coverage checker does not mean that your tests are perfect**! There might still be edge cases that you are missing, as we do not require 100% coverage, and we cannot possibly test every single case. We recommend that you write your own tests to check your code in cases that fail, and not just rely on the coverage checker.
+
 {: .danger}
->**Warning**: While the coverage checker can check how much you *do* to the
+>While the coverage checker can check how much you *do* to the
 >deque, it doesn't check what you *assert* about the deque. If you find yourself
 >failing autograder tests that you think you have coverage for, a good next step
 >is to add additional assertions to your own tests. Examples include verifying
@@ -436,14 +471,37 @@ Truth has many assertions, including `isNull` and `isNotNull`; and
 `isTrue` and `isFalse` for `boolean`s. IntelliJ's autocomplete will often give
 you suggestions for which assertion you can use.
 
+{: .warning}
+> If you do not assert anything, you will pass your own tests, even if your implementation is incorrect! For example, the following test will pass, even if `addFirst` does nothing:
+>
+> ```java
+> @Test
+> public void noAssertionTest() {
+>     Deque61B<String> lld = new LinkedListDeque61B<>();
+>     lld.addFirst("front");
+> }
+>  ```
+>
+> You also must remember to use `.isTrue()` or `.isFalse()` when asserting boolean statements. For example, the following test will always pass, even if `isEmpty` always returns `false`!
+>
+> ```java
+> @Test
+> public void isEmptyTest() {
+>     Deque61B<String> lld = new LinkedListDeque61B<>();
+>     assertThat(lld.isEmpty());
+> }
+> ```
+>
+> The last line of the above test should instead be `assertThat(lld.isEmpty()).isTrue();`.
+
 #### Example Test
 
 Let's break down the provided `addLastTestBasic`:
 
 ```java
 @Test
-/** In this test, we use only one assertThat statement. IMO this test is just as good as addFirstTestBasic.
-    *  In other words, the tedious work of adding the extra assertThat statements isn't worth it. */
+/** In this test, we use only one assertThat statement.
+    *  Sometimes, the tedious work of adding the extra assertion statements isn't worth it. */
 public void addLastTestBasic() {
     Deque61B<String> lld1 = new LinkedListDeque61B<>();
 
@@ -548,7 +606,7 @@ autograder. You may or may not pass everything.
   your local tests did not cover. [Here](./flags.md) is a list of test cases that you should cover.
 - If you fail any of the timing tests, it means that your implementation does
   not meet the timing constraints described above.
-- You will have a token limit of 4 tokens every 24 hours. In the last 2 hours before the deadline, the token limiting will be relaxed and your tokens will recharged every 15 minutes.
+- You will have a token limit of 4 tokens every 24 hours. **We will not reinstate tokens for failing to add/commit/push your code, run style, etc.**
 
 ### Scoring
 
@@ -563,7 +621,7 @@ of which you must implement _completely correctly_ to receive credit.
 4.  **`get` (10%)**: Correctly implement `get`.
 5.  **`getRecursive` (5%)**: Correctly implement `getRecursive`.
 6.  **Removing (30%)**: Correctly implement `removeFirst` and `removeLast`.
-6.  **Integration (10%)**: Pass a integration test suite that randomly calls all the methods. 
+6.  **Integration (10%)**: Pass a integration test suite that randomly calls all the methods.
 
 Additionally, there is a **test coverage (10%)** component. We will run your
 tests against a staff solution, and check how many scenarios and edge cases are

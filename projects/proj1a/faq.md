@@ -16,7 +16,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1A FAQ.
-released: false
+released: true
 ---
 
 ### I'm getting a "Required Type is Deque61B but provided is ..."

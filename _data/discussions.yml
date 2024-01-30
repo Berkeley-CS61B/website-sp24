@@ -51,6 +51,8 @@ discussions:
     examprep_slides: https://docs.google.com/presentation/d/1CG2u9Sgp-UJ0VWmt9Ixa15n8DG2f_ac2YFgQrAoZdh8/edit?usp=sharing
   - title: "Scope, Static, Linked Lists, Arrays"
     solutions: True
+    regular_slides: https://docs.google.com/presentation/d/1lCMS4tFm_vqMIuZts8ET9XYZ-q2YUJOJtPKXA3r8x6E/edit?usp=sharing
+    examprep_slides: https://docs.google.com/presentation/d/1upoomYbKMnTwOg9oRVs-vtEtjrwsBfD6d0yA4SQe-bs/edit?usp=sharing
   - title: "Inheritance"
     solutions: True
   - title: "Comparators, Iterators"
