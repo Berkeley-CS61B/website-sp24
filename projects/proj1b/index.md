@@ -177,11 +177,29 @@ the array (so the new front item in the deque will be the last item in the
 underlying array). This will result in far fewer headaches than non-circular
 approaches.
 
+
 {: .info}
 >See the [Project 1B demo slides](https://docs.google.com/presentation/d/1kjbO8X7-i63NwQ_9wIt4HXr6APp2qc9PkghD-GO7_is/edit#slide=id.g1094ff4355_0_466)
 >for more details. In particular, note that
 >while the conceptual deque and the array contain the same elements, they do not
 >contain them in the same order.
+
+
+We recommend using the `floorMod(int a, int b)` method from Java's built-in `Math` class to assist you in 
+designing a circular approach. This method behaves like the Java `%` operator, but rounds the resulting quotient towards `0`
+instead of `-inf`. In practice, this means that the output will have the same sign as the divisor. Here are a few examples
+using the `floorMod(int a, int b)` method:
+
+
+```java
+    int value1 = Math.floorMod(16, 16); // value1 == 0
+    int value2 = Math.floorMod(-1, 16); // value2 == 15
+    int value3 = Math.floorMod(20, 16); // value3 == 4
+```
+
+You can use the `floorMod(int a, int b)` method by adding the following import statement to the top of your file: 
+`import java.lang.Math;`.
+
 
 {: .task}
 >**Task**: Declare the necessary instance variables, and implement the constructor.
