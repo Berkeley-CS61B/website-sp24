@@ -48,6 +48,17 @@ a.disabled {
   color: $grey-dk-000
 }
 
+a.schedule-title {
+  color: $blue-200;
+  text-decoration: underline;
+  text-decoration-color: #eeebee;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration-color: $blue-200;
+  }
+}
+
 .main-content h4 {
   font-size: 16px !important; 
   font-weight: 500;
