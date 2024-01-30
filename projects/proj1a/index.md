@@ -301,7 +301,7 @@ Java Visualizer to verify that your created object matches the expected topology
 >- Node might be using an incorrect type to store data. Remember that `Deque61B` is
   _generic_.
 >- `LinkedListDeque61B` might have a constructor that takes additional arguments.
->- It might have too few or too many fields (variables) for a doubly-linked node.
+>- It might have too few or too many fields (instance variables) for a doubly-linked node.
 >- It might have non-primitive or non-node fields.
 >
 >---
