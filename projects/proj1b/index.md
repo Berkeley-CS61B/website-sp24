@@ -317,8 +317,8 @@ proportional to the number of items. For example, if you add 10,000 items to
 the deque, and then remove 9,999 items, you shouldn't still be using an array
 that can hold 10,000 items. For arrays of length 16 or more, your usage factor
 should always be at least 25%. This means that before performing a remove
-operation that will bring the number of elements in the array under 25% the
-length of the array, you should resize the size of the array down. For arrays
+operation, if the number of elements in the array is at or under 25% the
+length of the array, you should resize the array down. For arrays
 length 15 or less, your usage factor can be arbitrarily low.
 
 {: .danger}
