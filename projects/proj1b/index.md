@@ -28,6 +28,8 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 1B is located
 [here](faq.md).
 
+Note that this project has limited submission tokens. Please see [Submit to the Autograder](#submit-to-the-autograder) for more details.
+
 ## Introduction
 
 In Project 1A, we built `LinkedListDeque61B`. Now we'll see a different
@@ -385,7 +387,7 @@ autograder. You may or may not pass everything.
   guarantee that you assert everything. [Here](./flags.md) is a list of them!
 - If you fail any of the timing tests, it means that your implementation does
   not meet the timing constraints described above.
-- You will have a token limit of 4 tokens every 24 hours. In the last 2 hours before the deadline, the token limiting will be relaxed and your tokens will recharged every 15 minutes.
+- You will have a token limit of 4 tokens every 24 hours. **We will not reinstate tokens for failing to add/commit/push your code, run style, etc.**
 
 ### Scoring
 
