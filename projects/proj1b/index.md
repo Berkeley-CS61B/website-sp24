@@ -184,7 +184,7 @@ approaches.
 >contain them in the same order.
 
 {: .task}
->**Task**: Declare the necessary instance variables, and implement the constructor.
+>Declare the necessary instance variables, and implement the constructor.
 >
 >---
 >
@@ -221,7 +221,7 @@ Make sure to resize by a geometric factor.
 >a `for` loop in some way.
 
 {: .task}
->**Task**: Implement `addFirst` and `addLast`, and write tests to verify that 
+>Implement `addFirst` and `addLast`, and write tests to verify that 
 >they are correct. Make sure to add enough elements so that
 >your backing array resizes! For more info on resizing, check out [these slides](https://docs.google.com/presentation/d/1AUaNTKX0f-nFqmqEWEEecLxIQh9hrpTDtz_lWVMl5Fw/edit#slide=id.g625dc7e36_0943).
 
@@ -234,7 +234,7 @@ negative). You should disregard the skeleton code comments for `Deque61B.java`
 for this case.
 
 {: .task}
->**Task**: **After you've written tests and verified that they fail**, implement
+>**After you've written tests and verified that they fail**, implement
 >`get`.
 
 
@@ -245,7 +245,7 @@ either method to finish execution should not depend on how many elements are in
 the deque.
 
 {: .task}
->**Task**: **Write tests** for the `isEmpty` and `size` methods, and check that
+>**Write tests** for the `isEmpty` and `size` methods, and check that
 >they fail. Then, implement the methods.
 
 ### `toList`
@@ -266,7 +266,7 @@ are allowed to use a Java data structure.**
 >
 
 {: .task}
->**Task**: Implement `toList`. You are not given tests this time, so you will
+>Implement `toList`. You are not given tests this time, so you will
 >need to write them!
 
 
@@ -307,7 +307,7 @@ length 15 or less, your usage factor can be arbitrarily low.
 >method?).
 
 {: .task}
->**Task**: **After you've written tests and verified that they fail**, implement
+>**After you've written tests and verified that they fail**, implement
 >`removeFirst` and `removeLast`.
 
 {: .danger}
@@ -329,7 +329,7 @@ This method technically shouldn't be in the interface, but it's here to make tes
 ```
 
 {: .task}
-**Task**: implement `getRecursive`.
+"Implement" `getRecursive`.
 
 
 
