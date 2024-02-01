@@ -16,7 +16,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1B FAQ.
-released: false
+released: true
 ---
 
 ### I'm sure I wrote tests for coverage, but I'm not attaining those flags on the grader!

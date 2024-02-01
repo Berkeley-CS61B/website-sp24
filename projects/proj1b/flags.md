@@ -16,7 +16,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1B Coverage Tests.
-released: false
+released: true
 ---
 
 ### Flags for add tests
