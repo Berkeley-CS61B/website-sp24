@@ -28,6 +28,8 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 1B is located
 [here](faq.md).
 
+Note that this project has limited submission tokens. Please see [Submit to the Autograder](#submit-to-the-autograder) for more details.
+
 ## Introduction
 
 In Project 1A, we built `LinkedListDeque61B`. Now we'll see a different
@@ -177,11 +179,29 @@ the array (so the new front item in the deque will be the last item in the
 underlying array). This will result in far fewer headaches than non-circular
 approaches.
 
+
 {: .info}
 >See the [Project 1B demo slides](https://docs.google.com/presentation/d/1kjbO8X7-i63NwQ_9wIt4HXr6APp2qc9PkghD-GO7_is/edit#slide=id.g1094ff4355_0_466)
 >for more details. In particular, note that
 >while the conceptual deque and the array contain the same elements, they do not
 >contain them in the same order.
+
+
+We recommend using the `floorMod(int a, int b)` method from Java's built-in `Math` class to assist you in 
+designing a circular approach. This method behaves like the Java `%` operator, but rounds the resulting quotient towards `0`
+instead of `-inf`. In practice, this means that the output will have the same sign as the divisor. Here are a few examples
+using the `floorMod(int a, int b)` method:
+
+
+```java
+    int value1 = Math.floorMod(16, 16); // value1 == 0
+    int value2 = Math.floorMod(-1, 16); // value2 == 15
+    int value3 = Math.floorMod(20, 16); // value3 == 4
+```
+
+You can use the `floorMod(int a, int b)` method by adding the following import statement to the top of your file: 
+`import java.lang.Math;`.
+
 
 {: .task}
 >Declare the necessary instance variables, and implement the constructor.
@@ -287,6 +307,9 @@ Lastly, write some tests that test the behavior of `removeFirst` and
 
 Do not maintain references to items that are no longer in the deque.
 
+`removeFirst` and `removeLast` **may not** use looping or recursion. Like `addFirst` and `addLast`,
+these operations must take \"constant time.\" Refer to the section on writing `addFirst` and `addLast` 
+for more information on what this means.
 
 
 #### Resizing Down
@@ -296,8 +319,8 @@ proportional to the number of items. For example, if you add 10,000 items to
 the deque, and then remove 9,999 items, you shouldn't still be using an array
 that can hold 10,000 items. For arrays of length 16 or more, your usage factor
 should always be at least 25%. This means that before performing a remove
-operation that will bring the number of elements in the array under 25% the
-length of the array, you should resize the size of the array down. For arrays
+operation, if the number of elements in the array is at or under 25% the
+length of the array, you should resize the array down. For arrays
 length 15 or less, your usage factor can be arbitrarily low.
 
 {: .danger}
@@ -364,7 +387,7 @@ autograder. You may or may not pass everything.
   guarantee that you assert everything. [Here](./flags.md) is a list of them!
 - If you fail any of the timing tests, it means that your implementation does
   not meet the timing constraints described above.
-- You will have a token limit of 4 tokens every 24 hours. In the last 2 hours before the deadline, the token limiting will be relaxed and your tokens will recharged every 15 minutes.
+- You will have a token limit of 4 tokens every 24 hours. **We will not reinstate tokens for failing to add/commit/push your code, run style, etc.**
 
 ### Scoring
 

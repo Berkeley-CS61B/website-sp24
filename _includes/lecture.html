@@ -34,10 +34,18 @@
   {%- assign slides_exists = false -%}
 {%- endif -%}
 
-{%- if include.element.nonumber -%}
-  {{ include.element.title | markdownify }}
-{%- elsif include.element.title -%}
-  {{ include.number }}. {{ include.element.title }}
+
+{%- capture title -%}
+  {%- if include.element.nonumber -%}
+    {{ include.element.title | markdownify }}
+  {%- elsif include.element.title -%}
+    {{ include.number }}. {{ include.element.title }}
+  {%- endif -%}
+{%- endcapture -%}
+{%- if include.element.slides != "" -%}
+<a href="{{ include.element.slides }}" class="schedule-title">{{ title }}</a>
+{%- else -%}
+<a href="{{ include.element.video }}" class="disabled schedule-title">{{ title }}</a>
 {%- endif -%}
 
 {%- assign links_array = "" | split: "/" -%}
@@ -57,22 +65,22 @@
   {%- if include.element.recording != "" -%}
     <a href="{{ include.element.recording }}">Recording</a>
   {%- else -%}
-    <a href="{{ include.element.video }}" class="disabled">Recording</a>
+    <a href="{{ include.element.recording }}" class="disabled">Recording</a>
   {%- endif -%}
   {%- endcapture -%}
 {%- if include.element.recording != nil -%}
   {% assign links_array = links_array | push: recording %}
 {%- endif -%}
 
-{%- capture slides -%}
-  {%- if include.element.slides != "" -%}
-    <a href="{{ include.element.slides }}">Slides</a>
+{%- capture quiz -%}
+  {%- if include.element.quiz != "" -%}
+    <a href="{{ include.element.quiz }}">PP</a>
   {%- else -%}
-    <a href="{{ include.element.video }}" class="disabled">Slides</a>
+    <a href="{{ include.element.quiz }}" class="disabled">PP</a>
   {%- endif -%}
 {%- endcapture -%}
-{%- if include.element.slides != nil -%}
-  {% assign links_array = links_array | push: slides %}
+{%- if include.element.quiz != nil -%}
+  {% assign links_array = links_array | push: quiz %}
 {%- endif -%}
 
 <br>
