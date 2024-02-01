@@ -199,14 +199,14 @@ string like `LinkedListDeque61B<Glerp>`. However, we recommend using `<T>` for
 consistency with other Java code.
 
 We also want to tell Java that every `LinkedListDeque61B` is a `Deque61B`, so that
-users can write code like `Deque61B<String> lld1 = new LinkedListDeque61B<>();`. 
+users can write code like `Deque61B<String> lld1 = new LinkedListDeque61B<>();`.
 To enable this, change the declaration of your class so that it reads:
 
 ```java
 public class LinkedListDeque61B<T> implements Deque61B<T>
 ```
 
-However, this creates an error. In order for a `LinkedListDeque61B` to be a 
+However, this creates an error. In order for a `LinkedListDeque61B` to be a
 `Deque61B`, it needs to implement all the `Deque61B` methods. However your mouse over
 the red squiggle, and click the "implement methods" button when the error
 message box pops up. This will autogenerate the method headers for you.
@@ -247,7 +247,7 @@ we're going to set aside the tests for now and come back to them much later.
 
 #### PreconditionTest
 
-In this test file, we've provided a few tests that check that your LinkedListDeque61B file to check your code structure for correctness. You do not need to understand these tests, but you should be able to run them.
+In this test file, we've provided a few tests that check that your `LinkedListDeque61B` file to check your code structure for correctness. You do not need to understand these tests, but you should be able to run them.
 
 ### Writing and Verifying the Constructor
 
@@ -256,7 +256,7 @@ In this test file, we've provided a few tests that check that your LinkedListDeq
 >**and including** the `DLList` lecture, Lecture 5.
 
 A "topology" is a structure that you'd like to represent the
-linked list. Though there are numerous choices as discussed in lecture, for this project, you are **required** to implement a doubly-linked topology:
+linked list. Though there are numerous choices as discussed in lecture, for this project, you are **required** to implement a circular doubly-linked topology with a sentinel:
 
   The empty list is represented by a single sentinel
   node that points at itself. There is a single instance variable called
@@ -266,7 +266,7 @@ linked list. Though there are numerous choices as discussed in lecture, for this
 As mentioned in lecture, though this last approach seems the most complicated
 at first, it will ultimately lead to the simplest implementation.
 
-Implement the constructor for `LinkedListDeque61B` to match the doubly-linked topology.
+Implement the constructor for `LinkedListDeque61B` to match the appropriate topology.
 
 {: .info}
 >Along the way you'll need to create a `Node` class and introduce one or more
@@ -274,7 +274,7 @@ Implement the constructor for `LinkedListDeque61B` to match the doubly-linked to
 >`LinkedListDeque61B` constructor **must** take 0 arguments.
 
 Your nodes should be doubly-linked, and have exactly the
-necessary fields for a doubly-linked node. Additionally, you should only have
+necessary fields (instance variables) for a doubly-linked node. Additionally, you should only have
 one node class, and this node class **must** be an inner, or nested class
 inside `LinkedListDeque61B`.
 
@@ -286,22 +286,22 @@ inside `LinkedListDeque61B`.
 When you're done, set a breakpoint on the first line of `addFirstTestBasic`.
 Run the test in debug mode, and use
 the Step Over (![step-over](img/step-over.png){: .inline}) feature. Use the
-Java Visualizer to verify that your created object matches the topology you
-chose.
+Java Visualizer to verify that your created object matches the expected topology.
 
 {: .task}
->**Task**: Pick a doubly-linked list topology, and implement the constructor. Implement a node Class. (You would also probably need some instance variables.)
+>**Task**: Implement the constructor. Implement a node class. (You would also probably need some instance variables.)
 >
 >---
 >
 >If `PreconditionTest` fails, your implementation is **insufficient** in
 >some way. The test should give you a hint as to what is wrong. Some common mistakes:
 >
+>- You may be using an incorrect topology. (If you run into a `NullPointerException`, this is likely the case.)
 >- Node might be defined in a separate file.
 >- Node might be using an incorrect type to store data. Remember that `Deque61B` is
   _generic_.
 >- `LinkedListDeque61B` might have a constructor that takes additional arguments.
->- It might have too few or too many fields (variables) for a doubly-linked node.
+>- It might have too few or too many fields (instance variables) for a doubly-linked node.
 >- It might have non-primitive or non-node fields.
 >
 >---
@@ -388,12 +388,12 @@ edge cases your tests are able to hit, thus telling us the "coverage" of your
 test suite. So, in order to get a full score on this component, you should try to
 think of any and all corner cases for each of the methods!
 
-Our staff solution uses a circular sentinel topology. Our staff solution also
+Our staff solution also
 only has a constructor that takes 0 arguments, which means that your tests
 should only use a constructor that takes 0 arguments.
 
 {: .danger}
->Sharing tests are considered **academic misconduct** and **cheating**. 
+>Sharing tests are considered **academic misconduct** and **cheating**.
 >Please don't. This is for you to develop testing skills.
 
 ### Writing Tests
@@ -593,6 +593,10 @@ things for us if and only if there are no pointers to that object.
 
 If `Deque61B` is empty, removing should return `null`.
 
+`removeFirst` and `removeLast` **may not** use looping or recursion. Like `addFirst` and `addLast`,
+these operations must take \"constant time.\" Refer to the section on writing `addFirst` and `addLast` 
+for more information on what this means.
+
 {: .task}
 >**Task**: **After you've written tests and verified that they fail**, implement
 >`removeFirst` and `removeLast`.
@@ -621,7 +625,7 @@ of which you must implement _completely correctly_ to receive credit.
 4.  **`get` (10%)**: Correctly implement `get`.
 5.  **`getRecursive` (5%)**: Correctly implement `getRecursive`.
 6.  **Removing (30%)**: Correctly implement `removeFirst` and `removeLast`.
-6.  **Integration (10%)**: Pass a integration test suite that randomly calls all the methods. 
+6.  **Integration (10%)**: Pass a integration test suite that randomly calls all the methods.
 
 Additionally, there is a **test coverage (10%)** component. We will run your
 tests against a staff solution, and check how many scenarios and edge cases are

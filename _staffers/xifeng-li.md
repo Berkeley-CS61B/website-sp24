@@ -1,7 +1,7 @@
 ---
 name: Xifeng Li
 pronouns: he/him/his
-role: tutor
+role: ta
 email: xifengli@berkeley.edu
 website: 
 photo: xifeng-li-1.jpg
