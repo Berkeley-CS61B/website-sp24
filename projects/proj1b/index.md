@@ -388,6 +388,7 @@ autograder. You may or may not pass everything.
 - If you fail any of the timing tests, it means that your implementation does
   not meet the timing constraints described above.
 - You will have a token limit of 4 tokens every 24 hours. **We will not reinstate tokens for failing to add/commit/push your code, run style, etc.**
+- You may find messages in the autograder response that look something like this: `WARNING: A terminally deprecated method in java.lang.System has been called`. You can safely ignore any line tagged as a `WARNING`.
 
 ### Scoring
 
