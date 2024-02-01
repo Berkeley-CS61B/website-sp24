@@ -1,7 +1,7 @@
 ---
 name: Elaine Shu
 pronouns: she/her/hers
-role: tutor
+role: ta
 email: elaineshu@berkeley.edu
 website: 
 photo: elaine-shu-1.jpg

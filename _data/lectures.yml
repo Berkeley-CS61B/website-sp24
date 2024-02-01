@@ -54,6 +54,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/19NEzpJJ-a0lI-tdz9yC1kP-8Apt2oZm-918IsDiqgYQ"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRq5wRDN8wZFy7GrrJXUtr1q"
     recording: "https://www.youtube.com/watch?v=tby2de4c1u8"
+    quiz: "https://forms.gle/K7SKvrQ3Q19FF3Eh9"
     readings: 
       - title: "Ch 1"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/1.-introduction"
@@ -61,6 +62,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1zt0yh_gzmfjCdB1y7DzTdwNSfTtepnQAtORH7PqebQM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqziLs3JZ6LIH73ZsVtvsGy"
     recording: "https://www.youtube.com/watch?v=PK9ueGEHcjE"
+    quiz: "https://forms.gle/81Dg7rVr8uiFSw3e8"
     readings: 
       - title: "Ch 2"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/2.-defining-and-using-classes"
@@ -68,6 +70,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1G5k4HcjJ7C2fT_9xQdvpfWjKC4xQa--5FnwXPGf0nwg"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpb4EQp0tOFJNZUXHnxTfXm"
     recording: "https://www.youtube.com/watch?v=33B7eyjSO58"
+    quiz: "https://forms.gle/2L3H2zhGJb1BkX2X6"
     readings: 
       - title: "Ch 3"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/3.-references-recursion-and-lists"
@@ -75,12 +78,14 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1Uty7XFuhRuCg3SoaSaViXzJhPTZDoYUV878L2I_pe_k"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqyuN_xxm4o1Woa44dXW_N8"
     recording: "https://www.youtube.com/watch?v=Rli_V5yGkrI"
+    quiz: "https://forms.gle/bmGy9TGXv52sksRa7"
     readings: 
       - title: "Ch 4"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/4.-sllists"
   - title: "Lists III: DLLists and Arrays"
     slides: "https://docs.google.com/presentation/d/1jjivjdvD4mx6qb4bd4rUKB6FDZbYtveJ5NKeyVeA1lk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpPjLuN6-QJUFeK_mBZPve4"
+    quiz: "https://forms.gle/6Z5mfxnEkkabDpmx8"
     recording: "https://www.youtube.com/watch?v=rf8beYo231Q"
     readings: 
       - title: "Ch 5"
@@ -90,6 +95,7 @@ lectures:
   - title: "Testing"
     slides: "https://docs.google.com/presentation/d/1AxuxcFWc_9U-gmdBRPGcEqE-7Q0-48hEw5Iupbama74"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqRR4OQx_I3YPkA87bO0whh"
+    quiz: "https://forms.gle/TABmKf3RiGzTh3eB9"
     recording: "https://www.youtube.com/watch?v=rJ1gCk41lbo"
     readings:
       - title: "Ch 7"
@@ -103,7 +109,8 @@ lectures:
   - title: "Lists IV: Arrays and Lists"
     slides: "https://docs.google.com/presentation/d/1RJuwap1NZDYFUS7eiPy_SZu7oWHJladwuhKQpQcTjt8"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrv834ePjKGB7i1az039-Gw"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=DnYJueFQgs4"
+    quiz: "https://forms.gle/U92vUfsbFM1voi1P7"
     readings: 
       - title: "Ch 8"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/8.-arraylist"
@@ -111,6 +118,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1LxnOVy_k13llkePdQIdBrZ5jEpgRmbrvMilD-ppRjlc"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqJVbwFNWwRrGyBwedwLnuW"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 9"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-inheritance-i-interface-and-implementation-inheritance"
@@ -118,6 +126,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1jVqC44HVViVtajnF18KsZ6MdIfseTfOSerfvxH4pzP0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrLnGlBmWCRXEuKF5Am09yB"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 10"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/10.-inheritance-ii-extends-casting-higher-order-functions"
@@ -125,6 +134,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1WpISEkGajVCwARZy6w-XDF5sofm1cITUhfAlPUnnnos"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqAB5rg3v2NvfF_cb9OJ9cB"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 11"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/11.-subtype-polymorphism-comparators-comparable"
@@ -132,6 +142,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1bahvjVtbMcc2kuyzYQfQtD8EJyIiIkWnSALVSMuyQhI"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrvh9PM0gK9fm7VAD0HdijJ"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 12"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/12.-exceptions-iterators-object-methods"
@@ -139,18 +150,21 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1CH4rsIIvu5pbmoWUNl9QdkPQYYkJc-ptX85CBhytlzM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrajvLNrqCND6CQUbqaR0mU"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 13"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/13.-asymptotics-i"
   - title: "Ask Anything: Midterm 1"
     slides: ""
     recording: ""
+    quiz: ""
   - title: "**Midterm 1 (7-9PM)**"
     nonumber: True
   - title: "Disjoint Sets"
     slides: "https://docs.google.com/presentation/d/18pzklQAvV94ODFpjeB60Rzj79wFHdkIB-ePWR_MeClk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRpMlYLU0hWYDMHNtcGi-Qmm"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 14"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/14.-disjoint-sets"
@@ -160,6 +174,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1zlmNjzu42WAEmyJFG2tYRZJIguExSFq5B__equ3-GaM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqwuAZ5q3P5xUxe2xNZL3an"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 15"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/15.-asymptotics-ii"
@@ -167,6 +182,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1tAXgjwVKsnH7AR-iCvkDM-rQFwrg4OnKVZzqPixZWI8"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrks2Xi7wU8s82FcwPaINYs"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 16"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/16.-adts-and-bsts"
@@ -174,6 +190,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1uQYk0Hxhf0jhnp-aXxoIGNGM2w_yILMyukRctRPc9Uo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoMUlGWsTyt-WHK-SuyXK_E"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 17"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/17.-b-trees"
@@ -181,6 +198,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1WJze5Odoy4ZR1vqPM8X6duaZ5GGm_D7SaYrtOa5RnsA"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrYOYhFXExoXfP8uhHHCIri"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 18"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/18.-red-black-trees"
@@ -188,6 +206,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/12Su6RdBjVCGd5MrKE6Y5s-J4OyBgv--v-4LHjEwtJbU"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr_rFqN57yjZtcw_P4UiJ7a"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 19"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/19.-hashing"
@@ -195,6 +214,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1EGP_BWIbha4xQ4A5PJLAVIQaK6G0RbWZfrVDd0GmS08"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrSxUje7m5-Y41ELVPm50N_"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 20"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/20.-hashing-ii"
@@ -202,6 +222,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1XVJfoSYH2ItiD1rz9yvyEf_HelejbfkYxQgukbgclSY"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrFJrMMOkrShULQ3KeoqZB9"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 21"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/21.-heaps-and-priority-queues"
@@ -209,6 +230,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1Gyke5ZMrgcMuBTa7qHAoklWZB3yf_yqQAymK2nV-Nqs"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoXCSo4Hx8TEZBsIpag6lMs"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 22"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/22.-tree-traversals-and-graphs"
@@ -216,6 +238,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1NKWnXSJ8pUn1E2Cw6zidxMRuXf_aINKCpW7XpEkyz6c"
     video: "https://www.youtube.com/watch?v=YgPtwbWpLaM&list=PLnp31xXvnfRqyRDKtQeHvjxhonhNuaOAK"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 23"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/23.-graph-traversals-and-implementations"
@@ -223,6 +246,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1mT-F0fxm-sVZj9EQS_E_QMv5SVfeCGptI9vsKpyp57Y"
     video: "https://www.youtube.com/watch?v=iMoFtG1md3w&list=PLnp31xXvnfRrbIn8mZ3pmpgygnfwp2zjW"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 24"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/24.-shortest-paths"
@@ -230,6 +254,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/13pPWHDLRUX2TAUUUK5ucEQ6dF3vUjzkj_C_iXDGaTPU"
     video: "https://www.youtube.com/watch?v=vnKK38JS9Ik&list=PLnp31xXvnfRr6RTCpKB1Xj3n9bZffJQ7L"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 25"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/25.-minimum-spanning-trees"
@@ -237,12 +262,14 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1tcKJNY-ultPxwaHtYn-kd-DV7aXcuBQm6resYvpoCkw"
     video: "https://www.youtube.com/watch?v=F8Q-SHW2hAM&list=PLnp31xXvnfRoMxe8IbO1qF3lXwudLHVDk"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 26"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/26.-prefix-operations-and-tries"
   - title: "Software Engineering I"
     slides: ""
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 27"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/27.-software-engineering-i"
@@ -254,6 +281,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1UHVEYtQhV7EQ74ETn5MvCsnRzsCzmp3MvXL84hXbw-g"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRprqOwH0sojH3VLONWXtYM0"
     recording: ""
+    quiz: ""
     readings: 
     - title: "Ch 28"
       link: "https://cs61b-2.gitbook.io/cs61b-textbook/28.-reductions-and-decomposition"
@@ -264,6 +292,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1aleYBt-L8bwyaxw9tXPN3bMI5XxWxmpgfvvSEo9KxD0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrK9o_QZyGOCbQVFTsqOPtN"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 29"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/29.-basic-sorts"
@@ -271,12 +300,14 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1MqmOxfh1c6gS4hk9hvuRR_hWXWTnCIXMqLGXwRX4Pvk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqsfDWZNS86oYmHFY6UKA2t"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 30"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/30.-quicksort"
   - title: "Software Engineering II"
     slides: ""
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 31"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/31.-software-engineering-ii"
@@ -286,12 +317,14 @@ lectures:
     slides: "https://docs.google.com/presentation/d/11vRyW0ZPrsxUhRHCBgkygy01PlL1amB66n9FZQN03wo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrHHQP93qqc_QBNBF_WEQLy"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 32"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/32.-more-quick-sort-sorting-summary"
   - title: "Software Engineering III"
     slides: ""
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 33"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/33.-software-engineering-iii"
@@ -301,6 +334,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/14bF0c-KRCU_pLsPjpqOMMCBzaoDKY8iiRSiI45XWEQc"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqEadgCMXeo1gnlIxnETooG"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 34"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
@@ -308,6 +342,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/14jNEZC-YKUuxIr3Cxsvz1Kb6eX0jCjvjevb1zD8NRj4"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr4cg5TeJZplLTlOVmMNE0d"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 35"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/35.-radix-sorts"
@@ -315,12 +350,14 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1wSTXwNB-D75VbHCtKqnr7QlOQtV-3wg6vTLNpNw7Qwk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoDV1sFRy3Hdx0N6BMZjI1n"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 36"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/36.-sorting-and-data-structures-conclusion"
   - title: "Software Engineering IV"
     slides: ""
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 37"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/37-software-engineering-iv"
@@ -330,6 +367,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1k4tgpf7xaW-uhlHYlp3izZRYtBGMYPVRlHCmmpN6QXQ"
     video: "https://www.youtube.com/playlist?list=PL8FaHk7qbOD6kGO6F1uWKggr-Ie9TCMUZ&disable_polymer=true"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 38"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/38.-compression-and-complexity"
@@ -339,6 +377,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1QFwbmMVE0Wlvg-gnWnemTxRX_t7h6IlhCQU69dcAkaA"
     video: "https://www.youtube.com/playlist?list=PL8FaHk7qbOD5nfUOOXco_8Sx5Nkt-Wgq8"
     recording: ""
+    quiz: ""
     readings: 
       - title: "Ch 39"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/39.-compression-complexity-p-np"
@@ -347,6 +386,7 @@ lectures:
   - title: "Summary, Fun"
     slides: "https://docs.google.com/presentation/d/1MmnYUoi-4Wyt6_3BcBdt_WkrL1XECZ9ypCyUmhW7e2U"
     recording: ""
+    quiz: ""
     classes:
     - optional
   - title: "No Lecture (RRR Week)"
