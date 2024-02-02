@@ -645,7 +645,7 @@ The `Model` class has an instance variable `score` that keeps track of the playe
 
 At this point, your 2048 implementation should be complete! You should now be passing all of the tests in every testing file.
 
-Testing files such as `TestMultipleMoves` test all the things you write in coordination with each other. Such a test is called an _integration test_ and is incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` until you're passing the rest of the tests!
+Testing files such as `TestMultipleMoves` and `TestNbyN` test all the things you write in coordination with each other. Such a test is called an _integration test_ and is incredibly important in testing. While unit tests run things in isolation, integration tests run things all together and are designed to catch obscure bugs that occur as a result of the interaction between different functions you've written. Do not attempt to debug `TestMultipleMoves` or `TestNbyN` until you're passing the rest of the tests!
 
 If you're failing the following tests (click each test to see the input and buggy output):
 

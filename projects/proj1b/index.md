@@ -18,7 +18,7 @@ description: >-
 released: true
 ---
 
-## Due: September 18th
+## Due: Monday, February 12th, 11:59 PM PT 
 
 {: .no_toc}
 
