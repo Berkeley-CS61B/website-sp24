@@ -118,7 +118,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1LxnOVy_k13llkePdQIdBrZ5jEpgRmbrvMilD-ppRjlc"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqJVbwFNWwRrGyBwedwLnuW"
     recording: "https://www.youtube.com/watch?v=-dobEvKn8mM"
-    quiz: ""
+    quiz: "https://forms.gle/mh3rAQ6RJPshVw9s5"
     readings: 
       - title: "Ch 9"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-inheritance-i-interface-and-implementation-inheritance"
