@@ -188,8 +188,7 @@ approaches.
 
 
 We recommend using the `floorMod(int a, int b)` method from Java's built-in `Math` class to assist you in 
-designing a circular approach. This method behaves like the Java `%` operator, but rounds the resulting quotient towards `0`
-instead of `-inf`. In practice, this means that the output will have the same sign as the divisor. Here are a few examples
+designing a circular approach. Whereas `a % b` might return negative numbers when a is negative, `floorMod(int a, int b)` always return non-negative numbers. In practice, this means that the output will have the same sign as the divisor. Here are a few examples
 using the `floorMod(int a, int b)` method:
 
 
