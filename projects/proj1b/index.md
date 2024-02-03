@@ -60,7 +60,7 @@ you should do, but not how.
 
 {: .task}
 >For this project, you must work alone! Please carefully read the
->[Policy on Collaboration and Cheating](../../../about.md#project-collaboration)
+>[Policy on Collaboration and Cheating](../../policies/index.md#collaboration-and-academic-misconduct)
 >to see what this means exactly. In particular, do not look for solutions online.
 
 {: .danger}
@@ -281,7 +281,7 @@ are allowed to use a Java data structure.**
 >**You may not call `toList` inside `ArrayDeque61B`**; there is a test that
 >checks for this.
 
-{: .warning}
+{: .info}
 >**Hint** One of the other methods may be helpful for implementing this method.
 >
 
