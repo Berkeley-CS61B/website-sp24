@@ -36,7 +36,7 @@ projects:
     nonumber: True
   - title: "Project 1B: ArrayDeque61B"
     due: "2/12"
-    link: "projects/proj1/proj1b"
+    link: "projects/proj1b"
     rowspan: 3
     nonumber: True
   - title: "Project 1C: Deque Extensions"
