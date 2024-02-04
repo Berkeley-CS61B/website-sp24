@@ -40,7 +40,7 @@ By the end of Project 1B, you will...
 
 - Gain an understanding of the implementation of a backing array in
   data structures.
-- Have more experience using testing and test-driven developoment to verify
+- Have more experience using testing and test-driven development to verify
   the correctness of these data structures.
 
 {: .info}
