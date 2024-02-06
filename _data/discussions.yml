@@ -48,13 +48,19 @@ discussions:
   - title: "Introduction to Java"
     solutions: True
     regular_slides: https://docs.google.com/presentation/d/1cP2rUPxvYcN1NrHw9teDrK19QeoK4JAwz5dMsvj7KdI/edit?usp=sharing
-    examprep_slides: https://docs.google.com/presentation/d/1CG2u9Sgp-UJ0VWmt9Ixa15n8DG2f_ac2YFgQrAoZdh8/edit?usp=sharing
+    examprep_slides: https://docs.google.com/presentation/d/1CG2u9Sgp-UJ0VWmt9Ixa15n8DG2f_ac2YFgQrAoZdh8/edit?usp=sharingd
+    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRobydmi0jaICLlTv0q_lDhT
+    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRoH8ytpcjLoFCkM0v2FVp6C
   - title: "Scope, Static, Linked Lists, Arrays"
     solutions: True
     regular_slides: https://docs.google.com/presentation/d/1lCMS4tFm_vqMIuZts8ET9XYZ-q2YUJOJtPKXA3r8x6E/edit?usp=sharing
     examprep_slides: https://docs.google.com/presentation/d/1upoomYbKMnTwOg9oRVs-vtEtjrwsBfD6d0yA4SQe-bs/edit?usp=sharing
+    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpemggJcC8s64Om7XBMmmWZ
+    examprep_video: https://www.youtube.com/playlist?list=dPLnp31xXvnfRpPzSP6eDAJLsqxHbAqhgkX
   - title: "Inheritance"
     solutions: True
+    regular_slides: https://docs.google.com/presentation/d/10mZuX6onPGO9o7QP7muUNd_onF5YG947JR_TSB1yQ8c/edit?usp=sharing
+    examprep_slides: https://docs.google.com/presentation/d/1r3YxhsYkpAS-UHuJMNfRohICdMhH6FqrnMtvw_cnLLU/edit?usp=drive_link
   - title: "Comparators, Iterators"
     solutions: True
     rowspan: 4

@@ -3,7 +3,7 @@ name: Circle Chen
 pronouns: he/him/his
 role: ta
 email: circlecly@berkeley.edu
-website: circlecly.github.io
+website: https://circlecly.github.io
 photo: circle-chen-1.jpg
 ---
 
