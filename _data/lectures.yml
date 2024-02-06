@@ -126,7 +126,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1jVqC44HVViVtajnF18KsZ6MdIfseTfOSerfvxH4pzP0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrLnGlBmWCRXEuKF5Am09yB"
     recording: "https://www.youtube.com/watch?v=IreQ12TQiHk"
-    quiz: ""
+    quiz: "https://forms.gle/gBa8WGNHoWfCfkVr7"
     readings: 
       - title: "Ch 10"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/10.-inheritance-ii-extends-casting-higher-order-functions"

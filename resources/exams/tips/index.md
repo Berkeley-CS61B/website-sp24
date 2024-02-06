@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exam Prep Tips
-author: The Student Support Team
+author: Teresa Luo
 parent: Exams
 grand_parent: Resources
 has_children: false
