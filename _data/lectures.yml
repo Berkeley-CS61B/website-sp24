@@ -117,15 +117,15 @@ lectures:
   - title: "Inheritance I: Interface and Implementation Inheritance"
     slides: "https://docs.google.com/presentation/d/1LxnOVy_k13llkePdQIdBrZ5jEpgRmbrvMilD-ppRjlc"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqJVbwFNWwRrGyBwedwLnuW"
-    recording: ""
-    quiz: ""
+    recording: "https://www.youtube.com/watch?v=-dobEvKn8mM"
+    quiz: "https://forms.gle/mh3rAQ6RJPshVw9s5"
     readings: 
       - title: "Ch 9"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/9.-inheritance-i-interface-and-implementation-inheritance"
   - title: "Inheritance II: Extends, Casting, Higher Order Functions"
     slides: "https://docs.google.com/presentation/d/1jVqC44HVViVtajnF18KsZ6MdIfseTfOSerfvxH4pzP0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrLnGlBmWCRXEuKF5Am09yB"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=IreQ12TQiHk"
     quiz: ""
     readings: 
       - title: "Ch 10"

@@ -57,8 +57,8 @@ released: true
 
 ### Flags for isEmpty tests
 
-- "is_empty_true": Check that size works on an empty deque.
-- "is_empty_false": Check that size works on a non-empty deque.
+- "is_empty_true": Check that isEmpty works on an empty deque.
+- "is_empty_false": Check that isEmpty works on a non-empty deque.
 
 ### Flags for toList tests
 

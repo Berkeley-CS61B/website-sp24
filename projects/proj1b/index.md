@@ -15,10 +15,10 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1B.
-released: false
+released: true
 ---
 
-## Due: September 18th
+## Due: Monday, February 12th, 11:59 PM PT 
 
 {: .no_toc}
 
@@ -40,7 +40,7 @@ By the end of Project 1B, you will...
 
 - Gain an understanding of the implementation of a backing array in
   data structures.
-- Have more experience using testing and test-driven developoment to verify
+- Have more experience using testing and test-driven development to verify
   the correctness of these data structures.
 
 {: .info}
@@ -60,7 +60,7 @@ you should do, but not how.
 
 {: .task}
 >For this project, you must work alone! Please carefully read the
->[Policy on Collaboration and Cheating](../../../about.md#project-collaboration)
+>[Policy on Collaboration and Cheating](../../policies/index.md#collaboration-and-academic-misconduct)
 >to see what this means exactly. In particular, do not look for solutions online.
 
 {: .danger}
@@ -72,7 +72,7 @@ you should do, but not how.
 ### Style
 
 As in Project 1A, **we will be enforcing style**. You must follow the
-[style guide](../../guides/style/index.md), or you will be penalized on the
+[style guide](../../resources/guides/style/index.md), or you will be penalized on the
 autograder.
 
 You can and should check your style locally with the CS 61B plugin. **We will
@@ -81,7 +81,7 @@ not remove the velocity limit for failing to check style.**
 ### Getting the Skeleton Files
 
 Follow the instructions in the
-[Assignment Workflow guide](../../guides/assignment-workflow/index.md/#assignment-workflow)
+[Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md/#assignment-workflow)
 to get the skeleton code and open it in IntelliJ. For this project, we will be
 working in the **`proj1b`** directory.
 
@@ -96,7 +96,7 @@ You see a `proj1b` directory appear in your repo with the following structure:
 ```
 
 If you get some sort of error, STOP and either figure it out by carefully
-reading the [git WTFs](../../guides/git/wtfs/index.md) or seek help at OH
+reading the [git WTFs](../../resources/guides/git/wtfs.md) or seek help at OH
 or Ed. You'll potentially save yourself a lot of trouble vs. guess-and-check
 with git commands. If you find yourself trying to use commands recommended by
 Google like `force push`,
@@ -188,8 +188,7 @@ approaches.
 
 
 We recommend using the `floorMod(int a, int b)` method from Java's built-in `Math` class to assist you in 
-designing a circular approach. This method behaves like the Java `%` operator, but rounds the resulting quotient towards `0`
-instead of `-inf`. In practice, this means that the output will have the same sign as the divisor. Here are a few examples
+designing a circular approach. Whereas `a % b` might return negative numbers when a is negative, `floorMod(int a, int b)` always return non-negative numbers. In practice, this means that the output will have the same sign as the divisor. Here are a few examples
 using the `floorMod(int a, int b)` method:
 
 
@@ -281,7 +280,7 @@ are allowed to use a Java data structure.**
 >**You may not call `toList` inside `ArrayDeque61B`**; there is a test that
 >checks for this.
 
-{: .warning}
+{: .info}
 >**Hint** One of the other methods may be helpful for implementing this method.
 >
 
@@ -388,6 +387,7 @@ autograder. You may or may not pass everything.
 - If you fail any of the timing tests, it means that your implementation does
   not meet the timing constraints described above.
 - You will have a token limit of 4 tokens every 24 hours. **We will not reinstate tokens for failing to add/commit/push your code, run style, etc.**
+- You may find messages in the autograder response that look something like this: `WARNING: A terminally deprecated method in java.lang.System has been called`. You can safely ignore any line tagged as a `WARNING`.
 
 ### Scoring
 

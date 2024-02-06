@@ -37,7 +37,7 @@ labs:
   - title: "Debugging II"
     due: "2/2"
     link: labs/lab03
-    slides:
+    slides: https://docs.google.com/presentation/d/1pd2j6-VKWVB_RxRg6xIBHRE798deECfm26qa8SYMzPM/edit?usp=sharing
   - title: "Project 1 Workday"
     nonumber: True
   - title: "Timing"

@@ -255,8 +255,7 @@ In this test file, we've provided a few tests that check that your `LinkedListDe
 >This section assumes you have watched and fully digested the lectures up to
 >**and including** the `DLList` lecture, Lecture 5.
 
-A "topology" is a structure that you'd like to represent the
-linked list. Though there are numerous choices as discussed in lecture, for this project, you are **required** to implement a circular doubly-linked topology with a sentinel:
+A "topology" is a structure that you can use to represent the linked list. Though there are numerous choices as discussed in lecture, for this project, you are **required** to implement a circular, doubly-linked topology with a sentinel:
 
   The empty list is represented by a single sentinel
   node that points at itself. There is a single instance variable called
@@ -270,8 +269,7 @@ Implement the constructor for `LinkedListDeque61B` to match the appropriate topo
 
 {: .info}
 >Along the way you'll need to create a `Node` class and introduce one or more
->instance variables. This may take you some time to understand fully. Your
->`LinkedListDeque61B` constructor **must** take 0 arguments.
+>instance variables. This may take you some time to understand fully.
 
 Your nodes should be doubly-linked, and have exactly the
 necessary fields (instance variables) for a doubly-linked node. Additionally, you should only have
@@ -289,7 +287,8 @@ the Step Over (![step-over](img/step-over.png){: .inline}) feature. Use the
 Java Visualizer to verify that your created object matches the expected topology.
 
 {: .task}
->**Task**: Implement the constructor. Implement a node class. (You would also probably need some instance variables.)
+>**Task**: Implement the constructor. Your LinkedListDeque61B` constructor **must** take 0 arguments. Implement a node class. (You would 
+>also probably need some instance variables.)
 >
 >---
 >
