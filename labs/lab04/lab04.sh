@@ -20,4 +20,8 @@ if [[ $result == *"sp24-s"* ]]; then
   exit 0
 fi
 
-git clone "git@github.com:Berkeley-CS61B/git-exercise-sp24.git"
+if ssh -q git@github.com; [ $? -eq 255 ]; then
+   git clone "https://github.com/Berkeley-CS61B/git-exercise-sp24.git"
+else
+   git clone "git@github.com:Berkeley-CS61B/git-exercise-sp24.git"
+fi
