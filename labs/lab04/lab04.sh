@@ -20,4 +20,4 @@ if [[ $result == *"sp24-s"* ]]; then
   exit 0
 fi
 
-git clone "git@github.com:Berkeley-CS61B/git-exercise-sp24.git"
+git clone "git@github.com:Berkeley-CS61B/git-exercise-sp24.git" || git clone "https://github.com/Berkeley-CS61B/git-exercise-sp24.git"
