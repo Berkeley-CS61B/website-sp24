@@ -216,6 +216,9 @@ use loops that iterate through all / most elements of the deque.
 
 #### Resizing Up
 
+{: .warning}
+We recommend you complete the other methods first, verify that they are working correctly without resizing, and come back to resizing later.
+
 The exception to the "constant time" requirement is when the array fills, and
 you need to "resize" to have enough space to add the element. In this case, you
 can take "linear time" to resize the array before adding the element.
