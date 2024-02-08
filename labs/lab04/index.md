@@ -471,7 +471,11 @@ git_exercise_2_task2_password
 git_exercise_2_task3_password
 ```
 
-The passwords should be placed the top 4 lines of your `magic_word.txt`. When you are ready, please submit to Gradescope.
+The passwords should be placed the top 4 lines of your `magic_word.txt`. When you are ready, please 
+submit to Gradescope. 
+
+If you want to play around with the visualizer which we used to make some of the images in this lab, 
+you can find it [here](https://git-school.github.io/visualizing-git/#free-remote).
 
 
 
