@@ -22,8 +22,8 @@ The FAQ for Lab 04 is [here](faq.md).
 Up until this point, we've been using Git and Github to submit assignments, but 
 haven't talked much beyond what is needed. In this lab assignment, we'll revisit 
 some previous git commands that we've shown as well as introduce new ones, so that 
-you'll gain more familiarity with Git (and Github). They'll be exercises throughout 
-this lab, as well as some setup. 
+you'll gain more familiarity with Git (and Github). There will be exercises throughout 
+this lab to help reinforce your understanding of Git.
 
 {: .warning}
 Please don't skip around in this lab and **do not run commands you find online**
@@ -34,7 +34,7 @@ In this lab, we will only have one file, `magic_word.txt`.
 
 ## Git vs Github 
 
-Before we explore the Git commands, let's talk about the difference between Git and Github. 
+Before we explore the Git commands, let's talk about the difference between Git and Github.
 
 ### Git 
 
@@ -44,6 +44,17 @@ help manage different versions of code and track changes made in the source code
 even more useful if there are multiple developers working on one program. Without a version control 
 system, there wouldn't be much communication between developers and changes to the source code 
 will go unknown to other developers. 
+
+For the most part, Git's data model or representation is based on a linked list. We'll talk 
+more about this a little later, but whenever we want to save a snapshot of our repository, 
+we commit it (like we've been doing up until this point when we want to submit an assignment). 
+These commits are, in a way, chained together. Here's a visualization of what that looks 
+like below: 
+
+![git_structure](img/git_structure.png){: style="max-height: 325;" }
+
+This linked list of commits forms a history of the changes you've made. The most recent 
+commit/latest snapshot is the green circle above. 
 
 ### Github 
 
