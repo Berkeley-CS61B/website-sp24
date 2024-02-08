@@ -15,12 +15,15 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1C.
-released: false
+released: true
 ---
 
 ## Due: September 25th
 
 {: .no_toc}
+
+{: .warning}
+This site is still under construction.
 
 ## [FAQ](faq.md)
 
@@ -46,8 +49,9 @@ By the end of Project 1C, you will complete the following:
 
 ### Style
 
+
 As in Project 1B, **we will be enforcing style**. You must follow the
-[style guide](../../guides/style/index.md), or you will be penalized on the
+[style guide](../../resources/guides/style/index.md), or you will be penalized on the
 autograder.
 
 You can and should check your style locally with the CS 61B plugin. **We will
@@ -56,7 +60,7 @@ not remove the velocity limit for failing to check style.**
 ### Getting the Skeleton Files
 
 Follow the instructions in the
-[Assignment Workflow guide](../../guides/assignment-workflow/index.md/#assignment-workflow)
+[Assignment Workflow guide](../../resources/guides/assignment-workflow/index.md/#assignment-workflow)
 to get the skeleton code and open it in IntelliJ. For this project, we will be
 working in the **`proj1c`** directory.
 
@@ -83,7 +87,7 @@ You see a `proj1c` directory appear in your repo with the following structure:
 
 {: .danger}
 >If you get some sort of error, STOP and either figure it out by carefully
->reading the [git WTFs](../../guides/git/wtfs/index.md) or seek help at OH
+>reading the [git WTFs](../../resources/guides/git/wtfs/index.md) or seek help at OH
 >or Ed. You'll potentially save yourself a lot of trouble vs. guess-and-check
 >with git commands. If you find yourself trying to use commands recommended by
 >Google like `force push`,
@@ -197,7 +201,11 @@ Override the equals method in the `ArrayDeque61B` and `LinkedListDeque61B` class
 **Task**: Override the `equals()` method in the `LinkedListDeque61B` and `ArrayDeque61B` classes.
 
 {: .warning}
-Important: You should not use `getClass`, and there's no need to do any casting in your `equals` method. That is, you shouldn't be doing `(ArrayDeque61B) o`. Such `equals` methods are old fashioned and overly complex. Use `instaceof` instead.
+>Important: You should not use `getClass`, and there's no need to do any casting in your `equals` method. That is, you shouldn't be doing `(ArrayDeque61B) o`. Such `equals` methods are old fashioned and overly complex. Use `instanceof` instead.
+>
+>Note: The `instanceof` operator behaves a little strangely with generic types, for reasons beyond the scope of this course. For example, if you want to check if `lst` is an instance of a `List<Integer>`, you should use `lst instanceof List<?>` rather than `lst instanceof List<Integer>`. Unfortunately, this is not able to check the types of the elements, but it's the best we can do.
+
+{: .danger}
 
 {: .warning}
 Important: Make sure you use the `@Override` tag when overriding methods. A common mistake in student code is to try to override `equals(ArrayList<T> other)` rather than `equals(Object other)`. Using the optional `@Override` tag will prevent your code from compiling if you make this mistake. `@Override` is  a great safety net.
@@ -233,18 +241,20 @@ In turn the `hashCode` method, which you have also not overridden, simply return
 **Task**: Override the `toString()` method in the `LinkedListDeque61B` and `ArrayDeque61B` classes, such that the code above prints out `[front, middle, back]`.
 
 {: .warning}
-Hint: Java's implementation of the `List` interface has a `toString` method.
-
-{: .warning}
-Hint: There is a one line solution (see hint 1).
-
-{: .warning}
-Hint: Your implementation for `LinkedListDeque61B` and `ArrayDeque61B` should be exactly the same.
+>Hint: Java's implementation of the `List` interface has a `toString` method.
+>
+>Hint: There is a one line solution (see hint 1).
+>
+>Hint: Your implementation for `LinkedListDeque61B` and `ArrayDeque61B` should be exactly the same.
 
 {: .info}
 >Note: You might ask why we're implementing the same method in two classes rather than providing a `default` method in
 >the `Deque61B` interface. Interfaces are not allowed to provide `default` methods that override `Object` methods. For more
 >see [https://stackoverflow.com/questions/24595266/why-is-it-not-allowed-add-tostring-to-interface-as-default-method](https://stackoverflow.com/questions/24595266/why-is-it-not-allowed-add-tostring-to-interface-as-default-method).
+>
+>---
+>
+>One workaround for this is to provide a `default`, non-`Object` helper method in the `Deque61B` interface and have the implementing classes call it.
 
 #### Testing The Object Methods
 
