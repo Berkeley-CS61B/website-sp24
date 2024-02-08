@@ -57,7 +57,7 @@ other Object types like "String" or "Integer".
 ### When should my get() method return null? 
 You should return null if the index is larger than the size of your ArrayDeque61B, not the underlying array. For instance, if your underlying array has size 8, but your ArrayDeque61B has only called add thrice, then there are only 3 items and any index beyond 2 is out of bounds
 
-### What should the function return when there is nothing in the list? 
+### What should `get()` return when there is nothing in the list? 
 
 Return null!
 
@@ -77,35 +77,6 @@ Take a look here (cs61b sp23 proj1B (ArrayDeque) slides). Keep in mind that it�
 
 Make sure you’re resizing using a multiplicative factor and not adding!
 
-### I’m getting a “Required Type is Deque but provided is …” 
-
-There are two possible issues. Make sure you haven’t accidentally imported java.util.* (or java.util.Deque  or java.util.ArrayDeque). The other possible issue comes with an issue in your class signature.
-
-### I keep seeing a “Cannot invoke java.lang.Integer.intValue() because the return value of ___ is null” error on Gradescope. 
-
-This NullPointerException is likely caused by your addFirst or addLast methods. To test this for LinkedListDeque61B, we have given you a test called bigLLDeque61BTest() that does 1,000,000 addLast operations, followed by 500,000 removeFirsts and 500,000 removeLasts. To find the cause of this bug, try duplicating the test and doing 1,000,000 addFirst operations, as well as copying the entire test and writing an identical version that tests ArrayDeque61B as well.
-
 ### I’m getting an error when trying to @Override getRecursive() in ArrayDeque61B.java. 
 
 Your Deque61B.java interface should not specify a method getRecursive() (that would be saying that every class that implements Deque61B.java should also implement getRecursive(), which is misleading.) Rather, Deque61B.java should not contain getRecursive(), and omit the @Override tag in your implementation in LinkedListDeque61B.
-
-### I’m getting an API error asking me to remove or make my isEmpty() method private. 
-
-Currently our grader doesn’t recognize an implementation of isEmpty within ArrayDeque61B or LinkedListDeque61B. Please follow the spec and provide a default implementation within the Deque61B.java file.
-
-### What is the Precondition test that’s being run on Gradescope? Is it the same one as Project 1A? 
-
-This precondition test is checking that the only instance variables declared in your ArrayDeque61B class are an array and any primitive types (ints, booleans, etc). We forgot to include this test in the skeleton ArrayDeque61BTest.java file that we gave you, but the exact test is written below. If you’re failing this test on Gradescope, try copy pasting the below test into your local test file and running it.
-
-```java
-@Test
-@DisplayName("ArrayDeque61B has no fields besides backing array and primitives")
-void noNonTrivialFields() {
-    List<Field> badFields = Reflection.getFields(ArrayDeque61B.class)
-            .filter(f -> !(f.getType().isPrimitive() || f.getType().equals(Object[].class) || f.isSynthetic()))
-            .toList();
-
-    assertWithMessage("Found fields that are not array or primitives").that(badFields).isEmpty();
-}
-```
-
