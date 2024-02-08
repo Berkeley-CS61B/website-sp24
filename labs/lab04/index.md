@@ -222,7 +222,7 @@ repository. Make sure you don't initialize a repository in your `{{ site.semeste
 <!-- markdownlint-restore -->
 
 Be sure to save this repository and directory until you complete the
-asynchronous checkoff form on [Beacon]({{ site.links.beacon }}). 
+form on [Beacon]({{ site.links.beacon }}). 
 
 {: .task}
 Do the steps above, and complete the first google form. There is a second 
