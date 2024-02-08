@@ -10,6 +10,9 @@ released: true
 nav_exclude: true
 ---
 
+{:. warning} 
+This is a work in progress. This lab is not completed. 
+
 ## FAQ
 
 The FAQ for Lab 04 is [here](faq.md).
