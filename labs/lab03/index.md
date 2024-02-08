@@ -9,7 +9,6 @@ has_right_toc: true
 released: true
 ---
 
-
 ## FAQ
 
 The FAQ for Lab 03 is [here](faq.md).

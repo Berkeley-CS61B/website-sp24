@@ -19,17 +19,15 @@ you will need to be checked off by filling out the form linked on Beacon.
 
 {: .info}
 > If you need help with creating directories, creating files, changing
-> directories, etc., refer back to [_How to Use the Terminal_](terminal.md). Another
-> resource that might be helpful is [Section C of the Using Git Guide](../../resources/guides/git#staging--committing).
+> directories, etc., refer back to [_How to Use the Terminal_](terminal.md). 
 >
-> **As a quick recap, you may find the following git commands useful**: `git init`, `git add`,
-`git commit`, `git status`, `git log`, `git restore`.
+> **As a quick recap, you may find the git commands we just covered useful: 
 
-1.  Create a directory called `lab01-checkoff`. You can put this directory
+1.  Create a directory called `lab04-checkoff`. You can put this directory
     anywhere on your computer (unless you have already cloned your `{{ site.semester }}-s***`
     repository, in which case, you **should not put this directory inside
     your `{{ site.semester }}-s***` repo)**.
-2.  Move into the `lab01-checkoff` directory, and initialize a git repository.
+2.  Move into the `lab04-checkoff` directory, and initialize a git repository.
 3.  Create a file called `61b.txt` in any way you'd like. In this text file,
     add the text "Created 61b.txt".
 4.  Create another file called `61boba.txt` in any way you'd like. In this text file,
@@ -57,7 +55,8 @@ you will need to be checked off by filling out the form linked on Beacon.
 
 Be sure to save this repository and directory until you complete the
 asynchronous checkoff form on [Beacon]({{ site.links.beacon }}) and
-obtain a **magic word**.
+obtain a **magic word**. Place this magic word on the **first line**
+of `magic_word.txt`.
 
 {: .task}
 Do the steps above, then get checked off by filling out the Beacon
