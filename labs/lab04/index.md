@@ -102,9 +102,9 @@ what you've changed.
 ### `status`
 
 If you want to see what changes have been made, you can run `git status` in your repository. It might look 
-a little bit different from below, but it will show what files you have been modified. If they are under 
-"changes not staged for commit", it means they haven't been added to the staging area (aka did not `git add` 
-them). Once they are added, those files will show up under "Changes to be committed".
+a little bit different from below, but it will show what files have been modified. If they are under 
+"changes not staged for commit", it means they haven't been added to the staging area. Once they are
+added, those files will show up under "Changes to be committed".
 
 ```shell
 On branch main
@@ -131,6 +131,10 @@ Changes to be committed:
 	modified:   proj1b/src/ArrayDeque61B.java
 	modified:   proj1b/tests/ArrayDeque61BTest.java
 ```
+
+In both cases, "Changes not staged for commit" and "Changes to be committed" are for files that are already 
+**tracked** or have been saved before in a previous version of your repository. Git will also show 
+**untracked** files, which have not been saved in a previous version of your repository.
 
 ### `log`
 
@@ -175,7 +179,7 @@ files from that commit.
 git restore --source=[commitID] [path_to_file]
 ```
 
-## Git Exercise (Part 1)
+## Git Exercise (Part 1.1) 
 
 Now you're ready to start using git! Your next task is to work through a small
 git workflow by setting up a repository and making a couple commits. At the end,
@@ -187,7 +191,7 @@ repository. Make sure you don't initialize a repository in your `{{ site.semeste
 
 {: .info}
 > If you need help with creating directories, creating files, changing
-> directories, etc., refer back to [_How to Use the Terminal_](terminal.md).
+> directories, etc., refer back to [_How to Use the Terminal_](terminal).
 
 1.  Create a directory called `lab04-checkoff`. You can put this directory
     anywhere on your computer **(but not in your `{{ site.semester }}-s***` repo)**.
@@ -204,6 +208,12 @@ repository. Make sure you don't initialize a repository in your `{{ site.semeste
     The commit message should be: `Updated 61b.txt and added 61boba.txt`.
 8.  Make one more modification to `61b.txt` by changing the text in
     the file to: "61b.txt changed to final version". **Don’t commit this version.**
+    
+    At this point, if you were to type in `git status` and `git log`, you’d see 
+    something similar to the following:
+
+    ![git_checkoff](img/git_checkoff.png)
+
 9.  **Using git only**, restore `61b.txt` to the version in the most recent
     commit.
     <!-- markdownlint-disable MD030 -->
@@ -212,13 +222,11 @@ repository. Make sure you don't initialize a repository in your `{{ site.semeste
 <!-- markdownlint-restore -->
 
 Be sure to save this repository and directory until you complete the
-asynchronous checkoff form on [Beacon]({{ site.links.beacon }}) and
-obtain a **magic word**. Place this magic word on the **first line**
-of `magic_word.txt`.
+asynchronous checkoff form on [Beacon]({{ site.links.beacon }}). 
 
 {: .task}
-Do the steps above, then get checked off by filling out the Beacon
-form.
+Do the steps above, and complete the first google form. There is a second 
+google form to fill out before you get the magic word.
 
 ## Git Commands Continued
 
@@ -373,6 +381,15 @@ This occurs when the local repo is no longer in sync with its remote counterpart
 If you want to keep the local versions of your files, use `git push`.
 If you want to overwrite your local changes with the versions in the remote repo, 
 use `git reset --hard origin/main`.
+
+## Git Exercise (Part 1.2)
+
+Just as you did in Part 1.1, navigate to [Beacon]({{ site.links.beacon }}) and 
+complete the second form. 
+
+Once you finish both google forms (in Part 1.1 and 1.2) and receive full credit, 
+you should be able to obtain a **magic word**. Place this magic word on the 
+**first line** of `magic_word.txt`.
 
 ## Git Exercise (Part 2)
 
