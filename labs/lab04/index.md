@@ -10,7 +10,7 @@ released: true
 nav_exclude: true
 ---
 
-{:. warning} 
+{: .warning} 
 This is a work in progress. This lab is not completed. 
 
 ## FAQ
