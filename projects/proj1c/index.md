@@ -15,12 +15,15 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1C.
-released: false
+released: true
 ---
 
 ## Due: September 25th
 
 {: .no_toc}
+
+{: .warning}
+This site is still under construction.
 
 ## [FAQ](faq.md)
 
