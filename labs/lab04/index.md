@@ -345,6 +345,10 @@ In this section, we'll cover some common issues you might see with Git. This is 
 comprehensive of all issues you may see. You can read more about git issues in our 
 guide [here](../../resources/guides/git/index.md).
 
+{: .danger} 
+While this is meant to help diagnose a Git issue and go through the common ways to
+resolve them, always ask for help if you aren't too sure!
+
 ### Fatal: refusing to merge unrelated histories
 This usually occurs when someone has changed files in the skeleton code after you 
 have pulled. To fix, run `git pull <remote-repo> main --allow-unrelated-histories`. 
