@@ -141,7 +141,7 @@ public void addLastTestBasicWithoutToList() {
 
 Again the issue is that our item cannot be iterated over. The `Truth` library works by iterating over our object (as in the first example), but our `LinkedListDeque61B` does not support iteration.
 
-To fix this, you'll see that we have modified the `Deque61B` interface so that the declaration reads:
+To fix this, you should first modify the `Deque61B` interface so that the declaration reads:
 
 ```java
 public interface Deque61B<T> extends Iterable<T> {
