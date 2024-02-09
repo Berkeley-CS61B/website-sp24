@@ -193,7 +193,7 @@ The issue is that the `Truth` library is using the `equals` method of the `Linke
     }
 ```
 
-That is, the equals method simply checks to see if the addresses of the two objects are the same.
+That is, the equals method simply checks to see if the addresses of the two objects are the same. We want to be able to check whether the two `Deque61B` objects are equal in terms of elements and order so therefore we need a different `equals` method.
 
 Override the equals method in the `ArrayDeque61B` and `LinkedListDeque61B` classes. For guidance on writing an `equals` method, see the [lecture slides](https://docs.google.com/presentation/d/1lIR4--P9NrBqRL9xqP_RQYyK1WJBrBEbriLVpatrRqk/edit#slide=id.g4f922fa56b_2_47) or the [lecture code repository](https://github.com/Berkeley-CS61B/lectureCode-sp23/blob/main/lec12_inheritance4/ArraySet.java).
 
@@ -282,6 +282,13 @@ that is different from the one given in the constructor.
 
 We do not care about the `equals(Object o)` method of this class, so feel free to define it however you think is most
 appropriate. We will not test this method.
+
+For testing, you can use `Comparator.<Integer>naturalOrder()` in your own test files. This `Comparator` is using [naturalOrder()](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#naturalOrder--).
+If your generic type is `Integer`, you can create your `MaxArrayDeque61B` using the following example:
+
+```java
+MaxArrayDeque61B<Integer> maxArrayDeque61B = new MaxArrayDeque61B<Integer>(Comparator.<Integer>naturalOrder());
+```
 
 {: .warning}
 >If you find yourself starting off by copying your entire `ArrayDeque61B`
