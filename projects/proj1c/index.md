@@ -101,7 +101,7 @@ if you encounter some git issues.
 
 ### Object Methods
 
-**If you'd like, you can follow the steps in this short [video guide](https://youtu.be/j0dk9zozYwA) to help you get
+**If you'd like, you can follow the steps in this short [video guide](https://www.youtube.com/watch?v=slKsbcybrr8) to help you get
 set up for Project 1C!**
 
 In order to implement the following methods, you should start by copying and pasting your Project 1A and Project 1B
