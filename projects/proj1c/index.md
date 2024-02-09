@@ -335,13 +335,13 @@ string. We'll be using the Karplus-Strong algorithm, which is quite easy to impl
 The Karplus-Algorithm is simply the following three steps:
 
 1. Replace every item in a `Deque61B` with random noise (`double` values between -0.5 and 0.5).
-2. Remove the front double in the `Deque61B` and average it with the next double in the `Deque61B` (hint: use `removeFirst)`
+2. Play the `double` at the front of the `Deque61B`.
+3. Remove the front `double` in the `Deque61B` and average it with the next `double` in the `Deque61B` (hint: use `removeFirst)`
    and `get()`) multiplied by an energy decay factor of 0.996 (we'll call this entire quantity
-   `newDouble`). Then, add `newDouble` to the back of the `Deque61B`.
-3. Play the `double` (`newDouble`) that you dequeued in step 2. Go back to step 2 (and repeat forever).
+   `newDouble`). Then, add `newDouble` to the back of the `Deque61B`. Go back to step 2 (and repeat forever).
 
-Or visually, if the `Deque61B` is as shown on the top, we'd remove the 0.2, combine it with the 0.4 to form 0.2988, add the
-0.2988, and play the 0.2.
+Or visually, if the `Deque61B` is as shown on the top, we'd play the 0.2, remove it, combine it with the 0.4 to form 0.2988, and add the
+0.2988.
 
 ![karplus-strong](karplus-strong.png)
 
@@ -353,9 +353,9 @@ by your consciousness as pleasing thanks to billions of years of evolution.
 See [this page](http://electronics.howstuffworks.com/speaker6.htm) for more. If you simply do `StdAudio.play(0.9)` and
 never play anything again, the diaphragm shown in the image would just be sitting still 9/10ths of the way forwards.
 
-Complete `GuitarString.java` so that it implements steps 1 and 2 of the Karplus-Strong algorithm. Note that you will
-have to fill your `Deque61B` buffer with zeros in the `GuitarString` constructor. Step 3 will be done by the client of the
-`GuitarString` class.
+Complete `GuitarString.java` so that it implements the Karplus-Strong algorithm. Note that you will
+have to fill your `Deque61B` buffer with zeros in the `GuitarString` constructor. Part of the process will be handled by the client of the
+`GuitarString` class. You are only required to complete the tasks labeled with `TODO`.
 
 {: .danger}
 >Do not call `StdAudio.play` in `GuitarString.java`. This will cause the
