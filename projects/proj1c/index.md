@@ -18,9 +18,10 @@ description: >-
 released: true
 ---
 
-## Due: September 25th
 
 {: .no_toc}
+
+## Due: Monday, February 20th, 11:59 PM PT
 
 {: .warning}
 This site is still under construction.
@@ -87,7 +88,7 @@ You see a `proj1c` directory appear in your repo with the following structure:
 
 {: .danger}
 >If you get some sort of error, STOP and either figure it out by carefully
->reading the [git WTFs](../../resources/guides/git/wtfs/index.md) or seek help at OH
+>reading the [git WTFs](../../resources/guides/git/wtfs.md) or seek help at OH
 >or Ed. You'll potentially save yourself a lot of trouble vs. guess-and-check
 >with git commands. If you find yourself trying to use commands recommended by
 >Google like `force push`,
@@ -101,7 +102,7 @@ if you encounter some git issues.
 
 ### Object Methods
 
-**If you'd like, you can follow the steps in this short [video guide](https://youtu.be/j0dk9zozYwA) to help you get
+**If you'd like, you can follow the steps in this short [video guide](https://www.youtube.com/watch?v=slKsbcybrr8) to help you get
 set up for Project 1C!**
 
 In order to implement the following methods, you should start by copying and pasting your Project 1A and Project 1B
@@ -197,8 +198,15 @@ That is, the equals method simply checks to see if the addresses of the two obje
 
 Override the equals method in the `ArrayDeque61B` and `LinkedListDeque61B` classes. For guidance on writing an `equals` method, see the [lecture slides](https://docs.google.com/presentation/d/1lIR4--P9NrBqRL9xqP_RQYyK1WJBrBEbriLVpatrRqk/edit#slide=id.g4f922fa56b_2_47) or the [lecture code repository](https://github.com/Berkeley-CS61B/lectureCode-sp23/blob/main/lec12_inheritance4/ArraySet.java).
 
+{: .info}
+>Note: You might ask why we're implementing the same method in two classes rather than providing a `default` method in
+>the `Deque61B` interface. Interfaces are not allowed to provide `default` methods that override `Object` methods. For more
+>see [https://stackoverflow.com/questions/24595266/why-is-it-not-allowed-add-tostring-to-interface-as-default-method](https://stackoverflow.com/questions/24595266/why-is-it-not-allowed-add-tostring-to-interface-as-default-method).
+>
+>However, one workaround for this is to provide a `default`, non-`Object` helper method in the `Deque61B` interface and have the implementing classes call it.
+
 {: .task}
-**Task**: Override the `equals()` method in the `LinkedListDeque61B` and `ArrayDeque61B` classes.
+Override the `equals()` method in the `LinkedListDeque61B` and `ArrayDeque61B` classes.
 
 {: .warning}
 >Important: You should not use `getClass`, and there's no need to do any casting in your `equals` method. That is, you shouldn't be doing `(ArrayDeque61B) o`. Such `equals` methods are old fashioned and overly complex. Use `instanceof` instead.
@@ -247,15 +255,6 @@ In turn the `hashCode` method, which you have also not overridden, simply return
 >
 >Hint: Your implementation for `LinkedListDeque61B` and `ArrayDeque61B` should be exactly the same.
 
-{: .info}
->Note: You might ask why we're implementing the same method in two classes rather than providing a `default` method in
->the `Deque61B` interface. Interfaces are not allowed to provide `default` methods that override `Object` methods. For more
->see [https://stackoverflow.com/questions/24595266/why-is-it-not-allowed-add-tostring-to-interface-as-default-method](https://stackoverflow.com/questions/24595266/why-is-it-not-allowed-add-tostring-to-interface-as-default-method).
->
->---
->
->One workaround for this is to provide a `default`, non-`Object` helper method in the `Deque61B` interface and have the implementing classes call it.
-
 #### Testing The Object Methods
 
 We haven't provided you with test files for these three object methods; however, we strongly encourage you to use the
@@ -269,7 +268,7 @@ After you've fully implemented your `ArrayDeque61B` and tested its correctness, 
 **A `MaxArrayDeque61B` has all the methods that an `ArrayDeque61B` has**, but it also has 2 additional methods and a new
 constructor:
 
-- `public MaxArrayDeque61B(Comparator<T> c)`: creates a `MaxArrayDeque61B` with the given `Comparator`.
+- `public MaxArrayDeque61B(Comparator<T> c)`: creates a `MaxArrayDeque61B` with the given `Comparator`. (You may import `java.util.Comparator` for this.)
 - `public T max()`: returns the maximum element in the deque as governed by the previously given `Comparator`. If
   the `MaxArrayDeque61B` is empty, simply return
   `null`.
@@ -283,16 +282,16 @@ that is different from the one given in the constructor.
 We do not care about the `equals(Object o)` method of this class, so feel free to define it however you think is most
 appropriate. We will not test this method.
 
-For testing, you can use `Comparator.<Integer>naturalOrder()` in your own test files. This `Comparator` is using [naturalOrder()](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#naturalOrder--).
+For testing, you can use `Comparator.naturalOrder()` in your own test files. This `Comparator` is using [naturalOrder()](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#naturalOrder--).
 If your generic type is `Integer`, you can create your `MaxArrayDeque61B` using the following example:
 
 ```java
-MaxArrayDeque61B<Integer> maxArrayDeque61B = new MaxArrayDeque61B<Integer>(Comparator.<Integer>naturalOrder());
+MaxArrayDeque61B<Integer> m = new MaxArrayDeque61B<>(Comparator.naturalOrder());
 ```
 
 {: .warning}
 >If you find yourself starting off by copying your entire `ArrayDeque61B`
->implementation in a `MaxArrayDeque61B` file, then you're doing it wrong. This is an exercise in clean code, and redundancy
+>implementation in a `MaxArrayDeque61B` file, then you're **not doing this assignment in the intended manner**. This is an exercise in clean code, and redundancy
 >is one our worst enemies when battling complexity! For a hint, re-read the second sentence of this section above.
 
 {: .task}
@@ -330,18 +329,18 @@ in the first part of this project.
 ### `GuitarString`
 
 We want to finish the `GuitarString` file, which should use the `deque` package to replicate the sound of a plucked
-string. We'll be using the Karplus-Strong algorithm, which is quite easy to implement with a `Deque61B`.
+string. Note that this file uses the word "buffer", which is a synonym for "deque" in this context.
 
-The Karplus-Algorithm is simply the following three steps:
+We'll be using the Karplus-Strong algorithm, which is quite easy to implement with a `Deque61B`. It is simply the following three steps:
 
 1. Replace every item in a `Deque61B` with random noise (`double` values between -0.5 and 0.5).
-2. Remove the front double in the `Deque61B` and average it with the next double in the `Deque61B` (hint: use `removeFirst)`
+2. Play the `double` at the front of the `Deque61B`.
+3. Remove the front `double` in the `Deque61B` and average it with the next `double` in the `Deque61B` (hint: use `removeFirst)`
    and `get()`) multiplied by an energy decay factor of 0.996 (we'll call this entire quantity
-   `newDouble`). Then, add `newDouble` to the back of the `Deque61B`.
-3. Play the `double` (`newDouble`) that you dequeued in step 2. Go back to step 2 (and repeat forever).
+   `newDouble`). Then, add `newDouble` to the back of the `Deque61B`. Go back to step 2 (and repeat forever).
 
-Or visually, if the `Deque61B` is as shown on the top, we'd remove the 0.2, combine it with the 0.4 to form 0.2988, add the
-0.2988, and play the 0.2.
+Or visually, if the `Deque61B` is as shown on the top, we'd play the 0.2, remove it, combine it with the 0.4 to form 0.2988, and add the
+0.2988.
 
 ![karplus-strong](karplus-strong.png)
 
@@ -353,9 +352,9 @@ by your consciousness as pleasing thanks to billions of years of evolution.
 See [this page](http://electronics.howstuffworks.com/speaker6.htm) for more. If you simply do `StdAudio.play(0.9)` and
 never play anything again, the diaphragm shown in the image would just be sitting still 9/10ths of the way forwards.
 
-Complete `GuitarString.java` so that it implements steps 1 and 2 of the Karplus-Strong algorithm. Note that you will
-have to fill your `Deque61B` buffer with zeros in the `GuitarString` constructor. Step 3 will be done by the client of the
-`GuitarString` class.
+Complete `GuitarString.java` so that it implements the Karplus-Strong algorithm. Note that you will
+have to fill your `Deque61B` buffer with zeros in the `GuitarString` constructor. Part of the process will be handled by the client of the
+`GuitarString` class. You are only required to complete the tasks labeled with `TODO`.
 
 {: .danger}
 >Do not call `StdAudio.play` in `GuitarString.java`. This will cause the
@@ -404,9 +403,8 @@ assignment on Gradescope and submit there.
 
 The autograder for this assignment will have the following velocity limiting scheme:
 
-- From the release of the project to 10:00PM on 09/15/2023, you will have 6 tokens; each of
+- From the release of the project to the due date, you will have 4 tokens; each of
   these tokens will refresh every 24 hours.
-- From 10:00PM to 11:59PM on 09/26/2023 (the last 2 hours before the deadline), you will get 6 tokens; each of these tokens will refresh every 15 minutes.
 
 ### Scoring
 
