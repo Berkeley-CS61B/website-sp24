@@ -142,7 +142,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1bahvjVtbMcc2kuyzYQfQtD8EJyIiIkWnSALVSMuyQhI"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrvh9PM0gK9fm7VAD0HdijJ"
     recording: "https://www.youtube.com/watch?v=DOVCs-bZ3Tk"
-    quiz: ""
+    quiz: "https://forms.gle/V17dXcH9KkUrRtK29"
     readings: 
       - title: "Ch 12"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/12.-exceptions-iterators-object-methods"
