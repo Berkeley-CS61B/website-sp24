@@ -41,7 +41,7 @@ projects:
     nonumber: True
   - title: "Project 1C: Deque Extensions"
     due: "2/20"
-    # link: "projects/proj1/proj1c"
+    link: "projects/proj1c"
     rowspan: 4
     nonumber: True
   - title: "Project 2A: NGrams"
