@@ -16,12 +16,12 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 1C FAQ.
-released: false
+released: true
 ---
 
 Frequently asked questions...
 
 
-#### Be sure to check that your keep `package deque` when you are copying files.
+#### Be sure to check that your keep `package deque;` when you are copying files.
 
-#### Unchecked cast: 'java.lang.Object[]' to 'T[]'  is fine in the constructor for the ArrayDeque61B
+#### Unchecked cast: 'java.lang.Object[]' to 'T[]'  is fine in the constructor for ArrayDeque61B
