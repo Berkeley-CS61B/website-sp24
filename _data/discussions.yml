@@ -66,6 +66,8 @@ discussions:
     solutions: True
     regular_slides: https://docs.google.com/presentation/d/13G8tSB24eAbofCXASX9eX8gvsI16X9_8ISWj-V254Fc/edit?usp=sharing
     examprep_slides: https://docs.google.com/presentation/d/1tGtn6wtoxtxLeEXkUFwpbyP-uIHVo8h3P-xlOdDadhg/edit?usp=sharing
+    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRosONixmTTQnspn7fLOV4-Y
+    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRqOkhLqRr1OoRCpUKvlqm_P
     rowspan: 4
   - title: "Asymptotics, Disjoint Sets"
     solutions: True
