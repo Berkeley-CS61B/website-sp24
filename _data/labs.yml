@@ -42,7 +42,7 @@ labs:
     nonumber: True
   - title: "Git"
     due: "2/20"
-    # link: labs/lab04
+    link: labs/lab04
     slides:
     rowspan: 4
   - title: "Disjoint Sets"
