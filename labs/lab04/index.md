@@ -395,7 +395,7 @@ These conflicts will appear like below in the file:
 >>>>>>> 27ddd0c71515e5cfc7f58a43bcf0e2144c127aed
 ```
 
-Everything between `<<<<<<< HEAD and =======` is from your local version. Everything between `=======` and 
+Everything between `<<<<<<< HEAD` and `=======` is from your local version. Everything between `=======` and 
 `27ddd0c71515e5cfc7f58a43bcf0e2144c127aed` is from your remote repository. Between these two options, 
 choose the modifications that you would like to keep. Once you have resolved all conflicts, 
 add and commit your changes. Run git status to check the state of your repo. 
