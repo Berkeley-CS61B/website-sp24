@@ -40,13 +40,13 @@ labs:
     slides: https://docs.google.com/presentation/d/1pd2j6-VKWVB_RxRg6xIBHRE798deECfm26qa8SYMzPM/edit?usp=sharing
   - title: "Project 1 Workday"
     nonumber: True
-  - title: "Timing"
-    due: "2/16"
-    # link: labs/lab04
+  - title: "Git"
+    due: "2/20"
+    link: labs/lab04
     slides:
     rowspan: 4
   - title: "Disjoint Sets"
-    due: "2/23"
+    due: "2/26"
     # link: labs/lab05
     slides:
   - title: "BSTMap"
