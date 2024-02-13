@@ -150,7 +150,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1CH4rsIIvu5pbmoWUNl9QdkPQYYkJc-ptX85CBhytlzM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrajvLNrqCND6CQUbqaR0mU"
     recording: "https://www.youtube.com/watch?v=79lzg2R-f-4"
-    quiz: ""
+    quiz: "https://forms.gle/JV1TyyxgaWdSeCNi7"
     readings: 
       - title: "Ch 13"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/13.-asymptotics-i"
