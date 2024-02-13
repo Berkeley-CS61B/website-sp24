@@ -60,6 +60,7 @@ discussions:
   - title: "Inheritance"
     solutions: True
     regular_slides: https://docs.google.com/presentation/d/10mZuX6onPGO9o7QP7muUNd_onF5YG947JR_TSB1yQ8c/edit?usp=sharing
+    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpZCnCD8f6-j3WJQS_rbBe4
     examprep_slides: https://docs.google.com/presentation/d/1r3YxhsYkpAS-UHuJMNfRohICdMhH6FqrnMtvw_cnLLU/edit?usp=drive_link
     examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRo32RBXkS7LFlMNNIgF618Q
   - title: "Comparators, Iterators"
