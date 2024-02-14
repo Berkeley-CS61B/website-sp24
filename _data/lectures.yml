@@ -155,7 +155,7 @@ lectures:
       - title: "Ch 13"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/13.-asymptotics-i"
   - title: "Ask Anything: Midterm 1"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1XfRFqI5g6sM6LW2tWShnX-V2kVhBg6NJbIG6gvPtBn0"
     recording: ""
     quiz: ""
   - title: "**Midterm 1 (7-9PM)**"
