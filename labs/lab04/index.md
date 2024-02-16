@@ -439,7 +439,7 @@ Check that a repository called `git-exercise-{{ site.semester }}` shows up. If i
 
 When you open up the repository, you'll notice a `password.txt` file. This is where the password for the first task will 
 be in. It doesn't seem to be here, but it might be in a previous commit... See if you can find that commit and revert 
-back to the commit with some of the commands we've learned (you may need to scroll!).
+back to the commit with some of the commands we've learned (you may need to scroll using the arrow keys!).
 
 {: .task} 
 Find the password for Task 1. When you do, you can store the password on the **second line** of `magic_word.txt` file in your 
