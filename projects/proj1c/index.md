@@ -21,10 +21,7 @@ released: true
 
 {: .no_toc}
 
-## Due: Monday, February 20th, 11:59 PM PT
-
-{: .warning}
-This site is still under construction.
+## Due: Tuesday, February 20th, 11:59 PM PT
 
 ## [FAQ](faq.md)
 

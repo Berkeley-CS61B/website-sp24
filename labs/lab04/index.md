@@ -7,11 +7,7 @@ parent: Labs
 has_toc: false
 has_right_toc: true
 released: true
-nav_exclude: true
 ---
-
-{: .warning} 
-This is a work in progress. This lab is not completed. 
 
 ## FAQ
 
@@ -38,7 +34,7 @@ Before we explore the Git commands, let's talk about the difference between Git 
 
 ### Git 
 
-Git is a version control systems that is free and open-source (this means that the source code 
+Git is a version control system that is free and open-source (this means that the source code 
 is available for use by users and developers). As a version control system, we use Git to 
 help manage different versions of code and track changes made in the source code. This makes it 
 even more useful if there are multiple developers working on one program. Without a version control 
@@ -58,7 +54,7 @@ commit/latest snapshot is the green circle above.
 
 ### Github 
 
-Github is an online hosting service for git repositories. Git repositories are a central location 
+Github is an online hosting service for git repositories. Git repositories are central locations 
 where any changes made to our files and directories are tracked and managed (this is your `{{ site.semester }}-s***`
 repository). Repositories can be made locally on your computer as well as on Github.
 
@@ -98,9 +94,9 @@ If you want to select all changes that have been made, you can run the following
 git add .
 ```
 
-**These changes we've selected have not been actually saved yet.** When we `add` certain files/changes, this 
+**The changes we've selected have not actually been saved yet.** When we `add` certain files/changes, this 
 means we've put them into a staging area, which stores information about what will go into our next commit. 
-To actually save our changes, or take a snapshot of our current repository, we run `git commit`, like below: 
+To actually save our changes, or take a snapshot of our current repository, we run `git commit -m`, like below: 
 
 ```shell
 git commit -m "We put a commit message here to describe what changes we made."
@@ -130,7 +126,7 @@ Changes not staged for commit:
 ```
 
 In this example, `git status` shows that we've modified three files that have not been staged for commit. Once 
-we `add` them, `git status` will change: 
+we `git add` them, `git status` will change: 
 
 ```shell
 On branch main
@@ -165,11 +161,12 @@ Date:   Tue Feb 7 19:06:48 2016 -0800
 What this means is that you're able to view the entire history of all the commits you made. Remember 
 the message you always add when you commit? It will show up in `git log`. In this example, the 
 commit message would be "Added common Git problems to lab04." That is to say, we ran 
-`git commit -m "Added common Git problems to lab04."` when we committed. Another **important** 
-thing is what is besides the "commit" heading. It looks like a long string of random characters 
-and numbers, but it represents the **commit id**. The commit id is a unique id that Git assigned
-to identify the specific changes that were made in the commit. **It is important for the next 
-section.**
+`git commit -m "Added common Git problems to lab04."` when we committed.
+
+Another **important** thing is what is besides the "commit" heading. It looks like a long 
+string of random characters and numbers, but it represents the **commit id**. The commit
+id is a unique id that Git assigned to identify the specific changes that were made
+in the commit. **It is important for the next section.**
 
 ### `restore`
 
@@ -301,6 +298,21 @@ the latest commit on `master`.
 {: .info} 
 We won't cover it here, but feel free to look up how you might create a branch.
 
+### `restore` Revisited
+
+Now that we have an idea of what remotes and branches are, let's revisit the `restore` command. 
+In the earlier section, we talked about using `restore` to revert back to previous commits 
+based on the most recent commit or based on a commit id, but we can also use the command
+to revert a change back based on a remote repository and a specified branch. This is what
+it would look like: 
+
+```shell
+git restore --source=[remote-name]/[branch-name] [file_name]
+```
+
+It would revert the file back based on the contents of the latest commit on the branch 
+of the remote repository.
+
 ### `push`
 
 If we want to push any commits we made on our local computer to a remote repository, we can use `git push`: 
@@ -383,7 +395,7 @@ These conflicts will appear like below in the file:
 >>>>>>> 27ddd0c71515e5cfc7f58a43bcf0e2144c127aed
 ```
 
-Everything between `<<<<<<< HEAD and =======` is from your local version. Everything between `=======` and 
+Everything between `<<<<<<< HEAD` and `=======` is from your local version. Everything between `=======` and 
 `27ddd0c71515e5cfc7f58a43bcf0e2144c127aed` is from your remote repository. Between these two options, 
 choose the modifications that you would like to keep. Once you have resolved all conflicts, 
 add and commit your changes. Run git status to check the state of your repo. 
@@ -412,7 +424,7 @@ In this exercise, we'll have you clone a git repository, and you'll be using som
 the passwords that are hidden away in the repository. Copy and paste the following command to clone your repository, **outside 
 your `{{ site.semester }}-s***` repository**. The exact location is up to you, as long as it's not in another repository. 
 
-{: danger} 
+{: .danger} 
 Before running the command, **double check that you are not in your personal repository.** If you are, a message will show 
 up preventing you from cloning the repository inside your `{{ site.semester }}-s***` repository. 
 
@@ -420,10 +432,10 @@ up preventing you from cloning the repository inside your `{{ site.semester }}-s
 curl -sS https://{{ site.semester }}.datastructur.es/labs/lab04/lab04.sh | bash
 ```
 
-Double check that a repository called `git-exercise-{{ site.semester }}` does show up. If it's there, `cd` into it, open up
+Check that a repository called `git-exercise-{{ site.semester }}` shows up. If it's there, `cd` into it, open up
 `git-exercise-{{ site.semester }}` in IntelliJ, and you're ready to continue on with the exercise!
 
-### Task 1 
+### Part 2.1 
 
 When you open up the repository, you'll notice a `password.txt` file. This is where the password for the first task will 
 be in. It doesn't seem to be here, but it might be in a previous commit... See if you can find that commit and revert 
@@ -433,7 +445,7 @@ back to the commit with some of the commands we've learned (you may need to scro
 Find the password for Task 1. When you do, you can store the password on the **second line** of `magic_word.txt` file in your 
 lab04 directory. **You will also want to restore your file to the most recent commit before moving on.**
 
-### Task 2 
+### Part 2.2
 
 Once you've completed Task 1, let's try to figure out where the second password it is. The repository you cloned 
 has multiple branches, but the branch called `erik` might have something we want. Let's try switching to the branch 
@@ -444,7 +456,7 @@ Find the password for Task 2. You can verify that it is the password by checking
 that you are on. When you do, you can store the password on the **third line** of `magic_word.txt` file in your
 lab04 directory. When you find the password, **switch back to the `main` branch.**
 
-### Task 3
+### Part 2.3
 
 It doesn't seem like the third password is in this repository, but in another one! The password is in this repository
 (note that this is not a command, but the ssh url): 
@@ -481,9 +493,9 @@ should look similar to below:
 
 ```shell 
 git_exercise_1_password
-git_exercise_2_task1_password
-git_exercise_2_task2_password
-git_exercise_2_task3_password
+git_exercise_2.1_password
+git_exercise_2.2_password
+git_exercise_2.3_password
 ```
 
 The passwords should be placed the top 4 lines of your `magic_word.txt`. When you are ready, please 
