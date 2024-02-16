@@ -155,11 +155,10 @@ the [video](https://www.youtube.com/watch?v=kIYKCsvG6UI&list=PLNSdoiHk6ujjZs46s6
 this spec. Your `numberOfOpenSites()` method must take constant time. Part of the goal of this assignment is to learn
 how to cast one problem (Percolation) in terms of an already solved problem (Disjoint Sets, a.k.a Union Find).
 
-{% include alert.html type="warning" content="
-If you are at this part of the spec and are still unsure of how to start, go through
-these [slides](https://docs.google.com/presentation/d/12mvVbdoq7SKZy02u_i7Z7LCyrDCpbYmUhl_qqW95T_4/edit?usp=sharing) and
-watch this [video](https://www.youtube.com/watch?v=kIYKCsvG6UI&list=PLNSdoiHk6ujjZs46s6XVXEbZUuF1MIO7g).
-" %}
+{: .info}
+>If you are at this part of the spec and are still unsure of how to start, go through
+>these [slides](https://docs.google.com/presentation/d/12mvVbdoq7SKZy02u_i7Z7LCyrDCpbYmUhl_qqW95T_4/edit?usp=sharing) and
+>watch this [video](https://www.youtube.com/watch?v=kIYKCsvG6UI&list=PLNSdoiHk6ujjZs46s6XVXEbZUuF1MIO7g).
 
 ## `PercolationStats.java`
 
