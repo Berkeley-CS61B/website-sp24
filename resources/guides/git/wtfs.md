@@ -18,7 +18,7 @@ This usually happens when someone has changed the skeleton code after you've
 pulled from it. Pull with `--allow-unrelated-histories`, i.e.
 
 ```console
-$ git pull skeleton main --allow-unrelated-histories
+$ git pull skeleton main --allow-unrelated-histories --merge
 ```
 
 You may need to [resolve some resulting merge conflicts](#what-are-all-these-symbols-in-my-code).
@@ -27,7 +27,7 @@ or, if you're pulling from your own s\*\*\* student repo (on a different compute
 for example),
 
 ```console
-$ git pull origin main --allow-unrelated-histories
+$ git pull origin main --allow-unrelated-histories --merge
 ```
 
 ## HEAD detached at [...] ??
