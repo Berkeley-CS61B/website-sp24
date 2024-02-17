@@ -362,8 +362,9 @@ While this is meant to help diagnose a Git issue and go through the common ways 
 resolve them, always ask for help if you aren't too sure!
 
 ### Fatal: refusing to merge unrelated histories
+
 This usually occurs when someone has changed files in the skeleton code after you 
-have pulled. To fix, run `git pull <remote-repo> main --allow-unrelated-histories`. 
+have pulled. To fix, run `git pull <remote-repo> main --allow-unrelated-histories --merge`. 
 This may force a merge conflict (more information below).
 
 ### Merge Conflict
@@ -395,7 +396,7 @@ These conflicts will appear like below in the file:
 >>>>>>> 27ddd0c71515e5cfc7f58a43bcf0e2144c127aed
 ```
 
-Everything between `<<<<<<< HEAD and =======` is from your local version. Everything between `=======` and 
+Everything between `<<<<<<< HEAD` and `=======` is from your local version. Everything between `=======` and 
 `27ddd0c71515e5cfc7f58a43bcf0e2144c127aed` is from your remote repository. Between these two options, 
 choose the modifications that you would like to keep. Once you have resolved all conflicts, 
 add and commit your changes. Run git status to check the state of your repo. 
@@ -439,7 +440,7 @@ Check that a repository called `git-exercise-{{ site.semester }}` shows up. If i
 
 When you open up the repository, you'll notice a `password.txt` file. This is where the password for the first task will 
 be in. It doesn't seem to be here, but it might be in a previous commit... See if you can find that commit and revert 
-back to the commit with some of the commands we've learned (you may need to scroll!).
+back to the commit with some of the commands we've learned (you may need to scroll using the arrow keys!).
 
 {: .task} 
 Find the password for Task 1. When you do, you can store the password on the **second line** of `magic_word.txt` file in your 
@@ -470,14 +471,14 @@ give the remote a name of your choosing. Once it's added, run the following comm
 name): 
 
 ```shell
-git pull [remote-name] main --allow-unrelated-histories
+git pull [remote-name] main --allow-unrelated-histories --merge
 ```
 
-The reason we add the flag `--allow-unrelated-histories` is because our two repositories don't have any related history, so 
+The reason we add the flags `--allow-unrelated-histories` and `--merge` is because our two repositories don't have any related history, so 
 we're going to try to merge these two branches (our local one and the one we're pulling from). 
 
 {: .danger} 
-Do not add the flag if you are not sure if it should be used. If you do use the flag without it being needed, you may 
+Do not add the flags if you are not sure if they should be used. If you do use a flag without it being needed, you may 
 end up putting yourself into an interactive rebase and destroying some of your work. In most, if not all cases of pulling 
 from the skeleton in your personal repository, this flag should not be added, and running `git pull skeleton main` is 
 enough. 
