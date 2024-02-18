@@ -362,9 +362,8 @@ While this is meant to help diagnose a Git issue and go through the common ways 
 resolve them, always ask for help if you aren't too sure!
 
 ### Fatal: refusing to merge unrelated histories
-
 This usually occurs when someone has changed files in the skeleton code after you 
-have pulled. To fix, run `git pull <remote-repo> main --allow-unrelated-histories --merge`. 
+have pulled. To fix, run `git pull <remote-repo> main --allow-unrelated-histories`. 
 This may force a merge conflict (more information below).
 
 ### Merge Conflict
@@ -471,14 +470,14 @@ give the remote a name of your choosing. Once it's added, run the following comm
 name): 
 
 ```shell
-git pull [remote-name] main --allow-unrelated-histories --merge
+git pull [remote-name] main --allow-unrelated-histories
 ```
 
-The reason we add the flags `--allow-unrelated-histories` and `--merge` is because our two repositories don't have any related history, so 
+The reason we add the flag `--allow-unrelated-histories` is because our two repositories don't have any related history, so 
 we're going to try to merge these two branches (our local one and the one we're pulling from). 
 
 {: .danger} 
-Do not add the flags if you are not sure if they should be used. If you do use a flag without it being needed, you may 
+Do not add the flag if you are not sure if it should be used. If you do use the flag without it being needed, you may 
 end up putting yourself into an interactive rebase and destroying some of your work. In most, if not all cases of pulling 
 from the skeleton in your personal repository, this flag should not be added, and running `git pull skeleton main` is 
 enough. 

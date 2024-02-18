@@ -36,7 +36,7 @@ them into your current folder.
 > you can fix this each time by using
 > 
 > ```shell
-> git pull --merge --allow-unrelated-histories skeleton main
+> git pull --rebase --allow-unrelated-histories skeleton main
 > ```
 
 (If you're working on Lab 1, go back to the lab spec at this point.)
