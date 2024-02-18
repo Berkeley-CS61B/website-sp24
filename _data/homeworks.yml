@@ -41,7 +41,7 @@ homeworks:
       - blank
   - title: "Homework 2"
     due: "2/26"
-    # link: "homeworks/hw2"
+    link: "homeworks/hw2"
     rowspan: 5
     nonumber: True
   - rowspan: 5
