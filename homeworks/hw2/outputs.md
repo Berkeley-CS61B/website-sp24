@@ -1,7 +1,13 @@
 ---
 layout: page
-title: "Expected Outputs - HW 2: Percolation"
-categories: hw
+title: >-
+  "Expected Outputs - HW 2: Percolation"
+parent: "Homework 2: Percolation"
+has_children: false
+has_toc: false
+has_right_toc: true
+description: >-
+  Homework 2 expected outputs.
 released: true
 ---
 

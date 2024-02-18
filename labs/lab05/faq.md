@@ -1,9 +1,13 @@
 ---
 layout: page
-title: "FAQ - Lab 05: Disjoint Sets"
-categories: lab
-released: released
-searchable: true
+title: >-
+    "FAQ - Lab 05: Disjoint Sets"
+has_children: false
+parent: "Lab 05: Disjoint Sets"
+has_toc: false
+has_right_toc: true
+released: true
+nav_exclude: true
 ---
 
 ### I'm running into `StackOverFlowError` or seeing that my assessment timed out 
