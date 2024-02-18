@@ -1,14 +1,14 @@
 ---
 layout: page
 title: >-
-    "FAQ - Lab 05: Disjoint Sets"
-has_children: false
-parent: "Lab 05: Disjoint Sets"
-has_toc: false
+  FAQ
+parent: >-
+  Lab 05: Disjoint Sets
+grand_parent: Labs
 has_right_toc: true
 released: true
-nav_exclude: true
 ---
+
 
 ### I'm running into `StackOverFlowError` or seeing that my assessment timed out 
 on one of the tests. 
