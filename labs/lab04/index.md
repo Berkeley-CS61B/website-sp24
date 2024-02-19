@@ -26,7 +26,9 @@ Please don't skip around in this lab and **do not run commands you find online**
 if you get stuck (this could lead to potential issues in the lab). When going 
 through this lab, read through the commands and instructions and make sure you understand them!
 
-In this lab, we will only have one file, `magic_word.txt`.
+{: .info}
+Please make sure to pull from the skeleton in your `sp24-s***` repository to obtain
+the required files. In this lab, we will only have one file, `magic_word.txt`. 
 
 ## Git vs Github 
 
