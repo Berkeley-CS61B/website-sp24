@@ -47,7 +47,7 @@ labs:
     rowspan: 4
   - title: "Disjoint Sets"
     due: "2/26"
-    # link: labs/lab05
+    link: labs/lab05
     slides:
   - title: "BSTMap"
     due: "3/1"
