@@ -43,7 +43,7 @@ labs:
   - title: "Git"
     due: "2/20"
     link: labs/lab04
-    slides:
+    slides: https://docs.google.com/presentation/d/13qBLXU4fcvLNKdTtFDOM9YvorHsw_jeCyl5wbOlgoE4/edit?usp=sharing
     rowspan: 4
   - title: "Disjoint Sets"
     due: "2/26"
