@@ -72,6 +72,8 @@ discussions:
     rowspan: 4
   - title: "Asymptotics, Disjoint Sets"
     solutions: True
+    regular_slides: https://docs.google.com/presentation/d/11tqrOcm3vMkeEfFpwNnCe6XVHWZDLSTJgZoH_N5wfbQ/edit?usp=sharing
+    examprep_slides: https://docs.google.com/presentation/d/14qOZuYqOu4viJOo32QdZzany6colAbV-oDFUT4lJdg4/edit?usp=sharing
   - title: "ADTs, Asymptotics II, BSTs"
     solutions: True
   - title: "B-Trees, LLRBs, Hashing"
