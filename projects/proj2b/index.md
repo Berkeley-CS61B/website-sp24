@@ -28,20 +28,15 @@ Unlike Project 2a, the implementation for this part of the project is very open-
 an important skill that we'll also revisit in Project 3. The number of lines of code for this project isn't necessarily
 large, but there are a lot of independent decisions that you'll need to make along the way.
 
-{% include alert.html type="danger" content="
-As this is a quite new project, there may be occasional bugs or confusions with the spec. If you notice anything of this
-sort, please post on Ed.
-" %}
+
+As this is a quite new project, there may be occasional bugs or confusion with the spec. If you notice anything of this sort, please post on Ed.
 
 ## Project Setup
 
-{% include alert.html type="warning" content="
+{: .danger}
 **THE SETUP FOR THIS PROJECT IS DIFFERENT THAN THE OTHER LABS / PROJECTS. PLEASE DO NOT SKIP THIS STEP!**
-" %}
-
 
 ### Skeleton Setup
-
 
 1. Similar to other assignments in this class, run `git pull skeleton main` to get the skeleton code for this project.
    1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2A skeleton. We have provided placeholder implementations for `TimeSeries`, `NGramMap` from project 2a. This includes a working implementation of `countHistory` method using a new
@@ -66,23 +61,19 @@ proj2b
 ├── tests
 ```
 
+{: .info}
+>The k != 0 portion of this project uses the `NGramMap` class from project 2a, which is why we have provided placeholder implementations for `NGramMap` and `TimeSeries`. The placeholder implementations are sufficient to complete project 2b.
+>
+>If you want to copy in your own `NGramMap` and `TimeSeries` from project 2a, you can. However, we suggest only doing so after you get a full score on project 2b, just in case your implementation has any subtle bugs in it.
 
-{% include alert.html type="info" content="
-The k != 0 portion of this project uses the `NGramMap` class from project 2a, which is why we have provided placeholder implementations for `NGramMap` and `TimeSeries`. The placeholder implementations are sufficient to complete project 2b.
-
-If you want to copy in your own `NGramMap` and `TimeSeries` from project 2a, you can. However, we suggest only doing so after you get a full score on project 2b, just in case your implementation has any subtle bugs in it.
-" %}
-
-{% include alert.html type="warning" content="
+{: .warning}
 If you are getting errors in `NGramMap`, make sure you did step 2 (updating `library-fa23`).
-" %}
 
 
 ## Getting Started
 
-{% include alert.html type="warning" content="
+{: .warning}
 **IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/572446/assignments/3489941)** first before starting coding, or even designing your project. We think this would be helpful.
-" %}
 
 The course staff has created a couple of introductory videos to the project and the starter code
 available [here](https://www.youtube.com/playlist?list=PLNpmrGKEeMf727KwSrG8Ez1o3odK--o9i).
@@ -96,7 +87,6 @@ We'll link them here, as well as in other relevant parts of the spec.
   features of this tool!
 - [Staff Solution Webpage](https://ngordnet.datastructur.es/): Useful for generating expected outputs for different test
   case inputs. Use this to write your unit tests!
-
 
 ## Using the WordNet Dataset
 
@@ -138,11 +128,10 @@ as simply "words" throughout this document.
 A synset may be a hyponym of multiple synsets. For example, "actifed" is a hyponym of both "antihistamine" and "
 nasal_decongestant", since "actifed" is both of these things.
 
-{% include alert.html type="info" content="
-If you're curious, you can browse the Wordnet database
-by [using the web interface](http://wordnetweb.princeton.edu/perl/webwn?o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&r=1&s=sturgeon&i=3&h=1000#c)
-, though this is not necessary for this project.
-" %}
+{: .info}
+>If you're curious, you can browse the Wordnet database
+>by [using the web interface](http://wordnetweb.princeton.edu/perl/webwn?o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&r=1&s=sturgeon&i=3&h=1000#c)
+>, though this is not necessary for this project.
 
 ## Hyponyms (Basic Case)
 
@@ -206,26 +195,23 @@ not** include:
 - Hyponyms of other definitions of hyponyms (e.g. does not include \"flashback\", which is a hyponym of another
   definition of \"transition\")
 
-{% include alert.html type="task" content="
-**Task:** Create and implement `HyponymsHandler.java` and any helper classes.
+{: .task}
+>Create and implement `HyponymsHandler.java` and any helper classes.
+>
+>**Note:** Please read the tips below, since you shouldn't be writing all of your code in this class.
 
-**Note:** Please read the tips below, since you shouldn't be writing all of your code in this class.
-" %}
+{: .warning}
+>To complete this task, you'll need to decide what classes you need to create to support the `HyponymHandler`. **DO NOT
+>DO ALL THE WORK IN HYPONYMS HANDLER.** Instead, you should have helper classes. For example, to handle the \"History\"
+>button, we created an `NGramMap` class. You'll want to do something similar.
+>
+>You'll also need to understand the input format of the WordNet dataset. This description is
+>given in the section below.
 
-{% include alert.html type="warning" content="
-To complete this task, you'll need to decide what classes you need to create to support the `HyponymHandler`. **DO NOT
-DO ALL THE WORK IN HYPONYMS HANDLER.** Instead, you should have helper classes. For example, to handle the \"History\"
-button, we created an `NGramMap` class. You'll want to do something similar.
-
-You'll also need to understand the input format of the WordNet dataset. This description is
-given in the section below.
-" %}
-
-{% include alert.html type="danger" content="
-For this part, you may NOT import any existing graph library into your code. That is you can't import, for example, the
-graph implementations from the optional Princeton algorithms textbook. Instead, you should build your own graph class or
-classes.
-" %}
+{: .danger}
+>For this part, you may NOT import any existing graph library into your code. That is you can't import, for example, the
+>graph implementations from the optional Princeton algorithms textbook. Instead, you should build your own graph class or
+>classes.
 
 #### Tips
 
@@ -358,17 +344,15 @@ Some example data processing operations:
   java”, or “Collection methods java”, etc).
 - Given a collection of things, how do you sort them? (Hint: Google how to sort the collection that you’re using)
 
-{% include alert.html type="warning" content="
-Also, a reminder from proj2a: Deeply nested generics are a warning sign that you are doing something too complicated.
-Either find a simpler way or create a helper class to help manage the complexity. For example, if you find yourself
-trying to use something like Map<Set<Set<..., you have started a walk down an unnecessarily difficult path.
-" %}
+{: .warning}
+>Also, a reminder from proj2a: Deeply nested generics are a warning sign that you are doing something too complicated.
+>Either find a simpler way or create a helper class to help manage the complexity. For example, if you find yourself
+>trying to use something like Map<Set<Set<..., you have started a walk down an unnecessarily difficult path.
 
-{% include alert.html type="warning" content="
-As usual, if you have a design that is painful and with which you cannot make progress, don't be afraid to delete your
-existing instance variables and try again. The hard part of this project is the design, not the programming. You can
-always use git to recover your old design if you decide you actually liked it.
-" %}
+{: .warning}
+>As usual, if you have a design that is painful and with which you cannot make progress, don't be afraid to delete your
+>existing instance variables and try again. The hard part of this project is the design, not the programming. You can
+>always use git to recover your old design if you decide you actually liked it.
 
 ## Handling Lists of Words
 
@@ -394,14 +378,12 @@ For some more examples which demonstrate the usefulness of this feature, let's s
 - Entering "pastry, tart" in the words box and then clicking "Hyponyms" should display
   `[apple_tart, lobster_tart, quiche, quiche_Lorraine, tart, tartlet ]`.
 
-{% include alert.html type="task" content="
-**Task:** Modify your `HyponymsHandler` and the rest of your implementation to deal with the List of Words case.
-" %}
+{: .task}
+Modify your `HyponymsHandler` and the rest of your implementation to deal with the List of Words case.
 
-{% include alert.html type="warning" content="
+{: .warning}
 To test this part of your code, we recommend manually constructing examples using `synsets16.txt` and `hyponyms16.txt`
 and using the provided front end to evaluate correctness.
-" %}
 
 ## Handling `k != 0`
 
@@ -433,27 +415,23 @@ If there are no words that have non-zero counts, you should return an empty list
 If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
 "potato" and enter "k = 15", but only 7 hyponyms of potato have non-zero counts, you'd return only 7 words.
 
-{% include alert.html type="task" content="
-**Task:** Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
-" %}
+{: .task}
+Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
 
-{% include alert.html type="warning" content="
-This task will be a little trickier since you'll need to figure out how to pass information around so that the
-`HyponymsHandler` knows how to access a useful `NGramMap`.
-" %}
+{: .warning}
+>This task will be a little trickier since you'll need to figure out how to pass information around so that the
+>`HyponymsHandler` knows how to access a useful `NGramMap`.
 
-{% include alert.html type="warning" content="
+{: .warning}
 The `TimeSeries` class we provide in the skeleton code does not support `.data()`. You can use `.values()` instead.
-" %}
 
-{% include alert.html type="danger" content="
-**DO NOT MAKE A STATIC NGRAMMAP FOR THIS TASK!** It might be tempting to simply make some sort of
-`public static NGramMap` that can be accessed from anywhere in your code. This is called a \"global variable\".
-
-We strongly discourage this way of thinking about programming, and instead suggest that you should be passing an
-NGramMap to either constructors or methods. We'll come back to talking about this during the software engineering
+{: .danger}
+>**DO NOT MAKE A STATIC NGRAMMAP FOR THIS TASK!** It might be tempting to simply make some sort of
+>`public static NGramMap` that can be accessed from anywhere in your code. This is called a \"global variable\".
+>
+>We strongly discourage this way of thinking about programming, and instead suggest that you should be passing an
+>NGramMap to either constructors or methods. We'll come back to talking about this during the software engineering
 lectures.
-" %}
 
 #### Tips
 
@@ -500,13 +478,12 @@ The two provided test files correspond to the first two cases that you solved in
 each file with more unit tests, and also use them as a template to create two new test files for the respective cases
 where `k != 0`.
 
-{% include alert.html type="task" content="
-**Task:** Fill out the provided unit test files for the `k = 0` cases, and then write similar tests for the
+{: .task}
+Fill out the provided unit test files for the `k = 0` cases, and then write similar tests for the
 `k != 0` case.
 
 If you need help figuring out what the expected outputs of your tests should be, you should use the two tools that we
 linked in the [Getting Started](#getting-started) section.
-" %}
 
 ## Debugging Tips
 

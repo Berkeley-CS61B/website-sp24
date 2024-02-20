@@ -46,15 +46,14 @@ To get started, use `git pull skeleton main` as usual.
 
 You'll also need to download the Project 2 data files (not provided via GitHub for space reasons).
 
-{% include alert.html type="task" content="
-**Task:** Download the data files [at this link](https://drive.google.com/file/d/1xGTZqCo5maiZjA307OPocmKDOTYlJXnz/view?usp=sharing).
-
-You should unzip this file into the proj2 directory such that the `data` folder is at the same level as the `src`
+{: .task}
+>Download the data files [at this link](https://drive.google.com/file/d/1xGTZqCo5maiZjA307OPocmKDOTYlJXnz/view?usp=sharing).
+>
+>You should unzip this file into the proj2 directory such that the `data` folder is at the same level as the `src`
 and `static` folders.
-
-- [How to unzip folders on Windows](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc#:~:text=To%20unzip%20files,folder%20to%20a%20new%20location.)
-- [How to unzip folders on Mac](<https://support.apple.com/guide/mac-help/zip-and-unzip-files-and-folders-on-mac-mchlp2528/mac#:~:text=Unzip%20(expand)%20a%20compressed%20item,zip%20file.>)
-  " %}
+>
+>- [How to unzip folders on Windows](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc#:~:text=To%20unzip%20files,folder%20to%20a%20new%20location.)
+>- [How to unzip folders on Mac](<https://support.apple.com/guide/mac-help/zip-and-unzip-files-and-folders-on-mac-mchlp2528/mac#:~:text=Unzip%20(expand)%20a%20compressed%20item,zip%20file.>)
 
 Once you are done with this step, your `proj2a` directory should look like this:
 
@@ -71,8 +70,8 @@ proj2a
 Note that we've set up hidden [`.gitignore`](https://help.github.com/articles/ignoring-files/) files
 in the skeleton code so that Git will avoid uploading these data files. This is intentional.
 
-{% include alert.html type="danger" content="Uploading the data files to GitHub will result in a lot of headaches for everybody, so please don't mess with any files called `.gitignore`. If you need to work on multiple machines, you should download the zip file once for each machine." %}
-
+{: .danger}
+Uploading the data files to GitHub will result in a lot of headaches for everybody, so please don't mess with any files called `.gitignore`. If you need to work on multiple machines, you should download the zip file once for each machine.
 
 If `NgordnetQuery` doesn't compile, make sure you are using Java version 15 (preview) or higher (preferably 17+).
 
@@ -109,21 +108,18 @@ ts.put(1993,9.2);
 
 The `TimeSeries` class provides some additional utility methods to the `TreeMap` class, which it extends.
 
-{% include alert.html type="task" content="
-**Task:** Fill out the `TimeSeries` class (located in the `src/ngrams/TimeSeries.java` file) according to
-the API provided in the file. Be sure to read the comments above each method.
-" %}
+{: .task}
+>Fill out the `TimeSeries` class (located in the `src/ngrams/TimeSeries.java` file) according to
+>the API provided in the file. Be sure to read the comments above each method.
 
-{% include alert.html type="warning" content="
-For an example of how `TimeSeries` objects are used, check out the test named `testFromSpec()` in the `TimeSeriesTest.java`
+{: .warning}
+>For an example of how `TimeSeries` objects are used, check out the test named `testFromSpec()` in the `TimeSeriesTest.java`
 file that we've provided.
-This test creates a `TimeSeries` of cat and dog populations and then computes their sum. Note
+>This test creates a `TimeSeries` of cat and dog populations and then computes their sum. Note
 that there is no value for 1993 because that year does not appear in either `TimeSeries`.
-" %}
 
-{% include alert.html type="danger" content="
+{: .danger}
 You may not add additional public methods to this class. You're welcome to add additional private methods.
-" %}
 
 ### TimeSeries Tips
 
@@ -149,21 +145,18 @@ the methods of an existing `NGramMap.java` file. **NGramMap should not extend an
 If you call a method that returns a `TimeSeries`, and there is no available data for the given method call, you should return an empty `TimeSeries`. For example, `ngm.weightHistory("asdfasdf")` should return a `TimeSeries` with nothing in it, since `"asdfasdf"` is not a word in the dataset. As another example, `ngm.countHistory("adopt", 1400, 1410)` should also return a `TimeSeries` with nothing in it,
 since `"adopt"` has no data during those years.
 
-{% include alert.html type="task" content="
-**Task:** Fill out the `NGramMap` class (located in the `src/ngrams/NGramMap.java` file) according to
-the API provided in the file. Once again, be sure to read the comments above each method.
-" %}
+{: .task}
+>Fill out the `NGramMap` class (located in the `src/ngrams/NGramMap.java` file) according to
+>the API provided in the file. Once again, be sure to read the comments above each method.
 
-{% include alert.html type="warning" content="
-For an example of an `NGramMap` at work, the `testOnLargeFile()` in `NGramMapTest` creates an `NGramMap` from the
-`top_14377_words.csv` and `total_counts.csv` files (described below). It then performs various operations related to the
-occurrences of the words \"fish\" and \"dog\" in the period between 1850 and 1933.
-" %}
+{: .warning}
+>For an example of an `NGramMap` at work, the `testOnLargeFile()` in `NGramMapTest` creates an `NGramMap` from the
+>`top_14377_words.csv` and `total_counts.csv` files (described below). It then performs various operations related to the
+>occurrences of the words \"fish\" and \"dog\" in the period between 1850 and 1933.
 
 
-{% include alert.html type="danger" content="
+{: .danger}
 You may not add additional public methods to this class. You're welcome to add additional private methods.
-" %}
 
 ### Input File Formats
 
@@ -304,19 +297,17 @@ each `TimeSeries`, you can just use the `toString()` method.
 
 Now it's time to implement the HistoryText button!
 
-{% include alert.html type="task" content="
-**Task:** Create a new file called `HistoryTextHandler.java` that takes the given `NgordnetQuery` and returns a String in the
-same format as above.
+{: .task}
+>Create a new file called `HistoryTextHandler.java` that takes the given `NgordnetQuery` and returns a String in the
+>same format as above.
+>
+>Then, modify `Main.java` so that your `HistoryTextHandler` is used when someone clicks `History (Text)`. In other words,
+>instead of registering `DummyHistoryTextHandler`, you should register your `HistoryTextHandler` class instead.
 
-Then, modify `Main.java` so that your `HistoryTextHandler` is used when someone clicks `History (Text)`. In other words,
-instead of registering `DummyHistoryTextHandler`, you should register your `HistoryTextHandler` class instead.
-" %}
-
-{% include alert.html type="info" content="
-You might notice that `Main.java` prints out a link when the server has started up. 
-If you find it more convenient, you can just click this link instead of opening
-the `ngordnet_2a.html` file manually.
-" %}
+{: .info}
+>You might notice that `Main.java` prints out a link when the server has started up. 
+>If you find it more convenient, you can just click this link instead of opening
+>the `ngordnet_2a.html` file manually.
 
 ### HistoryTextHandler Tips
 
@@ -368,12 +359,11 @@ class running, enter "cat, dog" into the "words" box, then click "history". You'
 You'll note that the code is not plotting the history of cat and dog, but rather a parabola and a sinusoid. If you
 open `DummyHistoryHandler`, you'll see why.
 
-{% include alert.html type="task" content="
-**Task:** Create a new file called `HistoryHandler.java` that takes the given `NgordnetQuery` and returns a String that contains
-a base-64 encoded image of the appropriate plot.
-
-Then, modify the `Main.java` so that your `HistoryHandler` is called when someone clicks the `History` button.
-" %}
+{: .task}
+>Create a new file called `HistoryHandler.java` that takes the given `NgordnetQuery` and returns a String that contains
+>a base-64 encoded image of the appropriate plot.
+>
+>Then, modify the `Main.java` so that your `HistoryHandler` is called when someone clicks the `History` button.
 
 ### HistoryHandler Tips
 
