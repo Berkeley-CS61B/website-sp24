@@ -7,7 +7,6 @@ parent: Labs
 has_toc: false
 has_right_toc: true
 released: true
-nav_exclude: true
 ---
 
 ## FAQ Page
@@ -85,19 +84,19 @@ See the following visual for some intuition on how this works:
 
 ### Example
 
+{: .warning}
+**The tie-breaking scheme in this example is that the smallest element becomes the root - note that this isn't
+always the case depending on the implementation.**
+
 Let's go over a example of what this all looks like for weighted quick union. When we initially 
-create our disjoint set, each item is in its own set, so we will initialize all of the elements in the array to `-1`.
-For this representation, we want to track our size in the array, so we 
-**store the weight of a set at its root as -weight** (to also distinguish 
-between a parent and the weight of the set).
+create our disjoint set, each item is in its own set, so we will initialize all of the 
+elements in the array to `-1`. For this representation, we want to track our size
+in the array, so we **store the weight of a set at its root as the negated weight (-weight)**
+(to also distinguish between a parent and the weight of the set).
 
 ![initial](img/initial.png)
 
 After we call `union(0,1)` and `union(2,3)`, our array and our abstract representation will end up as below
-
-{: .warning} 
-**The tie-breaking scheme in this example is that the smallest element becomes the root - note that this isn't 
-always the case depending on the implementation.**
 
 ![union1](img/union1.png)
 
@@ -173,6 +172,9 @@ around with disjoint sets.
 
 ## Exercise: `UnionFind`
 
+{: .info} 
+For `UnionFind`, you will be implementing a **weighted quick union with path compression.**
+
 We will now implement our own disjoint sets data structure, `UnionFind`. At this point, if you haven't already, 
 take a look at `UnionFind.java` file. In this file, you'll see that some skeleton code has been provided for
 you - you'll have to fill in the implementation for the following methods:
@@ -187,7 +189,7 @@ We recommend that you start with implementing the constructor and taking a look 
 before the rest of the other methods.  
 
 {: .task} 
-Complete the methods in `UnionFind`.
+Complete the methods in `UnionFind`. **You'll want to use `find` in `union`.**
 
 ## Lab Notes
 
@@ -211,14 +213,16 @@ into the functions, throw an `IllegalArgumentException`. You can throw an
     throw new IllegalArgumentException("Some comment to describe the reason for throwing.");
 
 ## Testing
+
+{: .danger} 
 For this lab, we've provided some tests for you to check your implementation, 
-but they are **not comprehensive.** 4 out of 6 tests on the autograder are 
+but they are **not comprehensive.** Only 4 out of 6 tests on the autograder are 
 provided locally. Passing the tests locally do not mean you will pass the tests on 
 Gradescope and you will need to write your own tests to verify correctness. 
 
 If you find yourself failing the last two tests, ensure that you've 
 implemented path compression correctly and that you've tested the 
-correctness for all the methods you've implemented. 
+correctness for _all the methods_ you've implemented. 
 
 ## Submission
 
