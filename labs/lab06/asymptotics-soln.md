@@ -1,7 +1,7 @@
 ---
 layout: page
 title: >-
-  FAQ
+  Asymptotics Problems Solutions
 parent: >-
   Lab 06: BSTMap
 grand_parent: Labs
