@@ -1,9 +1,12 @@
 ---
 layout: page
-title: "Asymptotics Solutions - Lab 7: BSTMap"
-categories: lab
+title: >-
+  FAQ
+parent: >-
+  Lab 06: BSTMap
+grand_parent: Labs
+has_right_toc: true
 released: true
-searchable: true
 ---
 
 ## Asymptotics Problems Solutions
