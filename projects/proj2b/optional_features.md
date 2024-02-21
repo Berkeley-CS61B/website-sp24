@@ -1,8 +1,15 @@
 ---
-layout: page # The HTML template to use to render this page.
-title: "Project 2B Optional Features" # Title of page.
-categories: proj
-released: true # you have to also change this to true to release.
+layout: page
+title: "Project 2B Optional Features"
+nav_order: 3
+grand_parent: Projects
+parent: "Project 2B: Ngordnet (Wordnet)"
+has_children: false
+has_toc: false
+has_right_toc: true
+description: >-
+  Project 2B optional features.
+released: true
 ---
 
 ## Getting Started
