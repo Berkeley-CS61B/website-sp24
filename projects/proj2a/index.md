@@ -86,7 +86,7 @@ information about the historical frequencies of all observed words and phrases i
 observed [ngrams](http://en.wikipedia.org/wiki/N-gram)). Google provides
 the [Google Ngram Viewer on the web](https://books.google.com/ngrams/graph?content=global+warming%2Cto+the+moon&year_start=1800&year_end=2019&corpus=en-2019&smoothing=0)
 , allowing users to visualize the relative historical popularity of words and phrases. For example, the link above plots
-the **relative popularity** of the phrases "global warming" (a 2gram) and "to the moon" (a 3gram).
+the **weighted popularity history** of the phrases "global warming" (a 2gram) and "to the moon" (a 3gram).
 
 In Project 2A, you will be build a version of this tool that only handles 1grams. In other words, you'll only be able to
 handle individual words. We'll only use a small subset (around 300 megabytes) of the full 1grams dataset, as larger
@@ -288,7 +288,7 @@ To pass on the autograder, the formatting of the output must match exactly.
 - All lines of text, including the last line, should end in a new line character.
 - All whitespace and punctuation (commas, braces, colons) should follow the example above.
 
-These numbers represent the **relative popularity** of the words cat and dog in the given years. Due to rounding
+These numbers represent the **weighted popularity histories** of the words cat and dog in the given years. Due to rounding
 errors, your numbers may not be exactly the same as shown above. Your format should be exactly as shown above:
 specifically the word, followed by a colon, followed by a space, followed by a string representation of the
 appropriate `TimeSeries` where key-value pairs are given as a comma-separated list inside curly braces, with an equals
@@ -328,7 +328,7 @@ The text based history from the previous section is not useful for much other th
 our tool to discover interesting things will require visualization.
 
 The `main.PlotDemo` provides example code that uses your `NGramMap` to generate a visual plot showing the
-relative frequency of the words cat and dog between 1900 and 1950. Try running it. If your `NGramMap` class is correct,
+weighted popularity history of the words cat and dog between 1900 and 1950. Try running it. If your `NGramMap` class is correct,
 you should see a very long string printed to your console that might look something like:
 
     iVBORw0KGg...
