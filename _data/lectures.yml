@@ -174,7 +174,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1zlmNjzu42WAEmyJFG2tYRZJIguExSFq5B__equ3-GaM"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqwuAZ5q3P5xUxe2xNZL3an"
     recording: "https://youtu.be/cy83wpE6Qj0"
-    quiz: ""
+    quiz: "https://forms.gle/SgtqMCeV1KLtbgCU6"
     readings:
       - title: "Ch 15"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/15.-asymptotics-ii"
