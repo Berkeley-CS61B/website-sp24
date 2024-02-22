@@ -48,7 +48,7 @@ labs:
   - title: "Disjoint Sets"
     due: "2/26"
     link: labs/lab05
-    slides:
+    slides: https://docs.google.com/presentation/d/1IpPNdrvfk1pVt-uG6A6xJYA9gS2BQyYSxik2olPdUNE
   - title: "BSTMap"
     due: "3/1"
     # link: labs/lab06
