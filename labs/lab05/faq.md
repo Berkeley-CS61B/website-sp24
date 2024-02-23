@@ -10,7 +10,7 @@ released: true
 ---
 
 
-### I'm running into `StackOverFlowError` or seeing that my assessment timed out 
+### I'm running into `StackOverFlowError`, `OutOfMemoryError` or seeing that my assessment timed out 
 on one of the tests. 
 
 If you're receiving a `StackOverFlowError`, it might imply that there is an infinite
