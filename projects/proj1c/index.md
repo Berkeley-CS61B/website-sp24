@@ -283,7 +283,7 @@ For testing, you can use `Comparator.naturalOrder()` in your own test files. Thi
 If your generic type is `Integer`, you can create your `MaxArrayDeque61B` using the following example:
 
 ```java
-MaxArrayDeque61B<Integer> m = new MaxArrayDeque61B<>(Comparator.naturalOrder());
+MaxArrayDeque61B<Integer> m = new MaxArrayDeque61B<Integer>(Comparator.naturalOrder());
 ```
 
 {: .warning}
