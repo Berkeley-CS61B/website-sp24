@@ -96,9 +96,9 @@ datasets will require more sophisticated techniques that are out of scope for th
 
 A `TimeSeries` is a special purpose extension of the existing `TreeMap` class where the key type parameter is
 always `Integer`, and the value type parameter is always `Double`. Each key will correspond to a year, and each value a
-numerical data point for that year. You can find the `TreeMap` API from [here](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html) to see which methods are available to you.
+numerical data point for that year. You can find the `TreeMap` API from [here](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html) to see which methods are available to you.
 
-For example, the following code would create a `TimeSeries` and associate the number 3.6 with 1992 and 9.2 with 1993.
+For example, the following code would create a `TimeSeries` and associate the year 1992 with the value 3.6 and 1993 with 9.2.
 
 ```java
 TimeSeries ts = new TimeSeries();
@@ -126,7 +126,7 @@ You may not add additional public methods to this class. You're welcome to add a
 - `TimeSeries` objects should have no instance variables. A `TimeSeries` is-a `TreeMap`. That means your `TimeSeries`
   class also has access to all methods that a TreeMap has;
   see [the TreeMap API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html).
-- **You should not have any code which fills in a zero if a value is unavailable.**
+- **Several methods require that you compare the data of two `TimeSeries`. You should not have any code which fills in a zero if a year or value is unavailable.**
 - The provided `TimeSeriesTest` class provides a simple test of the `TimeSeries` class. Feel free to add your own tests.
   - Note that the unit tests we gave you **do not** evaluate the correctness of the `dividedBy` method.
 - You'll notice in `testFromSpec()` that we did not directly compare `expectedTotal` with `totalPopulation.data()`. This
@@ -381,11 +381,15 @@ You are responsible for implementing four classes:
 - **HistoryTextHandler (10%)**: Correctly implement `HistoryTextHandler.java`.
 - **HistoryHandler (10%)**: Correctly implement `HistoryHandler.java`.
 
-Below is the velocity limiting policy for this assignment:
+### Submission
 
-1. You will start with **8 tokens, each of which have a 24 hour refresh time.**
-2. At **9:00PM on October 11th** (3 hours before the deadline), you will be reset to **4 tokens, each of which have a 15 minute refresh time.**
-3. At **11:59PM on October 11th**, you will again be reset to **8 tokens with a 24 hour refresh.** This policy will remain in place for the remainder of the semester.
+To submit the project, add and commit your files, then push to your remote repository. Then, go to the relevant
+assignment on Gradescope and submit there.
+
+The autograder for this assignment will have the following velocity limiting scheme:
+
+- From the release of the project to the due date, you will have 4 tokens; each of
+  these tokens will refresh every 24 hours.
 
 ## Acknowledgements
 
