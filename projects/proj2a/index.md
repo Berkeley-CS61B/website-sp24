@@ -264,8 +264,8 @@ data structures, it is incredibly important to be able to take projects and depl
     The basic idea is that when you call `hns.register("historytext", new DummyHistoryTextHandler(ngm))`, an object of
     type `DummyHistoryTextHandler` is created that will handle any clicks to the `History (Text)` button.
 
-4.  Try running the `main.Main` class. The terminal output in IntelliJ might be red, but as long as you see the
-    line: `INFO org.eclipse.jetty.server.Server - Started...`, the server started correctly. Now open the
+4.  Try running the `main.Main` class. In the terminal output in IntelliJ you should see the
+    line: `INFO org.eclipse.jetty.server.Server - Started...`, which means the server started correctly. Now open the
     `ngordnet_2a.html` file again, enter "cat, dog" again, then click `History (Text)`. This time, you should see a
     message that says:
 
