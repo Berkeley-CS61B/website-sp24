@@ -157,7 +157,8 @@ An example of this is shown below, where we start out with the following
 
 {: .warning} 
 This is only an example to demonstrate what path compression does. 
-**Note that you can't get this structure with a weighted quick union.**
+**Note that you can't get this structure (the first image, 
+directly below) with a weighted quick union.**
 
 ![path_compression_before](img/path_compression_before.png)
 
