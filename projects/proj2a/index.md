@@ -11,8 +11,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-This page is not officially released yet. All information here is subject to change.
 
 ## [FAQ](faq.md)
 
