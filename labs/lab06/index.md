@@ -147,8 +147,8 @@ We _strongly recommend_ you create helper methods to facilitate your implementat
 (specifically, recursive helper methods are strongly encouraged).
 
 {: .info}
-Unfortunately, most methods you need to implement rely on others
-(`get` requires `put`, etc.). This makes it difficult to test most methods until
+Unfortunately, most methods you need to implement rely on others for testing 
+purposes (`get` requires `put`, etc.). This makes it difficult to test most methods until
 you implement `put`. We recommend you implement the methods in the order
 specified in `Map61B`. <br/><br/> You can test your implementation
 using `TestBSTMap.java`.
