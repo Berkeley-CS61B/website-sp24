@@ -388,7 +388,7 @@ assignment on Gradescope and submit there.
 
 The autograder for this assignment will have the following velocity limiting scheme:
 
-- From the release of the project to the due date, you will have 4 tokens; each of
+- From the release of the project to the due date, you will have 8 tokens; each of
   these tokens will refresh every 24 hours.
 
 ## Acknowledgements
