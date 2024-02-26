@@ -11,8 +11,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-This page is not officially released yet. All information here is subject to change.
 
 ## [FAQ](faq.md)
 
@@ -231,7 +229,7 @@ load `top_49887_words.csv`.
   write additional tests.
   - Rather than using one of the large input files (e.g. `top_14377_words.csv`), we recommend starting with one of the
     smaller input files, either `very_short.csv` or `words_that_start_with_q.csv`.
-- **You should not have any code which fills in a zero if a value is unavailable.**
+- **Like in TimeSeries, you should not have any code which fills in a zero if a value is unavailable.**
 - If it helps speed up your code, you can assume year arguments are between 1400 and 2100. These variables are stored as constants `MIN_YEAR` and `MAX_YEAR` in the `TimeSeries` class.
 - `NGramMap` should not extend any other class.
 - Your methods should be simple! If you pick the right data structures, the methods should be relatively short.
@@ -388,7 +386,7 @@ assignment on Gradescope and submit there.
 
 The autograder for this assignment will have the following velocity limiting scheme:
 
-- From the release of the project to the due date, you will have 4 tokens; each of
+- From the release of the project to the due date, you will have 8 tokens; each of
   these tokens will refresh every 24 hours.
 
 ## Acknowledgements

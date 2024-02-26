@@ -46,7 +46,7 @@ projects:
     nonumber: True
   - title: "Project 2A: NGrams"
     due: "3/6"
-    # link: "projects/proj2/proj2a"
+    link: "projects/proj2a"
     rowspan: 7
     nonumber: True
   - title: "Project 2B: Wordnet"
