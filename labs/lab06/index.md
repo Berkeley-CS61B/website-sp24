@@ -201,7 +201,7 @@ so play around with sufficiently large values). Record your results
 in a file named `speedTestResults.txt`.
 
 {: .task}
-**TASK**: Run the speed tests and record your results in `speedTestResults.txt`.
+Run the speed tests and record your results in `speedTestResults.txt`.
 There is no standard format required for your results, but at a minimum, you
 should include what you did and what you observed.
 
