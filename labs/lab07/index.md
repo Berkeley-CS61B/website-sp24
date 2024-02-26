@@ -56,7 +56,7 @@ We recommend that you review the relevant lecture slides before getting started 
 ### Links vs Nodes
 
 {: .danger}
-**(IMPORTANT): Please do not skip this section. This is important for you to
+**(IMPORTANT) Please do not skip this section. This is important for you to
 read before you continue on with the rest of the lab.** It will be much harder for you
 if you do not read this section.
 
@@ -69,11 +69,11 @@ of it in lecture.
 ![](img/original_links.png)
 
 For this lab, since we'll be handling colored nodes - the relationship between the red link
-and its connected node can be defined like below.
+and its connected node can be defined like below:
 
 ![](img/link_to_node.png)
 
-Originally, `A` was connected by a red link. But if we use colored nodes in our representation
+Originally, `A` was connected to `B` by a red link. But if we use colored nodes in our representation
 instead of links, `A` itself would be colored red. The visualization above is meant to show 
 how a red link would map to a colored node, so please keep this mind for the rest of the lab!
 

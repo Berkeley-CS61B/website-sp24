@@ -51,8 +51,8 @@ labs:
     slides: https://docs.google.com/presentation/d/1IpPNdrvfk1pVt-uG6A6xJYA9gS2BQyYSxik2olPdUNE
   - title: "BSTMap"
     due: "3/01"
-    # link: labs/lab06
-    slides:
+    link: labs/lab06
+    slides: https://docs.google.com/presentation/d/195ji7a1AppY-oH0Q5Ls1W6AB3tLLMXakA7h9IbzHp4I/edit?usp=sharing
   - title: "LLRBs"
     due: "3/08"
     # link: labs/lab07
