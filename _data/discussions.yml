@@ -74,7 +74,11 @@ discussions:
     solutions: True
     regular_slides: https://docs.google.com/presentation/d/11tqrOcm3vMkeEfFpwNnCe6XVHWZDLSTJgZoH_N5wfbQ/edit?usp=sharing
     examprep_slides: https://docs.google.com/presentation/d/14qOZuYqOu4viJOo32QdZzany6colAbV-oDFUT4lJdg4/edit?usp=sharing
+    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpqWL31oiZlmcka8zFyT5uM
+    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpebKdnwkYKIkyCBNzNXAHW
   - title: "ADTs, Asymptotics II, BSTs"
+    regular_slides: https://docs.google.com/presentation/d/1i9ecGnZlxUvCiEwqeG_vbANaAlneDpMK8cxhLcjNMYo/edit?usp=sharing
+    examprep_slides: https://docs.google.com/presentation/d/1aGcpJSZt1IT0OKj75pwQa6Dkwdb3WEsAfdicpzIvvb4/edit?usp=sharing
     solutions: True
   - title: "B-Trees, LLRBs, Hashing"
     solutions: True
