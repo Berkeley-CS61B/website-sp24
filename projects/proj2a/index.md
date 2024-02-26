@@ -11,8 +11,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-This page is not officially released yet. All information here is subject to change.
 
 ## [FAQ](faq.md)
 
@@ -86,7 +84,7 @@ information about the historical frequencies of all observed words and phrases i
 observed [ngrams](http://en.wikipedia.org/wiki/N-gram)). Google provides
 the [Google Ngram Viewer on the web](https://books.google.com/ngrams/graph?content=global+warming%2Cto+the+moon&year_start=1800&year_end=2019&corpus=en-2019&smoothing=0)
 , allowing users to visualize the relative historical popularity of words and phrases. For example, the link above plots
-the **relative popularity** of the phrases "global warming" (a 2gram) and "to the moon" (a 3gram).
+the **weighted popularity history** of the phrases "global warming" (a 2gram) and "to the moon" (a 3gram).
 
 In Project 2A, you will be build a version of this tool that only handles 1grams. In other words, you'll only be able to
 handle individual words. We'll only use a small subset (around 300 megabytes) of the full 1grams dataset, as larger
@@ -96,9 +94,9 @@ datasets will require more sophisticated techniques that are out of scope for th
 
 A `TimeSeries` is a special purpose extension of the existing `TreeMap` class where the key type parameter is
 always `Integer`, and the value type parameter is always `Double`. Each key will correspond to a year, and each value a
-numerical data point for that year. You can find the `TreeMap` API from [here](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html) to see which methods are available to you.
+numerical data point for that year. You can find the `TreeMap` API from [here](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html) to see which methods are available to you.
 
-For example, the following code would create a `TimeSeries` and associate the number 3.6 with 1992 and 9.2 with 1993.
+For example, the following code would create a `TimeSeries` and associate the year 1992 with the value 3.6 and 1993 with 9.2.
 
 ```java
 TimeSeries ts = new TimeSeries();
@@ -126,7 +124,7 @@ You may not add additional public methods to this class. You're welcome to add a
 - `TimeSeries` objects should have no instance variables. A `TimeSeries` is-a `TreeMap`. That means your `TimeSeries`
   class also has access to all methods that a TreeMap has;
   see [the TreeMap API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html).
-- **You should not have any code which fills in a zero if a value is unavailable.**
+- **Several methods require that you compare the data of two `TimeSeries`. You should not have any code which fills in a zero if a year or value is unavailable.**
 - The provided `TimeSeriesTest` class provides a simple test of the `TimeSeries` class. Feel free to add your own tests.
   - Note that the unit tests we gave you **do not** evaluate the correctness of the `dividedBy` method.
 - You'll notice in `testFromSpec()` that we did not directly compare `expectedTotal` with `totalPopulation.data()`. This
@@ -231,7 +229,7 @@ load `top_49887_words.csv`.
   write additional tests.
   - Rather than using one of the large input files (e.g. `top_14377_words.csv`), we recommend starting with one of the
     smaller input files, either `very_short.csv` or `words_that_start_with_q.csv`.
-- **You should not have any code which fills in a zero if a value is unavailable.**
+- **Like in TimeSeries, you should not have any code which fills in a zero if a value is unavailable.**
 - If it helps speed up your code, you can assume year arguments are between 1400 and 2100. These variables are stored as constants `MIN_YEAR` and `MAX_YEAR` in the `TimeSeries` class.
 - `NGramMap` should not extend any other class.
 - Your methods should be simple! If you pick the right data structures, the methods should be relatively short.
@@ -264,8 +262,8 @@ data structures, it is incredibly important to be able to take projects and depl
     The basic idea is that when you call `hns.register("historytext", new DummyHistoryTextHandler(ngm))`, an object of
     type `DummyHistoryTextHandler` is created that will handle any clicks to the `History (Text)` button.
 
-4.  Try running the `main.Main` class. The terminal output in IntelliJ might be red, but as long as you see the
-    line: `INFO org.eclipse.jetty.server.Server - Started...`, the server started correctly. Now open the
+4.  Try running the `main.Main` class. In the terminal output in IntelliJ you should see the
+    line: `INFO org.eclipse.jetty.server.Server - Started...`, which means the server started correctly. Now open the
     `ngordnet_2a.html` file again, enter "cat, dog" again, then click `History (Text)`. This time, you should see a
     message that says:
 
@@ -288,7 +286,7 @@ To pass on the autograder, the formatting of the output must match exactly.
 - All lines of text, including the last line, should end in a new line character.
 - All whitespace and punctuation (commas, braces, colons) should follow the example above.
 
-These numbers represent the **relative popularity** of the words cat and dog in the given years. Due to rounding
+These numbers represent the **weighted popularity histories** of the words cat and dog in the given years. Due to rounding
 errors, your numbers may not be exactly the same as shown above. Your format should be exactly as shown above:
 specifically the word, followed by a colon, followed by a space, followed by a string representation of the
 appropriate `TimeSeries` where key-value pairs are given as a comma-separated list inside curly braces, with an equals
@@ -328,7 +326,7 @@ The text based history from the previous section is not useful for much other th
 our tool to discover interesting things will require visualization.
 
 The `main.PlotDemo` provides example code that uses your `NGramMap` to generate a visual plot showing the
-relative frequency of the words cat and dog between 1900 and 1950. Try running it. If your `NGramMap` class is correct,
+weighted popularity history of the words cat and dog between 1900 and 1950. Try running it. If your `NGramMap` class is correct,
 you should see a very long string printed to your console that might look something like:
 
     iVBORw0KGg...
@@ -381,11 +379,15 @@ You are responsible for implementing four classes:
 - **HistoryTextHandler (10%)**: Correctly implement `HistoryTextHandler.java`.
 - **HistoryHandler (10%)**: Correctly implement `HistoryHandler.java`.
 
-Below is the velocity limiting policy for this assignment:
+### Submission
 
-1. You will start with **8 tokens, each of which have a 24 hour refresh time.**
-2. At **9:00PM on October 11th** (3 hours before the deadline), you will be reset to **4 tokens, each of which have a 15 minute refresh time.**
-3. At **11:59PM on October 11th**, you will again be reset to **8 tokens with a 24 hour refresh.** This policy will remain in place for the remainder of the semester.
+To submit the project, add and commit your files, then push to your remote repository. Then, go to the relevant
+assignment on Gradescope and submit there.
+
+The autograder for this assignment will have the following velocity limiting scheme:
+
+- From the release of the project to the due date, you will have 8 tokens; each of
+  these tokens will refresh every 24 hours.
 
 ## Acknowledgements
 
