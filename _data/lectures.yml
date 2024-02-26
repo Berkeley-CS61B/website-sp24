@@ -182,7 +182,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1tAXgjwVKsnH7AR-iCvkDM-rQFwrg4OnKVZzqPixZWI8"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrks2Xi7wU8s82FcwPaINYs"
     recording: "https://youtu.be/qVM6VC1ZfIE"
-    quiz: ""
+    quiz: "https://forms.gle/FCkc6AVV1KLEhELi9"
     readings:
       - title: "Ch 16"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/16.-adts-and-bsts"
