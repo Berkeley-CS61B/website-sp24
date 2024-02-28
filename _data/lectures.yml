@@ -190,7 +190,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1uQYk0Hxhf0jhnp-aXxoIGNGM2w_yILMyukRctRPc9Uo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoMUlGWsTyt-WHK-SuyXK_E"
     recording: "https://www.youtube.com/watch?v=B-uPNBrYotc"
-    quiz: ""
+    quiz: "https://forms.gle/fAAfREbnLdcGoTo76"
     readings:
       - title: "Ch 17"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/17.-b-trees"
