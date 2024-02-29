@@ -198,7 +198,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1WJze5Odoy4ZR1vqPM8X6duaZ5GGm_D7SaYrtOa5RnsA"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrYOYhFXExoXfP8uhHHCIri"
     recording: "https://www.youtube.com/watch?v=Z-INBpfIN78"
-    quiz: ""
+    quiz: "https://forms.gle/kzpqc5yEvbHFY7mo8"
     readings:
       - title: "Ch 18"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/18.-red-black-trees"
