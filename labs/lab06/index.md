@@ -6,7 +6,7 @@ has_children: true
 parent: Labs
 has_toc: false
 has_right_toc: true
-released: true
+released: trueundle exec jekyll serve
 ---
 
 ## FAQ

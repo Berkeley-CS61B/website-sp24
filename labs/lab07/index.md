@@ -126,6 +126,10 @@ In a balanced LLRB tree, every path to a null reference goes through the same nu
 
 **Insertion into LLRB trees starts off with the regular binary search tree
 insertion algorithm**, where we search to find the appropriate leaf location.
+
+{: .info} 
+**Whenever we insert a node into a LLRB, we insert it as a red node.**
+
 However, once we've placed the node, this can can break the LLRB
 invariants, so we need additional operations that can "restore" LLRB properties. 
 We know that there is a one-to-one correspondence of valid
