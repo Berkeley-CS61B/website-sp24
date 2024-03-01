@@ -14,7 +14,7 @@ to display on the course website. This takes 3 steps:
         a. E-mail
         b. Name
         c. Bio
-        d. Appointment ('ta' or 'tutor')
+        d. Appointment ('ta' or 'tutor' or 'ai')
         e. Link to photo on google drive (make sure sharing is set to 'Anyone with link')
         f. Pronouns
         g. Link to personal website
