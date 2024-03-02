@@ -56,7 +56,12 @@ Recall that if the requested key is not found in the map, then `get` will return
 
 ### I'm getting timeout issues after 60000 ms, or the autograder tells me that I should make sure my code terminates on all inputs.
 
-Be sure you're using the appropriate data structures - do we have to output duplicate words? Everywhere you can reasonably use a `Set` instead of a `List`, you'll save some runtime. Also, make sure you have some way of accessing synsets associated with a given word in constant time. You also shouldn't reconstruct the graph in each call to `handle`.
+Be sure you're using the appropriate data structures - do we have to output duplicate words? Everywhere you can reasonably use a `Set` instead of a `List`, you'll save some runtime. You should consider the runtime of `List` and `Set` functions as you use them. Also, make sure you have some way of accessing synsets associated with a given word in constant time. You also shouldn't reconstruct the graph in each call to `handle`.
+
+### My test is returning an empty list.
+
+If you're using `List.of()` to build a list, make sure that your comma separations are outside quotes.
+`List.of("one, two")` is a single element list with the word "one, two". `List.of("one", "two")` is a two element list with "one" and "two" separated.
 
 ## HyponymsHandler - k > 0
 

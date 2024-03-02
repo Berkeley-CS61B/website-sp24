@@ -148,8 +148,8 @@ and synthesizing the results with the dataset from Project 2A. Unlike 2A, it wil
 classes you need to support this task.
 
 1. Start by opening your `ngordnet.main.Main.java` file.
-2. Create a new file called `HyponymsHandler` that simply returns the word "Hello!" when the user clicks the
-   Hyponyms button in the browser. You'll need to create a new `HyponymsHandler` class that extends
+2. Edit the file called `HyponymsHandler` to simply return the word "Hello!" when the user clicks the
+   Hyponyms button in the browser. You'll need to make the `HyponymsHandler` class extend
    the `NgordnetQueryHandler` class. See your other Handler classes for examples. Make sure when you register your
    handler that you use the string "hyponyms" as the first argument to the `register` method, and not "hyponym".
 3. Once you've modified `Main` so that your new handler is registered to handle hyponyms requests, start up `Main` and
@@ -196,7 +196,7 @@ not** include:
   definition of \"transition\")
 
 {: .task}
->Create and implement `HyponymsHandler.java` and any helper classes.
+>Implement `HyponymsHandler.java` and any helper classes.
 >
 >**Note:** Please read the tips below, since you shouldn't be writing all of your code in this class.
 
@@ -394,11 +394,11 @@ that we want in our output. For example, if someone enters the word "dog", and t
 return exactly 5 words.
 
 To choose the 5 hyponyms, you should return the `k` words which occurred the most times in the time range requested. For
-example, if someone entered `words = "food, cake"`, `startYear = 1950`, `endYear = 1990`, and `k = 5`, then you would
+example, if someone entered `words = ["food", "cake"]`, `startYear = 1950`, `endYear = 1990`, and `k = 5`, then you would
 find the 5 most popular words in that time period that are hyponyms of both food and cake. Here, the popularity is
 defined as the total number of times the word appears over the entire time period. The words should then be returned in
-alphabetical order. In this case, the answer is `[biscuit, cake, kiss, snap, wafer]` if we're
-using `top_49887_words.csv`,
+alphabetical order. In this case, the answer is `[cake, cookie, kiss, snap, wafer]` if we're
+using `top_14377_words.csv`,
 `synsets.txt`, and `hyponyms.txt`.
 
 Note that if the front end doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
@@ -436,7 +436,7 @@ lectures.
 #### Tips
 
 - Until you use the autograder, you'll need to construct your own test cases. We provide one
-  above: `words = "food, cake"`
+  above: `words = ["food", "cake"]`
   , `startYear = 1950`, `endYear = 1990`, `k = 5`.
 - When constructing your own test cases, consider making your own input files. Using the large input files we provide is
   extremely tedious.
