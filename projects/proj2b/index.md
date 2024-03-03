@@ -402,6 +402,8 @@ In addition to Project 2B, you will also have to turn in your design document. T
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overiview of your algorigthm for your implementation.
+
+Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [gradescope](https://www.gradescope.com/courses/708063/assignments/4187807).
   
 Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 
