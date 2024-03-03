@@ -1,13 +1,17 @@
 <td rowspan="{{ include.rowspan }}" class="project {{ include.element.classes | join ' '}}">
-{%- if include.element.nonumber -%}
-  {%- assign content = include.element.title -%}
+{%- if include.element.custom_content -%}
+  {{ include.element.custom_content }}
 {%- else -%}
-  {%- capture content -%}Project {{ include.number }}: {{ include.element.title }}{%- endcapture -%} 
-{%- endif -%}
-{%- if include.element.link -%}
-  <a href="{{ include.element.link | relative_url }}">{{ content }}</a>
-{%- else -%}
-  {{ content }}
+  {%- if include.element.nonumber -%}
+    {%- assign content = include.element.title -%}
+  {%- else -%}
+    {%- capture content -%}Project {{ include.number }}: {{ include.element.title }}{%- endcapture -%} 
+  {%- endif -%}
+  {%- if include.element.link -%}
+    <a href="{{ include.element.link | relative_url }}">{{ content }}</a>
+  {%- else -%}
+    {{ content }}
+  {%- endif -%}
 {%- endif -%}
 {%- if include.element.due -%}
   <br>
