@@ -99,7 +99,7 @@ We'll link them here, as well as in other relevant parts of the spec.
 
 ## Handling `k != 0`
 
-Above, we handled the situation where `k == 0`, which is the default value when the user does not enter a `k` value.
+In Project 2B, we handled the situation where `k == 0`, which is the default value when the user does not enter a `k` value.
 
 Your required task is to handle the case where the user enters `k`. `k` represents the maximum number of hyponyms
 that we want in our output. For example, if someone enters the word "dog", and then enters `k = 5`, your code would
@@ -116,7 +116,7 @@ using `top_14377_words.csv`, `total_counts.csv`,
 Note that if the frontend doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
 `NGordnetQueryHandler.readQueryMap`.
 
-It might be hard to figure out the hyponyms of the words with `k!=0` so we are providing data that is easier to visualize! Below, you'll see a modified version for EECS class requirements, inspired by [HKN](https://hkn.eecs.berkeley.edu/courseguides). We have also provided the data that represents the graph below (`frequency-EECS.csv`, `hyponyms-EECS.txt`, `synsets-EECS.txt`). If someone entered `words = ["CS61A"]`, `startYear = 2010`, `endYear = 2020`, and `k = 4`, you should receive `"[CS170, CS61A, CS61B, CS61C]"`. This `frequency-EECS.csv` is a bit different from the previous one since it has values with the same frequencies. So while you are designing your implementation, bear this in mind that we can give you words with  the same frequencies.
+It might be hard to figure out the hyponyms of the words with `k!=0` so we are providing data that is easier to visualize! Below, you'll see a modified version for EECS class requirements, inspired by [HKN](https://hkn.eecs.berkeley.edu/courseguides). We have also provided the data that represents the graph below (`frequency-EECS.csv`, `hyponyms-EECS.txt`, `synsets-EECS.txt`). If someone entered `words = ["CS61A"]`, `startYear = 2010`, `endYear = 2020`, and `k = 4`, you should receive `"[CS170, CS61A, CS61B, CS61C]"`. This `frequency-EECS.csv` is a bit different from the previous one since it has values with the same frequencies. We highly recommend you to take a look at `frequency-EECS.csv`. Also, while you are designing your implementation, bear this in mind that we can give you words with the same frequencies.
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dn6fDDOrwY4Lb9Gbi-1" allowfullscreen></iframe>
 
