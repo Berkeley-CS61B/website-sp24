@@ -25,15 +25,15 @@ Run `git config pull.rebase false` and pull again.
 
 ### I'm getting 'Cannot invoke "ngordnet.ngrams.TimeSeries.years()" because "ILILILILIILILIILILIILIL" is null'
 
-Re-pull the libraries in `library-fa23`.
+Re-pull the libraries in `library-sp24`.
 
-### I tried running `git pull` from `library-fa23` but am still getting the above exception.
+### I tried running `git pull` from `library-sp24` but am still getting the above exception.
 
 Be sure you've re-imported the libraries in IntelliJ after getting the new library files.
 
 ### No matter what I do, the libraries still aren't working!
 
-Try deleting the `library-fa23` entirely and re-cloning it.
+Try deleting the `library-sp24` entirely and re-cloning it.
 
 ### I'm getting `Failed to bind to /0.0.0.0:4567` when running `Main.java`.
 
