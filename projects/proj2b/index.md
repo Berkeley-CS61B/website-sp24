@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Project 2B: Ngordnet (Wordnet)"
-nav_order: 3
+nav_order: 4
 parent: Projects
 has_children: true
 has_toc: false
@@ -20,16 +20,14 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2B is located
 [here](faq.md).
 
-## Checkpoint Due 10/23/23 - Coding Due 10/30/23
+## Project 2B Checkpoint & Design Doc Due 03/11/2024 - Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet tool.
 
-Unlike Project 2a, the implementation for this part of the project is very open-ended. Deciding on an overall design is
-an important skill that we'll also revisit in Project 3. The number of lines of code for this project isn't necessarily
-large, but there are a lot of independent decisions that you'll need to make along the way.
-
-
 As this is a quite new project, there may be occasional bugs or confusion with the spec. If you notice anything of this sort, please post on Ed.
+
+{: .danger}
+**PLEASE READ THROUGH 2C SPEC AFTER READING 2B SINCE YOUR DESIGN MIGHT CHANGE DEPENDING ON 2C IMPLEMENTATION. YOU CAN FIND IT [HERE](../proj2c/index.md)**
 
 ## Project Setup
 
@@ -40,13 +38,13 @@ As this is a quite new project, there may be occasional bugs or confusion with t
 
 1. Similar to other assignments in this class, run `git pull skeleton main` to get the skeleton code for this project.
    1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2A skeleton. We have provided placeholder implementations for `TimeSeries`, `NGramMap` from project 2a. This includes a working implementation of `countHistory` method using a new
-   library from in `library-fa23` (see next step).
+   library from in `library-sp24` (see next step).
    2. The placeholder implementations throw `UnsupportedOperationException`s for some methods. You will not need these methods.
-2. To get the new library, `cd` into your `library-fa23` directory and run `git pull`. Then,
-   import all the libraries from `library-fa23` into this project like you normally would.
+2. To get the new library, `cd` into your `library-sp24` directory and run `git pull`. Then,
+   import all the libraries from `library-sp24` into this project like you normally would.
    1. Now that you've pulled and imported the libraries, you'll notice that the code in `NgramMap.java` should no longer be red.
 3. Download the `data` files for this project
-   using [this link](https://drive.google.com/file/d/1xGTZqCo5maiZjA307OPocmKDOTYlJXnz/view?usp=sharing)
+   using [this link](www.google.com)
    and move them into your `proj2b` folder on the same level as `src`.
 
 Once you are done, your `proj2b` directory should look like this:
@@ -61,19 +59,20 @@ proj2b
 ├── tests
 ```
 
-{: .info}
->The k != 0 portion of this project uses the `NGramMap` class from project 2a, which is why we have provided placeholder implementations for `NGramMap` and `TimeSeries`. The placeholder implementations are sufficient to complete project 2b.
->
->If you want to copy in your own `NGramMap` and `TimeSeries` from project 2a, you can. However, we suggest only doing so after you get a full score on project 2b, just in case your implementation has any subtle bugs in it.
-
 {: .warning}
-If you are getting errors in `NGramMap`, make sure you did step 2 (updating `library-fa23`).
+If you are getting errors in `NGramMap`, make sure you did step 2 (updating `library-sp24`).
 
 
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/572446/assignments/3489941)** first before starting coding, or even designing your project. We think this would be helpful.
+**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](www.google.com)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+
+{: .task}
+Complete **Project 2B: [Checkpoint](www.google.com)**
+Complete **[Design Document](www.google.com)**
+
+This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
 
 The course staff has created a couple of introductory videos to the project and the starter code
 available [here](https://www.youtube.com/playlist?list=PLNpmrGKEeMf727KwSrG8Ez1o3odK--o9i).
@@ -385,89 +384,38 @@ Modify your `HyponymsHandler` and the rest of your implementation to deal with t
 To test this part of your code, we recommend manually constructing examples using `synsets16.txt` and `hyponyms16.txt`
 and using the provided front end to evaluate correctness.
 
-## Handling `k != 0`
-
-Above, we handled the situation where `k = 0`, which is the default value when the user does not enter a `k` value.
-
-Your final required task is to handle the case where the user enters `k`. `k` represents the maximum number of hyponyms
-that we want in our output. For example, if someone enters the word "dog", and then enters `k = 5`, your code would
-return exactly 5 words.
-
-To choose the 5 hyponyms, you should return the `k` words which occurred the most times in the time range requested. For
-example, if someone entered `words = ["food", "cake"]`, `startYear = 1950`, `endYear = 1990`, and `k = 5`, then you would
-find the 5 most popular words in that time period that are hyponyms of both food and cake. Here, the popularity is
-defined as the total number of times the word appears over the entire time period. The words should then be returned in
-alphabetical order. In this case, the answer is `[cake, cookie, kiss, snap, wafer]` if we're
-using `top_14377_words.csv`,
-`synsets.txt`, and `hyponyms.txt`.
-
-Note that if the front end doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
-`NGordnetQueryHandler.readQueryMap`.
-
-If `k = 0`, or the user does not enter `k` (which results in a default value of zero), then the `startYear`
-and `endYear` should be totally ignored.
-
-If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
-if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
-
-If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
-
-If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
-"potato" and enter "k = 15", but only 7 hyponyms of potato have non-zero counts, you'd return only 7 words.
-
-{: .task}
-Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
-
-{: .warning}
->This task will be a little trickier since you'll need to figure out how to pass information around so that the
->`HyponymsHandler` knows how to access a useful `NGramMap`.
-
-{: .warning}
-The `TimeSeries` class we provide in the skeleton code does not support `.data()`. You can use `.values()` instead.
-
-{: .danger}
->**DO NOT MAKE A STATIC NGRAMMAP FOR THIS TASK!** It might be tempting to simply make some sort of
->`public static NGramMap` that can be accessed from anywhere in your code. This is called a \"global variable\".
->
->We strongly discourage this way of thinking about programming, and instead suggest that you should be passing an
->NGramMap to either constructors or methods. We'll come back to talking about this during the software engineering
-lectures.
-
-#### Tips
-
-- Until you use the autograder, you'll need to construct your own test cases. We provide one
-  above: `words = ["food", "cake"]`
-  , `startYear = 1950`, `endYear = 1990`, `k = 5`.
-- When constructing your own test cases, consider making your own input files. Using the large input files we provide is
-  extremely tedious.
-- In the coming sections of this spec, we'll tell you how to set up your code for submission to the autograder, and how
-  to write your own JUnit tests to mimic the test cases provided by the grader.
-
 ## Deliverables and Scoring
 
 For Project 2B, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
 However, we will not be directly grading these classes, since they can vary from student to student.
 
-Project 2B will be worth 75 points. The points will be split as follows:
+Project 2B will be worth 70 points. The points will be split as follows:
 
-- [Checkpoint](https://www.gradescope.com/courses/572446/assignments/3489941) (5 points - Due October 23th)
-- Coding (70 points - Due October 30th):
-   - `HyponymHandler` single word case: 40%, k = 0
-   - `HyponymHandler` multi-word case: 20%, k = 0
-   - `HyponymHandler` popularity: 40%, k != 0
 
-The token limiting policy for this project will be as follows:
+- [Project 2B Checkpoint](www.google.com): 5 points - Due March 11th
+- Project 2B Coding: 60 points - Due April 1st
+   - `HyponymHandler` single word case: 65%, k = 0
+   - `HyponymHandler` multi-word case: 35%, k = 0
 
-1. You will start with 8 tokens, each of which has a 24-hour refresh time.
-2. **At 10:00 PM on October 30th** (2 hours before the deadline), you will be reset to **4 tokens, each of which has a 15-minute refresh time.**
-3. **At 12:00AM on October 31st**, you  will again be reset back to **8 tokens with a 24-hour refresh.** 
+
+In addition to Project 2B, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
+What we are looking for in the design document:
+  - Identify the data structures we have learned in the class that you will be using in your implementation.
+  - Pseudocode / general overiview of your algorigthm for your implementation.
+
+Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [gradescope](https://www.gradescope.com/courses/708063/assignments/4187807).
+  
+Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
+
+The token limiting policy for this project will be as follows: You will start with 8 tokens, each of which has a 24-hour refresh time.
+
 
 ## Testing Your Code
 
-We've provided you with two short unit test files for this project in the `proj2b_testing` directory:
+We've provided you with two short unit test files for this project in the `proj2b/tests` directory:
 
-- `proj2b_testing/TestOneWordK0Hyponyms.java`
-- `proj2b_testing/TestMultiWordK0Hyponyms.java`
+- `TestOneWordK0Hyponyms.java`
+- `TestMultiWordK0Hyponyms.java`
 
 The two provided test files correspond to the first two cases that you solved in this project, that is:
 
@@ -475,12 +423,7 @@ The two provided test files correspond to the first two cases that you solved in
 - Finding hyponyms of multiple words where k = 0 (e.g. `gallery, bowl`).
 
 **These test files are not comprehensive**; in fact, they each only contain one sanity check test. You should fill
-each file with more unit tests, and also use them as a template to create two new test files for the respective cases
-where `k != 0`.
-
-{: .task}
-Fill out the provided unit test files for the `k = 0` cases, and then write similar tests for the
-`k != 0` case.
+each file with more unit tests, and also use them as a template to create two new test files for the respective cases.
 
 If you need help figuring out what the expected outputs of your tests should be, you should use the two tools that we
 linked in the [Getting Started](#getting-started) section.
@@ -498,7 +441,7 @@ Throughout this assignment, we've had you use your front end to test your code. 
 to pretend to be a web browser and call your code. Instead, we'll need you to provide a method in the
 `proj2b_testing.AutograderBuddy` class that provides a handler that can deal with hyponyms requests.
 
-When you ran `git pull skeleton main` at the start of this spec, you should have received a file called `AutograderBuddy.java`
+When you ran `git pull skeleton main` at the start of this spec, you should have received a file called `AutograderBuddy.java`.
 
 Open `AutograderBuddy.java` and fill in the `getHyponymHandler` method such that it returns a `HyponymsHandler`
 that uses the four given files. Your code here should be quite similar to your code in `Main.java`.
@@ -506,6 +449,9 @@ that uses the four given files. Your code here should be quite similar to your c
 Now that you've created `proj2b_testing.AutograderBuddy`, you can submit to the
 autograder. If you fail any tests, you should be able to replicate them locally as JUnit tests by building on the test
 files above. If any additional datafiles are needed, they will be added to this section as links.
+
+{: .danger}
+**PLEASE READ THROUGH 2C SPEC AFTER READING 2B SINCE YOUR DESIGN MIGHT CHANGE DEPENDING ON 2C IMPLEMENTATION. YOU CAN FIND IT [HERE](../proj2c/index.md)**
 
 ## Optional Extra Features
 
@@ -517,14 +463,3 @@ If you'd like to go above and beyond in this project (and even explore some fron
 The WordNet part of this assignment is loosely adapted from Alina Ene and Kevin Wayne's
 [Wordnet assignment](http://www.cs.princeton.edu/courses/archive/fall14/cos226/assignments/wordnet.html) at Princeton
 University.
-
-<!---
-Some sort of design doc would be nice.
-
-Dominic suggested instead a "pipeline". Basically some sort of visual depiction about how their whole system works.
-
-Have both types of solution (with a node class, without a node class) in staff guide and solution.
-
-Add an empty HyponymHandler file that is empty to have the name right.
-
--->

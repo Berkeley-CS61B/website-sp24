@@ -205,8 +205,8 @@ lectures:
   - title: "Hashing"
     slides: "https://docs.google.com/presentation/d/12Su6RdBjVCGd5MrKE6Y5s-J4OyBgv--v-4LHjEwtJbU"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr_rFqN57yjZtcw_P4UiJ7a"
-    recording: ""
-    quiz: ""
+    recording: "https://youtu.be/9kcG-8TrbBA"
+    quiz: "https://forms.gle/uPK7wzSG2haFzKuh7"
     readings:
       - title: "Ch 19"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/19.-hashing"
