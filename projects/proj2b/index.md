@@ -441,7 +441,7 @@ Throughout this assignment, we've had you use your front end to test your code. 
 to pretend to be a web browser and call your code. Instead, we'll need you to provide a method in the
 `proj2b_testing.AutograderBuddy` class that provides a handler that can deal with hyponyms requests.
 
-When you ran `git pull skeleton main` at the start of this spec, you should have received a file called `AutograderBuddy.java`
+When you ran `git pull skeleton main` at the start of this spec, you should have received a file called `AutograderBuddy.java`.
 
 Open `AutograderBuddy.java` and fill in the `getHyponymHandler` method such that it returns a `HyponymsHandler`
 that uses the four given files. Your code here should be quite similar to your code in `Main.java`.
