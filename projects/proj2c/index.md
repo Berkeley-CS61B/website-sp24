@@ -171,10 +171,10 @@ lectures.
 For Project 2C, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
 However, we will not be directly grading these classes, since they can vary from student to student.
 
-Project 2C will be worth 35 points. The points will be split as follows:
+Project 2C will be worth 40 points. The points will be split as follows:
 
 - [Project 2C Checkpoint](www.google.com): 5 points - Due March 11th
-- Project 2C Coding: 30 points - Due April 1st
+- Project 2C Coding: 35 points - Due April 1st
    - `HyponymHandler` popularity: 50%, k != 0
    - `HyponymHandler` common-ancestors: 50%
 
