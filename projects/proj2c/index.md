@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Project 2C: Ngordnet (Wordnet Extended)"
+title: "Project 2C: Ngordnet Enhancemenets"
 nav_order: 3
 parent: Projects
 has_children: true
