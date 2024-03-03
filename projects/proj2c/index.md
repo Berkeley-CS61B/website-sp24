@@ -124,9 +124,7 @@ It might be hard to figure out the hyponyms of the words with `k!=0` so we are p
 {: .info}
 >If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
 >if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
-
 >If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
-
 >If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
 "potato" and enter "k = 15", but only 7 hyponyms of potato have non-zero counts, you'd return only 7 words.
 
@@ -180,8 +178,8 @@ Project 2C will be worth 40 points. The points will be split as follows:
 
 In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
 What we are looking for in the design document:
-  - Identify the data structures we have learned in the class
-  - Pseudocode / general overiview of your algorigthm for your implementation
+  - Identify the data structures we have learned in the class that you will be using in your implementation.
+  - Pseudocode / general overiview of your algorigthm for your implementation.
 
 Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 

@@ -400,8 +400,8 @@ Project 2B will be worth 70 points. The points will be split as follows:
 
 In addition to Project 2B, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
 What we are looking for in the design document:
-  - Identify the data structures we have learned in the class
-  - Pseudocode / general overiview of your algorigthm for your implementation
+  - Identify the data structures we have learned in the class that you will be using in your implementation.
+  - Pseudocode / general overiview of your algorigthm for your implementation.
   
 Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 
