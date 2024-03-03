@@ -56,7 +56,7 @@ We recommend that you review the relevant lecture slides before getting started 
 ### Links vs Nodes
 
 {: .danger}
-**(IMPORTANT) Please do not skip this section. This is important for you to
+**Please do not skip this section. This is important for you to
 read before you continue on with the rest of the lab.** It will be much harder for you
 if you do not read this section.
 
@@ -78,7 +78,7 @@ instead of links, `A` itself would be colored red. The visualization above is me
 how a red link would map to a colored node, so please keep this mind for the rest of the lab!
 
 {: .warning}
-**(IMPORTANT) Be aware of the relationship between the colored link and 
+**Be aware of the relationship between the colored link and 
 the corresponding colored node, as for the rest of the lab, we'll be using colored nodes 
 in our examples and descriptions to make the lab implementation easier.**
 
@@ -126,6 +126,10 @@ In a balanced LLRB tree, every path to a null reference goes through the same nu
 
 **Insertion into LLRB trees starts off with the regular binary search tree
 insertion algorithm**, where we search to find the appropriate leaf location.
+
+{: .info} 
+**Whenever we insert a node into a LLRB, we insert it as a red node.**
+
 However, once we've placed the node, this can can break the LLRB
 invariants, so we need additional operations that can "restore" LLRB properties. 
 We know that there is a one-to-one correspondence of valid

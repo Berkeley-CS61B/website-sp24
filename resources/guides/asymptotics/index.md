@@ -304,7 +304,7 @@ $$1, 2, 4, 8, ... N$$
 
 We're basically done. I did this above in the previous section. We know there are $\Theta(\log N)$ terms here. So, that's it. The work this Java function does is simply how many iterations there are which is $\Theta(\log N)$. Done.
 
-### Sumary of single loop Java methods
+### Summary of single loop Java methods
 
 We learned a strategy for approaching these.
 
