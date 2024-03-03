@@ -389,15 +389,16 @@ and using the provided front end to evaluate correctness.
 For Project 2B, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
 However, we will not be directly grading these classes, since they can vary from student to student.
 
-Project 2B will be worth 75 points. The points will be split as follows:
+Project 2B will be worth 70 points. The points will be split as follows:
 
-- [Checkpoint](https://www.gradescope.com/courses/572446/assignments/3489941) (5 points - Due October 23th)
-- Coding (70 points - Due October 30th):
-   - `HyponymHandler` single word case: 40%, k = 0
-   - `HyponymHandler` multi-word case: 20%, k = 0
-   - `HyponymHandler` popularity: 40%, k != 0
 
-In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
+- [Project 2B Checkpoint](www.google.com): 5 points - Due March 18th
+- Project 2B Coding: 60 points - Due April 1st
+   - `HyponymHandler` single word case: 65%, k = 0
+   - `HyponymHandler` multi-word case: 35%, k = 0
+
+
+In addition to Project 2B, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class
   - Pseudocode / general overiview of your algorigthm for your implementation
