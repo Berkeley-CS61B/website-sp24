@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 has_right_toc: true
 description: >-
-  Project 2A FAQ.
+  Project 2B FAQ.
 released: true
 ---
 
@@ -62,19 +62,3 @@ Be sure you're using the appropriate data structures - do we have to output dupl
 
 If you're using `List.of()` to build a list, make sure that your comma separations are outside quotes.
 `List.of("one, two")` is a single element list with the word "one, two". `List.of("one", "two")` is a two element list with "one" and "two" separated.
-
-## HyponymsHandler - k > 0
-
-### How do I tiebreak words with the same counts?
-
-It doesn't matter for this project - any behavior is acceptable. This means you can break ties alphabetically, or randomly, or not at all!
-
-### How should I store total popularity of words?
-
-Think about what you have implemented in Proj 2A. `TimeSeries` values are doubles, not ints. If you store the integer counts, you might get integer overflow.
-
-![image](./cheesememe.png)
-
-<!-- ### How can I find the data file for Test 4.10?
-
-You can download it from [here](https://drive.google.com/file/d/10Dl7TseAEBGpsm2QgIaST6hl6ChQbOY0/view?usp=sharing). -->

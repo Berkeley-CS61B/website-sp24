@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Project 2B: Ngordnet (Wordnet)"
-nav_order: 3
+nav_order: 4
 parent: Projects
 has_children: true
 has_toc: false

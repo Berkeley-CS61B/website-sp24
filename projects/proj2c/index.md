@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Project 2C: Ngordnet Enhancemenets"
-nav_order: 3
+nav_order: 5
 parent: Projects
 has_children: true
 has_toc: false
@@ -86,7 +86,7 @@ Complete **[Design Document](www.google.com)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
 
-The course staff has provided a higher overview of this part of the project. This might seem like not sufficient resource for now compared to previous parts and projects but we really want you ideate to come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here](www.youtube.com).
+The course staff has provided a higher overview of this part of the project. This might seem like not sufficient resource for now compared to previous parts and projects but we really want you ideate to come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here](www.google.com).
 
 We've also created two wonderful tools that you can (and should!) use to explore the dataset, see how the staff solution
 behaves for specific inputs, and get expected outputs for your unit tests (see [Testing Your Code](#testing-your-code)).
@@ -117,6 +117,8 @@ using `top_14377_words.csv`,
 Note that if the front end doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
 `NGordnetQueryHandler.readQueryMap`.
 
+Now fun part.
+
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dn6fDDOrwY4Lb9Gbi-1" allowfullscreen></iframe>
 
 {: .info}
@@ -137,6 +139,9 @@ Modify your `HyponymsHandler` and the rest of your implementation to deal with t
 {: .warning}
 >This task will be a little trickier since you'll need to figure out how to pass information around so that the
 >`HyponymsHandler` knows how to access a useful `NGramMap`.
+
+{: .warning}
+EECS-course gide is not available on web staff solution so it won't return anything if you give input `CS61A`.
 
 {: .warning}
 The `TimeSeries` class we provide in the skeleton code does not support `.data()`. You can use `.values()` instead.
@@ -161,22 +166,23 @@ lectures.
 
 ## Deliverables and Scoring
 
-For Project 2B, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
+For Project 2C, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
 However, we will not be directly grading these classes, since they can vary from student to student.
 
-Project 2B will be worth 75 points. The points will be split as follows:
+Project 2C will be worth 35 points. The points will be split as follows:
 
-- [Checkpoint](https://www.gradescope.com/courses/572446/assignments/3489941) (5 points - Due October 23th)
-- Coding (70 points - Due October 30th):
-   - `HyponymHandler` single word case: 40%, k = 0
-   - `HyponymHandler` multi-word case: 20%, k = 0
-   - `HyponymHandler` popularity: 40%, k != 0
+- [Project 2C Checkpoint](www.google.com): 5 points - Due March 18th
+- Project 2C Coding: 30 points - Due April 1st
+   - `HyponymHandler` popularity: 50%, k != 0
+   - `HyponymHandler` common-ancestor: 50%
 
-The token limiting policy for this project will be as follows:
+In addition to Project 2C, you will also have to turn in your design document.
 
-1. You will start with 8 tokens, each of which has a 24-hour refresh time.
-2. **At 10:00 PM on October 30th** (2 hours before the deadline), you will be reset to **4 tokens, each of which has a 15-minute refresh time.**
-3. **At 12:00AM on October 31st**, you  will again be reset back to **8 tokens with a 24-hour refresh.** 
+
+Due March 20th
+
+The token limiting policy for this project will be as follows: You will start with 8 tokens, each of which has a 24-hour refresh time.
+
 
 ## Testing Your Code
 
