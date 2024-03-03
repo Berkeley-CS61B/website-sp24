@@ -78,6 +78,8 @@ If you are getting errors in `NGramMap`, make sure you did step 2 (updating `lib
 **IMPORTANT NOTE:** We recommend that you should complete Project 2B and get full score from grader before you are starting.
 
 
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DhXeMOzkhjRj21zw5-1" allowfullscreen></iframe>
+
 
 ## Handling `k != 0`
 
