@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2C is located
 [here](faq.md).
 
-## Project 2C Checkpoint Due 03/18/2024 - Design Doc Due 03/18/2024 - Coding Due 04/01/2024
+## Project 2C Checkpoint Due 03/11/2024 - Design Doc Due 03/11/2024 - Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestors` case.
 
@@ -173,7 +173,7 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2C will be worth 35 points. The points will be split as follows:
 
-- [Project 2C Checkpoint](www.google.com): 5 points - Due March 18th
+- [Project 2C Checkpoint](www.google.com): 5 points - Due March 11th
 - Project 2C Coding: 30 points - Due April 1st
    - `HyponymHandler` popularity: 50%, k != 0
    - `HyponymHandler` common-ancestors: 50%

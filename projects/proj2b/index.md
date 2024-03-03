@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2B is located
 [here](faq.md).
 
-## Project 2B Checkpoint Due 03/18/2024 - Design Doc Due 03/18/2024 - Coding Due 04/01/2024
+## Project 2B Checkpoint Due 03/11/2024 - Design Doc Due 03/11/2024 - Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet tool.
 
@@ -392,7 +392,7 @@ However, we will not be directly grading these classes, since they can vary from
 Project 2B will be worth 70 points. The points will be split as follows:
 
 
-- [Project 2B Checkpoint](www.google.com): 5 points - Due March 18th
+- [Project 2B Checkpoint](www.google.com): 5 points - Due March 11th
 - Project 2B Coding: 60 points - Due April 1st
    - `HyponymHandler` single word case: 65%, k = 0
    - `HyponymHandler` multi-word case: 35%, k = 0
