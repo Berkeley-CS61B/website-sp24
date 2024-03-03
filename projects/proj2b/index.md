@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2B is located
 [here](faq.md).
 
-## Project 2B Checkpoint Due XX/XX/XXXX - Design Doc Due XX/XX/XXXX - Coding Due XX/XX/XXXX
+## Project 2B Checkpoint Due 03/18/2024 - Design Doc Due 03/18/2024 - Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet tool.
 
@@ -384,64 +384,6 @@ Modify your `HyponymsHandler` and the rest of your implementation to deal with t
 To test this part of your code, we recommend manually constructing examples using `synsets16.txt` and `hyponyms16.txt`
 and using the provided front end to evaluate correctness.
 
-## Handling `k != 0`
-
-Above, we handled the situation where `k = 0`, which is the default value when the user does not enter a `k` value.
-
-Your final required task is to handle the case where the user enters `k`. `k` represents the maximum number of hyponyms
-that we want in our output. For example, if someone enters the word "dog", and then enters `k = 5`, your code would
-return exactly 5 words.
-
-To choose the 5 hyponyms, you should return the `k` words which occurred the most times in the time range requested. For
-example, if someone entered `words = ["food", "cake"]`, `startYear = 1950`, `endYear = 1990`, and `k = 5`, then you would
-find the 5 most popular words in that time period that are hyponyms of both food and cake. Here, the popularity is
-defined as the total number of times the word appears over the entire time period. The words should then be returned in
-alphabetical order. In this case, the answer is `[cake, cookie, kiss, snap, wafer]` if we're
-using `top_14377_words.csv`,
-`synsets.txt`, and `hyponyms.txt`.
-
-Note that if the front end doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
-`NGordnetQueryHandler.readQueryMap`.
-
-If `k = 0`, or the user does not enter `k` (which results in a default value of zero), then the `startYear`
-and `endYear` should be totally ignored.
-
-If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
-if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
-
-If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
-
-If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
-"potato" and enter "k = 15", but only 7 hyponyms of potato have non-zero counts, you'd return only 7 words.
-
-{: .task}
-Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
-
-{: .warning}
->This task will be a little trickier since you'll need to figure out how to pass information around so that the
->`HyponymsHandler` knows how to access a useful `NGramMap`.
-
-{: .warning}
-The `TimeSeries` class we provide in the skeleton code does not support `.data()`. You can use `.values()` instead.
-
-{: .danger}
->**DO NOT MAKE A STATIC NGRAMMAP FOR THIS TASK!** It might be tempting to simply make some sort of
->`public static NGramMap` that can be accessed from anywhere in your code. This is called a \"global variable\".
->
->We strongly discourage this way of thinking about programming, and instead suggest that you should be passing an
->NGramMap to either constructors or methods. We'll come back to talking about this during the software engineering
-lectures.
-
-#### Tips
-
-- Until you use the autograder, you'll need to construct your own test cases. We provide one
-  above: `words = ["food", "cake"]`
-  , `startYear = 1950`, `endYear = 1990`, `k = 5`.
-- When constructing your own test cases, consider making your own input files. Using the large input files we provide is
-  extremely tedious.
-- In the coming sections of this spec, we'll tell you how to set up your code for submission to the autograder, and how
-  to write your own JUnit tests to mimic the test cases provided by the grader.
-
 ## Deliverables and Scoring
 
 For Project 2B, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
@@ -455,18 +397,22 @@ Project 2B will be worth 75 points. The points will be split as follows:
    - `HyponymHandler` multi-word case: 20%, k = 0
    - `HyponymHandler` popularity: 40%, k != 0
 
-The token limiting policy for this project will be as follows:
+In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
+What we are looking for in the design document:
+  - Identify the data structures we have learned in the class
+  - Pseudocode / general overiview of your algorigthm for your implementation
+  
+Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 
-1. You will start with 8 tokens, each of which has a 24-hour refresh time.
-2. **At 10:00 PM on October 30th** (2 hours before the deadline), you will be reset to **4 tokens, each of which has a 15-minute refresh time.**
-3. **At 12:00AM on October 31st**, you  will again be reset back to **8 tokens with a 24-hour refresh.** 
+The token limiting policy for this project will be as follows: You will start with 8 tokens, each of which has a 24-hour refresh time.
+
 
 ## Testing Your Code
 
-We've provided you with two short unit test files for this project in the `proj2b_testing` directory:
+We've provided you with two short unit test files for this project in the `proj2b/tests` directory:
 
-- `proj2b_testing/TestOneWordK0Hyponyms.java`
-- `proj2b_testing/TestMultiWordK0Hyponyms.java`
+- `TestOneWordK0Hyponyms.java`
+- `TestMultiWordK0Hyponyms.java`
 
 The two provided test files correspond to the first two cases that you solved in this project, that is:
 
@@ -474,12 +420,7 @@ The two provided test files correspond to the first two cases that you solved in
 - Finding hyponyms of multiple words where k = 0 (e.g. `gallery, bowl`).
 
 **These test files are not comprehensive**; in fact, they each only contain one sanity check test. You should fill
-each file with more unit tests, and also use them as a template to create two new test files for the respective cases
-where `k != 0`.
-
-{: .task}
-Fill out the provided unit test files for the `k = 0` cases, and then write similar tests for the
-`k != 0` case.
+each file with more unit tests, and also use them as a template to create two new test files for the respective cases.
 
 If you need help figuring out what the expected outputs of your tests should be, you should use the two tools that we
 linked in the [Getting Started](#getting-started) section.
@@ -519,14 +460,3 @@ If you'd like to go above and beyond in this project (and even explore some fron
 The WordNet part of this assignment is loosely adapted from Alina Ene and Kevin Wayne's
 [Wordnet assignment](http://www.cs.princeton.edu/courses/archive/fall14/cos226/assignments/wordnet.html) at Princeton
 University.
-
-<!---
-Some sort of design doc would be nice.
-
-Dominic suggested instead a "pipeline". Basically some sort of visual depiction about how their whole system works.
-
-Have both types of solution (with a node class, without a node class) in staff guide and solution.
-
-Add an empty HyponymHandler file that is empty to have the name right.
-
--->

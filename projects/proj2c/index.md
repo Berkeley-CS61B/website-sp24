@@ -20,9 +20,9 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2C is located
 [here](faq.md).
 
-## Project 2C Checkpoint Due XX/XX/XXXX - Design Doc Due XX/XX/XXXX - Coding Due XX/XX/XXXX
+## Project 2C Checkpoint Due 03/18/2024 - Design Doc Due 03/18/2024 - Coding Due 04/01/2024
 
-In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestor` case.
+In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestors` case.
 
 As this is a quite new project, there may be occasional bugs or confusion with the spec. If you notice anything of this sort, please post on Ed.
 
@@ -47,7 +47,7 @@ As this is a quite new project, there may be occasional bugs or confusion with t
 3. Download the `data` files for this project
    using [this link](www.google.com)
    and move them into your `proj2c` folder on the same level as `src`.
-4. You will need your implementation from 2B to get hyponyms of the word since `k!=0` & `commonAncestor` will depend on your implementation from 2B.
+4. You will need your implementation from 2B to get hyponyms of the word since `k!=0` & `commonAncestors` will depend on your implementation from 2B.
 
 Once you are done, your `proj2c` directory should look like this:
 
@@ -117,14 +117,11 @@ using `top_14377_words.csv`,
 Note that if the front end doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
 `NGordnetQueryHandler.readQueryMap`.
 
-Now fun part.
+It might be hard to figure out the hyponyms of the words with `k!=0` so we are providing data that is easier to visualize! Below, you'll see a modified version for EECS class requirements, inspired by [HKN](https://hkn.eecs.berkeley.edu/courseguides). We have also provided the data that represents the graph below (`frequency-EECS.csv`, `hyponyms-EECS.txt`, `synsets-EECS.txt`). If someone entered `words = ["CS61A"]`, `startYear = 2010`, `endYear = 2020`, and `k = 4`, you should receive `"[CS170, CS61A, CS61B, CS61C]"`. This `frequency-EECS.csv` is a bit different from the previous one since it has values with same frequencies. So while you are designing your implementation, bear this in mind that we can give you words with same frequencies.
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dn6fDDOrwY4Lb9Gbi-1" allowfullscreen></iframe>
 
 {: .info}
->If `k = 0`, or the user does not enter `k` (which results in a default value of zero), then the `startYear`
->and `endYear` should be totally ignored.
-
 >If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
 >if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
 
@@ -164,6 +161,11 @@ lectures.
 - In the coming sections of this spec, we'll tell you how to set up your code for submission to the autograder, and how
   to write your own JUnit tests to mimic the test cases provided by the grader.
 
+## Handling `commonAncestors`
+
+
+
+
 ## Deliverables and Scoring
 
 For Project 2C, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
@@ -174,35 +176,28 @@ Project 2C will be worth 35 points. The points will be split as follows:
 - [Project 2C Checkpoint](www.google.com): 5 points - Due March 18th
 - Project 2C Coding: 30 points - Due April 1st
    - `HyponymHandler` popularity: 50%, k != 0
-   - `HyponymHandler` common-ancestor: 50%
+   - `HyponymHandler` common-ancestors: 50%
 
-In addition to Project 2C, you will also have to turn in your design document.
+In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
+What we are looking for in the design document:
+  - Identify the data structures we have learned in the class
+  - Pseudocode / general overiview of your algorigthm for your implementation
 
-
-Due March 20th
+Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 
 The token limiting policy for this project will be as follows: You will start with 8 tokens, each of which has a 24-hour refresh time.
 
 
 ## Testing Your Code
 
-We've provided you with two short unit test files for this project in the `proj2b_testing` directory:
+We've provided you with two short unit test files for this project in the `proj2c/tests` directory:
 
-- `proj2b_testing/TestOneWordK0Hyponyms.java`
-- `proj2b_testing/TestMultiWordK0Hyponyms.java`
+- `TestOneWordKNot0Hyponyms.java`
+- `TestCommonAncestors.java`
 
-The two provided test files correspond to the first two cases that you solved in this project, that is:
-
-- Finding hyponyms of a single word where k = 0.
-- Finding hyponyms of multiple words where k = 0 (e.g. `gallery, bowl`).
 
 **These test files are not comprehensive**; in fact, they each only contain one sanity check test. You should fill
-each file with more unit tests, and also use them as a template to create two new test files for the respective cases
-where `k != 0`.
-
-{: .task}
-Fill out the provided unit test files for the `k = 0` cases, and then write similar tests for the
-`k != 0` case.
+each file with more unit tests, and also use them as a template to create two new test files for the respective cases.
 
 If you need help figuring out what the expected outputs of your tests should be, you should use the two tools that we
 linked in the [Getting Started](#getting-started) section.
@@ -218,14 +213,14 @@ linked in the [Getting Started](#getting-started) section.
 
 Throughout this assignment, we've had you use your front end to test your code. Our grader is not sophisticated enough
 to pretend to be a web browser and call your code. Instead, we'll need you to provide a method in the
-`proj2b_testing.AutograderBuddy` class that provides a handler that can deal with hyponyms requests.
+`proj2c_testing.AutograderBuddy` class that provides a handler that can deal with hyponyms requests.
 
 When you ran `git pull skeleton main` at the start of this spec, you should have received a file called `AutograderBuddy.java`
 
-Open `AutograderBuddy.java` and fill in the `getHyponymHandler` method such that it returns a `HyponymsHandler`
+Just like 2B, open `AutograderBuddy.java` and fill in the `getHyponymHandler` method such that it returns a `HyponymsHandler`
 that uses the four given files. Your code here should be quite similar to your code in `Main.java`.
 
-Now that you've created `proj2b_testing.AutograderBuddy`, you can submit to the
+Now that you've created `proj2c_testing.AutograderBuddy`, you can submit to the
 autograder. If you fail any tests, you should be able to replicate them locally as JUnit tests by building on the test
 files above. If any additional datafiles are needed, they will be added to this section as links.
 
@@ -240,13 +235,3 @@ The WordNet part of this assignment is loosely adapted from Alina Ene and Kevin 
 [Wordnet assignment](http://www.cs.princeton.edu/courses/archive/fall14/cos226/assignments/wordnet.html) at Princeton
 University.
 
-<!---
-Some sort of design doc would be nice.
-
-Dominic suggested instead a "pipeline". Basically some sort of visual depiction about how their whole system works.
-
-Have both types of solution (with a node class, without a node class) in staff guide and solution.
-
-Add an empty HyponymHandler file that is empty to have the name right.
-
--->
