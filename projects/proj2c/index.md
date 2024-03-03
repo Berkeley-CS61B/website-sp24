@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2C is located
 [here](faq.md).
 
-## Checkpoint Due 10/23/23 - Coding Due 10/30/23
+## Project 2C Checkpoint Due XX/XX/XXXX - Design Doc Due XX/XX/XXXX - Coding Due XX/XX/XXXX
 
 In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestor` case.
 
@@ -75,11 +75,28 @@ If you are getting errors in `NGramMap`, make sure you did step 2 (updating `lib
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** We recommend that you should complete Project 2B and get full score from grader before you are starting.
+**IMPORTANT NOTE:** You should *really* complete **Project 2C: [Checkpoint](www.google.com)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
 
+{: .warning}
+**IMPORTANT NOTE:** We recommend that you should complete Project 2B and get full score from grader before you are starting coding.
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dn6fDDOrwY4Lb9Gbi-1" allowfullscreen></iframe>
+{: .task}
+Complete **Project 2C: [Checkpoint](www.google.com)**
+Complete **[Design Document](www.google.com)**
 
+This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
+
+The course staff has provided a higher overview of this part of the project. This might seem like not sufficient resource for now compared to previous parts and projects but we really want you ideate to come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here](www.youtube.com).
+
+We've also created two wonderful tools that you can (and should!) use to explore the dataset, see how the staff solution
+behaves for specific inputs, and get expected outputs for your unit tests (see [Testing Your Code](#testing-your-code)).
+We'll link them here, as well as in other relevant parts of the spec.
+
+- [Wordnet Visualizer](https://www.qxbytes.com/wordnet/): Useful for visually understanding how synsets and hyponyms work and testing
+  different words/lists of words for potential test case inputs. Click on the "?" bubbles to learn how to use the various
+  features of this tool!
+- [Staff Solution Webpage](https://ngordnet.datastructur.es/): Useful for generating expected outputs for different test
+  case inputs. Use this to write your unit tests!
 
 ## Handling `k != 0`
 
@@ -100,15 +117,18 @@ using `top_14377_words.csv`,
 Note that if the front end doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
 `NGordnetQueryHandler.readQueryMap`.
 
-If `k = 0`, or the user does not enter `k` (which results in a default value of zero), then the `startYear`
-and `endYear` should be totally ignored.
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dn6fDDOrwY4Lb9Gbi-1" allowfullscreen></iframe>
 
-If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
-if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
+{: .info}
+>If `k = 0`, or the user does not enter `k` (which results in a default value of zero), then the `startYear`
+>and `endYear` should be totally ignored.
 
-If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
+>If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
+>if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
 
-If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
+>If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
+
+>If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
 "potato" and enter "k = 15", but only 7 hyponyms of potato have non-zero counts, you'd return only 7 words.
 
 {: .task}

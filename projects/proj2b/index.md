@@ -66,7 +66,13 @@ If you are getting errors in `NGramMap`, make sure you did step 2 (updating `lib
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/572446/assignments/3489941)** first before starting coding, or even designing your project. We think this would be helpful.
+**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](www.google.com)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+
+{: .task}
+Complete **Project 2B: [Checkpoint](www.google.com)**
+Complete **[Design Document](www.google.com)**
+
+This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
 
 The course staff has created a couple of introductory videos to the project and the starter code
 available [here](https://www.youtube.com/playlist?list=PLNpmrGKEeMf727KwSrG8Ez1o3odK--o9i).
