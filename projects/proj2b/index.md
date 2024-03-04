@@ -44,7 +44,7 @@ As this is a quite new project, there may be occasional bugs or confusion with t
    import all the libraries from `library-sp24` into this project like you normally would.
    1. Now that you've pulled and imported the libraries, you'll notice that the code in `NgramMap.java` should no longer be red.
 3. Download the `data` files for this project
-   using [this link](www.google.com)
+   using [this link](https://drive.google.com/file/d/160iHOqwR4FAghGshbnSNMwd0idrjZxTR/view?usp=sharing)
    and move them into your `proj2b` folder on the same level as `src`.
 
 Once you are done, your `proj2b` directory should look like this:

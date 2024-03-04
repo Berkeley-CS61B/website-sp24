@@ -45,7 +45,7 @@ As this is a quite new project, there may be occasional bugs or confusion with t
    import all the libraries from `library-sp24` into this project like you normally would.
    1. Now that you've pulled and imported the libraries, you'll notice that the code in `NgramMap.java` should no longer be red.
 3. Download the `data` files for this project
-   using [this link](www.google.com)
+   using [this link](https://drive.google.com/file/d/160iHOqwR4FAghGshbnSNMwd0idrjZxTR/view?usp=sharing)
    and move them into your `proj2c` folder on the same level as `src`.
 4. You will need your implementation from 2B to get hyponyms of the word since `k!=0` & `commonAncestors` will depend on your implementation from 2B.
 
