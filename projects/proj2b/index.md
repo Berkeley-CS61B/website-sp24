@@ -70,7 +70,7 @@ If you are getting errors in `NGramMap`, make sure you did step 2 (updating `lib
 
 {: .task}
 Complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)**
-Complete **[Design Document](www.google.com)**
+Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
 
