@@ -205,7 +205,7 @@ lectures:
   - title: "Hashing"
     slides: "https://docs.google.com/presentation/d/12Su6RdBjVCGd5MrKE6Y5s-J4OyBgv--v-4LHjEwtJbU"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr_rFqN57yjZtcw_P4UiJ7a"
-    recording: ""
+    recording: "https://youtu.be/9kcG-8TrbBA"
     quiz: "https://forms.gle/uPK7wzSG2haFzKuh7"
     readings:
       - title: "Ch 19"
@@ -213,7 +213,7 @@ lectures:
   - title: "Hashing II"
     slides: "https://docs.google.com/presentation/d/1EGP_BWIbha4xQ4A5PJLAVIQaK6G0RbWZfrVDd0GmS08"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrSxUje7m5-Y41ELVPm50N_"
-    recording: "https://youtu.be/9kcG-8TrbBA"
+    recording: ""
     quiz: ""
     readings:
       - title: "Ch 20"
