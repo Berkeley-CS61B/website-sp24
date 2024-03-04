@@ -46,7 +46,7 @@
     <a href="{{ include.element.video }}">Video</a>
   {%- endif -%}
 {%- endcapture -%}
-{%- if include.element.video != "" -%}
+{%- if include.element.video -%}
   {% assign links_array = links_array | push: video %}
 {%- endif -%}
 
