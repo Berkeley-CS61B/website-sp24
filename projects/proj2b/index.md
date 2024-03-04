@@ -66,10 +66,10 @@ If you are getting errors in `NGramMap`, make sure you did step 2 (updating `lib
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](www.google.com)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
 
 {: .task}
-Complete **Project 2B: [Checkpoint](www.google.com)**
+Complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)**
 Complete **[Design Document](www.google.com)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
@@ -392,7 +392,7 @@ However, we will not be directly grading these classes, since they can vary from
 Project 2B will be worth 70 points. The points will be split as follows:
 
 
-- [Project 2B Checkpoint](www.google.com): 5 points - Due March 11th
+- [Project 2B Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808): 5 points - Due March 11th
 - Project 2B Coding: 60 points - Due April 1st
    - `HyponymHandler` single word case: 65%, k = 0
    - `HyponymHandler` multi-word case: 35%, k = 0
