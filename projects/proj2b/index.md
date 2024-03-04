@@ -75,7 +75,7 @@ Complete **[Design Document](https://www.gradescope.com/courses/708063/assignmen
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
 
 The course staff has created a couple of introductory videos to the project and the starter code
-available [here](https://www.youtube.com/playlist?list=PLNpmrGKEeMf727KwSrG8Ez1o3odK--o9i).
+available [here](https://www.youtube.com/playlist?list=PLNpmrGKEeMf727KwSrG8Ez1o3odK--o9i). Bear in mind we have changed the structure of the project so some information might be outdated!
 
 We've also created two wonderful tools that you can (and should!) use to explore the dataset, see how the staff solution
 behaves for specific inputs, and get expected outputs for your unit tests (see [Testing Your Code](#testing-your-code)).
