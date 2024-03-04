@@ -1,7 +1,7 @@
 ---
 name: Philip Ye
 pronouns: he/him/his
-role: ta
+role: tutor
 email: philipye@berkeley.edu
 website: 
 photo: philip-ye-1.jpg

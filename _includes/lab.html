@@ -30,8 +30,29 @@
   <br>
   (due {{ include.element.due }})
 {%- endif -%}
+
+{%- assign links_array = "" | split: "/" -%}
+{%- capture slides -%}
+  {%- if include.element.slides != "" -%}
+    <a href="{{ include.element.slides }}">Slides</a>
+  {%- endif -%}
+{%- endcapture -%}
 {%- if include.element.slides -%}
-  <br>
-  <a href="{{ include.element.slides }}">Slides</a>
+  {% assign links_array = links_array | push: slides %}
 {%- endif -%}
+
+{%- capture video -%}
+  {%- if include.element.video -%}
+    <a href="{{ include.element.video }}">Video</a>
+  {%- endif -%}
+{%- endcapture -%}
+{%- if include.element.video != "" -%}
+  {% assign links_array = links_array | push: video %}
+{%- endif -%}
+
+  <br>
+{%- for link in links_array -%}
+  {{ link }}
+  {%- unless forloop.last %}{{}} / {{}}{% endunless -%}
+{%- endfor -%}
 </td>

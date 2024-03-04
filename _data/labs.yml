@@ -55,9 +55,9 @@ labs:
     slides: https://docs.google.com/presentation/d/195ji7a1AppY-oH0Q5Ls1W6AB3tLLMXakA7h9IbzHp4I/edit?usp=sharing
   - title: "LLRBs"
     due: "3/08"
-    # link: labs/lab07
-    # video: https://www.youtube.com/watch?v=WiBHU9z9Di8
-    slides:
+    link: labs/lab07
+    video: https://www.youtube.com/watch?v=WiBHU9z9Di8
+    slides: https://docs.google.com/presentation/d/1gYsawrSNV8A-2WauHWr0mRbCdZGWotlouEAnIdaIrOY/edit?usp=sharing
   - title: "HashMaps"
     due: "3/15"
     # link: labs/lab08
