@@ -111,6 +111,9 @@ alphabetical order. In this case, the answer is `[cake, cookie, kiss, snap, wafe
 using `top_14377_words.csv`, `total_counts.csv`,
 `synsets.txt`, and `hyponyms.txt`.
 
+{: .danger}
+Be sure you are getting the words that appear with the highest *counts*, not the highest *weights*. Otherwise, you will run into issues that are very difficult to debug!
+
 Note that if the frontend doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
 `NGordnetQueryHandler.readQueryMap`.
 
