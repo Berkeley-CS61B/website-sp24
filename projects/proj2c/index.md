@@ -38,38 +38,36 @@ As this is a quite new project, there may be occasional bugs or confusion with t
 ### Skeleton Setup
 
 1. Similar to other assignments in this class, run `git pull skeleton main` to get the skeleton code for this project.
-   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2A skeleton. We have provided placeholder implementations for `TimeSeries`, `NGramMap` from project 2a. This includes a working implementation of `countHistory` method using a new
-   library from in `library-sp24` (see next step).
-   2. The placeholder implementations throw `UnsupportedOperationException`s for some methods. You will not need these methods.
-2. To get the new library, `cd` into your `library-sp24` directory and run `git pull`. Then,
-   import all the libraries from `library-sp24` into this project like you normally would.
-   1. Now that you've pulled and imported the libraries, you'll notice that the code in `NgramMap.java` should no longer be red.
-3. Download the `data` files for this project
+   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2B skeleton.
+2. Download the `data` files for this project
    using [this link](https://drive.google.com/file/d/160iHOqwR4FAghGshbnSNMwd0idrjZxTR/view?usp=sharing)
    and move them into your `proj2c` folder on the same level as `src`.
-4. You will need your implementation from 2B to get hyponyms of the word since `k!=0` & `commonAncestors` will depend on your implementation from 2B.
+3. You will need your implementation from 2A for `TimeSeries` and `NGramMap` as well as your implementation from 2B since `k!=0` & `commonAncestors` will depend on your implementation from 2A and 2B.
 
 Once you are done, your `proj2c` directory should look like this:
 
 ```sh
-proj2C
+proj2c
 ├── data
 │   ├── ngrams
 │   └── wordnet
 ├── src
+│   ├── <2B helper files>
+│   ├── browser
+│   ├── main
+│   ├── ngrams
+│   │   ├── <2A implementation>
+│   └── plotting
 ├── static
 ├── tests
 ```
 
 {: .info}
->The k != 0 portion of this project uses the `NGramMap` class from Project 2A, which is why we have provided placeholder implementations for `NGramMap` and `TimeSeries`. The placeholder implementations are sufficient to complete project 2b.
+>The k != 0 portion of this project uses the `NGramMap` class from Project 2A. You will need to copy your `NGramMap` and `TimeSeries` from Project 2A into this project, as well as any possible helper classes from 2B.
 >
->If you want to copy in your own `NGramMap` and `TimeSeries` from Project 2B, you can. However, we suggest only doing so after you get a full score on project 2B just in case your implementation has any subtle bugs in it.
+>While you can design for 2C in advance, we suggest only starting coding after you get a full score on project 2B just in case your implementation has any subtle bugs in it.
 >
 >Once you are done with Project 2B, please copy all necessary changes that you made in 2B to 2C folder. You should build your 2C on your 2B implementation.
-
-{: .warning}
-If you are getting errors in `NGramMap`, make sure you did step 2 (updating `library-sp24`).
 
 ## Getting Started
 
@@ -184,22 +182,21 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2C will be worth 40 points. The points will be split as follows:
 
-- [Project 2C Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808): 5 points - Due March 11th
+- [Project 2C Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808): 5 points - Due March 18th
 - Project 2C Coding: 35 points - Due April 1st
    - `HyponymHandler` popularity: 50%, k != 0
    - `HyponymHandler` common-ancestors: 50%
 
-In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
+In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding.
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
-  - Pseudocode / general overiview of your algorigthm for your implementation.
+  - Pseudocode / general overview of your algorithm for your implementation.
 
 Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [gradescope](https://www.gradescope.com/courses/708063/assignments/4187807).
 
 Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 
 The token limiting policy for this project will be as follows: You will start with 8 tokens, each of which has a 24-hour refresh time.
-
 
 ## Testing Your Code
 
@@ -246,4 +243,3 @@ If you'd like to go above and beyond in this project (and even explore some fron
 The WordNet part of this assignment is loosely adapted from Alina Ene and Kevin Wayne's
 [Wordnet assignment](http://www.cs.princeton.edu/courses/archive/fall14/cos226/assignments/wordnet.html) at Princeton
 University.
-

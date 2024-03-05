@@ -59,9 +59,6 @@ proj2b
 ├── tests
 ```
 
-{: .warning}
-If you are getting errors in `NGramMap`, make sure you did step 2 (updating `library-sp24`).
-
 
 ## Getting Started
 
