@@ -187,7 +187,8 @@ Project 2C will be worth 40 points. The points will be split as follows:
 
 - [Project 2C Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808): 5 points - Due March 18th
 - Project 2C Coding: 35 points - Due April 1st
-   - `HyponymHandler` popularity: 50%, k != 0
+   - `HyponymHandler` popularity-hardcoded: 50%, k != 0
+   - `HyponymHandler` popularity-randomized: 30%, k != 0
    - `HyponymHandler` common-ancestors: 50%
 
 In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding.
