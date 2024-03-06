@@ -72,7 +72,7 @@ proj2c
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a design document to Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring).
 
 {: .warning}
 **IMPORTANT NOTE:** We recommend that you should complete Project 2B and get full score from grader before you are starting coding.
@@ -196,7 +196,7 @@ What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overview of your algorithm for your implementation.
 
-Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [gradescope](https://www.gradescope.com/courses/708063/assignments/4187807).
+Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [Gradescope](https://www.gradescope.com/courses/708063/assignments/4187810).
 
 Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 
