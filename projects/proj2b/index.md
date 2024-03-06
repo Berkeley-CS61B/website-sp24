@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2B is located
 [here](faq.md).
 
-## Project 2B Checkpoint & Design Doc Due 03/11/2024 - Coding Due 04/01/2024
+## Project 2B/C Checkpoint & Design Doc Due 03/13/2024 - Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet tool.
 
@@ -63,10 +63,10 @@ proj2b
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
 
 {: .task}
-Complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)**
+Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
 Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
@@ -389,7 +389,7 @@ However, we will not be directly grading these classes, since they can vary from
 Project 2B will be worth 70 points. The points will be split as follows:
 
 
-- [Project 2B Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808): 5 points - Due March 11th
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
 - Project 2B Coding: 60 points - Due April 1st
    - `HyponymHandler` single word case: 50%, k = 0
    - `HyponymHandler` multi-word case: 30%, k = 0
