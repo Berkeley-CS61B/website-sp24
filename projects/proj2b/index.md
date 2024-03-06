@@ -37,13 +37,7 @@ As this is a quite new project, there may be occasional bugs or confusion with t
 ### Skeleton Setup
 
 1. Similar to other assignments in this class, run `git pull skeleton main` to get the skeleton code for this project.
-   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2A skeleton. We have provided placeholder implementations for `TimeSeries`, `NGramMap` from project 2a. This includes a working implementation of `countHistory` method using a new
-   library from in `library-sp24` (see next step).
-   2. The placeholder implementations throw `UnsupportedOperationException`s for some methods. You will not need these methods.
-2. To get the new library, `cd` into your `library-sp24` directory and run `git pull`. Then,
-   import all the libraries from `library-sp24` into this project like you normally would.
-   1. Now that you've pulled and imported the libraries, you'll notice that the code in `NgramMap.java` should no longer be red.
-3. Download the `data` files for this project
+2. Download the `data` files for this project
    using [this link](https://drive.google.com/file/d/160iHOqwR4FAghGshbnSNMwd0idrjZxTR/view?usp=sharing)
    and move them into your `proj2b` folder on the same level as `src`.
 
@@ -59,14 +53,13 @@ proj2b
 ├── tests
 ```
 
-
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
 
 {: .task}
-Complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)**
+Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)**
 Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
