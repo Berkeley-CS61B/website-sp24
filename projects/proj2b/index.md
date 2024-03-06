@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2B is located
 [here](faq.md).
 
-## Project 2B Checkpoint & Design Doc Due 03/11/2024 - Coding Due 04/01/2024
+## Project 2B/C Checkpoint & Design Doc Due 03/13/2024 - Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet tool.
 
@@ -382,10 +382,11 @@ However, we will not be directly grading these classes, since they can vary from
 Project 2B will be worth 70 points. The points will be split as follows:
 
 
-- [Project 2B Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808): 5 points - Due March 11th
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
 - Project 2B Coding: 60 points - Due April 1st
-   - `HyponymHandler` single word case: 65%, k = 0
-   - `HyponymHandler` multi-word case: 35%, k = 0
+   - `HyponymHandler` single word case: 50%, k = 0
+   - `HyponymHandler` multi-word case: 30%, k = 0
+   - `HyponymHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
 
 
 In addition to Project 2B, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
