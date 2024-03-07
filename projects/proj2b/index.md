@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2B is located
 [here](faq.md).
 
-## Project 2B Checkpoint & Design Doc Due 03/11/2024 - Coding Due 04/01/2024
+## Project 2B/C Checkpoint & Design Doc Due 03/13/2024 - Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet tool.
 
@@ -37,13 +37,7 @@ As this is a quite new project, there may be occasional bugs or confusion with t
 ### Skeleton Setup
 
 1. Similar to other assignments in this class, run `git pull skeleton main` to get the skeleton code for this project.
-   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2A skeleton. We have provided placeholder implementations for `TimeSeries`, `NGramMap` from project 2a. This includes a working implementation of `countHistory` method using a new
-   library from in `library-sp24` (see next step).
-   2. The placeholder implementations throw `UnsupportedOperationException`s for some methods. You will not need these methods.
-2. To get the new library, `cd` into your `library-sp24` directory and run `git pull`. Then,
-   import all the libraries from `library-sp24` into this project like you normally would.
-   1. Now that you've pulled and imported the libraries, you'll notice that the code in `NgramMap.java` should no longer be red.
-3. Download the `data` files for this project
+2. Download the `data` files for this project
    using [this link](https://drive.google.com/file/d/160iHOqwR4FAghGshbnSNMwd0idrjZxTR/view?usp=sharing)
    and move them into your `proj2b` folder on the same level as `src`.
 
@@ -59,17 +53,13 @@ proj2b
 ├── tests
 ```
 
-{: .warning}
-If you are getting errors in `NGramMap`, make sure you did step 2 (updating `library-sp24`).
-
-
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
 
 {: .task}
-Complete **Project 2B: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808)**
+Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
 Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
@@ -392,10 +382,11 @@ However, we will not be directly grading these classes, since they can vary from
 Project 2B will be worth 70 points. The points will be split as follows:
 
 
-- [Project 2B Checkpoint](https://www.gradescope.com/courses/708063/assignments/4187808): 5 points - Due March 11th
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
 - Project 2B Coding: 60 points - Due April 1st
-   - `HyponymHandler` single word case: 65%, k = 0
-   - `HyponymHandler` multi-word case: 35%, k = 0
+   - `HyponymHandler` single word case: 50%, k = 0
+   - `HyponymHandler` multi-word case: 30%, k = 0
+   - `HyponymHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
 
 
 In addition to Project 2B, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
@@ -403,7 +394,7 @@ What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overiview of your algorigthm for your implementation.
 
-Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [gradescope](https://www.gradescope.com/courses/708063/assignments/4187807).
+Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [Gradescope](https://www.gradescope.com/courses/708063/assignments/4187810).
   
 Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 

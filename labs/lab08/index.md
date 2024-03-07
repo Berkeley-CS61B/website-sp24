@@ -17,7 +17,7 @@ The FAQ for this lab can be found [here](faq.md).
 ## Introduction
 
 In this lab, you'll work on `MyHashMap`, a hashtable-based implementation of
-the `Map61B` interface. This will be very similar to Lab 07, except this time
+the `Map61B` interface. This will be very similar to Lab 06, except this time
 we're building a `HashMap` rather than a `TreeMap`.
 
 After you've completed your implementation, you'll compare the performance of
@@ -33,7 +33,7 @@ buckets.
 We've created a class `MyHashMap` in `MyHashMap.java`, with very minimal starter
 code. Your goal is to implement all of the methods in the `Map61B` interface
 from which `MyHashMap` inherits, _except_ `remove`, `keySet` and `iterator`
-(optional for Lab 09). For these, feel free to throw an
+(optional for Lab 08). For these, feel free to throw an
 `UnsupportedOperationException`.
 
 Note that your code will not compile until you implement all the methods of

@@ -213,15 +213,15 @@ lectures:
   - title: "Hashing II"
     slides: "https://docs.google.com/presentation/d/1EGP_BWIbha4xQ4A5PJLAVIQaK6G0RbWZfrVDd0GmS08"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrSxUje7m5-Y41ELVPm50N_"
-    recording: ""
-    quiz: ""
+    recording: "https://youtu.be/cTzrgZ9aBR8"
+    quiz: "https://forms.gle/XSpCAM2QgqyeNCFA8"
     readings:
       - title: "Ch 20"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/20.-hashing-ii"
   - title: "Heaps and Priority Queues"
     slides: "https://docs.google.com/presentation/d/1XVJfoSYH2ItiD1rz9yvyEf_HelejbfkYxQgukbgclSY"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrFJrMMOkrShULQ3KeoqZB9"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=oeHW_h085dI"
     quiz: ""
     readings:
       - title: "Ch 21"
