@@ -20,8 +20,10 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2C is located
 [here](faq.md).
 
-## Project 2B/C Checkpoint & Design Doc Due 03/13/2024
+## Checkpoint & Design Doc Due 03/13/2024
 ## Coding Due 04/01/2024
+
+
 
 In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestors` case.
 
@@ -92,6 +94,11 @@ We'll link them here, as well as in other relevant parts of the spec.
 - [Staff Solution Webpage](https://ngordnet.datastructur.es/): Useful for generating expected outputs for different test
   case inputs. Use this to write your unit tests!
 
+{: .task}
+>Read entire spec and complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
+>
+>Read entire spec and complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
+
 ## Handling `k != 0`
 
 In Project 2B, we handled the situation where `k == 0`, which is the default value when the user does not enter a `k` value.
@@ -128,10 +135,6 @@ If there are fewer than `k` words with non-zero counts, return only those words.
 This task will be a little trickier since you'll need to figure out how to pass information around so that the `HyponymsHandler` knows how to access a useful `NGramMap`.
 
 {: .task}
->Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
->
->Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
->
 >Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
 
 
@@ -171,6 +174,9 @@ Your query handling needs to remain efficient for common ancestors (i.e., the ti
 ### `NgordnetQueryType`
 
 You will need to modify your `HyponymsHandler` class to account for the *type* of query, i.e., hyponyms or ancestors. This should look similar to how you found `startYear`, `endYear`, or `k`.
+
+{: .task}
+>Modify your `HyponymsHandler` and the rest of your implementation to deal with the common ancestors case.
 
 ### Design Notes
 
