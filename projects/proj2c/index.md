@@ -73,16 +73,16 @@ proj2c
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a design document to Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a design document to Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring)
 
 {: .warning}
-**IMPORTANT NOTE:** We recommend that you should complete Project 2B and get full score from grader before you are starting coding.
+**IMPORTANT NOTE:** We recommend that you should complete Project 2B and get a full score from the autograder before you start coding.
 
-This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
+This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read the 2B & 2C spec carefully before starting your design document.
 
-The course staff has provided a higher overview of this part of the project. This might seem like not sufficient resource for now compared to previous parts and projects but we really want you ideate to come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here](www.google.com).
+[//]: # (The course staff has provided a higher overview of this part of the project. This might seem like not sufficient resource for now compared to previous parts and projects but we really want you to ideate and come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here]&#40;www.google.com&#41;.)
 
-We've also created two wonderful tools that you can (and should!) use to explore the dataset, see how the staff solution
+We've created two wonderful tools that you can (and should!) use to explore the dataset, see how the staff solution
 behaves for specific inputs, and get expected outputs for your unit tests (see [Testing Your Code](#testing-your-code)).
 We'll link them here, as well as in other relevant parts of the spec.
 
@@ -103,7 +103,7 @@ return at most 5 words.
 To choose the 5 hyponyms, you should return the `k` words which occurred the most times in the time range requested. For
 example, if someone entered `words = ["food", "cake"]`, `startYear = 1950`, `endYear = 1990`, and `k = 5`, then you would
 find the 5 most popular words in that time period that are hyponyms of both food and cake. Here, the popularity is
-defined as the total number of times the word appears over the entire time period. The words should then be returned in
+defined as the total number of times the word appears over the entire time period requested. The words should then be returned in
 alphabetical order. In this case, the answer is `[cake, cookie, kiss, snap, wafer]` if we're
 using `top_14377_words.csv`, `total_counts.csv`,
 `synsets.txt`, and `hyponyms.txt`.
@@ -118,23 +118,22 @@ It might be hard to figure out the hyponyms of the words with `k!=0` so we are p
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dn6fDDOrwY4Lb9Gbi-1" allowfullscreen></iframe>
 
-{: .info}
->If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
->if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
->If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
->If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
+
+If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
+if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
+If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
+If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
 `"potato"` and enter `k = 15`, but only 7 hyponyms of `"potato"` have non-zero counts, you'd return only 7 words.
 
-{: .task}
-Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
-Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
+This task will be a little trickier since you'll need to figure out how to pass information around so that the `HyponymsHandler` knows how to access a useful `NGramMap`.
 
 {: .task}
-Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
+>Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
+>
+>Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
+>
+>Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
 
-{: .warning}
->This task will be a little trickier since you'll need to figure out how to pass information around so that the
->`HyponymsHandler` knows how to access a useful `NGramMap`.
 
 {: .warning}
 EECS-course guide is not available on the interactive web staff solution so it won't return anything if you give the input `CS61A`.
@@ -188,11 +187,11 @@ Project 2C will be worth 40 points. The points will be split as follows:
 
 - [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
 - Project 2C Coding: 35 points - Due April 1st
-   - `HyponymHandler` popularity-hardcoded: 20%, k != 0
-   - `HyponymHandler` popularity-randomized: 30%, k != 0
-   - `HyponymHandler` common-ancestors: 50%
+   - `HyponymsHandler` popularity-hardcoded: 20%, k != 0
+   - `HyponymsHandler` popularity-randomized: 30%, k != 0
+   - `HyponymsHandler` common-ancestors: 50%
 
-In addition to Project 2C, you will also have to turn in your design document. This will be worht 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding.
+In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding.
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overview of your algorithm for your implementation.

@@ -56,13 +56,14 @@ proj2b
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting to code, or even design your project. We think this would be helpful for your understanding of the project. We will also require to submit a design document to the Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring)
 
 {: .task}
-Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
-Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
+>Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
+>
+>Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
-This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
+This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read the 2B & 2C spec carefully before starting your design document.
 
 The course staff has created a couple of introductory videos to the project and the starter code
 available [here](https://www.youtube.com/playlist?list=PLNpmrGKEeMf727KwSrG8Ez1o3odK--o9i). Bear in mind we have changed the structure of the project so some information might be outdated!
@@ -126,7 +127,7 @@ nasal_decongestant", since "actifed" is both of these things.
 
 #### Setting up a HyponymsHandler
 
-1. In your web browser, open the `ngordnet.html` file in the `static` folder. As a refresher, you can find how to do that [here](https://fa23.datastructur.es/materials/proj/proj2a/#:~:text=In%20your%20web,of%20our%20class.). You'll see that there is a new button: "
+1. In your web browser, open the `ngordnet.html` file in the `static` folder. As a refresher, you can find how to do that [here](https://sp24.datastructur.es/projects/proj2a/#historytexthandler). You'll see that there is a new button: "
    Hyponyms". Note that there is also a new input box called `k`.
 
 2. Try clicking the Hyponyms button. You'll see nothing happens (and if you open the developer tools feature of your web
@@ -384,15 +385,15 @@ Project 2B will be worth 70 points. The points will be split as follows:
 
 - [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
 - Project 2B Coding: 60 points - Due April 1st
-   - `HyponymHandler` single word case: 50%, k = 0
-   - `HyponymHandler` multi-word case: 30%, k = 0
-   - `HyponymHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
+   - `HyponymsHandler` single word case: 50%, k = 0
+   - `HyponymsHandler` multi-word case: 30%, k = 0
+   - `HyponymsHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
 
 
 In addition to Project 2B, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
-  - Pseudocode / general overiview of your algorigthm for your implementation.
+  - Pseudocode / general overview of your algorithm for your implementation.
 
 Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [Gradescope](https://www.gradescope.com/courses/708063/assignments/4187810).
   
