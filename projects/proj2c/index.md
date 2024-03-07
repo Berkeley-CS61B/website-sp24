@@ -21,7 +21,7 @@ FAQ for Project 2C is located
 [here](faq.md).
 
 ## Project 2B/C Checkpoint & Design Doc Due 03/13/2024
-## Coding Due 04/01/2024\
+## Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestors` case.
 
