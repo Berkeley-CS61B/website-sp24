@@ -78,6 +78,11 @@ We'll link them here, as well as in other relevant parts of the spec.
 - [Staff Solution Webpage](https://ngordnet.datastructur.es/): Useful for generating expected outputs for different test
   case inputs. Use this to write your unit tests!
 
+{: .task}
+>Read through entire 2B/C spec and complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
+>
+>Read through entire 2B/C spec and complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
+
 ## Using the WordNet Dataset
 
 Before we can incorporate WordNet into our project, we first need to understand the WordNet dataset.
