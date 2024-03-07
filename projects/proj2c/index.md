@@ -21,7 +21,7 @@ FAQ for Project 2C is located
 [here](faq.md).
 
 ## Project 2B/C Checkpoint & Design Doc Due 03/13/2024
-## Coding Due 04/01/2024
+## Coding Due 04/01/2024\
 
 In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestors` case.
 
@@ -39,7 +39,7 @@ As this is a quite new project, there may be occasional bugs or confusion with t
 ### Skeleton Setup
 
 1. Similar to other assignments in this class, run `git pull skeleton main` to get the skeleton code for this project.
-   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2B skeleton.
+   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2B skeleton. 
 2. Download the `data` files for this project
    using [this link](https://drive.google.com/file/d/160iHOqwR4FAghGshbnSNMwd0idrjZxTR/view?usp=sharing)
    and move them into your `proj2c` folder on the same level as `src`.
@@ -77,10 +77,6 @@ proj2c
 
 {: .warning}
 **IMPORTANT NOTE:** We recommend that you should complete Project 2B and get full score from grader before you are starting coding.
-
-{: .task}
-Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
-Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
 
@@ -128,6 +124,10 @@ It might be hard to figure out the hyponyms of the words with `k!=0` so we are p
 >If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
 >If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
 `"potato"` and enter `k = 15`, but only 7 hyponyms of `"potato"` have non-zero counts, you'd return only 7 words.
+
+{: .task}
+Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
+Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 {: .task}
 Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
