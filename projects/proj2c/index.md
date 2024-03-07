@@ -165,24 +165,48 @@ Up until now, we have only been concerned with finding the common hyponyms of wo
 
 That is, given a set of words, what words contain the given set of words as hyponyms?
 
-Keep in mind that `k != 0` can also apply here.
+For example, consider `synsets16.txt` and `hyponyms16.txt` from 2B:
 
-For example, on `synsets.txt`, `hyponyms.txt`, `top_14377_words.csv`, and `total_counts.csv`, a common-ancestors query from 2000 to 2020 for `words = ["mountain", "hill"]` with `k = 10` should return `"[elevation, entity, formation, object]"`.
+![commonAncestors-1](./img/commonAncestors-1.svg)
 
-Your query handling needs to remain efficient for common ancestors (i.e., the timeouts applied to hyponyms still apply here).
+If we find the ancestors of `"adjustment"`, we should get `"[adjustment, alteration, event, happening, modification, natural_event, occurrence, occurent]"`, as shown in the graph below.
+
+![commonAncestors-2](./img/commonAncestors-2.svg)
+
+This also should apply to words in multiple contexts, as seen with `"change"`:
+
+![commonAncestors-3](./img/commonAncestors-3.svg)
+
+The ancestors of `"change"` should be `"[act, action, alteration, change, event, happening, human_action, human_activity, modification, natural_event, occurrence, occurrent]"`.
+
+We can also ask for the *common ancestors* of sets of words, which can reveal some neat relationships!
+
+![commonAncestors-4](./img/commonAncestors-4.svg)
+
+Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[event, happening, natural_event, occurrence, occurent]"`, which are all the words in the graph that contain both `"change"` and `"adjustment"` as hyponyms.
+
+Note that the outputs are in alphabetical order, and keep in mind that `k != 0` can also apply to this task.
+
+**Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`.
+
+![Common ancestors word intersection](./img/commonAncestors-5.png)
+
+Your query handling needs to remain efficient for common ancestors (i.e., the timeouts applied to 2B still apply here). This means that going through every single word and checking if it contains all the words in the query as hyponyms will be too slow on the larger datasets!
+
+{: .task}
 
 ### `NgordnetQueryType`
 
-You will need to modify your `HyponymsHandler` class to account for the *type* of query, i.e., hyponyms or ancestors. This should look similar to how you found `startYear`, `endYear`, or `k`.
+You will need to modify your `HyponymsHandler` class to account for the *type* of query, i.e., hyponyms or common ancestors. This should look similar to how you found `startYear`, `endYear`, or `k`, and this will be specified for you with `NgordnetQueryType.HYPONYMS` or `NgordnetQueryType.ANCESTORS`, respectively.
 
 {: .task}
->Modify your `HyponymsHandler` and the rest of your implementation to deal with the common ancestors case.
+>Modify your `HyponymsHandler` and the rest of your implementation to handle common ancestor queries in addition to hyponym queries.
 
 ### Design Notes
 
 When designing your project, think about this task in advance. Planning ahead will ensure you don't need to rewrite all of your code when you get to this point.
 
-If you find yourself repeating a lot of the same code you've already written, there is probably an opportunity to reuse it.
+If you find yourself copy-pasting or repeating a lot of the same code you've already written, there is probably an opportunity to reuse it directly, or slightly modify it so you don't have to repeat yourself as often.
 
 ## Deliverables and Scoring
 
