@@ -230,7 +230,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1Gyke5ZMrgcMuBTa7qHAoklWZB3yf_yqQAymK2nV-Nqs"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoXCSo4Hx8TEZBsIpag6lMs"
     recording: ""
-    quiz: ""
+    quiz: "https://forms.gle/4XSDjoQ58QoduGqGA"
     readings:
       - title: "Ch 22"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/22.-tree-traversals-and-graphs"
