@@ -169,7 +169,7 @@ For example, consider `synsets16.txt` and `hyponyms16.txt` from 2B:
 
 ![commonAncestors-1](./img/commonAncestors-1.svg)
 
-If we find the ancestors of `"adjustment"`, we should get `"[adjustment, alteration, event, happening, modification, natural_event, occurrence, occurent]"`, as shown in the graph below.
+If we find the ancestors of `"adjustment"`, we should get `"[adjustment, alteration, event, happening, modification, natural_event, occurrence, occurrent]"`, as shown in the graph below.
 
 ![commonAncestors-2](./img/commonAncestors-2.svg)
 
@@ -183,7 +183,7 @@ We can also ask for the *common ancestors* of sets of words, which can reveal so
 
 ![commonAncestors-4](./img/commonAncestors-4.svg)
 
-Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[event, happening, natural_event, occurrence, occurent]"`, which are all the words in the graph that contain both `"change"` and `"adjustment"` as hyponyms.
+Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[event, happening, natural_event, occurrence, occurrent]"`, which are all the words in the graph that contain both `"change"` and `"adjustment"` as hyponyms.
 
 Note that the outputs are in alphabetical order, and keep in mind that `k != 0` can also apply to this task.
 
