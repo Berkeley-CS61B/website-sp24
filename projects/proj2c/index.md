@@ -82,7 +82,7 @@ proj2c
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read the 2B & 2C spec carefully before starting your design document.
 
-[//]: # (The course staff has provided a higher overview of this part of the project. This might seem like not sufficient resource for now compared to previous parts and projects but we really want you to ideate and come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here]&#40;www.google.com&#41;.)
+[//]: # (Course staff has provided a higher overview of this part of the project. This might seem like an insufficient resource for now compared to previous parts and projects but we really want you to ideate and come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here](&#40;www.google.com&#41;).)
 
 We've created two wonderful tools that you can (and should!) use to explore the dataset, see how the staff solution
 behaves for specific inputs, and get expected outputs for your unit tests (see [Testing Your Code](#testing-your-code)).
@@ -121,7 +121,7 @@ Be sure you are getting the words that appear with the highest *counts*, not the
 Note that if the frontend doesn't supply a year, default values of startYear = 1900 and endYear = 2020 are provided by
 `NGordnetQueryHandler.readQueryMap`.
 
-It might be hard to figure out the hyponyms of the words with `k!=0` so we are providing data that is easier to visualize! Below, you'll see a modified version for EECS class requirements, inspired by [HKN](https://hkn.eecs.berkeley.edu/courseguides). We have also provided the data that represents the graph below (`frequency-EECS.csv`, `hyponyms-EECS.txt`, `synsets-EECS.txt`). If someone entered `words = ["CS61A"]`, `startYear = 2010`, `endYear = 2020`, and `k = 4`, you should receive `"[CS170, CS61A, CS61B, CS61C]"`. This `frequency-EECS.csv` is a bit different from the previous one since it has values with the same frequencies. We highly recommend you to take a look at `frequency-EECS.csv`. Also, while you are designing your implementation, bear this in mind that we can give you words with the same frequencies.
+It might be hard to figure out the hyponyms of the words with `k != 0` so we are providing data that is easier to visualize! Below, you'll see a modified version for EECS class requirements, inspired by [HKN](https://hkn.eecs.berkeley.edu/courseguides). We have also provided the data that represents the graph below (`frequency-EECS.csv`, `hyponyms-EECS.txt`, `synsets-EECS.txt`). If someone entered `words = ["CS61A"]`, `startYear = 2010`, `endYear = 2020`, and `k = 4`, you should receive `"[CS170, CS61A, CS61B, CS61C]"`. This `frequency-EECS.csv` is a bit different from the previous one since it has values with the same frequencies. We highly recommend you to take a look at `frequency-EECS.csv`. Also, while you are designing your implementation, bear this in mind that we can give you words with the same frequencies.
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFw2oz5FIMrFRhh9yL8Ylun%2F2C%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dn6fDDOrwY4Lb9Gbi-1" allowfullscreen></iframe>
 
@@ -221,7 +221,7 @@ Project 2C will be worth 40 points. The points will be split as follows:
    - `HyponymsHandler` popularity-randomized: 30%, k != 0
    - `HyponymsHandler` common-ancestors: 50%
 
-In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding.
+In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve as a foundation for your project. It is important to think and ideate before coding.
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overview of your algorithm for your implementation.
