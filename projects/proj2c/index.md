@@ -187,7 +187,7 @@ Here, we find the common ancestors of the `words = ["change", "adjustment"]`. Th
 
 Note that the outputs are in alphabetical order, and keep in mind that `k != 0` can also apply to this task.
 
-**Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`.
+**Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`, as `"subject"` contains both `"test_subject"` and `"math"` as hyponyms.
 
 ![Common ancestors word intersection](./img/commonAncestors-5.png)
 
