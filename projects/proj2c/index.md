@@ -21,9 +21,8 @@ FAQ for Project 2C is located
 [here](faq.md).
 
 ## Checkpoint & Design Doc Due 03/13/2024
+
 ## Coding Due 04/01/2024
-
-
 
 In this project, you'll complete your implementation of the NGordnet for `k!=0` and `commonAncestors` case.
 
@@ -131,7 +130,6 @@ This task will be a little trickier since you'll need to figure out how to pass 
 {: .task}
 >Modify your `HyponymsHandler` and the rest of your implementation to deal with the `k != 0` case.
 
-
 {: .warning}
 EECS-course guide is not available on the interactive web staff solution so it won't return anything if you give the input `CS61A`.
 
@@ -175,11 +173,13 @@ We can also ask for the *common ancestors* of sets of words, which can reveal so
 
 ![commonAncestors-4](./img/commonAncestors-4.svg)
 
-Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[event, happening, natural_event, occurrence, occurrent]"`, which are all the words in the graph that contain both `"change"` and `"adjustment"` as hyponyms.
+Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[event, happening, natural_event, occurrence, occurrent]"`, which are all the words in the graph that contain *both* `"change"` and `"adjustment"` as hyponyms.
+
+We may also ask for common ancestors of three or more words.
 
 Note that the outputs are in alphabetical order, and keep in mind that `k != 0` can also apply to this task.
 
-**Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`, as `"subject"` contains both `"test_subject"` and `"math"` as hyponyms.
+**Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`, as `"subject"` contains both `"test_subject"` and `"math"` as hyponyms, even though `"test_subject"` and `"math"` are not directly connected in the graph.
 
 ![Common ancestors word intersection](./img/commonAncestors-5.png)
 
@@ -194,12 +194,6 @@ You will need to modify your `HyponymsHandler` class to account for the *type* o
 {: .task}
 >Modify your `HyponymsHandler` and the rest of your implementation to handle common ancestor queries in addition to hyponym queries.
 
-### Design Notes
-
-When designing your project, think about this task in advance. Planning ahead will ensure you don't need to rewrite all of your code when you get to this point.
-
-If you find yourself copy-pasting or repeating a lot of the same code you've already written, there is probably an opportunity to reuse it directly, or slightly modify it so you don't have to repeat yourself as often.
-
 ## Deliverables and Scoring
 
 For Project 2C, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
@@ -207,17 +201,18 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2C will be worth 40 points. The points will be split as follows:
 
-- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
-- [Project 2B/C: Design Document](https://www.gradescope.com/courses/708063/assignments/4187810): 5 points - Due March 18th
-- Project 2C Coding: 35 points - Due April 1st
-   - `HyponymsHandler` popularity-hardcoded: 20%, k != 0
-   - `HyponymsHandler` popularity-randomized: 30%, k != 0
-   - `HyponymsHandler` common-ancestors: 50%
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - **Due March 13th**
+- [Project 2B/C: Design Document](https://www.gradescope.com/courses/708063/assignments/4187810): 5 points - **Due March 18th**
+- Project 2C Coding: 35 points - **Due April 1st**
+  - `HyponymsHandler` popularity-hardcoded: 20%, k != 0
+  - `HyponymsHandler` popularity-randomized: 30%, k != 0
+  - `HyponymsHandler` common-ancestors: 50%
 
 In addition to Project 2C, you will also have to turn in your design document. The design document's main purpose is to serve as a foundation for your project. It is important to think and ideate before coding.
 What we are looking for in the design document:
-  - Identify the data structures we have learned in the class that you will be using in your implementation.
-  - Pseudocode / general overview of your algorithm for your implementation.
+
+- Identify the data structures we have learned in the class that you will be using in your implementation.
+- Pseudocode / general overview of your algorithm for your implementation.
 
 Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [Gradescope](https://www.gradescope.com/courses/708063/assignments/4187810).
 

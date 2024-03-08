@@ -29,7 +29,17 @@ In this project, you'll complete your implementation of the NGordnet tool.
 As this is a quite new project, there may be occasional bugs or confusion with the spec. If you notice anything of this sort, please post on Ed.
 
 {: .danger}
-**IMPORTANT NOTE: After you read the 2B spec, you may be tempted to start coding. Don't do this! Before implementing any code for 2B, please read the 2C spec, as your design may change depending on 2C. You can find it [here](../proj2c/index.md)**.
+>**IMPORTANT NOTE:** After you read the 2B spec, you may be tempted to start coding. Don't do this!
+>
+>Before implementing ANY code for 2B, please read the 2C spec, as your design may change depending on 2C. You can find it [here](../proj2c/index.md).
+>
+>Then, complete the [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684) and [Design Document](https://www.gradescope.com/courses/708063/assignments/4187810) before starting coding.
+
+### Design Notes
+
+When designing your project, think about all of the requirements in advance. Planning ahead will ensure you don't need to rewrite all of your code when you get to certain points in the project.
+
+If you find yourself copy-pasting or repeating a lot of the same code you've already written, there is probably an opportunity to reuse it directly, or slightly modify it so you don't have to repeat yourself as often.
 
 ## Project Setup
 
@@ -142,11 +152,11 @@ In Project 2B, your primary task is to implement this button, which will require
 and synthesizing the results with the dataset from Project 2A. Unlike 2A, it will be entirely up to you to decide what
 classes you need to support this task.
 
-1. Start by opening your `ngordnet.main.Main.java` file.
-2. Edit the file called `HyponymsHandler` to simply return the word "Hello!" when the user clicks the
+1. Edit the file called `HyponymsHandler` to simply return the word "Hello!" when the user clicks the
    Hyponyms button in the browser. You'll need to make the `HyponymsHandler` class extend
    the `NgordnetQueryHandler` class. See your other Handler classes for examples. Make sure when you register your
    handler that you use the string "hyponyms" as the first argument to the `register` method, and not "hyponym".
+2. Start by opening your `ngordnet.main.Main.java` file.
 3. Once you've modified `Main` so that your new handler is registered to handle hyponyms requests, start up `Main` and
    try clicking the Hyponyms button in your web browser again. You should see text appear that says "Hello".
 
@@ -383,8 +393,8 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2B will be worth 70 points. The points will be split as follows:
 
-- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
-- Project 2B Coding: 60 points - Due April 1st
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - **Due March 13th**
+- Project 2B Coding: 60 points - **Due April 1st**
    - `HyponymsHandler` single word case: 50%, k = 0
    - `HyponymsHandler` multi-word case: 30%, k = 0
    - `HyponymsHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
