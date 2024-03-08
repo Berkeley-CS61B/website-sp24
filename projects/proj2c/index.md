@@ -196,7 +196,7 @@ You will need to modify your `HyponymsHandler` class to account for the *type* o
 
 ### Design Tips
 
-As mentioned before, you should not need to copy-paste your code or do anything too drastic to handle this new case. Consider how you can use the same data structures and methods from before to solve this problem, perhaps with a few tweaks.
+As mentioned before, you should not need to copy-paste your code or do anything too drastic to handle this task. Consider how you can use the same data structures and methods from before to solve this problem, perhaps with a few tweaks.
 
 Helper methods are your friends! If you find yourself writing similar code more than once, consider making a helper method that you can call from both places that does the common work for you.
 
