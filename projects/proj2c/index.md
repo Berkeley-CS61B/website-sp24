@@ -85,7 +85,7 @@ We'll link them here, as well as in other relevant parts of the spec.
   different words/lists of words for potential test case inputs. Click on the "?" bubbles to learn how to use the various
   features of this tool!
 - [Staff Solution Webpage](https://ngordnet.datastructur.es/): Useful for generating expected outputs for different test
-  case inputs. Use this to write your unit tests! (Note: This tool does not support the common ancestors task yet.)
+  case inputs. Use this to write your unit tests!
 
 {: .task}
 >Read through the entire 2B/C spec and complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
