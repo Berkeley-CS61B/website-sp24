@@ -151,13 +151,11 @@ lectures.
 
 ### Tips
 
-- Until you use the autograder, you'll need to construct your own test cases. We provide one
-  above: `words = ["food", "cake"]`
+- Until you use the autograder, you'll need to construct your own test cases. We provided one
+  in the previous section: `words = ["food", "cake"]`
   , `startYear = 1950`, `endYear = 1990`, `k = 5`.
 - When constructing your own test cases, consider making your own input files. Using the large input files we provide is
   extremely tedious.
-- In the coming sections of this spec, we'll tell you how to set up your code for submission to the autograder, and how
-  to write your own JUnit tests to mimic the test cases provided by the grader.
 
 ## Finding Common Ancestors
 
@@ -216,12 +214,13 @@ However, we will not be directly grading these classes, since they can vary from
 Project 2C will be worth 40 points. The points will be split as follows:
 
 - [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
+- [Project 2B/C: Design Document](https://www.gradescope.com/courses/708063/assignments/4187810): 5 points - Due March 18th
 - Project 2C Coding: 35 points - Due April 1st
    - `HyponymsHandler` popularity-hardcoded: 20%, k != 0
    - `HyponymsHandler` popularity-randomized: 30%, k != 0
    - `HyponymsHandler` common-ancestors: 50%
 
-In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve as a foundation for your project. It is important to think and ideate before coding.
+In addition to Project 2C, you will also have to turn in your design document. The design document's main purpose is to serve as a foundation for your project. It is important to think and ideate before coding.
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overview of your algorithm for your implementation.
