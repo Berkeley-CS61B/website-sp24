@@ -75,14 +75,14 @@ proj2c
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a design document to Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring)
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a [design document](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
 
 {: .warning}
 **IMPORTANT NOTE:** We recommend that you should complete Project 2B and get a full score from the autograder before you start coding.
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read the 2B & 2C spec carefully before starting your design document.
 
-[//]: # (Course staff has provided a higher overview of this part of the project. This might seem like an insufficient resource for now compared to previous parts and projects but we really want you to ideate and come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here](&#40;www.google.com&#41;).)
+[//]: # (Course staff has provided a higher overview of this part of the project. This might seem like an insufficient resource for now compared to previous parts and projects but we really want you to ideate and come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here]&#40;www.google.com&#41;.)
 
 We've created two wonderful tools that you can (and should!) use to explore the dataset, see how the staff solution
 behaves for specific inputs, and get expected outputs for your unit tests (see [Testing Your Code](#testing-your-code)).
