@@ -397,8 +397,8 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2B will be worth 70 points. The points will be split as follows:
 
-- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - **Due March 13th**
-- Project 2B Coding: 60 points - **Due April 1st**
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 5 points - **Due March 13th**
+- Project 2B Coding: 50 points - **Due April 1st**
    - `HyponymsHandler` single word case: 50%, k = 0
    - `HyponymsHandler` multi-word case: 30%, k = 0
    - `HyponymsHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)

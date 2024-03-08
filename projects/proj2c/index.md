@@ -209,8 +209,8 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2C will be worth 40 points. The points will be split as follows:
 
-- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - **Due March 13th**
-- Project 2C Coding: 35 points - **Due April 1st**
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 5 points - **Due March 13th**
+- Project 2C Coding: 25 points - **Due April 1st**
   - `HyponymsHandler` popularity-hardcoded: 20%, k != 0
   - `HyponymsHandler` popularity-randomized: 30%, k != 0
   - `HyponymsHandler` common-ancestors: 50%
