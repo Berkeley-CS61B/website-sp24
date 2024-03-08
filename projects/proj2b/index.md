@@ -397,14 +397,14 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2B will be worth 70 points. The points will be split as follows:
 
-- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - **Due March 13th**
-- Project 2B Coding: 60 points - **Due April 1st**
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 5 points - **Due March 13th**
+- Project 2B Coding: 50 points - **Due April 1st**
    - `HyponymsHandler` single word case: 50%, k = 0
    - `HyponymsHandler` multi-word case: 30%, k = 0
    - `HyponymsHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
 
 
-In addition to Project 2B, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
+In addition to Project 2B, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve as a foundation for your project. It is important to think and ideate before coding. 
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overiview of your algorigthm for your implementation.
