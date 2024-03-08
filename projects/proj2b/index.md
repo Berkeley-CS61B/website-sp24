@@ -68,11 +68,12 @@ proj2b
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a [design document](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) to Gradescope. More details about design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a [design document](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) to Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring).
 
 {: .task}
-Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
-Complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
+>Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
+>
+>After finishing the checkpoint, complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read 2B & 2C spec carefully before starting your design document.
 
@@ -141,7 +142,7 @@ nasal_decongestant", since "actifed" is both of these things.
 
 ## Hyponyms (Basic Case)
 
-#### Setting up a HyponymsHandler
+### Setting up a HyponymsHandler
 
 1. In your web browser, open the `ngordnet.html` file in the `static` folder. As a refresher, you can find how to do that [here](../proj2a/index.md#historytexthandler) in bullet point 1. You'll see that there is a new button: "Hyponyms". Note that there is also a new input box called `k`.
 
@@ -159,6 +160,9 @@ classes you need to support this task.
 2. Start by opening your `ngordnet.main.Main.java` file.
 3. Once you've modified `Main` so that your new handler is registered to handle hyponyms requests, start up `Main` and
    try clicking the Hyponyms button in your web browser again. You should see text appear that says "Hello".
+
+{: .info}
+If you see some error like "Could not load file `some_file_here.txt`", it probably means that your project is not set up correctly. Be sure that you have the same structure as stated in the [Project Setup](#project-setup) section.
 
 ### Hyponyms Handler (Basic Case)
 
@@ -422,6 +426,8 @@ The two provided test files correspond to the first two cases that you solved in
 
 - Finding hyponyms of a single word where k = 0.
 - Finding hyponyms of multiple words where k = 0 (e.g. `gallery, bowl`).
+
+You will need to complete `AutograderBuddy.java` to test your code. See the [Submitting Your Code](#submitting-your-code) section for more details.
 
 **These test files are not comprehensive**; in fact, they each only contain one sanity check test. You should fill
 each file with more unit tests, and also use them as a template to create two new test files for the respective cases.

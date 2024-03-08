@@ -85,12 +85,12 @@ We'll link them here, as well as in other relevant parts of the spec.
   different words/lists of words for potential test case inputs. Click on the "?" bubbles to learn how to use the various
   features of this tool!
 - [Staff Solution Webpage](https://ngordnet.datastructur.es/): Useful for generating expected outputs for different test
-  case inputs. Use this to write your unit tests!
+  case inputs. Use this to write your unit tests! (Note: This tool does not support the common ancestors task yet.)
 
 {: .task}
->Read through entire 2B/C spec and complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
+>Read through the entire 2B/C spec and complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
 >
->Read through entire 2B/C spec and complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
+>After finishing the checkpoint, complete **[Design Document](https://www.gradescope.com/courses/708063/assignments/4187810)**
 
 ## Handling `k != 0`
 
@@ -121,7 +121,9 @@ It might be hard to figure out the hyponyms of the words with `k != 0` so we are
 
 If a word never occurs in the time frame specified, i.e. the count is zero, it should not be returned. In other words,
 if `k > 0`, we should not show any words that do not appear in the `ngrams` dataset.
+
 If there are no words that have non-zero counts, you should return an empty list, i.e. `[]`.
+
 If there are fewer than `k` words with non-zero counts, return only those words. For example if you enter the word
 `"potato"` and enter `k = 15`, but only 7 hyponyms of `"potato"` have non-zero counts, you'd return only 7 words.
 
