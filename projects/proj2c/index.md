@@ -194,6 +194,12 @@ You will need to modify your `HyponymsHandler` class to account for the *type* o
 {: .task}
 >Modify your `HyponymsHandler` and the rest of your implementation to handle common ancestor queries in addition to hyponym queries.
 
+### Design Tips
+
+As mentioned before, you should not need to copy-paste your code or do anything too drastic to handle this new case. Consider how you can use the same data structures and methods from before to solve this problem, perhaps with a few tweaks.
+
+Helper methods are your friends! If you find yourself writing similar code more than once, consider making a helper method that you can call from both places that does the common work for you.
+
 ## Deliverables and Scoring
 
 For Project 2C, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
