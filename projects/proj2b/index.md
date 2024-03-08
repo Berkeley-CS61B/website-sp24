@@ -21,6 +21,7 @@ FAQ for Project 2B is located
 [here](faq.md).
 
 ## Checkpoint & Design Doc Due 03/13/2024
+
 ## Coding Due 04/01/2024
 
 In this project, you'll complete your implementation of the NGordnet tool.
@@ -28,7 +29,7 @@ In this project, you'll complete your implementation of the NGordnet tool.
 As this is a quite new project, there may be occasional bugs or confusion with the spec. If you notice anything of this sort, please post on Ed.
 
 {: .danger}
-**PLEASE READ THROUGH 2C SPEC AFTER READING 2B SINCE YOUR DESIGN MIGHT CHANGE DEPENDING ON 2C IMPLEMENTATION. YOU CAN FIND IT [HERE](../proj2c/index.md)**
+**IMPORTANT NOTE: After you read the 2B spec, you may be tempted to start coding. Don't do this! Before implementing any code for 2B, please read the 2C spec, as your design may change depending on 2C. You can find it [here](../proj2c/index.md)**.
 
 ## Project Setup
 
@@ -57,7 +58,7 @@ proj2b
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require to submit a [design document](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) to the gradescope. More details about design document can be found in [Deliverable and Scoring.](#deliverables-and-scoring).
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a [design document](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) to Gradescope. More details about design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring).
 
 {: .task}
 Complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)**
@@ -132,8 +133,7 @@ nasal_decongestant", since "actifed" is both of these things.
 
 #### Setting up a HyponymsHandler
 
-1. In your web browser, open the `ngordnet.html` file in the `static` folder. As a refresher, you can find how to do that [here](https://fa23.datastructur.es/materials/proj/proj2a/#:~:text=In%20your%20web,of%20our%20class.). You'll see that there is a new button: "
-   Hyponyms". Note that there is also a new input box called `k`.
+1. In your web browser, open the `ngordnet.html` file in the `static` folder. As a refresher, you can find how to do that [here](../proj2a/index.md#historytexthandler) in bullet point 1. You'll see that there is a new button: "Hyponyms". Note that there is also a new input box called `k`.
 
 2. Try clicking the Hyponyms button. You'll see nothing happens (and if you open the developer tools feature of your web
    browser, you'll see that your browser shows an error).
@@ -182,13 +182,13 @@ That is the output
 is `[alteration, change, demotion, increase, jump, leap, modification, saltation, transition, variation]`. Note that
 even though "change" belongs to two different synsets, it only appears once.
 
-**Note: Don't overthink this** and make life harder than it needs to be. Specifically, observe that the output **does
+**Note**: Try not to overthink this. Specifically, observe that the output **does
 not** include:
 
-- Synonyms of synonyms (e.g. does not include *"adjustment"*)
-- Hyponyms of synonyms (e.g. does not include conversion)
-- Hyponyms of other definitions of hyponyms (e.g. does not include \"flashback\", which is a hyponym of another
-  definition of \"transition\")
+- Synonyms of synonyms (e.g. does not include `"adjustment"`)
+- Hyponyms of synonyms (e.g. does not include `"conversion"`)
+- Hyponyms of other definitions of hyponyms (e.g. does not include `"flashback"`, which is a hyponym of another
+  definition of `"transition"`)
 
 {: .task}
 >Implement `HyponymsHandler.java` and any helper classes.
@@ -196,9 +196,9 @@ not** include:
 >**Note:** Please read the tips below, since you shouldn't be writing all of your code in this class.
 
 {: .warning}
->To complete this task, you'll need to decide what classes you need to create to support the `HyponymHandler`. **DO NOT
->DO ALL THE WORK IN HYPONYMS HANDLER.** Instead, you should have helper classes. For example, to handle the \"History\"
->button, we created an `NGramMap` class. You'll want to do something similar.
+>To complete this task, you'll need to decide what classes you need to create to support the `HyponymsHandler`. **DO NOT
+>DO ALL THE WORK IN HYPONYMS HANDLER.** Instead, you should have helper classes. For example, in 2A, to handle the \"History\"
+>button, we created an `NGramMap` class. You'll want to do something similar in 2B, with your own classes.
 >
 >You'll also need to understand the input format of the WordNet dataset. This description is
 >given in the section below.
@@ -210,7 +210,7 @@ not** include:
 
 #### Tips
 
-- Just like NGramMap, you'll want your helper classes to only parse the input files once, in the constructor. **DO NOT
+- Just like 2A's NGramMap, you'll want your helper classes to only parse the input files once, in the constructor. **DO NOT
   CREATE METHODS WHICH HAVE TO READ THE ENTIRE INPUT FILE EVERY TIME THEY ARE CALLED.** This will be too slow!
 - We strongly recommend creating at least two classes for this part of the project as follows: One which implements the
   idea of a directed graph. One which reads in the WordNet dataset and constructs an instance of the directed graph
@@ -223,10 +223,6 @@ not** include:
   good way to test and see what's going on with your code is to simply run `Main.java`, open `ngordnet.html`, enter some
   inputs into the boxes, and click the "Hyponyms" button. You may find visual debugging can lead to some useful
   discoveries in this project.
-- Because of the obfuscation that we applied to the Project 2a files (in particular, TimeSeries and NGramMap), the
-  argument name previews when using these classes in IntelliJ may look a little weird. You may see long, random strings;
-  these are intentional in order to obfuscate the code, and they do not represent an issue with your own code in any
-  way.
 
 ### WordNet File Format
 
@@ -279,7 +275,7 @@ To get the "Hyponyms" button working you'll need to:
 - Develop a **graph class**. If you aren't familiar with this data structure, take a look at lectures 21 and 22. You
   should test this with operations that are independent of the given data files. For example, our tests evaluated that
   our `createNode` and `addEdge` functions yielded appropriate graphs by using our graph classes's `getNodes`
-  and `neighbors` functions. For inspiration, you can check out [Lecture 21](https://docs.google.com/presentation/u/1/d/1tNPwVvUTAE8qHtGE1HqOThKlTHtASW6lf-345hXLARE/edit) and [22](https://docs.google.com/presentation/d/1mr841rMgVAffqi-TfL--gZPmEjAM5rpBW7MzrmJPuaU/edit).
+  and `neighbors` functions. For inspiration, you can check out [Lecture 22](https://docs.google.com/presentation/d/1Gyke5ZMrgcMuBTa7qHAoklWZB3yf_yqQAymK2nV-Nqs/edit) and [23](https://docs.google.com/presentation/d/1NKWnXSJ8pUn1E2Cw6zidxMRuXf_aINKCpW7XpEkyz6c/edit).
 - Write code that **converts the WordNet dataset files into a graph**. This could be part of your graph class, or it
   could be a class that uses your graph class.
 - Write code that takes a word, and uses a **graph traversal** to find all hyponyms of that word in the given graph.
@@ -295,13 +291,13 @@ Or as another example, our code has a class called `TestWordNet` containing the 
 ```java
 @Test
 public void testHyponymsSimple(){
-        WordNet wn=new WordNet("./data/wordnet/synsets11.txt","./data/wordnet/hyponyms11.txt");
-        assertThat(wn.hyponyms("antihistamine")).isEqualTo(Set.of("antihistamine","actifed"))
-        }
+    WordNet wn=new WordNet("./data/wordnet/synsets11.txt","./data/wordnet/hyponyms11.txt");
+    assertThat(wn.hyponyms("antihistamine")).isEqualTo(Set.of("antihistamine","actifed"));
+}
 ```
 
-Note your WordNet class may not have the same functions as mine so the test shown will probably not work verbatim with
-your code. Note that our test does NOT use an `NGramMap` anywhere, nor is it using a `HyponymHandler`, nor is it directly
+Note that your WordNet class may not have the same functions as ours so the test shown will probably not work verbatim with
+your code. Note that our test does NOT use an `NGramMap` anywhere, nor is it using a `HyponymsHandler`, nor is it directly
 invoking an object of type `Graph`. It is specifically tailored to testing the `WordNet` class. **Relying on only
 browser tests will be incredibly frustrating (and slow!). Use your JUnit skills to build confidence in the foundational
 abstractions that you build (e.g. Graph, WordNet, etc.).**
@@ -317,7 +313,7 @@ Some example lookups that you might need to perform:
   - Example in synsets16.txt: change is in synsets 2 and 8
 - Given an integer, what node goes with that index?
   - Necessary for processing hyponyms.txt. For example in hyponyms16.txt, we know that the node with synset 8 points
-    at synsets 9 and 10, so we need to be able to find node 8 to get its adjacency list.
+    at synsets 9 and 10, so we need to be able to find node 8 to get its neighbors.
 - Given a node, what words are in that node?
   - Example in synsets16.txt: synset 11 contains alteration, modification, and adjustment
 
@@ -328,7 +324,7 @@ Some example graph operations you might need to perform:
   corresponding node.
 - Finding reachable vertices, e.g. the vertices reachable from vertex #7 in hyponyms16.txt are 7, 8, 9, 10.
 
-Your life will be a lot easier if you select instance variables for your classes that naturally help solve all six of
+Your life will be a lot easier if you select instance variables and/or data structures for your classes that naturally help solve all six of
 the problems above.
 
 Some example data processing operations:
@@ -387,12 +383,11 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2B will be worth 70 points. The points will be split as follows:
 
-
 - [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 10 points - Due March 13th
 - Project 2B Coding: 60 points - Due April 1st
-   - `HyponymHandler` single word case: 50%, k = 0
-   - `HyponymHandler` multi-word case: 30%, k = 0
-   - `HyponymHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
+   - `HyponymsHandler` single word case: 50%, k = 0
+   - `HyponymsHandler` multi-word case: 30%, k = 0
+   - `HyponymsHandler` eecs-one-multi-word case: 20%, k = 0 (Tests for one and multiple words case but strictly uses `frequency-EECS.csv`, `hyponyms-EECS.txt`, `synonyms-EECS.txt`. You can find more information about EECS class list in 2C.)
 
 
 In addition to Project 2B, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document's main purpose is to serve you as a foundation to your project. It is important to think and ideate before coding. 
@@ -405,7 +400,6 @@ Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz
 Don't worry if you decide to change your design document after. You are free to do so! We want you to think about the implementation before coding therefore we require you to submit your design as the part of the project.
 
 The token limiting policy for this project will be as follows: You will start with 8 tokens, each of which has a 24-hour refresh time.
-
 
 ## Testing Your Code
 
@@ -427,7 +421,7 @@ linked in the [Getting Started](#getting-started) section.
 
 ## Debugging Tips
 
-- Use the small files while testing! This decreases the startup time to run `Main.java` and makes it easier to reason about the code. If you're running `Main.java`, these files are set in the first few lines of the `main` method. For unit tests, the file names are passed into the `getHyponymHandler` method.
+- Use the small files while testing! This decreases the startup time to run `Main.java` and makes it easier to reason about the code. If you're running `Main.java`, these files are set in the first few lines of the `main` method. For unit tests, the file names are passed into the `getHyponymsHandler` method.
 - You can run `Main.java` with the debugger to debug different inputs quickly. After clicking the “Hyponyms” button, your code will execute with the debugger - breakpoints will be triggered, you can use the variables window, etc.
 - There are a lot of moving parts to this project. Don’t start by debugging line-by-line. Instead, narrow down which function/region of your code is not working correctly then search more closely in those lines.
 - Check the [FAQ](faq.md) for common issues and questions.
@@ -436,19 +430,16 @@ linked in the [Getting Started](#getting-started) section.
 
 Throughout this assignment, we've had you use your front end to test your code. Our grader is not sophisticated enough
 to pretend to be a web browser and call your code. Instead, we'll need you to provide a method in the
-`proj2b_testing.AutograderBuddy` class that provides a handler that can deal with hyponyms requests.
+`proj2b.src.main.AutograderBuddy` class that provides a handler that can deal with hyponyms requests.
 
 When you ran `git pull skeleton main` at the start of this spec, you should have received a file called `AutograderBuddy.java`.
 
-Open `AutograderBuddy.java` and fill in the `getHyponymHandler` method such that it returns a `HyponymsHandler`
+Open `AutograderBuddy.java` and fill in the `getHyponymsHandler` method such that it returns a `HyponymsHandler`
 that uses the four given files. Your code here should be quite similar to your code in `Main.java`.
 
-Now that you've created `proj2b_testing.AutograderBuddy`, you can submit to the
+Now that you've created `proj2b.src.main.AutograderBuddy`, you can submit to the
 autograder. If you fail any tests, you should be able to replicate them locally as JUnit tests by building on the test
 files above. If any additional datafiles are needed, they will be added to this section as links.
-
-{: .danger}
-**PLEASE READ THROUGH 2C SPEC AFTER READING 2B SINCE YOUR DESIGN MIGHT CHANGE DEPENDING ON 2C IMPLEMENTATION. YOU CAN FIND IT [HERE](../proj2c/index.md)**
 
 ## Optional Extra Features
 

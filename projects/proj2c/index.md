@@ -30,8 +30,7 @@ In this project, you'll complete your implementation of the NGordnet for `k!=0` 
 As this is a quite new project, there may be occasional bugs or confusion with the spec. If you notice anything of this sort, please post on Ed.
 
 {: .danger}
-**PLEASE READ THROUGH 2B SPEC BEFORE STARTING 2C. YOU CAN FIND IT [HERE](../proj2b/index.md)**
-
+**Please read through the [2B spec](../proj2b/index.md) before starting 2C.**
 
 ## Project Setup
 
@@ -41,11 +40,12 @@ As this is a quite new project, there may be occasional bugs or confusion with t
 ### Skeleton Setup
 
 1. Similar to other assignments in this class, run `git pull skeleton main` to get the skeleton code for this project.
-   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2B skeleton. 
+   1. NOTE: You'll notice that this skeleton is (almost) the exact same as the Project 2B skeleton. This is intentional.
 2. Download the `data` files for this project
    using [this link](https://drive.google.com/file/d/160iHOqwR4FAghGshbnSNMwd0idrjZxTR/view?usp=sharing)
    and move them into your `proj2c` folder on the same level as `src`.
-3. You will need your implementation from 2A for `TimeSeries` and `NGramMap` as well as your implementation from 2B since `k!=0` & `commonAncestors` will depend on your implementation from 2A and 2B.
+3. Copy your implementation from 2A for `ngrams`, including `TimeSeries` and `NGramMap`, into the `proj2c` folder.
+4. Copy your implementation from 2B into the `proj2c` folder, since `k!=0` & `commonAncestors` will depend on your implementation from 2A and 2B.
 
 Once you are done, your `proj2c` directory should look like this:
 
@@ -59,28 +59,22 @@ proj2c
 │   ├── browser
 │   ├── main
 │   ├── ngrams
-│   │   ├── <2A implementation>
+│   │   ├── <Your NGramMap implementation from 2A>
+│   │   └── <Your TimeSeries implementation from 2A>
 │   └── plotting
 ├── static
-├── tests
+└── tests
 ```
 
-{: .info}
->The k != 0 portion of this project uses the `NGramMap` class from Project 2A. You will need to copy your `NGramMap` and `TimeSeries` from Project 2A into this project, as well as any possible helper classes from 2B.
->
->While you can design for 2C in advance, we suggest only starting coding after you get a full score on project 2B just in case your implementation has any subtle bugs in it.
->
->Once you are done with Project 2B, please copy all necessary changes that you made in 2B to 2C folder. You should build your 2C on your 2B implementation.
+{: .warning}
+>While you can (and should!) certainly *design* for 2C in advance, we suggest only starting to *code* **after you get a full score on Project 2B** just in case your implementation has any subtle bugs in it.
 
 ## Getting Started
 
 {: .warning}
-**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. We think this would be helpful for your understanding of the project. We will also require you to submit a design document to Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring)
+**IMPORTANT NOTE:** You should *really* complete **Project 2B/C: [Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684)** first before starting coding, or even designing your project. It will be helpful for your understanding of the project. We will also require you to submit a design document to Gradescope. More details about the design document can be found in [Deliverables and Scoring.](#deliverables-and-scoring)
 
-{: .warning}
-**IMPORTANT NOTE:** We recommend that you should complete Project 2B and get a full score from the autograder before you start coding.
-
-This part of the project is designed for you to come up with efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read the 2B & 2C spec carefully before starting your design document.
+This part of the project is designed for you to come up with an efficient and correct design for your implementation. The design you come up with will be very important to handle these cases. Please read the 2B & 2C spec carefully before starting your design document.
 
 [//]: # (The course staff has provided a higher overview of this part of the project. This might seem like not sufficient resource for now compared to previous parts and projects but we really want you to ideate and come up with your own design and implementation! Nevertheless, if you still want to watch it, you can find it [here]&#40;www.google.com&#41;.)
 
@@ -247,7 +241,7 @@ linked in the [Getting Started](#getting-started) section.
 
 ## Debugging Tips
 
-- Use the small files while testing! This decreases the startup time to run `Main.java` and makes it easier to reason about the code. If you're running `Main.java`, these files are set in the first few lines of the `main` method. For unit tests, the file names are passed into the `getHyponymHandler` method.
+- Use the small files while testing! This decreases the startup time to run `Main.java` and makes it easier to reason about the code. If you're running `Main.java`, these files are set in the first few lines of the `main` method. For unit tests, the file names are passed into the `getHyponymsHandler` method.
 - You can run `Main.java` with the debugger to debug different inputs quickly. After clicking the “Hyponyms” button, your code will execute with the debugger - breakpoints will be triggered, you can use the variables window, etc.
 - There are a lot of moving parts to this project. Don’t start by debugging line-by-line. Instead, narrow down which function/region of your code is not working correctly then search more closely in those lines.
 - Check the [FAQ](faq.md) for common issues and questions.
@@ -260,10 +254,10 @@ to pretend to be a web browser and call your code. Instead, we'll need you to pr
 
 When you ran `git pull skeleton main` at the start of this spec, you should have received a file called `AutograderBuddy.java`
 
-Just like 2B, open `AutograderBuddy.java` and fill in the `getHyponymHandler` method such that it returns a `HyponymsHandler`
-that uses the four given files. Your code here should be quite similar to your code in `Main.java`.
+Just like 2B, open `AutograderBuddy.java` and fill in the `getHyponymsHandler` method such that it returns a `HyponymsHandler`
+that uses the four given files. Your code here will probably be similar to your code in `Main.java`.
 
-Now that you've created `proj2c_testing.AutograderBuddy`, you can submit to the
+Now that you've created `proj2c.testing.AutograderBuddy`, you can submit to the
 autograder. If you fail any tests, you should be able to replicate them locally as JUnit tests by building on the test
 files above. If any additional datafiles are needed, they will be added to this section as links.
 
