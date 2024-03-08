@@ -441,11 +441,6 @@ Now that you've created `proj2b.src.main.AutograderBuddy`, you can submit to the
 autograder. If you fail any tests, you should be able to replicate them locally as JUnit tests by building on the test
 files above. If any additional datafiles are needed, they will be added to this section as links.
 
-## Optional Extra Features
-
-If you'd like to go above and beyond in this project (and even explore some front-end development), read through the
-[Optional Features](optional_features.md) spec!
-
 ## Acknowledgements
 
 The WordNet part of this assignment is loosely adapted from Alina Ene and Kevin Wayne's

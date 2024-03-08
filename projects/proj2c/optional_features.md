@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Project 2B Optional Features"
+title: "Project 2B/C Optional Features"
 nav_order: 3
 grand_parent: Projects
-parent: "Project 2B: Ngordnet (Wordnet)"
+parent: "Project /C: Ngordnet (Wordnet)"
 has_children: false
 has_toc: false
 has_right_toc: true
 description: >-
-  Project 2B optional features.
+  Project 2B/C optional features.
 released: true
 ---
 
