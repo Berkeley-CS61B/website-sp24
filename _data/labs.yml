@@ -61,6 +61,8 @@ labs:
   - title: "HashMaps"
     due: "3/15"
     # link: labs/lab08
+    # video: https://www.youtube.com/watch?v=7B_1cWZBEFY
+    # slides: https://docs.google.com/presentation/d/1s5SjdAbCaFn9AA38cufalrXI-kIbQMA6dzSrl2gP5iw/edit?usp=sharing
     slides:
   - title: "Project 2 Workday"
     nonumber: True
