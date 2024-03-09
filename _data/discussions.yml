@@ -85,6 +85,8 @@ discussions:
   - title: "B-Trees, LLRBs, Hashing"
     regular_slides: https://docs.google.com/presentation/d/1_aj1MFYC5Isgd1djH6s8e8IxDdiheCdcI7jai_R0Ik0/edit?usp=sharing
     examprep_slides: https://docs.google.com/presentation/d/1CCpfhrQbUSmvBxOGVUSnzfvUBrGgucs0PMM5M7hDhTk/edit?usp=sharing
+    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRrjXIJbf0eFsWeUnD6RsfYa
+    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRoIGRoR3H0WHl2AmxCgcxTN
     solutions: True
   - title: "Graphs, Heaps"
     solutions: True
