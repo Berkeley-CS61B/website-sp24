@@ -20,7 +20,7 @@ Each assignment will have an FAQ linked at the top. You can also access it by ad
 FAQ for Project 2B is located
 [here](faq.md).
 
-## Checkpoint & Design Doc Due 03/13/2024
+## Checkpoint & Design Doc Due 03/15/2024
 
 ## Coding Due 04/01/2024
 
@@ -397,7 +397,7 @@ However, we will not be directly grading these classes, since they can vary from
 
 Project 2B will be worth 70 points. The points will be split as follows:
 
-- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 5 points - **Due March 13th**
+- [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 5 points - **Due March 15th**
 - Project 2B Coding: 50 points - **Due April 1st**
    - `HyponymsHandler` single word case: 50%, k = 0
    - `HyponymsHandler` multi-word case: 30%, k = 0
@@ -408,6 +408,8 @@ In addition to Project 2B, you will also have to turn in your design document. T
 What we are looking for in the design document:
   - Identify the data structures we have learned in the class that you will be using in your implementation.
   - Pseudocode / general overiview of your algorigthm for your implementation.
+
+Your design document should be around 1 - 2 pages long. Design document will be mainly graded on effort, thought and completion.
 
 Please make a copy of [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing) and submit to [Gradescope](https://www.gradescope.com/courses/708063/assignments/4187810).
   
