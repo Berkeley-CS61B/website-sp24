@@ -51,9 +51,9 @@ projects:
     nonumber: True
   - title: "Project 2B/C: Wordnet"
     custom_content: |
-      <a href="projects/proj2/proj2b">Project 2B: Wordnet</a>
+      <a href="projects/proj2b">Project 2B: Wordnet</a>
       <br>
-      <a href="projects/proj2/proj2c">Project 2C: Wordnet Extended</a>
+      <a href="projects/proj2c">Project 2C: Wordnet Extended</a>
     due: "4/1"
     # link: "projects/proj2/proj2a"
     rowspan: 12
