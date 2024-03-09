@@ -10,6 +10,9 @@ released: true
 nav_exclude: true
 ---
 
+{: .warning} 
+This lab is a work in progress and unfinished. Proceed at your own risk.
+
 ## [FAQ](faq.md)
 
 Each assignment will have an FAQ linked at the top. You can also access it by
