@@ -143,7 +143,7 @@ protected class Node {
   will get a "Generic array creation" error.
 
 {: .warning}
-To get around this, you should instead create a `new Collection[size]`**, where `size` is the
+To get around this, you should instead create a `new Collection[size]`, where `size` is the
 desired size.
 
 - The elements of a `Collection[]` can be a collection of any
@@ -197,9 +197,9 @@ Some additional requirements for `MyHashMap` are below:
   the **Skeleton Code** section above.
 - Because we use a `Collection<Node>[]` for our `buckets`, when implementing
   `MyHashMap`, you are restricted to using methods that are specified by the
-  `Collection` interface. When you are searching for a `Node` in a `Collection`,
-  simply iterate over the `Collection`, and find the `Node` whose `key` is
-  `.equal()` to the desired key.
+  `Collection` interface. **When you are searching for a `Node` in a `Collection`,
+   iterate over the `Collection`, and find the `Node` whose `key` is
+  `.equal()` to the desired key.**
 - If the same key is inserted more than once, the value should be updated each
   time (i.e., no `Node`s should be added). You can assume `null` keys will never
   be inserted.
@@ -342,7 +342,7 @@ throw new UnsupportedOperationException();
 
 ## Submission
 
-Just as you did for the previous assignments, add, commit, then push your Lab 09
+Just as you did for the previous assignments, add, commit, then push your Lab 08
 code to GitHub. Then, submit to Gradescope to test your code. 
 
 ## Optional Exercises
