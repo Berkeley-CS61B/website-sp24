@@ -395,7 +395,6 @@ and using the provided front end to evaluate correctness.
 For Project 2B, the only required deliverable is the `HyponymsHandler.java` file, in addition to any helper classes.
 However, we will not be directly grading these classes, since they can vary from student to student.
 
-Project 2B will be worth 70 points. The points will be split as follows:
 
 - [Project 2B/C: Checkpoint](https://www.gradescope.com/courses/708063/assignments/4133684): 5 points - **Due March 15th**
 - Project 2B Coding: 50 points - **Due April 1st**
