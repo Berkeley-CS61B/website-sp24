@@ -11,9 +11,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-This page is not officially released yet. All information here is subject to change.
-
 ## [FAQ](faq.md)
 
 Each assignment will have an FAQ linked at the top. You can also access it by adding "/faq" to the end of the URL. The
