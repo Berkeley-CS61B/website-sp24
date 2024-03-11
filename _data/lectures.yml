@@ -230,7 +230,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1Gyke5ZMrgcMuBTa7qHAoklWZB3yf_yqQAymK2nV-Nqs"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoXCSo4Hx8TEZBsIpag6lMs"
     recording: "https://www.youtube.com/watch?v=fHQPvxFQeqw"
-    quiz: ""
+    quiz: "https://forms.gle/T7opcMsbN3TaYoDt8"
     readings:
       - title: "Ch 22"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/22.-tree-traversals-and-graphs"
@@ -258,14 +258,14 @@ lectures:
     readings:
       - title: "Ch 25"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/25.-minimum-spanning-trees"
-  - title: "Prefix Operations and Tries"
-    slides: "https://docs.google.com/presentation/d/1tcKJNY-ultPxwaHtYn-kd-DV7aXcuBQm6resYvpoCkw"
-    video: "https://www.youtube.com/watch?v=F8Q-SHW2hAM&list=PLnp31xXvnfRoMxe8IbO1qF3lXwudLHVDk"
+  - title: "Directed Acyclic Graphs"
+    slides: "https://docs.google.com/presentation/d/1UHVEYtQhV7EQ74ETn5MvCsnRzsCzmp3MvXL84hXbw-g"
+    video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRprqOwH0sojH3VLONWXtYM0"
     recording: ""
     quiz: ""
     readings:
-      - title: "Ch 26"
-        link: "https://cs61b-2.gitbook.io/cs61b-textbook/26.-prefix-operations-and-tries"
+    - title: "Ch 28"
+      link: "https://cs61b-2.gitbook.io/cs61b-textbook/28.-reductions-and-decomposition"
   - title: "Software Engineering I"
     slides: ""
     recording: ""
@@ -277,14 +277,14 @@ lectures:
       - optional
   - title: "**Midterm 2 (7-9PM)**"
     nonumber: True
-  - title: "Directed Acyclic Graphs"
-    slides: "https://docs.google.com/presentation/d/1UHVEYtQhV7EQ74ETn5MvCsnRzsCzmp3MvXL84hXbw-g"
-    video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRprqOwH0sojH3VLONWXtYM0"
+  - title: "Prefix Operations and Tries"
+    slides: "https://docs.google.com/presentation/d/1tcKJNY-ultPxwaHtYn-kd-DV7aXcuBQm6resYvpoCkw"
+    video: "https://www.youtube.com/watch?v=F8Q-SHW2hAM&list=PLnp31xXvnfRoMxe8IbO1qF3lXwudLHVDk"
     recording: ""
     quiz: ""
     readings:
-    - title: "Ch 28"
-      link: "https://cs61b-2.gitbook.io/cs61b-textbook/28.-reductions-and-decomposition"
+      - title: "Ch 26"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/26.-prefix-operations-and-tries"
   - title: "No Lecture (Spring Break)"
     rowspan: 3
     nonumber: True
