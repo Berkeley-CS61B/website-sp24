@@ -3,7 +3,7 @@ layout: page
 title: >-
   FAQ - Lab08 
 parent: >-
-  Lab 06: BSTMap
+  Lab 08: Hashmaps
 grand_parent: Labs
 has_right_toc: true
 released: true

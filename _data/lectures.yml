@@ -222,14 +222,14 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1XVJfoSYH2ItiD1rz9yvyEf_HelejbfkYxQgukbgclSY"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrFJrMMOkrShULQ3KeoqZB9"
     recording: "https://www.youtube.com/watch?v=oeHW_h085dI"
-    quiz: ""
+    quiz: "https://forms.gle/4XSDjoQ58QoduGqGA"
     readings:
       - title: "Ch 21"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/21.-heaps-and-priority-queues"
   - title: "Tree and Graph Traversals"
     slides: "https://docs.google.com/presentation/d/1Gyke5ZMrgcMuBTa7qHAoklWZB3yf_yqQAymK2nV-Nqs"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoXCSo4Hx8TEZBsIpag6lMs"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=fHQPvxFQeqw"
     quiz: ""
     readings:
       - title: "Ch 22"
