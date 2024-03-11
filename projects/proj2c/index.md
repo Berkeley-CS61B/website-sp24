@@ -177,11 +177,12 @@ Here, we find the common ancestors of the `words = ["change", "adjustment"]`. Th
 
 **Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`, as `"subject"` contains both `"test_subject"` and `"math"` as hyponyms, even though `"test_subject"` and `"math"` are not directly connected in the graph.
 
+![Common ancestors word intersection](./img/commonAncestors-5.png)
+
 We may also ask for common ancestors of three or more words.
 
 Note that the outputs are in alphabetical order, and keep in mind that `k != 0` can also apply to this task.
 
-![Common ancestors word intersection](./img/commonAncestors-5.png)
 
 Your query handling needs to remain efficient for common ancestors (i.e., the timeouts applied to 2B still apply here). This means that going through every single word and checking if it contains all the words in the query as hyponyms will be too slow on the larger datasets!
 
