@@ -42,66 +42,84 @@
 # TODO: Document how we add walkthrough video links.
 
 discussions:
-  - title: "No Discussion"
-    nonumber: True
-    rowspan: 2
-  - title: "Introduction to Java"
-    solutions: True
-    regular_slides: https://docs.google.com/presentation/d/1cP2rUPxvYcN1NrHw9teDrK19QeoK4JAwz5dMsvj7KdI/edit?usp=sharing
-    examprep_slides: https://docs.google.com/presentation/d/1CG2u9Sgp-UJ0VWmt9Ixa15n8DG2f_ac2YFgQrAoZdh8/edit?usp=sharingd
-    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRobydmi0jaICLlTv0q_lDhT
-    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRoH8ytpcjLoFCkM0v2FVp6C
-  - title: "Scope, Static, Linked Lists, Arrays"
-    solutions: True
-    regular_slides: https://docs.google.com/presentation/d/1lCMS4tFm_vqMIuZts8ET9XYZ-q2YUJOJtPKXA3r8x6E/edit?usp=sharing
-    examprep_slides: https://docs.google.com/presentation/d/1upoomYbKMnTwOg9oRVs-vtEtjrwsBfD6d0yA4SQe-bs/edit?usp=sharing
-    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpemggJcC8s64Om7XBMmmWZ
-    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpPzSP6eDAJLsqxHbAqhgkX
-  - title: "Inheritance"
-    solutions: True
-    regular_slides: https://docs.google.com/presentation/d/10mZuX6onPGO9o7QP7muUNd_onF5YG947JR_TSB1yQ8c/edit?usp=sharing
-    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpZCnCD8f6-j3WJQS_rbBe4
-    examprep_slides: https://docs.google.com/presentation/d/1r3YxhsYkpAS-UHuJMNfRohICdMhH6FqrnMtvw_cnLLU/edit?usp=drive_link
-    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRo32RBXkS7LFlMNNIgF618Q
-  - title: "Comparators, Iterators"
-    solutions: True
-    regular_slides: https://docs.google.com/presentation/d/13G8tSB24eAbofCXASX9eX8gvsI16X9_8ISWj-V254Fc/edit?usp=sharing
-    examprep_slides: https://docs.google.com/presentation/d/1tGtn6wtoxtxLeEXkUFwpbyP-uIHVo8h3P-xlOdDadhg/edit?usp=sharing
-    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRosONixmTTQnspn7fLOV4-Y
-    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRqOkhLqRr1OoRCpUKvlqm_P
-    rowspan: 4
-  - title: "Asymptotics, Disjoint Sets"
-    solutions: True
-    regular_slides: https://docs.google.com/presentation/d/11tqrOcm3vMkeEfFpwNnCe6XVHWZDLSTJgZoH_N5wfbQ/edit?usp=sharing
-    examprep_slides: https://docs.google.com/presentation/d/14qOZuYqOu4viJOo32QdZzany6colAbV-oDFUT4lJdg4/edit?usp=sharing
-    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpqWL31oiZlmcka8zFyT5uM
-    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpebKdnwkYKIkyCBNzNXAHW
-  - title: "ADTs, Asymptotics II, BSTs"
-    regular_slides: https://docs.google.com/presentation/d/1i9ecGnZlxUvCiEwqeG_vbANaAlneDpMK8cxhLcjNMYo/edit?usp=sharing
-    examprep_slides: https://docs.google.com/presentation/d/1aGcpJSZt1IT0OKj75pwQa6Dkwdb3WEsAfdicpzIvvb4/edit?usp=sharing
-    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpBCAx-EGDwnOY4YW0zwczO
-    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRonJvfbSeiELXQ5TcvrAO1U
-    solutions: True
-  - title: "B-Trees, LLRBs, Hashing"
-    regular_slides: https://docs.google.com/presentation/d/1_aj1MFYC5Isgd1djH6s8e8IxDdiheCdcI7jai_R0Ik0/edit?usp=sharing
-    examprep_slides: https://docs.google.com/presentation/d/1CCpfhrQbUSmvBxOGVUSnzfvUBrGgucs0PMM5M7hDhTk/edit?usp=sharing
-    regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRrjXIJbf0eFsWeUnD6RsfYa
-    examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRoIGRoR3H0WHl2AmxCgcxTN
-    solutions: True
-  - title: "Graphs, Heaps"
-    solutions: True
-  - title: "Shortest Paths, MSTs"
-    solutions: True
-    rowspan: 4
-  - title: "No Discussion"
-    nonumber: True
-  - title: "Graphs II, Tries"
-    solutions: True
-  - title: "Sorting"
-    solutions: True
-  - title: "More Sorting"
-    solutions: True
-  - title: "Goodbye, Fun"
-    solutions: True
-  - title: "No Discussion"
-    nonumber: True
+- title: No Discussion
+  nonumber: true
+  rowspan: 2
+- title: Introduction to Java
+  solutions: true
+  regular_slides: 
+    https://docs.google.com/presentation/d/1cP2rUPxvYcN1NrHw9teDrK19QeoK4JAwz5dMsvj7KdI/edit?usp=sharing
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1CG2u9Sgp-UJ0VWmt9Ixa15n8DG2f_ac2YFgQrAoZdh8/edit?usp=sharingd
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRobydmi0jaICLlTv0q_lDhT
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRoH8ytpcjLoFCkM0v2FVp6C
+- title: Scope, Static, Linked Lists, Arrays
+  solutions: true
+  regular_slides: 
+    https://docs.google.com/presentation/d/1lCMS4tFm_vqMIuZts8ET9XYZ-q2YUJOJtPKXA3r8x6E/edit?usp=sharing
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1upoomYbKMnTwOg9oRVs-vtEtjrwsBfD6d0yA4SQe-bs/edit?usp=sharing
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpemggJcC8s64Om7XBMmmWZ
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpPzSP6eDAJLsqxHbAqhgkX
+- title: Inheritance
+  solutions: true
+  regular_slides: 
+    https://docs.google.com/presentation/d/10mZuX6onPGO9o7QP7muUNd_onF5YG947JR_TSB1yQ8c/edit?usp=sharing
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpZCnCD8f6-j3WJQS_rbBe4
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1r3YxhsYkpAS-UHuJMNfRohICdMhH6FqrnMtvw_cnLLU/edit?usp=drive_link
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRo32RBXkS7LFlMNNIgF618Q
+- title: Comparators, Iterators
+  solutions: true
+  regular_slides: 
+    https://docs.google.com/presentation/d/13G8tSB24eAbofCXASX9eX8gvsI16X9_8ISWj-V254Fc/edit?usp=sharing
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1tGtn6wtoxtxLeEXkUFwpbyP-uIHVo8h3P-xlOdDadhg/edit?usp=sharing
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRosONixmTTQnspn7fLOV4-Y
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRqOkhLqRr1OoRCpUKvlqm_P
+  rowspan: 4
+- title: Asymptotics, Disjoint Sets
+  solutions: true
+  regular_slides: 
+    https://docs.google.com/presentation/d/11tqrOcm3vMkeEfFpwNnCe6XVHWZDLSTJgZoH_N5wfbQ/edit?usp=sharing
+  examprep_slides: 
+    https://docs.google.com/presentation/d/14qOZuYqOu4viJOo32QdZzany6colAbV-oDFUT4lJdg4/edit?usp=sharing
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpqWL31oiZlmcka8zFyT5uM
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpebKdnwkYKIkyCBNzNXAHW
+- title: ADTs, Asymptotics II, BSTs
+  regular_slides: 
+    https://docs.google.com/presentation/d/1i9ecGnZlxUvCiEwqeG_vbANaAlneDpMK8cxhLcjNMYo/edit?usp=sharing
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1aGcpJSZt1IT0OKj75pwQa6Dkwdb3WEsAfdicpzIvvb4/edit?usp=sharing
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRpBCAx-EGDwnOY4YW0zwczO
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRonJvfbSeiELXQ5TcvrAO1U
+  solutions: true
+- title: B-Trees, LLRBs, Hashing
+  regular_slides: 
+    https://docs.google.com/presentation/d/1_aj1MFYC5Isgd1djH6s8e8IxDdiheCdcI7jai_R0Ik0/edit?usp=sharing
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1CCpfhrQbUSmvBxOGVUSnzfvUBrGgucs0PMM5M7hDhTk/edit?usp=sharing
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRrjXIJbf0eFsWeUnD6RsfYa
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRoIGRoR3H0WHl2AmxCgcxTN
+  solutions: true
+- title: Graphs, Heaps
+  solutions: true
+  regular_slides: 
+    https://docs.google.com/presentation/d/1aIjsZvt4DxPDUGArY1LxLf8PLdwCZESA3t9r8dWiIVg/edit?usp=drivesdk
+  examlevel_slides: 
+    https://docs.google.com/presentation/d/1GRXQGOploGtVGvx_89DCtUZZlVfcBtAkWxwm1knK1aE/edit?usp=drivesdk
+- title: Shortest Paths, MSTs
+  solutions: true
+  rowspan: 4
+- title: No Discussion
+  nonumber: true
+- title: Graphs II, Tries
+  solutions: true
+- title: Sorting
+  solutions: true
+- title: More Sorting
+  solutions: true
+- title: Goodbye, Fun
+  solutions: true
+- title: No Discussion
+  nonumber: true

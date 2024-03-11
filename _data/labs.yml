@@ -60,8 +60,9 @@ labs:
     slides: https://docs.google.com/presentation/d/1gYsawrSNV8A-2WauHWr0mRbCdZGWotlouEAnIdaIrOY/edit?usp=sharing
   - title: "HashMaps"
     due: "3/15"
-    # link: labs/lab08
-    slides:
+    link: labs/lab08
+    video: https://www.youtube.com/watch?v=7B_1cWZBEFY
+    slides: https://docs.google.com/presentation/d/1s5SjdAbCaFn9AA38cufalrXI-kIbQMA6dzSrl2gP5iw/edit?usp=sharing
   - title: "Project 2 Workday"
     nonumber: True
     rowspan: 4
