@@ -108,6 +108,8 @@ discussions:
     https://docs.google.com/presentation/d/1aIjsZvt4DxPDUGArY1LxLf8PLdwCZESA3t9r8dWiIVg/edit?usp=drivesdk
   examlevel_slides: 
     https://docs.google.com/presentation/d/1GRXQGOploGtVGvx_89DCtUZZlVfcBtAkWxwm1knK1aE/edit?usp=drivesdk
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1GRXQGOploGtVGvx_89DCtUZZlVfcBtAkWxwm1knK1aE/edit?usp=drivesdk
 - title: Shortest Paths, MSTs
   solutions: true
   rowspan: 4
