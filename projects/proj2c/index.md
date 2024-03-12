@@ -213,7 +213,7 @@ However, we will not be directly grading these classes, since they can vary from
   - `HyponymsHandler` popularity-randomized: 30%, k != 0
   - `HyponymsHandler` common-ancestors: 50%
 
-In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document’s main purpose is to serve as a foundation for your project. It is important to think and ideate before coding. What we are looking for in the design document:
+In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 15th. The design document’s main purpose is to serve as a foundation for your project. It is important to think and ideate before coding. What we are looking for in the design document:
 
 - Identify the data structures we have learned in the class that you will be using in your implementation.
 - Pseudocode / general overview of your algorithm for your implementation.
