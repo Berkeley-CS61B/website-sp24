@@ -1,7 +1,7 @@
 ---
 layout: page
 title: >-
-  FAQ - Lab09
+  FAQ
 parent: >-
   Lab09: Conway's Game of Life
 grand_parent: Labs

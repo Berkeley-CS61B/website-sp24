@@ -66,9 +66,7 @@ object, you need to call the `initialize` method, specifying the width
 and height of your world, where the width and height are given in terms of the
 number of tiles. Each tile is 16 pixels by 16 pixels, so for example, if we
 called `ter.initialize(10, 20)`, we'd end up with a world that is 10 tiles wide
-and 20 tiles tall, or equivalently 160 pixels wide and 320 pixels tall. For this
-lab, you don't need to think about pixels, though you'll eventually need to when
-you start building the user interface for Project 3.
+and 20 tiles tall, or equivalently 160 pixels wide and 320 pixels tall. 
 
 `TETile` objects are also quite simple. You can either build them from scratch
 using the `TETile` constructor (see `TETile.java`), or you can choose from a
@@ -99,8 +97,8 @@ for (int x = 20; x < 35; x++) {
 ```
 
 {: .info}
-Note that $(0, 0)$ is the bottom-left corner of the world in this case
-(not the top-left as you may be used to).
+$(0, 0)$ is the bottom-left corner of the world (not the top-left
+as you may be used to). We will work with this orientation in the lab.
 
 The last step in rendering is to call `ter.renderFrame(world)`, where
 `ter` is a `TERenderer` object. Changes made to the tiles array will not appear
@@ -115,7 +113,7 @@ Tiles themselves are immutable! You cannot do something like
 `world[x][y].character = 'X'`.
 
 {: .info}
-**INFO**: Why do we initialize the world to `Tileset.NOTHING`, rather than just leaving it
+Why do we initialize the world to `Tileset.NOTHING`, rather than just leaving it
 untouched? The reason is that the `renderFrame` method will not draw any tiles
 that are `null`. If you don't initialize the world to `Tileset.NOTHING`, you'll
 get a `NullPointerException` when you try to call `renderFrame`.
@@ -193,8 +191,158 @@ The final and most important thing is that rather than doing everything in
 This is critically important for your project 3 experience! You're going to want
 to constantly identify small subtasks that can be solved with clearly defined
 methods. Furthermore, your methods should form a hierarchy of abstractions!
-We'll see how this can be useful in the final part of this lab.
 
 ## Part II: Conway's Game of Life
 
+### Introduction
+
+Conway's Game of Life (or just Life) is a cellular automaton created by mathematician 
+John Horton Conway. Cellular automaton is a model of computation related to automata 
+theory (i.e. study of abstract machines and automata/self-operating machines). We don't 
+really need to know automata theory or what cellular automaton is exactly, but the Game
+of Life is meant to be an example of how cells change over time. It is a zero-player game, 
+with the world existing as an infinite, two-dimensional grid of cells. Each cell can either 
+be alive or dead, with the status of each cell changing at each timestep, dependent on 
+the status of its 8 neighbors (we'll go more into the rules later). An example of what 
+the game looks like is shown below: 
+
+![game_of_life_pulsar](img/game_of_life_pulsar.gif){: style="height: 250px;" }
+
+The evolutions are based on the initial state. The initial state will effectively 
+act as a "seed" for what future states will look like. For this lab, the initial
+state can be generated with a random seed, or it can be provided in the form 
+of a file.
+
+## Implementation 
+
+Before we get started, please take this time to go through the `GameOfLife` file. It's
+important to familiarize yourself with the current code before you start working with it.
+
+Here are also a couple of reminders and tips before you begin:
+- You can assume that each position on the board will always be `Tileset.NOTHING` or `Tileset.CELL`.
+- (0, 0) is the bottom left of the board.
+- Comments have been provided for you above each method, as well as in the form of TODO comments 
+  for the methods you'll be implementing. Make sure to read them!
+
+{: .warning} 
+Make sure you've read through the tips and reminders above! We'll assume you understand them 
+in the next sections.
+
+### `nextEvolution`
+
+As we mentioned earlier, the world of Conway's Game of Life is a two-dimensional grid of 
+cells, with each cell existing as dead or alive. The status of those cells will change 
+based on the status of their 8 neighbors (vertical, horizontal, diagonal). An example 
+of this is shown below, where the green cell is our current cell and the purple cells 
+are its neighbors: 
+
+![cell_neighbors](img/cell_neighbors.png){: style="height: 250px;" }
+
+{: .info} 
+When you are checking how the status of a cell will be changed, you only need to be 
+concerned with its direct 8 neighbors as shown above.
+
+So, at each timestep, the status of a cell will change based on the following rules:
+1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.
+2. Any live cell with two or three neighbors lives on to the next generation.
+3. Any live cell with more than three neighbors dies, as if by overpopulation. 
+4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+
+In `nextEvolution`, we want to "update" the state of our board according to the rules 
+that are provided above. The current state of the board is represented by the passed in 
+`TETiles[][] tiles`. The provided `TETile[][] newEvo` represents the next state and 
+is **initially filled with Tileset.NOTHING**. We want to take the current state 
+of the board, update it, store it in `newEvo` and return it. 
+
+{: .task} 
+Implement the method `nextEvolution` according to the rules above. 
+
+## Persistence 
+Before we get into the other two methods you'll need to implement, let's talk a little about Project 3. 
+In Project 3, you’ll have to implement the ability to save and load your game state. The goal 
+of this portion of the lab is to help you gain familiarity with the idea of persistence. What is 
+persistence?
+
+Whenever a Java program is run, we use variables to keep track of our values. But once that
+program ends, those values “no longer exist” or they are no longer accessible. For us to continue 
+accessing those values, we want to ensure that the state of our program persists. 
+This is called persistence.
+
+{: .info} 
+For this part of the lab, we've provided a class, `FileUtils` to help you save and load 
+information into a file. Please use the provided class in your implementation and read 
+through the class before moving on.
+
+### `saveBoard`
+
+If you navigate to `src/patterns`, you'll see several text files that contain 
+different patterns. These specific patterns represent several initial states
+that we can pass in, but more importantly, they are saved in a specific format 
+that we want to replicate in `saveBoard`. Let's walk through one of them
+(`glidergun.txt`) as an example: 
+
+```shell
+50 50
+00000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000001100000
+// The rest is hidden away
+```
+
+The first two numbers you see are the width and height of the board respectively and **are separated by 
+a single space.** The next lines in the text file represent our board (in the example above,
+we've hidden away most of it since it gets quite long). In code, each position of the
+board is either `Tileset.NOTHING` or `Tileset.CELL`. When we save it into a text file,
+we will save it so that **0 represents `NOTHING` and 1 represents a `CELL`.** 
+
+There are three additional requirements: 
+- Make sure the orientation in the text file represents the same orientation as the board. The top 
+  right corner of the board should match the top right corner of what is saved in the text file. 
+  Think about why this is important - if (0, 0) represents the bottom left of our board, but we 
+  write from the top, what might end up happening? 
+- For each row you write in to the text file make sure to append `\n`. This applies to the dimensions
+  although the code has already been provided to you in the skeleton). This is to ensure that the board 
+  representation in the text file is accurate; it will also be useful in the next method, `loadBoard`.
+- **The name of your text file that you save to must be called `save.txt`. We've provided it already, so 
+  do not delete it.**
+
+In the skeleton, we've provided `TODO` comments. You can access the current state of
+the board through the instance variable `currentState`.
+
+{: .task}
+Implement the method `saveBoard`. 
+
+### `loadBoard`
+
+Now, instead of saving, we want to load from a given file. When loading, you can assume 
+the format is the same as what's mentioned in the previous part in `saveBoard`. That is, 
+the first line are the dimensions, and the rest of the lines are the board. We want to load 
+this information into a `TETile[][]` and return it. 
+
+Based on the requirements mentioned in `saveBoard`, you can assume that each line is separated 
+by "\n" and that the orientation of the board is correct (keep in mind that if your `saveBoard` 
+doesn't follow the exact format mentioned, it might affect your `loadBoard`). For this part, 
+you might find the `split` and `charAt` function from the `String` class useful. 
+
+{: .task}
+Implement the method `loadBoard`. Since we're loading in the game, make sure to initialize 
+the instance variables `width` and `height`. 
+
+## Testing and Running the Game
+
+Local tests have been provided in the `tests` folder.
+
+
 ## Submission
+
+To summarize, there are three methods for you to implement: 
+- `nextEvolution`
+- `saveBoard`
+- `loadBoard`
+
+Before submitting, make sure that you've passed all the provided local tests. 
+The autograder will be testing the functionality of your loading and saving. 
+
+The score you receive on Gradescope if your final score. 
