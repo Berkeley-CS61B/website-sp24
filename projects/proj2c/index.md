@@ -171,7 +171,7 @@ The ancestors of `"change"` should be `"[act, action, alteration, change, event,
 
 We can also ask for the *common ancestors* of sets of words, which can reveal some neat relationships!
 
-![commonAncestors-4](./img/commonAncestors-6.svg)
+![commonAncestors-4](./img/commonAncestors-4.svg)
 
 Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[alteration, event, happening, modification, natural_event, occurrence, occurrent]"`, which are all the words in the graph that contain *both* `"change"` and `"adjustment"` as hyponyms. Note that `"alteration"` and `"modification"` are also included in the result, contrary to what you might expect, as explained below.
 
