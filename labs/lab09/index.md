@@ -35,14 +35,13 @@ Some steps to complete before getting started on this lab:
 - As usual, run `git pull skeleton main`
 - Watch a previous semester's project 3 getting started video [at this link](https://youtu.be/zgdNWICEb_M).
 - Note the name and API have changed slightly, but the bigger picture still
-  applies.
+  applies. 
 - Understand that project 3 will be a marathon and not a sprint. Don't wait
   until the last minute. You and your partner should start thinking about your
   design NOW.
-
 - Read over Phase 1 of the [project 3 spec](../../proj/proj3/index.md).
 
-In the first half of this lab, you and your partner will learn some basic
+In the first half of this lab, you will learn some basic
 techniques and tools that will be helpful for project 3.
 
 ## Part I: Meet the Tile Rendering Engine
@@ -219,7 +218,7 @@ Before we get started, please take this time to go through the `GameOfLife` file
 important to familiarize yourself with the current code before you start working with it.
 
 Here are also a couple of reminders and tips before you begin:
-- You can assume that each position on the board will always be `Tileset.NOTHING` or `Tileset.CELL`.
+- You can assume that each tile on the board will always be `Tileset.NOTHING` or `Tileset.CELL`.
 - (0, 0) is the bottom left of the board.
 - Comments have been provided for you above each method, as well as in the form of TODO comments 
   for the methods you'll be implementing. Make sure to read them!
@@ -242,17 +241,17 @@ are its neighbors:
 When you are checking how the status of a cell will be changed, you only need to be 
 concerned with its direct 8 neighbors as shown above.
 
-So, at each timestep, the status of a cell will change based on the following rules:
+** At each timestep, the status of a cell will change based on the following rules:**
 1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.
 2. Any live cell with two or three neighbors lives on to the next generation.
 3. Any live cell with more than three neighbors dies, as if by overpopulation. 
 4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
 In `nextEvolution`, we want to "update" the state of our board according to the rules 
-that are provided above. The current state of the board is represented by the passed in 
+that are provided above. The current state of the board is represented by
 `TETiles[][] tiles`. The provided `TETile[][] newEvo` represents the next state and 
 is **initially filled with Tileset.NOTHING**. We want to take the current state 
-of the board, update it, store it in `newEvo` and return it. 
+of the board and store the next evolution/state in `newEvo` and return it. 
 
 {: .task} 
 Implement the method `nextEvolution` according to the rules above. 
@@ -332,8 +331,26 @@ the instance variables `width` and `height`.
 
 ## Testing and Running the Game
 
-Local tests have been provided in the `tests` folder.
+We've provided some local tests to help check your implementation. Passing all of them 
+**does not guarantee full score on the autograder.**
 
+{: .danger}
+We've provided some files for you in `patterns`, that represent some initial states you can 
+pass in. **DO NOT MODIFY THEM.** They should not be modified as they are used in the local 
+tests and it is expecting them to be untouched - the local tests will check if they are modified 
+and the tests will not run if the files are edited. 
+
+If you want to run the game with one of the initial states (or potentially create your own!), 
+navigate to Run --> Edit Configurations. Go to Applications --> GameOfLife. For your program 
+arguments, you want to specify the file path as well as add in the `-l` flag. For example, 
+if you wanted to use the `hammerhead.txt` as an initial state, you would pass in the following 
+for your program arguments: 
+
+```shell
+-l src/patterns/hammerhead.txt
+```
+
+## Project 3 Saving and Loading
 
 ## Submission
 
