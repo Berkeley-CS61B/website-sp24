@@ -238,14 +238,14 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1NKWnXSJ8pUn1E2Cw6zidxMRuXf_aINKCpW7XpEkyz6c"
     video: "https://www.youtube.com/watch?v=YgPtwbWpLaM&list=PLnp31xXvnfRqyRDKtQeHvjxhonhNuaOAK"
     recording: "https://www.youtube.com/watch?v=rr6XL7hkIFU"
-    quiz: ""
+    quiz: "https://forms.gle/i8t4iFmuemvzKerJ6"
     readings:
       - title: "Ch 23"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/23.-graph-traversals-and-implementations"
   - title: "Shortest Paths"
     slides: "https://docs.google.com/presentation/d/1mT-F0fxm-sVZj9EQS_E_QMv5SVfeCGptI9vsKpyp57Y"
     video: "https://www.youtube.com/watch?v=iMoFtG1md3w&list=PLnp31xXvnfRrbIn8mZ3pmpgygnfwp2zjW"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=fWOFZePhHQE"
     quiz: ""
     readings:
       - title: "Ch 24"

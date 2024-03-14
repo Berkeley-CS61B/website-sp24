@@ -50,7 +50,7 @@ homeworks:
       - blank
   - title: "Homework 3"
     due: "3/18"
-    # link: "homeworks/hw3"
+    link: "https://www.gradescope.com/courses/708063/assignments/4221563"
     rowspan: 4
     nonumber: True
   - rowspan: 16
