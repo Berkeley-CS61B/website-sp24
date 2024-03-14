@@ -351,6 +351,25 @@ for your program arguments:
 ```
 
 ## Project 3 Saving and Loading
+After finishing `saveBoard` and `loadBoard`, notice that we ended up saving the entire board 
+into the file (i.e. each `Tileset` and represented it with `0`s and `1`s) along with the height 
+and width of the board. Do you think this would be the best approach to take in Project 3?
+
+Having to iterate through the entire board and save it in into the text file seems a little 
+bit complicated - it might not be the most optimal for runtime, and it might not be necessary 
+for Project 3! Consider what the goal is for saving and loading. We want to ensure that we are able
+to load back in the world we saved, that it somehow continues to persist in some form even 
+after the program ends. From the user's perspective, they don't need to know how this works
+(so it won't really matter, for example, if they are able to se the entire board representation in the 
+saved text file). So, instead of trying to save the entire world into a text file, we can 
+focus more on how **_we might recreate the world_** with specific information, so it appears 
+from the user's end that the world they saved is loaded back in the exact same state.
+
+{: .info} 
+You don't need to exactly know how you should save and load in Project 3 as of now, but 
+it would be a good time to start thinking about the design of it. It's important to know 
+that you'll be relying on some kind of pseudorandom generator - while random, 
+there is an aspect of determinism to it if a seed is given to the generator.
 
 ## Submission
 
