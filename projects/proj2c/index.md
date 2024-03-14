@@ -173,15 +173,16 @@ We can also ask for the *common ancestors* of sets of words, which can reveal so
 
 ![commonAncestors-4](./img/commonAncestors-4.svg)
 
-Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[event, happening, natural_event, occurrence, occurrent]"`, which are all the words in the graph that contain *both* `"change"` and `"adjustment"` as hyponyms.
+Here, we find the common ancestors of the `words = ["change", "adjustment"]`. The result should be `"[alteration, event, happening, modification, natural_event, occurrence, occurrent]"`, which are all the words in the graph that contain *both* `"change"` and `"adjustment"` as hyponyms. Note that `"alteration"` and `"modification"` are also included in the result, contrary to what you might expect, as explained below.
+
+**Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`, as `"subject"` contains both `"test_subject"` and `"math"` as hyponyms, even though `"test_subject"` and `"math"` are not directly connected in the graph.
+
+![Common ancestors word intersection](./img/commonAncestors-5.png)
 
 We may also ask for common ancestors of three or more words.
 
 Note that the outputs are in alphabetical order, and keep in mind that `k != 0` can also apply to this task.
 
-**Note**: Be sure to take a *word intersection* rather than a *node intersection* just as in 2B, so the common ancestors of `["test_subject", "math"]` in the following graph should return `"[subject]"`, as `"subject"` contains both `"test_subject"` and `"math"` as hyponyms, even though `"test_subject"` and `"math"` are not directly connected in the graph.
-
-![Common ancestors word intersection](./img/commonAncestors-5.png)
 
 Your query handling needs to remain efficient for common ancestors (i.e., the timeouts applied to 2B still apply here). This means that going through every single word and checking if it contains all the words in the query as hyponyms will be too slow on the larger datasets!
 
@@ -212,7 +213,7 @@ However, we will not be directly grading these classes, since they can vary from
   - `HyponymsHandler` popularity-randomized: 30%, k != 0
   - `HyponymsHandler` common-ancestors: 50%
 
-In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 18th. The design document’s main purpose is to serve as a foundation for your project. It is important to think and ideate before coding. What we are looking for in the design document:
+In addition to Project 2C, you will also have to turn in your design document. This will be worth 5 points and it is due March 15th. The design document’s main purpose is to serve as a foundation for your project. It is important to think and ideate before coding. What we are looking for in the design document:
 
 - Identify the data structures we have learned in the class that you will be using in your implementation.
 - Pseudocode / general overview of your algorithm for your implementation.
