@@ -106,10 +106,10 @@ discussions:
   solutions: true
   regular_slides: 
     https://docs.google.com/presentation/d/1aIjsZvt4DxPDUGArY1LxLf8PLdwCZESA3t9r8dWiIVg/edit?usp=drivesdk
-  examlevel_slides: 
-    https://docs.google.com/presentation/d/1GRXQGOploGtVGvx_89DCtUZZlVfcBtAkWxwm1knK1aE/edit?usp=drivesdk
   examprep_slides: 
     https://docs.google.com/presentation/d/1GRXQGOploGtVGvx_89DCtUZZlVfcBtAkWxwm1knK1aE/edit?usp=drivesdk
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRrdIn4Jnf_aI1Hgw5m-wrL2
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRqWGEpy-S22SMXVVxtkqmmT
 - title: Shortest Paths, MSTs
   solutions: true
   rowspan: 4
