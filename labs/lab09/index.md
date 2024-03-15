@@ -218,6 +218,8 @@ Before we get started, please take this time to go through the `GameOfLife` file
 important to familiarize yourself with the current code before you start working with it.
 
 Here are also a couple of reminders and tips before you begin:
+- For this lab, we're implementing a slightly modified version of Conway's Game of Life, such that 
+  we're treating the area beyond the bounds of the world as dead cells, instead of being infinite. 
 - You can assume that each tile on the board will always be `Tileset.NOTHING` or `Tileset.CELL`.
 - (0, 0) is the bottom left of the board.
 - Comments have been provided for you above each method, as well as in the form of TODO comments 
