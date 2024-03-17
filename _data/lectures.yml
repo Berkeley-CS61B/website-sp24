@@ -267,7 +267,8 @@ lectures:
     - title: "Ch 28"
       link: "https://cs61b-2.gitbook.io/cs61b-textbook/28.-reductions-and-decomposition"
   - title: "Software Engineering I"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/15afX6n25MybwUmm58M2xn8KqjQbMYHTQcTJ7u3h_I2M"
+    video: "https://www.youtube.com/watch?v=JfATr-BBPY0"
     recording: ""
     quiz: ""
     readings:
