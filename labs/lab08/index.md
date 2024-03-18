@@ -198,7 +198,7 @@ Some additional requirements for `MyHashMap` are below:
   `MyHashMap`, you are restricted to using methods that are specified by the
   `Collection` interface. **When you are searching for a `Node` in a `Collection`,
    iterate over the `Collection`, and find the `Node` whose `key` is
-  `.equal()` to the desired key.**
+  `.equals()` to the desired key.**
 - If the same key is inserted more than once, the value should be updated each
   time (i.e., no `Node`s should be added). You can assume `null` keys will never
   be inserted.

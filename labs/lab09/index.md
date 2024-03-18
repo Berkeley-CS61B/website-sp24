@@ -34,11 +34,10 @@ Some steps to complete before getting started on this lab:
 
 - As usual, run `git pull skeleton main`
 - Watch a previous semester's project 3 getting started video [at this link](https://youtu.be/zgdNWICEb_M).
-- Note the name and API have changed slightly, but the bigger picture still
-  applies. 
+- The names and API may have changed slightly, but the bigger picture still applies.
 - Understand that project 3 will be a marathon and not a sprint. Don't wait
-  until the last minute. You and your partner should start thinking about your
-  design NOW.
+  until the last minute. **You and your partner should start thinking about your
+  design NOW.**
 - Read over Phase 1 of the [project 3 spec](../../proj/proj3/index.md).
 
 In the first half of this lab, you will learn some basic
@@ -201,35 +200,36 @@ theory (i.e. study of abstract machines and automata/self-operating machines). W
 really need to know automata theory or what cellular automaton is exactly, but the Game
 of Life is meant to be an example of how cells change over time. It is a zero-player game, 
 with the world existing as an infinite, two-dimensional grid of cells. Each cell can either 
-be alive or dead, with the status of each cell changing at each timestep, dependent on 
+be alive or dead, with the status of each cell changing at each time step, dependent on 
 the status of its 8 neighbors (we'll go more into the rules later). An example of what 
 the game looks like is shown below: 
 
 ![game_of_life_pulsar](img/game_of_life_pulsar.gif){: style="height: 250px;" }
 
-The evolutions are based on the initial state. The initial state will effectively 
-act as a "seed" for what future states will look like. For this lab, the initial
-state can be generated with a random seed, or it can be provided in the form 
-of a file.
+Future generations in the game are dependent on the initial state. 
+The initial state will effectively act as a "seed" for what future states
+will look like. For this lab, the initial state can be generated with 
+a random seed, or it can be provided in the form of a file.
 
 ## Implementation 
 
 Before we get started, please take this time to go through the `GameOfLife` file. It's
-important to familiarize yourself with the current code before you start working with it.
+important to familiarize yourself with the current code before you start working with it
+(especially the variables that have been provided to you).
 
 Here are also a couple of reminders and tips before you begin:
 - For this lab, we're implementing a slightly modified version of Conway's Game of Life, such that 
   we're treating the area beyond the bounds of the world as dead cells, instead of being infinite. 
 - You can assume that each tile on the board will always be `Tileset.NOTHING` or `Tileset.CELL`.
-- (0, 0) is the bottom left of the board.
+- As a reminder, (0, 0) is the bottom left of the board.
 - Comments have been provided for you above each method, as well as in the form of TODO comments 
-  for the methods you'll be implementing. Make sure to read them!
+  for the methods you'll be implementing.
 
 {: .warning} 
 Make sure you've read through the tips and reminders above! We'll assume you understand them 
 in the next sections.
 
-### `nextEvolution`
+### `nextGeneration`
 
 As we mentioned earlier, the world of Conway's Game of Life is a two-dimensional grid of 
 cells, with each cell existing as dead or alive. The status of those cells will change 
@@ -243,20 +243,20 @@ are its neighbors:
 When you are checking how the status of a cell will be changed, you only need to be 
 concerned with its direct 8 neighbors as shown above.
 
-** At each timestep, the status of a cell will change based on the following rules:**
+**At each timestep, the status of a cell will change based on the following rules:**
 1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.
 2. Any live cell with two or three neighbors lives on to the next generation.
 3. Any live cell with more than three neighbors dies, as if by overpopulation. 
 4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
-In `nextEvolution`, we want to "update" the state of our board according to the rules 
+In `nextGeneration`, we want to "update" the state of our board according to the rules 
 that are provided above. The current state of the board is represented by
 `TETiles[][] tiles`. The provided `TETile[][] newEvo` represents the next state and 
 is **initially filled with Tileset.NOTHING**. We want to take the current state 
-of the board and store the next evolution/state in `newEvo` and return it. 
+of the board and store the next generation/state in `newEvo` and return it. 
 
 {: .task} 
-Implement the method `nextEvolution` according to the rules above. 
+Implement the method `nextGeneration` according to the rules above. 
 
 ## Persistence 
 Before we get into the other two methods you'll need to implement, let's talk a little about Project 3. 
@@ -301,11 +301,12 @@ we will save it so that **0 represents `NOTHING` and 1 represents a `CELL`.**
 There are three additional requirements: 
 - Make sure the orientation in the text file represents the same orientation as the board. The top 
   right corner of the board should match the top right corner of what is saved in the text file. 
-  Think about why this is important - if (0, 0) represents the bottom left of our board, but we 
+  Think about why this is important. If (0, 0) represents the bottom left of our board, but we 
   write from the top, what might end up happening? 
-- For each row you write in to the text file make sure to append `\n`. This applies to the dimensions
-  although the code has already been provided to you in the skeleton). This is to ensure that the board 
-  representation in the text file is accurate; it will also be useful in the next method, `loadBoard`.
+- For each row you write in to the text file, make sure to append `\n`. This applies to the dimensions 
+  written at the top of the text file, although the code has already been provided to you in the skeleton 
+  for this method. This is to ensure that the board representation in the text file is accurate; it will
+  also be useful in the next method, `loadBoard`.
 - **The name of your text file that you save to must be called `save.txt`. We've provided it already, so 
   do not delete it.**
 
@@ -342,7 +343,11 @@ pass in. **DO NOT MODIFY THEM.** They should not be modified as they are used in
 tests and it is expecting them to be untouched - the local tests will check if they are modified 
 and the tests will not run if the files are edited. 
 
-If you want to run the game with one of the initial states (or potentially create your own!), 
+To run the game, you can run it through the main method at the bottom of `GameOfLife.java`.
+If an initial state is not provided (a text file), it will generate a random one
+through a random seed.
+
+If you want to run the game with one of the initial states provided (or potentially create your own!), 
 navigate to Run --> Edit Configurations. Go to Applications --> GameOfLife. For your program 
 arguments, you want to specify the file path as well as add in the `-l` flag. For example, 
 if you wanted to use the `hammerhead.txt` as an initial state, you would pass in the following 
@@ -362,10 +367,10 @@ bit complicated - it might not be the most optimal for runtime, and it might not
 for Project 3! Consider what the goal is for saving and loading. We want to ensure that we are able
 to load back in the world we saved, that it somehow continues to persist in some form even 
 after the program ends. From the user's perspective, they don't need to know how this works
-(so it won't really matter, for example, if they are able to se the entire board representation in the 
+(so it won't really matter, for example, if they are able to see the entire board representation in the 
 saved text file). So, instead of trying to save the entire world into a text file, we can 
 focus more on how **_we might recreate the world_** with specific information, so it appears 
-from the user's end that the world they saved is loaded back in the exact same state.
+from the user's end that the world they saved is loaded back in the exact state they left it.
 
 {: .info} 
 You don't need to exactly know how you should save and load in Project 3 as of now, but 
@@ -376,7 +381,7 @@ there is an aspect of determinism to it if a seed is given to the generator.
 ## Submission
 
 To summarize, there are three methods for you to implement: 
-- `nextEvolution`
+- `nextGeneration`
 - `saveBoard`
 - `loadBoard`
 
