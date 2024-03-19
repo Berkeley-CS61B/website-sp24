@@ -199,8 +199,8 @@ John Horton Conway. Cellular automaton is a model of computation related to auto
 theory (i.e. study of abstract machines and automata/self-operating machines). We don't 
 really need to know automata theory or what cellular automaton is exactly, but the Game
 of Life is meant to be an example of how cells change over time. It is a zero-player game, 
-with the world existing as an infinite, two-dimensional grid of cells. Each cell can either 
-be alive or dead, with the status of each cell changing at each time step, dependent on 
+with the world existing as an infinite, two-dimensional grid of cells. Each cell is either 
+alive or dead, with the status of each cell changing at each time step, dependent on 
 the status of its 8 neighbors (we'll go more into the rules later). An example of what 
 the game looks like is shown below: 
 
