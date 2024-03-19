@@ -261,13 +261,14 @@ lectures:
   - title: "Directed Acyclic Graphs"
     slides: "https://docs.google.com/presentation/d/1UHVEYtQhV7EQ74ETn5MvCsnRzsCzmp3MvXL84hXbw-g"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRprqOwH0sojH3VLONWXtYM0"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=HtXDt0gDvk4"
     quiz: ""
     readings:
     - title: "Ch 28"
       link: "https://cs61b-2.gitbook.io/cs61b-textbook/28.-reductions-and-decomposition"
   - title: "Software Engineering I"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/15afX6n25MybwUmm58M2xn8KqjQbMYHTQcTJ7u3h_I2M"
+    video: "https://www.youtube.com/watch?v=JfATr-BBPY0"
     recording: ""
     quiz: ""
     readings:

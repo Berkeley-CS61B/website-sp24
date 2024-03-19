@@ -113,6 +113,12 @@ discussions:
 - title: Shortest Paths, MSTs
   solutions: true
   rowspan: 4
+  regular_slides: 
+    https://docs.google.com/presentation/d/16a9m4QgNIE3m5l5NBPxGQlbI3Jll0FxVOog3L709VJw/edit?usp=drivesdk
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1ltnUbYD1vXGmcLs82mv7k6jY5br5FJ2AysUR1otX_ZQ/edit?usp=drivesdk
+  regular_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRp0SkHfIO9HavzXht0K9mOA
+  examprep_video: https://www.youtube.com/playlist?list=PLnp31xXvnfRoboeJhEoJbAb7U_W7KBvoj
 - title: No Discussion
   nonumber: true
 - title: Graphs II, Tries
