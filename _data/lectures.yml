@@ -246,7 +246,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1mT-F0fxm-sVZj9EQS_E_QMv5SVfeCGptI9vsKpyp57Y"
     video: "https://www.youtube.com/watch?v=iMoFtG1md3w&list=PLnp31xXvnfRrbIn8mZ3pmpgygnfwp2zjW"
     recording: "https://www.youtube.com/watch?v=nhdM3_bLY8w"
-    quiz: ""
+    quiz: "https://forms.gle/EYpT3FwxvDNG7t8w6"
     readings:
       - title: "Ch 24"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/24.-shortest-paths"
@@ -254,7 +254,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/13pPWHDLRUX2TAUUUK5ucEQ6dF3vUjzkj_C_iXDGaTPU"
     video: "https://www.youtube.com/watch?v=vnKK38JS9Ik&list=PLnp31xXvnfRr6RTCpKB1Xj3n9bZffJQ7L"
     recording: "https://www.youtube.com/watch?v=dMY3Srv-vho"
-    quiz: ""
+    quiz: "https://forms.gle/qYuRb1muGodqYeTB8"
     readings:
       - title: "Ch 25"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/25.-minimum-spanning-trees"
@@ -269,7 +269,7 @@ lectures:
   - title: "Software Engineering I"
     slides: "https://docs.google.com/presentation/d/15afX6n25MybwUmm58M2xn8KqjQbMYHTQcTJ7u3h_I2M"
     video: "https://www.youtube.com/watch?v=JfATr-BBPY0"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=ez4WLTrahBg"
     quiz: ""
     readings:
       - title: "Ch 27"
