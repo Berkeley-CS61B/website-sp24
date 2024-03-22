@@ -60,14 +60,14 @@ bottom middle. The code to generate this world consists of three main parts:
 - Generating a two dimensional `TETile[][]` array.
 - Using the tile rendering engine to display the `TETile[][]` array.
 
-The API for the tile rendering engine is simple. After creating a `TERenderer`
+Read through the code to see an example of how the tile rendering API works. After creating a `TERenderer`
 object, you need to call the `initialize` method, specifying the width
 and height of your world, where the width and height are given in terms of the
 number of tiles. Each tile is 16 pixels by 16 pixels, so for example, if we
 called `ter.initialize(10, 20)`, we'd end up with a world that is 10 tiles wide
 and 20 tiles tall, or equivalently 160 pixels wide and 320 pixels tall. 
 
-`TETile` objects are also quite simple. You can either build them from scratch
+The code also demonstrates how to work with `TETile` objects. You can either build them from scratch
 using the `TETile` constructor (see `TETile.java`), or you can choose from a
 palette of pregenerated tiles in the file `Tileset.java`. For example, the code
 from `BoringWorldDemo.java` below generates a 2D array of tiles and fills them
@@ -83,7 +83,7 @@ for (int x = 0; x < WIDTH; x++) {
 ```
 
 Of course, we can overwrite existing tiles. For example, the code below from
-`BoringWorld.java` creates a 14 x 4 tile region made up of the pregenerated tile
+`BoringWorld.java` creates a 15 x 5 tile region made up of the pregenerated tile
 `Tileset.WALL` and writes it over some of the `NOTHING` tiles created by the
 loop code shown immediately above.
 
@@ -148,8 +148,7 @@ random. Underneath the hood, it uses cool math to take the previously generated
 number and calculate the next number. We won't go into the details of this math,
 but see [Wikipedia](https://en.wikipedia.org/wiki/Pseudorandom_number_generator)
 if you're curious. **More importantly, the sequence generated is deterministic, and the
-way we get different sequences is by choosing what is called a "seed".** That is, 
-pseudorandomness will be a core part of Project 3. 
+way we get different sequences is by choosing what is called a "seed".** This pseudorandomness will be a core part of Project 3. 
 
 In the above code snippet, the seed is the input to the `Random` constructor, so
 `1000` in this case. Having control over the seed is pretty useful since it
