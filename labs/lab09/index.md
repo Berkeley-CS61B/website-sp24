@@ -410,7 +410,7 @@ path as well as add in the `-l` flag. For example, if you wanted to use the `ham
 as an initial state, you would pass in the following for your program arguments: 
 
 ```shell
--l src/patterns/hammerhead.txt
+-l patterns/hammerhead.txt
 ```
 
 ## Project 3 Saving and Loading
