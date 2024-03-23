@@ -413,6 +413,8 @@ as an initial state, you would pass in the following for your program arguments:
 -l patterns/hammerhead.txt
 ```
 
+Then, go ahead and run the application. 
+
 ## Project 3 Saving and Loading
 After finishing `saveBoard` and `loadBoard`, notice that we ended up saving the entire board 
 into the file (i.e. each `Tileset` and we represented them with `0`s and `1`s) along with the height 
