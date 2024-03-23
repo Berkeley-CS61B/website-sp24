@@ -383,8 +383,8 @@ doesn't follow the exact format mentioned, it might affect your `loadBoard`). Fo
 you might find the `split` and `charAt` function from the `String` class useful. 
 
 {: .task}
-Implement the method `loadBoard`. Since we're loading in the game, make sure to initialize 
-the instance variables `width` and `height`. 
+Implement the method `loadBoard`. **Since we're loading in the game, make sure to initialize 
+the instance variables `width` and `height`.**
 
 ## Testing and Running the Game
 
