@@ -403,10 +403,11 @@ If an initial state is not provided (a text file), it will generate a random one
 through a random seed.
 
 If you want to run the game with one of the initial states provided (or potentially create your own!), 
-navigate to Run --> Edit Configurations. Go to Applications --> GameOfLife. For your program 
-arguments, you want to specify the file path as well as add in the `-l` flag. For example, 
-if you wanted to use the `hammerhead.txt` as an initial state, you would pass in the following 
-for your program arguments: 
+navigate to Run --> Edit Configurations. Go to Applications --> GameOfLife. If it's not there, 
+click on the `+` at the top left and select Applications. For `Main class`, type in `GameOfLife` and click 
+on the option that shows up for it. For your program arguments, you want to specify the file
+path as well as add in the `-l` flag. For example, if you wanted to use the `hammerhead.txt` 
+as an initial state, you would pass in the following for your program arguments: 
 
 ```shell
 -l src/patterns/hammerhead.txt
