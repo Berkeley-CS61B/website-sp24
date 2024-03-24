@@ -269,7 +269,7 @@ lectures:
   - title: "Software Engineering I"
     slides: "https://docs.google.com/presentation/d/15afX6n25MybwUmm58M2xn8KqjQbMYHTQcTJ7u3h_I2M"
     video: "https://www.youtube.com/watch?v=JfATr-BBPY0"
-    recording: "https://www.youtube.com/watch?v=ez4WLTrahBg"
+    recording: ""
     quiz: ""
     readings:
       - title: "Ch 27"
@@ -281,7 +281,7 @@ lectures:
   - title: "Prefix Operations and Tries"
     slides: "https://docs.google.com/presentation/d/1tcKJNY-ultPxwaHtYn-kd-DV7aXcuBQm6resYvpoCkw"
     video: "https://www.youtube.com/watch?v=F8Q-SHW2hAM&list=PLnp31xXvnfRoMxe8IbO1qF3lXwudLHVDk"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=ez4WLTrahBg"
     quiz: "https://forms.gle/pCy4uD4AQtB9hATh6"
     readings:
       - title: "Ch 26"
