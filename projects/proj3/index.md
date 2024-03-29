@@ -510,15 +510,14 @@ respective ambition point items to help clear any confusions. Yours do not need 
 
 ### 21 Points Primary Features
 
-- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the
-  avatar. The line of sight must be able to be toggled on and off with a keypress. (The line of sight GIF below is a
-  more complex version that involves bending around corners; we have also seen versions where it is just a square of
-  light around the avatar).
+- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the avatar. 
+- The line of sight must be able to be toggled on and off with a keypress.
 
 [![line-of-sight](img/line-of-sight.gif)](img/line-of-sight.gif)
 
-- Add the ability for light sources to affect how the world is rendered, with at least one light source that can be
-  turned on and off with a keypress.
+- Add the ability for light sources to affect how the world is rendered, with at least one light source that can be turned 
+- on and off with a keypress. The intensity of the light must diminish in a smooth gradient as the distance from the source 
+- increases. Light should also not pass through walls.
 
 [![toggle-lights](img/toggle-lights.gif)](img/toggle-lights.gif)
 
@@ -532,12 +531,6 @@ respective ambition point items to help clear any confusions. Yours do not need 
 
 [![encounter](img/encounter.gif)](img/encounter.gif)
 
-- Add the ability for the user to "replay" their most recent save, visually displaying all the actions taken since
-  the last time a new world was created. This must result in the same final state as would occur if the user had loaded
-  the most recent save. This means that the game should be playable once the replay is complete.
-
-[![replay](img/replay.gif)](img/replay.gif)
-
 - Add the ability for the user to change the perspective of their view (first-person, isometric 2.5D, 3D, etc.) (We've never seen
   anyone do isometric 2.5D or full 3D before! The Nintendo 64
   game '[Kirby 64 - The Crystal Shards](https://www.youtube.com/watch?v=5uu2TWli-_M)' is an example of what an isometric 2.5D world
@@ -545,13 +538,15 @@ respective ambition point items to help clear any confusions. Yours do not need 
 
 ### 7 Points Secondary Features
 
+- Add the ability for the user to "replay" their most recent save, visually displaying all the actions taken since
+  the last time a new world was created. This must result in the same final state as would occur if the user had loaded
+  the most recent save. This means that the game should be playable once the replay is complete.
 - Add multiple save slots that can be accessed with a new menu option, and a new keyboard shortcut to save to a slot
   other than slot 1. You should be careful to still support the default behavior of saving and loading in order to be
   consistent with the replay string requirements.
 - Add the ability to create a new world without closing and reopening the project, either as a special option you can
   press while exploring, or when you reach a "game over" state if you've turned your world into a game.
-- Add a menu option to change your avatar's appearance.
-- Add a menu option to give your avatar a name which is displayed on the HUD.
+- Add a menu option to change your avatar's appearance to a custom image.
 - Add a menu option or randomly determine what the environment/theme of the world will be.
 - Add a menu option to change all text in the interface to a different language. English should be the default and there
   should be a way to switch it back to English.
@@ -563,7 +558,6 @@ respective ambition point items to help clear any confusions. Yours do not need 
   interesting if you also implement a map which is larger than the screen so that you are unable to see the entire map
   normally.
 - Add ability to rotate the world, i.e. turn the board 90 degrees and adjust movement keys accordingly.
-- Add a display of real date and time in the Heads-Up Display.
 - Add support for movement with mouse clicks on any visible square. You'll need to implement some sort of algorithm for
   pathfinding.
 - Add support for 2 users to interact at the same time. This will require that you have two avatars on screen which can
