@@ -591,7 +591,8 @@ reading the entire spec since there are a lot of details which are not captured 
 - Your program must have a HUD, which displays relevant information somewhere outside the area displaying the
   world/tiles.
 - HUD must display a description of tile upon hovering over the tile.
-- Your program must not use real time. Nothing should be moving if no input is being received.
+- Your program must not use real time. Nothing should be moving if no input is being received. This requirement is only 
+  necessary for the autograders; feel free to have real-time dependent features for 3C.
 - Your program must include features that make up 28 points from the Ambition categories, **with at least one primary
   feature**.
 
