@@ -1,0 +1,35 @@
+package core;
+
+import edu.princeton.cs.algs4.StdDraw;
+import tileengine.TERenderer;
+import tileengine.TETile;
+import tileengine.Tileset;
+
+import java.awt.*;
+import java.util.Arrays;
+
+public class WaterWorld {
+    public static final int WORLD_WIDTH = 80;
+    public static final int WORLD_HEIGHT = 40;
+
+    public static void main(String[] args) {
+        // create a world that is just water
+        TETile[][] tiles = new TETile[WORLD_WIDTH][WORLD_HEIGHT];
+        for (TETile[] ar : tiles) {
+            Arrays.fill(ar, Tileset.WATER);
+        }
+
+        // create a renderer, leaving 2 tiles of space at the bottom for the HUD
+        TERenderer ter = new TERenderer();
+        ter.initialize(WORLD_WIDTH, WORLD_HEIGHT + 2, 0, 2);
+
+        // main game loop
+        while (true) {
+            ter.renderFrame(tiles);
+            StdDraw.setPenColor(Color.WHITE);
+            StdDraw.text(4, 1, "HUD goes here");
+            StdDraw.show();
+            StdDraw.pause(10); // optional, just keeps your computer from overheating
+        }
+    }
+}
