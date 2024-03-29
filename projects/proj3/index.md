@@ -52,16 +52,16 @@ Please also note that since the structure of the project has been changed, Phase
 
 Project 3 is worth 125 points. There are several key deadlines for this assignment:
 
-- Team formation (2 pts): Due 4/3 at 11:59 PM
+- **Team formation (2 pts): Due 4/3 at 11:59 PM**
   - You must submit the [Project 3 Partnerships Form](https://forms.gle/CUV2iZN1NcPvNo8dA). You will **not** be able to change your partner later. Read and understand
     the [partnership guidelines](https://sp24.datastructur.es/resources/guides/partnerships/) before starting the assignment.
-- Project 3A (19 pts): Due 4/15 at 11:59 PM
+- **Project 3A (19 pts): Due 4/15 at 11:59 PM**
   - World Generation Autograder (3 pts): Due on Gradescope
   - Manual Review (6 pts): Due at [3A Checkoff Form](https://forms.gle/LRBWHnrW7dwr4mV89)
   - 3A Partner Reflection (10 pts): Due at [3A Reflection Form](https://forms.gle/q5UmLgKHrnRUhD8m8)
-- Project 3B (9 pts): Due 4/22 at 11:59 PM
+- **Project 3B (9 pts): Due 4/22 at 11:59 PM**
   - Interactivity Autograder (9 pts): Due on Gradescope
-- Project 3C (95 pts): Due 4/22 at 11:59 PM
+- **Project 3C (95 pts): Due 4/22 at 11:59 PM**
   - Ambition & Demos Checkoff (85 pts): Due at [Ambition Checkoff Form](https://forms.gle/oj8sFgt28aGce41u5)
   - 3BC Partner Reflection (10 pts): Due at [3BC Reflection Form](https://forms.gle/Tdq2V8UP11fCEbpN8)
 
@@ -72,7 +72,7 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
 
 Notice that Project 3B & 3C are due on the same day. However, since you need to be manually checked off for the "Ambition" 
 part, we made a division between "Interactivity" and "Ambition & Demos". In your Gradescope submission for 3B, your code 
-should also have "Ambition" features because we will be asking your Gradescope submission ID from 3B in the 3C Form.
+should also have "Ambition" features because we will be asking for your Gradescope submission ID from 3B in the 3C Form.
 
 You cannot submit Project 3B & 3C late, as it will be graded during a lab checkoff with a TA. While in theory you could submit 3A and the supporting labs (Lab 9 and Lab 10) late,
 Project 3B & 3C builds upon these assignments, so it is unlikely that you will be able to submit these
