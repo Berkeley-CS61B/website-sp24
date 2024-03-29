@@ -22,7 +22,7 @@ ambition features as well as clear and concise instructions on how to use these 
 form linked at the end of the spec. Be very specific here, as if you aren't specific enough a TA might not be able to
 use your feature. We will provide a way for you to request a regrade, but we recommend that you get it right the first
 time to avoid the trouble. It's also of utmost importance that your code uses only libraries in java.\* and the
-skeleton's library-fa23 folder. If your code uses additional libraries, then the TA will not be able to compile nor run
+skeleton's library-sp24 folder. If your code uses additional libraries, then the TA will not be able to compile nor run
 your code in the case that there is a technical failure during your checkoff, and the TA has to clone your repo and run
 it from their laptop. The majority of the points are in the checkoff, so please make sure you've only
 used those libraries.
@@ -47,8 +47,8 @@ directory) if you want to follow along and simulate your checkoff.
 
 ## Checkoff Script
 
-1. The grader will ask for everyone's class ID (fa23-s\*\*\*)
-2. One partner should designate their laptop as the "check-in laptop", and already have a terminal window in their `fa23-proj3-g***/proj3`. Their Git should be in a clean
+1. The grader will ask for everyone's class ID (sp24-s\*\*\*)
+2. One partner should designate their laptop as the "check-in laptop", and already have a terminal window in their `sp24-proj3-g***/proj3`. Their Git should be in a clean
    state (git status should be clean), IntelliJ should be open, and the Project 3 main menu
    should be running.
 

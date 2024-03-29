@@ -122,18 +122,18 @@ You'll be working exclusively in a group repository for this portion of the proj
 - Open a new Terminal window, and navigate to the directory that you store your CS 61B files in (usually, students have a directory called `cs61b`).
 
 {: .warning}
-**IMPORTANT:** Do not cd into your `fa23-s****` repo! You should not be cloning the group repo inside of your personal 61b one.
+**IMPORTANT:** Do not cd into your `sp24-s****` repo! You should not be cloning the group repo inside of your personal 61b one.
 
 - Type the following commands into your terminal, and hit Enter after each one:
 
 ```sh
 git clone <paste your link from GitHub here>
-cd fa23-proj3-g***  // Replace the *** here with your group repo number
-git remote add skeleton https://github.com/Berkeley-CS61B/proj3-skeleton-fa23.git
+cd sp24-proj3-g***  // Replace the *** here with your group repo number
+git remote add skeleton https://github.com/Berkeley-CS61B/proj3-skeleton-sp24.git
 git pull skeleton main --allow-unrelated-histories
 ```
 
-Once you've completed the above steps, you should see your new group repo called `fa23-proj3-g***` in your local files, and if you open this repo, you'll see the `proj3` skeleton folder. From here, you and your partner can proceed as normal, by adding, committing, pushing, and pulling from this repo as you would otherwise. 
+Once you've completed the above steps, you should see your new group repo called `sp24-proj3-g***` in your local files, and if you open this repo, you'll see the `proj3` skeleton folder. From here, you and your partner can proceed as normal, by adding, committing, pushing, and pulling from this repo as you would otherwise. 
 
 ## Skeleton Code
 
@@ -157,7 +157,7 @@ classes:
   in `World.java`.
 - `World.java` - YOUR WORLD!
 
-This is a open ended project. As you can see, we gave you just one file called `World.java` where you can do necessary things to create your world! The aim of this project to give you freedom to create your own world with different desing choices. You can create any other classes if you want. Primarly, you can use `World.java` for the logic behind your world creation.
+This is a open-ended project. As you can see, we gave you just one file called `World.java` where you can do necessary things to create your world! The aim of this project to give you freedom to create your own world with different desing choices. You can create any other classes if you want. Primarly, you can use `World.java` for the logic behind your world creation.
 
 The last package `Utils` contains everything that you might need to implement your `World.java` class.
 
@@ -183,7 +183,7 @@ and fail.**
 As mentioned above, the first goal of the project will be to write a world generator. The requirements for your world
 are listed below:
 
-- The world must be a 2D grid, drawn using our tile engine. The tile engine is described in [lab11](../../lab/lab11).
+- The world must be a 2D grid, drawn using our tile engine. The tile engine is described in [lab09](../../labs/lab09).
 - The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 11.
 - The generated world must include distinct rooms and hallways, though it may also include outdoor spaces.
 - At least some rooms should be rectangular, though you may support other shapes as well.
@@ -206,7 +206,7 @@ that represents a locked door. All unused spaces are left blank.
 
 [![compliant_world_example](img/valid_world.png)](img/valid_world.png)
 
-Once you've completed lab 11, you can start working on your world generation algorithm.
+Once you've completed lab 9, you can start working on your world generation algorithm.
 
 **It is very likely that you will end up throwing away your first world generation algorithm.** This is normal! In real
 world systems, it is common to build several completely new versions before getting something you're happy with. The
@@ -344,7 +344,7 @@ above a method, including any edge cases you are accounting for.
 You should only tackle this section after you are done with 3A. This section should describe how you are going to
 save the state of a world, and load it again, following the requirements in the spec. Again, try to keep your
 explanations clear and short. Include all the components your program interacts with - classes, specific methods, and
-files you may create. You can check out [lab 11](../../lab/lab11).
+files you may create. You can check out [lab 9](../../labs/lab09).
 
 ## 3B: Interactivity
 
@@ -601,15 +601,15 @@ reading the entire spec since there are a lot of details which are not captured 
 ## Submission and Grading
 
 As usual, we'll have a grader for this project on Gradescope. **Remember to add your partner as a group member to your
-Gradescope submission.** In addition, you'll also submit [this form](https://forms.gle/wTnVL4tpW7ZmsWsH9) when you've
+Gradescope submission.** In addition, you'll also submit [this form](https://forms.gle/etpB2gqrX4ji2ryX7) when you've
 completed the project. More details in the next section about checkoffs. **If you do not submit this form then you will
 receive a 0 on the checkoff portion of the project.** Only one of your partners needs to submit this, but you should
 write the responses together.
 
 ### Partnership Preferences Form: 2 points
 
-Filling out the [Project 3 Partnership Preferences Form](https://forms.gle/RTjyhVitifNzfXz78) is worth 2 points for
-this project. You must fill out the form by **Friday, November 3rd at 4:59pm** to get these points.
+Filling out the [Project 3 Partnership Preferences Form](https://forms.gle/sjpi47tAviigtTeKA) is worth 2 points for
+this project. You must fill out the form by **Wednesday, April 3 at 11:59pm** to get these points.
 
 ### Autograders: 12 points
 
@@ -631,16 +631,16 @@ seeds. **They will then check that your 5 different worlds meet our randomness c
 
 If you have questions or concerns about whether your world matches these criteria, you may ask a TA in Office Hours to confirm.
 
-**In order to get credit for the 3A Checkoff, you must fill out [this form](https://forms.gle/kEHSEYw4HN1GR1hE7) by Monday, November 13th at 11:59PM.**
+**In order to get credit for the 3A Checkoff, you must fill out [this form](https://forms.gle/262W6vsNAd2dKwt1A) by Monday, April 15th at 11:59PM.**
 
 ### Partner Reflection: 20 points
 
-- [3A Reflection Form](https://forms.gle/sPvFp6Z3FS9ZWfgBA): 10 points (due November 13th at 11:59PM)
-- [3B & 3C Reflection Form](https://forms.gle/wmCQ5KC7WLnW5mrc8): 10 points (due November 27th at 11:59PM)
+- [3A Reflection Form](https://forms.gle/Bj2no1aaT5YDWKaG7): 10 points (due April 15th at 11:59PM)
+- [3B & 3C Reflection Form](https://forms.gle/YF7CwmeL2m1y1Si19): 10 points (due April 22nd at 11:59PM)
 
 ### 3C Checkoff Demo: 85 points
 
-To get credit for the checkoff demo, you **must** submit [this form](https://forms.gle/wTnVL4tpW7ZmsWsH9).
+To get credit for the checkoff demo, you **must** submit [this form](https://forms.gle/idHdLNoqanTsU9Gs5).
 
 - 57 points: Obeying base spec for 3A and 3B.
 - 28 points: Ambition points.
@@ -680,9 +680,9 @@ Once you've ensured that you have:
 1. Completed the project
 2. Read through all the specifications again to ensure you didn't miss any
 3. Identified the commit you want graded (see previous section)
-4. **Ensure you only use libraries in `library-fa23` or `java.*`**
+4. **Ensure you only use libraries in `library-sp24` or `java.*`**
 
-**then you are ready to submit the [Project 3C Checkoff Form](https://forms.gle/6YfiQJW5PQEWmSgLA).**
+**then you are ready to submit the [Project 3C Checkoff Form](https://forms.gle/idHdLNoqanTsU9Gs5).**
 
 ## Autograder Details
 
@@ -690,7 +690,7 @@ We have two autograders for BYOW: the 3A grader and the 3B grader. We don't have
 
 ### 3A Grader
 
-3A is due on **November 13th at 11:59 PM** for 3 points. It will test:
+3A is due on **April 15th at 11:59 PM** for 3 points. It will test:
 
 - `getWorldFromInput` returns a world
 - `getWorldFromInput` recreates the same world given the same seed multiple times
@@ -700,7 +700,7 @@ There will be **no** movement in these tests.
 
 ### 3B Grader
 
-3B is due on **November 27th at 11:59 PM** for 9 points. It will test:
+3B is due on **April 22nd at 11:59 PM** for 9 points. It will test:
 
 - `getWorldFromInput` recreates the same world given the same seed and same movements multiple times
 - `getWorldFromInput` creates different worlds given different seeds and different movement
