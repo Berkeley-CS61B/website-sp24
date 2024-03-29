@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 3 Checkoff Script.
-released: false
+released: true
 ---
 
 ## Project 3C Lab Demo Checkoff Script 

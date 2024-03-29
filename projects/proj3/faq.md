@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
     Project 3 FAQ.
-released: false
+released: true
 ---
 
 # Topics

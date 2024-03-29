@@ -8,8 +8,11 @@ has_toc: false
 has_right_toc: true
 description: >-
   Project 3 spec.
-released: false
+released: true
 ---
+
+{: .warning}
+Project 3: BYOW is not officially released. Until this warning disappears, the information in this spec is subject to change.
 
 ## [FAQ](faq.md)
 

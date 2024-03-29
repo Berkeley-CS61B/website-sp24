@@ -10,7 +10,7 @@ has_toc: false
 has_right_toc: true
 description: >-
    Project 3 Common UI Bugs.
-released: false
+released: true
 ---
 
 ## Invisible Text
