@@ -183,23 +183,30 @@ and fail.**
 
 ## 3A: World Generation
 
-As mentioned above, the first goal of the project will be to write a world generator. The requirements for your world
-are listed below:
+As mentioned above, the first goal of the project will be to write a world generator. Your world must be **valid** and 
+**sufficiently random** The requirements for these criteria are listed below:
 
-- The world must be a 2D grid, drawn using our tile engine. The tile engine is described in [lab09](../../labs/lab09).
-- The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 11.
+**Valid**
+- The world must be a 2D grid, drawn using our tile engine. The tile engine is described in [lab 9](../../labs/lab09).
 - The generated world must include distinct rooms and hallways, though it may also include outdoor spaces.
 - At least some rooms should be rectangular, though you may support other shapes as well.
 - Your world generator must be capable of generating hallways that include turns (or equivalently, straight hallways
-  that intersect).
+  that intersect). Every world must include at least one turning hallway.
+- Dead-end hallways are not allowed.
+- Rooms and hallways must have walls that are visually distinct from floors. Walls and floors should be visually
+  distinct from unused spaces. 
+- Corner walls are optional.
+- Rooms and hallways should be connected, i.e. there should not be gaps in the floor between adjacent rooms or hallways.
+- All rooms should be reachable, i.e. there should be no rooms with no way to enter
+- The world must not have excess unused space. While this criterion is inherently subjective, aim to populate above 
+  50% of the world with rooms and hallways.
+
+**Sufficiently Random**
+- The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 11.
 - The world should contain a random number of rooms and hallways.
 - The locations of the rooms and hallways should be random.
 - The width and height of rooms should be random.
-- Hallways should have a width of 1 tile and a random length. Dead-end hallways are not allowed.
-- Rooms and hallways must have walls that are visually distinct from floors. Walls and floors should be visually
-  distinct from unused spaces.
-- Rooms and hallways should be connected, i.e. there should not be gaps in the floor between adjacent rooms or hallways.
-- All rooms should be reachable, i.e. there should be no rooms with no way to enter
+- Hallways should have a width of 1 tile and a random length.
 - The world should be substantially different each time, i.e. you should **NOT** have the same basic layout with easily
   predictable features. FAQ will have a description of what "substantially different" means.
 
