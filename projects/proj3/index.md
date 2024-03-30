@@ -517,19 +517,15 @@ respective ambition point items to help clear any confusions. Yours do not need 
 
 ### 21 Points Primary Features
 
-- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the avatar. 
-- The line of sight must be able to be toggled on and off with a keypress.
+- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the avatar. The line of sight must be able to be toggled on and off with a keypress.
 
 [![line-of-sight](img/line-of-sight.gif)](img/line-of-sight.gif)
 
-- Add the ability for light sources to affect how the world is rendered, with at least one light source that can be turned 
-- on and off with a keypress. The intensity of the light must diminish in a smooth gradient as the distance from the source 
-- increases. Light should also not pass through walls.
+- Add the ability for light sources to affect how the world is rendered, with at least one light source that can be turned on and off with a keypress. The intensity of the light must diminish in a gradient as the distance from the source increases. Light should also not pass through walls.
 
 [![toggle-lights](img/toggle-lights.gif)](img/toggle-lights.gif)
 
-- Add entities which chase the avatar/other entities by use of a search algorithm from class, with a toggle to display
-  their projected path.
+- Add entities which chase the avatar/other entities by use of a search algorithm from class, with a toggle to display their projected path.
 
 [![enemy](img/enemy.gif)](img/enemy.gif)
 
