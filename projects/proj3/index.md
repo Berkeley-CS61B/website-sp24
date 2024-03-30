@@ -208,7 +208,7 @@ As mentioned above, the first goal of the project will be to write a world gener
 - The width and height of rooms should be random.
 - Hallways should have a width of 1 tile and a random length.
 - The world should be substantially different each time, i.e. you should **NOT** have the same basic layout with easily
-  predictable features. FAQ will have a description of what "substantially different" means.
+  predictable features.
 
 As an example of a world that meets all of these requirements (click for higher resolution), see the image below. In
 this image, # represents a wall tile, a dot represents a floor tile, and there is also one golden colored wall segment

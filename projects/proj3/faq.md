@@ -98,10 +98,6 @@ No, we won't grade you on that.
 
 Yes. But if you resubmit after the deadline, that would not be valid.
 
-### When will we hear 3A results back?
-
-If you have submitted it on time, probably over the weekend (11/18 - 11/19).
-
 ### Are there any live checkoffs?
 
 Nope, not this semester.

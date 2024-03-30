@@ -51,8 +51,8 @@ spilling into the other tiles.
 ### The Solution
 
 The problem is that the tiles are being drawn with too large a font size, so
-we'll create a method that resets the font size. Create this method in your
-TERenderer class:
+we'll use a method that resets the font size. Call the `resetFont` method in 
+your TERenderer class:
 
 ```java
 /** Sets the font to the correct font for drawing tiles */
@@ -109,7 +109,7 @@ two.
 ### The Solution
 
 The problem is that there's an extra `StdDraw.show()` call inside `renderFrame`,
-so we'll create a version of that method without it. Create this method in
+so we'll create a version of that method without it. Instead, use the `drawTiles` method in
 your `TERenderer` class:
 
 ```java
@@ -125,7 +125,7 @@ your `TERenderer` class:
     }
 ```
 
-Then, replace the `renderFrame` call in the main game loop:
+Replace the `renderFrame` call in the main game loop:
 
 
 <table>
