@@ -70,8 +70,8 @@ labs:
     nonumber: True
   - title: "Getting Started on Project 3"
     due: "4/05"
-    # link: labs/lab09
-    slides:
+    link: labs/lab09
+    slides: https://docs.google.com/presentation/d/1TK6cmjyhpoxoHsOApgnx9unHp-vtLToD6416bggPnCk/edit?usp=sharing
   - title: "Tetris"
     due: "4/12"
     # link: labs/lab10
