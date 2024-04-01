@@ -34,7 +34,7 @@ Some steps to complete before getting started on this lab:
 - Understand that project 3 will be a marathon and not a sprint. Don't wait
   until the last minute. **You and your partner should start thinking about your
   design NOW.**
-- Read over Phase 1/skim over the [project 3 spec](../../proj/proj3/index.md) 
+- Read over Phase 1/skim over the [project 3 spec](../../projects/proj3/index.md) 
   and understand the main ideas.
 
 In the first half of this lab, you will learn some basic
