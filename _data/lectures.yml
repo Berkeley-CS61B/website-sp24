@@ -289,15 +289,15 @@ lectures:
   - title: "No Lecture (Spring Break)"
     rowspan: 3
     nonumber: True
-  - title: "Sorting I: Selection Sort, Heapsort, Mergesort"
+  - title: "Sorting I: Selection Sort, Heapsort"
     slides: "https://docs.google.com/presentation/d/1aleYBt-L8bwyaxw9tXPN3bMI5XxWxmpgfvvSEo9KxD0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrK9o_QZyGOCbQVFTsqOPtN"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=4D3VHeLLymg"
     quiz: ""
     readings:
       - title: "Ch 29"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/29.-basic-sorts"
-  - title: "Sorting II: Insertion Sort and Quicksort"
+  - title: "Sorting II: Mergesort, Insertion Sort, and Quicksort"
     slides: "https://docs.google.com/presentation/d/1MqmOxfh1c6gS4hk9hvuRR_hWXWTnCIXMqLGXwRX4Pvk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqsfDWZNS86oYmHFY6UKA2t"
     recording: ""
