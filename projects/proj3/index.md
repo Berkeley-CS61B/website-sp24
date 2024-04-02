@@ -55,6 +55,7 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
 - **Team formation (2 pts): Due 4/3 at 11:59 PM**
   - You must submit the [Project 3 Partnerships Form](https://forms.gle/CUV2iZN1NcPvNo8dA). You will **not** be able to change your partner later. Read and understand
     the [partnership guidelines](https://sp24.datastructur.es/resources/guides/partnerships/) before starting the assignment.
+  - When group repos are released, you **must accept your GitHub invitation**, otherwise they will expire after a week.
 - **Project 3A (19 pts): Due 4/15 at 11:59 PM**
   - World Generation Autograder (3 pts): Due on Gradescope
   - Asynchronous Manual Review (6 pts): Due at [3A Asynchronous Review Form](https://forms.gle/LRBWHnrW7dwr4mV89)
@@ -66,7 +67,7 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
   - 3BC Partner Reflection (10 pts): Due at [3BC Reflection Form](https://forms.gle/Tdq2V8UP11fCEbpN8)
 
 {: .danger}
-> Ambition Demos will be held in person during lab sections the week that Project 3BC is due. 
+> Ambition Demos will be held in person during lab sections the week that Project 3BC is due.
 > All group members must arrive on time, otherwise a 20% late penalty will be applied to the group.
 
 {: .danger}
@@ -77,7 +78,7 @@ Notice that Project 3B & 3C are due on the same day. However, since you need to 
 part, we made a division between "Interactivity" and "Ambition & Demos". In your Gradescope submission for 3B, your code 
 should also have "Ambition" features because we will be asking for your Gradescope submission ID from 3B in the 3C Form.
 
-You cannot submit Project 3B & 3C late, as it will be graded during a lab checkoff with a TA. While in theory you could submit 3A and the supporting labs (Lab 9 and Lab 10) late,
+**You cannot submit Project 3B & 3C late, as it will be graded during a lab checkoff with a TA.** We strongly discourage submitting 3A and the supporting labs (Lab 9 and Lab 10) late, as
 Project 3B & 3C builds upon these assignments, so it is unlikely that you will be able to submit these
 assignments late and still complete Project 3B on time.
 
@@ -143,6 +144,8 @@ Once you've completed the above steps, you should see your new group repo called
 
 ## Skeleton Code
 
+A walkthrough of the new skeleton code is available [here](https://youtu.be/A8NlkICBWL8).
+
 Use `git pull skeleton main` in your group repo to pull the skeleton code. The skeleton code
 contains two key packages that you'll be using: `TileEngine`, `Core` and `Utils`. `TileEngine` provides some basic methods for rendering, as well
 as basic code structure for tiles, and contains:
@@ -160,7 +163,7 @@ The other package `Core` contains everything unrelated to tiles. We recommend th
 this project in the `Core` package, though this is not required. The `Core` package comes with the following
 classes:
 
-- `AutograderBuddy.java` - Provides two method for interacting with your system. `TETile[][] getWorldFromInput(String input)` simulates the game without rendering by returning the world that would result if the input string had been typed on the keyboard. You should fill this out for the autograder.
+- `AutograderBuddy.java` - Provides two methods for interacting with your system. `TETile[][] getWorldFromInput(String input)` simulates the game without rendering by returning the world that would result if the input string had been typed on the keyboard. You should fill this out for autograder.
 - `Main.java` - How the user starts the entire system. Reads command line arguments and calls the appropriate function
   in `World.java`.
 - `World.java` - YOUR WORLD!
@@ -170,7 +173,7 @@ This is an open-ended project. As you can see, we gave you just one file called 
 The last package `Utils` contains everything that you might need to implement your `World.java` class.
 
 - `RandomUtils.java` - Provides handful of functions that might be useful.
-- `FileUtils.java` - Library of simple file operations. You can find related APIs [here](https://docs.oracle.com/javase/8/docs/api/java/io/File.html) and [here](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html).
+- `FileUtils.java` - Library of simple file operations. You can find related APIs [here](https://docs.oracle.com/javase/8/docs/api/java/io/File.html) and [here](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html). Be sure to look at lab09 for a refresher on how this works.
 
 This project makes heavy use of `StdDraw`, which is a package that has basic graphics rendering capabilities.
 Additionally, it supports user interaction with keyboard and mouse clicks. You will likely need to consult the API
@@ -178,7 +181,7 @@ specification for `StdDraw` at some points in the project, which can be
 found [here](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html).
 
 Your project should only use standard java libraries (imported from java.\*) or any libraries we provided with your
-repo. Your final submission for 3B and 3C should not use any external libraries other than the ones provided in the
+repo and `library-sp24`. Your final submission for 3B and 3C should not use any external libraries other than the ones provided in the
 skeleton.
 
 {: .warning}
@@ -209,6 +212,7 @@ As mentioned above, the first goal of the project will be to write a world gener
   50% of the world with rooms and hallways.
 
 **Sufficiently Random**
+
 - The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 9.
 - The world should contain a random number of rooms and hallways.
 - The locations of the rooms and hallways should be random.
@@ -238,7 +242,7 @@ world generation engine.
 ### Tileset and Tile Rendering
 
 The tile rendering engine we provide takes in a 2D array of `TETile` objects and draws it to the screen. Let's call
-this `TETile[][] world` for now. `world[0][0]` corresponds to the bottom left tile of the world. The first coordinate is
+this `TETile[][] world` for now. **`world[0][0]` corresponds to the bottom left tile of the world.** The first coordinate is
 the x coordinate, e.g. `world[9][0]` refers to the tile 9 spaces over to the right from the bottom left tile. The second
 coordinate is the y coordinate, and the value increases as we move upwards, e.g. `world[0][5]` is 5 tiles up from the
 bottom left tile. All values should be non-null, i.e. make sure to fill them all in before calling `renderFrame`. **Make
@@ -314,12 +318,15 @@ option "S" to the main menu for "select creature and create new world" if you wa
 of creature to play as. These additional options may have arbitrary behavior of your choosing, however, the behavior of
 N, L, and Q must be exactly as described in the spec!
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> b175058556b258b40d78046c587dac6c555374b7
 ### Requirements
 
 For 3A, you should be able to run `Main.main` by providing an input String, and have your program create a world,
-that adhere to the requirements mentioned above along with our randomness requirements mentioned in the **Submission and
-Grading section** below. Note that you should render the world to check your code by writing your own `main` method, but
+that adhere to the requirements mentioned above along with our randomness requirements mentioned in the [Submission and
+Grading](#submission-and-grading) section below. Note that you should render the world to check your code by writing your own `main` method, but
 for the autograder, `getWorldFromInput` should not render the world, only returning the world as a `TETile` array.
 Worlds should be visibly different for different seeds provided to the program.
 
@@ -337,7 +344,10 @@ program, and convince yourself that your design is correct. Writing a design doc
 coming up with your initial design, you may find some flaws in it, requiring you to revisit your design and update its
 description according to your new findings.
 
-**Note:** Your design document will NOT be graded.
+You may find the software engineering lectures helpful for learning how to manage the complex and collaborative nature of this project.
+
+{: .warning}
+**We will not be grading this document, but you will need to complete it in order to receive help online and in office hours.**
 
 ### Design Document Guidelines
 
@@ -346,7 +356,7 @@ What we are looking for in the design document:
 - Identify the data structures we have learned in the class that you will be using in your implementation.
 - Pseudocode / general overiview of your algorithm for your implementation.
 
-You may use the following format for your BYOW design document. We will not be grading this document, but you will need to complete it in order to receive help online and in office hours. 
+You may use the following format for your BYOW design document.
 You may create a design doc with your own format, or use [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing).
 
 #### Design Document Sections
@@ -738,7 +748,7 @@ There will be **no** movement in these tests.
 
 Recall that in the collaboration policy, we say:
 
-"Use of GitHub Copilot / GPT3 / etc. \[is permitted with extreme caution\] if you're just generating some amount of boilerplate code, that's ok. However, you should not use such tools to generate non-trivial methods. We are trying to build your fundamental skills, and leaning on an AI is going to cause you trouble in circumstances where you don't have an AI to help, such as exams. Any AI generated code must be cited and explicitly commented as such."
+"Use of GitHub Copilot / GPT3 / etc. **is permitted with extreme caution** if you're just generating some amount of boilerplate code, that's ok. However, you should not use such tools to generate non-trivial methods. We are trying to build your fundamental skills, and leaning on an AI is going to cause you trouble in circumstances where you don't have an AI to help, such as exams. Any AI generated code must be cited and explicitly commented as such."
 
 For project 3B & 3C, we're relaxing this rule and it's OK to use large language models (LLMs) like ChatGPT, Bard, Bing, CoPilot, etc. For project 3B & 3C however you want, with the important note that any code generated must be explicitly cited as being AI generated.
 
