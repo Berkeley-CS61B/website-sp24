@@ -155,7 +155,7 @@ as basic code structure for tiles, and contains:
 results.**
 
 The other package `Core` contains everything unrelated to tiles. We recommend that you put all of your code for
-this project in the `Core` package, though this not required. The `Core` package comes with the following
+this project in the `Core` package, though this is not required. The `Core` package comes with the following
 classes:
 
 - `AutograderBuddy.java` - Provides two method for interacting with your system. `TETile[][] getWorldFromInput(String input)` simulates the game without rendering by returning the world that would result if the input string had been typed on the keyboard. You should fill this out for autograder.
@@ -163,7 +163,7 @@ classes:
   in `World.java`.
 - `World.java` - YOUR WORLD!
 
-This is a open-ended project. As you can see, we gave you just one file called `World.java` where you can do necessary things to create your world! The aim of this project to give you freedom to create your own world with different desing choices. You can create any other classes if you want. Primarly, you can use `World.java` for the logic behind your world creation.
+This is an open-ended project. As you can see, we gave you just one file called `World.java` where you can do necessary things to create your world! The aim of this project is to give you freedom to create your own world with different desing choices. You can create any other classes if you want. Primarly, you can use `World.java` for the logic behind your world creation.
 
 The last package `Utils` contains everything that you might need to implement your `World.java` class.
 
@@ -222,8 +222,7 @@ that represents a locked door. All unused spaces are left blank.
 Once you've completed lab 9, you can start working on your world generation algorithm.
 
 **It is very likely that you will end up throwing away your first world generation algorithm.** This is normal! In real
-world systems, it is common to build several completely new versions before getting something you're happy with. The
-room generation algorithm above was my 3rd one, and was ultimately much simpler than either of my first two.
+world systems, it is common to build several completely new versions before getting something you're happy with.
 
 You're welcome to search the web for cool world generation algorithms. You should not copy and paste code from existing
 games or graphical demos online, but you're welcome to draw inspiration from code on the web. **Make sure to cite your
@@ -414,7 +413,7 @@ some interesting visuals).
 [![mouseover_example2](img/UI_example2.png)](img/UI_example2.png)
 
 For information about how to specify the location of the HUD, see
-the `initialize(int width, int height, int xOffset, int yOffset)` method of `TERenderer` or see lab 11.
+the `initialize(int width, int height, int xOffset, int yOffset)` method of `TERenderer` or see lab 9.
 
 ### UI Behavior
 
@@ -525,7 +524,7 @@ respective ambition point items to help clear any confusions. Yours do not need 
 
 ### 21 Points Primary Features
 
-- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the avatar. The line of sight must be able to be toggled on and off with a keypress.
+- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the avatar. **The line of sight must be able to be toggled on and off with a keypress, otherwise it will interfere with checkoffs.**
 
 [![line-of-sight](img/line-of-sight.gif)](img/line-of-sight.gif)
 
