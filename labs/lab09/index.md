@@ -298,7 +298,7 @@ through the class before moving on.**
 
 ### `saveBoard`
 
-If you navigate to `src/patterns`, you'll see several text files that contain 
+If you navigate to `patterns`, you'll see several text files that contain 
 different patterns. These specific patterns represent several initial states
 that we can pass it, and they are saved in a specific format 
 that we want to replicate in `saveBoard`. Let's walk through one of them
