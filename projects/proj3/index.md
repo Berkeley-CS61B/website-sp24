@@ -119,7 +119,7 @@ THE SETUP FOR THIS PROJECT IS DIFFERENT THAN THE OTHER LABS / PROJECTS. PLEASE D
 
 You'll be working exclusively in a group repository for this portion of the project. To set this group repo up on your local computer, follow the instructions below (these are also in the spec):
 
-- Go to your email and accept the GitHub repo invite that you should have received.
+- Go to your email and accept the GitHub repo invite that you should have received. Please do this as soon as you receive the invite, as they will expire within 7 days. If your invite has expired, please make an Ed post.
 - Log in to Beacon, and click on the "Groups" tab. You should have a group listed here.
 - Click the "View Repository on GitHub" link.
 - You'll now be taken to your new repository on GitHub. You will have an empty repository. Copy the clone link shown in the text bar (blacked out in the screenshot).
@@ -207,6 +207,7 @@ As mentioned above, the first goal of the project will be to write a world gener
 - Corner walls are optional.
 - Rooms and hallways should be connected, i.e. there should not be gaps in the floor between adjacent rooms or hallways.
 - All rooms should be reachable, i.e. there should be no rooms with no way to enter.
+- Rooms cannot clip off the edge of the world. In other words, there should be no floor tiles on the edge of the world.
 - The world must not have excess unused space. While this criterion is inherently subjective, aim to populate above 
   50% of the world with rooms and hallways.
 
@@ -309,8 +310,7 @@ should be drawn to the screen. The system should process the given String as if 
 given keys using the `main()` method. For example, if we
 call `getWorldFromInput("N3412S")`, your program should generate a world with seed 3412 and return the
 generated 2D tile array. **Note that letters in the input string can be upper or lower case and your engine should be
-able to accept either keypress (i.e. "N" and "n" should both initiate the process of world generation).** You should **
-NOT** render any tiles or play any sound when using `getWorldFromInput`.
+able to accept either keypress (i.e. "N" and "n" should both initiate the process of world generation).** You should **NOT** render any tiles or play any sound when using `getWorldFromInput`.
 
 If you want to allow the user to have additional options, e.g. the ability to pick attributes of their character,
 specify world generation parameters, etc., you should create additional options. For example, you might add a fourth
@@ -318,6 +318,10 @@ option "S" to the main menu for "select creature and create new world" if you wa
 of creature to play as. These additional options may have arbitrary behavior of your choosing, however, the behavior of
 N, L, and Q must be exactly as described in the spec!
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b175058556b258b40d78046c587dac6c555374b7
 ### Requirements
 
 For 3A, you should be able to run `Main.main` by providing an input String, and have your program create a world,
@@ -325,6 +329,9 @@ that adhere to the requirements mentioned above along with our randomness requir
 Grading](#submission-and-grading) section below. Note that you should render the world to check your code by writing your own `main` method, but
 for the autograder, `getWorldFromInput` should not render the world, only returning the world as a `TETile` array.
 Worlds should be visibly different for different seeds provided to the program.
+
+{: .info}
+For 3A, you do not need to have a Main Menu screen.
 
 ## Design Document
 
@@ -351,6 +358,7 @@ What we are looking for in the design document:
 
 You may use the following format for your BYOW design document.
 You may create a design doc with your own format, or use [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing).
+
 #### Design Document Sections
 
 ##### 1. Classes and Data Structures
@@ -528,7 +536,9 @@ However, feel free to add as many features as you'd like if you have the time an
 clicks, the project should still allow keyboard based movement!
 
 Under the description of some primary features, we've provided some GIFS that would score full points on their
-respective ambition point items to help clear any confusions. Yours do not need to look exactly like the examples given.
+respective ambition point items to help clear any confusions. Yours do not need to look exactly like the examples given. 
+
+You are not restricted to the features we list below! We strongly encourage you to come up with your own. We will have an Ed megathread where you can run your ideas by us to confirm that it meets our standards.
 
 ### 21 Points Primary Features
 
@@ -603,7 +613,7 @@ reading the entire spec since there are a lot of details which are not captured 
 - Users must be able to press ":Q" to quit, and after starting the program up again, the L option on the main menu
   should load the world state **exactly as it was before**.
 - All random events should be pseudorandom. That is, your program gives deterministic behavior given a seed.
-- Users must be able to interact using `getWorldFromInput`, and behavior other than accepting input and drawing to
+- Users must be able to interact through string inputs using `getWorldFromInput`, and behavior other than accepting input and drawing to
   the screen should be identical to `main`.
 - `getWorldFromInput` must return a `TETile[][]` array of the world at the time after the last character in the
   string is processed.
@@ -651,6 +661,13 @@ seeds. **They will then check that your 5 different worlds meet our randomness c
 If you have questions or concerns about whether your world matches these criteria, you may ask a TA in Office Hours to confirm.
 
 **In order to get credit for the 3A Asynchronous Manual Review, you must fill out [this form](https://forms.gle/262W6vsNAd2dKwt1A) by Monday, April 15th at 11:59PM.**
+
+You will be able to recover any points you did not get on the 3A Asynchronous Manual Review by fixing any issues before the 3C Checkoff Demo. We will leave detailed feedback on your submission so you know what to work on. 
+
+{: .warning}
+> Asynchronous reviews will take place 3-5 days after the 3A deadline and we will not reviewing 3A submissions after this point. 
+> This means that extensions are capped for this part of the project. If you do not make a submission by the time we begin reviews,
+> you will have to rely on the 3C Checkoff clobber to recover points.
 
 ### Partner Reflection: 20 points
 
