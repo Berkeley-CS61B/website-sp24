@@ -151,8 +151,8 @@ as basic code structure for tiles, and contains:
 - `TETile.java` - the type used for representing tiles in the world.
 - `Tileset.java` - a library of provided tiles.
 
-**IMPORTANT NOTE: Do NOT change TETile.java's `character` field or `character()` method as it may lead to bad autograder
-results.**
+{: .danger}
+Do NOT change TETile.java's `character` field or `character()` method as it may lead to bad autograder results.
 
 The other package `Core` contains everything unrelated to tiles. We recommend that you put all of your code for
 this project in the `Core` package, though this is not required. The `Core` package comes with the following
@@ -179,10 +179,11 @@ Your project should only use standard java libraries (imported from java.\*) or 
 repo. Your final submission for 3B and 3C should not use any external libraries other than the ones provided in the
 skeleton.
 
-**IMPORTANT NOTE: Do NOT use static variables unless they have the final keyword! In 2018, many students ran into major
-debugging issues by trying to use static variables. Static non-final variables add a huge amount of complexity to a
-system. Additionally, do not call `System.exit()` in `getWorldFromInput` as this will cause the autograder to exit
-and fail.**
+{: .warning}
+> Do NOT use static variables unless they have the final keyword! In 2018, many students ran into major
+> debugging issues by trying to use static variables. Static non-final variables add a huge amount of complexity to a
+> system. Additionally, do not call `System.exit()` in `getWorldFromInput` as this will cause the autograder to exit
+> and fail.
 
 ## 3A: World Generation
 
