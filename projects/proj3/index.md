@@ -204,6 +204,7 @@ As mentioned above, the first goal of the project will be to write a world gener
 - Corner walls are optional.
 - Rooms and hallways should be connected, i.e. there should not be gaps in the floor between adjacent rooms or hallways.
 - All rooms should be reachable, i.e. there should be no rooms with no way to enter.
+- Rooms cannot clip off the edge of the world. In other words, there should be no floor tiles on the edge of the world.
 - The world must not have excess unused space. While this criterion is inherently subjective, aim to populate above 
   50% of the world with rooms and hallways.
 
@@ -322,6 +323,9 @@ that adhere to the requirements mentioned above along with our randomness requir
 Grading section** below. Note that you should render the world to check your code by writing your own `main` method, but
 for the autograder, `getWorldFromInput` should not render the world, only returning the world as a `TETile` array.
 Worlds should be visibly different for different seeds provided to the program.
+
+{: .info}
+For 3A, you do not need to have a Main Menu screen.
 
 ## Design Document
 
