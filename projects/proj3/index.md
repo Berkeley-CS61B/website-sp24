@@ -55,6 +55,7 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
 - **Team formation (2 pts): Due 4/3 at 11:59 PM**
   - You must submit the [Project 3 Partnerships Form](https://forms.gle/CUV2iZN1NcPvNo8dA). You will **not** be able to change your partner later. Read and understand
     the [partnership guidelines](https://sp24.datastructur.es/resources/guides/partnerships/) before starting the assignment.
+  - When group repos are released, you **must accept your GitHub invitation**, otherwise they will expire after a week.
 - **Project 3A (19 pts): Due 4/15 at 11:59 PM**
   - World Generation Autograder (3 pts): Due on Gradescope
   - Asynchronous Manual Review (6 pts): Due at [3A Asynchronous Review Form](https://forms.gle/LRBWHnrW7dwr4mV89)
@@ -66,7 +67,7 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
   - 3BC Partner Reflection (10 pts): Due at [3BC Reflection Form](https://forms.gle/Tdq2V8UP11fCEbpN8)
 
 {: .danger}
-> Ambition Demos will be held in person during lab sections the week that Project 3BC is due. 
+> Ambition Demos will be held in person during lab sections the week that Project 3BC is due.
 > All group members must arrive on time, otherwise a 20% late penalty will be applied to the group.
 
 {: .danger}
@@ -178,7 +179,7 @@ specification for `StdDraw` at some points in the project, which can be
 found [here](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html).
 
 Your project should only use standard java libraries (imported from java.\*) or any libraries we provided with your
-repo. Your final submission for 3B and 3C should not use any external libraries other than the ones provided in the
+repo and `library-sp24`. Your final submission for 3B and 3C should not use any external libraries other than the ones provided in the
 skeleton.
 
 {: .warning}
@@ -208,6 +209,7 @@ As mentioned above, the first goal of the project will be to write a world gener
   50% of the world with rooms and hallways.
 
 **Sufficiently Random**
+
 - The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 9.
 - The world should contain a random number of rooms and hallways.
 - The locations of the rooms and hallways should be random.
@@ -237,7 +239,7 @@ world generation engine.
 ### Tileset and Tile Rendering
 
 The tile rendering engine we provide takes in a 2D array of `TETile` objects and draws it to the screen. Let's call
-this `TETile[][] world` for now. `world[0][0]` corresponds to the bottom left tile of the world. The first coordinate is
+this `TETile[][] world` for now. **`world[0][0]` corresponds to the bottom left tile of the world.** The first coordinate is
 the x coordinate, e.g. `world[9][0]` refers to the tile 9 spaces over to the right from the bottom left tile. The second
 coordinate is the y coordinate, and the value increases as we move upwards, e.g. `world[0][5]` is 5 tiles up from the
 bottom left tile. All values should be non-null, i.e. make sure to fill them all in before calling `renderFrame`. **Make
@@ -314,13 +316,11 @@ option "S" to the main menu for "select creature and create new world" if you wa
 of creature to play as. These additional options may have arbitrary behavior of your choosing, however, the behavior of
 N, L, and Q must be exactly as described in the spec!
 
-
-
 ### Requirements
 
 For 3A, you should be able to run `Main.main` by providing an input String, and have your program create a world,
-that adhere to the requirements mentioned above along with our randomness requirements mentioned in the **Submission and
-Grading section** below. Note that you should render the world to check your code by writing your own `main` method, but
+that adhere to the requirements mentioned above along with our randomness requirements mentioned in the [Submission and
+Grading](#submission-and-grading) section below. Note that you should render the world to check your code by writing your own `main` method, but
 for the autograder, `getWorldFromInput` should not render the world, only returning the world as a `TETile` array.
 Worlds should be visibly different for different seeds provided to the program.
 
