@@ -123,6 +123,10 @@ discussions:
   nonumber: true
 - title: Graphs II, Tries
   solutions: true
+  regular_slides: 
+    https://docs.google.com/presentation/d/1NjjxulpQNQn5vyt2oApeyOdFFc6PGT47a4UADJXquZ0/edit?usp=drivesdk
+  examprep_slides: 
+    https://docs.google.com/presentation/d/1x3Zids0yqyW3Fz-2wgFlMykS0NnG2epR7sByxYwrNnw/edit?usp=drivesdk
 - title: Sorting
   solutions: true
 - title: More Sorting
