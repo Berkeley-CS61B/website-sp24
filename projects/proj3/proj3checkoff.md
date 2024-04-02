@@ -31,6 +31,8 @@ The following is what the TA will exactly do when checking you off: we recommend
 didn't miss anything. You can clone your repository in some random destination on your computer (like your home
 directory) if you want to follow along and simulate your checkoff.
 
+**BOTH PARTNERS SHOULD BE PRESENT.**
+
 ## Setup
 
 - Designate one partner to be the presenter; this should be the partner who signed up for the demo slot. They should
