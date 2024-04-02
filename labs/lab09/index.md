@@ -348,6 +348,10 @@ and flipping). You don't need to worry about how this works, as we've taken
 care of this change for you, but just be aware you should be working with
 the assumption that the bottom left is (0, 0).
 
+{: .danger} 
+To repeat, you don't need to be transposing or flipping any board in your implementation 
+in any parts of the lab. 
+
 There are three additional requirements: 
 - Make sure the orientation in the text file represents the same orientation as the board. The top 
   right corner of the board should match the top right corner of what is saved in the text file, as shown 
