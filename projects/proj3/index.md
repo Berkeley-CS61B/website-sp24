@@ -57,7 +57,7 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
     the [partnership guidelines](https://sp24.datastructur.es/resources/guides/partnerships/) before starting the assignment.
 - **Project 3A (19 pts): Due 4/15 at 11:59 PM**
   - World Generation Autograder (3 pts): Due on Gradescope
-  - Manual Review (6 pts): Due at [3A Checkoff Form](https://forms.gle/LRBWHnrW7dwr4mV89)
+  - Asynchronous Manual Review (6 pts): Due at [3A Asynchronous Review Form](https://forms.gle/LRBWHnrW7dwr4mV89)
   - 3A Partner Reflection (10 pts): Due at [3A Reflection Form](https://forms.gle/q5UmLgKHrnRUhD8m8)
 - **Project 3B (9 pts): Due 4/22 at 11:59 PM**
   - Interactivity Autograder (9 pts): Due on Gradescope
@@ -627,7 +627,7 @@ See [this section](#autograder-details) for autograder details.
 - 3A: 3 points
 - 3B: 9 points
 
-### 3A Manual Review: 6 points
+### 3A Asynchronous Manual Review: 6 points
 
 A TA will pull your code, and run your game 5 separate times with 5 separate
 seeds. **They will then check that your 5 different worlds meet our randomness criteria defined below**:
@@ -640,7 +640,7 @@ seeds. **They will then check that your 5 different worlds meet our randomness c
 
 If you have questions or concerns about whether your world matches these criteria, you may ask a TA in Office Hours to confirm.
 
-**In order to get credit for the 3A Checkoff, you must fill out [this form](https://forms.gle/262W6vsNAd2dKwt1A) by Monday, April 15th at 11:59PM.**
+**In order to get credit for the 3A Asynchronous Manual Review, you must fill out [this form](https://forms.gle/262W6vsNAd2dKwt1A) by Monday, April 15th at 11:59PM.**
 
 ### Partner Reflection: 20 points
 
