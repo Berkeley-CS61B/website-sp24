@@ -118,7 +118,7 @@ THE SETUP FOR THIS PROJECT IS DIFFERENT THAN THE OTHER LABS / PROJECTS. PLEASE D
 
 You'll be working exclusively in a group repository for this portion of the project. To set this group repo up on your local computer, follow the instructions below (these are also in the spec):
 
-- Go to your email and accept the GitHub repo invite that you should have received.
+- Go to your email and accept the GitHub repo invite that you should have received. Please do this as soon as you receive the invite, as they will expire within 7 days. If your invite has expired, please make an Ed post.
 - Log in to Beacon, and click on the "Groups" tab. You should have a group listed here.
 - Click the "View Repository on GitHub" link.
 - You'll now be taken to your new repository on GitHub. You will have an empty repository. Copy the clone link shown in the text bar (blacked out in the screenshot).
@@ -603,7 +603,7 @@ reading the entire spec since there are a lot of details which are not captured 
 - Users must be able to press ":Q" to quit, and after starting the program up again, the L option on the main menu
   should load the world state **exactly as it was before**.
 - All random events should be pseudorandom. That is, your program gives deterministic behavior given a seed.
-- Users must be able to interact using `getWorldFromInput`, and behavior other than accepting input and drawing to
+- Users must be able to interact through string inputs using `getWorldFromInput`, and behavior other than accepting input and drawing to
   the screen should be identical to `main`.
 - `getWorldFromInput` must return a `TETile[][]` array of the world at the time after the last character in the
   string is processed.
