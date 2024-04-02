@@ -69,6 +69,9 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
 > Ambition Demos will be held in person during lab sections the week that Project 3BC is due. 
 > All group members must arrive on time, otherwise a 20% late penalty will be applied to the group.
 
+{: .danger}
+> **Beware: you cannot submit Project 3B & 3C late without extenuating circumstances**. We do not have the same 
+> extension policy as previous assignments, so get started early.
 
 Notice that Project 3B & 3C are due on the same day. However, since you need to be manually checked off for the "Ambition" 
 part, we made a division between "Interactivity" and "Ambition & Demos". In your Gradescope submission for 3B, your code 
