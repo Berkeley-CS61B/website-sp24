@@ -191,13 +191,13 @@ As mentioned above, the first goal of the project will be to write a world gener
 - The generated world must include distinct rooms and hallways, though it may also include outdoor spaces.
 - At least some rooms should be rectangular, though you may support other shapes as well.
 - Your world generator must be capable of generating hallways that include turns (or equivalently, straight hallways
-  that intersect). Every world must include at least one turning hallway.
+  that intersect). Random worlds should generate a turning hallway with moderate frequency (20% of worlds or more).
 - Dead-end hallways are not allowed.
 - Rooms and hallways must have walls that are visually distinct from floors. Walls and floors should be visually
   distinct from unused spaces. 
 - Corner walls are optional.
 - Rooms and hallways should be connected, i.e. there should not be gaps in the floor between adjacent rooms or hallways.
-- All rooms should be reachable, i.e. there should be no rooms with no way to enter
+- All rooms should be reachable, i.e. there should be no rooms with no way to enter.
 - The world must not have excess unused space. While this criterion is inherently subjective, aim to populate above 
   50% of the world with rooms and hallways.
 
