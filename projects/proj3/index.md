@@ -334,8 +334,13 @@ description according to your new findings.
 
 ### Design Document Guidelines
 
-You may use the following format for your BYOW design document.
+The design document's main purpose is to serve as a foundation for your project. It is important to think and ideate before coding.
+What we are looking for in the design document:
+- Identify the data structures we have learned in the class that you will be using in your implementation.
+- Pseudocode / general overiview of your algorithm for your implementation.
 
+You may use the following format for your BYOW design document. We will not be grading this document, but you will need to complete it in order to receive help online and in office hours. 
+You may create a design doc with your own format, or use [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing).
 #### Design Document Sections
 
 ##### 1. Classes and Data Structures
