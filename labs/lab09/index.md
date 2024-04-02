@@ -353,10 +353,11 @@ There are three additional requirements:
   right corner of the board should match the top right corner of what is saved in the text file, as shown 
   in the example above. Think about why this is important. If (0, 0) represents the bottom left of our board,
   but we write from the top, what might end up happening? 
-- For each row you write in to the text file, make sure to append `\n`. This applies to the dimensions 
-  written at the top of the text file, although the code has already been provided to you in the skeleton 
-  for this method. This is to ensure that the board representation in the text file is accurate; it will
-  also be useful in the next method, `loadBoard`.
+- For each row you write in to the text file, make sure to append `\n`. If you're using Windows, the newline character
+  is `"\r\n"`. We've provided a helper method to remove all `"\r"` characters for autograder purposes. **Please use this if 
+  it applies to you.** The newline applies to the dimensions written at the top of the text file, although the 
+  code has already been provided to you in the skeleton for this method. This is to ensure that the board 
+  representation in the text file is accurate; it will also be useful in the next method, `loadBoard`.
 - **The name of your text file that you save to must be called `save.txt`. We've provided it already, so 
   do not delete it.**
 
@@ -374,7 +375,8 @@ the first line are the dimensions, and the rest of the lines are the board. We w
 this information into a `TETile[][]` and return it. 
 
 Based on the requirements mentioned in `saveBoard`, you can assume that each line is separated 
-by "\n" and that the orientation of the board is correct (keep in mind that if your `saveBoard` 
+by `"\n"` (if you're using Windows, the `"\r"` character should've been removed before saving it into the file)
+and that the orientation of the board is correct (keep in mind that if your `saveBoard` 
 doesn't follow the exact format mentioned, it might affect your `loadBoard`). For this part, 
 you might find the `split` and `charAt` function from the `String` class useful. 
 
