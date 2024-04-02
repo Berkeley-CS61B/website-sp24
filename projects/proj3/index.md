@@ -315,7 +315,6 @@ of creature to play as. These additional options may have arbitrary behavior of 
 N, L, and Q must be exactly as described in the spec!
 
 
-
 ### Requirements
 
 For 3A, you should be able to run `Main.main` by providing an input String, and have your program create a world,
@@ -346,6 +345,7 @@ What we are looking for in the design document:
 
 You may use the following format for your BYOW design document. We will not be grading this document, but you will need to complete it in order to receive help online and in office hours. 
 You may create a design doc with your own format, or use [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing).
+
 #### Design Document Sections
 
 ##### 1. Classes and Data Structures
@@ -646,6 +646,13 @@ seeds. **They will then check that your 5 different worlds meet our randomness c
 If you have questions or concerns about whether your world matches these criteria, you may ask a TA in Office Hours to confirm.
 
 **In order to get credit for the 3A Asynchronous Manual Review, you must fill out [this form](https://forms.gle/262W6vsNAd2dKwt1A) by Monday, April 15th at 11:59PM.**
+
+You will be able to recover any points you did not get on the 3A Asynchronous Manual Review by fixing any issues before the 3C Checkoff Demo. We will leave detailed feedback on your submission so you know what to work on. 
+
+{: .warning}
+> Asynchronous reviews will take place 3-5 days after the 3A deadline and we will not reviewing 3A submissions after this point. 
+> This means that extensions are capped for this part of the project. If you do not make a submission by the time we begin reviews,
+> you will have to rely on the 3C Checkoff clobber to recover points.
 
 ### Partner Reflection: 20 points
 
