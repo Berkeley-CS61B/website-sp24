@@ -202,7 +202,7 @@ As mentioned above, the first goal of the project will be to write a world gener
   50% of the world with rooms and hallways.
 
 **Sufficiently Random**
-- The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 11.
+- The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 9.
 - The world should contain a random number of rooms and hallways.
 - The locations of the rooms and hallways should be random.
 - The width and height of rooms should be random.
@@ -629,7 +629,7 @@ seeds. **They will then check that your 5 different worlds meet our randomness c
 
 - Locations of rooms should be in different places each time.
 - Sizes of rooms should be different each time.
-- The number of rooms and hallways should be different each time.
+- The number of rooms and hallways should be different each time. You must have at least two hallways, one of which is turning.
 - The world should be substantially different each time, i.e. you should not have the same basic layout with easily
   predictable features.
 
