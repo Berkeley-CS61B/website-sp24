@@ -152,7 +152,9 @@ as basic code structure for tiles, and contains:
 - `Tileset.java` - a library of provided tiles.
 
 {: .danger}
-Do NOT change TETile.java's `character` field or `character()` method as it may lead to bad autograder results.
+> Do NOT change TETile.java's `character` field or `character()` method as it may lead to bad autograder results. 
+> Additionally, if you add new floor or wall tiles, make sure to modify `isBoundaryTile` and `isGroundTile` so that the 
+> autograder recognizes your tiles.
 
 The other package `Core` contains everything unrelated to tiles. We recommend that you put all of your code for
 this project in the `Core` package, though this is not required. The `Core` package comes with the following
