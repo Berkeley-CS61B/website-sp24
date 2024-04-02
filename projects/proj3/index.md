@@ -527,7 +527,9 @@ However, feel free to add as many features as you'd like if you have the time an
 clicks, the project should still allow keyboard based movement!
 
 Under the description of some primary features, we've provided some GIFS that would score full points on their
-respective ambition point items to help clear any confusions. Yours do not need to look exactly like the examples given.
+respective ambition point items to help clear any confusions. Yours do not need to look exactly like the examples given. 
+
+You are not restricted to the features we list below! We strongly encourage you to come up with your own. We will have an Ed megathread where you can run your ideas by us to confirm that it meets our standards.
 
 ### 21 Points Primary Features
 
