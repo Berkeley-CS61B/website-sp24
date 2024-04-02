@@ -160,7 +160,7 @@ The other package `Core` contains everything unrelated to tiles. We recommend th
 this project in the `Core` package, though this is not required. The `Core` package comes with the following
 classes:
 
-- `AutograderBuddy.java` - Provides two method for interacting with your system. `TETile[][] getWorldFromInput(String input)` simulates the game without rendering by returning the world that would result if the input string had been typed on the keyboard. You should fill this out for autograder.
+- `AutograderBuddy.java` - Provides two method for interacting with your system. `TETile[][] getWorldFromInput(String input)` simulates the game without rendering by returning the world that would result if the input string had been typed on the keyboard. You should fill this out for the autograder.
 - `Main.java` - How the user starts the entire system. Reads command line arguments and calls the appropriate function
   in `World.java`.
 - `World.java` - YOUR WORLD!
@@ -306,8 +306,7 @@ should be drawn to the screen. The system should process the given String as if 
 given keys using the `main()` method. For example, if we
 call `getWorldFromInput("N3412S")`, your program should generate a world with seed 3412 and return the
 generated 2D tile array. **Note that letters in the input string can be upper or lower case and your engine should be
-able to accept either keypress (i.e. "N" and "n" should both initiate the process of world generation).** You should **
-NOT** render any tiles or play any sound when using `getWorldFromInput`.
+able to accept either keypress (i.e. "N" and "n" should both initiate the process of world generation).** You should **NOT** render any tiles or play any sound when using `getWorldFromInput`.
 
 If you want to allow the user to have additional options, e.g. the ability to pick attributes of their character,
 specify world generation parameters, etc., you should create additional options. For example, you might add a fourth
