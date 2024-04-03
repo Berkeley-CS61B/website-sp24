@@ -14,3 +14,10 @@ released: true
 If you’re on Windows, the character(s) to represent a new line are a little different compared 
 to how it might be done on Mac and Linux. We’ve updated the skeleton to fix issues that that might 
 arise from this. You can run git pull skeleton main to pull in the new changes.
+
+### I'm failing tests 1.4 and 1.6 on the autograder. 
+Some common things to look out for are to ensure that you're reading in the width and height back in from the 
+file in `loadBoard` and to set the instance variables, so that `width` and `height` are initialized properly.
+In addition, since the bottom left is (0. 0), keep in mind that when you load back in the board, 
+you might be reading the file from top to bottom, so ensure that the orientation is read back in correctly 
+when "populating" the 2D array. 
