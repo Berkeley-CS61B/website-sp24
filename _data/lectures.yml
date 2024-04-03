@@ -297,10 +297,10 @@ lectures:
     readings:
       - title: "Ch 29"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/29.-basic-sorts"
-  - title: "Sorting II: Mergesort, Insertion Sort, and Quicksort"
+  - title: "Sorting II: Mergesort and Insertion Sort"
     slides: "https://docs.google.com/presentation/d/1MqmOxfh1c6gS4hk9hvuRR_hWXWTnCIXMqLGXwRX4Pvk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqsfDWZNS86oYmHFY6UKA2t"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=NSbdNXO8WaQ"
     quiz: ""
     readings:
       - title: "Ch 30"
@@ -314,7 +314,7 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/31.-software-engineering-ii"
     classes:
       - optional
-  - title: "Sorting III: More Quicksort, Quick Select"
+  - title: "Sorting III: Quicksort, Quick Select"
     slides: "https://docs.google.com/presentation/d/11vRyW0ZPrsxUhRHCBgkygy01PlL1amB66n9FZQN03wo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrHHQP93qqc_QBNBF_WEQLy"
     recording: ""
