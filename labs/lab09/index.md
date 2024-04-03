@@ -271,9 +271,9 @@ concerned with its direct 8 neighbors as shown above.
 
 In `nextGeneration`, we want to "update" the state of our board according to the rules 
 that are provided above. The current state of the board is represented by
-`TETiles[][] tiles`. The provided `TETile[][] newEvo` represents the next state and 
+`TETiles[][] tiles`. The provided `TETile[][] newGen` represents the next state and 
 is **initially filled with `Tileset.NOTHING`**. We want to take the current state 
-of the board, store the next generation/state in `newEvo` and return it. 
+of the board, store the next generation/state in `newGen` and return it. 
 
 {: .task} 
 Implement the method `nextGeneration` according to the rules above. 
