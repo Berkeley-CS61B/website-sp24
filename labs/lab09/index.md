@@ -93,7 +93,8 @@ for (int x = 20; x < 35; x++) {
 
 {: .info}
 $(0, 0)$ is the bottom-left corner of the world (not the top-left
-as you may be used to). We will work with this orientation in the lab.
+as you may be used to). For example, for position (5, 4), we would go 
+5 units to the right and then 4 units up. We will work with this orientation in the lab.
 
 The last step in rendering is to call `ter.renderFrame(world)`, where
 `ter` is a `TERenderer` object. Changes made to the tiles array will not appear
