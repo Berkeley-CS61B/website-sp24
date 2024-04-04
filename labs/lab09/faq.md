@@ -20,4 +20,6 @@ Some common things to look out for are to ensure that you're reading in the widt
 file in `loadBoard` and to set the instance variables, so that `width` and `height` are initialized properly.
 In addition, since the bottom left is (0. 0), keep in mind that when you load back in the board, 
 you might be reading the file from top to bottom, so ensure that the orientation is read back in correctly 
-when "populating" the 2D array. 
+when "populating" the board (when you split the file into an array, the top row of the board is read 
+in first as the first row and the bottom row is read in last, so when loading it back into the board, 
+make sure that the top row corresponds the top row of the board).
