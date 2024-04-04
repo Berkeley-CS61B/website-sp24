@@ -362,8 +362,8 @@ There are three additional requirements:
   written at the top of the text file, although the code has already been provided to you in the skeleton
   for this method. This is to ensure that the board representation in the text file is accurate; it will
   also be useful in the next method, `loadBoard`.
-- **The name of your text file that you save to must be called `save.txt`. We've provided it already, so 
-  do not delete it.**
+- **The name of your text file that you save to must be called `src/save.txt`. We've provided it already as 
+  a variable, so do not delete it.**
 
 In the skeleton, we've provided `TODO` comments. You can access the current state of
 the board through the instance variable `currentState`.
