@@ -11,9 +11,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-Project 3: BYOW is not officially released. Until this warning disappears, the information in this spec is subject to change.
-
 ## [FAQ](faq.md)
 
 Each assignment will have an FAQ linked at the top. You can also access it by adding "/faq" to the end of the URL. The
