@@ -94,7 +94,8 @@ for (int x = 20; x < 35; x++) {
 {: .info}
 $(0, 0)$ is the bottom-left corner of the world (not the top-left
 as you may be used to). For example, for position (5, 4), we would go 
-5 units to the right and then 4 units up. We will work with this orientation in the lab.
+5 units to the right and then 4 units up. We will work with this orientation
+in the lab.
 
 The last step in rendering is to call `ter.renderFrame(world)`, where
 `ter` is a `TERenderer` object. Changes made to the tiles array will not appear
@@ -345,9 +346,9 @@ it will be saved in the text file like below
 An important thing to note is that we change the orientation of the board, so that
 the bottom left is (0, 0). Originally, the `result` 2D array would be read in as
 (0, 0) as the top left, but we take care of this difference (through transposing 
-and flipping). You don't need to worry about how this works, as we've taken
+and flipping). **You don't need to worry about how this works, as we've taken
 care of this change for you, but just be aware you should be working with
-the assumption that the bottom left is (0, 0).
+the assumption that the bottom left is (0, 0).**
 
 {: .danger} 
 To repeat, you don't need to be transposing or flipping any board in your implementation 
@@ -357,7 +358,7 @@ There are three additional requirements:
 - Make sure the orientation in the text file represents the same orientation as the board. The top 
   right corner of the board should match the top right corner of what is saved in the text file, as shown 
   in the example above. Think about why this is important. If (0, 0) represents the bottom left of our board,
-  but we write from the top, what might end up happening? 
+  but we write from the top to the bottom, what might end up happening? 
 - For each row you write in to the text file, make sure to append `\n`. This applies to the dimensions
   written at the top of the text file, although the code has already been provided to you in the skeleton
   for this method. This is to ensure that the board representation in the text file is accurate; it will
@@ -379,9 +380,10 @@ the first line are the dimensions, and the rest of the lines are the board. We w
 this information into a `TETile[][]` and return it. 
 
 Based on the requirements mentioned in `saveBoard`, you can assume that each line is separated
-by "\n" and that the orientation of the board is correct (keep in mind that if your `saveBoard`  
-doesn't follow the exact format mentioned, it might affect your `loadBoard`). For this part, 
-you might find the `split` and `charAt` function from the `String` class useful. 
+by "\n" and that the orientation of the board is correct, that is treat the bottom left as
+(0, 0) (keep in mind that if your `saveBoard` doesn't follow the exact format mentioned, 
+it might affect your `loadBoard`). For this part, you might find the `split` and
+`charAt` function from the `String` class useful. 
 
 {: .task}
 Implement the method `loadBoard`. **Since we're loading in the game, make sure to initialize 
