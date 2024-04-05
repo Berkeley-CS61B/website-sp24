@@ -16,6 +16,13 @@ to how it might be done on Mac and Linux. We’ve updated the skeleton to fix is
 arise from this. You can run git pull skeleton main to pull in the new changes.
 
 ### I'm failing tests 1.4 and 1.6 on the autograder. 
+
+It may be difficult to pinpoint the problem from the error messages. To circumvent this, try writing or modifying a test to save, load, and save again (it doesn't matter if it passes or fails), and manually open `src/save.txt` to inspect the output to see how it differs from what you expect.
+
+Be sure you're using `[x][y]` coordinates with (0, 0) as the bottom-left corner of the board! The orientation of the tiles should stay the same under this coordinate scheme when saving to and loading from the file.
+
+Be sure you're actually modifying the tiles and dimensions of the `GameOfLife` object in `loadBoard`.
+
 Some common things to look out for are to ensure that you're reading in the width and height back in from the 
 file in `loadBoard` and to set the instance variables, so that `width` and `height` are initialized properly.
 In addition, since the bottom left is (0. 0), keep in mind that when you load back in the board, 
