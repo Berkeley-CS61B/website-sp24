@@ -315,10 +315,6 @@ option "S" to the main menu for "select creature and create new world" if you wa
 of creature to play as. These additional options may have arbitrary behavior of your choosing, however, the behavior of
 N, L, and Q must be exactly as described in the spec!
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b175058556b258b40d78046c587dac6c555374b7
 ### Requirements
 
 For 3A, you should be able to run `Main.main` by providing an input String, and have your program create a world,
