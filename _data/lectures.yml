@@ -293,7 +293,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1aleYBt-L8bwyaxw9tXPN3bMI5XxWxmpgfvvSEo9KxD0"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrK9o_QZyGOCbQVFTsqOPtN"
     recording: "https://www.youtube.com/watch?v=4D3VHeLLymg"
-    quiz: ""
+    quiz: "https://forms.gle/819dWWfFiNH4SVmu8"
     readings:
       - title: "Ch 29"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/29.-basic-sorts"
