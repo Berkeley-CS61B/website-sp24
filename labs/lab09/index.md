@@ -1,7 +1,7 @@
 ---
 layout: page
 title: >-
-  Lab09: Conway's Game of Life
+  Lab 09: Conway's Game of Life
 has_children: true
 parent: Labs
 has_toc: false
