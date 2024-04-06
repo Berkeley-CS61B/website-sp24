@@ -420,9 +420,9 @@ Then, go ahead and run the application.
 
 
 {: .danger}
-If you're writing your own test cases, please make sure to use **square matrices**. The provided local tests 
-and the ones on the autograder will still run as intended, but local tests written should be done with a 
-n x n board. 
+If you're writing your own test cases, please make sure to use **square matrices**, specifically if you're working 
+with the `nextGeneration` method. The provided local tests and the ones on the autograder will still
+run as intended, but local tests written for `nextGeneration` should still be done with an n x n board. 
 
 ## Project 3 Saving and Loading
 After finishing `saveBoard` and `loadBoard`, notice that we ended up saving the entire board 
