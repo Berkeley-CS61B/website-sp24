@@ -418,6 +418,12 @@ as an initial state, you would pass in the following for your program arguments:
 
 Then, go ahead and run the application. 
 
+
+{: .danger}
+If you're writing your own test cases, please make sure to use **square matrices**. The provided local tests 
+and the ones on the autograder will still run as intended, but local tests written should be done with a 
+n x n board. 
+
 ## Project 3 Saving and Loading
 After finishing `saveBoard` and `loadBoard`, notice that we ended up saving the entire board 
 into the file (i.e. each `Tileset` and we represented them with `0`s and `1`s) along with the height 
