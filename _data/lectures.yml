@@ -306,7 +306,7 @@ lectures:
       - title: "Ch 30"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/30.-quicksort"
   - title: "Software Engineering II"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1P1Uc8phy1GW1M4A8PA7mJJMWqb2QgOfewwwB1wMnFlU/edit#slide=id.g2c95eb66b0d_0_7"
     recording: ""
     quiz: ""
     readings:
