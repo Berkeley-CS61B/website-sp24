@@ -11,9 +11,6 @@ description: >-
 released: true
 ---
 
-{: .warning}
-Project 3: BYOW is not officially released. Until this warning disappears, the information in this spec is subject to change.
-
 ## [FAQ](faq.md)
 
 Each assignment will have an FAQ linked at the top. You can also access it by adding "/faq" to the end of the URL. The
@@ -55,9 +52,10 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
 - **Team formation (2 pts): Due 4/3 at 11:59 PM**
   - You must submit the [Project 3 Partnerships Form](https://forms.gle/CUV2iZN1NcPvNo8dA). You will **not** be able to change your partner later. Read and understand
     the [partnership guidelines](https://sp24.datastructur.es/resources/guides/partnerships/) before starting the assignment.
+  - When group repos are released, you **must accept your GitHub invitation**, otherwise they will expire after a week.
 - **Project 3A (19 pts): Due 4/15 at 11:59 PM**
   - World Generation Autograder (3 pts): Due on Gradescope
-  - Manual Review (6 pts): Due at [3A Checkoff Form](https://forms.gle/LRBWHnrW7dwr4mV89)
+  - Asynchronous Manual Review (6 pts): Due at [3A Asynchronous Review Form](https://forms.gle/LRBWHnrW7dwr4mV89)
   - 3A Partner Reflection (10 pts): Due at [3A Reflection Form](https://forms.gle/q5UmLgKHrnRUhD8m8)
 - **Project 3B (9 pts): Due 4/22 at 11:59 PM**
   - Interactivity Autograder (9 pts): Due on Gradescope
@@ -66,15 +64,18 @@ Project 3 is worth 125 points. There are several key deadlines for this assignme
   - 3BC Partner Reflection (10 pts): Due at [3BC Reflection Form](https://forms.gle/Tdq2V8UP11fCEbpN8)
 
 {: .danger}
-> Ambition Demos will be held in person during lab sections the week that Project 3BC is due. 
+> Ambition Demos will be held in person during lab sections the week that Project 3BC is due.
 > All group members must arrive on time, otherwise a 20% late penalty will be applied to the group.
 
+{: .danger}
+> **Beware: you cannot submit Project 3B & 3C late without extenuating circumstances**. We do not have the same 
+> extension policy as previous assignments, so get started early.
 
 Notice that Project 3B & 3C are due on the same day. However, since you need to be manually checked off for the "Ambition" 
 part, we made a division between "Interactivity" and "Ambition & Demos". In your Gradescope submission for 3B, your code 
 should also have "Ambition" features because we will be asking for your Gradescope submission ID from 3B in the 3C Form.
 
-You cannot submit Project 3B & 3C late, as it will be graded during a lab checkoff with a TA. While in theory you could submit 3A and the supporting labs (Lab 9 and Lab 10) late,
+**You cannot submit Project 3B & 3C late, as it will be graded during a lab checkoff with a TA.** We strongly discourage submitting 3A and the supporting labs (Lab 9 and Lab 10) late, as
 Project 3B & 3C builds upon these assignments, so it is unlikely that you will be able to submit these
 assignments late and still complete Project 3B on time.
 
@@ -115,7 +116,7 @@ THE SETUP FOR THIS PROJECT IS DIFFERENT THAN THE OTHER LABS / PROJECTS. PLEASE D
 
 You'll be working exclusively in a group repository for this portion of the project. To set this group repo up on your local computer, follow the instructions below (these are also in the spec):
 
-- Go to your email and accept the GitHub repo invite that you should have received.
+- Go to your email and accept the GitHub repo invite that you should have received. Please do this as soon as you receive the invite, as they will expire within 7 days. If your invite has expired, please make an Ed post.
 - Log in to Beacon, and click on the "Groups" tab. You should have a group listed here.
 - Click the "View Repository on GitHub" link.
 - You'll now be taken to your new repository on GitHub. You will have an empty repository. Copy the clone link shown in the text bar (blacked out in the screenshot).
@@ -140,6 +141,8 @@ Once you've completed the above steps, you should see your new group repo called
 
 ## Skeleton Code
 
+A walkthrough of the new skeleton code is available [here](https://youtu.be/A8NlkICBWL8).
+
 Use `git pull skeleton main` in your group repo to pull the skeleton code. The skeleton code
 contains two key packages that you'll be using: `TileEngine`, `Core` and `Utils`. `TileEngine` provides some basic methods for rendering, as well
 as basic code structure for tiles, and contains:
@@ -148,24 +151,26 @@ as basic code structure for tiles, and contains:
 - `TETile.java` - the type used for representing tiles in the world.
 - `Tileset.java` - a library of provided tiles.
 
-**IMPORTANT NOTE: Do NOT change TETile.java's `character` field or `character()` method as it may lead to bad autograder
-results.**
+{: .danger}
+> Do NOT change TETile.java's `character` field or `character()` method as it may lead to bad autograder results. 
+> Additionally, if you add new floor or wall tiles, make sure to modify `isBoundaryTile` and `isGroundTile` so that the 
+> autograder recognizes your tiles.
 
 The other package `Core` contains everything unrelated to tiles. We recommend that you put all of your code for
-this project in the `Core` package, though this not required. The `Core` package comes with the following
+this project in the `Core` package, though this is not required. The `Core` package comes with the following
 classes:
 
-- `AutograderBuddy.java` - Provides two method for interacting with your system. `TETile[][] getWorldFromInput(String input)` simulates the game without rendering by returning the world that would result if the input string had been typed on the keyboard. You should fill this out for autograder.
+- `AutograderBuddy.java` - Provides two methods for interacting with your system. `TETile[][] getWorldFromInput(String input)` simulates the game without rendering by returning the world that would result if the input string had been typed on the keyboard. You should fill this out for autograder.
 - `Main.java` - How the user starts the entire system. Reads command line arguments and calls the appropriate function
   in `World.java`.
 - `World.java` - YOUR WORLD!
 
-This is a open-ended project. As you can see, we gave you just one file called `World.java` where you can do necessary things to create your world! The aim of this project to give you freedom to create your own world with different desing choices. You can create any other classes if you want. Primarly, you can use `World.java` for the logic behind your world creation.
+This is an open-ended project. As you can see, we gave you just one file called `World.java` where you can do necessary things to create your world! The aim of this project is to give you freedom to create your own world with different desing choices. You can create any other classes if you want. Primarly, you can use `World.java` for the logic behind your world creation.
 
 The last package `Utils` contains everything that you might need to implement your `World.java` class.
 
 - `RandomUtils.java` - Provides handful of functions that might be useful.
-- `FileUtils.java` - Library of simple file operations. You can find related APIs [here](https://docs.oracle.com/javase/8/docs/api/java/io/File.html) and [here](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html).
+- `FileUtils.java` - Library of simple file operations. You can find related APIs [here](https://docs.oracle.com/javase/8/docs/api/java/io/File.html) and [here](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html). Be sure to look at lab09 for a refresher on how this works.
 
 This project makes heavy use of `StdDraw`, which is a package that has basic graphics rendering capabilities.
 Additionally, it supports user interaction with keyboard and mouse clicks. You will likely need to consult the API
@@ -173,13 +178,14 @@ specification for `StdDraw` at some points in the project, which can be
 found [here](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html).
 
 Your project should only use standard java libraries (imported from java.\*) or any libraries we provided with your
-repo. Your final submission for 3B and 3C should not use any external libraries other than the ones provided in the
+repo and `library-sp24`. Your final submission for 3B and 3C should not use any external libraries other than the ones provided in the
 skeleton.
 
-**IMPORTANT NOTE: Do NOT use static variables unless they have the final keyword! In 2018, many students ran into major
-debugging issues by trying to use static variables. Static non-final variables add a huge amount of complexity to a
-system. Additionally, do not call `System.exit()` in `getWorldFromInput` as this will cause the autograder to exit
-and fail.**
+{: .warning}
+> Do NOT use static variables unless they have the final keyword! In 2018, many students ran into major
+> debugging issues by trying to use static variables. Static non-final variables add a huge amount of complexity to a
+> system. Additionally, do not call `System.exit()` in `getWorldFromInput` as this will cause the autograder to exit
+> and fail.
 
 ## 3A: World Generation
 
@@ -191,18 +197,20 @@ As mentioned above, the first goal of the project will be to write a world gener
 - The generated world must include distinct rooms and hallways, though it may also include outdoor spaces.
 - At least some rooms should be rectangular, though you may support other shapes as well.
 - Your world generator must be capable of generating hallways that include turns (or equivalently, straight hallways
-  that intersect). Every world must include at least one turning hallway.
+  that intersect). Random worlds should generate a turning hallway with moderate frequency (20% of worlds or more).
 - Dead-end hallways are not allowed.
 - Rooms and hallways must have walls that are visually distinct from floors. Walls and floors should be visually
   distinct from unused spaces. 
 - Corner walls are optional.
 - Rooms and hallways should be connected, i.e. there should not be gaps in the floor between adjacent rooms or hallways.
-- All rooms should be reachable, i.e. there should be no rooms with no way to enter
+- All rooms should be reachable, i.e. there should be no rooms with no way to enter.
+- Rooms cannot clip off the edge of the world. In other words, there should be no floor tiles on the edge of the world.
 - The world must not have excess unused space. While this criterion is inherently subjective, aim to populate above 
   50% of the world with rooms and hallways.
 
 **Sufficiently Random**
-- The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 11.
+
+- The world must be pseudo-randomly generated. Pseudo-randomness is discussed in lab 9.
 - The world should contain a random number of rooms and hallways.
 - The locations of the rooms and hallways should be random.
 - The width and height of rooms should be random.
@@ -219,8 +227,7 @@ that represents a locked door. All unused spaces are left blank.
 Once you've completed lab 9, you can start working on your world generation algorithm.
 
 **It is very likely that you will end up throwing away your first world generation algorithm.** This is normal! In real
-world systems, it is common to build several completely new versions before getting something you're happy with. The
-room generation algorithm above was my 3rd one, and was ultimately much simpler than either of my first two.
+world systems, it is common to build several completely new versions before getting something you're happy with.
 
 You're welcome to search the web for cool world generation algorithms. You should not copy and paste code from existing
 games or graphical demos online, but you're welcome to draw inspiration from code on the web. **Make sure to cite your
@@ -232,7 +239,7 @@ world generation engine.
 ### Tileset and Tile Rendering
 
 The tile rendering engine we provide takes in a 2D array of `TETile` objects and draws it to the screen. Let's call
-this `TETile[][] world` for now. `world[0][0]` corresponds to the bottom left tile of the world. The first coordinate is
+this `TETile[][] world` for now. **`world[0][0]` corresponds to the bottom left tile of the world.** The first coordinate is
 the x coordinate, e.g. `world[9][0]` refers to the tile 9 spaces over to the right from the bottom left tile. The second
 coordinate is the y coordinate, and the value increases as we move upwards, e.g. `world[0][5]` is 5 tiles up from the
 bottom left tile. All values should be non-null, i.e. make sure to fill them all in before calling `renderFrame`. **Make
@@ -300,8 +307,7 @@ should be drawn to the screen. The system should process the given String as if 
 given keys using the `main()` method. For example, if we
 call `getWorldFromInput("N3412S")`, your program should generate a world with seed 3412 and return the
 generated 2D tile array. **Note that letters in the input string can be upper or lower case and your engine should be
-able to accept either keypress (i.e. "N" and "n" should both initiate the process of world generation).** You should **
-NOT** render any tiles or play any sound when using `getWorldFromInput`.
+able to accept either keypress (i.e. "N" and "n" should both initiate the process of world generation).** You should **NOT** render any tiles or play any sound when using `getWorldFromInput`.
 
 If you want to allow the user to have additional options, e.g. the ability to pick attributes of their character,
 specify world generation parameters, etc., you should create additional options. For example, you might add a fourth
@@ -309,15 +315,16 @@ option "S" to the main menu for "select creature and create new world" if you wa
 of creature to play as. These additional options may have arbitrary behavior of your choosing, however, the behavior of
 N, L, and Q must be exactly as described in the spec!
 
-
-
 ### Requirements
 
 For 3A, you should be able to run `Main.main` by providing an input String, and have your program create a world,
-that adhere to the requirements mentioned above along with our randomness requirements mentioned in the **Submission and
-Grading section** below. Note that you should render the world to check your code by writing your own `main` method, but
+that adhere to the requirements mentioned above along with our randomness requirements mentioned in the [Submission and
+Grading](#submission-and-grading) section below. Note that you should render the world to check your code by writing your own `main` method, but
 for the autograder, `getWorldFromInput` should not render the world, only returning the world as a `TETile` array.
 Worlds should be visibly different for different seeds provided to the program.
+
+{: .info}
+For 3A, you do not need to have a Main Menu screen.
 
 ## Design Document
 
@@ -330,11 +337,20 @@ program, and convince yourself that your design is correct. Writing a design doc
 coming up with your initial design, you may find some flaws in it, requiring you to revisit your design and update its
 description according to your new findings.
 
-**Note:** Your design document will NOT be graded.
+You may find the software engineering lectures helpful for learning how to manage the complex and collaborative nature of this project.
+
+{: .warning}
+**We will not be grading this document, but you will need to complete it in order to receive help online and in office hours.**
 
 ### Design Document Guidelines
 
+The design document's main purpose is to serve as a foundation for your project. It is important to think and ideate before coding.
+What we are looking for in the design document:
+- Identify the data structures we have learned in the class that you will be using in your implementation.
+- Pseudocode / general overiview of your algorithm for your implementation.
+
 You may use the following format for your BYOW design document.
+You may create a design doc with your own format, or use [this template](https://docs.google.com/document/d/1Vx7QAz4HFN0rEFFEt5rocY2X5AWVcIFFpRmD8vhegOM/edit?usp=sharing).
 
 #### Design Document Sections
 
@@ -406,7 +422,7 @@ some interesting visuals).
 [![mouseover_example2](img/UI_example2.png)](img/UI_example2.png)
 
 For information about how to specify the location of the HUD, see
-the `initialize(int width, int height, int xOffset, int yOffset)` method of `TERenderer` or see lab 11.
+the `initialize(int width, int height, int xOffset, int yOffset)` method of `TERenderer` or see lab 9.
 
 ### UI Behavior
 
@@ -439,7 +455,7 @@ real life, since that would not be captured in an input string and would not lea
 that string vs. providing input with the keyboard. Keeping track of the number of turns that have elapsed is a perfectly
 reasonable mechanic, and might be an interesting thing to include in your world, e.g. maybe the world grows steadily
 darker with each step. You're welcome to include other key presses like allowing the user to press space bar in
-order to wait one turn.
+order to wait one turn. The real time behavior is for the autograder. Feel free to ignore real time requirement for 3C and modify your code for that.
 
 
 ### Saving and Loading
@@ -513,11 +529,13 @@ However, feel free to add as many features as you'd like if you have the time an
 clicks, the project should still allow keyboard based movement!
 
 Under the description of some primary features, we've provided some GIFS that would score full points on their
-respective ambition point items to help clear any confusions. Yours do not need to look exactly like the examples given.
+respective ambition point items to help clear any confusions. Yours do not need to look exactly like the examples given. 
+
+You are not restricted to the features we list below! We strongly encourage you to come up with your own. We will have an Ed megathread where you can run your ideas by us to confirm that it meets our standards.
 
 ### 21 Points Primary Features
 
-- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the avatar. The line of sight must be able to be toggled on and off with a keypress.
+- Create a system so that the tile renderer only displays tiles on the screen that are within the line of sight of the avatar. **The line of sight must be able to be toggled on and off with a keypress, otherwise it will interfere with checkoffs.**
 
 [![line-of-sight](img/line-of-sight.gif)](img/line-of-sight.gif)
 
@@ -538,6 +556,9 @@ respective ambition point items to help clear any confusions. Yours do not need 
   anyone do isometric 2.5D or full 3D before! The Nintendo 64
   game '[Kirby 64 - The Crystal Shards](https://www.youtube.com/watch?v=5uu2TWli-_M)' is an example of what an isometric 2.5D world
   looks like). One particularly interesting example is [Dorottya Urmossy and David Yang's Fall 2022 submission](https://www.youtube.com/watch?v=XJBQYucuAKc&t=94s), which is a 2.5D first-person view, i.e. the world is 3D but the entities are 2D.
+
+- Implement a battle system that allows players to interact with moving enemies and obstacles. Assign the player a health value, place collectibles that restore health around the map, and create randomly-moving enemies/objects that inflict damage on and receive damage from the player.
+
 
 ### 7 Points Secondary Features
 
@@ -585,7 +606,7 @@ reading the entire spec since there are a lot of details which are not captured 
 - Users must be able to press ":Q" to quit, and after starting the program up again, the L option on the main menu
   should load the world state **exactly as it was before**.
 - All random events should be pseudorandom. That is, your program gives deterministic behavior given a seed.
-- Users must be able to interact using `getWorldFromInput`, and behavior other than accepting input and drawing to
+- Users must be able to interact through string inputs using `getWorldFromInput`, and behavior other than accepting input and drawing to
   the screen should be identical to `main`.
 - `getWorldFromInput` must return a `TETile[][]` array of the world at the time after the last character in the
   string is processed.
@@ -594,8 +615,8 @@ reading the entire spec since there are a lot of details which are not captured 
 - Your program must have a HUD, which displays relevant information somewhere outside the area displaying the
   world/tiles.
 - HUD must display a description of tile upon hovering over the tile.
-- Your program must not use real time. Nothing should be moving if no input is being received. This requirement is only 
-  necessary for the autograders; feel free to have real-time dependent features for 3C.
+- Your program must not use real time. Nothing should be moving if no input is being received. This requirement is **only**
+  necessary for the autograders; feel free to have real-time dependent features for **3C**.
 - Your program must include features that make up 28 points from the Ambition categories, **with at least one primary
   feature**.
 
@@ -619,20 +640,27 @@ See [this section](#autograder-details) for autograder details.
 - 3A: 3 points
 - 3B: 9 points
 
-### 3A Manual Review: 6 points
+### 3A Asynchronous Manual Review: 6 points
 
 A TA will pull your code, and run your game 5 separate times with 5 separate
 seeds. **They will then check that your 5 different worlds meet our randomness criteria defined below**:
 
 - Locations of rooms should be in different places each time.
 - Sizes of rooms should be different each time.
-- The number of rooms and hallways should be different each time.
+- The number of rooms and hallways should be different each time. You must have at least two hallways, one of which is turning.
 - The world should be substantially different each time, i.e. you should not have the same basic layout with easily
   predictable features.
 
 If you have questions or concerns about whether your world matches these criteria, you may ask a TA in Office Hours to confirm.
 
-**In order to get credit for the 3A Checkoff, you must fill out [this form](https://forms.gle/262W6vsNAd2dKwt1A) by Monday, April 15th at 11:59PM.**
+**In order to get credit for the 3A Asynchronous Manual Review, you must fill out [this form](https://forms.gle/262W6vsNAd2dKwt1A) by Monday, April 15th at 11:59PM.**
+
+You will be able to recover any points you did not get on the 3A Asynchronous Manual Review by fixing any issues before the 3C Checkoff Demo. We will leave detailed feedback on your submission so you know what to work on. 
+
+{: .warning}
+> Asynchronous reviews will take place 3-5 days after the 3A deadline and we will not reviewing 3A submissions after this point. 
+> This means that extensions are capped for this part of the project. If you do not make a submission by the time we begin reviews,
+> you will have to rely on the 3C Checkoff clobber to recover points.
 
 ### Partner Reflection: 20 points
 
@@ -713,7 +741,7 @@ There will be **no** movement in these tests.
 
 Recall that in the collaboration policy, we say:
 
-"Use of GitHub Copilot / GPT3 / etc. \[is permitted with extreme caution\] if you're just generating some amount of boilerplate code, that's ok. However, you should not use such tools to generate non-trivial methods. We are trying to build your fundamental skills, and leaning on an AI is going to cause you trouble in circumstances where you don't have an AI to help, such as exams. Any AI generated code must be cited and explicitly commented as such."
+"Use of GitHub Copilot / GPT3 / etc. **is permitted with extreme caution** if you're just generating some amount of boilerplate code, that's ok. However, you should not use such tools to generate non-trivial methods. We are trying to build your fundamental skills, and leaning on an AI is going to cause you trouble in circumstances where you don't have an AI to help, such as exams. Any AI generated code must be cited and explicitly commented as such."
 
 For project 3B & 3C, we're relaxing this rule and it's OK to use large language models (LLMs) like ChatGPT, Bard, Bing, CoPilot, etc. For project 3B & 3C however you want, with the important note that any code generated must be explicitly cited as being AI generated.
 

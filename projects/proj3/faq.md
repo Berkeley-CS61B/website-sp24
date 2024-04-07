@@ -100,7 +100,7 @@ Yes. But if you resubmit after the deadline, that would not be valid.
 
 ### Are there any live checkoffs?
 
-Nope, not this semester.
+Yes, sign ups will be released on Ed at a later date.
 
 ### Would it be possible to get points back if we lost some points during 3A checkoff?
 

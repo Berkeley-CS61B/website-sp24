@@ -64,12 +64,12 @@ projects:
     nonumber: True
   - title: "Project 3A: World Generation"
     due: "4/15"
-    # link: "projects/proj3/proj3a"
+    link: "projects/proj3"
     rowspan: 6
     nonumber: True
   - title: "Project 3B/C: Interactivity + Ambition"
     due: "4/22"
-    # link: "projects/proj3/proj3b"
+    link: "projects/proj3"
     rowspan: 3
     nonumber: True
   - rowspan: 6

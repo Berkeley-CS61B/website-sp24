@@ -1,7 +1,7 @@
 ---
 layout: page
 title: >-
-  Lab08: Hashmaps
+  Lab 08: Hashmaps
 has_children: true
 parent: Labs
 has_toc: false

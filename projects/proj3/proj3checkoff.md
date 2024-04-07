@@ -31,6 +31,8 @@ The following is what the TA will exactly do when checking you off: we recommend
 didn't miss anything. You can clone your repository in some random destination on your computer (like your home
 directory) if you want to follow along and simulate your checkoff.
 
+**BOTH PARTNERS SHOULD BE PRESENT.**
+
 ## Setup
 
 - Designate one partner to be the presenter; this should be the partner who signed up for the demo slot. They should
@@ -56,26 +58,27 @@ directory) if you want to follow along and simulate your checkoff.
 
 3. Run "git log" and make sure that the HEAD commit is a commit from before the deadline. Run "pwd". Make sure the path
    matches that of the open IntelliJ window. The students may choose to demo a late commit for partial credit.
-4. Check for main menu with New Game/World, Load, and Quit options
-5. Check that hitting "n" lets player type in a seed
-6. Check that typing numbers and hitting "s" starts the world
-7. Check that the floor and walls are distinguishable
-8. Check that there are structures which can be considered hallways. (1 wide, kinda long)
+4. Check for main menu with New Game/World, Load, and Quit options.
+5. Check that hitting "n" lets player type in a seed.
+6. Check that typing numbers and hitting "s" starts the world.
+7. Check that the floor and walls are distinguishable.
+8. Check that there are at least 2 structures which can be considered hallways. (1 wide, kinda long)
 9. Check that the world contains a turning hallway. If the current world doesn't have a turning hallway, ask the students to generate a world that has a turning hallway.
 10. Check that there are a few rectangular structures which can be considered rooms, which are connected via hallways
-11. Check WASD moves the player up, left, down, right
+11. Check WASD moves the player up, left, down, right.
 12. Check that hovering over three tiles displays three different names (it is OK if a key press is needed for the mouse
-    hover text to update)
-13. Check that moving into walls stops the player without errors
-14. Check that typing in ":Q" stops the game. At this point, memorize how the state of the world looks like. You can ask
-    the student to take a screenshot or take one yourself
-15. After restarting the program, test the load/save feature: Check that pressing "L" starts a world with no additional
+    hover text to update).
+13. Check that the HUD does not flicker.
+14. Check that moving into walls stops the player without errors.
+15. Check that typing in ":Q" stops the game. At this point, memorize how the state of the world looks like. You can ask
+    the student to take a screenshot or take one yourself.
+16. After restarting the program, test the load/save feature: Check that pressing "L" starts a world with no additional
     input.
-16. Check that the world layout is exactly the same as it was before closing the world.
-17. Check that the basic commands (WASD, etc.) still work.
-18. Quit and reload the world again, and make sure basic commands still work
-19. Check that "q" alone doesn't terminate the game
-20. Generate 3-5 worlds and look for how varied they are. Select one tier based on how much variety you feel their
+17. Check that the world layout is exactly the same as it was before closing the world.
+18. Check that the basic commands (WASD, etc.) still work.
+19. Quit and reload the world again, and make sure basic commands still work.
+20. Check that "q" alone doesn't terminate the game.
+21. Generate 3-5 worlds and look for how varied they are. Select one tier based on how much variety you feel their
     worlds have.
 
 - Full credit - each world generated looks significantly different and you feel like you'd see something new when you
@@ -111,7 +114,7 @@ or zero points.
 
 - World has visually distinct walls and floors (2 points)
 
-- World has hallways which are 1 tile wide (1 point)
+- World has at least two hallways which are 1 tile wide (1 point)
 
 - World has at least 1 hallway containing a turn in it. If current world doesn't, ask students to generate a world that has a turning hallway. (1 point)
 
@@ -122,7 +125,9 @@ or zero points.
 - TA should hit the W, A, S, and D keys randomly and check the player movement is consistent with the key pressed (2 points)
 
 - TA should hover over 3 different tiles and make sure their names show up somewhere on screen and that the names make
-  sense (5 points)
+  sense (3 points)
+
+- TA should verify that the HUD does not flicker (2 points)
 
 - TA should move into a wall and make sure the player stops at the wall instead of moving into it (2 points)
 

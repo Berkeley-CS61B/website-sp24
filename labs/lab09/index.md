@@ -1,7 +1,7 @@
 ---
 layout: page
 title: >-
-  Lab09: Conway's Game of Life
+  Lab 09: Conway's Game of Life
 has_children: true
 parent: Labs
 has_toc: false
@@ -93,7 +93,9 @@ for (int x = 20; x < 35; x++) {
 
 {: .info}
 $(0, 0)$ is the bottom-left corner of the world (not the top-left
-as you may be used to). We will work with this orientation in the lab.
+as you may be used to). For example, for position (5, 4), we would go 
+5 units to the right and then 4 units up. We will work with this orientation
+in the lab.
 
 The last step in rendering is to call `ter.renderFrame(world)`, where
 `ter` is a `TERenderer` object. Changes made to the tiles array will not appear
@@ -271,9 +273,9 @@ concerned with its direct 8 neighbors as shown above.
 
 In `nextGeneration`, we want to "update" the state of our board according to the rules 
 that are provided above. The current state of the board is represented by
-`TETiles[][] tiles`. The provided `TETile[][] newEvo` represents the next state and 
+`TETiles[][] tiles`. The provided `TETile[][] newGen` represents the next state and 
 is **initially filled with `Tileset.NOTHING`**. We want to take the current state 
-of the board, store the next generation/state in `newEvo` and return it. 
+of the board, store the next generation/state in `newGen` and return it. 
 
 {: .task} 
 Implement the method `nextGeneration` according to the rules above. 
@@ -298,7 +300,7 @@ through the class before moving on.**
 
 ### `saveBoard`
 
-If you navigate to `src/patterns`, you'll see several text files that contain 
+If you navigate to `patterns`, you'll see several text files that contain 
 different patterns. These specific patterns represent several initial states
 that we can pass it, and they are saved in a specific format 
 that we want to replicate in `saveBoard`. Let's walk through one of them
@@ -344,21 +346,25 @@ it will be saved in the text file like below
 An important thing to note is that we change the orientation of the board, so that
 the bottom left is (0, 0). Originally, the `result` 2D array would be read in as
 (0, 0) as the top left, but we take care of this difference (through transposing 
-and flipping). You don't need to worry about how this works, as we've taken
+and flipping). **You don't need to worry about how this works, as we've taken
 care of this change for you, but just be aware you should be working with
-the assumption that the bottom left is (0, 0).
+the assumption that the bottom left is (0, 0).**
+
+{: .danger} 
+To repeat, you don't need to be transposing or flipping any board in your implementation 
+in any parts of the lab. 
 
 There are three additional requirements: 
 - Make sure the orientation in the text file represents the same orientation as the board. The top 
   right corner of the board should match the top right corner of what is saved in the text file, as shown 
   in the example above. Think about why this is important. If (0, 0) represents the bottom left of our board,
-  but we write from the top, what might end up happening? 
-- For each row you write in to the text file, make sure to append `\n`. This applies to the dimensions 
-  written at the top of the text file, although the code has already been provided to you in the skeleton 
+  but we write from the top to the bottom, what might end up happening? 
+- For each row you write in to the text file, make sure to append `\n`. This applies to the dimensions
+  written at the top of the text file, although the code has already been provided to you in the skeleton
   for this method. This is to ensure that the board representation in the text file is accurate; it will
   also be useful in the next method, `loadBoard`.
-- **The name of your text file that you save to must be called `save.txt`. We've provided it already, so 
-  do not delete it.**
+- **The name of your text file that you save to must be called `src/save.txt`. We've provided it already as 
+  a variable, so do not delete it.**
 
 In the skeleton, we've provided `TODO` comments. You can access the current state of
 the board through the instance variable `currentState`.
@@ -373,10 +379,11 @@ the format is the same as what's mentioned in the previous part in `saveBoard`. 
 the first line are the dimensions, and the rest of the lines are the board. We want to load 
 this information into a `TETile[][]` and return it. 
 
-Based on the requirements mentioned in `saveBoard`, you can assume that each line is separated 
-by "\n" and that the orientation of the board is correct (keep in mind that if your `saveBoard` 
-doesn't follow the exact format mentioned, it might affect your `loadBoard`). For this part, 
-you might find the `split` and `charAt` function from the `String` class useful. 
+Based on the requirements mentioned in `saveBoard`, you can assume that each line is separated
+by "\n" and that the orientation of the board is correct, that is treat the bottom left as
+(0, 0) (keep in mind that if your `saveBoard` doesn't follow the exact format mentioned, 
+it might affect your `loadBoard`). For this part, you might find the `split` and
+`charAt` function from the `String` class useful. 
 
 {: .task}
 Implement the method `loadBoard`. **Since we're loading in the game, make sure to initialize 
@@ -410,6 +417,12 @@ as an initial state, you would pass in the following for your program arguments:
 ```
 
 Then, go ahead and run the application. 
+
+
+{: .danger}
+If you're writing your own test cases, please make sure to use **square matrices**, specifically if you're working 
+with the `nextGeneration` method. The provided local tests and the ones on the autograder will still
+run as intended, but local tests written for `nextGeneration` should still be done with an n x n board. 
 
 ## Project 3 Saving and Loading
 After finishing `saveBoard` and `loadBoard`, notice that we ended up saving the entire board 
