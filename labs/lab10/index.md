@@ -7,7 +7,6 @@ parent: Labs
 has_toc: false
 has_right_toc: true
 released: true
-nav_exclude: true
 ---
 
 ## [FAQ](faq.md)
@@ -158,7 +157,7 @@ a piece is placed. Consider the following:
 
 {: .task}
 Fill out `clearLines` to check for the amount of lines that are cleared and update the 
-board accordingly. The board has been passed in as an argument.
+board accordingly. **The board has been passed in as an argument.**
 
 ### `runGame`
 
