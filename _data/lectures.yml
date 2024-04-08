@@ -314,10 +314,10 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/31.-software-engineering-ii"
     classes:
       - optional
-  - title: "Sorting III: Quicksort, Quick Select"
+  - title: "Sorting III: Quicksort"
     slides: "https://docs.google.com/presentation/d/11vRyW0ZPrsxUhRHCBgkygy01PlL1amB66n9FZQN03wo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrHHQP93qqc_QBNBF_WEQLy"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=-DSHhIIIoeM"
     quiz: ""
     readings:
       - title: "Ch 32"
