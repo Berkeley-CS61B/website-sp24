@@ -29,7 +29,8 @@ the project.
 This lab has a lot of helper methods - you do not need to know what every single method 
 does, but please be aware that you will have to call on some of them throughout the lab. You will 
 also end up using methods from a library. **Please make sure to read through the files to understand 
-what you're working with!**
+what you're working with!** As a reminder, the coordinates (0, 0) represent the bottom left 
+of the board.
 
 ## Tetris
 
