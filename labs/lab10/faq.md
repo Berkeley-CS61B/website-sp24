@@ -37,4 +37,4 @@ In what instance would you want to spawn a piece?
 
 Another issue is to ensure that you're not clearing the board each time you render it in `renderScore` or any 
 other parts of your implementation. For example, calling on `StdDraw.clear` in `renderScore` might clear 
-the screen with a specific color each time the game tries to render the board. 
+the screen with a specific color each time the game tries to render the score. 
