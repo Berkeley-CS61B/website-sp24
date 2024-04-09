@@ -158,7 +158,8 @@ a piece is placed. Consider the following:
 
 {: .task}
 Fill out `clearLines` to check for the amount of lines that are cleared and update the 
-board accordingly. **The board has been passed in as an argument.**
+board accordingly. **The board has been passed in as an argument, so please make sure to
+use the argument `tiles` (it might affect the autograder if you don't!).**
 
 ### `runGame`
 
