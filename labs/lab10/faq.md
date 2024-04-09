@@ -25,7 +25,7 @@ calling on `renderBoard` in the method or any method that uses the `StdDraw` lib
 does not have the capacity to render or display, so using the `StdDraw` library will cause an 
 issue on the autograder. 
 
-### I'm trying to play the game, but the board shows up as black. 
+### I'm trying to play the game, but the board shows up as black a screen. 
 
 A common problem results from how `runGame` is structured. It might help to revisit the spec, where 
 it goes over the details of `runGame`, specifically this portion: 
