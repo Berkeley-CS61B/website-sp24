@@ -197,7 +197,8 @@ Here are the steps:
 - The score should appear at position x = 7, y = 19. 
 - Make sure to render the score once it's drawn!
 
-Here are some useful methods from the `StdDraw` library that you might find helpful: 
+Here are some useful methods from the `StdDraw` library that you might find helpful (you might not use all of 
+them, but they are here for reference): 
 - [`StdDraw.setFont`](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#setFont(java.awt.Font))
 - [`StdDraw.clear`](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#clear())
 - [`StdDraw.text`](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#text(double,%20double,%20java.lang.String))
