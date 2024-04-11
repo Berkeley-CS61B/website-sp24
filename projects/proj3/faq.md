@@ -23,7 +23,8 @@ released: true
 ## Common Policy Questions
 
 {: .info}
-> This section is actively under construction and we will be populated as more 
+
+> This section is actively under construction and will be populated as more 
 > questions come up.
 
 ### Are hallways with a width of 2 allowed?
