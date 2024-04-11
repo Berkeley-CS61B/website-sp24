@@ -38,3 +38,9 @@ In what instance would you want to spawn a piece?
 Another issue is to ensure that you're not clearing the board each time you render it in `renderScore` or any 
 other parts of your implementation. For example, calling on `StdDraw.clear` in `renderScore` might clear 
 the screen with a specific color each time the game tries to render the score. 
+
+### My game runs and my clear lines appears to work, but it doesn't pass the autograder test. 
+
+Instead of using the `board` instance variable, you'll want to use the `tiles` variable/object that is
+passed into the `clearLines` method. The autograder is constructing its own kind of board and passing it 
+in to test your `clearLines` method, so make sure that you're referring to the correct variable! 
