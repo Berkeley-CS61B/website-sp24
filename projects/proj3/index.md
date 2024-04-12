@@ -223,8 +223,7 @@ As mentioned above, the first goal of the project will be to write a world gener
   predictable features.
 
 As an example of a world that meets all of these requirements (click for higher resolution), see the image below. In
-this image, # represents a wall tile, a dot represents a floor tile, and there is also one golden colored wall segment
-that represents a locked door. All unused spaces are left blank.
+this image, # represents a wall tile, a dot represents a floor tile. All unused spaces are left blank.
 
 [![compliant_world_example](img/valid_world.png)](img/valid_world.png)
 
