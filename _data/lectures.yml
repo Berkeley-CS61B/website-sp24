@@ -307,21 +307,29 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/30.-quicksort"
   - title: "Software Engineering II"
     slides: "https://docs.google.com/presentation/d/1P1Uc8phy1GW1M4A8PA7mJJMWqb2QgOfewwwB1wMnFlU/edit#slide=id.g2c95eb66b0d_0_7"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=8ZZmTVXDVZc"
     quiz: ""
     readings:
       - title: "Ch 31"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/31.-software-engineering-ii"
     classes:
       - optional
-  - title: "Sorting III: Quicksort, Quick Select"
+  - title: "Sorting III: Quicksort"
     slides: "https://docs.google.com/presentation/d/11vRyW0ZPrsxUhRHCBgkygy01PlL1amB66n9FZQN03wo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrHHQP93qqc_QBNBF_WEQLy"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=-DSHhIIIoeM"
     quiz: ""
     readings:
       - title: "Ch 32"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/32.-more-quick-sort-sorting-summary"
+  - title: "Sorting IV: Sorting and Algorithmic Bounds"
+    slides: "https://docs.google.com/presentation/d/14bF0c-KRCU_pLsPjpqOMMCBzaoDKY8iiRSiI45XWEQc"
+    video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqEadgCMXeo1gnlIxnETooG"
+    recording: "https://youtu.be/WOLogwH6mYg"
+    quiz: ""
+    readings:
+      - title: "Ch 34"
+        link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
   - title: "Software Engineering III"
     slides: ""
     recording: ""
@@ -331,14 +339,6 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/33.-software-engineering-iii"
     classes:
       - optional
-  - title: "Sorting IV: Sorting and Algorithmic Bounds"
-    slides: "https://docs.google.com/presentation/d/14bF0c-KRCU_pLsPjpqOMMCBzaoDKY8iiRSiI45XWEQc"
-    video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqEadgCMXeo1gnlIxnETooG"
-    recording: ""
-    quiz: ""
-    readings:
-      - title: "Ch 34"
-        link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
   - title: "Sorting V: Radix Sorts"
     slides: "https://docs.google.com/presentation/d/14jNEZC-YKUuxIr3Cxsvz1Kb6eX0jCjvjevb1zD8NRj4"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr4cg5TeJZplLTlOVmMNE0d"

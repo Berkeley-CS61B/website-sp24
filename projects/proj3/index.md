@@ -121,6 +121,10 @@ You'll be working exclusively in a group repository for this portion of the proj
 - Click the "View Repository on GitHub" link.
 - You'll now be taken to your new repository on GitHub. You will have an empty repository. Copy the clone link shown in the text bar (blacked out in the screenshot).
 
+{: .info}
+> We recommend cloning with `ssh` instead of `https`. The image below uses `https`, which might not mesh well with the Github
+> authentication from Lab 1. To swap, you should click the `ssh` button and use the link that appears.
+
 ![group-repo](img/project-repo.png)
 
 - Open a new Terminal window, and navigate to the directory that you store your CS 61B files in (usually, students have a directory called `cs61b`).

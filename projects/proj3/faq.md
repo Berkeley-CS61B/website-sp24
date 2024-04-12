@@ -15,9 +15,41 @@ released: true
 
 # Topics
 
+- [Common Policy Questions](#common-policy-questions)
 - [Common Problems and Errors](#common-problems-and-errors)
 - [Autograder Errors](#autograder-errors)
 - [Custom World Features](#custom-world-features)
+
+## Common Policy Questions
+
+{: .info}
+
+> This section is actively under construction and will be populated as more 
+> questions come up.
+
+### Are hallways with a width of 2 allowed?
+
+Hallways with a width of 2 are permissible as long as it is clearly distinct from a room. Since this condition is somewhat subjective, feel free to present screenshots of your world in the appropriate megethread on Ed. As a general rule of thumb, aim for as few ambiguities as possible in every generated world. If your world generates too many width-2 hallways, it is more likely that we will determine that too many tiles are ambiguous and your world is invalid.
+
+## Are overlapping rooms allowed?
+
+No. Rooms must not appear to have been generated on top of another.
+
+## Are double walls (walls directly adjacent to each other) allowed?
+
+Yes, as long as each wall is generated as a part of its own associated room or hallway. Any wall tile that is not directly or diagonally adjacent to a floor tile is invalid.
+
+## Can there be entrances to the void?
+
+No, your world will be considered invalid if any floor tile is adjacent to a void tile. If you are interested in generating an "outside" section to your world, consult with a staff member first.
+
+## Does the size of my world have to be random?
+
+No, it is permissible to hardcode the dimensions of your game canvas. Any dimensions that fill up around half of a laptop screen are acceptable. If you would like, you can use the canvas dimensions in Lab 9 for Project 3.
+
+# Can two structures share the same wall?
+
+Yes, as long as they meet all other world requirements (such as non-overlap).
 
 ## Common Problems and Errors
 

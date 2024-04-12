@@ -7,7 +7,6 @@ parent: Labs
 has_toc: false
 has_right_toc: true
 released: true
-nav_exclude: true
 ---
 
 ## [FAQ](faq.md)
@@ -30,7 +29,8 @@ the project.
 This lab has a lot of helper methods - you do not need to know what every single method 
 does, but please be aware that you will have to call on some of them throughout the lab. You will 
 also end up using methods from a library. **Please make sure to read through the files to understand 
-what you're working with!**
+what you're working with!** As a reminder, the coordinates (0, 0) represent the bottom left 
+of the board.
 
 ## Tetris
 
@@ -158,7 +158,8 @@ a piece is placed. Consider the following:
 
 {: .task}
 Fill out `clearLines` to check for the amount of lines that are cleared and update the 
-board accordingly. The board has been passed in as an argument.
+board accordingly. **The board should be passed in as an argument, so please make sure to
+use the argument `tiles` (it might affect the autograder if you don't!).**
 
 ### `runGame`
 
@@ -196,7 +197,8 @@ Here are the steps:
 - The score should appear at position x = 7, y = 19. 
 - Make sure to render the score once it's drawn!
 
-Here are some useful methods from the `StdDraw` library that you might find helpful: 
+Here are some useful methods from the `StdDraw` library that you might find helpful (you might not use all of 
+them, but they are here for reference): 
 - [`StdDraw.setFont`](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#setFont(java.awt.Font))
 - [`StdDraw.clear`](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#clear())
 - [`StdDraw.text`](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#text(double,%20double,%20java.lang.String))

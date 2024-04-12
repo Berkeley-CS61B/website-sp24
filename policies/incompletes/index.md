@@ -21,8 +21,8 @@ In CS61B, you may receive an incomplete on at most **2 projects** or **1 project
 
 ## Incomplete deadlines
 
-- By default, the deadline to turn in incomplete assignments will be Friday, January 13th (1/13). We will not be granting further extensions aside from exceptional cases.
-- If you are taking an incomplete on the final, you will take the Spring 2024 final exam. Though subject to change, the date and time will be May 7th, 2024 at 8-11AM.
+- By default, the deadline to turn in incomplete assignments will be Sunday, August 18th (1/13). We will not be granting further extensions aside from exceptional cases.
+- If you are taking an incomplete on the final, you will take the Fall 2024 final exam.
 
 ## Is an incomplete right for you?
 
@@ -37,11 +37,11 @@ An incomplete grants you additional time on assignments that you may not have be
 - You'll be working on the assignments during break, so you should expect to complete the assignments without official staff support.
 - Especially if you're taking an incomplete on the final, you'll be completing the incomplete work in parallel with your usual coursework.
 
-An alternative to taking an incomplete is [late dropping](https://lsadvising.berkeley.edu/policies/late-change-class-schedule) the course. With another chance at the course, you'll have more time to learn the fundamental concepts and a chance to improve your grade. Many 61B assignments don't change much from semester to semester, so a lot of your efforts this semester can be reused if you decide to retake the course. The late drop deadline is **Friday, December 1st (12/1)**.
+An alternative to taking an incomplete is [late dropping](https://lsadvising.berkeley.edu/policies/late-change-class-schedule) the course. With another chance at the course, you'll have more time to learn the fundamental concepts and a chance to improve your grade. Many 61B assignments don't change much from semester to semester, so a lot of your efforts this semester can be reused if you decide to retake the course. The late drop deadline is **Friday, April 26th (4/26)**.
 
 ## Requesting an incomplete
 
-To request an incomplete, please fill out [this form](https://forms.gle/R5RCQJAVSQobCMXdA) by **Friday, December 8th (12/8) at 11:59pm**. We will be processing incomplete requests on a rolling basis.
+To request an incomplete, please fill out [this form](https://forms.gle/7WS1XB7jyfhz94Ew8) by **Friday, May 3rd (5/3) at 11:59pm**. We will be processing incomplete requests on a rolling basis.
 
 {: .info}
 If you do not meet one of the requirements above, we will still review your request on a case-by-case basis.
@@ -50,7 +50,7 @@ If you do not meet one of the requirements above, we will still review your requ
 
 **Q: How does the clobber work if I take an incomplete on the final?**
 
-A: We will calculate your percentile based on scores from next semester's final (e.g. if you take the Spring 2024 final, your percentile is calculated relative to the Spring 2024 scores). That percentile will be used when clobbering your midterm scores from the current semester.
+A: We will calculate your percentile based on scores from next semester's final (e.g. if you take the Fall 2024 final, your percentile is calculated relative to the Fall 2024 scores). That percentile will be used when clobbering your midterm scores from the current semester.
 
 **Q: If I take an incomplete on Project 3, will I get a partner?**
 

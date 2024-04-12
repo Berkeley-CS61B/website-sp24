@@ -74,8 +74,8 @@ labs:
     slides: https://docs.google.com/presentation/d/1TK6cmjyhpoxoHsOApgnx9unHp-vtLToD6416bggPnCk/edit?usp=sharing
   - title: "Tetris"
     due: "4/12"
-    # link: labs/lab10
-    slides:
+    link: labs/lab10
+    slides: https://docs.google.com/presentation/d/1dpCpnEX-o1U_5bu99WpFWNdcC-vQdoAq6-qfGvt5hyY/edit?usp=sharing
   - title: "Project 3 Workday"
     nonumber: True
   - title: "Project 3 Checkoffs"
