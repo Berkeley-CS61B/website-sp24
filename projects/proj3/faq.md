@@ -28,11 +28,11 @@ released: true
 
 ### Are hallways with a width of 2 allowed?
 
-Hallways with a width of 2 are permissible as long as it is clearly distinct from a room. Since this condition is somewhat subjective, feel free to present screenshots of your world in the appropriate megethread on Ed. As a general rule of thumb, aim for as few ambiguities as possible in every generated world. If your world generates too many width-2 hallways, it is more likely that we will determine that too many tiles are ambiguous and your world is invalid.
+Hallways with a width of 2 are permissible as long as it is clearly distinct from a room and they generate infrequently. Since this condition is somewhat subjective, feel free to present screenshots of your world in the appropriate megethread on Ed. As a general rule of thumb, aim for as few ambiguities as possible in every generated world. If your world generates too many width-2 hallways, it is more likely that we will determine that too many tiles are ambiguous and your world is invalid.
 
 ## Are overlapping rooms allowed?
 
-No. Rooms must not appear to have been generated on top of another.
+Yes, as long as the rest of the validity criteria are still met.
 
 ## Are double walls (walls directly adjacent to each other) allowed?
 
