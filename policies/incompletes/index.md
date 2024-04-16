@@ -21,8 +21,8 @@ In CS61B, you may receive an incomplete on at most **2 projects** or **1 project
 
 ## Incomplete deadlines
 
-- By default, the deadline to turn in incomplete assignments will be Sunday, August 18th (1/13). We will not be granting further extensions aside from exceptional cases.
-- If you are taking an incomplete on the final, you will take the Fall 2024 final exam.
+- By default, the deadline to turn in incomplete assignments will be Sunday, August 25th (8/25). We will not be granting further extensions aside from exceptional cases.
+- If you are taking an incomplete on the final, you will take the Fall 2024 final exam. There is a chance you can take the final over Summer 2024, but that option has not been confirmed yet.
 
 ## Is an incomplete right for you?
 

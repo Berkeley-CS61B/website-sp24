@@ -301,7 +301,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1MqmOxfh1c6gS4hk9hvuRR_hWXWTnCIXMqLGXwRX4Pvk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqsfDWZNS86oYmHFY6UKA2t"
     recording: "https://www.youtube.com/watch?v=NSbdNXO8WaQ"
-    quiz: ""
+    quiz: "https://forms.gle/LWfhd836CDpbLJHC6"
     readings:
       - title: "Ch 30"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/30.-quicksort"
@@ -339,10 +339,10 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/33.-software-engineering-iii"
     classes:
       - optional
-  - title: "Sorting V: Radix Sorts"
+  - title: "Sorting V: More Quicksort, Radix Sorts"
     slides: "https://docs.google.com/presentation/d/14jNEZC-YKUuxIr3Cxsvz1Kb6eX0jCjvjevb1zD8NRj4"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr4cg5TeJZplLTlOVmMNE0d"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=pOe_5A11OB0"
     quiz: ""
     readings:
       - title: "Ch 35"
