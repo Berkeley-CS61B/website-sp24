@@ -332,7 +332,7 @@ lectures:
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
   - title: "Software Engineering III"
     slides: ""
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=8XY1TNODHw4"
     quiz: ""
     readings:
       - title: "Ch 33"
