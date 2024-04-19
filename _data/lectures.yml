@@ -356,7 +356,7 @@ lectures:
       - title: "Ch 36"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/36.-sorting-and-data-structures-conclusion"
   - title: "Software Engineering IV"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/13TE3w603C6zt1q5vWRL9WmbwxkG0VjFluIIHSbV0qNU/edit"
     recording: ""
     quiz: ""
     readings:
