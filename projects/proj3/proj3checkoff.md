@@ -152,7 +152,7 @@ or zero points.
 
 - The TA should close the world again and will begin testing to see if worlds are randomly generated.
 
-- The student pair should've explained to the TA via the form where they are making use of randomness and make mention
+- The student pair should've explained to the TA where they are making use of randomness and make mention
   of any pieces of their world which is consistent across all seeds
 
 - TA should check that the use of randomness does not lead to a severe limitation on the variety of worlds (ie. randomly
