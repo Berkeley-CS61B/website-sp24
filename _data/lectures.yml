@@ -331,7 +331,7 @@ lectures:
       - title: "Ch 34"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
   - title: "Software Engineering III"
-    slides: ""
+    slides: "https://docs.google.com/presentation/d/1nE_oD8Mx6tRcO6zOnz7KbSxCtaZpaoDlcPhKzfNXrqI/edit?usp=sharing"
     recording: "https://www.youtube.com/watch?v=8XY1TNODHw4"
     quiz: ""
     readings:
