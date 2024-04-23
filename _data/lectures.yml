@@ -318,7 +318,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/11vRyW0ZPrsxUhRHCBgkygy01PlL1amB66n9FZQN03wo"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRrHHQP93qqc_QBNBF_WEQLy"
     recording: "https://www.youtube.com/watch?v=-DSHhIIIoeM"
-    quiz: ""
+    quiz: "https://forms.gle/dRxK7LKJCG2LFRnr8"
     readings:
       - title: "Ch 32"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/32.-more-quick-sort-sorting-summary"
@@ -326,7 +326,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/14bF0c-KRCU_pLsPjpqOMMCBzaoDKY8iiRSiI45XWEQc"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqEadgCMXeo1gnlIxnETooG"
     recording: "https://youtu.be/WOLogwH6mYg"
-    quiz: ""
+    quiz: "https://forms.gle/b2K72Bjf58zPioLv9"
     readings:
       - title: "Ch 34"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/34.-sorting-and-algorithmic-bounds"
@@ -343,7 +343,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/14jNEZC-YKUuxIr3Cxsvz1Kb6eX0jCjvjevb1zD8NRj4"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRr4cg5TeJZplLTlOVmMNE0d"
     recording: "https://www.youtube.com/watch?v=pOe_5A11OB0"
-    quiz: ""
+    quiz: "https://forms.gle/jqoBjbBdqC9nAsZ39"
     readings:
       - title: "Ch 35"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/35.-radix-sorts"
@@ -351,7 +351,7 @@ lectures:
     slides: "https://docs.google.com/presentation/d/1wSTXwNB-D75VbHCtKqnr7QlOQtV-3wg6vTLNpNw7Qwk"
     video: "https://www.youtube.com/playlist?list=PLnp31xXvnfRoDV1sFRy3Hdx0N6BMZjI1n"
     recording: "https://www.youtube.com/watch?v=EwqK7T5MsPI"
-    quiz: ""
+    quiz: "https://forms.gle/e4iaNsFF8tYbwc9B7"
     readings:
       - title: "Ch 36"
         link: "https://cs61b-2.gitbook.io/cs61b-textbook/36.-sorting-and-data-structures-conclusion"
