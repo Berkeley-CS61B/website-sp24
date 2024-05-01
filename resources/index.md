@@ -32,6 +32,7 @@ On this page, we've compiled resources from past semesters that you may find hel
 - [Partnerships Guide](guides/partnerships/index.md)
 - [Office Hours Policies](guides/oh/index.md)
 - [Guide to Using Soda Machines](guides/soda-machines/index.md)
+- [Summer 2024 FAQs](summer/index.md)
 
 ---
 
