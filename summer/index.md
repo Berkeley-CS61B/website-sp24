@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Summer 2024 FAQ
-nav_order: 7
+nav_order: 8
 nav_exclude: false
 has_children: false
 has_toc: true
