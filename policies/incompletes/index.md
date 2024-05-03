@@ -41,7 +41,7 @@ An alternative to taking an incomplete is [late dropping](https://lsadvising.ber
 
 ## Requesting an incomplete
 
-To request an incomplete, please fill out [this form](https://forms.gle/7WS1XB7jyfhz94Ew8) by **Friday, May 3rd (5/3) at 11:59pm**. We will be processing incomplete requests on a rolling basis.
+To request an incomplete, please fill out [this form](https://forms.gle/7WS1XB7jyfhz94Ew8) by **Sunday, May 5th (5/5) at 11:59pm**. We will be processing incomplete requests on a rolling basis.
 
 {: .info}
 If you do not meet one of the requirements above, we will still review your request on a case-by-case basis.
