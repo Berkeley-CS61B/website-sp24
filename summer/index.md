@@ -33,7 +33,7 @@ Please don’t email us asking to be added to the class before your application 
 All course materials that we can share with auditors will be posted publicly on the course website. Also, on the policies page, there is a link to a public Gradescope class that you can join.
 
 ### I officially enrolled in the class, or filled out the form requesting to be enrolled, but I don’t have access to Gradescope/Ed.
-We sync the rosters once a day, so you may need to wait a bit before being automatically added to the class. If you’ve been officially enrolled for 48 hours and haven’t been added, send an email to cs61bl@berkeley.edu. Please don’t ask us about being added until 48 hours have passed; we don’t have time to manually add each student.
+We have not yet distributed access to Gradescope/Ed. Once the semester starts, we sync the rosters once a day. You may need to wait a bit before being automatically added to the class. If you’ve been officially enrolled for 48 hours after June 17 and haven’t been added, send an email to cs61bl@berkeley.edu. Please don’t ask us about being added until 48 hours have passed; we don’t have time to manually add each student.
 
 ### How do I enroll late in the class?
 It is your responsibility to keep up with the class before you enroll.
