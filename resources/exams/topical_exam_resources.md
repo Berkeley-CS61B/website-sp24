@@ -52,7 +52,7 @@ released: true
 <option value="Abstraction">Abstraction</option>
 <option value="Arrays">Arrays</option>
 <option value="Asymptotics">Asymptotics</option>
-<option value="B Trees">B-Trees</option>
+<option value="B Trees">B Trees</option>
 <option value="BSTs">BSTs</option>
 <option value="Bits">Bits</option>
 <option value="Comparators">Comparators</option>
@@ -71,14 +71,14 @@ released: true
 <option value="Iteration">Iteration</option>
 <option value="Iterators">Iterators</option>
 <option value="Java">Java</option>
-<option value="K D Trees">K-D Trees</option>
+<option value="K D Trees">K D Trees</option>
 <option value="Linked Lists">Linked Lists</option>
 <option value="Lists">Lists</option>
 <option value="MSTs">MSTs</option>
 <option value="Percolation">Percolation</option>
 <option value="Radix Sorts">Radix Sorts</option>
 <option value="Recursion">Recursion</option>
-<option value="Red Black Trees">Red-Black Trees</option>
+<option value="Red Black Trees">Red Black Trees</option>
 <option value="Reductions">Reductions</option>
 <option value="Regex">Regex</option>
 <option value="SPTs">SPTs</option>
@@ -525,7 +525,7 @@ released: true
 </ul>
 </div>
 
-<button id='b-trees-button' class='ter-collapsible'>B-Trees <span class='toggle-icon'>&#9656;</span></button>
+<button id='b-trees-button' class='ter-collapsible'>B Trees <span class='toggle-icon'>&#9656;</span></button>
 <div id='b-trees-content' class='content'>
 <ul>
 <li data-difficulty='easy' data-type='Conceptual'>fa22-mt2 &nbsp;<a href='https://drive.google.com/file/d/1-pPuHGuw0anqwnLh3nc_8z2Alqqcnpi5/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1EorWXul3vuZLpgpCkWUxFuOqn_Z5RaYP/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrt5CU5IAKUcpWpBS4nRpWU'>Walkthrough</a> &nbsp;Difficulty: easy &nbsp;Type: Conceptual &nbsp;Question: q4a   <input type='checkbox' id='chk-fa22-mt2-q4a' class='exam-checkbox' /><label for='chk-fa22-mt2-q4a'></label></li>
@@ -546,7 +546,7 @@ released: true
 </ul>
 </div>
 
-<button id='red-black-trees-button' class='ter-collapsible'>Red-Black Trees <span class='toggle-icon'>&#9656;</span></button>
+<button id='red-black-trees-button' class='ter-collapsible'>Red Black Trees <span class='toggle-icon'>&#9656;</span></button>
 <div id='red-black-trees-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Conceptual'>fa20-final &nbsp;<a href='https://drive.google.com/file/d/1A1YPTJAsiVOQtIUiQgPFL6rM2T9oXntW/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1nRrI0buwfZ-c9eAzVzKP3_MSfM0Nh5Fw/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/playlist?list=PLnp31xXvnfRrmHRhYGldDkTUulb54XQPJ'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Conceptual &nbsp;Question: q8a   <input type='checkbox' id='chk-fa20-final-q8a' class='exam-checkbox' /><label for='chk-fa20-final-q8a'></label></li>
@@ -860,7 +860,7 @@ released: true
 </ul>
 </div>
 
-<button id='k-d-trees-button' class='ter-collapsible'>K-D Trees <span class='toggle-icon'>&#9656;</span></button>
+<button id='k-d-trees-button' class='ter-collapsible'>K D Trees <span class='toggle-icon'>&#9656;</span></button>
 <div id='k-d-trees-content' class='content'>
 <ul>
 <li data-difficulty='moderate' data-type='Potpourri'>sp19-final &nbsp;<a href='https://drive.google.com/file/d/1ADV5iN2OSxP8fHfaGvqlyT39QqncEdij/view'>Exam</a> &nbsp;<a href='https://drive.google.com/file/d/1Wu9X7czbBIAywTLoCcqx07-JF92iCeTi/view'>Solution</a> &nbsp;<a href='https://www.youtube.com/watch?v=kavv3_Rk0Jc'>Walkthrough</a> &nbsp;Difficulty: moderate &nbsp;Type: Potpourri &nbsp;Question: q5   <input type='checkbox' id='chk-sp19-final-q5' class='exam-checkbox' /><label for='chk-sp19-final-q5'></label></li>
