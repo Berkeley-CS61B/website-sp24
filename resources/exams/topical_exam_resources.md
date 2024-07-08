@@ -52,7 +52,7 @@ released: true
 <option value="Abstraction">Abstraction</option>
 <option value="Arrays">Arrays</option>
 <option value="Asymptotics">Asymptotics</option>
-<option value="B-Trees">B-Trees</option>
+<option value="B Trees">B-Trees</option>
 <option value="BSTs">BSTs</option>
 <option value="Bits">Bits</option>
 <option value="Comparators">Comparators</option>
@@ -71,14 +71,14 @@ released: true
 <option value="Iteration">Iteration</option>
 <option value="Iterators">Iterators</option>
 <option value="Java">Java</option>
-<option value="K-D Trees">K-D Trees</option>
+<option value="K D Trees">K-D Trees</option>
 <option value="Linked Lists">Linked Lists</option>
 <option value="Lists">Lists</option>
 <option value="MSTs">MSTs</option>
 <option value="Percolation">Percolation</option>
 <option value="Radix Sorts">Radix Sorts</option>
 <option value="Recursion">Recursion</option>
-<option value="Red-Black Trees">Red-Black Trees</option>
+<option value="Red Black Trees">Red-Black Trees</option>
 <option value="Reductions">Reductions</option>
 <option value="Regex">Regex</option>
 <option value="SPTs">SPTs</option>
